@@ -9,6 +9,7 @@
     "lodash.camelcase": "^4.3.0",
     "lodash.snakecase": "^4.1.1",
     "pascal-case": "^2.0.0",
-    "theo": "^5.0.0"
+    "theo": "^5.0.0",
+    "tinycolor2": "^1.4.1"
   }
 }
