@@ -53,6 +53,13 @@ theo.registerFormat('android.xml', (json) => {
   return `<?xml version="1.0" encoding="utf-8"?>\n<resources>\n  ${props}\n</resources>`;
 });
 
+theo.registerFormat('python.py', (json) => 
+  json.propKeys.map((key) => {
+    const prop = json.props[key];
+    return `${camelCase(prop.name)} = '${prop.value}'`;
+  }).join('\n')
+);
+
 theo.registerValueTransform('color/hex/short',
   (prop) => prop.type === 'color',
   (prop) => prop.value.replace(/^#([0-9a-fA-F])\1([0-9a-fA-F])\2([0-9a-fA-F])\3$/, '#\$1\$2\$3')
@@ -95,12 +102,14 @@ gulp.task('color-scss', getGulpColorTask('web', 'scss'));
 gulp.task('color-js', getGulpColorTask('web', 'es2015.js'));
 gulp.task('color-swift', getGulpColorTask('swift', 'swift'));
 gulp.task('color-android', getGulpColorTask('android', 'android.xml'));
+gulp.task('color-python', getGulpColorTask('web', 'python.py'));
 
 gulp.task('color', [
   'color-scss',
   'color-js',
   'color-swift',
-  'color-android'
+  'color-android',
+  'color-python'
 ]);
 
 gulp.task('default', [
