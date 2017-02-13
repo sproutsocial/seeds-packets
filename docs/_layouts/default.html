@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="Sprout Social" />
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <header>
+      {% if page.title == 'Home' %}
+        <h1>
+          <abbr title="{{ site.description }}">{{ site.name }}</abbr>
+        </h1>
+      {% else %}
+        <p>
+          <abbr title="{{ site.description }}">{{ site.name }}</abbr>
+        </p>
+      {% endif %}
+    </header>
+    <div class="container">
+      {% include navigation.html %}
+      <main role="main">
+        {% unless page.title == 'Home' %}
+          <h1>{{ page.title }} <small>{{ page.version }}</small></h1>
+        {% endunless %}
+        {{ content }}
+      </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    {% if page.title == 'Colors' %}
+      {% include colors.html %}
+      {% include color-script.html %}
+    {% endif %}
+  </body>
+</html>

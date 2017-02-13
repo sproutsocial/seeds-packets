@@ -1,0 +1,57 @@
+---
+title: Colors
+layout: default
+version: 0.1.0
+---
+
+<table>
+  <thead>
+    <th scope="col">
+      Name
+      <select id="colors-name">
+        <option value="palette" selected>Palette</option>
+        <option value="sass">Sass</option>
+        <option value="javascript">Javascript</option>
+        <option value="swift">Swift</option>
+        <option value="android">Android XML</option>
+        <option value="python">Python</option>
+      </select>
+    </th>
+    <th scope="col">
+      Value
+      <select id="colors-value">
+        <option value="hex" selected>Hex</option>
+        <option value="rgb">RGB()</option>
+      </select>
+    </th>
+  </thead>
+</table>
+
+<script id="colors" type="text/html">
+  <tbody>
+    <tr>
+      <th colspan="2" scope="col" style="text-align: left;"><%= category %></th>
+    </tr>
+    <%= rows %>
+  </tbody>
+</script>
+
+<script id="colors-row" type="text/html">
+  <tr>
+    <th scope="row" style="text-align: left;">
+      <span data-lang="palette" style="display: block"><%= palette %></span>
+      <pre data-lang="sass" style="display: none"><%= sass %></pre>
+      <pre data-lang="javascript" style="display: none"><%= javascript %></pre>
+      <pre data-lang="swift" style="display: none"><%= swift %></pre>
+      <pre data-lang="android" style="display: none"><%= android %></pre>
+      <pre data-lang="python" style="display: none"><%= python %></pre>
+    </th>
+    <td>
+      <span style="display: inline-block; width: 2em; height: 2em; background: <%= value %>; border: 1px solid #f3f4f4"></span>
+      <span>
+        <pre data-value="hex" style="display: inline-block"><%= value %></pre>
+        <pre data-value="rgb" style="display: none"><%= rgb %></pre>
+      </span>
+    </td>
+  </tr>
+</script>

@@ -1,0 +1,35 @@
+<script>
+  // TODO: Babel this stuff up
+  (function($, _) {
+    var categories = _.uniq(_.map(seedsColors, 'category'));
+    var $table = $('table');
+    var colorsTemplate = _.template($('#colors').html());
+    var colorsRowTemplate = _.template($('#colors-row').html());
+    _.each(categories, function(category) {
+      var rows = _.map(seedsColors, function(color) {
+        if (color.category !== category) {
+          return;
+        }
+        return colorsRowTemplate(color)
+      }).join('');
+      $table.append(colorsTemplate({
+        rows: rows,
+        category: _.upperFirst(category)
+      }))
+    });
+
+    $('#colors-name').on('change', function() {
+      $('[data-lang="' + this.value + '"]')
+        .show()
+        .siblings()
+        .hide();
+    });
+
+    $('#colors-value').on('change', function() {
+      $('[data-value="' + this.value + '"]')
+        .css('display', 'inline-block')
+        .siblings()
+        .hide();
+    });
+  })(window.jQuery, window._);
+</script>
