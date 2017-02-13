@@ -6,6 +6,8 @@ import camelCase from 'lodash.camelcase';
 import snakeCase from 'lodash.snakecase';
 import tinycolor from 'tinycolor2';
 
+const constantCase = (str) => snakeCase(str).toUpperCase();
+
 theo.registerFormat('scss', (json) =>
   json.propKeys.map((key) => {
     const prop = json.props[key];
@@ -22,27 +24,35 @@ theo.registerFormat('scss', (json) =>
 theo.registerFormat('es2015.js', (json) => 
   json.propKeys.map((key) => {
     const prop = json.props[key];
-    let constName = snakeCase(`${prop.type} ${prop.name}`).toUpperCase();
+    let constName = constantCase(`${prop.type} ${prop.name}`);
     return `export const ${constName} = '${prop.value}';`;
   }).join('\n')
 );
 
 theo.registerFormat('swift', (json) => {
-  const props = Object.keys(json.props).map((key) => {
+  const props = json.propKeys.map((key) => {
     const prop = json.props[key];
 
     if (prop.type !== 'color') {
       return;
     }
 
-    const name = camelCase(prop.name);
-    return `static func ${name}() -> UIColor {\n    ${prop.value}\n  }`;
+    return `static func ${camelCase(prop.name)}() -> UIColor {\n    ${prop.value}\n  }`;
   }).join('\n  ');
 
   return `import Foundation\n\nextension UIColor {\n  ${props}\n}`;
 });
 
-// use three-digit hex value when possible
+theo.registerFormat('android.xml', (json) => {
+  const props = json.propKeys.map((key) => {
+    const prop = json.props[key];
+    const tag = prop.type === 'color' ? 'color' : 'property';
+    return `<${tag} name="${constantCase(prop.name)}" category="${prop.category}">${prop.value}</${tag}>`;
+  }).join('\n  ');
+
+  return `<?xml version="1.0" encoding="utf-8"?>\n<resources>\n  ${props}\n</resources>`;
+});
+
 theo.registerValueTransform('color/hex/short',
   (prop) => prop.type === 'color',
   (prop) => prop.value.replace(/^#([0-9a-fA-F])\1([0-9a-fA-F])\2([0-9a-fA-F])\3$/, '#\$1\$2\$3')
@@ -84,11 +94,13 @@ function getGulpColorTask(transform, format) {
 gulp.task('color-scss', getGulpColorTask('web', 'scss'));
 gulp.task('color-js', getGulpColorTask('web', 'es2015.js'));
 gulp.task('color-swift', getGulpColorTask('swift', 'swift'));
+gulp.task('color-android', getGulpColorTask('android', 'android.xml'));
 
 gulp.task('color', [
   'color-scss',
   'color-js',
-  'color-swift'
+  'color-swift',
+  'color-android'
 ]);
 
 gulp.task('default', [
