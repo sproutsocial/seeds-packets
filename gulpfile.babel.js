@@ -20,6 +20,15 @@ const sassVar = (type, name) => {
 const constantCase = (str) => snakeCase(str).toUpperCase();
 const javascriptConst = (type, name) => constantCase(`${type} ${name}`);
 
+const getCocoaRGB = (color) => {
+  const percentageRgb = tinycolor(color).toRgb();
+  Object.keys(percentageRgb).forEach((value) => {
+    const val = value !== 'a' ? percentageRgb[value] / 255 : percentageRgb[value];
+    percentageRgb[value] = val;
+  });
+  return percentageRgb;
+};
+
 theo.registerFormat('scss', (json) =>
   json.propKeys.map((key) => {
     const prop = json.props[key];
@@ -65,6 +74,24 @@ theo.registerFormat('python.py', (json) =>
   }).join('\n')
 );
 
+theo.registerFormat('sketch.sketchpalette', (json) => {
+  const props = json.propKeys.map((key) => {
+    const prop = json.props[key];
+
+    if (prop.type !== 'color') {
+      return;
+    }
+
+    return prop.value;
+  });
+
+  return JSON.stringify({
+    compatibleVersion: 1.5,
+    pluginVersion: 1.5,
+    colors: props
+  });
+});
+
 theo.registerValueTransform('color/hex/short',
   (prop) => prop.type === 'color',
   (prop) => prop.value.replace(/^#([0-9a-fA-F])\1([0-9a-fA-F])\2([0-9a-fA-F])\3$/, '#\$1\$2\$3')
@@ -73,15 +100,21 @@ theo.registerValueTransform('color/hex/short',
 theo.registerValueTransform('color/swift',
   (prop) => prop.type === 'color',
   (prop) => {
-    const percentageRgb = tinycolor(prop.value).toRgb();
-
-    Object.keys(percentageRgb).forEach((value) => {
-      const val = value !== 'a' ? percentageRgb[value] / 255 : percentageRgb[value];
-      percentageRgb[value] = val;
-    });
-
-    const { r, g, b, a } = percentageRgb;
+    const { r, g, b, a } = getCocoaRGB(prop.value);
     return `return UIColor(red: ${r}, green: ${g}, blue: ${b}, alpha: ${a})`;
+  }
+);
+
+theo.registerValueTransform('color/sketch',
+  (prop) => prop.type === 'color',
+  (prop) => {
+    const { r, g, b, a } = getCocoaRGB(prop.value);
+    return {
+      red: r,
+      green: g,
+      blue: b,
+      alpha: a
+    };
   }
 );
 
@@ -93,15 +126,19 @@ theo.registerTransform('swift', [
   'color/swift'
 ]);
 
+theo.registerTransform('sketch', [
+  'color/sketch'
+]);
+
 const colorTokensPath = 'packages/seeds-color/tokens.yml';
 
-function getGulpColorTask(transform, format) {
+function getGulpColorTask(transform, format, dest = 'packages/seeds-color/dist') {
   return function() {
     gulp.src(colorTokensPath)
       .pipe(theo.plugins.transform(transform))
       .pipe(theo.plugins.format(format))
       .pipe(rename({ basename: 'seeds-color' }))
-      .pipe(gulp.dest('packages/seeds-color/dist'));
+      .pipe(gulp.dest(dest));
   }
 }
 
@@ -110,6 +147,7 @@ gulp.task('color-js', getGulpColorTask('web', 'es2015.js'));
 gulp.task('color-swift', getGulpColorTask('swift', 'swift'));
 gulp.task('color-android', getGulpColorTask('android', 'android.xml'));
 gulp.task('color-python', getGulpColorTask('web', 'python.py'));
+gulp.task('color-sketch', getGulpColorTask('sketch', 'sketch.sketchpalette', 'docs/downloads'));
 
 gulp.task('color-docs', () => {
   theo.plugins
@@ -144,7 +182,8 @@ gulp.task('color', [
   'color-swift',
   'color-android',
   'color-python',
-  'color-docs'
+  'color-docs',
+  'color-sketch'
 ]);
 
 gulp.task('docs', () => {
