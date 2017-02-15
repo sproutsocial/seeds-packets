@@ -11,7 +11,7 @@
   <color name="GREEN_900" category="green">#ff017836</color>
   <color name="TEAL_100" category="teal">#ffbdf4ea</color>
   <color name="TEAL_200" category="teal">#ff8aedde</color>
-  <color name="TEAL_300" category="green">#ff57e7d1</color>
+  <color name="TEAL_300" category="teal">#ff57e7d1</color>
   <color name="TEAL_400" category="teal">#ff24e0c5</color>
   <color name="TEAL_500" category="teal">#ff08c4b2</color>
   <color name="TEAL_600" category="teal">#ff00a99c</color>
@@ -20,7 +20,7 @@
   <color name="TEAL_900" category="teal">#ff026661</color>
   <color name="AQUA_100" category="aqua">#ffbaf6f7</color>
   <color name="AQUA_200" category="aqua">#ff8debf0</color>
-  <color name="AQUA_300" category="green">#ff60e1e9</color>
+  <color name="AQUA_300" category="aqua">#ff60e1e9</color>
   <color name="AQUA_400" category="aqua">#ff33d6e2</color>
   <color name="AQUA_500" category="aqua">#ff17b8ce</color>
   <color name="AQUA_600" category="aqua">#ff0797ae</color>
@@ -29,7 +29,7 @@
   <color name="AQUA_900" category="aqua">#ff005a68</color>
   <color name="BLUE_100" category="blue">#ffc7e4f9</color>
   <color name="BLUE_200" category="blue">#ffa1d2f8</color>
-  <color name="BLUE_300" category="green">#ff7cbff6</color>
+  <color name="BLUE_300" category="blue">#ff7cbff6</color>
   <color name="BLUE_400" category="blue">#ff56adf5</color>
   <color name="BLUE_500" category="blue">#ff3896e3</color>
   <color name="BLUE_600" category="blue">#ff2b87d3</color>
@@ -38,7 +38,7 @@
   <color name="BLUE_900" category="blue">#ff084f8a</color>
   <color name="PURPLE_100" category="purple">#ffe3e1f9</color>
   <color name="PURPLE_200" category="purple">#ffcecafb</color>
-  <color name="PURPLE_300" category="green">#ffbab3fd</color>
+  <color name="PURPLE_300" category="purple">#ffbab3fd</color>
   <color name="PURPLE_400" category="purple">#ffa193f2</color>
   <color name="PURPLE_500" category="purple">#ff9180f4</color>
   <color name="PURPLE_600" category="purple">#ff816fea</color>
@@ -47,7 +47,7 @@
   <color name="PURPLE_900" category="purple">#ff483a9c</color>
   <color name="MAGENTA_100" category="magenta">#fff8d9f9</color>
   <color name="MAGENTA_200" category="magenta">#fff6bcf8</color>
-  <color name="MAGENTA_300" category="green">#fff49ff6</color>
+  <color name="MAGENTA_300" category="magenta">#fff49ff6</color>
   <color name="MAGENTA_400" category="magenta">#fff282f5</color>
   <color name="MAGENTA_500" category="magenta">#ffdb61db</color>
   <color name="MAGENTA_600" category="magenta">#ffc44eb9</color>
@@ -56,7 +56,7 @@
   <color name="MAGENTA_900" category="magenta">#ff7d2784</color>
   <color name="PINK_100" category="pink">#ffffd4e8</color>
   <color name="PINK_200" category="pink">#ffffb5d5</color>
-  <color name="PINK_300" category="green">#ffff95c1</color>
+  <color name="PINK_300" category="pink">#ffff95c1</color>
   <color name="PINK_400" category="pink">#ffff76ae</color>
   <color name="PINK_500" category="pink">#ffef588b</color>
   <color name="PINK_600" category="pink">#ffe0447c</color>
@@ -65,7 +65,7 @@
   <color name="PINK_900" category="pink">#ff9c1d48</color>
   <color name="RED_100" category="red">#ffffd5d2</color>
   <color name="RED_200" category="red">#ffffb8b1</color>
-  <color name="RED_300" category="green">#ffff9c8f</color>
+  <color name="RED_300" category="red">#ffff9c8f</color>
   <color name="RED_400" category="red">#ffff7f6e</color>
   <color name="RED_500" category="red">#fff76054</color>
   <color name="RED_600" category="red">#ffed4c42</color>
@@ -74,7 +74,7 @@
   <color name="RED_900" category="red">#ffaf3131</color>
   <color name="ORANGE_100" category="orange">#ffffdbc7</color>
   <color name="ORANGE_200" category="orange">#ffffc6a4</color>
-  <color name="ORANGE_300" category="green">#ffffb180</color>
+  <color name="ORANGE_300" category="orange">#ffffb180</color>
   <color name="ORANGE_400" category="orange">#ffff9c5d</color>
   <color name="ORANGE_500" category="orange">#fffc8943</color>
   <color name="ORANGE_600" category="orange">#fff57d33</color>
@@ -83,7 +83,7 @@
   <color name="ORANGE_900" category="orange">#ffc95417</color>
   <color name="YELLOW_100" category="yellow">#fffff1c5</color>
   <color name="YELLOW_200" category="yellow">#ffffe99a</color>
-  <color name="YELLOW_300" category="green">#ffffe16e</color>
+  <color name="YELLOW_300" category="yellow">#ffffe16e</color>
   <color name="YELLOW_400" category="yellow">#ffffd943</color>
   <color name="YELLOW_500" category="yellow">#ffffcd1c</color>
   <color name="YELLOW_600" category="yellow">#ffffbc00</color>

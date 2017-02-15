@@ -18,7 +18,9 @@
         </h1>
       {% else %}
         <p>
-          <abbr title="{{ site.description }}">{{ site.name }}</abbr>
+          <a href="{{ site.baseurl }}">
+            <abbr title="{{ site.description }}">{{ site.name }}</abbr>
+          </a>
         </p>
       {% endif %}
     </header>
@@ -31,9 +33,9 @@
         {{ content }}
       </main>
     </div>
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
     {% if page.title == 'Colors' %}
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
       {% include colors.html %}
       {% include color-script.html %}
     {% endif %}
