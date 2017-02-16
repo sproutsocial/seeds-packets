@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { exec } from 'child_process';
 import gulp from 'gulp';
 import theo from 'theo';
 import rename from 'gulp-rename';
@@ -106,7 +107,11 @@ theo.registerFormat('ase', (json) => {
       name: upperFirst(prop.name),
       model: 'RGB',
       type: 'global',
-      color: [prop.value.red, prop.value.green, prop.value.blue]
+      color: [
+        prop.value.red,
+        prop.value.green,
+        prop.value.blue
+      ]
     };
   });
 
@@ -187,6 +192,13 @@ gulp.task('color-ase', () => {
     }));
 });
 
+gulp.task('color-clr', ['color-ase'], (cb) => {
+  const downloadDir = `${__dirname}/docs/downloads`;
+  exec(`${__dirname}/node_modules/ase-util/bin/ase2clr ${downloadDir}/seeds-color.ase ${downloadDir}/seeds-color.clr`, (err) => {
+    cb(err);
+  });
+});
+
 gulp.task('color-docs', () => {
   theo.plugins
     .file(colorTokensPath)
@@ -222,7 +234,8 @@ gulp.task('color', [
   'color-python',
   'color-docs',
   'color-sketch',
-  'color-ase'
+  'color-ase',
+  'color-clr'
 ]);
 
 gulp.task('docs', () => {
