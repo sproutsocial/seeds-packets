@@ -99,3 +99,7 @@ export const COLOR_GRAY_800 = '#364141';
 export const COLOR_GRAY_900 = '#273333';
 export const COLOR_BLACK = '#162020';
 export const COLOR_WHITE = '#fff';
+export const COLOR_BAMBU_400 = '#11a7aa';
+export const COLOR_BAMBU_500 = '#078078';
+export const COLOR_BAMBU_600 = '#0f6270';
+export const COLOR_BAMBU_700 = '#0a3f49';

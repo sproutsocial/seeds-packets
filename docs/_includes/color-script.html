@@ -14,6 +14,10 @@
     var $colorSelectedSwatch = $('#color-closest-selected');
     var $colorFoundSwatch = $('#color-closest-found');
 
+    var colorsWithoutBambu = _.filter(seedsColors, function(color) {
+      return color.category != 'bambu';
+    });
+
     function renderColors() {
       var categories = _.uniq(_.map(seedsColors, 'category'));
       var $table = $('table');
@@ -175,6 +179,8 @@
 
     $(nearestColorInputEl).on('input', function() {
       var val = this.value,
+          includeBambu = document.getElementById('color-include-bambu').checked,
+          colorsToCheck = includeBambu ? seedsColors : colorsWithoutBambu,
           lab,
           closestColor,
           distance;
@@ -185,9 +191,9 @@
 
       lab = hexToLab(val);
       closestColor = 0;
-      distance = cie1994(lab, hexToLab(seedsColors[0].value));
+      distance = cie1994(lab, hexToLab(colorsToCheck[0].value));
 
-      _.each(seedsColors, function(color, i) {
+      _.each(colorsToCheck, function(color, i) {
         var thisDistance = cie1994(lab, hexToLab(color.value));
         if (thisDistance < distance) {
           closestColor = i;
@@ -195,18 +201,18 @@
         }
       });
 
-      nearestColorNameEl.value = seedsColors[closestColor][nameType];
-      nearestColorValueEl.value = seedsColors[closestColor][valueType];
+      nearestColorNameEl.value = colorsToCheck[closestColor][nameType];
+      nearestColorValueEl.value = colorsToCheck[closestColor][valueType];
 
       $colorSelectedSwatch.css('background', String(this.value).slice(0,1) === '#' ? this.value : '#' + this.value);
-      $colorFoundSwatch.css('background', seedsColors[closestColor].value);
+      $colorFoundSwatch.css('background', colorsToCheck[closestColor].value);
     });
 
     $(nearestColorNameEl).add(nearestColorValueEl).on('focus', function() {
       this.select();
     });
 
-    $(nameInputEl).add(valueInputEl).on('change', function() {
+    $(nameInputEl).add(valueInputEl).add('#color-include-bambu').on('change', function() {
       $(nearestColorInputEl).trigger('input');
     });
     

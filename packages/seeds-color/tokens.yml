@@ -404,4 +404,20 @@ props:
     category: neutral
     type: color
     value: "#fff"
+  bambu 400:
+    category: bambu
+    type: color
+    value: "#11a7aa"
+  bambu 500:
+    category: bambu
+    type: color
+    value: "#078078"
+  bambu 600:
+    category: bambu
+    type: color
+    value: "#0f6270"
+  bambu 700:
+    category: bambu
+    type: color
+    value: "#0a3f49"
 ...
