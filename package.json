@@ -8,6 +8,7 @@
   },
   "author": "Sprout Social",
   "devDependencies": {
+    "ase-utils": "^0.1.1",
     "babel-core": "^6.22.1",
     "babel-preset-es2015": "^6.22.0",
     "change-case": "^3.0.1",
@@ -21,6 +22,7 @@
     "lerna": "2.0.0-beta.36",
     "lodash.camelcase": "^4.3.0",
     "lodash.snakecase": "^4.1.1",
+    "lodash.upperfirst": "^4.3.1",
     "pascal-case": "^2.0.0",
     "theo": "^5.0.0",
     "tinycolor2": "^1.4.1"

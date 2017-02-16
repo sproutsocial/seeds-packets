@@ -9,8 +9,10 @@ import child from 'child_process';
 import pascalCase from 'pascal-case';
 import camelCase from 'lodash.camelcase';
 import snakeCase from 'lodash.snakecase';
+import upperFirst from 'lodash.upperfirst';
 import tinycolor from 'tinycolor2';
 import globby from 'globby';
+import ase from 'ase-utils';
 
 const sassVar = (type, name) => {
   const nameArray = name.split(' ');
@@ -20,7 +22,7 @@ const sassVar = (type, name) => {
 const constantCase = (str) => snakeCase(str).toUpperCase();
 const javascriptConst = (type, name) => constantCase(`${type} ${name}`);
 
-const getCocoaRGB = (color) => {
+const getPercentageRGB = (color) => {
   const percentageRgb = tinycolor(color).toRgb();
   Object.keys(percentageRgb).forEach((value) => {
     const val = value !== 'a' ? percentageRgb[value] / 255 : percentageRgb[value];
@@ -92,6 +94,31 @@ theo.registerFormat('sketch.sketchpalette', (json) => {
   });
 });
 
+theo.registerFormat('ase', (json) => {
+  const props = json.propKeys.map((key) => {
+    const prop = json.props[key];
+
+    if (prop.type !== 'color') {
+      return;
+    }
+
+    return {
+      name: upperFirst(prop.name),
+      model: 'RGB',
+      type: 'global',
+      color: [prop.value.red, prop.value.green, prop.value.blue]
+    };
+  });
+
+  // Theo requires a string, which is why we're stringifying it here then unstringifying it below
+  return JSON.stringify({
+    version: '1.0',
+    // TODO: Try and make groups work…
+    groups: [],
+    colors: props
+  });
+});
+
 theo.registerValueTransform('color/hex/short',
   (prop) => prop.type === 'color',
   (prop) => prop.value.replace(/^#([0-9a-fA-F])\1([0-9a-fA-F])\2([0-9a-fA-F])\3$/, '#\$1\$2\$3')
@@ -100,15 +127,15 @@ theo.registerValueTransform('color/hex/short',
 theo.registerValueTransform('color/swift',
   (prop) => prop.type === 'color',
   (prop) => {
-    const { r, g, b, a } = getCocoaRGB(prop.value);
+    const { r, g, b, a } = getPercentageRGB(prop.value);
     return `return UIColor(red: ${r}, green: ${g}, blue: ${b}, alpha: ${a})`;
   }
 );
 
-theo.registerValueTransform('color/sketch',
+theo.registerValueTransform('color/app-palette',
   (prop) => prop.type === 'color',
   (prop) => {
-    const { r, g, b, a } = getCocoaRGB(prop.value);
+    const { r, g, b, a } = getPercentageRGB(prop.value);
     return {
       red: r,
       green: g,
@@ -126,8 +153,8 @@ theo.registerTransform('swift', [
   'color/swift'
 ]);
 
-theo.registerTransform('sketch', [
-  'color/sketch'
+theo.registerTransform('designapp', [
+  'color/app-palette'
 ]);
 
 const colorTokensPath = 'packages/seeds-color/tokens.yml';
@@ -147,7 +174,18 @@ gulp.task('color-js', getGulpColorTask('web', 'es2015.js'));
 gulp.task('color-swift', getGulpColorTask('swift', 'swift'));
 gulp.task('color-android', getGulpColorTask('android', 'android.xml'));
 gulp.task('color-python', getGulpColorTask('web', 'python.py'));
-gulp.task('color-sketch', getGulpColorTask('sketch', 'sketch.sketchpalette', 'docs/downloads'));
+gulp.task('color-sketch', getGulpColorTask('designapp', 'sketch.sketchpalette', 'docs/downloads'));
+
+gulp.task('color-ase', () => {
+  return gulp.src(colorTokensPath)
+    .pipe(theo.plugins.transform('designapp'))
+    .pipe(theo.plugins.format('ase'))
+    .pipe(theo.plugins.getResult((result) => {
+      const wstream = fs.createWriteStream('docs/downloads/seeds-color.ase');
+      wstream.write(ase.encode(JSON.parse(result)));
+      wstream.end();
+    }));
+});
 
 gulp.task('color-docs', () => {
   theo.plugins
@@ -162,7 +200,7 @@ gulp.task('color-docs', () => {
         return {
           category,
           value,
-          palette: prop.name.charAt(0).toUpperCase() + prop.name.slice(1),
+          palette: upperFirst(prop.name),
           sass: sassVar(prop.type, prop.name),
           javascript: javascriptConst(prop.type, prop.name),
           swift: `UIColor().${camelCase(prop.name)}()`,
@@ -183,7 +221,8 @@ gulp.task('color', [
   'color-android',
   'color-python',
   'color-docs',
-  'color-sketch'
+  'color-sketch',
+  'color-ase'
 ]);
 
 gulp.task('docs', () => {
