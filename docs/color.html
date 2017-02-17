@@ -1,30 +1,52 @@
 ---
-title: Colors
+title: Color
 layout: default
 
 # TODO: Make version dynamic with the data in _config.yml
 version: 0.1.0
 ---
 
-<h2>Downloads</h2>
-<ul>
-  <li>
-    <a href="{{ site.baseurl }}/downloads/seeds-color.sketchpalette" download>Sketch Palette</a> (Requires <a href="https://github.com/andrewfiorillo/sketch-palettes">Sketch Palettes Plugin</a>)
-  </li>
-  <li>
-    <a href="{{ site.baseurl }}/downloads/seeds-color.ase" download>Adobe Swatch Exchange</a>
-  </li>
-  <li>
-    <a href="{{ site.baseurl }}/downloads/" download>macOS System Palette</a>
-  </li>
-</ul>
+<div style="display: table-row;">
+  <div style="display: table-cell;">
+    <h2>App Downloads</h2>
+    <ul>
+      <li>
+        <a href="{{ site.baseurl }}/downloads/seeds-color.{{ page.version }}.sketchpalette" download>Sketch Palette</a> (Requires <a href="https://github.com/andrewfiorillo/sketch-palettes">Sketch Palettes Plugin</a>)
+      </li>
+      <li>
+        <a href="{{ site.baseurl }}/downloads/seeds-color.{{ page.version }}.ase" download>Adobe Swatch Exchange</a>
+      </li>
+      <li>
+        <a href="{{ site.baseurl }}/downloads/seeds-color.{{ page.version }}.clr" download>macOS System Palette</a>
+      </li>
+    </ul>
+  </div>
+  <div style="display: table-cell;">
+    <h2>Get the Code</h2>
+    <ul>
+      <li>
+        For SCSS or Javascript, <code>npm install @sproutsocial/seeds-color --save</code>
+      </li>
+      <li>
+        <a href="{{ site.baseurl }}/downloads/seeds_color.py" download>Python</a>
+      </li>
+      <li>
+        <a href="{{ site.baseurl }}/downloads/seeds_color.xml" download>Android XML</a>
+      </li>
+      <li>
+        <a href="{{ site.baseurl }}/downloads/UIColor+SeedsColor.swift" download>Swift</a>
+      </li>
+    </ul>
+  </div>
+</div>
 
 <hr>
 
+<h2>Find the Nearest Color</h2>
 <form>
   <div>
     <label>
-      Find Nearest Color
+      Color to Match
       <input id="color-closest" type="color" placeholder="#000 or #000000">
     </label>
   </div>
@@ -51,6 +73,7 @@ version: 0.1.0
 
 <hr>
 
+<h2>Complete Palette</h2>
 <table>
   <thead>
     <th scope="col">

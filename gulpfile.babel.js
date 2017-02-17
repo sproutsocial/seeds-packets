@@ -2,6 +2,7 @@ import fs from 'fs';
 import { exec } from 'child_process';
 import gulp from 'gulp';
 import theo from 'theo';
+import del from 'del';
 import rename from 'gulp-rename';
 import replace from 'gulp-replace';
 import gulpUtil from 'gulp-util';
@@ -15,6 +16,15 @@ import tinycolor from 'tinycolor2';
 import globby from 'globby';
 import ase from 'ase-utils';
 
+// Get all the package versions
+let packages = globby.sync(['./package.json', './packages/**/package.json']);
+let versions = {};
+packages.forEach((packageJsonPath) => {
+  const packageJson = require(packageJsonPath);
+  versions[packageJson.name] = packageJson.version;
+});
+
+// Naming things
 const sassVar = (type, name) => {
   const nameArray = name.split(' ');
   const varName = `$${pascalCase(type)}-${camelCase(nameArray[0])}`;
@@ -57,7 +67,7 @@ theo.registerFormat('swift', (json) => {
     return `static func ${camelCase(prop.name)}() -> UIColor {\n    ${prop.value}\n  }`;
   }).join('\n  ');
 
-  return `import Foundation\n\nextension UIColor {\n  ${props}\n}`;
+  return `// seeds-color\n// version ${versions['seeds-color']}\n\nimport Foundation\n\nextension UIColor {\n  ${props}\n}`;
 });
 
 theo.registerFormat('android.xml', (json) => {
@@ -70,12 +80,14 @@ theo.registerFormat('android.xml', (json) => {
   return `<?xml version="1.0" encoding="utf-8"?>\n<resources>\n  ${props}\n</resources>`;
 });
 
-theo.registerFormat('python.py', (json) => 
-  json.propKeys.map((key) => {
+theo.registerFormat('python.py', (json) => {
+  const props = json.propKeys.map((key) => {
     const prop = json.props[key];
     return `${camelCase(prop.name)} = '${prop.value}'`;
-  }).join('\n')
-);
+  }).join('\n');
+
+  return `# seeds-color\n# version ${versions['seeds-color']}\n\n${props}`;
+});
 
 theo.registerFormat('sketch.sketchpalette', (json) => {
   const props = json.propKeys.map((key) => {
@@ -164,29 +176,49 @@ theo.registerTransform('designapp', [
 
 const colorTokensPath = 'packages/seeds-color/tokens.yml';
 
-function getGulpColorTask(transform, format, dest = 'packages/seeds-color/dist') {
+gulp.task('clean', () => del.sync(['packages/**/dist', 'docs/downloads/*']));
+
+function getGulpColorTask(transform, format, opts = {}) {
+  opts = {
+    appendVersion: opts.appendVersion || false,
+    dest: opts.dest || 'packages/seeds-color/dist',
+    filename: opts.filename || 'seeds-color'
+  };
   return function() {
     gulp.src(colorTokensPath)
       .pipe(theo.plugins.transform(transform))
       .pipe(theo.plugins.format(format))
-      .pipe(rename({ basename: 'seeds-color' }))
-      .pipe(gulp.dest(dest));
+      .pipe(rename({ basename: `${opts.filename}${opts.appendVersion ? '.' + versions['seeds-color'] : ''}` }))
+      .pipe(gulp.dest(opts.dest));
   }
 }
 
+// TODO: Abstract the filename conventions
 gulp.task('color-scss', getGulpColorTask('web', 'scss'));
 gulp.task('color-js', getGulpColorTask('web', 'es2015.js'));
-gulp.task('color-swift', getGulpColorTask('swift', 'swift'));
-gulp.task('color-android', getGulpColorTask('android', 'android.xml'));
-gulp.task('color-python', getGulpColorTask('web', 'python.py'));
-gulp.task('color-sketch', getGulpColorTask('designapp', 'sketch.sketchpalette', 'docs/downloads'));
+gulp.task('color-swift', getGulpColorTask('swift', 'swift', {
+  filename: `UIColor+${pascalCase('seeds-color')}`,
+  dest: 'docs/downloads'
+}));
+gulp.task('color-android', getGulpColorTask('android', 'android.xml', {
+  filename: snakeCase('seeds-color'),
+  dest: 'docs/downloads'
+}));
+gulp.task('color-python', getGulpColorTask('web', 'python.py', {
+  filename: snakeCase('seeds-color'),
+  dest: 'docs/downloads'
+}));
+gulp.task('color-sketch', getGulpColorTask('designapp', 'sketch.sketchpalette', {
+  appendVersion: true,
+  dest: 'docs/downloads'
+}));
 
 gulp.task('color-ase', () => {
   return gulp.src(colorTokensPath)
     .pipe(theo.plugins.transform('designapp'))
     .pipe(theo.plugins.format('ase'))
     .pipe(theo.plugins.getResult((result) => {
-      const wstream = fs.createWriteStream('docs/downloads/seeds-color.ase');
+      const wstream = fs.createWriteStream(`docs/downloads/seeds-color.${versions['seeds-color']}.ase`);
       wstream.write(ase.encode(JSON.parse(result)));
       wstream.end();
     }));
@@ -194,7 +226,7 @@ gulp.task('color-ase', () => {
 
 gulp.task('color-clr', ['color-ase'], (cb) => {
   const downloadDir = `${__dirname}/docs/downloads`;
-  exec(`${__dirname}/node_modules/ase-util/bin/ase2clr ${downloadDir}/seeds-color.ase ${downloadDir}/seeds-color.clr`, (err) => {
+  exec(`${__dirname}/node_modules/ase-util/bin/ase2clr ${downloadDir}/seeds-color.${versions['seeds-color']}.ase ${downloadDir}/seeds-color.${versions['seeds-color']}.clr`, (err) => {
     cb(err);
   });
 });
@@ -239,18 +271,15 @@ gulp.task('color', [
 ]);
 
 gulp.task('docs', () => {
-  let packages = globby.sync(['./package.json', './packages/**/package.json']);
-  const versions = packages.map((packageJsonPath) => {
-    const packageJson = require(packageJsonPath);
-    return `${packageJson.name}: ${packageJson.version}`;
-  }).join('\n');
+  const versionsYaml = Object.keys(versions).map((pkg) => `${pkg}: ${versions[pkg]}`).join('\n');
 
   gulp.src('docs/_config.yml')
-    .pipe(replace(/(# #versions)[^]+(# \/versions)/gm, '\$1\n' + versions + '\n\$2'))
+    .pipe(replace(/(# #versions)[^]+(# \/versions)/gm, '\$1\n' + versionsYaml + '\n\$2'))
     .pipe(gulp.dest('docs'));
 });
 
 gulp.task('build', [
+  'clean',
   'color',
   'docs'
 ]);
