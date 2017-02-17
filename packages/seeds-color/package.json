@@ -1,0 +1,11 @@
+{
+  "name": "seeds-color",
+  "version": "0.1.0",
+  "description": "SEEDS Design System Color Palette",
+  "main": "dist/seeds-color.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sproutsocial/seeds.git"
+  },
+  "author": "Sprout Social"
+}

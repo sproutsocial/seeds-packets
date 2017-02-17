@@ -1,0 +1,129 @@
+---
+title: Color
+layout: default
+
+# TODO: Make version dynamic with the data in _config.yml
+version: 0.1.0
+---
+
+<div style="display: table-row;">
+  <div style="display: table-cell;">
+    <h2>App Downloads</h2>
+    <ul>
+      <li>
+        <a href="{{ site.baseurl }}/downloads/seeds-color.{{ page.version }}.sketchpalette" download>Sketch Palette</a> (Requires <a href="https://github.com/andrewfiorillo/sketch-palettes">Sketch Palettes Plugin</a>)
+      </li>
+      <li>
+        <a href="{{ site.baseurl }}/downloads/seeds-color.{{ page.version }}.ase" download>Adobe Swatch Exchange</a>
+      </li>
+      <li>
+        <a href="{{ site.baseurl }}/downloads/seeds-color.{{ page.version }}.clr" download>macOS System Palette</a>
+      </li>
+    </ul>
+  </div>
+  <div style="display: table-cell;">
+    <h2>Get the Code</h2>
+    <ul>
+      <li>
+        For SCSS or Javascript, <code>npm install @sproutsocial/seeds-color --save</code>
+      </li>
+      <li>
+        <a href="{{ site.baseurl }}/downloads/seeds_color.py" download>Python</a>
+      </li>
+      <li>
+        <a href="{{ site.baseurl }}/downloads/seeds_color.xml" download>Android XML</a>
+      </li>
+      <li>
+        <a href="{{ site.baseurl }}/downloads/UIColor+SeedsColor.swift" download>Swift</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<hr>
+
+<h2>Find the Nearest Color</h2>
+<form>
+  <div>
+    <label>
+      Color to Match
+      <input id="color-closest" type="color" placeholder="#000 or #000000">
+    </label>
+  </div>
+  <div>
+    <label>
+      <input type="checkbox" id="color-include-bambu" checked>
+      Include Bambu Brand Colors
+    </label>
+  </div>
+  <div>
+    <span style="display: inline-block; border: 1px solid #f3f4f4">
+      <span id="color-closest-selected" style="display: inline-block; width: 2em; height: 2em;" title="Your color"></span><span id="color-closest-found" style="display: inline-block; width: 2em; height: 2em;" title="Nearest Color"></span>
+    </span>
+    <label>
+      <span>Nearest Color Name</span>
+      <input id="color-closest-name" type="text">
+    </label>
+    <label>
+      <span>Nearest Color Value</span>
+      <input id="color-closest-value" type="text">
+    </label>
+  </div>
+</form>
+
+<hr>
+
+<h2>Complete Palette</h2>
+<table>
+  <thead>
+    <th scope="col">
+      Name
+      <select id="colors-name">
+        <option value="palette" selected>Palette</option>
+        <option value="sass">Sass</option>
+        <option value="javascript">Javascript</option>
+        <option value="swift">Swift</option>
+        <option value="android">Android XML</option>
+        <option value="python">Python</option>
+      </select>
+    </th>
+    <th scope="col">
+      Value
+      <select id="colors-value">
+        <option value="value" selected>Hex</option>
+        <option value="rgb">RGB()</option>
+      </select>
+    </th>
+  </thead>
+</table>
+
+<script id="colors" type="text/html">
+  <tbody>
+    <tr>
+      <th colspan="2" scope="col" style="text-align: left;">
+        <h3><%= category %></h3>
+      </th>
+    </tr>
+    <%= rows %>
+  </tbody>
+</script>
+
+<script id="colors-row" type="text/html">
+  <tr>
+    <th scope="row" style="text-align: left;">
+      <span data-lang="palette" style="display: block"><%= palette %></span>
+      <pre data-lang="sass" style="display: none"><%= sass %></pre>
+      <pre data-lang="javascript" style="display: none"><%= javascript %></pre>
+      <pre data-lang="swift" style="display: none"><%= swift %></pre>
+      <pre data-lang="android" style="display: none"><%= android %></pre>
+      <pre data-lang="python" style="display: none"><%= python %></pre>
+    </th>
+    <td>
+      <span style="display: inline-block; width: 2em; height: 2em; background: <%= value %>; border: 1px solid #f3f4f4"></span>
+      <span>
+        <pre data-value="value" style="display: inline-block"><%= value %></pre>
+        <pre data-value="rgb" style="display: none"><%= rgb %></pre>
+      </span>
+    </td>
+  </tr>
+</script>
