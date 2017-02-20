@@ -21,7 +21,7 @@ let packages = globby.sync(['./package.json', './packages/**/package.json']);
 let versions = {};
 packages.forEach((packageJsonPath) => {
   const packageJson = require(packageJsonPath);
-  versions[packageJson.name] = packageJson.version;
+  versions[packageJson.name.replace('@sproutsocial/', '')] = packageJson.version;
 });
 
 // Naming things

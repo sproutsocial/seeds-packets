@@ -1,5 +1,5 @@
 # seeds-color
-# version 0.1.0
+# version 0.1.1
 
 green100 = '#d7f4d7'
 green200 = '#bbedb6'
@@ -8,8 +8,8 @@ green400 = '#75dd66'
 green500 = '#59cb59'
 green600 = '#2bb656'
 green700 = '#0ca750'
-green800 = '#069143'
-green900 = '#017836'
+green800 = '#008b56'
+green900 = '#007549'
 teal100 = '#bdf4ea'
 teal200 = '#8aedde'
 teal300 = '#57e7d1'

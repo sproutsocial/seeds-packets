@@ -1,5 +1,5 @@
 // seeds-color
-// version 0.1.0
+// version 0.1.1
 
 import Foundation
 
@@ -26,10 +26,10 @@ extension UIColor {
     return UIColor(red: 0.047058823529411764, green: 0.6549019607843137, blue: 0.3137254901960784, alpha: 1)
   }
   static func green800() -> UIColor {
-    return UIColor(red: 0.023529411764705882, green: 0.5686274509803921, blue: 0.2627450980392157, alpha: 1)
+    return UIColor(red: 0, green: 0.5450980392156862, blue: 0.33725490196078434, alpha: 1)
   }
   static func green900() -> UIColor {
-    return UIColor(red: 0.00392156862745098, green: 0.47058823529411764, blue: 0.21176470588235294, alpha: 1)
+    return UIColor(red: 0, green: 0.4588235294117647, blue: 0.28627450980392155, alpha: 1)
   }
   static func teal100() -> UIColor {
     return UIColor(red: 0.7411764705882353, green: 0.9568627450980393, blue: 0.9176470588235294, alpha: 1)
