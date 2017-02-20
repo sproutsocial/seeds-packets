@@ -31,11 +31,11 @@ props:
   green 800:
     category: green
     type: color
-    value: "#069143"
+    value: "#008b56"
   green 900:
     category: green
     type: color
-    value: "#017836"
+    value: "#007549"
   teal 100:
     category: teal
     type: color
