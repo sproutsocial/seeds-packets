@@ -49,12 +49,14 @@ theo.registerFormat('scss', (json) =>
   }).join('\n')
 );
 
-theo.registerFormat('es2015.js', (json) => 
-  json.propKeys.map((key) => {
+theo.registerFormat('common.js', (json) => {
+  const props = json.propKeys.map((key) => {
     const prop = json.props[key];
-    return `export const ${javascriptConst(prop.type, prop.name)} = '${prop.value}';`;
-  }).join('\n')
-);
+    return `${javascriptConst(prop.type, prop.name)}: '${prop.value}'`;
+  }).join(',\n  ');
+
+  return `var seedsColor = {\n  ${props}\n};\n\n module.exports = seedsColor;`;
+});
 
 theo.registerFormat('swift', (json) => {
   const props = json.propKeys.map((key) => {
@@ -195,7 +197,7 @@ function getGulpColorTask(transform, format, opts = {}) {
 
 // TODO: Abstract the filename conventions
 gulp.task('color-scss', getGulpColorTask('web', 'scss'));
-gulp.task('color-js', getGulpColorTask('web', 'es2015.js'));
+gulp.task('color-js', getGulpColorTask('web', 'common.js'));
 gulp.task('color-swift', getGulpColorTask('swift', 'swift', {
   filename: `UIColor+${pascalCase('seeds-color')}`,
   dest: 'docs/downloads'
