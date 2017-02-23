@@ -411,7 +411,7 @@ props:
   bambuTeal 500:
     category: bambu
     type: color
-    value: "#078078"
+    value: "#078"
   bambuTeal 600:
     category: bambu
     type: color
