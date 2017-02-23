@@ -55,7 +55,7 @@ theo.registerFormat('common.js', (json) => {
     return `${javascriptConst(prop.type, prop.name)}: '${prop.value}'`;
   }).join(',\n  ');
 
-  return `var seedsColor = {\n  ${props}\n};\n\n module.exports = seedsColor;`;
+  return `'use strict';\n\nvar seedsColor = {\n  ${props}\n};\n\n module.exports = seedsColor;`;
 });
 
 theo.registerFormat('swift', (json) => {

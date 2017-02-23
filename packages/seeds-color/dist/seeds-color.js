@@ -1,3 +1,5 @@
+'use strict';
+
 var seedsColor = {
   COLOR_GREEN_100: '#d7f4d7',
   COLOR_GREEN_200: '#bbedb6',
@@ -100,10 +102,12 @@ var seedsColor = {
   COLOR_GRAY_900: '#273333',
   COLOR_BLACK: '#162020',
   COLOR_WHITE: '#fff',
-  COLOR_BAMBU_400: '#11a7aa',
-  COLOR_BAMBU_500: '#078078',
-  COLOR_BAMBU_600: '#0f6270',
-  COLOR_BAMBU_700: '#0a3f49'
+  COLOR_BAMBU_TEAL_400: '#11a7aa',
+  COLOR_BAMBU_TEAL_500: '#078078',
+  COLOR_BAMBU_TEAL_600: '#0f6270',
+  COLOR_BAMBU_TEAL_700: '#0a3f49',
+  COLOR_BAMBU_YELLOW_500: '#f9b450',
+  COLOR_BAMBU_YELLOW_600: '#ffa017'
 };
 
  module.exports = seedsColor;

@@ -307,16 +307,22 @@ extension UIColor {
   static func white() -> UIColor {
     return UIColor(red: 1, green: 1, blue: 1, alpha: 1)
   }
-  static func bambu400() -> UIColor {
+  static func bambuTeal400() -> UIColor {
     return UIColor(red: 0.06666666666666667, green: 0.6549019607843137, blue: 0.6666666666666666, alpha: 1)
   }
-  static func bambu500() -> UIColor {
+  static func bambuTeal500() -> UIColor {
     return UIColor(red: 0.027450980392156862, green: 0.5019607843137255, blue: 0.47058823529411764, alpha: 1)
   }
-  static func bambu600() -> UIColor {
+  static func bambuTeal600() -> UIColor {
     return UIColor(red: 0.058823529411764705, green: 0.3843137254901961, blue: 0.4392156862745098, alpha: 1)
   }
-  static func bambu700() -> UIColor {
+  static func bambuTeal700() -> UIColor {
     return UIColor(red: 0.0392156862745098, green: 0.24705882352941178, blue: 0.28627450980392155, alpha: 1)
+  }
+  static func bambuYellow500() -> UIColor {
+    return UIColor(red: 0.9764705882352941, green: 0.7058823529411765, blue: 0.3137254901960784, alpha: 1)
+  }
+  static func bambuYellow600() -> UIColor {
+    return UIColor(red: 1, green: 0.6274509803921569, blue: 0.09019607843137255, alpha: 1)
   }
 }
