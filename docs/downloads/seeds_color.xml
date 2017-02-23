@@ -102,7 +102,7 @@
   <color name="BLACK" category="neutral">#ff162020</color>
   <color name="WHITE" category="neutral">#ffffffff</color>
   <color name="BAMBU_TEAL_400" category="bambu">#ff11a7aa</color>
-  <color name="BAMBU_TEAL_500" category="bambu">#ff078078</color>
+  <color name="BAMBU_TEAL_500" category="bambu">#ff007788</color>
   <color name="BAMBU_TEAL_600" category="bambu">#ff0f6270</color>
   <color name="BAMBU_TEAL_700" category="bambu">#ff0a3f49</color>
   <color name="BAMBU_YELLOW_500" category="bambu">#fff9b450</color>

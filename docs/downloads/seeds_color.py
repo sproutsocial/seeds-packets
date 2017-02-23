@@ -1,5 +1,5 @@
 # seeds-color
-# version 0.2.0
+# version 0.2.1
 
 green100 = '#d7f4d7'
 green200 = '#bbedb6'
@@ -103,7 +103,7 @@ gray900 = '#273333'
 black = '#162020'
 white = '#fff'
 bambuTeal400 = '#11a7aa'
-bambuTeal500 = '#078078'
+bambuTeal500 = '#078'
 bambuTeal600 = '#0f6270'
 bambuTeal700 = '#0a3f49'
 bambuYellow500 = '#f9b450'

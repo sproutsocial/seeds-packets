@@ -273,7 +273,7 @@ gulp.task('color', [
 ]);
 
 gulp.task('docs', () => {
-  const versionsYaml = Object.keys(versions).map((pkg) => `${pkg}: ${versions[pkg]}`).join('\n');
+  const versionsYaml = Object.keys(versions).map((pkg) => `  ${pkg}: ${versions[pkg]}`).join('\n');
 
   gulp.src('docs/_config.yml')
     .pipe(replace(/(# #versions)[^]+(# \/versions)/gm, '\$1\n' + versionsYaml + '\n\$2'))

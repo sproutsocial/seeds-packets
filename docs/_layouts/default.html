@@ -28,7 +28,7 @@
       {% include navigation.html %}
       <main role="main">
         {% unless page.title == 'Home' %}
-          <h1>{{ page.title }} <small>{{ page.version }}</small></h1>
+          <h1>{{ page.title }} <small>{{ site.versions[page.package] }}</small></h1>
         {% endunless %}
         {{ content }}
       </main>
