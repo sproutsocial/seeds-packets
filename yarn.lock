@@ -1008,6 +1008,13 @@ graceful-fs@~1.2.0:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-1.2.3.tgz#15a4806a57547cb2d2dbf27f42e89a8c3451b364"
 
+gulp-insert@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/gulp-insert/-/gulp-insert-0.5.0.tgz#32313f13e4a23cf5acca5ce5f0c080923c778602"
+  dependencies:
+    readable-stream "^1.0.26-4"
+    streamqueue "0.0.6"
+
 gulp-open@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/gulp-open/-/gulp-open-2.0.0.tgz#a16f67e95cea8b2061b63a3b8c389bc559b8e1ce"
@@ -1923,6 +1930,15 @@ read-pkg@^1.0.0:
     isarray "0.0.1"
     string_decoder "~0.10.x"
 
+readable-stream@^1.0.26-2, readable-stream@^1.0.26-4, readable-stream@~1.1.9:
+  version "1.1.14"
+  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-1.1.14.tgz#7cf4c54ef648e3813084c636dd2079e166c081d9"
+  dependencies:
+    core-util-is "~1.0.0"
+    inherits "~2.0.1"
+    isarray "0.0.1"
+    string_decoder "~0.10.x"
+
 readable-stream@^2.0.1, readable-stream@^2.0.2, readable-stream@^2.1.5:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.2.3.tgz#9cf49463985df016c8ae8813097a9293a9b33729"
@@ -1934,15 +1950,6 @@ readable-stream@^2.0.1, readable-stream@^2.0.2, readable-stream@^2.1.5:
     process-nextick-args "~1.0.6"
     string_decoder "~0.10.x"
     util-deprecate "~1.0.1"
-
-readable-stream@~1.1.9:
-  version "1.1.14"
-  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-1.1.14.tgz#7cf4c54ef648e3813084c636dd2079e166c081d9"
-  dependencies:
-    core-util-is "~1.0.0"
-    inherits "~2.0.1"
-    isarray "0.0.1"
-    string_decoder "~0.10.x"
 
 rechoir@^0.6.2:
   version "0.6.2"
@@ -2140,6 +2147,12 @@ sprintf-js@~1.0.2:
 stream-consume@~0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/stream-consume/-/stream-consume-0.1.0.tgz#a41ead1a6d6081ceb79f65b061901b6d8f3d1d0f"
+
+streamqueue@0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/streamqueue/-/streamqueue-0.0.6.tgz#66f5f5ec94e9b8af249e4aec2dd1f741bfe94de3"
+  dependencies:
+    readable-stream "^1.0.26-2"
 
 string-width@^1.0.1:
   version "1.0.2"

@@ -1,6 +1,6 @@
 'use strict';
 
-var seedsColor = {
+module.exports = {
   COLOR_GREEN_100: '#d7f4d7',
   COLOR_GREEN_200: '#bbedb6',
   COLOR_GREEN_300: '#98e58e',
@@ -109,5 +109,3 @@ var seedsColor = {
   COLOR_BAMBU_YELLOW_500: '#f9b450',
   COLOR_BAMBU_YELLOW_600: '#ffa017'
 };
-
- module.exports = seedsColor;
