@@ -1,0 +1,76 @@
+# Values 
+---
+props:
+  family:
+    category: font
+    type: font
+    value: "'Proxima Nova', 'proxima-nova', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif"
+  size 100:
+    category: font size
+    type: size
+    value: 11px
+    meta:
+      line height: 18.697px
+  size 200:
+    category: font size
+    type: size
+    value: 13px
+    meta:
+      line height: 21.333px
+  size 300:
+    category: font size
+    type: size
+    value: 16px
+    meta:
+      line height: 24px
+  size 400:
+    category: font size
+    type: size
+    value: 18px
+    meta:
+      line height: 26.667px
+  size 500:
+    category: font size
+    type: size
+    value: 21px
+    meta:
+      line height: 29.333px
+  size 600:
+    category: font size
+    type: size
+    value: 24px
+    meta:
+      line height: 32px
+  size 700:
+    category: font size
+    type: size
+    value: 32px
+    meta:
+      line height: 40px
+  size 800:
+    category: font size
+    type: size
+    value: 43px
+    meta:
+      line height: 50.667px
+  size 900:
+    category: font size
+    type: size
+    value: 57px
+    meta:
+      line height: 64px
+  size 1000:
+    category: font size
+    type: size
+    value: 76px
+    meta:
+      line height: 80px
+  weight regular:
+    category: font weight
+    type: number
+    value: 400
+  weight bold:
+    category: font weight
+    type: number
+    value: 600
+...

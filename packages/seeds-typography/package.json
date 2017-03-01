@@ -1,0 +1,11 @@
+{
+  "name": "@sproutsocial/seeds-typography",
+  "version": "0.1.0",
+  "description": "SEEDS Design System Typography Styles",
+  "main": "dist/seeds-typography.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sproutsocial/seeds.git"
+  },
+  "author": "Sprout Social"
+}
