@@ -1,12 +1,19 @@
 import { exec } from 'child_process';
 import gulp from 'gulp';
+import del from 'del';
 
 import color from './tasks/color';
 import docs from './tasks/docs';
+import typography from './tasks/typography';
+
+import theoTransforms from './theo/index';
+
+gulp.task('clean', () => del.sync(['packages/**/dist', 'docs/downloads/*']));
 
 gulp.task('build', [
   'clean',
   'color',
+  'typography',
   'docs'
 ]);
 

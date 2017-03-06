@@ -1,0 +1,62 @@
+$Typography-family: 'Proxima Nova', 'proxima-nova', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+$Typography-size--100: 11px;
+$Typography-size--200: 13px;
+$Typography-size--300: 16px;
+$Typography-size--400: 18px;
+$Typography-size--500: 21px;
+$Typography-size--600: 24px;
+$Typography-size--700: 32px;
+$Typography-size--800: 43px;
+$Typography-size--900: 57px;
+$Typography-size--1000: 76px;
+$Typography-weight--regular: 400;
+$Typography-weight--bold: 600;
+
+// Default is for marketing dev, which uses rems
+$Typography-size--base: $Typography-size--400 !default
+
+@function px-to-rem($size) {
+  $remSize: $size / $Typography-size--base;
+  @return #{$remSize}rem;
+}
+
+@mixin Typography-size--factory($font-size, $line-height, $unit) {
+  @if $unit == 'rem' {
+    font-size: px-to-rem($font-size);
+  }
+  @else {
+    font-size: $font-size;
+  }
+  line-height: $line-height;
+}
+
+@mixin Typography-size--100($unit: px) {
+  @include Typography-size--factory($Typography-size--100, 1.696969696969697, $unit);
+}
+@mixin Typography-size--200($unit: px) {
+  @include Typography-size--factory($Typography-size--200, 1.641025641025641, $unit);
+}
+@mixin Typography-size--300($unit: px) {
+  @include Typography-size--factory($Typography-size--300, 1.5, $unit);
+}
+@mixin Typography-size--400($unit: px) {
+  @include Typography-size--factory($Typography-size--400, 1.4814814814814816, $unit);
+}
+@mixin Typography-size--500($unit: px) {
+  @include Typography-size--factory($Typography-size--500, 1.3968253968253967, $unit);
+}
+@mixin Typography-size--600($unit: px) {
+  @include Typography-size--factory($Typography-size--600, 1.3333333333333333, $unit);
+}
+@mixin Typography-size--700($unit: px) {
+  @include Typography-size--factory($Typography-size--700, 1.25, $unit);
+}
+@mixin Typography-size--800($unit: px) {
+  @include Typography-size--factory($Typography-size--800, 1.1782945736434107, $unit);
+}
+@mixin Typography-size--900($unit: px) {
+  @include Typography-size--factory($Typography-size--900, 1.1228070175438596, $unit);
+}
+@mixin Typography-size--1000($unit: px) {
+  @include Typography-size--factory($Typography-size--1000, 1.0526315789473684, $unit);
+}
