@@ -1,20 +1,60 @@
 import theo from 'theo';
+import mround from 'mround';
+
+function getLineHeight(prop) {
+  const {
+    gridSize,
+    lineHeightBase,
+    value,
+    name
+  } = prop;
+
+  const multiplier = (parseInt(name.replace('size', ''), 10) / 100) - 3;
+
+  // Get the proportional line height based on the multiplier and the grid size
+  const proportionalLineHeight = (((1 - lineHeightBase) / gridSize) * multiplier) + lineHeightBase;
+
+  // Get the pixel height of three lines of text at the proportional line height,
+  // snapped to the grid size
+  const pixelHeightOfThreeLines = mround(((proportionalLineHeight * value) * 3), gridSize);
+
+  return (pixelHeightOfThreeLines / 3) / value;
+}
 
 theo.registerValueTransform('color/hex/short',
   (prop) => prop.type === 'color',
   (prop) => prop.value.replace(/^#([0-9a-fA-F])\1([0-9a-fA-F])\2([0-9a-fA-F])\3$/, '#\$1\$2\$3')
 );
 
-theo.registerValueTransform('font/px',
+theo.registerValueTransform('font/scss',
   (prop) => prop.type === 'font size',
-  (prop) => parseFloat(prop.value) + 'px'
+  (prop) => {
+    return {
+      variable: prop.value,
+      mixin: {
+        'font-size': `Typography-getunit(${prop.value}px)`,
+        'line-height': getLineHeight(prop)
+      }
+    }
+  }
+);
+
+theo.registerValueTransform('font/js',
+  (prop) => prop.type === 'font size',
+  (prop) => {
+    return {
+      fontSize: prop.value,
+      lineHeight: getLineHeight(prop)
+    };
+  }
 );
 
 theo.registerTransform('web', [
   'color/hex/short',
-  'font/px'
+  'font/scss'
 ]);
 
 theo.registerTransform('js', [
-  'color/hex/short'
+  'color/hex/short',
+  'font/js'
 ]);

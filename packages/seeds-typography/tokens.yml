@@ -4,52 +4,52 @@
 global:
   package: typography
   lineHeightBase: 1.5
-  gridSize: 8px
+  gridSize: 8
 props:
   family:
     category: font family
     type: font family
-    value: "'Proxima Nova', 'proxima-nova', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif"
+    value: '"Proxima Nova", proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif'
   size 100:
     category: font size
     type: font size
-    value: 11px
+    value: 11
   size 200:
     category: font size
     type: font size
-    value: 13px
+    value: 13
   size 300:
     category: font size
     type: font size
-    value: 16px
+    value: 16
   size 400:
     category: font size
     type: font size
-    value: 18px
+    value: 18
   size 500:
     category: font size
     type: font size
-    value: 21px
+    value: 21
   size 600:
     category: font size
     type: font size
-    value: 24px
+    value: 24
   size 700:
     category: font size
     type: font size
-    value: 32px
+    value: 32
   size 800:
     category: font size
     type: font size
-    value: 43px
+    value: 43
   size 900:
     category: font size
     type: font size
-    value: 57px
+    value: 57
   size 1000:
     category: font size
     type: font size
-    value: 76px
+    value: 76
   weight regular:
     category: font weight
     type: font weight

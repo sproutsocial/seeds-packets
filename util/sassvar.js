@@ -10,3 +10,7 @@ function suitCssName(type, name) {
 const sassVar = (type, name) => '$' + suitCssName(type, name);
 
 export default sassVar;
+export {
+  sassVar,
+  suitCssName
+};

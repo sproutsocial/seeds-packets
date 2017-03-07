@@ -17,7 +17,8 @@ function getGulpTask(pkg, transform, format, opts = {}) {
     appendVersion: opts.appendVersion || false,
     dest: opts.dest || `packages/${pkg}/dist`,
     filename: opts.filename || pkg,
-    prependFile: opts.prependFile || ''
+    prependFile: opts.prependFile || '',
+    appendFile: opts.appendFile || ''
   };
   return function() {
     gulp.src(`packages/${pkg}/tokens.yml`)
@@ -29,6 +30,7 @@ function getGulpTask(pkg, transform, format, opts = {}) {
         suffix: opts.appendVersion ? '.' + versions[pkg] : ''
       }))
       .pipe(insert.prepend(opts.prependFile ? opts.prependFile + '\n\n' : ''))
+      .pipe(insert.append(opts.appendFile ? '\n\n' + opts.appendFile : ''))
       .pipe(gulp.dest(opts.dest));
   }
 }
