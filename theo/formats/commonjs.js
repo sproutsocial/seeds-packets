@@ -5,7 +5,8 @@ import { javascriptConst } from '../../util/constantcase';
 function getValue(val) {
   switch (typeof val) {
     case 'object':
-      return JSON.stringify(val, null, 2).replace(/\n/g, '\n  ');
+      const rules = Object.keys(val).map((key) =>`${key}: ${getValue(val[key])}`).join(',\n    ');
+      return `{\n    ${rules}\n  }`;
     case 'string':
       return `'${val}'`;
     default:
@@ -16,7 +17,6 @@ function getValue(val) {
 theo.registerFormat('common.js', (json) => {
   const props = json.propKeys.map((key) => {
     const prop = json.props[key];
-    // Quote if the value is not a number or an object
     return `${javascriptConst(prop.package, prop.name)}: ${getValue(prop.value)}`;
   }).join(',\n  ');
 
