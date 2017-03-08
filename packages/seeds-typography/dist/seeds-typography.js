@@ -3,44 +3,44 @@
 module.exports = {
   TYPOGRAPHY_FAMILY: '"Proxima Nova", proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif',
   TYPOGRAPHY_SIZE_100: {
-    fontSize: 11,
-    lineHeight: 1.696969696969697
+    fontSize: '11px',
+    lineHeight: '18.666666666666668px'
   },
   TYPOGRAPHY_SIZE_200: {
-    fontSize: 13,
-    lineHeight: 1.641025641025641
+    fontSize: '13px',
+    lineHeight: '21.333333333333332px'
   },
   TYPOGRAPHY_SIZE_300: {
-    fontSize: 16,
-    lineHeight: 1.5
+    fontSize: '16px',
+    lineHeight: '24px'
   },
   TYPOGRAPHY_SIZE_400: {
-    fontSize: 18,
-    lineHeight: 1.4814814814814816
+    fontSize: '18px',
+    lineHeight: '26.666666666666668px'
   },
   TYPOGRAPHY_SIZE_500: {
-    fontSize: 21,
-    lineHeight: 1.3968253968253967
+    fontSize: '21px',
+    lineHeight: '29.333333333333332px'
   },
   TYPOGRAPHY_SIZE_600: {
-    fontSize: 24,
-    lineHeight: 1.3333333333333333
+    fontSize: '24px',
+    lineHeight: '32px'
   },
   TYPOGRAPHY_SIZE_700: {
-    fontSize: 32,
-    lineHeight: 1.25
+    fontSize: '32px',
+    lineHeight: '40px'
   },
   TYPOGRAPHY_SIZE_800: {
-    fontSize: 43,
-    lineHeight: 1.1782945736434107
+    fontSize: '43px',
+    lineHeight: '50.666666666666664px'
   },
   TYPOGRAPHY_SIZE_900: {
-    fontSize: 57,
-    lineHeight: 1.1228070175438596
+    fontSize: '57px',
+    lineHeight: '64px'
   },
   TYPOGRAPHY_SIZE_1000: {
-    fontSize: 76,
-    lineHeight: 1.0526315789473684
+    fontSize: '76px',
+    lineHeight: '80px'
   },
   TYPOGRAPHY_WEIGHT_REGULAR: 400,
   TYPOGRAPHY_WEIGHT_BOLD: 600

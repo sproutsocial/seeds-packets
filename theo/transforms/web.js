@@ -18,7 +18,7 @@ function getLineHeight(prop) {
   // snapped to the grid size
   const pixelHeightOfThreeLines = mround(((proportionalLineHeight * value) * 3), gridSize);
 
-  return (pixelHeightOfThreeLines / 3) / value;
+  return pixelHeightOfThreeLines / 3;
 }
 
 theo.registerValueTransform('color/hex/short',
@@ -30,10 +30,10 @@ theo.registerValueTransform('font/scss',
   (prop) => prop.type === 'font size',
   (prop) => {
     return {
-      variable: prop.value,
+      variable: `${prop.value}px`,
       mixin: {
         'font-size': `Typography-getunit(${prop.value}px)`,
-        'line-height': getLineHeight(prop)
+        'line-height': getLineHeight(prop) / prop.value
       }
     }
   }
@@ -43,8 +43,8 @@ theo.registerValueTransform('font/js',
   (prop) => prop.type === 'font size',
   (prop) => {
     return {
-      fontSize: prop.value,
-      lineHeight: getLineHeight(prop)
+      fontSize: `${prop.value}px`,
+      lineHeight: `${getLineHeight(prop)}px`
     };
   }
 );

@@ -11,7 +11,7 @@ const typographyTokensPath = 'packages/seeds-typography/tokens.yml';
 const typographyFunction = `$Typography-unit: px !default;
 $Typography-size--base: $Typography-size--400 !default;
 @function Typography-getunit($size) {
-  @if $Typography-unit === "rem" {
+  @if $Typography-unit == "rem" {
     $remSize: $size / $Typography-size--base;
     @return #{$remSize}rem;
   }
