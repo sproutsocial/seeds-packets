@@ -5,6 +5,7 @@ global:
   package: typography
   lineHeightBase: 1.5
   gridSize: 8
+  appFontFamily: 'ProximaNova-Regular'
 props:
   family:
     category: font family

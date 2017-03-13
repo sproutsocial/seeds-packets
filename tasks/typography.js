@@ -27,6 +27,10 @@ function getGulpTypographyTask(transform, format, opts = {}) {
 
 gulp.task('typography-scss', getGulpTypographyTask('web', 'scss', { appendFile: typographyFunction }));
 gulp.task('typography-js', getGulpTypographyTask('js', 'common.js'));
+gulp.task('typography-sketch', getGulpTypographyTask('sketch', 'sketchtext.json', {
+  dest: 'docs/downloads',
+  appendVersion: true
+}));
 
 gulp.task('typography', [
   'typography-scss',

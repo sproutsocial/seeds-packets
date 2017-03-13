@@ -4,6 +4,7 @@ import androidxmlFormat from './formats/androidxml';
 import swiftFormat from './formats/swift';
 import pythonpyFormat from './formats/pythonpy';
 import sketchPaletteFormat from './formats/sketchpalette';
+import sketchTextFormat from './formats/sketchtextjson';
 import aseFormat from './formats/ase';
 import webTransform from './transforms/web';
 import swiftTransform from './transforms/swift';

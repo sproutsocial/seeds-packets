@@ -37,7 +37,7 @@ gulp.task('color-python', getGulpColorTask('web', 'python.py', {
   dest: 'docs/downloads',
   prependFile: `# seeds-color\n# version ${versions['seeds-color']}`
 }));
-gulp.task('color-sketch', getGulpColorTask('designapp', 'sketch.sketchpalette', {
+gulp.task('color-sketch', getGulpColorTask('sketch', 'sketch.sketchpalette', {
   appendVersion: true,
   dest: 'docs/downloads'
 }));
