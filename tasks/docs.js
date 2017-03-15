@@ -1,9 +1,19 @@
 import fs from 'fs';
 import gulp from 'gulp';
+import globby from 'globby';
 import replace from 'gulp-replace';
+import sass from 'gulp-sass';
 import versions from '../util/versions';
 
-gulp.task('docs', (cb) => {
+gulp.task('docs-css', ['typography'], () =>
+  gulp.src('docs/_sass/styles.scss')
+    .pipe(sass({
+      includePaths: globby.sync(process.cwd() + '/packages/seeds-*/dist/')
+    }).on('error', sass.logError))
+    .pipe(gulp.dest('docs/css'))
+);
+
+gulp.task('docs', ['docs-css'], (cb) => {
   const versionsYaml = Object.keys(versions).map((pkg) => `  ${pkg}: ${versions[pkg]}`).join('\n');
 
   gulp.src('docs/_config.yml')

@@ -1,6 +1,8 @@
-import { exec } from 'child_process';
+import { spawn } from 'child_process';
 import gulp from 'gulp';
 import del from 'del';
+import open from 'gulp-open';
+import gulpUtil from 'gulp-util';
 
 import color from './tasks/color';
 import docs from './tasks/docs';
@@ -8,17 +10,19 @@ import typography from './tasks/typography';
 
 import theoTransforms from './theo/index';
 
-gulp.task('clean', () => del.sync(['packages/**/dist', 'docs/downloads/*']));
+gulp.task('clean', () => del.sync([
+  'docs/downloads/*',
+  'docs/css'
+]));
 
 gulp.task('build', [
   'clean',
   'color',
-  'typography',
-  'docs'
+  'typography'
 ]);
 
-gulp.task('serve', ['build'], () => {
-  const jekyll = child.spawn('jekyll', ['serve', '--watch'], { cwd: './docs' });
+gulp.task('serve', ['build', 'docs'], () => {
+  const jekyll = spawn('jekyll', ['serve', '--watch'], { cwd: './docs' });
   const jekyllLogger = (buffer) => {
     buffer.toString()
       .split(/\n/)
@@ -35,5 +39,6 @@ gulp.task('serve', ['build'], () => {
 });
 
 gulp.task('default', [
-  'build'
+  'build',
+  'docs'
 ]);

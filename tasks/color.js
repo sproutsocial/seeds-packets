@@ -93,8 +93,8 @@ gulp.task('color', [
   'color-swift',
   'color-android',
   'color-python',
-  'color-docs',
   'color-sketch',
   'color-ase',
-  'color-clr'
+  'color-clr',
+  'color-docs'
 ]);

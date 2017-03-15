@@ -8,10 +8,10 @@ theo.registerFormat('scss', (json) =>
 
     if (typeof prop.value === 'object') {
       let result;
-      if (prop.value.variable) {
-        result = `${sassVar(prop.package, prop.name)}: ${prop.value.variable};`;
+      if (prop.value.value) {
+        result = `${sassVar(prop.package, prop.name)}: ${prop.value.value};`;
       };
-      const rules = Object.keys(prop.value.mixin).map((rule) => `  ${rule}: ${prop.value.mixin[rule]};`).join('\n');
+      const rules = Object.keys(prop.value.rules).map((rule) => `  ${rule}: ${prop.value.rules[rule]};`).join('\n');
       return result + `\n@mixin ${suitCssName(prop.package, prop.name)} {\n${rules}\n}`;
     }
 

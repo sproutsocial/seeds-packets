@@ -10,8 +10,8 @@ theo.registerValueTransform('font/scss',
   (prop) => prop.type === 'font size',
   (prop) => {
     return {
-      variable: `${prop.value}px`,
-      mixin: {
+      value: `${prop.value}px`,
+      rules: {
         'font-size': `Typography-getunit(${prop.value}px)`,
         'line-height': getLineHeight(prop) / prop.value
       }
