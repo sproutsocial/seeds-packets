@@ -51,7 +51,8 @@ h4,
 h5,
 h6,
 strong,
-th {
+th,
+dt {
   font-weight: 600; }
 
 a {

@@ -11,6 +11,7 @@ import typography from './tasks/typography';
 import theoTransforms from './theo/index';
 
 gulp.task('clean', () => del.sync([
+  'packages/seeds-*/dist',
   'docs/downloads/*',
   'docs/css'
 ]));

@@ -39,10 +39,10 @@ package: seeds-typography
       <dt>Sass</dt>
       <dd><code>font-family: $Typography-family;</code></dd>
       <dt>Javascript</dt>
-      <dd><code>{ style: { fontFamily: TYPOGRAPHY_FAMILY } }<</code>/dd>
+      <dd><code>{ style: { fontFamily: TYPOGRAPHY_FAMILY } }</code></dd>
     </dl>
   </li>
-  <li>Only two weights are permitted.
+  <li>Only two weights are permitted: regular and <strong>semibold</strong>, which is called <code>bold</code> for simpler naming
     <dl>
       <dt>Sass</dt>
       <dd>
@@ -67,7 +67,7 @@ package: seeds-typography
   <li>
     You can use <code>rem</code>s if you want to by setting <code>$Typography-unit: rem;</code> in your Sass
     file. Use the <code>$Typography-size--base</code> variable to set the base size used to calculate the
-    <code>rem</code> value;
+    <code>rem</code> value.
   </li>
 </ul>
 
