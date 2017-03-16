@@ -6,7 +6,7 @@ package: seeds-color
 
 <div style="display: table-row;">
   <div style="display: table-cell;">
-    <h2>App Downloads</h2>
+    <h2 class="Typography-size--700">App Downloads</h2>
     <ul>
       <li>
         <a href="{{ site.baseurl }}/downloads/seeds-color.{{ site.versions.seeds-color }}.sketchpalette" download>Sketch Palette</a> (Requires <a href="https://github.com/andrewfiorillo/sketch-palettes">Sketch Palettes Plugin</a>)
@@ -20,7 +20,7 @@ package: seeds-color
     </ul>
   </div>
   <div style="display: table-cell;">
-    <h2>Get the Code</h2>
+    <h2 class="Typography-size--700">Get the Code</h2>
     <ul>
       <li>
         For SCSS or Javascript, <code>npm install @sproutsocial/seeds-color --save</code>
@@ -40,7 +40,7 @@ package: seeds-color
 
 <hr>
 
-<h2>Find the Nearest Color</h2>
+<h2 class="Typography-size--700">Find the Nearest Color</h2>
 <form>
   <div>
     <label>
@@ -71,7 +71,7 @@ package: seeds-color
 
 <hr>
 
-<h2>Complete Palette</h2>
+<h2 class="Typography-size--700">Complete Palette</h2>
 <table>
   <thead>
     <th scope="col">
@@ -125,3 +125,6 @@ package: seeds-color
     </td>
   </tr>
 </script>
+
+{% include colors.html %}
+{% include color-script.html %}

@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <script src="https://use.typekit.net/jjt0nel.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,11 +11,14 @@
     <meta name="description" content="{{ site.description }}">
     <meta name="author" content="Sprout Social" />
     <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
   </head>
   <body>
     <header>
       {% if page.title == 'Home' %}
-        <h1>
+        <h1 class="Typography-size--1000">
           <abbr title="{{ site.description }}">{{ site.name }}/</abbr>
         </h1>
       {% else %}
@@ -28,16 +33,10 @@
       {% include navigation.html %}
       <main role="main">
         {% unless page.title == 'Home' %}
-          <h1>{{ page.title }} <small>{{ site.versions[page.package] }}</small></h1>
+          <h1 class="Typography-size--1000">{{ page.title }} <small>{{ site.versions[page.package] }}</small></h1>
         {% endunless %}
         {{ content }}
       </main>
     </div>
-    {% if page.title == 'Color' %}
-      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
-      {% include colors.html %}
-      {% include color-script.html %}
-    {% endif %}
   </body>
 </html>
