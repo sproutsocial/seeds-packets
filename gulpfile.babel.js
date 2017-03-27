@@ -19,6 +19,7 @@ gulp.task('clean', () => del.sync([
 gulp.task('build', [
   'clean',
   'color',
+  'networkcolor',
   'typography'
 ]);
 

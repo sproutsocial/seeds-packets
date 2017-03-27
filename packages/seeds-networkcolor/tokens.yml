@@ -1,0 +1,54 @@
+---
+global:
+  type: color
+  package: network color
+props:
+  twitter:
+    value: "#1da1f2"
+    category: twitter
+  twitter dark:  
+    value: "#278ac1"
+    category: twitter
+  facebook:
+    value: "#3b5998"
+    category: facebook
+  facebook dark:  
+    value: "#304879"
+    category: facebook
+  linkedin:
+    value: "#0077b5"
+    category: linkedin
+  linkedin dark:  
+    value: "#005e93"
+    category: linkedin
+  googleplus:
+    value: "#db4437"
+    category: googleplus
+  googleplus dark:  
+    value: "#bc3e2a"
+    category: googleplus
+  instagram:
+    value: "#e4405f"
+    category: instagram
+  instagram dark:  
+    value: "#dd143a"
+    category: instagram
+  feedly:
+    value: "#2bb24c"
+    category: feedly
+  feedly dark:  
+    value: "#1d9236"
+    category: feedly
+  analytics:
+    value: "#ef6c00"
+    category: analytics
+  analytics dark:  
+    value: "#e65100"
+    category: analytics
+  messenger:
+    value: "#0084ff"
+    category: other
+  klout:
+    value: "#E44600"
+    category: other
+...
