@@ -1,5 +1,5 @@
 # seeds-networkcolor
-# version 0.0.0
+# version 0.1.0
 
 twitter = '#1da1f2'
 twitterDark = '#278ac1'
