@@ -45,10 +45,22 @@ props:
   analytics dark:  
     value: "#e65100"
     category: analytics
+  youtube:
+    value: "#e52d27"
+    category: youtube
+  youtube dark:
+    value: "#b31217"
+    category: youtube
   messenger:
     value: "#0084ff"
     category: other
   klout:
     value: "#E44600"
+    category: other
+  snapchat:
+    value: "#fffc00"
+    category: other
+  pinterest:
+    value: "#bd081c"
     category: other
 ...
