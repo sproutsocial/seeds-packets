@@ -1,5 +1,5 @@
 # seeds-networkcolor
-# version 0.1.0
+# version 0.2.0
 
 twitter = '#1da1f2'
 twitterDark = '#278ac1'
@@ -15,5 +15,9 @@ feedly = '#2bb24c'
 feedlyDark = '#1d9236'
 analytics = '#ef6c00'
 analyticsDark = '#e65100'
+youtube = '#e52d27'
+youtubeDark = '#b31217'
 messenger = '#0084ff'
 klout = '#E44600'
+snapchat = '#fffc00'
+pinterest = '#bd081c'

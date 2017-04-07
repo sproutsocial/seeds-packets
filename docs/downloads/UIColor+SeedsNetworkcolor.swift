@@ -1,5 +1,5 @@
 // seeds-networkcolor
-// version 0.1.0
+// version 0.2.0
 
 import Foundation
 
@@ -46,10 +46,22 @@ extension UIColor {
   static func analyticsDark() -> UIColor {
     return UIColor(red: 0.9019607843137255, green: 0.3176470588235294, blue: 0, alpha: 1)
   }
+  static func youtube() -> UIColor {
+    return UIColor(red: 0.8980392156862745, green: 0.17647058823529413, blue: 0.15294117647058825, alpha: 1)
+  }
+  static func youtubeDark() -> UIColor {
+    return UIColor(red: 0.7019607843137254, green: 0.07058823529411765, blue: 0.09019607843137255, alpha: 1)
+  }
   static func messenger() -> UIColor {
     return UIColor(red: 0, green: 0.5176470588235295, blue: 1, alpha: 1)
   }
   static func klout() -> UIColor {
     return UIColor(red: 0.8941176470588236, green: 0.27450980392156865, blue: 0, alpha: 1)
+  }
+  static func snapchat() -> UIColor {
+    return UIColor(red: 1, green: 0.9882352941176471, blue: 0, alpha: 1)
+  }
+  static func pinterest() -> UIColor {
+    return UIColor(red: 0.7411764705882353, green: 0.03137254901960784, blue: 0.10980392156862745, alpha: 1)
   }
 }

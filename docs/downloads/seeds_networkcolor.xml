@@ -14,6 +14,10 @@
   <color name="FEEDLY_DARK" category="feedly">#ff1d9236</color>
   <color name="ANALYTICS" category="analytics">#ffef6c00</color>
   <color name="ANALYTICS_DARK" category="analytics">#ffe65100</color>
+  <color name="YOUTUBE" category="youtube">#ffe52d27</color>
+  <color name="YOUTUBE_DARK" category="youtube">#ffb31217</color>
   <color name="MESSENGER" category="other">#ff0084ff</color>
   <color name="KLOUT" category="other">#ffe44600</color>
+  <color name="SNAPCHAT" category="other">#fffffc00</color>
+  <color name="PINTEREST" category="other">#ffbd081c</color>
 </resources>
