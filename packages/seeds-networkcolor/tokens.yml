@@ -6,43 +6,43 @@ props:
   twitter:
     value: "#1da1f2"
     category: twitter
-  twitter dark:  
+  twitter dark:
     value: "#278ac1"
     category: twitter
   facebook:
     value: "#3b5998"
     category: facebook
-  facebook dark:  
+  facebook dark:
     value: "#304879"
     category: facebook
   linkedin:
     value: "#0077b5"
     category: linkedin
-  linkedin dark:  
+  linkedin dark:
     value: "#005e93"
     category: linkedin
   googleplus:
     value: "#db4437"
     category: googleplus
-  googleplus dark:  
+  googleplus dark:
     value: "#bc3e2a"
     category: googleplus
   instagram:
     value: "#e4405f"
     category: instagram
-  instagram dark:  
+  instagram dark:
     value: "#dd143a"
     category: instagram
   feedly:
     value: "#2bb24c"
     category: feedly
-  feedly dark:  
+  feedly dark:
     value: "#1d9236"
     category: feedly
   analytics:
     value: "#ef6c00"
     category: analytics
-  analytics dark:  
+  analytics dark:
     value: "#e65100"
     category: analytics
   youtube:

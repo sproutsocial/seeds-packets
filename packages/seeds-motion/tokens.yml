@@ -1,0 +1,18 @@
+---
+global:
+  type: motion
+  package: motion
+props:
+  ease in:
+    category: easing
+    value: cubic-bezier(.4, 0, 1, 1)
+    description: Use for elements moving out of view
+  ease out:
+    category: easing
+    value: cubic-bezier(0, 0, .2, 1)
+    description: Use for elements moving into view
+  ease inout:
+    category: easing
+    value: cubic-bezier(.4, 0, .2, 1)
+    description: Use for elements that change position
+...

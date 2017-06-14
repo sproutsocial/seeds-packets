@@ -21,7 +21,7 @@ function getGulpTask(pkg, transform, format, opts = {}) {
     appendFile: opts.appendFile || ''
   };
   return function() {
-    gulp.src(`packages/${pkg}/tokens.yml`)
+    return gulp.src(`packages/${pkg}/tokens.yml`)
       .pipe(theo.plugins.transform(transform))
       .pipe(theo.plugins.format(format))
       .pipe(rename({
