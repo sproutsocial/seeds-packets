@@ -5,16 +5,12 @@ import replace from 'gulp-replace';
 import sass from 'gulp-sass';
 import versions from '../util/versions';
 
-gulp.task('docs-css', ['typography'], (cb) => {
-  // Sometimes this runs before the dependent sass files are written, so we give it a second
-  setTimeout(() => {
-    gulp.src('docs/_sass/styles.scss')
-      .pipe(sass({
-        includePaths: globby.sync(process.cwd() + '/packages/seeds-*/dist/')
-      }).on('error', sass.logError))
-      .pipe(gulp.dest('docs/css'));
-    cb();
-  }, 1000);
+gulp.task('docs-css', ['typography'], () => {
+  return gulp.src('docs/_sass/styles.scss')
+    .pipe(sass({
+      includePaths: globby.sync(process.cwd() + '/packages/seeds-*/dist/')
+    }).on('error', sass.logError))
+    .pipe(gulp.dest('docs/css'));
 });
 
 gulp.task('docs', ['docs-css'], (cb) => {

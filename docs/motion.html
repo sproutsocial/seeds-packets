@@ -1,0 +1,79 @@
+---
+title: Motion
+layout: default
+package: seeds-motion
+---
+
+<style>
+  .Example {
+    min-width: 20em;
+    position: relative;
+    height: 2em;
+  }
+  .Example-ball {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    transition-property: left;
+    transition-duration: 1s;
+    background: currentColor;
+  }
+  .Example:hover .Example-ball {
+    left: calc(100% - 2em);
+  }
+</style>
+
+<h2 class="Typography-size--700">Get the Code</h2>
+  <p>For SCSS or Javascript:</p>
+  <ul>
+    <li>
+      <code>yarn add @sproutsocial/seeds-motion</code>
+    </li>
+    <li>
+      <code>npm install @sproutsocial/seeds-motion --save</code>
+    </li>
+  </ul>
+
+<hr>
+
+<h2 class="Typography-size--700">Easing</h2>
+<p>Our easing values are taken from <a href="https://material.io/guidelines/motion/duration-easing.html#duration-easing-natural-easing-curves">Google’s Material Design guidelines</a>.</p>
+
+<table>
+  <thead>
+    <th scope="col">
+      Name
+      <select id="motion-name">
+        <option value="sass" selected>Sass</option>
+        <option value="javascript">Javascript</option>
+      </select>
+    </th>
+    <th scope="col">Value</th>
+    <th scope="col">Description</th>
+    <th scope="col">Watch</th>
+  </thead>
+  <tbody data-js="tbody"></tbody>
+</table>
+
+<script id="easing" type="text/html">
+  <tr>
+    <th scope="row" style="text-align: left;">
+      <pre data-lang="sass" style="display: block"><%= sass %></pre>
+      <pre data-lang="javascript" style="display: none"><%= javascript %></pre>
+    </th>
+    <td>
+      <pre><%= value %></pre>
+    </td>
+    <td><%= description %></td>
+    <td>
+      <div class="Example">
+        <div class="Example-ball"></div>
+      </div>
+    </td>
+  </tr>
+</script>
+
+{% include motion.html %}
+{% include motion-script.html %}

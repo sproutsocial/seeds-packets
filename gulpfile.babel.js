@@ -7,6 +7,7 @@ import gulpUtil from 'gulp-util';
 import color from './tasks/color';
 import docs from './tasks/docs';
 import typography from './tasks/typography';
+import motion from './tasks/motion';
 
 import theoTransforms from './theo/index';
 
@@ -20,7 +21,8 @@ gulp.task('build', [
   'clean',
   'color',
   'networkcolor',
-  'typography'
+  'typography',
+  'motion'
 ]);
 
 gulp.task('serve', ['build', 'docs'], () => {
@@ -35,7 +37,7 @@ gulp.task('serve', ['build', 'docs'], () => {
   setTimeout(() => {
     gulp.src('')
       .pipe(open({
-        uri: 'http://localhost:4000/seeds/'
+        uri: 'http://localhost:4000/'
       }));
   }, 4000);
 });
