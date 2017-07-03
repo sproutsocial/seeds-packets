@@ -8,6 +8,7 @@ import color from './tasks/color';
 import docs from './tasks/docs';
 import typography from './tasks/typography';
 import motion from './tasks/motion';
+import space from './tasks/space';
 
 import theoTransforms from './theo/index';
 
@@ -22,7 +23,8 @@ gulp.task('build', [
   'color',
   'networkcolor',
   'typography',
-  'motion'
+  'motion',
+  'space'
 ]);
 
 gulp.task('serve', ['build', 'docs'], () => {

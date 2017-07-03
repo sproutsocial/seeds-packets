@@ -1,0 +1,39 @@
+---
+global:
+  type: space
+  package: space
+props:
+  size 0:
+    category: size
+    value: 0
+  size 100:
+    category: size
+    value: .125rem
+  size 200:
+    category: size
+    value: .25rem
+  size 300:
+    category: size
+    value: .5rem
+  size 400:
+    category: size
+    value: 1rem
+  size 500:
+    category: size
+    value: 2rem
+  size 600:
+    category: size
+    value: 3rem
+  size 700:
+    category: size
+    value: 5rem
+  size 800:
+    category: size
+    value: 8rem
+  size 900:
+    category: size
+    value: 13rem
+  size 1000:
+    category: size
+    value: 21rem
+...

@@ -1,0 +1,11 @@
+{
+  "name": "@sproutsocial/seeds-space",
+  "version": "0.0.0",
+  "description": "SEEDS Design System Space Values",
+  "main": "dist/seeds-space.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sproutsocial/seeds.git"
+  },
+  "author": "Sprout Social"
+}
