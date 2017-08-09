@@ -1,6 +1,6 @@
-import theo from 'theo';
+const theo = require('theo');
 
-import { javascriptConst } from '../../util/constantcase';
+const javascriptConst = require('../../constantcase').javascriptConst;
 
 function getValue(val) {
   switch (typeof val) {

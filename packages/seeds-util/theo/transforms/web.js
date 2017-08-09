@@ -1,5 +1,5 @@
-import theo from 'theo';
-import getLineHeight from '../../util/getlineheight';
+const theo = require('theo');
+const getLineHeight = require('../../getlineheight');
 
 theo.registerValueTransform('color/hex/short',
   (prop) => prop.type === 'color',

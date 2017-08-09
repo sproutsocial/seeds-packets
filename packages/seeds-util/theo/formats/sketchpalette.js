@@ -1,4 +1,4 @@
-import theo from 'theo';
+const theo = require('theo');
 
 theo.registerFormat('sketch.sketchpalette', (json) => {
   const props = json.propKeys.map((key) => {

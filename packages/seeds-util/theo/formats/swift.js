@@ -1,7 +1,7 @@
-import theo from 'theo';
-import camelCase from 'lodash.camelcase';
+const theo = require('theo');
+const camelCase = require('lodash.camelcase');
 
-import versions from '../../util/versions';
+const versions = require('../../versions');
 
 theo.registerFormat('swift', (json) => {
   const props = json.propKeys.map((key) => {

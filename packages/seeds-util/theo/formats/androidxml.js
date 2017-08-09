@@ -1,6 +1,6 @@
-import theo from 'theo';
+const theo = require('theo');
 
-import { constantCase } from '../../util/constantcase';
+const constantCase = require('../../constantcase').constantCase;
 
 theo.registerFormat('android.xml', (json) => {
   const props = json.propKeys.map((key) => {

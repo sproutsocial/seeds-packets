@@ -1,5 +1,5 @@
-import theo from 'theo';
-import upperFirst from 'lodash.upperfirst';
+const theo = require('theo');
+const upperFirst = require('lodash.upperfirst');
 
 theo.registerFormat('ase', (json) => {
   const props = json.propKeys.map((key) => {

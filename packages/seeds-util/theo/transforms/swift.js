@@ -1,6 +1,6 @@
-import theo from 'theo';
+const theo = require('theo');
 
-import getPercentageRGB from '../../util/getpercentagergb';
+const getPercentageRGB = require('../../getpercentagergb');
 
 theo.registerValueTransform('color/swift',
   (prop) => prop.type === 'color',

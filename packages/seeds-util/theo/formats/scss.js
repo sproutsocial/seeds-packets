@@ -1,6 +1,7 @@
-import theo from 'theo';
+const theo = require('theo');
 
-import { sassVar, suitCssName } from '../../util/sassvar';
+const sassVar = require('../../sassvar').sassVar;
+const suitCssName = require('../../sassvar').suitCssName;
 
 theo.registerFormat('scss', (json) =>
   json.propKeys.map((key) => {

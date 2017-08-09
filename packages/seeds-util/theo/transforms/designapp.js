@@ -1,7 +1,7 @@
-import theo from 'theo';
-import getPercentageRGB from '../../util/getpercentagergb';
-import upperFirst from 'lodash.upperfirst';
-import getLineHeight from '../../util/getlineheight';
+const theo = require('theo');
+const getPercentageRGB = require('../../getpercentagergb');
+const upperFirst = require('lodash.upperfirst');
+const getLineHeight = require('../../getlineheight');
 
 theo.registerValueTransform('color/app-palette',
   (prop) => prop.type === 'color',

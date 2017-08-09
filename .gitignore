@@ -1,2 +1,4 @@
 node_modules
 docs/_site
+packages/*/docs/_includes
+packages/*/docs/downloads
