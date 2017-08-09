@@ -19,7 +19,6 @@
     "globby": "^6.1.0",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-insert": "^0.5.0",
-    "gulp-open": "^2.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.5.4",
     "gulp-sass": "^3.1.0",
