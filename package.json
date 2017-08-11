@@ -8,7 +8,7 @@
   },
   "author": "Sprout Social",
   "scripts": {
-    "format:prettier": "prettier --write --print-width=120 --single-quote --no-bracket-spacing",
+    "format:prettier": "prettier-eslint --write --print-width=120 --single-quote --no-bracket-spacing",
     "precommit": "lint-staged",
     "build": "lerna run build",
     "postbuild": "gulp",
@@ -45,7 +45,8 @@
     "make-dir": "^1.0.0",
     "mround": "^1.0.0",
     "pascal-case": "^2.0.0",
-    "prettier": "^1.5.3",
+    "prettier-eslint": "^6.4.2",
+    "prettier-eslint-cli": "^4.1.1",
     "theo": "^5.0.0",
     "tinycolor2": "^1.4.1"
   }
