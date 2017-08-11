@@ -1,8 +1,8 @@
 const theo = require('theo');
 const upperFirst = require('lodash.upperfirst');
 
-theo.registerFormat('ase', (json) => {
-  const props = json.propKeys.map((key) => {
+theo.registerFormat('ase', json => {
+  const props = json.propKeys.map(key => {
     const prop = json.props[key];
 
     if (prop.type !== 'color') {
@@ -13,11 +13,7 @@ theo.registerFormat('ase', (json) => {
       name: upperFirst(prop.name),
       model: 'RGB',
       type: 'global',
-      color: [
-        prop.value.red,
-        prop.value.green,
-        prop.value.blue
-      ]
+      color: [prop.value.red, prop.value.green, prop.value.blue]
     };
   });
 

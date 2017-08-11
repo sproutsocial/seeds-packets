@@ -1,14 +1,14 @@
 {
-  "name": "@sproutsocial/seeds-motion",
-  "version": "0.1.1",
-  "description": "SEEDS Design System Motion and Animation Values",
-  "main": "dist/seeds-motion.js",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/sproutsocial/seeds.git"
-  },
-  "author": "Sprout Social",
-  "scripts": {
-    "build": "gulp"
-  }
+    "name": "@sproutsocial/seeds-motion",
+    "version": "0.1.1",
+    "description": "SEEDS Design System Motion and Animation Values",
+    "main": "dist/seeds-motion.js",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/sproutsocial/seeds.git"
+    },
+    "author": "Sprout Social",
+    "scripts": {
+        "build": "gulp"
+    }
 }

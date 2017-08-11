@@ -37,10 +37,7 @@ function getGulpTypographyTask(transform, format, opts = {}) {
   return getGulpTask('seeds-typography', transform, format, opts);
 }
 
-gulp.task(
-  'typography-scss',
-  getGulpTypographyTask('web', 'scss', {appendFile: typographyFunction})
-);
+gulp.task('typography-scss', getGulpTypographyTask('web', 'scss', {appendFile: typographyFunction}));
 gulp.task('typography-js', getGulpTypographyTask('js', 'common.js'));
 gulp.task(
   'typography-sketch',
@@ -82,9 +79,5 @@ gulp.task('typography-docs', done => {
 
 gulp.task(
   'default',
-  gulp.series([
-    'clean',
-    gulp.parallel(['typography-scss', 'typography-js', 'typography-sketch']),
-    'typography-docs'
-  ])
+  gulp.series(['clean', gulp.parallel(['typography-scss', 'typography-js', 'typography-sketch']), 'typography-docs'])
 );

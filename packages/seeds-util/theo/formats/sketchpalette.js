@@ -1,7 +1,7 @@
 const theo = require('theo');
 
-theo.registerFormat('sketch.sketchpalette', (json) => {
-  const props = json.propKeys.map((key) => {
+theo.registerFormat('sketch.sketchpalette', json => {
+  const props = json.propKeys.map(key => {
     const prop = json.props[key];
 
     if (prop.type !== 'color') {

@@ -1,7 +1,6 @@
 const spawn = require('child_process').spawn;
 const gulp = require('gulp');
 const del = require('del');
-const open = require('gulp-open');
 const gulpUtil = require('gulp-util');
 
 const docs = require('./tasks/docs');

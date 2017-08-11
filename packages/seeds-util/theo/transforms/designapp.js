@@ -3,10 +3,11 @@ const getPercentageRGB = require('../../getpercentagergb');
 const upperFirst = require('lodash.upperfirst');
 const getLineHeight = require('../../getlineheight');
 
-theo.registerValueTransform('color/app-palette',
-  (prop) => prop.type === 'color',
-  (prop) => {
-    const { r, g, b, a } = getPercentageRGB(prop.value);
+theo.registerValueTransform(
+  'color/app-palette',
+  prop => prop.type === 'color',
+  prop => {
+    const {r, g, b, a} = getPercentageRGB(prop.value);
     return {
       red: r,
       green: g,
@@ -16,9 +17,10 @@ theo.registerValueTransform('color/app-palette',
   }
 );
 
-theo.registerValueTransform('font/sketch',
-  (prop) => prop.type === 'font size',
-  (prop) => {
+theo.registerValueTransform(
+  'font/sketch',
+  prop => prop.type === 'font size',
+  prop => {
     return {
       name: upperFirst(prop.name),
       font: prop.appFontFamily,
@@ -32,15 +34,10 @@ theo.registerValueTransform('font/sketch',
       alignment: 0,
       spacing: 0,
       lineHeight: getLineHeight(prop)
-    }
+    };
   }
 );
 
-theo.registerTransform('sketch', [
-  'color/app-palette',
-  'font/sketch'
-]);
+theo.registerTransform('sketch', ['color/app-palette', 'font/sketch']);
 
-theo.registerTransform('designapp', [
-  'color/app-palette'
-]);
+theo.registerTransform('designapp', ['color/app-palette']);

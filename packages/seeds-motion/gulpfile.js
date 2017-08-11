@@ -50,7 +50,4 @@ gulp.task('motion-docs', done => {
   );
 });
 
-gulp.task(
-  'default',
-  gulp.series(['clean', gulp.parallel(['motion-scss', 'motion-js']), 'motion-docs'])
-);
+gulp.task('default', gulp.series(['clean', gulp.parallel(['motion-scss', 'motion-js']), 'motion-docs']));
