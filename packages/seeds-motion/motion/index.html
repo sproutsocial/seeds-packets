@@ -57,23 +57,6 @@ package: seeds-motion
   <tbody data-js="tbody"></tbody>
 </table>
 
-<script id="easing" type="text/html">
-  <tr>
-    <th scope="row" style="text-align: left;">
-      <pre data-lang="sass" style="display: block"><%= sass %></pre>
-      <pre data-lang="javascript" style="display: none"><%= javascript %></pre>
-    </th>
-    <td>
-      <pre><%= value %></pre>
-    </td>
-    <td><%= description %></td>
-    <td>
-      <div class="Example">
-        <div class="Example-ball"></div>
-      </div>
-    </td>
-  </tr>
-</script>
+{% include_relative _generated/motion.html %}
 
-{% include motion.html %}
-{% include motion-script.html %}
+{% include_relative examples.html %}

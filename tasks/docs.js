@@ -1,12 +1,24 @@
+const del = require('del');
 const fs = require('fs');
-const gulp = require('gulp');
 const globby = require('globby');
+const gulp = require('gulp');
+const nodePath = require('path');
 const replace = require('gulp-replace');
 const sass = require('gulp-sass');
 const versions = require('@sproutsocial/seeds-utils/versions');
 
 const seedsIncludes = globby.sync(`${process.cwd()}/packages/seeds-*/dist`);
-const copyDocs = globby.sync(`${process.cwd()}/packages/seeds-*/docs`).map(path => path + '/**/*');
+const copyDocs = globby.sync(`${process.cwd()}/packages/seeds-*`).map(path => {
+  const packet = nodePath.basename(path).split('-')[1];
+  return {
+    'path': path + '/'+packet+'/**/*',
+    'package': packet
+  };
+});
+
+gulp.task('clean', () => {
+  return del(['docs/_packets/*']);
+});
 
 gulp.task('docs-css', () => {
   return gulp
@@ -19,8 +31,11 @@ gulp.task('docs-css', () => {
     .pipe(gulp.dest('docs/css'));
 });
 
-gulp.task('docs-copy', () => {
-  return gulp.src(copyDocs).pipe(gulp.dest('docs'));
+gulp.task('docs-copy', done => {
+  copyDocs.forEach((doc) => {
+    gulp.src(doc.path).pipe(gulp.dest('docs/_packets/' + doc.package));
+  });
+  done();
 });
 
 gulp.task('docs-files', done => {
@@ -33,10 +48,10 @@ gulp.task('docs-files', done => {
 
   // Write JSON file of versions, excluding the build package
   fs.writeFile(
-    './docs/downloads/versions.json',
+    './docs/versions.json',
     JSON.stringify(versions, (key, value) => (key === 'seeds' ? undefined : value)),
     err => done(err)
   );
 });
 
-gulp.task('docs', gulp.series(['docs-css', 'docs-copy', 'docs-files']));
+gulp.task('docs', gulp.series(['clean', 'docs-css', 'docs-copy', 'docs-files']));

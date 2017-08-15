@@ -1,7 +1,8 @@
 node_modules
 docs/_site
-packages/*/docs/_includes
-packages/*/docs/downloads
+docs/css
+docs/_packets
+packages/**/*/_generated
 .vscode
 lerna-debug.log
 npm-debug.log*
