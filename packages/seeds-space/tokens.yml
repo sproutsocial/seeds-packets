@@ -1,0 +1,32 @@
+---
+global:
+  type: space
+  package: space
+props:
+  size 0:
+    category: size
+    value: 0
+  size 100:
+    category: size
+    value: 2px
+  size 200:
+    category: size
+    value: 4px
+  size 300:
+    category: size
+    value: 8px
+  size 350:
+    category: size
+    value: 12px
+  size 400:
+    category: size
+    value: 16px
+  size 450:
+    category: size
+    value: 24px
+  size 500:
+    category: size
+    value: 32px
+  size 600:
+    category: size
+    value: 40px
