@@ -12,6 +12,7 @@
     "precommit": "lint-staged",
     "build": "lerna run build",
     "docs": "lerna run build && gulp",
+    "docs-publish": "lerna run build && gulp && gh-pages -d docs",
     "docs-serve": "lerna run build && gulp serve",
     "postbuild": "gulp",
     "postinstall": "lerna bootstrap"
@@ -31,6 +32,7 @@
     "ase-util": "^1.0.1",
     "ase-utils": "^0.1.1",
     "del": "^2.2.2",
+    "gh-pages": "^1.0.0",
     "globby": "^6.1.0",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-insert": "^0.5.0",

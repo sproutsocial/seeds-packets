@@ -1,6 +1,8 @@
 # SEEDS
 Sprout's Exquisitely Executed Design System
 
+- [GitHub Pages](https://sproutsocial.github.io/seeds/)
+
 ## Development
 
 We use [Lerna](https://lernajs.io) to manage inter-package dependencies in this monorepo. Builds are orchestrated via [Gulp 4](http://gulpjs.com/) tasks.
