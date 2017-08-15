@@ -2,6 +2,7 @@ const del = require('del');
 const fs = require('fs');
 const globby = require('globby');
 const gulp = require('gulp');
+const rename = require('gulp-rename');
 const nodePath = require('path');
 const replace = require('gulp-replace');
 const sass = require('gulp-sass');
@@ -42,8 +43,9 @@ gulp.task('docs-files', done => {
   const versionsYaml = Object.keys(versions).map(pkg => `  ${pkg}: ${versions[pkg]}`).join('\n');
 
   gulp
-    .src('docs/_config.yml')
+    .src('docs/_config.sample.yml')
     .pipe(replace(/(# #versions)[^]+(# \/versions)/gm, '$1\n' + versionsYaml + '\n$2'))
+    .pipe(rename('_config.yml'))
     .pipe(gulp.dest('docs'));
 
   // Write JSON file of versions, excluding the build package
