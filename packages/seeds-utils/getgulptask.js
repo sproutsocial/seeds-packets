@@ -33,7 +33,7 @@ function getGulpTask(pkg, transform, format, opts = {}) {
         })
       )
       .pipe(insert.prepend(opts.prependFile ? opts.prependFile + '\n\n' : ''))
-      .pipe(insert.append(opts.appendFile ? '\n\n' + opts.appendFile : ''))
+      .pipe(insert.append(opts.appendFile ? '\n\n' + opts.appendFile : '\n'))
       .pipe(gulp.dest(opts.dest));
   };
 }

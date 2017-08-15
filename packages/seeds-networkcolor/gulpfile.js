@@ -11,15 +11,15 @@ const tinycolor = require('tinycolor2');
 const ase = require('ase-utils');
 const makeDir = require('make-dir');
 
-const versions = require('../seeds-util/versions');
-const sassVar = require('../seeds-util/sassvar').sassVar;
-const getGulpTask = require('../seeds-util/getgulptask');
-const constantCase = require('../seeds-util/constantcase').constantCase;
-const javascriptConst = require('../seeds-util/constantcase').javascriptConst;
-const getPercentageRGB = require('../seeds-util/getpercentagergb');
+const versions = require('@sproutsocial/seeds-utils/versions');
+const sassVar = require('@sproutsocial/seeds-utils/sassvar').sassVar;
+const getGulpTask = require('@sproutsocial/seeds-utils/getgulptask');
+const constantCase = require('@sproutsocial/seeds-utils/constantcase').constantCase;
+const javascriptConst = require('@sproutsocial/seeds-utils/constantcase').javascriptConst;
+const getPercentageRGB = require('@sproutsocial/seeds-utils/getpercentagergb');
 
 const networkColorTokensPath = './tokens.yml';
-require('../seeds-util/theo');
+require('@sproutsocial/seeds-utils/theo');
 
 // TODO: Consider eliminating a lot of the duplication in this file
 
