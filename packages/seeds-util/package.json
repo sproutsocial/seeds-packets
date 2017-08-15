@@ -1,0 +1,11 @@
+{
+    "name": "@sproutsocial/seeds-utils",
+    "version": "0.1.0",
+    "description": "SEEDS shared utility functions for generating tokens and documentation.",
+    "main": "dist/seeds-typography.js",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/sproutsocial/seeds.git"
+    },
+    "author": "Sprout Social"
+}

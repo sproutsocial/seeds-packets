@@ -1,5 +1,5 @@
-import pascalCase from 'pascal-case';
-import camelCase from 'lodash.camelcase';
+const pascalCase = require('pascal-case');
+const camelCase = require('lodash.camelcase');
 
 function suitCssName(type, name) {
   const nameArray = name.split(' ');
@@ -9,8 +9,7 @@ function suitCssName(type, name) {
 
 const sassVar = (type, name) => '$' + suitCssName(type, name);
 
-export default sassVar;
-export {
+module.exports = {
   sassVar,
   suitCssName
 };

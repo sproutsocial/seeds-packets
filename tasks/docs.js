@@ -1,29 +1,42 @@
-import fs from 'fs';
-import gulp from 'gulp';
-import globby from 'globby';
-import replace from 'gulp-replace';
-import sass from 'gulp-sass';
-import versions from '../util/versions';
+const fs = require('fs');
+const gulp = require('gulp');
+const globby = require('globby');
+const replace = require('gulp-replace');
+const sass = require('gulp-sass');
+const versions = require('../packages/seeds-util/versions');
 
-gulp.task('docs-css', ['typography'], () => {
-  return gulp.src('docs/_sass/styles.scss')
-    .pipe(sass({
-      includePaths: globby.sync(process.cwd() + '/packages/seeds-*/dist/')
-    }).on('error', sass.logError))
+const seedsIncludes = globby.sync(`${process.cwd()}/packages/seeds-*/dist`);
+const copyDocs = globby.sync(`${process.cwd()}/packages/seeds-*/docs`).map(path => path + '/**/*');
+
+gulp.task('docs-css', () => {
+  return gulp
+    .src('docs/_sass/styles.scss')
+    .pipe(
+      sass({
+        includePaths: seedsIncludes
+      }).on('error', sass.logError)
+    )
     .pipe(gulp.dest('docs/css'));
 });
 
-gulp.task('docs', ['docs-css'], (cb) => {
-  const versionsYaml = Object.keys(versions).map((pkg) => `  ${pkg}: ${versions[pkg]}`).join('\n');
+gulp.task('docs-copy', () => {
+  return gulp.src(copyDocs).pipe(gulp.dest('docs'));
+});
 
-  gulp.src('docs/_config.yml')
-    .pipe(replace(/(# #versions)[^]+(# \/versions)/gm, '\$1\n' + versionsYaml + '\n\$2'))
+gulp.task('docs-files', done => {
+  const versionsYaml = Object.keys(versions).map(pkg => `  ${pkg}: ${versions[pkg]}`).join('\n');
+
+  gulp
+    .src('docs/_config.yml')
+    .pipe(replace(/(# #versions)[^]+(# \/versions)/gm, '$1\n' + versionsYaml + '\n$2'))
     .pipe(gulp.dest('docs'));
 
   // Write JSON file of versions, excluding the build package
   fs.writeFile(
     './docs/downloads/versions.json',
-    JSON.stringify(versions, (key, value) => key === 'seeds' ? undefined : value),
-    (err) => cb(err)
+    JSON.stringify(versions, (key, value) => (key === 'seeds' ? undefined : value)),
+    err => done(err)
   );
 });
+
+gulp.task('docs', gulp.series(['docs-css', 'docs-copy', 'docs-files']));
