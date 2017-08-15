@@ -1,6 +1,7 @@
 {
   "name": "seeds",
   "version": "0.4.0",
+  "private": true,
   "description": "SEEDS: Sprout’s Extremely Excellent Design System",
   "repository": {
     "type": "git",
@@ -12,7 +13,7 @@
     "precommit": "lint-staged",
     "build": "lerna run build",
     "docs": "lerna run build && gulp",
-    "docs-publish": "lerna run build && gulp && gh-pages -d docs",
+    "docs-publish": "lerna run build && gulp && gh-pages -d docs -o upstream",
     "docs-serve": "lerna run build && gulp serve",
     "postbuild": "gulp",
     "postinstall": "lerna bootstrap"

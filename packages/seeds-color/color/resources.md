@@ -1,12 +1,6 @@
 ## Resources
 
-### App Downloads
-
-- [Sketch Palette](_generated/seeds-color.{{ site.versions.seeds-color }}.sketchpalette) (Requires [Sketch Palettes Plugin](https://github.com/andrewfiorillo/sketch-palettes))
-- [Adobe Swatch Exchange](_generated/seeds-color.{{ site.versions.seeds-color }}.ase)
-- [macOS System Palette](_generated/seeds-color.{{ site.versions.seeds-color }}.clr)
-
-### Links Downloads
+### Links
 
 - [Contrast Grid](http://contrast-grid.eightshapes.com/)
 

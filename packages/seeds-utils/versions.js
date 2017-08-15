@@ -1,6 +1,6 @@
 const globby = require('globby');
 
-const packages = globby.sync([process.cwd() + '/package.json', process.cwd() + '/packages/seeds-*/package.json']);
+const packages = globby.sync([process.cwd() + '/packages/seeds-*/package.json']);
 const versions = {};
 
 packages.forEach(packageJsonPath => {
