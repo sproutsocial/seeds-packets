@@ -1,0 +1,34 @@
+<script id="easing" type="text/html">
+  <tr>
+    <th scope="row" style="text-align: left;">
+      <pre data-lang="sass" style="display: block"><%= sass %></pre>
+      <pre data-lang="javascript" style="display: none"><%= javascript %></pre>
+    </th>
+    <td>
+      <pre><%= value %></pre>
+    </td>
+    <td><%= description %></td>
+    <td>
+      <div class="Example">
+        <div class="Example-ball"></div>
+      </div>
+    </td>
+  </tr>
+</script>
+
+<script>
+  (function($, _, seedsMotion) {
+
+    var easingTemplate = _.template($('#easing').html());
+    var $tableBody = $('[data-js="tbody"]');
+
+    _.each(seedsMotion, function(easing) {
+      $tableBody.append(easingTemplate(easing));
+    });
+
+    $('#motion-name').on('change', function () {
+      $('[data-lang="' + this.value + '"]').show().siblings().hide();
+    });
+
+  })(window.jQuery, window._, window.seedsMotion);
+</script>

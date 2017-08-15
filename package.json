@@ -11,6 +11,8 @@
     "format:prettier": "prettier-eslint --write --print-width=120 --single-quote --no-bracket-spacing",
     "precommit": "lint-staged",
     "build": "lerna run build",
+    "docs": "lerna run build && gulp",
+    "docs-serve": "lerna run build && gulp serve",
     "postbuild": "gulp",
     "postinstall": "lerna bootstrap"
   },

@@ -5,10 +5,6 @@ const gulpUtil = require('gulp-util');
 
 const docs = require('./tasks/docs');
 
-gulp.task('clean', () => {
-  return del(['docs/downloads/*']);
-});
-
 gulp.task('jekyll', () => {
   const jekyll = spawn('jekyll', ['serve', '--watch'], {cwd: './docs'});
   const jekyllLogger = buffer => {
@@ -20,4 +16,4 @@ gulp.task('jekyll', () => {
 
 gulp.task('serve', gulp.series(['docs', 'jekyll']));
 
-gulp.task('default', gulp.series(['clean', 'docs']));
+gulp.task('default', gulp.series(['docs']));
