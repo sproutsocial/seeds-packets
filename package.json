@@ -25,7 +25,7 @@
     ]
   },
   "devDependencies": {
-    "@sproutsocial/seeds-utils": "^0.1.1",
+    "@sproutsocial/seeds-utils": "^0.1.2",
     "ase-util": "^1.0.1",
     "ase-utils": "^0.1.1",
     "del": "^2.2.2",
