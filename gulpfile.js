@@ -14,6 +14,10 @@ gulp.task('jekyll', () => {
   jekyll.stderr.on('data', jekyllLogger);
 });
 
-gulp.task('serve', gulp.series(['docs', 'jekyll']));
+gulp.task('watch', () => {
+  gulp.watch(['packages/**/*'], gulp.parallel(['docs']));
+});
+
+gulp.task('serve', gulp.series(['docs', gulp.parallel(['watch', 'jekyll'])]));
 
 gulp.task('default', gulp.series(['docs']));
