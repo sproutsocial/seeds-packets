@@ -2,13 +2,13 @@ const fs = require('fs');
 const del = require('del');
 const gulp = require('gulp');
 const theo = require('theo');
-const sassVar = require('../seeds-util/sassvar').sassVar;
-const getGulpTask = require('../seeds-util/getgulptask');
-const javascriptConst = require('../seeds-util/constantcase').javascriptConst;
+const sassVar = require('@sproutsocial/seeds-utils/sassvar').sassVar;
+const getGulpTask = require('@sproutsocial/seeds-utils/getgulptask');
+const javascriptConst = require('@sproutsocial/seeds-utils/constantcase').javascriptConst;
 const makeDir = require('make-dir');
 
 const motionTokensPath = './tokens.yml';
-require('../seeds-util/theo');
+require('@sproutsocial/seeds-utils/theo');
 
 function getGulpMotionTask(transform, format, opts = {}) {
   return getGulpTask('seeds-motion', transform, format, opts);

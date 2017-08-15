@@ -5,16 +5,16 @@ const theo = require('theo');
 const insert = require('gulp-insert');
 const rename = require('gulp-rename');
 const upperFirst = require('lodash.upperfirst');
-const sassVar = require('../seeds-util/sassvar').sassVar;
-const suitCssName = require('../seeds-util/sassvar').suitCssName;
-const javascriptConst = require('../seeds-util/constantcase').javascriptConst;
+const sassVar = require('@sproutsocial/seeds-utils/sassvar').sassVar;
+const suitCssName = require('@sproutsocial/seeds-utils/sassvar').suitCssName;
+const javascriptConst = require('@sproutsocial/seeds-utils/constantcase').javascriptConst;
 const makeDir = require('make-dir');
 
-const getGulpTask = require('../seeds-util/getgulptask');
+const getGulpTask = require('@sproutsocial/seeds-utils/getgulptask');
 
 const typographyTokensPath = './tokens.yml';
 
-require('../seeds-util/theo');
+require('@sproutsocial/seeds-utils/theo');
 
 gulp.task('clean', () => {
   return del(['docs/downloads/*']);

@@ -3,7 +3,7 @@ const gulp = require('gulp');
 const globby = require('globby');
 const replace = require('gulp-replace');
 const sass = require('gulp-sass');
-const versions = require('../packages/seeds-util/versions');
+const versions = require('@sproutsocial/seeds-utils/versions');
 
 const seedsIncludes = globby.sync(`${process.cwd()}/packages/seeds-*/dist`);
 const copyDocs = globby.sync(`${process.cwd()}/packages/seeds-*/docs`).map(path => path + '/**/*');

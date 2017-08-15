@@ -1,5 +1,5 @@
 # seeds-color
-# version 0.2.2
+# version 0.2.3
 
 green100 = '#d7f4d7'
 green200 = '#bbedb6'
