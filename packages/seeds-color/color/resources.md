@@ -6,6 +6,16 @@
 - [Adobe Swatch Exchange](_generated/seeds-color.{{ site.versions.seeds-color }}.ase)
 - [macOS System Palette](_generated/seeds-color.{{ site.versions.seeds-color }}.clr)
 
+
+### Get the Code
+
+- For SCSS or Javascript:
+  - `yarn add @sproutsocial/seeds-color`
+  - `npm install @sproutsocial/seeds-color --save`
+- [Python]({{ site.baseurl }}/_generated/seeds_color.py)
+- [Android XML]({{ site.baseurl }}/_generated/seeds_color.xml)
+- [Swift]({{ site.baseurl }}/_generated/UIColor+SeedsColor.swift)
+
 ### Links Downloads
 
 - [Contrast Grid](http://contrast-grid.eightshapes.com/)
