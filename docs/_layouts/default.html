@@ -11,6 +11,12 @@
     <meta name="description" content="{{ site.description }}">
     <meta name="author" content="Sprout Social" />
     <meta name="robots" content="noindex" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+      crossorigin="anonymous"
+    >
     <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
@@ -18,19 +24,25 @@
   <body>
     <header>
       {% if page.title == 'Home' %}
-        <h1 class="Typography-size--1000">
-          <abbr title="{{ site.description }}">{{ site.name }}</abbr>
-        </h1>
+        <div class="container">
+          <main role="main">
+            <h1 class="Typography-size--1000">
+              <abbr title="{{ site.description }}">{{ site.name }}</abbr>
+            </h1>
+          {% include navigation.html %}
+          </main>
+        </div>
       {% else %}
-        <p>
-          <a href="/seeds">
+        <div class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="/seeds">
             <abbr title="{{ site.description }}/">{{ site.name }}</abbr>
           </a>
-        </p>
+
+          {% include navigation.html %}
+        </div>
       {% endif %}
     </header>
     <div class="container">
-      {% include navigation.html %}
       <main role="main">
         {% unless page.title == 'Home' %}
           <h1 class="Typography-size--1000">{{ page.title }} <small>{{ site.versions[page.package] }}</small></h1>
