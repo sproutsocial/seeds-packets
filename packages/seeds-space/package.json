@@ -1,0 +1,14 @@
+{
+    "name": "@sproutsocial/seeds-space",
+    "version": "0.1.0",
+    "description": "SEEDS Space Tokens",
+    "main": "dist/seeds-color.js",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/sproutsocial/seeds.git"
+    },
+    "author": "Sprout Social",
+    "scripts": {
+        "build": "gulp"
+    }
+}

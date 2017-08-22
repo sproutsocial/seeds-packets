@@ -22,28 +22,31 @@
   <li><a href="{{ site.baseurl }}/_generated/UIColor+SeedsColor.swift" download>Swift</a></li>
 </ul>
 
-<table>
-  <thead>
-    <th scope="col">
-      Name
-      <select id="colors-name">
-        <option value="palette" selected>Palette</option>
-        <option value="sass">Sass</option>
-        <option value="javascript">Javascript</option>
-        <option value="swift">Swift</option>
-        <option value="android">Android XML</option>
-        <option value="python">Python</option>
-      </select>
-    </th>
-    <th scope="col">
-      Value
-      <select id="colors-value">
-        <option value="value" selected>Hex</option>
-        <option value="rgb">RGB()</option>
-      </select>
-    </th>
-  </thead>
-</table>
+<h3>Color Samples</h3>
+
+<p>
+  <label>
+    Name
+    <select id="colors-name">
+      <option value="palette" selected>Palette</option>
+      <option value="sass">Sass</option>
+      <option value="javascript">Javascript</option>
+      <option value="swift">Swift</option>
+      <option value="android">Android XML</option>
+      <option value="python">Python</option>
+    </select>
+  </label>
+
+  <label class="Space-size--400Left">
+    Value
+    <select id="colors-value">
+      <option value="value" selected>Hex</option>
+      <option value="rgb">RGB()</option>
+    </select>
+  </label>
+</p>
+
+<table id="paletteTable" class="table d-flex flex-wrap"></table>
 
 <script id="colors" type="text/html">
   <tbody>
@@ -57,20 +60,18 @@
 </script>
 
 <script id="colors-row" type="text/html">
-  <tr>
-    <th scope="row" style="text-align: left;">
+  <tr style="background: <%= value %>; color: <%= textColor %>;">
+    <th scope="row" style="text-align: left; width: 9em;">
       <span data-lang="palette" style="display: block"><%= palette %></span>
       <pre data-lang="sass" style="display: none"><%= sass %></pre>
       <pre data-lang="javascript" style="display: none"><%= javascript %></pre>
       <pre data-lang="swift" style="display: none"><%= swift %></pre>
       <pre data-lang="android" style="display: none"><%= android %></pre>
       <pre data-lang="python" style="display: none"><%= python %></pre>
-    </th>
-    <td>
-      <span style="display: inline-block; width: 2em; height: 2em; background: <%= value %>; border: 1px solid #f3f4f4"></span>
+
       <span>
-        <pre data-value="value" style="display: inline-block"><%= value %></pre>
-        <pre data-value="rgb" style="display: none"><%= rgb %></pre>
+        <pre data-value="value" style="display: inline-block; color: <%= textColor %>"><%= value %></pre>
+        <pre data-value="rgb" style="display: none; color: <%= textColor %>"><%= rgb %></pre>
       </span>
     </td>
   </tr>
@@ -100,7 +101,7 @@
 
     function renderColors() {
       var categories = _.uniq(_.map(seedsColors, 'category'));
-      var $table = $('table');
+      var $table = $('#paletteTable');
       var colorsTemplate = _.template($('#colors').html());
       var colorsRowTemplate = _.template($('#colors-row').html());
 
@@ -109,6 +110,13 @@
           if (color.category !== category) {
             return;
           }
+          if (color.palette == 'Black') {
+            color.textColor = '#fff';
+          } else {
+            var num = Number(color.palette.split(' ')[1]);
+            color.textColor = num >= 600 ? '#fff' : '#162020';
+          }
+
           return colorsRowTemplate(color)
         }).join('');
         $table.append(colorsTemplate({

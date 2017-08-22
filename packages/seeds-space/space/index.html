@@ -1,7 +1,7 @@
 ---
-title: Network Color
+title: Space
 layout: default
-package: seeds-networkcolor
+package: seeds-space
 ---
 
 <h2>Table of Contents</h2>
@@ -10,23 +10,17 @@ package: seeds-networkcolor
     <a href="#overview">Overview</a>
   </li>
   <li>
-    <a href="#palette">Network Color Palette</a>
+    <a href="#palette">Space Scale</a>
   </li>
   <li>
     <a href="#best-practices">Best Practices</a>
-  </li>
-  <li>
-    <a href="#resources">Resources</a>
   </li>
 </ul>
 
 {% capture overview_md %}{% include_relative overview.md %}{% endcapture %}
 {{ overview_md | markdownify }}
 
-{% include_relative palette.html %}
+{% include_relative scale.html %}
 
 {% capture usage_md %}{% include_relative usage.md %}{% endcapture %}
 {{ usage_md | markdownify }}
-
-{% capture resources_md %}{% include_relative resources.md %}{% endcapture %}
-{{ resources_md | markdownify }}

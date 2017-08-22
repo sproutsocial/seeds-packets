@@ -15,6 +15,7 @@ gulp.task('jekyll', () => {
 });
 
 gulp.task('watch', () => {
+  gulp.watch(['docs/_sass/**/*.scss'], gulp.parallel(['docs-css']));
   gulp.watch(['packages/**/*'], gulp.parallel(['docs']));
 });
 
