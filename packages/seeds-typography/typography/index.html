@@ -4,80 +4,31 @@ layout: default
 package: seeds-typography
 ---
 
-<div style="display: table-row;">
-  <div style="display: table-cell;">
-    <h2 class="Typography-size--700">App Downloads</h2>
-    <ul>
-      <li>
-        <a href="{{ site.baseurl }}/_generated/seeds-typography.{{ site.versions.seeds-typography }}.json" download>Sketch Styles</a> (Requires <a href="https://github.com/nilshoenson/shared-text-styles">Shared Text Styles plugin</a>)
-      </li>
-      <li>
-        <a href="https://assets.adobe.com/assets/libraries/a4c2bfd3-f701-470c-ab88-1ba696d9f628e">Adobe Creative Cloud Library</a>
-      </li>
-    </ul>
-  </div>
-  <div style="display: table-cell;">
-    <h2 class="Typography-size--700">Get the Code</h2>
-    <p>For SCSS or Javascript:</p>
-    <ul>
-      <li>
-        <code>yarn add @sproutsocial/seeds-typography</code>
-      </li>
-      <li>
-        <code>npm install @sproutsocial/seeds-typography --save</code>
-      </li>
-    </ul>
-  </div>
-</div>
-
-<hr>
-
-<h2 class="Typography-size--700">Notes</h2>
+<h3>App Downloads</h3>
 <ul>
   <li>
-    Proxima Nova is our font.
-    <dl>
-      <dt>Sass</dt>
-      <dd><code>font-family: $Typography-family;</code></dd>
-      <dt>Javascript</dt>
-      <dd><code>{ style: { fontFamily: TYPOGRAPHY_FAMILY } }</code></dd>
-    </dl>
+    <a href="{{ site.baseurl }}/_generated/seeds-typography.{{ site.versions.seeds-typography }}.json" download>Sketch Styles</a> (Requires <a href="https://github.com/nilshoenson/shared-text-styles">Shared Text Styles plugin</a>)
   </li>
   <li>
-    Only two weights are permitted: regular and <strong>semibold</strong>, which is called <code>bold</code> for simpler naming
-    <dl>
-      <dt>Sass</dt>
-      <dd>
-        <dl>
-          <dt>Regular</dt>
-          <dd><code>font-weight: $Typography-weight--regular;</code></dd>
-          <dt>Bold</dt>
-          <dd><code>font-weight: $Typography-weight--bold;</code></dd>
-        </dl>
-      </dd>
-      <dt>Javascript</dt>
-      <dd>
-        <dl>
-          <dt>Regular</dt>
-          <dd><code>{ style: { fontWeight: TYPOGRAPHY_WEIGHT_REGULAR } }</code></dd>
-          <dt>Bold</dt>
-          <dd><code>{ style: { fontWeight: TYPOGRAPHY_WEIGHT_BOLD } }</code></dd>
-        </dl>
-      </dd>
-    </dl>
-  </li>
-  <li>
-    You can use <code>rem</code>s if you want to by setting <code>$Typography-unit: rem;</code> in your Sass
-    file. Use the <code>$Typography-size--base</code> variable to set the base size used to calculate the
-    <code>rem</code> value.
+    <a href="https://assets.adobe.com/assets/libraries/a4c2bfd3-f701-470c-ab88-1ba696d9f628e">Adobe Creative Cloud Library</a>
   </li>
 </ul>
 
-<hr>
+<h3>Get the Code</h3>
+<p>For SCSS or Javascript:</p>
+<ul>
+  <li>
+    <code>yarn add @sproutsocial/seeds-typography</code>
+  </li>
+  <li>
+    <code>npm install @sproutsocial/seeds-typography --save</code>
+  </li>
+</ul>
 
-<h2 class="Typography-size--700">Sizes</h2>
+<h2>Type Scale</h2>
 <p>Line heights are calculated to ensure at least three lines align to an 8pt grid. Use the associated line-height values only.</p>
-<table>
+
+<table class="table">
   <thead>
     <th scope="col" style="white-space: nowrap;">
       Name
@@ -124,3 +75,44 @@ package: seeds-typography
 </script>
 
 {% include_relative examples.html %}
+
+<h2>Best Practices</h2>
+<ul>
+  <li>
+    Proxima Nova is our font.
+    <dl>
+      <dt>Sass</dt>
+      <dd><code>font-family: $Typography-family;</code></dd>
+      <dt>Javascript</dt>
+      <dd><code>{ style: { fontFamily: TYPOGRAPHY_FAMILY } }</code></dd>
+    </dl>
+  </li>
+  <li>
+    Only two weights are permitted: regular and <strong>semibold</strong>, which is called <code>bold</code> for simpler naming
+    <dl>
+      <dt>Sass</dt>
+      <dd>
+        <dl>
+          <dt>Regular</dt>
+          <dd><code>font-weight: $Typography-weight--regular;</code></dd>
+          <dt>Bold</dt>
+          <dd><code>font-weight: $Typography-weight--bold;</code></dd>
+        </dl>
+      </dd>
+      <dt>Javascript</dt>
+      <dd>
+        <dl>
+          <dt>Regular</dt>
+          <dd><code>{ style: { fontWeight: TYPOGRAPHY_WEIGHT_REGULAR } }</code></dd>
+          <dt>Bold</dt>
+          <dd><code>{ style: { fontWeight: TYPOGRAPHY_WEIGHT_BOLD } }</code></dd>
+        </dl>
+      </dd>
+    </dl>
+  </li>
+  <li>
+    You can use <code>rem</code>s if you want to by setting <code>$Typography-unit: rem;</code> in your Sass
+    file. Use the <code>$Typography-size--base</code> variable to set the base size used to calculate the
+    <code>rem</code> value.
+  </li>
+</ul>
