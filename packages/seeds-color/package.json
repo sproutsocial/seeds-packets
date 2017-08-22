@@ -1,17 +1,17 @@
 {
-    "name": "@sproutsocial/seeds-color",
-    "version": "0.2.6",
-    "description": "SEEDS Design System Color Palette",
-    "main": "dist/seeds-color.js",
-    "repository": {
-        "type": "git",
-        "url": "git+ssh://git@github.com/sproutsocial/seeds.git"
-    },
-    "author": "Sprout Social",
-    "scripts": {
-        "build": "gulp"
-    },
-    "devDependencies": {
-        "ase-util": "^1.0.1"
-    }
+  "name": "@sproutsocial/seeds-color",
+  "version": "0.2.7",
+  "description": "SEEDS Design System Color Palette",
+  "main": "dist/seeds-color.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sproutsocial/seeds.git"
+  },
+  "author": "Sprout Social",
+  "scripts": {
+    "build": "gulp"
+  },
+  "devDependencies": {
+    "ase-util": "^1.0.1"
+  }
 }
