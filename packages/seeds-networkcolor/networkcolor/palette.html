@@ -1,9 +1,46 @@
-<h1>Examples</h1>
+<h2>Network Color Palette</h2>
 
-<h2 class="Typography-size--700">Complete Palette</h2>
-<table>
-  <thead>
-    <th scope="col">
+<h3>App Downloads</h3>
+<ul>
+  <li>
+    <a href="{{ site.baseurl }}/_generated/seeds-networkcolor.{{ site.versions.seeds-networkcolor }}.sketchpalette" download>Sketch Palette</a> (Requires <a href="https://github.com/andrewfiorillo/sketch-palettes">Sketch Palettes Plugin</a>)
+  </li>
+  <li>
+    <a href="{{ site.baseurl }}/_generated/seeds-networkcolor.{{ site.versions.seeds-networkcolor }}.ase" download>Adobe Swatch Exchange</a>
+  </li>
+  <li>
+    <a href="{{ site.baseurl }}/_generated/seeds-networkcolor.{{ site.versions.seeds-networkcolor }}.clr" download>macOS System Palette</a>
+  </li>
+</ul>
+
+<h3>Get the Code</h3>
+<ul>
+  <li>
+    For SCSS or Javascript
+    <ul>
+      <li>
+        <code>yarn add @sproutsocial/seeds-color</code>
+      </li>
+      <li>
+        <code>npm install @sproutsocial/seeds-color --save</code>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="{{ site.baseurl }}/_generated/seeds_networkcolor.py" download>Python</a>
+  </li>
+  <li>
+    <a href="{{ site.baseurl }}/_generated/seeds_networkcolor.xml" download>Android XML</a>
+  </li>
+  <li>
+    <a href="{{ site.baseurl }}/_generated/UIColor+SeedsNetworkcolor.swift" download>Swift</a>
+  </li>
+</ul>
+
+<h3>Color Samples</h3>
+
+<p>
+    <label>
       Name
       <select id="colors-name">
         <option value="palette" selected>Palette</option>
@@ -13,22 +50,24 @@
         <option value="android">Android XML</option>
         <option value="python">Python</option>
       </select>
-    </th>
-    <th scope="col">
+    </label>
+  
+    <label class="Space-size--400Left">
       Value
       <select id="colors-value">
         <option value="value" selected>Hex</option>
         <option value="rgb">RGB()</option>
       </select>
-    </th>
-  </thead>
-</table>
+    </label>
+  </p>
+
+<table class="table d-flex flex-wrap"></table>
 
 <script id="colors" type="text/html">
   <tbody>
     <tr>
       <th colspan="2" scope="col" style="text-align: left;">
-        <h3><%= category %></h3>
+        <h4><%= category %></h4>
       </th>
     </tr>
     <%= rows %>
@@ -36,20 +75,18 @@
 </script>
 
 <script id="colors-row" type="text/html">
-  <tr>
-    <th scope="row" style="text-align: left;">
+  <tr style="background: <%= value %>; color: <%= textColor %>;">
+    <th scope="row" style="text-align: left; width: 10em;">
       <span data-lang="palette" style="display: block"><%= palette %></span>
       <pre data-lang="sass" style="display: none"><%= sass %></pre>
       <pre data-lang="javascript" style="display: none"><%= javascript %></pre>
       <pre data-lang="swift" style="display: none"><%= swift %></pre>
       <pre data-lang="android" style="display: none"><%= android %></pre>
       <pre data-lang="python" style="display: none"><%= python %></pre>
-    </th>
-    <td>
-      <span style="display: inline-block; width: 2em; height: 2em; background: <%= value %>; border: 1px solid #f3f4f4"></span>
+
       <span>
-        <pre data-value="value" style="display: inline-block"><%= value %></pre>
-        <pre data-value="rgb" style="display: none"><%= rgb %></pre>
+        <pre data-value="value" style="display: inline-block; color: <%= textColor %>"><%= value %></pre>
+        <pre data-value="rgb" style="display: none; color: <%= textColor %>"><%= rgb %></pre>
       </span>
     </td>
   </tr>
@@ -87,6 +124,11 @@
         var rows = _.map(seedsColors, function(color) {
           if (color.category !== category) {
             return;
+          }
+          if (color.palette == 'Snapchat') {
+            color.textColor = '#162020';
+          } else {
+            color.textColor = '#fff';
           }
           return colorsRowTemplate(color)
         }).join('');

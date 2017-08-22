@@ -4,53 +4,29 @@ layout: default
 package: seeds-networkcolor
 ---
 
-<div style="display: table-row;">
-  <div style="display: table-cell;">
-    <h2 class="Typography-size--700">App Downloads</h2>
-    <ul>
-      <li>
-        <a href="{{ site.baseurl }}/_generated/seeds-networkcolor.{{ site.versions.seeds-networkcolor }}.sketchpalette" download>Sketch Palette</a> (Requires <a href="https://github.com/andrewfiorillo/sketch-palettes">Sketch Palettes Plugin</a>)
-      </li>
-      <li>
-        <a href="{{ site.baseurl }}/_generated/seeds-networkcolor.{{ site.versions.seeds-networkcolor }}.ase" download>Adobe Swatch Exchange</a>
-      </li>
-      <li>
-        <a href="{{ site.baseurl }}/_generated/seeds-networkcolor.{{ site.versions.seeds-networkcolor }}.clr" download>macOS System Palette</a>
-      </li>
-    </ul>
-  </div>
-  <div style="display: table-cell;">
-    <h2 class="Typography-size--700">Get the Code</h2>
-    <ul>
-      <li>
-        For SCSS or Javascript
-        <ul>
-          <li>
-            <code>yarn add @sproutsocial/seeds-color</code>
-          </li>
-          <li>
-            <code>npm install @sproutsocial/seeds-color --save</code>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="{{ site.baseurl }}/_generated/seeds_networkcolor.py" download>Python</a>
-      </li>
-      <li>
-        <a href="{{ site.baseurl }}/_generated/seeds_networkcolor.xml" download>Android XML</a>
-      </li>
-      <li>
-        <a href="{{ site.baseurl }}/_generated/UIColor+SeedsNetworkcolor.swift" download>Swift</a>
-      </li>
-    </ul>
-  </div>
-</div>
+<h2>Table of Contents</h2>
+<ul>
+  <li>
+    <a href="#overview">Overview</a>
+  </li>
+  <li>
+    <a href="#palette">Network Color Palette</a>
+  </li>
+  <li>
+    <a href="#best-practices">Best Practices</a>
+  </li>
+  <li>
+    <a href="#resources">Resources</a>
+  </li>
+</ul>
 
-<hr>
+{% capture overview_md %}{% include_relative overview.md %}{% endcapture %}
+{{ overview_md | markdownify }}
 
-<h2 class="Typography-size--700">Notes</h2>
-<p>Only use network colors to represent a network’s brand, e.g., the color of a logo. Never use a network color to represent a Sprout-specific element, such as a group folder. Using network colors for network-specific actions (such as a submit button) is strongly discouraged until specific guidance is provided (currently in progress).</p>
+{% include_relative palette.html %}
 
-<hr>
+{% capture usage_md %}{% include_relative usage.md %}{% endcapture %}
+{{ usage_md | markdownify }}
 
-{% include_relative examples.html %}
+{% capture resources_md %}{% include_relative resources.md %}{% endcapture %}
+{{ resources_md | markdownify }}
