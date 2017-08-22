@@ -1,4 +1,4 @@
-## Best practices:
+## Best practices
 
 **Sprout Primary:**
 Primary brand colors are used for elements that reflect Sprout's brand.
