@@ -3,7 +3,9 @@
     background: currentColor;
   }
 </style>
-<h2 class="Typography-size--700">Get the Code</h2>
+
+<h3>Get the Code</h3>
+
 <p>For SCSS or Javascript:</p>
 <ul>
   <li>
@@ -14,31 +16,16 @@
   </li>
 </ul>
 
-<hr>
-
-<h2 class="Typography-size--700">Notes</h2>
-<p>The spacing tokens are REM values and are based on a modified fibonacci sequence. The values greater than or equal to 1 follow
-  the fibonacci series while the decimal values below 1 are one half of the previous value.</p>
-<p>Pixel values below are calculated based on the Space Base value set below. (default: 16px)</p>
-
-<p>
-  Space Base
-  <select id="space-base">
-          <option value="16" selected>16px</option>
-          <option value="18">18px</option>
-      </select>
-</p>
-
-<table>
+<table class="table">
   <thead>
     <th scope="col">
       Name
       <select id="space-name">
-          <option value="sass" selected>Sass</option>
-          <option value="javascript">Javascript</option>
-        </select>
+        <option value="sass" selected>Sass</option>
+        <option value="javascript">Javascript</option>
+      </select>
     </th>
-    <th scope="col">Value (rem / px)</th>
+    <th scope="col">Size</th>
     <th scope="col">Sample</th>
   </thead>
   <tbody data-js="tbody"></tbody>
@@ -51,7 +38,7 @@
       <pre data-lang="javascript" style="display: none"><%= javascript %></pre>
     </th>
     <td>
-      <pre><%= value %><span class="size-px"></span></pre>
+      <pre><%= value %></pre>
     </td>
     <td>
       <div class="space-sample" style=" width: <%= value %>; height: <%= value %>;"></div>
@@ -65,22 +52,11 @@
     (function($, _, seedsSpace) {
       var sizeTemplate = _.template($('#space-row').html());
       var $tableBody = $('[data-js="tbody"]');
-      function printSizesInPx() {
-        _.each(sampleElements, function(sample, index) {
-            var parentRow = sample.closest('tr')
-            var sampleSizeInPx = sample.getBoundingClientRect().width;
-            parentRow.querySelector('.size-px').innerHTML = ' / ' + sampleSizeInPx  + 'px';
-        });
-      };
+
       _.each(seedsSpace, function(size) {
         $tableBody.append(sizeTemplate(size));
       });
-      var sampleElements = $('.space-sample');
-      printSizesInPx();
-      $('#space-base').on('change', function() {
-        $(":root")[0].style.fontSize = this.value + "px";
-        printSizesInPx();
-      });
+
       $('#space-name').on('change', function () {
         $('[data-lang="' + this.value + '"]').show().siblings().hide();
       });

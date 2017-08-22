@@ -15,12 +15,6 @@ package: seeds-space
   <li>
     <a href="#best-practices">Best Practices</a>
   </li>
-  <li>
-    <a href="#accessibility">Accessibility</a>
-  </li>
-  <li>
-    <a href="#resources">Resources</a>
-  </li>
 </ul>
 
 {% capture overview_md %}{% include_relative overview.md %}{% endcapture %}
@@ -30,9 +24,3 @@ package: seeds-space
 
 {% capture usage_md %}{% include_relative usage.md %}{% endcapture %}
 {{ usage_md | markdownify }}
-
-{% capture accessibility_md %}{% include_relative accessibility.md %}{% endcapture %}
-{{ accessibility_md | markdownify }}
-
-{% capture resources_md %}{% include_relative resources.md %}{% endcapture %}
-{{ resources_md | markdownify }}
