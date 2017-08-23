@@ -21,10 +21,9 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
   </head>
+
   <body>
     <div class="Page">
-      <header class="Header"></header>
-  
       <div class="Sidebar">
         <a class="Sidebar-brand" href="{{ site.baseurl }}/">{{ site.name }}</a>
   
@@ -40,7 +39,18 @@
         {{ content }}
       </main>
 
-      <footer class="Footer"></footer>
+      <script type="text/javascript" src="https://sprout.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/qqo0b4/b/c/7ebd7d8b8f8cafb14c7b0966803e5701/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=e1ee1c3e"></script>
+      
+      <script type="text/javascript">
+        window.ATL_JQ_PAGE_PROPS =  {
+          'triggerFunction': function(showCollectorDialog) {
+              jQuery('.js-jira-issue').click(function(e) {
+                  e.preventDefault();
+                  showCollectorDialog();
+              });
+          }
+        };
+      </script>
     </div>
   </body>
 </html>

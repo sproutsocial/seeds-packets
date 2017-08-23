@@ -1,5 +1,9 @@
 <nav>
   <ul class="Nav flex-column">
+    <li class="Nav-item">
+      <button class="Nav-link js-jira-issue btn">Submit an Issue</button>
+    </li>
+
     {% for item in site.data.navigation %}
       {% assign url = item.url | append: 'index' %}
 
