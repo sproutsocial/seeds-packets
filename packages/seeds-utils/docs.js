@@ -6,14 +6,14 @@ const rename = require('gulp-rename');
 const nodePath = require('path');
 const replace = require('gulp-replace');
 const sass = require('gulp-sass');
-const versions = require('@sproutsocial/seeds-utils/versions');
+const versions = require('./versions');
 
 const seedsIncludes = globby.sync(`${process.cwd()}/packages/seeds-*/dist`);
 const copyDocs = globby.sync(`${process.cwd()}/packages/seeds-*`).map(path => {
   const packet = nodePath.basename(path).split('-')[1];
   return {
-    'path': path + '/'+packet+'/**/*',
-    'package': packet
+    path: path + '/' + packet + '/**/*',
+    package: packet
   };
 });
 
@@ -33,24 +33,28 @@ gulp.task('docs-css', () => {
 });
 
 gulp.task('docs-copy', done => {
-  copyDocs.forEach((doc) => {
+  copyDocs.forEach(doc => {
     gulp.src(doc.path).pipe(gulp.dest('docs/_packets/' + doc.package));
   });
   done();
 });
 
 gulp.task('docs-files', done => {
-  const versionsYaml = Object.keys(versions).map(pkg => `  ${pkg}: ${versions[pkg]}`).join('\n');
+  const indexFrontMatter = `---
+title: Home
+layout: default
+---
+`;
 
   gulp
-    .src('docs/_config.sample.yml')
-    .pipe(replace(/(# #versions)[^]+(# \/versions)/gm, '$1\n' + versionsYaml + '\n$2'))
-    .pipe(rename('_config.yml'))
+    .src('README.md')
+    .pipe(replace(/(# SEEDS)/gm, `${indexFrontMatter}\n$1`))
+    .pipe(rename('index.md'))
     .pipe(gulp.dest('docs'));
 
   // Write JSON file of versions, excluding the build package
   fs.writeFile(
-    './docs/versions.json',
+    './docs/_data/versions.json',
     JSON.stringify(versions, (key, value) => (key === 'seeds' ? undefined : value)),
     err => done(err)
   );

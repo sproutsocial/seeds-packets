@@ -1,19 +1,27 @@
 <nav>
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="{{ site.baseurl }}/packets/color">Color</a>
+  <ul class="Nav flex-column">
+    <li class="Nav-item">
+      <button class="Nav-link js-jira-issue btn">Submit an Issue</button>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="{{ site.baseurl }}/packets/networkcolor">Network Color</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="{{ site.baseurl }}/packets/typography">Typography</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="{{ site.baseurl }}/packets/motion">Motion</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="{{ site.baseurl }}/packets/space">Space</a>
-    </li>
+
+    {% for item in site.data.navigation %}
+      {% assign url = item.url | append: 'index' %}
+
+      <li class="Nav-item {% if url == page.url %}Nav-item--active{% endif %}">
+        <a class="Nav-link" href="{{ site.baseurl }}{{item.url}}">
+          {{item.title}}
+        </a>
+
+        {% if item.subnav %}
+          <ul class="Nav flex-column">
+            {% for entry in item.subnav %}
+              <li class="Nav-item">
+                <a class="Nav-link" href="{{ entry.url }}">{{ entry.page }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
   </ul>
 </nav>

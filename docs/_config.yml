@@ -6,7 +6,3 @@ collections:
   packets:
     output: true
     permalink: /:collection/:path
-
-versions:
-# #versions
-# /versions

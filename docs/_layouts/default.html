@@ -21,34 +21,36 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
   </head>
-  <body>
-    <header>
-      {% if page.title == 'Home' %}
-        <div class="container">
-          <main role="main">
-            <h1 class="Typography-size--1000">
-              <abbr title="{{ site.description }}">{{ site.name }}</abbr>
-            </h1>
-          {% include navigation.html %}
-          </main>
-        </div>
-      {% else %}
-        <div class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="/seeds">
-            <abbr title="{{ site.description }}/">{{ site.name }}</abbr>
-          </a>
 
+  <body>
+    <div class="Page">
+      <div class="Sidebar">
+        <a class="Sidebar-brand" href="{{ site.baseurl }}/">{{ site.name }}</a>
+  
+        <div class="Sidebar-nav nav">
           {% include navigation.html %}
         </div>
-      {% endif %}
-    </header>
-    <div class="container">
+      </div>
+  
       <main role="main">
         {% unless page.title == 'Home' %}
-          <h1 class="Typography-size--1000">{{ page.title }} <small>{{ site.versions[page.package] }}</small></h1>
+          <h1 class="Typography-size--1000">{{ page.title }} <small>{{ site.data.versions[page.package].version }} {{ site.data.versions[page.package].stability }}</small></h1>
         {% endunless %}
         {{ content }}
       </main>
+
+      <script type="text/javascript" src="https://sprout.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/qqo0b4/b/c/7ebd7d8b8f8cafb14c7b0966803e5701/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=e1ee1c3e"></script>
+      
+      <script type="text/javascript">
+        window.ATL_JQ_PAGE_PROPS =  {
+          'triggerFunction': function(showCollectorDialog) {
+              jQuery('.js-jira-issue').click(function(e) {
+                  e.preventDefault();
+                  showCollectorDialog();
+              });
+          }
+        };
+      </script>
     </div>
   </body>
 </html>

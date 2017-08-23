@@ -4,21 +4,12 @@ layout: default
 package: seeds-space
 ---
 
-<h2>Table of Contents</h2>
-<ul>
-  <li>
-    <a href="#overview">Overview</a>
-  </li>
-  <li>
-    <a href="#palette">Space Scale</a>
-  </li>
-  <li>
-    <a href="#best-practices">Best Practices</a>
-  </li>
-</ul>
-
 {% capture overview_md %}{% include_relative overview.md %}{% endcapture %}
-{{ overview_md | markdownify }}
+<div class="Typography-size--500">
+  {{ overview_md | markdownify }}
+</div>
+
+<hr>
 
 {% include_relative scale.html %}
 

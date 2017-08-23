@@ -1,0 +1,16 @@
+.Page {
+  display: grid;
+}
+
+main {
+  padding: $Space-size--400;
+}
+
+@media screen and (min-width: 600px) {
+  .Page {
+    grid-template-columns: auto 3fr;
+  }
+  main {
+    padding: $Space-size--600 * 2;
+  }
+}

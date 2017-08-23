@@ -1,19 +1,46 @@
+$Typography-unit: 'rem';
 @import "seeds-color";
 @import "seeds-space";
 @import "seeds-typography";
 
-@import "headings";
-@import "space";
-@import "typography";
-
-body > * {
-  @include Typography-size--300;
+html,
+body {
+  font-size: $Typography-size--300;
   font-family: $Typography-family;
-  color: $Color-black;
+  color: $Color-gray--800;
+  @media screen and (min-width: 768px) {
+    font-size: $Typography-size--400;
+  }
+}
+
+.Example {
+  min-width: 20em;
+  position: relative;
+  height: 2em;
+}
+.Example-ball {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  transition-property: left;
+  transition-duration: 1s;
+  background: currentColor;
+}
+.Example:hover .Example-ball {
+  left: calc(100% - 2em);
 }
 
 .table tbody+tbody {
   border-top: none;
+}
+
+hr {
+  height: 0;
+  border-top: 1px solid $Color-gray--200;
+  padding: 0;
+  margin: ($Space-size--600 * 2) auto;
 }
 
 a {
@@ -25,3 +52,9 @@ a {
     text-decoration: underline;
   }
 }
+
+@import "headings";
+@import "navigation";
+@import "page";
+@import "space";
+@import "typography";

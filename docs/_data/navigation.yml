@@ -1,0 +1,37 @@
+- title: Color
+  url: /packets/color/
+  subnav:
+    - page: Overview
+      url: "#"
+    - page: Color Palette
+      url: "#palette"
+    - page: Best Practices
+      url: "#best-practices"
+    - page: Accessibility
+      url: "#accessibility"
+    - page: Resources
+      url: "#resources"
+- title: Motion
+  url: /packets/motion/
+- title: Network Color
+  url: /packets/networkcolor/
+  subnav:
+    - page: Overview
+      url: "#"
+    - page: Color Palette
+      url: "#palette"
+    - page: Best Practices
+      url: "#best-practices"
+    - page: Resources
+      url: "#resources"
+- title: Space
+  url: /packets/space/
+  subnav:
+    - page: Overview
+      url: "#"
+    - page: Space Scale
+      url: "#scale"
+    - page: Best Practices
+      url: "#best-practices"
+- title: Typography
+  url: /packets/typography/
