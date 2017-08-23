@@ -40,18 +40,6 @@ gulp.task('docs-copy', done => {
 });
 
 gulp.task('docs-files', done => {
-  const versionsYaml = Object.keys(versions)
-    .map(pkg => {
-      return `
-${pkg}:
-  version: ${versions[pkg].version}
-  stability: ${versions[pkg].stability}
-`;
-    })
-    .join('');
-
-  fs.writeFile('./docs/_data/versions.yml', versionsYaml);
-
   const indexFrontMatter = `---
 title: Home
 layout: default
@@ -66,7 +54,7 @@ layout: default
 
   // Write JSON file of versions, excluding the build package
   fs.writeFile(
-    './docs/versions.json',
+    './docs/_data/versions.json',
     JSON.stringify(versions, (key, value) => (key === 'seeds' ? undefined : value)),
     err => done(err)
   );
