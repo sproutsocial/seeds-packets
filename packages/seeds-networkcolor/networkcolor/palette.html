@@ -1,41 +1,49 @@
 <h2 id="palette">Network Color Palette</h2>
 
-<h3>App Downloads</h3>
-<ul>
-  <li>
-    <a href="{{ site.baseurl }}/_generated/seeds-networkcolor.{{ site.data.versions.seeds-networkcolor.version }}.sketchpalette" download>Sketch Palette</a> (Requires <a href="https://github.com/andrewfiorillo/sketch-palettes">Sketch Palettes Plugin</a>)
-  </li>
-  <li>
-    <a href="{{ site.baseurl }}/_generated/seeds-networkcolor.{{ site.data.versions.seeds-networkcolor.version }}.ase" download>Adobe Swatch Exchange</a>
-  </li>
-  <li>
-    <a href="{{ site.baseurl }}/_generated/seeds-networkcolor.{{ site.data.versions.seeds-networkcolor.version }}.clr" download>macOS System Palette</a>
-  </li>
-</ul>
+<div class="row">
+  <div class="col">
+    <h3>App Downloads</h3>
 
-<h3>Get the Code</h3>
-<ul>
-  <li>
-    For SCSS or Javascript
     <ul>
       <li>
-        <code>yarn add @sproutsocial/seeds-color</code>
+        <a href="{{ site.baseurl }}/_generated/seeds-networkcolor.{{ site.data.versions.seeds-networkcolor.version }}.sketchpalette" download>Sketch Palette</a> (Requires <a href="https://github.com/andrewfiorillo/sketch-palettes">Sketch Palettes Plugin</a>)
       </li>
       <li>
-        <code>npm install @sproutsocial/seeds-color --save</code>
+        <a href="{{ site.baseurl }}/_generated/seeds-networkcolor.{{ site.data.versions.seeds-networkcolor.version }}.ase" download>Adobe Swatch Exchange</a>
+      </li>
+      <li>
+        <a href="{{ site.baseurl }}/_generated/seeds-networkcolor.{{ site.data.versions.seeds-networkcolor.version }}.clr" download>macOS System Palette</a>
       </li>
     </ul>
-  </li>
-  <li>
-    <a href="{{ site.baseurl }}/_generated/seeds_networkcolor.py" download>Python</a>
-  </li>
-  <li>
-    <a href="{{ site.baseurl }}/_generated/seeds_networkcolor.xml" download>Android XML</a>
-  </li>
-  <li>
-    <a href="{{ site.baseurl }}/_generated/UIColor+SeedsNetworkcolor.swift" download>Swift</a>
-  </li>
-</ul>
+  </div>
+  <div class="col">
+    <h3>Get the Code</h3>
+
+    <ul>
+      <li>
+        For SCSS or Javascript
+        <ul>
+          <li>
+            <code>yarn add @sproutsocial/seeds-color</code>
+          </li>
+          <li>
+            <code>npm install @sproutsocial/seeds-color --save</code>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="{{ site.baseurl }}/_generated/seeds_networkcolor.py" download>Python</a>
+      </li>
+      <li>
+        <a href="{{ site.baseurl }}/_generated/seeds_networkcolor.xml" download>Android XML</a>
+      </li>
+      <li>
+        <a href="{{ site.baseurl }}/_generated/UIColor+SeedsNetworkcolor.swift" download>Swift</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
 
 <h3>Color Samples</h3>
 
@@ -75,14 +83,16 @@
 </script>
 
 <script id="colors-row" type="text/html">
-  <tr style="background: <%= value %>; color: <%= textColor %>;">
-    <th scope="row" style="text-align: left; width: 10em;">
-      <span data-lang="palette" style="display: block"><%= palette %></span>
-      <pre data-lang="sass" style="display: none"><%= sass %></pre>
-      <pre data-lang="javascript" style="display: none"><%= javascript %></pre>
-      <pre data-lang="swift" style="display: none"><%= swift %></pre>
-      <pre data-lang="android" style="display: none"><%= android %></pre>
-      <pre data-lang="python" style="display: none"><%= python %></pre>
+  <tr style="background: <%= value %>;">
+    <td scope="row" style="text-align: left; width: 10em;">
+      <strong>
+        <span data-lang="palette" style="color: <%= textColor %>; display: block"><%= palette %></span>
+        <pre data-lang="sass" style="color: <%= textColor %>; display: none"><%= sass %></pre>
+        <pre data-lang="javascript" style="color: <%= textColor %>; display: none"><%= javascript %></pre>
+        <pre data-lang="swift" style="color: <%= textColor %>; display: none"><%= swift %></pre>
+        <pre data-lang="android" style="color: <%= textColor %>; display: none"><%= android %></pre>
+        <pre data-lang="python" style="color: <%= textColor %>; display: none"><%= python %></pre>
+      </strong>
 
       <span>
         <pre data-value="value" style="display: inline-block; color: <%= textColor %>"><%= value %></pre>

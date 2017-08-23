@@ -13,6 +13,25 @@ body {
   }
 }
 
+.Example {
+  min-width: 20em;
+  position: relative;
+  height: 2em;
+}
+.Example-ball {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  transition-property: left;
+  transition-duration: 1s;
+  background: currentColor;
+}
+.Example:hover .Example-ball {
+  left: calc(100% - 2em);
+}
+
 .table tbody+tbody {
   border-top: none;
 }
