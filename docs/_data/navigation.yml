@@ -1,3 +1,9 @@
+- title: What is a Package?
+  url: /package/
+
+- title: How to Contribute
+  url: /contribute/
+
 - title: Color
   url: /packets/color/
   subnav:
@@ -11,8 +17,10 @@
       url: "#accessibility"
     - page: Resources
       url: "#resources"
+
 - title: Motion
   url: /packets/motion/
+
 - title: Network Color
   url: /packets/networkcolor/
   subnav:
@@ -24,6 +32,7 @@
       url: "#best-practices"
     - page: Resources
       url: "#resources"
+
 - title: Space
   url: /packets/space/
   subnav:
@@ -33,5 +42,6 @@
       url: "#scale"
     - page: Best Practices
       url: "#best-practices"
+
 - title: Typography
   url: /packets/typography/
