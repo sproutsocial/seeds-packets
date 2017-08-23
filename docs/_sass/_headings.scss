@@ -12,7 +12,7 @@ dt {
 }
 
 h1 {
-  @include Typography-size--900;
+  @include Typography-size--1000;
   + * {
     margin-top: $Space-size--600;
   }

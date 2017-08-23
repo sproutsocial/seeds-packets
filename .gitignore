@@ -3,7 +3,6 @@ docs/_site
 docs/css
 docs/_packets
 packages/**/*/_generated
-docs/index.md
 docs/_data/versions.json
 .vscode
 versions.json
