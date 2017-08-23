@@ -40,18 +40,6 @@ gulp.task('docs-copy', done => {
 });
 
 gulp.task('docs-files', done => {
-  const indexFrontMatter = `---
-title: Home
-layout: default
----
-`;
-
-  gulp
-    .src('README.md')
-    .pipe(replace(/(# SEEDS)/gm, `${indexFrontMatter}\n$1`))
-    .pipe(rename('index.md'))
-    .pipe(gulp.dest('docs'));
-
   // Write JSON file of versions, excluding the build package
   fs.writeFile(
     './docs/_data/versions.json',
