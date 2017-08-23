@@ -35,7 +35,7 @@
   
       <main role="main">
         {% unless page.title == 'Home' %}
-          <h1 class="Typography-size--1000">{{ page.title }} <small>{{ site.versions[page.package] }}</small></h1>
+          <h1 class="Typography-size--1000">{{ page.title }} <small>{{ site.data.versions[page.package].version }} {{ site.data.versions[page.package].stability }}</small></h1>
         {% endunless %}
         {{ content }}
       </main>

@@ -40,7 +40,7 @@ gulp.task(
   getGulpNetworkColorTask('swift', 'swift', {
     filename: `UIColor+${pascalCase('seeds-networkcolor')}`,
     dest: 'networkcolor/_generated',
-    prependFile: `// seeds-networkcolor\n// version ${versions['seeds-networkcolor']}`
+    prependFile: `// seeds-networkcolor\n// version ${versions['seeds-networkcolor'].version}`
   })
 );
 
@@ -57,7 +57,7 @@ gulp.task(
   getGulpNetworkColorTask('web', 'python.py', {
     filename: snakeCase('seeds-networkcolor'),
     dest: 'networkcolor/_generated',
-    prependFile: `# seeds-networkcolor\n# version ${versions['seeds-networkcolor']}`
+    prependFile: `# seeds-networkcolor\n# version ${versions['seeds-networkcolor'].version}`
   })
 );
 
@@ -77,7 +77,7 @@ gulp.task('networkcolor-ase', done => {
     .pipe(
       theo.plugins.getResult(result => {
         const wstream = fs.createWriteStream(
-          `networkcolor/_generated/seeds-networkcolor.${versions['seeds-networkcolor']}.ase`
+          `networkcolor/_generated/seeds-networkcolor.${versions['seeds-networkcolor'].version}.ase`
         );
         wstream.write(ase.encode(JSON.parse(result)));
         wstream.end();
@@ -95,7 +95,7 @@ gulp.task(
       exec(
         `${process.cwd()}/node_modules/ase-util/bin/ase2clr ${downloadDir}/seeds-networkcolor.${versions[
           'seeds-networkcolor'
-        ]}.ase ${downloadDir}/seeds-networkcolor.${versions['seeds-networkcolor']}.clr`,
+        ].version}.ase ${downloadDir}/seeds-networkcolor.${versions['seeds-networkcolor'].version}.clr`,
         err => {
           cb(err);
         }

@@ -1,6 +1,7 @@
 {
   "name": "@sproutsocial/seeds-motion",
   "version": "0.1.5",
+  "stability": "alpha",
   "description": "SEEDS Design System Motion and Animation Values",
   "main": "dist/seeds-motion.js",
   "repository": {
@@ -10,5 +11,8 @@
   "author": "Sprout Social",
   "scripts": {
     "build": "gulp"
+  },
+  "devDependencies": {
+    "@sproutsocial/seeds-utils": "^0.1.2"    
   }
 }

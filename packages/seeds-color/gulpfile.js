@@ -40,7 +40,7 @@ gulp.task(
   getGulpColorTask('swift', 'swift', {
     filename: `UIColor+${pascalCase('seeds-color')}`,
     dest: 'color/_generated',
-    prependFile: `// seeds-color\n// version ${versions['seeds-color']}`
+    prependFile: `// seeds-color\n// version ${versions['seeds-color'].version}`
   })
 );
 
@@ -57,7 +57,7 @@ gulp.task(
   getGulpColorTask('web', 'python.py', {
     filename: snakeCase('seeds-color'),
     dest: 'color/_generated',
-    prependFile: `# seeds-color\n# version ${versions['seeds-color']}`
+    prependFile: `# seeds-color\n# version ${versions['seeds-color'].version}`
   })
 );
 
@@ -73,7 +73,10 @@ gulp.task('color-ase', done => {
   return gulp.src(colorTokensPath).pipe(theo.plugins.transform('designapp')).pipe(theo.plugins.format('ase')).pipe(
     theo.plugins.getResult(result => {
       makeDir('color/_generated/').then(() => {
-        fs.writeFileSync(`color/_generated/seeds-color.${versions['seeds-color']}.ase`, ase.encode(JSON.parse(result)));
+        fs.writeFileSync(
+          `color/_generated/seeds-color.${versions['seeds-color'].version}.ase`,
+          ase.encode(JSON.parse(result))
+        );
         done();
       });
     })
@@ -83,9 +86,8 @@ gulp.task('color-ase', done => {
 gulp.task('color-clr', done => {
   const downloadDir = `${process.cwd()}/color/_generated`;
   exec(
-    `${process.cwd()}/node_modules/ase-util/bin/ase2clr ${downloadDir}/seeds-color.${versions[
-      'seeds-color'
-    ]}.ase ${downloadDir}/seeds-color.${versions['seeds-color']}.clr`,
+    `${process.cwd()}/node_modules/ase-util/bin/ase2clr ${downloadDir}/seeds-color.${versions['seeds-color']
+      .version}.ase ${downloadDir}/seeds-color.${versions['seeds-color'].version}.clr`,
     err => {
       done(err);
     }

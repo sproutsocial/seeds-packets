@@ -2,8 +2,7 @@ const spawn = require('child_process').spawn;
 const gulp = require('gulp');
 const del = require('del');
 const gulpUtil = require('gulp-util');
-
-const docs = require('./tasks/docs');
+const docs = require('./packages/seeds-utils/docs');
 
 gulp.task('jekyll', cb => {
   const jekyll = spawn('jekyll', ['build'], {cwd: './docs'});
@@ -27,6 +26,6 @@ gulp.task('watch', () => {
   gulp.watch(['packages/**/*'], gulp.parallel(['docs']));
 });
 
-gulp.task('serve', gulp.series(['docs', gulp.parallel(['watch', 'jekyll'])]));
+gulp.task('serve', gulp.series(['docs', gulp.parallel(['watch'])]));
 
-gulp.task('default', gulp.series(['jekyll', 'docs']));
+gulp.task('default', gulp.series(['docs', 'jekyll']));

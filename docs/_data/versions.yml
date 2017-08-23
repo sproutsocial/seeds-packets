@@ -1,0 +1,28 @@
+
+seeds-color:
+  version: 0.2.7
+  stability: stable
+
+seeds-motion:
+  version: 0.1.5
+  stability: alpha
+
+seeds-networkcolor:
+  version: 0.2.6
+  stability: stable
+
+seeds-space:
+  version: 0.2.0
+  stability: beta
+
+seeds-typography:
+  version: 0.1.4
+  stability: stable
+
+seeds-utils:
+  version: 0.1.4
+  stability: undefined
+
+seeds:
+  version: 0.4.0
+  stability: undefined
