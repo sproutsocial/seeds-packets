@@ -19,5 +19,4 @@ package: seeds-color
 {% capture accessibility_md %}{% include_relative accessibility.md %}{% endcapture %}
 {{ accessibility_md | markdownify }}
 
-{% capture resources_md %}{% include_relative resources.md %}{% endcapture %}
-{{ resources_md | markdownify }}
+{% include_relative resources.html %}
