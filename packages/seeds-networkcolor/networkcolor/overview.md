@@ -1,1 +1,1 @@
-The network color palette is comprised of our partner’s brand colors.
+The network color palette is comprised of our partners’ brand colors.
