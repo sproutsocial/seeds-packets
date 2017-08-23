@@ -3,10 +3,14 @@ $Typography-unit: 'rem';
 @import "seeds-space";
 @import "seeds-typography";
 
-body > * {
-  @include Typography-size--300;
+html,
+body {
+  font-size: $Typography-size--300;
   font-family: $Typography-family;
   color: $Color-gray--800;
+  @media screen and (min-width: 768px) {
+    font-size: $Typography-size--400;
+  }
 }
 
 .table tbody+tbody {
