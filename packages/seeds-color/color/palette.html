@@ -49,25 +49,22 @@
 <table id="paletteTable" class="table d-flex flex-wrap"></table>
 
 <script id="colors" type="text/html">
-  <tbody>
-    <tr>
-      <th colspan="2" scope="col" style="text-align: left;">
-        <h4><%= category %></h4>
-      </th>
-    </tr>
+  <tbody class="Space-size--400Top">
     <%= rows %>
   </tbody>
 </script>
 
 <script id="colors-row" type="text/html">
-  <tr style="background: <%= value %>; color: <%= textColor %>;">
-    <th scope="row" style="text-align: left; width: 9em;">
-      <span data-lang="palette" style="display: block"><%= palette %></span>
-      <pre data-lang="sass" style="display: none"><%= sass %></pre>
-      <pre data-lang="javascript" style="display: none"><%= javascript %></pre>
-      <pre data-lang="swift" style="display: none"><%= swift %></pre>
-      <pre data-lang="android" style="display: none"><%= android %></pre>
-      <pre data-lang="python" style="display: none"><%= python %></pre>
+  <tr style="background: <%= value %>;">
+    <td scope="row" style="text-align: left; width: 9em;">
+      <strong style="color: <%= textColor %>;">
+        <span data-lang="palette" style="display: block"><%= palette %></span>
+        <pre data-lang="sass" style="display: none"><%= sass %></pre>
+        <pre data-lang="javascript" style="display: none"><%= javascript %></pre>
+        <pre data-lang="swift" style="display: none"><%= swift %></pre>
+        <pre data-lang="android" style="display: none"><%= android %></pre>
+        <pre data-lang="python" style="display: none"><%= python %></pre>
+      </strong>
 
       <span>
         <pre data-value="value" style="display: inline-block; color: <%= textColor %>"><%= value %></pre>

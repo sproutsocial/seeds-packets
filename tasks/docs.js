@@ -41,6 +41,18 @@ gulp.task('docs-copy', done => {
 
 gulp.task('docs-files', done => {
   const versionsYaml = Object.keys(versions).map(pkg => `  ${pkg}: ${versions[pkg]}`).join('\n');
+  const indexFrontMatter =
+`---
+title: Home
+layout: default
+---
+`;
+
+  gulp
+    .src('README.md')
+    .pipe(replace(/(# SEEDS)/gm, `${indexFrontMatter}\n$1`))
+    .pipe(rename('index.md'))
+    .pipe(gulp.dest('docs'));
 
   gulp
     .src('docs/_config.sample.yml')

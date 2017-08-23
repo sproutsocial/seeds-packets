@@ -22,33 +22,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
   </head>
   <body>
-    <header>
-      {% if page.title == 'Home' %}
-        <div class="container">
-          <main role="main">
-            <h1 class="Typography-size--1000">
-              <abbr title="{{ site.description }}">{{ site.name }}</abbr>
-            </h1>
-          {% include navigation.html %}
-          </main>
-        </div>
-      {% else %}
-        <div class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="/seeds">
-            <abbr title="{{ site.description }}/">{{ site.name }}</abbr>
-          </a>
-
+    <div class="Page">
+      <header class="Header"></header>
+  
+      <div class="Sidebar">
+        <a class="Sidebar-brand" href="{{ site.baseurl }}/">{{ site.name }}</a>
+  
+        <div class="Sidebar-nav nav">
           {% include navigation.html %}
         </div>
-      {% endif %}
-    </header>
-    <div class="container">
+      </div>
+  
       <main role="main">
         {% unless page.title == 'Home' %}
           <h1 class="Typography-size--1000">{{ page.title }} <small>{{ site.versions[page.package] }}</small></h1>
         {% endunless %}
         {{ content }}
       </main>
+
+      <footer class="Footer"></footer>
     </div>
   </body>
 </html>
