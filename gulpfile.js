@@ -22,7 +22,7 @@ gulp.task('watch', () => {
   jekyll.stdout.on('data', jekyllLogger);
   jekyll.stderr.on('data', jekyllLogger);
 
-  gulp.watch(['docs/_sass/**/*.scss'], gulp.parallel(['docs-css']));
+  gulp.watch(['docs/_sass/**/*.scss'], gulp.series(['docs-css', 'jekyll']));
   gulp.watch(['packages/**/*'], gulp.parallel(['docs']));
 });
 

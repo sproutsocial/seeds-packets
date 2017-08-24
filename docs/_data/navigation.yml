@@ -4,6 +4,16 @@
 - title: How to Contribute
   url: /contribute/
 
+- title: Border
+  url: /packets/border/
+  subnav:
+    - page: Overview
+      url: "#"
+    - page: Examples
+      url: "#examples"
+    - page: Best Practices
+      url: "#best-practices"
+
 - title: Color
   url: /packets/color/
   subnav:

@@ -1,0 +1,31 @@
+.Example-motion {
+  min-width: 20em;
+  position: relative;
+  height: 2em;
+}
+.Example-motion-ball {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  transition-property: left;
+  transition-duration: 1s;
+  background: currentColor;
+}
+.Example-motion:hover .Example-motion-ball {
+  left: calc(100% - 2em);
+}
+.Example-borderRadius {
+  @include Typography-size--600;
+  font-weight: $Typography-weight--bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: $Space-size--300;
+  padding: $Space-size--600;
+  background: $Color-gray--200;
+  pre {
+    margin: 0;
+  }
+}

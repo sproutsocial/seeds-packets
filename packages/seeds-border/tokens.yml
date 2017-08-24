@@ -1,0 +1,10 @@
+---
+global:
+  package: border
+  type: border
+props:
+  radius-size:
+    category: radius
+    value: 3px
+    description: We have one border radius. It is 3px.
+...

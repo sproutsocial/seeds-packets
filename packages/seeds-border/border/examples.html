@@ -1,0 +1,47 @@
+<h2 id="examples">Examples</h2>
+
+<h3>Get the Code</h3>
+
+<p>For SCSS or Javascript:</p>
+<ul>
+  <li>
+    <code>yarn add @sproutsocial/{{page.package}}</code>
+  </li>
+  <li>
+    <code>npm install @sproutsocial/{{page.package}} --save</code>
+  </li>
+</ul>
+
+<label>
+  Name
+  <select id="border-name">
+    <option value="sass" selected>Sass</option>
+    <option value="javascript">Javascript</option>
+  </select>
+</label>
+
+<div id="borderRadiusExample"></div>
+
+<script id="borderRadiusTemplate" type="text/html">
+  <div class="Example-borderRadius" style="border-radius: <%= value %>;">
+    <pre data-lang="sass" style="display: block"><%= sass %></pre>
+    <pre data-lang="javascript" style="display: none"><%= javascript %></pre>
+  </div>
+</script>
+
+{% include_relative _generated/border.html %}
+
+<script>
+  (function($, _, seedsBorder) {
+    var borderRadiusTemplate = _.template($('#borderRadiusTemplate').html());
+
+    _.each(seedsBorder, function(token) {
+      $('#borderRadiusExample').append(borderRadiusTemplate(token));
+    });
+
+    $('#border-name').on('change', function () {
+      $('[data-lang="' + this.value + '"]').show().siblings().hide();
+    });
+
+  })(window.jQuery, window._, window.seedsBorder);
+</script>

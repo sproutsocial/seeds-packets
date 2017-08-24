@@ -4,13 +4,13 @@
 
 <ul>
   <li>
-    <a href="{{ site.baseurl }}/_generated/seeds-networkcolor.{{ site.data.versions.seeds-networkcolor.version }}.sketchpalette" download>Sketch Palette</a> (Requires <a href="https://github.com/andrewfiorillo/sketch-palettes">Sketch Palettes Plugin</a>)
+    <a href="{{ site.baseurl }}/_generated/seeds-{{page.package}}.{{ site.data.versions[page.package].version }}.sketchpalette" download>Sketch Palette</a> (Requires <a href="https://github.com/andrewfiorillo/sketch-palettes">Sketch Palettes Plugin</a>)
   </li>
   <li>
-    <a href="{{ site.baseurl }}/_generated/seeds-networkcolor.{{ site.data.versions.seeds-networkcolor.version }}.ase" download>Adobe Swatch Exchange</a>
+    <a href="{{ site.baseurl }}/_generated/seeds-{{page.package}}.{{ site.data.versions[page.package].version }}.ase" download>Adobe Swatch Exchange</a>
   </li>
   <li>
-    <a href="{{ site.baseurl }}/_generated/seeds-networkcolor.{{ site.data.versions.seeds-networkcolor.version }}.clr" download>macOS System Palette</a>
+    <a href="{{ site.baseurl }}/_generated/seeds-{{page.package}}.{{ site.data.versions[page.package].version }}.clr" download>macOS System Palette</a>
   </li>
 </ul>
 
@@ -21,10 +21,10 @@
     For SCSS or Javascript
     <ul>
       <li>
-        <code>yarn add @sproutsocial/seeds-color</code>
+        <code>yarn add @sproutsocial/{{page.package}} </code>
       </li>
       <li>
-        <code>npm install @sproutsocial/seeds-color --save</code>
+        <code>npm install @sproutsocial/{{page.package}}  --save</code>
       </li>
     </ul>
   </li>
