@@ -3,9 +3,9 @@
 <h3>App Downloads</h3>
 
 <ul>
-  <li><a href="_generated/seeds-color.{{ site.data.versions.seeds-color.version }}.sketchpalette" download>Sketch Palette </a>(Requires <a href="https://github.com/andrewfiorillo/sketch-palettes">Sketch Plugin</a></li> 
-  <li><a href="_generated/seeds-color.{{ site.data.versions.seeds-color.version }}.ase" download>Adobe Swatch Exchange</a></li>
-  <li><a href="_generated/seeds-color.{{ site.data.versions.seeds-color.version }}.clr" download>macOS System Palette</a></li>
+  <li><a href="_generated/{{page.package}}.{{ site.data.versions[page.package].version }}.sketchpalette" download>Sketch Palette </a>(Requires <a href="https://github.com/andrewfiorillo/sketch-palettes">Sketch Plugin</a></li> 
+  <li><a href="_generated/{{page.package}}.{{ site.data.versions[page.package].version }}.ase" download>Adobe Swatch Exchange</a></li>
+  <li><a href="_generated/{{page.package}}.{{ site.data.versions[page.package].version }}.clr" download>macOS System Palette</a></li>
 </ul>
 
 <h3>Get the Code</h3>
@@ -13,8 +13,8 @@
 <ul>
   <li>For SCSS or Javascript:
     <ul>
-      <li><code>yarn add @sproutsocial/seeds-color</code></li>
-      <li><code>npm install @sproutsocial/seeds-color --save</code></li>
+      <li><code>yarn add @sproutsocial/{{page.package}}</code></li>
+      <li><code>npm install @sproutsocial/{{page.package}} --save</code></li>
     </ul>
   </li>
   <li><a href="{{ site.baseurl }}/_generated/seeds_color.py" download>Python</a></li>
