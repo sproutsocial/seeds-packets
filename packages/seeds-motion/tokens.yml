@@ -15,4 +15,21 @@ props:
     category: easing
     value: cubic-bezier(.4, 0, .2, 1)
     description: Use for elements that change position
+
+  timing immediately:
+    category: timing
+    value: 0.05s
+    description: Description here.
+  timing quickly:
+    category: timing
+    value: 0.1s
+    description: Description here.
+  timing promptly:
+    category: timing
+    value: 0.2s
+    description: Description here.
+  timing slowly:
+    category: timing
+    value: 0.4s
+    description: Description here.
 ...

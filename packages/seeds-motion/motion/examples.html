@@ -10,25 +10,50 @@
     <td><%= description %></td>
     <td>
       <div class="Example">
-        <div class="Example-ball"></div>
+        <div class="Example-ball" style="transition-timing-function: <%= value %>;"></div>
+      </div>
+    </td>
+  </tr>
+</script>
+
+<script id="timing" type="text/html">
+  <tr>
+    <th scope="row" style="text-align: left;">
+      <pre data-lang="sass" style="display: block"><%= sass %></pre>
+      <pre data-lang="javascript" style="display: none"><%= javascript %></pre>
+    </th>
+    <td>
+      <pre><%= value %></pre>
+    </td>
+    <td><%= description %></td>
+		<td>
+      <div class="Example">
+        <div class="Example-timing" style="transition-duration: <%= value %>;"></div>
       </div>
     </td>
   </tr>
 </script>
 
 <script>
-  (function($, _, seedsMotion) {
+	(function($, _, seedsMotion) {
+		_.each(['easing', 'timing'], function(category) {
 
-    var easingTemplate = _.template($('#easing').html());
-    var $tableBody = $('[data-js="tbody"]');
+	    var motionTemplate = _.template($('#' + category).html());
+	    var $tableBody = $('[data-js="tbody ' + category + '"]');
 
-    _.each(seedsMotion, function(easing) {
-      $tableBody.append(easingTemplate(easing));
-    });
+			_.each(
+				_.filter(seedsMotion, function(item) {
+					return item.category == category;
+				}),
+				function(item) {
+					$tableBody.append(motionTemplate(item));
+				}
+			);
 
-    $('#motion-name').on('change', function () {
-      $('[data-lang="' + this.value + '"]').show().siblings().hide();
-    });
+	    $('#motion-' + category + '-name').on('change', function() {
+	      $('[data-lang="' + this.value + '"]').show().siblings().hide();
+	    });
 
-  })(window.jQuery, window._, window.seedsMotion);
+	  });
+	})(window.jQuery, window._, window.seedsMotion);
 </script>

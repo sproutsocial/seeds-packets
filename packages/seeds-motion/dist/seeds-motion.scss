@@ -1,3 +1,7 @@
 $Motion-ease--in: cubic-bezier(.4, 0, 1, 1);
 $Motion-ease--out: cubic-bezier(0, 0, .2, 1);
 $Motion-ease--inout: cubic-bezier(.4, 0, .2, 1);
+$Motion-timing--immediately: 0.05s;
+$Motion-timing--quickly: 0.1s;
+$Motion-timing--promptly: 0.2s;
+$Motion-timing--slowly: 0.4s;
