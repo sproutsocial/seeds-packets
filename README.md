@@ -14,6 +14,7 @@ To build SEEDS packages, simply install dependencies by running `yarn` and build
 - `yarn build` - Builds packages
 - `yarn docs` - Builds packages and docs
 - `yarn docs-publish` - Builds packages and docs, then publishes it to `upstream`
+  - If you run `lerna run build && gulp && gh-pages -d docs` locally, you can publish the github pages docs to your fork. **ONLY DO THIS IF YOU HAVE A FORK OF SEEDS.**
 - `yarn docs-serve` - Builds packages, docs, and then serves them through Jekyll (Jekyll needs to be installed to run this command)
 
 ### Versioning/updating process
