@@ -22,7 +22,7 @@ package: seeds-motion
   <thead>
     <th scope="col">
       Name
-      <select id="motion-name">
+      <select id="motion-easing-name">
         <option value="sass" selected>Sass</option>
         <option value="javascript">Javascript</option>
       </select>
@@ -31,7 +31,26 @@ package: seeds-motion
     <th scope="col">Description</th>
     <th scope="col">Watch</th>
   </thead>
-  <tbody data-js="tbody"></tbody>
+  <tbody data-js="tbody easing"></tbody>
+</table>
+
+
+<h2>Timing</h2>
+
+<table class="table">
+  <thead>
+    <th scope="col">
+      Name
+      <select id="motion-timing-name">
+        <option value="sass" selected>Sass</option>
+        <option value="javascript">Javascript</option>
+      </select>
+    </th>
+    <th scope="col">Value</th>
+    <th scope="col">Description</th>
+		<th scope="col">Watch</th>
+  </thead>
+  <tbody data-js="tbody timing"></tbody>
 </table>
 
 {% include_relative _generated/motion.html %}

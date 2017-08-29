@@ -25,11 +25,22 @@ body {
   position: absolute;
   left: 0;
   transition-property: left;
-  transition-duration: 1s;
+  transition-duration: $Motion-timing--slowly;
   background: currentColor;
 }
 .Example:hover .Example-ball {
   left: calc(100% - 2em);
+}
+.Example-timing {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: $Motion-timing--slowly;
+  background: currentColor;
+}
+.Example:hover .Example-timing {
+  background-color: $Color-green--600;
 }
 
 .table tbody+tbody {

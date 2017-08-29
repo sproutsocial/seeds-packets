@@ -27,13 +27,14 @@ gulp.task('motion-docs', done => {
       const tokens = JSON.parse(result);
       const easings = tokens.propKeys.map(key => {
         const prop = tokens.props[key];
-        const {value, description} = prop;
+        const {category, value, description} = prop;
 
         return {
           sass: sassVar(prop.package, prop.name),
           javascript: javascriptConst(prop.package, prop.name),
           value,
-          description
+          description,
+          category
         };
       });
 
