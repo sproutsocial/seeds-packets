@@ -29,7 +29,7 @@ function getGulpTask(pkg, transform, format, opts = {}) {
         rename({
           dirname: '',
           basename: opts.filename,
-          suffix: opts.appendVersion ? '.' + versions[pkg] : ''
+          suffix: opts.appendVersion ? '.' + versions[pkg].version : ''
         })
       )
       .pipe(insert.prepend(opts.prependFile ? opts.prependFile + '\n\n' : ''))
