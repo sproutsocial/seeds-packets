@@ -1,3 +1,36 @@
+<h2 id="examples">Examples</h2>
+
+<h3>Get the Code</h3>
+<p>For SCSS or Javascript:</p>
+<ul>
+  <li>
+    <code>yarn add @sproutsocial/{{page.package}}</code>
+  </li>
+  <li>
+    <code>npm install @sproutsocial/{{page.package}} --save</code>
+  </li>
+</ul>
+
+<h3>Easing</h3>
+<p>Our easing values are taken from <a href="https://material.io/guidelines/motion/duration-easing.html#duration-easing-natural-easing-curves">Google’s Material Design guidelines</a>.</p>
+
+<table class="table">
+  <thead>
+    <th scope="col">
+      Name
+      <select id="motion-name">
+        <option value="sass" selected>Sass</option>
+        <option value="javascript">Javascript</option>
+      </select>
+    </th>
+    <th scope="col">Value</th>
+    <th scope="col">Example</th>
+  </thead>
+  <tbody data-js="tbody"></tbody>
+</table>
+
+{% include_relative _generated/motion.html %}
+
 <script id="easing" type="text/html">
   <tr>
     <th scope="row" style="text-align: left;">
@@ -7,10 +40,9 @@
     <td>
       <pre><%= value %></pre>
     </td>
-    <td><%= description %></td>
     <td>
-      <div class="Example">
-        <div class="Example-ball"></div>
+      <div class="Example-motion">
+        <div class="Example-motion-ball"></div>
       </div>
     </td>
   </tr>

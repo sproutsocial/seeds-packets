@@ -4,36 +4,17 @@ layout: default
 package: seeds-motion
 ---
 
-<h3>Get the Code</h3>
-<p>For SCSS or Javascript:</p>
-<ul>
-  <li>
-    <code>yarn add @sproutsocial/seeds-motion</code>
-  </li>
-  <li>
-    <code>npm install @sproutsocial/seeds-motion --save</code>
-  </li>
-</ul>
+{% capture overview_md %}{% include_relative overview.md %}{% endcapture %}
+<div class="Typography-size--500">
+  {{ overview_md | markdownify }}
+</div>
 
-<h2>Easing</h2>
-<p>Our easing values are taken from <a href="https://material.io/guidelines/motion/duration-easing.html#duration-easing-natural-easing-curves">Google’s Material Design guidelines</a>.</p>
-
-<table class="table">
-  <thead>
-    <th scope="col">
-      Name
-      <select id="motion-name">
-        <option value="sass" selected>Sass</option>
-        <option value="javascript">Javascript</option>
-      </select>
-    </th>
-    <th scope="col">Value</th>
-    <th scope="col">Description</th>
-    <th scope="col">Watch</th>
-  </thead>
-  <tbody data-js="tbody"></tbody>
-</table>
-
-{% include_relative _generated/motion.html %}
+<hr>
 
 {% include_relative examples.html %}
+
+{% capture usage_md %}{% include_relative usage.md %}{% endcapture %}
+{{ usage_md | markdownify }}
+
+{% capture accessibility_md %}{% include_relative accessibility.md %}{% endcapture %}
+{{ accessibility_md | markdownify }}

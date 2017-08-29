@@ -18,6 +18,8 @@
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+    max-height: 100vh;
+    overflow-y: scroll;
   }
   .Nav-item:not(.Nav-item--active) .Nav {
     display: none;
@@ -26,6 +28,9 @@
     @include Typography-size--500;
     font-weight: $Typography-weight--bold;    
     color: $Color-gray--800;
+  }
+  .Nav-link--primary { 
+    color: $Color-green--700;
   }
 }
 .Nav {
@@ -37,6 +42,10 @@
   &-link {
     display: block;
     padding: $Space-size--300 $Space-size--400;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 .Nav-item .Nav {

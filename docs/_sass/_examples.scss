@@ -1,0 +1,23 @@
+.Example-motion {
+  min-width: 20em;
+  position: relative;
+  height: 2em;
+}
+.Example-motion-ball {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  transition-property: left;
+  transition-duration: 1s;
+  background: currentColor;
+}
+.Example-motion:hover .Example-motion-ball {
+  left: calc(100% - 2em);
+}
+.Example-border {
+  padding-bottom: $Space-size--600 * 2;
+  background: $Color-gray--200;
+  border: 0 solid $Color-gray--800;
+}

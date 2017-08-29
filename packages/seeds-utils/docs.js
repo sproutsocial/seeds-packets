@@ -10,7 +10,7 @@ const versions = require('./versions');
 
 const seedsIncludes = globby.sync(`${process.cwd()}/packages/seeds-*/dist`);
 const copyDocs = globby.sync(`${process.cwd()}/packages/seeds-*`).map(path => {
-  const packet = nodePath.basename(path).split('-')[1];
+  const packet = nodePath.basename(path).replace('seeds-', '');
   return {
     path: path + '/' + packet + '/**/*',
     package: packet

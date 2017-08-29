@@ -1,3 +1,18 @@
+.Lead {
+  @include Typography-size--500;
+}
+.Lead--large {
+  @include Typography-size--600;
+}
+.Typography-family--sanchez {
+  font-family: clean-sanchez,"Proxima Nova",proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.Typography-weight--regular {
+  font-weight: $Typography-weight--regular;
+}
+.Typography-weight--semibold {
+  font-weight: $Typography-weight--bold;
+}
 // TODO: Consider producing this as part of the SEEDS build
 .Typography-size--100 {
   @include Typography-size--100;
