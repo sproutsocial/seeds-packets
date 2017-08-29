@@ -43,8 +43,10 @@
 
     var nameInputEl = document.getElementById('colors-name');
     var valueInputEl = document.getElementById('colors-value');
+    var copyInputEl = document.getElementById('colors-copy');
     var nameType = nameInputEl.value;
     var valueType = valueInputEl.value;
+    var copyType = copyInputEl.value;
 
     var nearestColorInputEl = document.getElementById('color-closest');
     var nearestColorNameEl = document.getElementById('color-closest-name');
@@ -74,6 +76,8 @@
             color.textColor = num >= 600 ? '#fff' : '#162020';
           }
 
+          color.num = (num && color.category !== 'bambu') ? 'num'+num : '';
+
           return colorsRowTemplate(color)
         }).join('');
         $table.append(colorsTemplate({
@@ -88,6 +92,14 @@
           .siblings()
           .hide();
 
+        if (this.value === 'palette') {
+          $('#colors-copy').val('value');
+          copyType = 'value';
+        } else {
+          $('#colors-copy').val('name');
+          copyType = 'name';
+        }
+
         nameType = this.value;
       });
 
@@ -98,6 +110,10 @@
           .hide();
 
         valueType = this.value;
+      });
+
+      $('#colors-copy').on('change', function() {
+        copyType = this.value;
       });
     }
 
@@ -222,14 +238,20 @@
 
     $('#paletteTable').on('click', "td", function() {
       var $this = $(this);
-      var val = $this.find('strong pre:visible').text();
       var $temp = $("<input>");
+      if (copyType === 'value') {
+        var $nameVal = $this.find('.colors-row-value pre:visible');
+      } else {
+        var $nameVal = $this.find('.colors-row-name pre:visible');
+      }
+      var val = $nameVal.text();
+
       $("body").append($temp);
       $temp.val(val).select();
       document.execCommand("copy");
-      $this.find('strong pre:visible').text('Copied name!');
+      $nameVal.text('Copied name!');
       setTimeout(_.debounce(function() {
-        $this.find('strong pre:visible').text(val);
+        $nameVal.text(val);
       }, 100), 300);
       $temp.remove();
       return;

@@ -44,6 +44,14 @@
       <option value="rgb">RGB()</option>
     </select>
   </label>
+
+  <label class="Space-size--400Left">
+    Copy
+    <select id="colors-copy">
+      <option value="name">Name</option>
+      <option value="value" selected>Value</option>
+    </select>
+  </label>
 </p>
 
 <table id="paletteTable" class="table d-flex flex-wrap"></table>
@@ -56,20 +64,19 @@
 
 <script id="colors-row" type="text/html">
   <tr style="background: <%= value %>;">
-    <td scope="row" style="text-align: left; width: 9em; cursor: pointer;">
-      <strong>
+    <td scope="row" style="text-align: left; width: 9em; cursor: pointer;" class="<%= num %>">
+      <div class="colors-row-name Space-size--200Bottom">
         <pre data-lang="palette" style="color: <%= textColor %>; display: block"><%= palette %></pre>
         <pre data-lang="sass" style="color: <%= textColor %>; display: none"><%= sass %></pre>
         <pre data-lang="javascript" style="color: <%= textColor %>; display: none"><%= javascript %></pre>
         <pre data-lang="swift" style="color: <%= textColor %>; display: none"><%= swift %></pre>
         <pre data-lang="android" style="color: <%= textColor %>; display: none"><%= android %></pre>
         <pre data-lang="python" style="color: <%= textColor %>; display: none"><%= python %></pre>
-      </strong>
-
-      <span>
+      </div>
+      <div class="colors-row-value">
         <pre data-value="value" style="display: inline-block; color: <%= textColor %>"><%= value %></pre>
         <pre data-value="rgb" style="display: none; color: <%= textColor %>"><%= rgb %></pre>
-      </span>
+      </div>
     </td>
   </tr>
 </script>
