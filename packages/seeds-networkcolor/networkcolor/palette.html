@@ -61,9 +61,17 @@
         <option value="rgb">RGB()</option>
       </select>
     </label>
-  </p>
 
-<table class="table d-flex flex-wrap"></table>
+    <label class="Space-size--400Left">
+      Copy
+      <select id="colors-copy">
+        <option value="name">Name</option>
+        <option value="value" selected>Value</option>
+      </select>
+    </label>
+</p>
+
+<table id="paletteTable" class="table d-flex flex-wrap"></table>
 
 <script id="colors" type="text/html">
   <tbody>
@@ -78,20 +86,19 @@
 
 <script id="colors-row" type="text/html">
   <tr style="background: <%= value %>;">
-    <td scope="row" style="text-align: left; width: 10em;">
-      <strong>
-        <span data-lang="palette" style="color: <%= textColor %>; display: block"><%= palette %></span>
+    <td scope="row" style="text-align: left; width: 10em; cursor: pointer;">
+      <div class="colors-row-name Space-size--200Bottom">
+        <pre data-lang="palette" style="color: <%= textColor %>; display: block"><%= palette %></pre>
         <pre data-lang="sass" style="color: <%= textColor %>; display: none"><%= sass %></pre>
         <pre data-lang="javascript" style="color: <%= textColor %>; display: none"><%= javascript %></pre>
         <pre data-lang="swift" style="color: <%= textColor %>; display: none"><%= swift %></pre>
         <pre data-lang="android" style="color: <%= textColor %>; display: none"><%= android %></pre>
         <pre data-lang="python" style="color: <%= textColor %>; display: none"><%= python %></pre>
-      </strong>
-
-      <span>
+      </div>
+      <div class="colors-row-value">
         <pre data-value="value" style="display: inline-block; color: <%= textColor %>"><%= value %></pre>
         <pre data-value="rgb" style="display: none; color: <%= textColor %>"><%= rgb %></pre>
-      </span>
+      </div>
     </td>
   </tr>
 </script>
@@ -105,8 +112,10 @@
 
     var nameInputEl = document.getElementById('colors-name');
     var valueInputEl = document.getElementById('colors-value');
+    var copyInputEl = document.getElementById('colors-copy');
     var nameType = nameInputEl.value;
     var valueType = valueInputEl.value;
+    var copyType = copyInputEl.value;
 
     var nearestColorInputEl = document.getElementById('color-closest');
     var nearestColorNameEl = document.getElementById('color-closest-name');
@@ -139,7 +148,7 @@
         $table.append(colorsTemplate({
           rows: rows,
           category: _.upperFirst(category)
-        }))
+        }));
       });
 
       $('#colors-name').on('change', function() {
@@ -147,6 +156,14 @@
           .show()
           .siblings()
           .hide();
+
+        if (this.value === 'palette') {
+          $('#colors-copy').val('value');
+          copyType = 'value';
+        } else {
+          $('#colors-copy').val('name');
+          copyType = 'name';
+        }
 
         nameType = this.value;
       });
@@ -158,6 +175,10 @@
           .hide();
 
         valueType = this.value;
+      });
+
+      $('#colors-copy').on('change', function() {
+        copyType = this.value;
       });
     }
 
@@ -279,6 +300,27 @@
     function hexToLab(hex) {
       return xyzToLab(rgbToXyz(hexToRgb(hex)));
     };
+
+    $('#paletteTable').on('click', "td", function() {
+      var $this = $(this);
+      var $temp = $("<input>");
+      if (copyType === 'value') {
+        var $nameVal = $this.find('.colors-row-value pre:visible');
+      } else {
+        var $nameVal = $this.find('.colors-row-name pre:visible');
+      }
+      var val = $nameVal.text();
+
+      $("body").append($temp);
+      $temp.val(val).select();
+      document.execCommand("copy");
+      $nameVal.text('Copied name!');
+      setTimeout(_.debounce(function() {
+        $nameVal.text(val);
+      }, 100), 300);
+      $temp.remove();
+      return;
+    });
 
     renderColors();
 
