@@ -1,0 +1,76 @@
+<h3 id="type-scale">Type Scale</h3>
+
+<p>Line heights are calculated to ensure at least three lines align to an 8px grid. Use the associated line-height values only.</p>
+
+<table class="table">
+  <thead>
+    <th scope="col" style="white-space: nowrap;">
+      Name
+      <select id="typography-name">
+        <option value="app" selected>Design App</option>
+        <option value="sass">Sass</option>
+        <option value="javascript">Javascript</option>
+      </select>
+    </th>
+    <th scope="col">Example</th>
+    <th scope="col">
+      Size
+    </th>
+    <th scope="col" style="white-space: nowrap;">
+      Line Height
+      <select id="typography-lineheight">
+        <option value="px" selected>pixels</option>
+        <option value="proportional">proportional</option>
+      </select>
+    </th>
+  </thead>
+  <tbody data-js="tbody"></tbody>
+</table>
+
+<script id="typography-row" type="text/html">
+  <tr>
+    <th scope="row" style="text-align: left;">
+      <span data-lang="app" style="display: block"><%= app %></span>
+      <pre data-lang="sass" style="display: none"><%= sass %></pre>
+      <pre data-lang="javascript" style="display: none"><%= javascript %></pre>
+    </th>
+    <td>
+      <p style="font-size: <%= size %>; line-height: <%= lineHeightPx %>px; overflow: hidden; height: calc(<%= lineHeightPx %>px * 3); max-width: 15em; margin: 0 0 8px">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur unde delectus neque, similique. Numquam vero debitis quidem veniam porro incidunt temporibus quas quasi eum, provident, consectetur minus, praesentium a commodi.
+      </p>
+    </td>
+    <td>
+      <pre><%= size %></pre>
+    </td>
+    <td>
+      <pre data-value="px" style="display: inline-block"><% print(lineHeightPx.toFixed(3).replace(/[.,]000$/, "")) %>px</pre>
+      <pre data-value="proportional" style="display: none"><% print(lineHeightProportional.toFixed(3).replace(/[.,]000$/, "")) %></pre>
+  </tr>
+</script>
+
+{% include_relative _generated/typography.html %}
+
+<script>
+  (function($, _, seedsTypography) {
+
+    var sizeTemplate = _.template($('#typography-row').html());
+    var $tableBody = $('[data-js="tbody"]');
+
+    _.each(seedsTypography, function(size) {
+      var templateData = _.extend(size, {
+        sampleHeight: size.lineHeight * 3
+      });
+      $tableBody.append(sizeTemplate(templateData));
+    });
+
+    $('#typography-name').on('change', function () {
+      $('[data-lang="' + this.value + '"]').show().siblings().hide();
+    });
+    
+    $('#typography-lineheight').on('change', function () {
+      $('[data-value="' + this.value + '"]').css('display', 'inline-block')
+      .siblings().hide();
+    });
+
+  })(window.jQuery, window._, window.seedsTypography);
+</script>

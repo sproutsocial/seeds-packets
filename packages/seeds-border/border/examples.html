@@ -1,4 +1,4 @@
-<h2 id="examples">Examples</h2>
+<h2>Examples</h2>
 
 <h3>Get the Code</h3>
 
@@ -12,35 +12,96 @@
   </li>
 </ul>
 
-<label>
-  Name
-  <select id="border-name">
-    <option value="sass" selected>Sass</option>
-    <option value="javascript">Javascript</option>
-  </select>
-</label>
+<h3>Border Radius</h3>
 
-<div id="borderRadiusExample"></div>
+<table id="borderRadiusExample" class="table">
+  <thead>
+    <th scope="col" style="white-space: nowrap;">
+      Name
+      <select class="js-border-name">
+        <option value="app" selected>Design App</option>
+        <option value="sass">Sass</option>
+        <option value="javascript">Javascript</option>
+      </select>
+    </th>
+    <th scope="col">
+      Value
+    </th>
+    <th scope="col">Example</th>
+  </thead>
+  <tbody data-js="tbody"></tbody>
+</table>
 
-<script id="borderRadiusTemplate" type="text/html">
-  <div class="Example-borderRadius" style="border-radius: <%= value %>;">
-    <pre data-lang="sass" style="display: block"><%= sass %></pre>
-    <pre data-lang="javascript" style="display: none"><%= javascript %></pre>
-  </div>
+<h3>Border Width</h3>
+
+<table id="borderWidthExample" class="table">
+  <thead>
+    <th scope="col" style="white-space: nowrap;">
+      Name
+      <select class="js-border-name">
+        <option value="app" selected>Design App</option>
+        <option value="sass">Sass</option>
+        <option value="javascript">Javascript</option>
+      </select>
+    </th>
+    <th scope="col">
+      Value
+    </th>
+    <th scope="col">Example</th>
+  </thead>
+  <tbody data-js="tbody"></tbody>
+</table>
+
+<script id="border-radius-row" type="text/html">
+  <tr>
+    <th scope="row" style="text-align: left;">
+      <span data-lang="app" style="display: block"><%= app %></span>
+      <pre data-lang="sass" style="display: none"><%= sass %></pre>
+      <pre data-lang="javascript" style="display: none"><%= javascript %></pre>
+    </th>
+    <td>
+      <pre><%= value %></pre>
+    </td>
+    <td>
+      <div class="Example-border" style="border-radius: <%= value %>;"></div>
+    </td>
+  </tr>
+</script>
+
+<script id="border-width-row" type="text/html">
+  <tr>
+    <th scope="row" style="text-align: left;">
+      <span data-lang="app" style="display: block"><%= app %></span>
+      <pre data-lang="sass" style="display: none"><%= sass %></pre>
+      <pre data-lang="javascript" style="display: none"><%= javascript %></pre>
+    </th>
+    <td>
+      <pre><%= value %></pre>
+    </td>
+    <td>
+      <div class="Example-border" style="border-width: <%= value %>;"></div>
+    </td>
+  </tr>
 </script>
 
 {% include_relative _generated/border.html %}
 
 <script>
   (function($, _, seedsBorder) {
-    var borderRadiusTemplate = _.template($('#borderRadiusTemplate').html());
-
+    var borderRadiusTemplate = _.template($('#border-radius-row').html());
+    var borderWidthTemplate = _.template($('#border-width-row').html());
+    
     _.each(seedsBorder, function(token) {
-      $('#borderRadiusExample').append(borderRadiusTemplate(token));
+      if (token.category == 'radius') {
+        $('#borderRadiusExample [data-js="tbody"]').append(borderRadiusTemplate(token));
+      } else if (token.category == 'width') {
+        $('#borderWidthExample [data-js="tbody"]').append(borderWidthTemplate(token));        
+      }
     });
 
-    $('#border-name').on('change', function () {
+    $('.js-border-name').on('change', function() {
       $('[data-lang="' + this.value + '"]').show().siblings().hide();
+      $('.js-border-name').val(this.value);
     });
 
   })(window.jQuery, window._, window.seedsBorder);

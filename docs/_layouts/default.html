@@ -2,8 +2,6 @@
 <html>
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-    <script src="https://use.typekit.net/stz7ryz.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,6 +9,57 @@
     <meta name="description" content="{{ site.description }}">
     <meta name="author" content="Sprout Social" />
     <meta name="robots" content="noindex" />
+    <style type="text/css">
+        /* @license
+        * MyFonts Webfont Build ID 2547218, 2013-05-03T14:29:01-0400
+        *
+        * The fonts listed in this notice are subject to the End User License
+        * Agreement(s) entered into by the website owner. All other parties are
+        * explicitly restricted from using the Licensed Webfonts(s).
+        *
+        * You may obtain a valid license at the URLs below.
+        *
+        * Webfont: Proxima Nova Semibold by Mark Simonson
+        * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/semibold/
+        *
+        * Webfont: Proxima Nova Regular by Mark Simonson
+        * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular/
+        *
+        * License: http://www.myfonts.com/viewlicense?type=web&buildid=2547218
+        * Webfonts copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+        *
+        * © 2013 MyFonts Inc
+
+        License: 5,000,000 Views / Month
+        */
+        @font-face {
+            font-family: 'proxima-nova';
+            font-weight: 400;
+            src: url('https://media.sproutsocial.com/font/proxima/26DE12_7_0.eot');
+            src: url('https://media.sproutsocial.com/font/proxima/26DE12_7_0.eot#iefix') format('embedded-opentype'),
+            url('https://media.sproutsocial.com/font/proxima/26DE12_7_0.woff') format('woff'),
+            url('https://media.sproutsocial.com/font/proxima/26DE12_7_0.ttf') format('truetype'),
+            url('https://media.sproutsocial.com/font/proxima/26DE12_7_0.svg#proxima-nova') format('svg');
+        }
+
+        @font-face {
+            font-family: 'proxima-nova';
+            font-weight: 600;
+            src: url('https://media.sproutsocial.com/font/proxima/26DE12_6_0.eot');
+            src: url('https://media.sproutsocial.com/font/proxima/26DE12_6_0.eot#iefix') format('embedded-opentype'),
+            url('https://media.sproutsocial.com/font/proxima/26DE12_6_0.woff') format('woff'),
+            url('https://media.sproutsocial.com/font/proxima/26DE12_6_0.ttf') format('truetype'),
+            url('https://media.sproutsocial.com/font/proxima/26DE12_6_0.svg#proxima-semi') format('svg');
+        }
+
+        @font-face {
+            font-family: 'clean-sanchez';
+            font-weight: 600;
+            src: url('https://media.sproutsocial.com/font/sanchez/clean-sanchez-semibold.eot');
+            src: url('https://media.sproutsocial.com/font/sanchez/clean-sanchez-semibold.eot#iefix') format('embedded-opentype'),
+            url('https://media.sproutsocial.com/font/sanchez/clean-sanchez-semibold.woff') format('woff');
+        }
+    </style>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"

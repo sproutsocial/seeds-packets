@@ -4,115 +4,15 @@ layout: default
 package: seeds-typography
 ---
 
-<h3>App Downloads</h3>
-<ul>
-  <li>
-    <a href="{{ site.baseurl }}/_generated/{{page.package}}.{{ site.data.versions[page.package].version }}.json" download>Sketch Styles</a> (Requires <a href="https://github.com/nilshoenson/shared-text-styles">Shared Text Styles plugin</a>)
-  </li>
-  <li>
-    <a href="https://assets.adobe.com/assets/libraries/a4c2bfd3-f701-470c-ab88-1ba696d9f628e">Adobe Creative Cloud Library</a>
-  </li>
-</ul>
+{% capture overview_md %}{% include_relative overview.md %}{% endcapture %}
+<div class="Lead">
+  {{ overview_md | markdownify }}
+</div>
 
-<h3>Get the Code</h3>
-<p>For SCSS or Javascript:</p>
-<ul>
-  <li>
-    <code>yarn add @sproutsocial/{{page.package}}</code>
-  </li>
-  <li>
-    <code>npm install @sproutsocial/{{page.package}} --save</code>
-  </li>
-</ul>
+<hr>
 
-<h2>Type Scale</h2>
-<p>Line heights are calculated to ensure at least three lines align to an 8pt grid. Use the associated line-height values only.</p>
+{% capture examples_md %}{% include_relative examples.md %}{% endcapture %}
+{{ examples_md | markdownify }}
 
-<table class="table">
-  <thead>
-    <th scope="col" style="white-space: nowrap;">
-      Name
-      <select id="typography-name">
-        <option value="app" selected>Design App</option>
-        <option value="sass">Sass</option>
-        <option value="javascript">Javascript</option>
-      </select>
-    </th>
-    <th scope="col">Sample</th>
-    <th scope="col">
-      Size
-    </th>
-    <th scope="col" style="white-space: nowrap;">
-      Line Height
-      <select id="typography-lineheight">
-        <option value="px" selected>pixels</option>
-        <option value="proportional">proportional</option>
-      </select>
-    </th>
-  </thead>
-  <tbody data-js="tbody"></tbody>
-</table>
-
-<script id="typography-row" type="text/html">
-  <tr>
-    <th scope="row" style="text-align: left;">
-      <span data-lang="app" style="display: block"><%= app %></span>
-      <pre data-lang="sass" style="display: none"><%= sass %></pre>
-      <pre data-lang="javascript" style="display: none"><%= javascript %></pre>
-    </th>
-    <td>
-      <p style="font-size: <%= size %>; line-height: <%= lineHeightPx %>px; overflow: hidden; height: calc(<%= lineHeightPx %>px * 3); max-width: 15em; margin: 0 0 8px">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur unde delectus neque, similique. Numquam vero debitis quidem veniam porro incidunt temporibus quas quasi eum, provident, consectetur minus, praesentium a commodi.
-      </p>
-    </td>
-    <td>
-      <pre><%= size %></pre>
-    </td>
-    <td>
-      <pre data-value="px" style="display: inline-block"><% print(lineHeightPx.toFixed(3).replace(/[.,]000$/, "")) %>px</pre>
-      <pre data-value="proportional" style="display: none"><% print(lineHeightProportional.toFixed(3).replace(/[.,]000$/, "")) %></pre>
-  </tr>
-</script>
-
-{% include_relative examples.html %}
-
-<h2>Best Practices</h2>
-<ul>
-  <li>
-    Proxima Nova is our font.
-    <dl>
-      <dt>Sass</dt>
-      <dd><code>font-family: $Typography-family;</code></dd>
-      <dt>Javascript</dt>
-      <dd><code>{ style: { fontFamily: TYPOGRAPHY_FAMILY } }</code></dd>
-    </dl>
-  </li>
-  <li>
-    Only two weights are permitted: regular and <strong>semibold</strong>, which is called <code>bold</code> for simpler naming
-    <dl>
-      <dt>Sass</dt>
-      <dd>
-        <dl>
-          <dt>Regular</dt>
-          <dd><code>font-weight: $Typography-weight--regular;</code></dd>
-          <dt>Bold</dt>
-          <dd><code>font-weight: $Typography-weight--bold;</code></dd>
-        </dl>
-      </dd>
-      <dt>Javascript</dt>
-      <dd>
-        <dl>
-          <dt>Regular</dt>
-          <dd><code>{ style: { fontWeight: TYPOGRAPHY_WEIGHT_REGULAR } }</code></dd>
-          <dt>Bold</dt>
-          <dd><code>{ style: { fontWeight: TYPOGRAPHY_WEIGHT_BOLD } }</code></dd>
-        </dl>
-      </dd>
-    </dl>
-  </li>
-  <li>
-    You can use <code>rem</code>s if you want to by setting <code>$Typography-unit: rem;</code> in your Sass
-    file. Use the <code>$Typography-size--base</code> variable to set the base size used to calculate the
-    <code>rem</code> value.
-  </li>
-</ul>
+{% capture usage_md %}{% include_relative usage.md %}{% endcapture %}
+{{ usage_md | markdownify }}

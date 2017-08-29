@@ -11,18 +11,18 @@
       url: "#"
     - page: Examples
       url: "#examples"
-    - page: Best Practices
-      url: "#best-practices"
+    - page: Usage
+      url: "#usage"
 
 - title: Color
   url: /packets/color/
   subnav:
     - page: Overview
       url: "#"
-    - page: Color Palette
-      url: "#palette"
-    - page: Best Practices
-      url: "#best-practices"
+    - page: Examples
+      url: "#examples"
+    - page: Usage
+      url: "#usage"
     - page: Accessibility
       url: "#accessibility"
     - page: Resources
@@ -30,16 +30,25 @@
 
 - title: Motion
   url: /packets/motion/
-
+  subnav:
+    - page: Overview
+      url: "#"
+    - page: Examples
+      url: "#examples"
+    - page: Usage
+      url: "#usage"
+    - page: Accessibility
+      url: "#accessibility"
+      
 - title: Network Color
   url: /packets/networkcolor/
   subnav:
     - page: Overview
       url: "#"
-    - page: Color Palette
-      url: "#palette"
-    - page: Best Practices
-      url: "#best-practices"
+    - page: Examples
+      url: "#examples"
+    - page: Usage
+      url: "#usage"
     - page: Resources
       url: "#resources"
 
@@ -48,10 +57,17 @@
   subnav:
     - page: Overview
       url: "#"
-    - page: Space Scale
-      url: "#scale"
-    - page: Best Practices
+    - page: Examples
+      url: "#examples"
+    - page: Usage
       url: "#best-practices"
 
 - title: Typography
   url: /packets/typography/
+  subnav:
+  - page: Overview
+    url: "#"
+  - page: Examples
+    url: "#examples"
+  - page: Usage
+    url: "#usage"

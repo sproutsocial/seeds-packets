@@ -12,7 +12,7 @@ dt {
 }
 
 h1 {
-  @include Typography-size--1000;
+  @include Typography-size--900;
   + * {
     margin-top: $Space-size--600;
   }
@@ -41,8 +41,11 @@ h3 {
 }
 
 h4 {
-  @include Typography-size--500;
+  @include Typography-size--400;
   + * {
     margin-top: $Space-size--300;
   }
+}
+* + h4 {
+  margin-top: $Space-size--400;
 }

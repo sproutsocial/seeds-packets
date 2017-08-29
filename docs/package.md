@@ -7,6 +7,8 @@ layout: default
 A package is any collection of information, guidelines, code or resources centered around one theme. Packages contain everything you need to successfully style your work.
 </p>
 
+<hr>
+
 ## Example of a Package
 
  - Title

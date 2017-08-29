@@ -14,6 +14,16 @@ gulp.task('jekyll', cb => {
   jekyll.on('close', cb);
 });
 
+gulp.task('build', cb => {
+  const process = spawn('yarn', ['build']);
+  const logger = buffer => {
+    buffer.toString().split(/\n/).forEach(message => gulpUtil.log('Lerna: ' + message));
+  };
+  process.stdout.on('data', logger);
+  process.stderr.on('data', logger);
+  process.on('close', cb);
+});
+
 gulp.task('watch', () => {
   const jekyll = spawn('jekyll', ['serve', '--watch'], {cwd: './docs'});
   const jekyllLogger = buffer => {
@@ -23,7 +33,8 @@ gulp.task('watch', () => {
   jekyll.stderr.on('data', jekyllLogger);
 
   gulp.watch(['docs/_sass/**/*.scss'], gulp.series(['docs-css', 'jekyll']));
-  gulp.watch(['packages/**/*'], gulp.parallel(['docs']));
+  gulp.watch(['packages/**/*.yml'], gulp.series(['build', 'docs']));
+  gulp.watch(['packages/**/*.html', 'packages/**/*.md'], gulp.parallel(['docs']));
 });
 
 gulp.task('serve', gulp.series(['docs', gulp.parallel(['watch'])]));

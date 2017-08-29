@@ -2,6 +2,7 @@ const fs = require('fs');
 const del = require('del');
 const gulp = require('gulp');
 const theo = require('theo');
+const upperFirst = require('lodash.upperfirst');
 const sassVar = require('@sproutsocial/seeds-utils/sassvar').sassVar;
 const getGulpTask = require('@sproutsocial/seeds-utils/getgulptask');
 const javascriptConst = require('@sproutsocial/seeds-utils/constantcase').javascriptConst;
@@ -27,13 +28,15 @@ gulp.task('border-docs', done => {
       const tokens = JSON.parse(result);
       const easings = tokens.propKeys.map(key => {
         const prop = tokens.props[key];
-        const {value, description} = prop;
+        const {value, description, category} = prop;
 
         return {
+          app: upperFirst(prop.name),
           sass: sassVar(prop.package, prop.name),
           javascript: javascriptConst(prop.package, prop.name),
           value,
-          description
+          description,
+          category
         };
       });
 

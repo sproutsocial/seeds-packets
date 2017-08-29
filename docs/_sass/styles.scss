@@ -25,11 +25,10 @@ hr {
 }
 
 a {
-  color: $Color-blue--500;
+  color: $Color-blue--700;
   text-decoration: none;
-
   &:hover {
-    color: $Color-blue--600;
+    color: $Color-blue--800;
     text-decoration: underline;
   }
 }

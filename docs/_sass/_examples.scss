@@ -16,16 +16,8 @@
 .Example-motion:hover .Example-motion-ball {
   left: calc(100% - 2em);
 }
-.Example-borderRadius {
-  @include Typography-size--600;
-  font-weight: $Typography-weight--bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: $Space-size--300;
-  padding: $Space-size--600;
+.Example-border {
+  padding-bottom: $Space-size--600 * 2;
   background: $Color-gray--200;
-  pre {
-    margin: 0;
-  }
+  border: 0 solid $Color-gray--800;
 }

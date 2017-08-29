@@ -5,13 +5,13 @@ package: seeds-space
 ---
 
 {% capture overview_md %}{% include_relative overview.md %}{% endcapture %}
-<div class="Typography-size--500">
+<div class="Lead">
   {{ overview_md | markdownify }}
 </div>
 
 <hr>
 
-{% include_relative scale.html %}
+{% include_relative examples.html %}
 
 {% capture usage_md %}{% include_relative usage.md %}{% endcapture %}
 {{ usage_md | markdownify }}
