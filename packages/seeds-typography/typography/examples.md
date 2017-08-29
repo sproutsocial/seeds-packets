@@ -32,11 +32,6 @@
   <thead>
     <th scope="col" style="white-space: nowrap;">
       Name
-      <select id="typography-name">
-        <option value="app" selected>Design App</option>
-        <option value="sass">Sass</option>
-        <option value="javascript">Javascript</option>
-      </select>
     </th>
     <th scope="col">Example</th>
   </thead>
