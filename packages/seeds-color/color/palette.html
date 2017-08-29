@@ -57,7 +57,12 @@
 <table id="paletteTable" class="table d-flex flex-wrap"></table>
 
 <script id="colors" type="text/html">
-  <tbody class="Space-size--400Top">
+  <tbody>
+    <tr>
+      <th colspan="2" scope="col" style="text-align: left;">
+        <h4><%= category %></h4>
+      </th>
+    </tr>
     <%= rows %>
   </tbody>
 </script>
