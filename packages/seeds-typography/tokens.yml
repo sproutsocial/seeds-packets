@@ -11,6 +11,10 @@ props:
     category: font family
     type: font family
     value: '"Proxima Nova", proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif'
+  family cleanSanchez:
+    category: font family
+    type: font family
+    value: 'clean-sanchez, "Proxima Nova", proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif'
   size 100:
     category: font size
     type: font size

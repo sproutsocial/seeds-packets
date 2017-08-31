@@ -2,6 +2,8 @@
 
 module.exports = {
   TYPOGRAPHY_FAMILY: '"Proxima Nova", proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif',
+  TYPOGRAPHY_FAMILY_CLEAN_SANCHEZ:
+    'clean-sanchez, "Proxima Nova", proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif',
   TYPOGRAPHY_SIZE_100: {
     fontSize: '11px',
     lineHeight: '18.666666666666668px'

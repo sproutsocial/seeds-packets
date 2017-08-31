@@ -5,7 +5,7 @@
   @include Typography-size--600;
 }
 .Typography-family--sanchez {
-  font-family: clean-sanchez,"Proxima Nova",proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: $Typography-family--cleanSanchez;
 }
 .Typography-weight--regular {
   font-weight: $Typography-weight--regular;
