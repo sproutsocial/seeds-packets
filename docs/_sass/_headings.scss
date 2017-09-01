@@ -9,6 +9,7 @@ th,
 dt {
   color: $Color-black;
   font-weight: $Typography-weight--bold;
+  margin: 0;
 }
 
 h1 {
@@ -18,6 +19,7 @@ h1 {
   }
   small {
     font-size: 60%;
+    font-weight: $Typography-weight--regular;
   }
 }
 h2 {
@@ -43,9 +45,9 @@ h3 {
 h4 {
   @include Typography-size--400;
   + * {
-    margin-top: $Space-size--300;
+    margin-top: 0;
   }
 }
 * + h4 {
-  margin-top: $Space-size--400;
+  margin-top: $Space-size--500;
 }

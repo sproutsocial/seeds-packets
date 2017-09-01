@@ -1,12 +1,16 @@
 $Typography-unit: 'rem';
+@import "seeds-border";
 @import "seeds-color";
 @import "seeds-space";
 @import "seeds-typography";
 
+* {
+  font-family: $Typography-family;  
+}
 html,
 body {
-  font-size: $Typography-size--300;
-  font-family: $Typography-family;
+  @include Typography-size--300;
+  margin: 0;
   color: $Color-gray--800;
   @media screen and (min-width: 768px) {
     font-size: $Typography-size--400;
@@ -19,6 +23,7 @@ body {
 
 hr {
   height: 0;
+  border: 0;
   border-top: 1px solid $Color-gray--200;
   padding: 0;
   margin: ($Space-size--600 * 2) auto;
@@ -49,7 +54,9 @@ a {
 
 @import "examples";
 @import "headings";
+@import "lists";
 @import "navigation";
 @import "page";
 @import "space";
+@import "table";
 @import "typography";

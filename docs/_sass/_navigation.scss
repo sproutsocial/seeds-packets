@@ -1,5 +1,6 @@
 .Sidebar {
   border-right: 1px solid $Color-gray--200;
+  min-height: 100vh;
   &-brand {
     @include Typography-size--900;
     display: block;
@@ -35,14 +36,20 @@
 }
 .Nav {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  padding-left: 0;
-  margin-bottom: 0;
+  padding: 0;
+  margin: 0;
   list-style: none;
+  &-item {
+    margin: 0;
+  }
   &-link {
     display: block;
     padding: $Space-size--300 $Space-size--400;
     text-decoration: none;
+    background: none;
+    border: none;
     &:hover {
       text-decoration: underline;
     }

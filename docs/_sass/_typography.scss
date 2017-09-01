@@ -1,3 +1,14 @@
+code,
+pre {
+  @include Typography-size--300;
+  font-family: monospace;  
+}
+code {
+  display: inline-block;
+  padding: $Space-size--200 $Space-size--300;
+  background: $Color-gray--100;
+  border-radius: $Border-radius--500;
+}
 .Lead {
   @include Typography-size--500;
 }

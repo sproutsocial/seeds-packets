@@ -1,7 +1,3 @@
-.Page {
-  display: grid;
-}
-
 main {
   padding: $Space-size--400;
   li,
@@ -12,7 +8,8 @@ main {
 
 @media screen and (min-width: 600px) {
   .Page {
-    grid-template-columns: 1fr 4fr;
+    display: grid;
+    grid-template-columns: minmax(250px, 1fr) 4fr;
   }
   main {
     padding: $Space-size--600 * 2;
