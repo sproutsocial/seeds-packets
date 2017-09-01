@@ -1,4 +1,5 @@
 $Typography-family: "Proxima Nova", proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$Typography-family--cleanSanchez: clean-sanchez, "Proxima Nova", proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $Typography-size--100: 11px;
 @mixin Typography-size--100 {
   font-size: Typography-getunit(11px);
