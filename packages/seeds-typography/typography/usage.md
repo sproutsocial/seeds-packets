@@ -15,7 +15,8 @@ Make every effort to use the type tokens in any manner that suits the needs of y
 - Large Heading - Size 900
 - Medium Heading - Size 800
 - Small Heading - Size 600
-- X-Small Heading - Size 200
+- X-Small Heading - Size 400
+- XX-Small Heading - Size 200
 
 #### Lead Paragraphs
 - An opening paragraph used to draw the reader into the text.
