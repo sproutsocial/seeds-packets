@@ -9,29 +9,34 @@ props:
   twitter dark:
     value: "#278ac1"
     category: twitter
+    deprecated: true
   facebook:
     value: "#3b5998"
     category: facebook
   facebook dark:
     value: "#304879"
     category: facebook
+    deprecated: true
   linkedin:
     value: "#0077b5"
     category: linkedin
   linkedin dark:
     value: "#005e93"
     category: linkedin
+    deprecated: true
   googleplus:
     value: "#db4437"
     category: googleplus
   googleplus dark:
     value: "#bc3e2a"
     category: googleplus
+    deprecated: true
   instagram:
     value: "#e4405f"
     category: instagram
   instagram dark:
     value: "#dd143a"
+    deprecated: true
     category: instagram
   feedly:
     value: "#2bb24c"
@@ -39,18 +44,21 @@ props:
   feedly dark:
     value: "#1d9236"
     category: feedly
+    deprecated: true
   analytics:
     value: "#ef6c00"
     category: analytics
   analytics dark:
     value: "#e65100"
     category: analytics
+    deprecated: true
   youtube:
-    value: "#e52d27"
+    value: "#ff0000"
     category: youtube
   youtube dark:
     value: "#b31217"
     category: youtube
+    deprecated: true
   messenger:
     value: "#0084ff"
     category: other
