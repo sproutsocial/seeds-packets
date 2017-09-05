@@ -51,6 +51,8 @@
       url: "#usage"
     - page: Resources
       url: "#resources"
+    - page: Changelog
+      url: "#changelog"
 
 - title: Space
   url: /packets/space/

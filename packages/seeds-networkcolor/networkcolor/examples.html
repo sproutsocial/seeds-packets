@@ -41,67 +41,50 @@
 
 <h3>Network Color Palette</h3>
 
-<p>
-    <label>
-      Name
-      <select id="colors-name">
-        <option value="palette" selected>Palette</option>
-        <option value="sass">Sass</option>
-        <option value="javascript">Javascript</option>
-        <option value="swift">Swift</option>
-        <option value="android">Android XML</option>
-        <option value="python">Python</option>
-      </select>
-    </label>
-  
-    <label class="Space-size--400Left">
-      Value
-      <select id="colors-value">
-        <option value="value" selected>Hex</option>
-        <option value="rgb">RGB()</option>
-      </select>
-    </label>
 
-    <label class="Space-size--400Left">
-      Copy
-      <select id="colors-copy">
-        <option value="name">Name</option>
-        <option value="value" selected>Value</option>
-      </select>
-    </label>
-</p>
-
-<table id="paletteTable"></table>
+<table id="paletteTable">
+  <thead>
+    <tr>
+      <th>
+        Token Name
+        <select id="colors-name">
+          <option value="palette" selected>Palette</option>
+          <option value="sass">Sass</option>
+          <option value="javascript">Javascript</option>
+          <option value="swift">Swift</option>
+          <option value="android">Android XML</option>
+          <option value="python">Python</option>
+        </select>
+      </th>
+      <th></th>
+      <th>Hex</th>
+      <th>RGB</th>
+    </tr>
+  </thead>
+</table>
 
 <script id="colors" type="text/html">
   <tbody>
-    <tr>
-      <th colspan="2" scope="col" style="text-align: left;">
-        <h4><%= category %></h4>
-      </th>
-    </tr>
     <%= rows %>
   </tbody>
 </script>
 
 <script id="colors-row" type="text/html">
-  <tr style="background: <%= value %>;">
-    <td scope="row" style="text-align: left; width: 10em; cursor: pointer;">
-      <div class="colors-row-name Space-size--200Bottom">
-        <pre data-lang="palette" style="color: <%= textColor %>; display: block"><%= palette %></pre>
-        <pre data-lang="sass" style="color: <%= textColor %>; display: none"><%= sass %></pre>
-        <pre data-lang="javascript" style="color: <%= textColor %>; display: none"><%= javascript %></pre>
-        <pre data-lang="swift" style="color: <%= textColor %>; display: none"><%= swift %></pre>
-        <pre data-lang="android" style="color: <%= textColor %>; display: none"><%= android %></pre>
-        <pre data-lang="python" style="color: <%= textColor %>; display: none"><%= python %></pre>
-      </div>
-      <div class="colors-row-value">
-        <pre data-value="value" style="display: inline-block; color: <%= textColor %>"><%= value %></pre>
-        <pre data-value="rgb" style="display: none; color: <%= textColor %>"><%= rgb %></pre>
-      </div>
-      <div>
-        <% deprecated && print('<span class="Tag Tag--deprecated Tag--inverse">Deprecated</span>') %>
-      </div>
+  <tr style="background: <%= value %>; cursor: pointer;">
+    <td class="colors-row-name Space-size--200Bottom Typography-weight--semibold">
+      <div data-lang="palette" style="color: <%= textColor %>; display: inline-block"><%= palette %></div>
+      <pre data-lang="sass" style="color: <%= textColor %>; display: none"><%= sass %></pre>
+      <pre data-lang="javascript" style="color: <%= textColor %>; display: none"><%= javascript %></pre>
+      <pre data-lang="swift" style="color: <%= textColor %>; display: none"><%= swift %></pre>
+      <pre data-lang="android" style="color: <%= textColor %>; display: none"><%= android %></pre>
+      <pre data-lang="pytdon" style="color: <%= textColor %>; display: none"><%= python %></pre>
+    </th>
+    <td><% deprecated && print('<span class="Tag Tag--deprecated Tag--inverse" style="margin-left: 8px">Deprecated</span>') %></td>
+    <td>
+      <pre data-value="value" style="color: <%= textColor %>"><%= value %></pre>
+    </td>
+    <td>
+      <pre data-value="rgb" style="color: <%= textColor %>"><%= rgb %></pre>
     </td>
   </tr>
 </script>
@@ -112,14 +95,6 @@
   // TODO: Babel this stuff up
   // TODO: Get rid of all this jQuery and do it with React or at least vanilla JS
   (function($, _, seedsColors) {
-
-    var nameInputEl = document.getElementById('colors-name');
-    var valueInputEl = document.getElementById('colors-value');
-    var copyInputEl = document.getElementById('colors-copy');
-    var nameType = nameInputEl.value;
-    var valueType = valueInputEl.value;
-    var copyType = copyInputEl.value;
-
     var nearestColorInputEl = document.getElementById('color-closest');
     var nearestColorNameEl = document.getElementById('color-closest-name');
     var nearestColorValueEl = document.getElementById('color-closest-value');
@@ -132,7 +107,7 @@
 
     function renderColors() {
       var categories = _.uniq(_.map(seedsColors, 'category'));
-      var $table = $('table');
+      var $table = $('#paletteTable');
       var colorsTemplate = _.template($('#colors').html());
       var colorsRowTemplate = _.template($('#colors-row').html());
 
@@ -159,29 +134,6 @@
           .show()
           .siblings()
           .hide();
-
-        if (this.value === 'palette') {
-          $('#colors-copy').val('value');
-          copyType = 'value';
-        } else {
-          $('#colors-copy').val('name');
-          copyType = 'name';
-        }
-
-        nameType = this.value;
-      });
-
-      $('#colors-value').on('change', function() {
-        $('[data-value="' + this.value + '"]')
-          .css('display', 'inline-block')
-          .siblings()
-          .hide();
-
-        valueType = this.value;
-      });
-
-      $('#colors-copy').on('change', function() {
-        copyType = this.value;
       });
     }
 
@@ -304,23 +256,19 @@
       return xyzToLab(rgbToXyz(hexToRgb(hex)));
     };
 
-    $('#paletteTable').on('click', "td", function() {
+    $('#paletteTable').on('click', 'td', function() {
       var $this = $(this);
-      var $temp = $("<input>");
-      if (copyType === 'value') {
-        var $nameVal = $this.find('.colors-row-value pre:visible');
-      } else {
-        var $nameVal = $this.find('.colors-row-name pre:visible');
-      }
+      var $temp = $('<input>');
+      var $nameVal = $this.find('pre:visible');
       var val = $nameVal.text();
 
-      $("body").append($temp);
+      $('body').append($temp);
       $temp.val(val).select();
-      document.execCommand("copy");
-      $nameVal.text('Copied name!');
+      document.execCommand('copy');
+      $nameVal.text('Copied!');
       setTimeout(_.debounce(function() {
         $nameVal.text(val);
-      }, 100), 300);
+      }, 300), 300);
       $temp.remove();
       return;
     });
@@ -357,14 +305,5 @@
       $colorSelectedSwatch.css('background', String(this.value).slice(0,1) === '#' ? this.value : '#' + this.value);
       $colorFoundSwatch.css('background', colorsToCheck[closestColor].value);
     });
-
-    $(nearestColorNameEl).add(nearestColorValueEl).on('focus', function() {
-      this.select();
-    });
-
-    $(nameInputEl).add(valueInputEl).add('#color-include-bambu').on('change', function() {
-      $(nearestColorInputEl).trigger('input');
-    });
-    
   })(window.jQuery, window._, window.seedsColors);
 </script>

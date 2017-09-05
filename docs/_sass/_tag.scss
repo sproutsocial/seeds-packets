@@ -1,6 +1,7 @@
 .Tag {
   @include Typography-size--200;
-  padding: $Space-size--200;
+  display: inline-block;
+  padding: $Space-size--200 $Space-size--300;
   background: $Color-gray--200;
   color: $Color-gray--800;
   font-weight: $Typography-weight--bold;
