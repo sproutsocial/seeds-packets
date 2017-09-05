@@ -99,6 +99,9 @@
         <pre data-value="value" style="display: inline-block; color: <%= textColor %>"><%= value %></pre>
         <pre data-value="rgb" style="display: none; color: <%= textColor %>"><%= rgb %></pre>
       </div>
+      <div>
+        <% deprecated && print('<span class="Tag Tag--deprecated Tag--inverse">Deprecated</span>') %>
+      </div>
     </td>
   </tr>
 </script>

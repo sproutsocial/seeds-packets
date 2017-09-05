@@ -110,10 +110,11 @@ gulp.task('networkcolor-docs', done => {
       const tokens = JSON.parse(result);
       const colors = tokens.propKeys.map(key => {
         const prop = tokens.props[key];
-        const {category, value} = prop;
+        const {category, deprecated, value} = prop;
 
         return {
           category,
+          deprecated: !!prop.deprecated,
           value,
           palette: upperFirst(prop.name),
           sass: sassVar(prop.package, prop.name),
