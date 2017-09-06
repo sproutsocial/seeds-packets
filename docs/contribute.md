@@ -42,4 +42,4 @@ Click the “Submit SEEDS Ticket” link in the sidebar to create a JIRA ticket 
 Participation in surveys when prompted by the SEEDS team is a very helpful way for us collect valuable data as we track progress, system usage, and team goals.
 
 ### Guild Meeting
-A periodic "town hall" style open forum where the SEEDS team can gather ideas and opinions about particular high impact topics.
+A periodic “town hall” style open forum where the SEEDS team can gather ideas and opinions about particular high impact topics.
