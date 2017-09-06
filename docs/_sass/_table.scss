@@ -20,8 +20,4 @@ table {
     vertical-align: bottom;
     border-bottom: $Border-width--500 solid $Color-gray--200;
   }
-
-  tbody + tbody {
-    border-top: $Border-width--500 solid $Color-gray--200;
-  }
 }
