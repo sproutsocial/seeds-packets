@@ -27,6 +27,8 @@
       url: "#accessibility"
     - page: Resources
       url: "#resources"
+    - page: Changelog
+      url: "#changelog"
 
 - title: Motion
   url: /packets/motion/
