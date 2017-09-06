@@ -38,20 +38,6 @@ a {
   }
 }
 
-// Color page
-#paletteTable tbody td.num500 {
-  padding: ($Space-size--600 * 2) $Space-size--400;
-}
-#paletteTable tbody td {
-  padding: $Space-size--400;
-}
-#paletteTable tbody td .colors-row-name pre {
-  font-weight: $Typography-weight--bold;
-}
-#paletteTable tbody td pre {
-  margin: 0;
-}
-
 @import "examples";
 @import "headings";
 @import "lists";

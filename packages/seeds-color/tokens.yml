@@ -276,36 +276,80 @@ props:
   gray 100:
     category: gray
     value: "#f3f4f4"
+    deprecated: true
   gray 200:
     category: gray
     value: "#dee1e1"
+    deprecated: true
   gray 300:
     category: gray
     value: "#c8cccc"
+    deprecated: true
   gray 400:
     category: gray
     value: "#b0b6b7"
+    deprecated: true
   gray 500:
     category: gray
     value: "#929a9b"
+    deprecated: true
   gray 600:
     category: gray
     value: "#6e797a"
+    deprecated: true
   gray 700:
     category: gray
     value: "#515e5f"
+    deprecated: true
   gray 800:
     category: gray
     value: "#364141"
+    deprecated: true
   gray 900:
     category: gray
     value: "#273333"
-  black:
-    category: neutral
-    value: "#162020"
+    deprecated: true
   white:
     category: neutral
     value: "#fff"
+    deprecated: true
+  neutral 0:
+    category: neutral
+    value: "#fff"
+  neutral 100:
+    category: neutral
+    value: "#f3f4f4"
+  neutral 200:
+    category: neutral
+    value: "#dee1e1"
+  neutral 300:
+    category: neutral
+    value: "#c8cccc"
+  neutral 400:
+    category: neutral
+    value: "#b0b6b7"
+  neutral 500:
+    category: neutral
+    value: "#929a9b"
+  neutral 600:
+    category: neutral
+    value: "#6e797a"
+  neutral 700:
+    category: neutral
+    value: "#515e5f"
+  neutral 800:
+    category: neutral
+    value: "#364141"
+  neutral 900:
+    category: neutral
+    value: "#273333"
+  neutral 1000:
+    category: neutral
+    value: "#162020"
+  black:
+    category: neutral
+    value: "#162020"
+    deprecated: true
   bambuTeal 400:
     category: bambu
     value: "#11a7aa"

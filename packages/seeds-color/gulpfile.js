@@ -104,6 +104,7 @@ gulp.task('color-docs', done => {
 
         return {
           category,
+          deprecated: !!prop.deprecated,
           value,
           palette: upperFirst(prop.name),
           sass: sassVar(prop.package, prop.name),

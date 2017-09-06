@@ -1,3 +1,16 @@
+// Color page
+#paletteTable tbody tr.num500 td {
+  padding: ($Space-size--600 * 2) $Space-size--400;
+}
+#paletteTable tbody td {
+  padding: $Space-size--400;
+}
+#paletteTable tbody td .colors-row-name pre {
+  font-weight: $Typography-weight--bold;
+}
+#paletteTable tbody td pre {
+  margin: 0;
+}
 .Example-motion {
   min-width: 20em;
   position: relative;
