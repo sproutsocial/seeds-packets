@@ -1,7 +1,8 @@
 code,
 pre {
   @include Typography-size--300;
-  font-family: monospace;  
+  font-family: monospace;
+  margin: 0;
 }
 code {
   display: inline-block;

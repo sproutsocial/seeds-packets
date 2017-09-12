@@ -11,6 +11,18 @@
 #paletteTable tbody td pre {
   margin: 0;
 }
+.Swatch {
+  max-width: 300px;
+  padding: $Space-size--400;
+  border: $Border-width--500 solid $Color-gray--200;
+  border-radius: $Border-radius--500;
+  span {
+    cursor: pointer;
+  }
+  pre {
+    white-space: normal;
+  }
+}
 .Example-motion {
   min-width: 20em;
   position: relative;

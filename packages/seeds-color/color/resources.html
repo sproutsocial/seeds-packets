@@ -17,24 +17,30 @@
   </div>
   <div>
     <label>
+        Name Format
+        <select class="js-colors-name">
+          <option value="palette" selected>Palette</option>
+          <option value="sass">Sass</option>
+          <option value="javascript">Javascript</option>
+          <option value="swift">Swift</option>
+          <option value="android">Android XML</option>
+          <option value="python">Python</option>
+        </select>
+      </label>
+  </div>
+  <div>
+    <label>
       <input type="checkbox" id="color-include-bambu" checked>
       Include Bambu Brand Colors
     </label>
   </div>
-  <div>
-    <span style="display: inline-block; border: 1px solid #f3f4f4">
-      <span id="color-closest-selected" style="display: inline-block; width: 2em; height: 2em;" title="Your color"></span><span id="color-closest-found" style="display: inline-block; width: 2em; height: 2em;" title="Nearest Color"></span>
-    </span>
-    <label>
-      <span>Nearest Color Name</span>
-      <input id="color-closest-name" type="text">
-    </label>
-    <label>
-      <span>Nearest Color Value</span>
-      <input id="color-closest-value" type="text">
-    </label>
-  </div>
 </form>
+
+<h4>Nearest Color</h4>
+<div id="color-closest-found" class="Swatch">
+  <span><strong><pre id="color-closest-name">Use the color picker above to choose a color to match.</pre></strong></span>
+  <span><pre id="color-closest-value"></pre></span>
+</div>
 
 <script>
   // TODO: Babel this stuff up
@@ -43,7 +49,6 @@
     var nearestColorInputEl = document.getElementById('color-closest');
     var nearestColorNameEl = document.getElementById('color-closest-name');
     var nearestColorValueEl = document.getElementById('color-closest-value');
-    var $colorSelectedSwatch = $('#color-closest-selected');
     var $colorFoundSwatch = $('#color-closest-found');
 
     var colorsWithoutBambu = _.filter(seedsColors, function(color) {
@@ -84,6 +89,7 @@
           .siblings()
           .hide();
         $('.js-colors-name').val($(this).val());
+        updateColor();
       });
     }
 
@@ -206,7 +212,7 @@
       return xyzToLab(rgbToXyz(hexToRgb(hex)));
     };
 
-    $('#paletteTable').on('click', 'td', function() {
+    $('#paletteTable td, #color-closest-found span').on('click', function() {
       var $this = $(this);
       var $temp = $('<input>');
       var $nameVal = $this.find('pre:visible');
@@ -224,14 +230,15 @@
     });
 
     renderColors();
-
-    $(nearestColorInputEl).on('input', function() {
-      var val = this.value,
+    var updateColor = function() {
+      var val = $(nearestColorInputEl).val(),
           includeBambu = document.getElementById('color-include-bambu').checked,
           colorsToCheck = includeBambu ? seedsColors : colorsWithoutBambu,
           lab,
           closestColor,
           distance;
+
+      var colorsToCheck = colorsToCheck.filter(color => !color.deprecated);
 
       if (!val.match(/^#?(?:[0-9a-fA-F]{3}){1,2}$/)) {
         return;
@@ -249,15 +256,13 @@
         }
       });
 
-      nearestColorNameEl.value = colorsToCheck[closestColor][nameType];
-      nearestColorValueEl.value = colorsToCheck[closestColor][valueType];
+      nearestColorNameEl.innerText = colorsToCheck[closestColor][$('.js-colors-name').val()];
+      nearestColorValueEl.innerText = colorsToCheck[closestColor]['value'];
+      var textColor = Number(colorsToCheck[closestColor].palette.split(' ')[1]) >= 500 ? seedsColors.find(color => color.javascript == 'COLOR_NEUTRAL_0').value : seedsColors.find(color => color.javascript == 'COLOR_NEUTRAL_1000').value;
 
-      $colorSelectedSwatch.css('background', String(this.value).slice(0,1) === '#' ? this.value : '#' + this.value);
       $colorFoundSwatch.css('background', colorsToCheck[closestColor].value);
-    });
-
-    $(nearestColorNameEl).add(nearestColorValueEl).on('focus', function() {
-      this.select();
-    });    
+      $colorFoundSwatch.css('color', textColor);
+    }
+    $(nearestColorInputEl).on('input', updateColor);
   })(window.jQuery, window._, window.seedsColors);
 </script>
