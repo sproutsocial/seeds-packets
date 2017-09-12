@@ -1,6 +1,6 @@
 ## Changelog
 
-### v0.2.12
+### v0.3.0
 
 - **Updated** The color table is now consistent with other SEEDS table styles.
 - **New** Merged black, white and gray colors into a single “neutrals” category.

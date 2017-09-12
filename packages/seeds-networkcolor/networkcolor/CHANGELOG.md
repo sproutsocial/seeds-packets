@@ -1,6 +1,6 @@
 ## Changelog
 
-### v0.2.11
+### v0.3.0
 
 - **Updated** The color table is now consistent with other SEEDS table styles.
 - **Updated** The Youtube color now reflects their recent brand update.
