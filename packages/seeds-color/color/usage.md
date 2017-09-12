@@ -24,12 +24,12 @@ Primary brand colors are used for elements that reflect Bambu's brand.
 - Yellow 500 is reserved for CTA buttons on the marketing page.
 - When unsure of usage defer to Sprout's guidelines
 
-#### Grays
-The palette of the gray shades should be used for illustration, product and marketing elements.
+#### Neutrals
+The palette of the neutral shades should be used for illustration, product and marketing elements.
 
 ### Do’s and Don’ts
 
-- **DON’T:** Use any tints or shades or add any more grays to this palette.
+- **DON’T:** Use any tints or shades or add any more neutrals to this palette.
 - **DO:** Use analogous color schemes for grouping.
     ![Analogous](assets/SEEDS-Color-Analogous.svg)
 - **DO:** Use complementary color schemes for comparisons.
