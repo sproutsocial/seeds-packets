@@ -40,14 +40,6 @@
   // TODO: Babel this stuff up
   // TODO: Get rid of all this jQuery and do it with React or at least vanilla JS
   (function($, _, seedsColors) {
-
-    var nameInputEl = document.getElementById('colors-name');
-    var valueInputEl = document.getElementById('colors-value');
-    var copyInputEl = document.getElementById('colors-copy');
-    var nameType = nameInputEl.value;
-    var valueType = valueInputEl.value;
-    var copyType = copyInputEl.value;
-
     var nearestColorInputEl = document.getElementById('color-closest');
     var nearestColorNameEl = document.getElementById('color-closest-name');
     var nearestColorValueEl = document.getElementById('color-closest-value');
@@ -86,34 +78,12 @@
         }));
       });
 
-      $('#colors-name').on('change', function() {
+      $('.js-colors-name').on('change', function() {
         $('[data-lang="' + this.value + '"]')
           .show()
           .siblings()
           .hide();
-
-        if (this.value === 'palette') {
-          $('#colors-copy').val('value');
-          copyType = 'value';
-        } else {
-          $('#colors-copy').val('name');
-          copyType = 'name';
-        }
-
-        nameType = this.value;
-      });
-
-      $('#colors-value').on('change', function() {
-        $('[data-value="' + this.value + '"]')
-          .css('display', 'inline-block')
-          .siblings()
-          .hide();
-
-        valueType = this.value;
-      });
-
-      $('#colors-copy').on('change', function() {
-        copyType = this.value;
+        $('.js-colors-name').val($(this).val());
       });
     }
 
@@ -236,23 +206,19 @@
       return xyzToLab(rgbToXyz(hexToRgb(hex)));
     };
 
-    $('#paletteTable').on('click', "td", function() {
+    $('#paletteTable').on('click', 'td', function() {
       var $this = $(this);
-      var $temp = $("<input>");
-      if (copyType === 'value') {
-        var $nameVal = $this.find('.colors-row-value pre:visible');
-      } else {
-        var $nameVal = $this.find('.colors-row-name pre:visible');
-      }
+      var $temp = $('<input>');
+      var $nameVal = $this.find('pre:visible');
       var val = $nameVal.text();
 
-      $("body").append($temp);
+      $('body').append($temp);
       $temp.val(val).select();
-      document.execCommand("copy");
-      $nameVal.text('Copied name!');
+      document.execCommand('copy');
+      $nameVal.text('Copied!');
       setTimeout(_.debounce(function() {
         $nameVal.text(val);
-      }, 100), 300);
+      }, 300), 300);
       $temp.remove();
       return;
     });
@@ -292,11 +258,6 @@
 
     $(nearestColorNameEl).add(nearestColorValueEl).on('focus', function() {
       this.select();
-    });
-
-    $(nameInputEl).add(valueInputEl).add('#color-include-bambu').on('change', function() {
-      $(nearestColorInputEl).trigger('input');
-    });
-    
+    });    
   })(window.jQuery, window._, window.seedsColors);
 </script>

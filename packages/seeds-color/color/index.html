@@ -20,3 +20,6 @@ package: seeds-color
 {{ accessibility_md | markdownify }}
 
 {% include_relative resources.html %}
+
+{% capture changelog %}{% include_relative CHANGELOG.md %}{% endcapture %}
+{{ changelog | markdownify }}

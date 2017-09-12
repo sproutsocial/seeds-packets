@@ -24,64 +24,53 @@
 
 <h3>Color Palette</h3>
 
-<p>
-  <label>
-    Name
-    <select id="colors-name">
-      <option value="palette" selected>Palette</option>
-      <option value="sass">Sass</option>
-      <option value="javascript">Javascript</option>
-      <option value="swift">Swift</option>
-      <option value="android">Android XML</option>
-      <option value="python">Python</option>
-    </select>
-  </label>
 
-  <label class="Space-size--400Left">
-    Value
-    <select id="colors-value">
-      <option value="value" selected>Hex</option>
-      <option value="rgb">RGB()</option>
-    </select>
-  </label>
+<table id="paletteTable">
 
-  <label class="Space-size--400Left">
-    Copy
-    <select id="colors-copy">
-      <option value="name">Name</option>
-      <option value="value" selected>Value</option>
-    </select>
-  </label>
-</p>
-
-<table id="paletteTable"></table>
+</table>
 
 <script id="colors" type="text/html">
-  <tbody>
+  <thead class="Space-size--600Top">
     <tr>
-      <th colspan="2" scope="col" style="text-align: left;">
-        <h4><%= category %></h4>
+      <th>
+        <label>
+          Token Name
+          <select class="js-colors-name">
+            <option value="palette" selected>Palette</option>
+            <option value="sass">Sass</option>
+            <option value="javascript">Javascript</option>
+            <option value="swift">Swift</option>
+            <option value="android">Android XML</option>
+            <option value="python">Python</option>
+          </select>
+        </label>
       </th>
+      <th></th>
+      <th>Hex</th>
+      <th>RGB</th>
     </tr>
+  </thead>
+  <tbody>
     <%= rows %>
   </tbody>
 </script>
 
 <script id="colors-row" type="text/html">
-  <tr style="background: <%= value %>;">
-    <td scope="row" style="text-align: left; width: 9em; cursor: pointer;" class="<%= num %>">
-      <div class="colors-row-name Space-size--200Bottom">
-        <pre data-lang="palette" style="color: <%= textColor %>; display: block"><%= palette %></pre>
-        <pre data-lang="sass" style="color: <%= textColor %>; display: none"><%= sass %></pre>
-        <pre data-lang="javascript" style="color: <%= textColor %>; display: none"><%= javascript %></pre>
-        <pre data-lang="swift" style="color: <%= textColor %>; display: none"><%= swift %></pre>
-        <pre data-lang="android" style="color: <%= textColor %>; display: none"><%= android %></pre>
-        <pre data-lang="python" style="color: <%= textColor %>; display: none"><%= python %></pre>
-      </div>
-      <div class="colors-row-value">
-        <pre data-value="value" style="display: inline-block; color: <%= textColor %>"><%= value %></pre>
-        <pre data-value="rgb" style="display: none; color: <%= textColor %>"><%= rgb %></pre>
-      </div>
+  <tr style="background: <%= value %>; cursor: pointer;" class="<%= num %>">
+    <td class="Typography-weight--semibold">
+      <span data-lang="palette" style="color: <%= textColor %>; display: block"><%= palette %></span>
+      <pre data-lang="sass" style="color: <%= textColor %>; display: none"><%= sass %></pre>
+      <pre data-lang="javascript" style="color: <%= textColor %>; display: none"><%= javascript %></pre>
+      <pre data-lang="swift" style="color: <%= textColor %>; display: none"><%= swift %></pre>
+      <pre data-lang="android" style="color: <%= textColor %>; display: none"><%= android %></pre>
+      <pre data-lang="python" style="color: <%= textColor %>; display: none"><%= python %></pre>
+    </td>
+    <td><% deprecated && print('<span class="Tag Tag--deprecated Tag--inverse" style="margin-left: 8px">Deprecated</span>') %></td>
+    <td>
+      <pre data-value="value" style="color: <%= textColor %>"><%= value %></pre>
+    </td>
+    <td>
+        <pre data-value="rgb" style="color: <%= textColor %>"><%= rgb %></pre>
     </td>
   </tr>
 </script>
