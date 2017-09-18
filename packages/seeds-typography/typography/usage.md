@@ -35,12 +35,12 @@ Make every effort to use the type tokens in any manner that suits the needs of y
 - Attribution - Size 200
 
 #### On Light Backgrounds
-- Gray 800 is used for paragraphs.
-- Gray 1000 is used for headlines.
+- Neutral 800 is used for paragraphs.
+- Neutral 1000 is used for headlines.
 
 #### On Dark Backgrounds
-- Gray 200 is used for paragraphs.
-- Gray 0 is used for headlines.
+- Neutral 200 is used for paragraphs.
+- Neutral 0 is used for headlines.
 
 
 ### Do’s and Don’ts
