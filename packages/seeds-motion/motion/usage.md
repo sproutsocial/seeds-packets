@@ -3,10 +3,10 @@
 ### Best Practices
 
 #### User initiated interactions (dismiss, hide, send, etc..)
-Use deceleration to remove from screen to shift user’s focus elsewhere
+Use acceleration to remove from screen to shift user’s focus elsewhere
 
 #### System reactions (alerts, warnings, errors, notifications)
-Use acceleration to shift user's attention
+Use deceleration to shift user's attention
 
 #### Fades and color changes
 Use linear motion to communicate a consistent start to finish of an action
