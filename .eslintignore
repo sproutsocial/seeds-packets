@@ -1,2 +1,2 @@
-# Ignore built files except build/index.js
-./packages/**/dist/*
+# Ignore built files except package dist
+packages/**/dist/*
