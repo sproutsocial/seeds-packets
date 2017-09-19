@@ -19,7 +19,7 @@ For SCSS or Javascript:
 - Sprout Social’s primary font family is Proxima Nova.
 - Bambu’s primary font families are Clean Sanchez (alternate glyphs), Proxima Nova.
 - Native mobile apps utilize the system font families: San Francisco for iOS and Roboto for Android.
-- When Proxima Nova or Sanchez are unavailable, we attempt to default to [system font families](https://css-tricks.com/snippets/css/system-font-stack/). Defaulting to these fonts helps also with emoji rendering.
+- When Proxima Nova or Sanchez are unavailable, we attempt to default to [system font families](https://css-tricks.com/snippets/css/system-font-stack/). Defaulting to these fonts helps also with emoji rendering. The Proxima and Sanchez tokens already include theses system font fallbacks; **do not use the system font stack on its own unless you are using SEEDS in a situtation where loading Proxima or Sanchez is impossible or unwise**.
 
 {% include_relative example-family.html %}
 
