@@ -1,5 +1,6 @@
-$Typography-family: "Proxima Nova", proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
-$Typography-family--cleanSanchez: clean-sanchez, "Proxima Nova", proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$Typography-family: "Proxima Nova", proxima-nova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$Typography-family--cleanSanchez: clean-sanchez, "Proxima Nova", proxima-nova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$Typography-family--default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $Typography-size--100: 11px;
 @mixin Typography-size--100 {
   font-size: Typography-getunit(11px);
