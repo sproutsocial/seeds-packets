@@ -9,7 +9,7 @@
   },
   "author": "Sprout Social",
   "scripts": {
-    "format:prettier": "prettier-eslint \"./packages/**/*.js\" gulpfile.js --write --print-width=120 --single-quote --no-bracket-spacing",
+    "format:prettier": "prettier-eslint --write --eslint-ignore --print-width=120 --single-quote --no-bracket-spacing  \"./packages/**/*.js\" gulpfile.js",
     "precommit": "lint-staged",
     "build": "lerna run build",
     "docs": "lerna run build && gulp",
@@ -20,8 +20,7 @@
   },
   "lint-staged": {
     "*.js": [
-      "format:prettier",
-      "git add"
+      "format:prettier"
     ]
   },
   "devDependencies": {
