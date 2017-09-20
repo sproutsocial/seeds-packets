@@ -1,6 +1,6 @@
 ## Changelog
 
-### v0.3.1
+### v0.3.2
 
 - **Fixed** Color picker.
 - **Fixed** Updated references to deprecated gray palette names.
