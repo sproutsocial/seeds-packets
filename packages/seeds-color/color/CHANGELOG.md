@@ -1,5 +1,10 @@
 ## Changelog
 
+### v0.3.2
+
+- **Fixed** Color picker.
+- **Fixed** Updated references to deprecated gray palette names.
+
 ### v0.3.0
 
 - **Updated** The color table is now consistent with other SEEDS table styles.
