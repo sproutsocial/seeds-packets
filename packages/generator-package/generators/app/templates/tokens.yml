@@ -1,0 +1,9 @@
+---
+global:
+  type: <%= packageName %>
+  package: <%= packageName %>
+props:
+  <%= tokenName %>:
+    category: <%= tokenCategory %>
+    value: "<%= tokenValue %>"
+...
