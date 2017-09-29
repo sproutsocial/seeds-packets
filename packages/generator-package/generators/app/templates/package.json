@@ -1,6 +1,6 @@
 {
   "name": "@sproutsocial/seeds-<%= packageName %>",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "stability": "alpha",
   "description": "<%= packageDescription %>",
   "main": "dist/seeds-<%= packageName %>.js",
