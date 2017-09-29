@@ -56,7 +56,10 @@ gulp.task('typography-docs', done => {
         return {
           value: prop.value.value || prop.value,
           app: upperFirst(prop.name),
-          sass: `@include ${suitCssName(prop.package, prop.name)};`,
+          sass:
+            prop.category === 'font size'
+              ? `@include ${suitCssName(prop.package, prop.name)};`
+              : sassVar(prop.package, prop.name),
           javascript: `{ style: ${javascriptConst(prop.package, prop.name)} }`,
           lineHeightProportional: prop.value.rules && prop.value.rules['line-height'],
           lineHeightPx: prop.value.rules && prop.value.rules['line-height'] * parseInt(prop.value.value, 10),
