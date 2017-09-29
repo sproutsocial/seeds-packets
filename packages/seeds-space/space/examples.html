@@ -19,49 +19,27 @@
 </ul>
 
 <h3>Size</h3>
-<table>
-  <thead>
-    <th scope="col">
-      Name
-      <select id="space-name">
-        <option value="sass" selected>Sass</option>
-        <option value="javascript">Javascript</option>
-      </select>
-    </th>
-    <th scope="col">Size</th>
-    <th scope="col">Example</th>
-  </thead>
-  <tbody data-js="tbody"></tbody>
-</table>
 
-<script id="space-row" type="text/html">
-  <tr>
-    <th scope="row" style="text-align: left;">
-      <pre data-lang="sass" style="display: block"><%= sass %></pre>
-      <pre data-lang="javascript" style="display: none"><%= javascript %></pre>
-    </th>
-    <td>
-      <pre><%= value %></pre>
-    </td>
-    <td>
-      <div class="space-sample" style=" width: <%= value %>; height: <%= value %>;"></div>
-    </td>
-  </tr>
-</script>
+<div id="sizeExample"></div>
 
 {% include_relative _generated/space.html %}
 
-<script>
-    (function($, _, seedsSpace) {
-      var sizeTemplate = _.template($('#space-row').html());
-      var $tableBody = $('[data-js="tbody"]');
+<script type="text/babel">
+  const SpaceExample = ({token}) => {
+    const styles = {
+      width: token.value,
+      height: token.value,
+    };
 
-      _.each(seedsSpace, function(size) {
-        $tableBody.append(sizeTemplate(size));
-      });
+    return (
+      <div className="space-sample" style={styles}></div>
+    );
+  };
 
-      $('#space-name').on('change', function () {
-        $('[data-lang="' + this.value + '"]').show().siblings().hide();
-      });
-    })(window.jQuery, window._, window.seedsSpace);
-  </script>
+  ReactDOM.render((
+    <ExampleTable
+      tokens={window.seedsSpace}
+      ChildClass={SpaceExample}
+    />
+  ), document.querySelector('#sizeExample'));
+</script>

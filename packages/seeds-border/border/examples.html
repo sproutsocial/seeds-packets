@@ -14,95 +14,38 @@
 
 <h3>Border Radius</h3>
 
-<table id="borderRadiusExample">
-  <thead>
-    <th scope="col" style="white-space: nowrap;">
-      Name
-      <select class="js-border-name">
-        <option value="app" selected>Design App</option>
-        <option value="sass">Sass</option>
-        <option value="javascript">Javascript</option>
-      </select>
-    </th>
-    <th scope="col">
-      Value
-    </th>
-    <th scope="col">Example</th>
-  </thead>
-  <tbody data-js="tbody"></tbody>
-</table>
+<div id="borderRadiusExample"></div>
 
 <h3>Border Width</h3>
 
-<table id="borderWidthExample">
-  <thead>
-    <th scope="col" style="white-space: nowrap;">
-      Name
-      <select class="js-border-name">
-        <option value="app" selected>Design App</option>
-        <option value="sass">Sass</option>
-        <option value="javascript">Javascript</option>
-      </select>
-    </th>
-    <th scope="col">
-      Value
-    </th>
-    <th scope="col">Example</th>
-  </thead>
-  <tbody data-js="tbody"></tbody>
-</table>
-
-<script id="border-radius-row" type="text/html">
-  <tr>
-    <th scope="row" style="text-align: left;">
-      <span data-lang="app" style="display: block"><%= app %></span>
-      <pre data-lang="sass" style="display: none"><%= sass %></pre>
-      <pre data-lang="javascript" style="display: none"><%= javascript %></pre>
-    </th>
-    <td>
-      <pre><%= value %></pre>
-    </td>
-    <td>
-      <div class="Example-border" style="border-radius: <%= value %>;"></div>
-    </td>
-  </tr>
-</script>
-
-<script id="border-width-row" type="text/html">
-  <tr>
-    <th scope="row" style="text-align: left;">
-      <span data-lang="app" style="display: block"><%= app %></span>
-      <pre data-lang="sass" style="display: none"><%= sass %></pre>
-      <pre data-lang="javascript" style="display: none"><%= javascript %></pre>
-    </th>
-    <td>
-      <pre><%= value %></pre>
-    </td>
-    <td>
-      <div class="Example-border" style="border-width: <%= value %>;"></div>
-    </td>
-  </tr>
-</script>
+<div id="borderWidthExample"></div>
 
 {% include_relative _generated/border.html %}
 
-<script>
-  (function($, _, seedsBorder) {
-    var borderRadiusTemplate = _.template($('#border-radius-row').html());
-    var borderWidthTemplate = _.template($('#border-width-row').html());
-    
-    _.each(seedsBorder, function(token) {
-      if (token.category == 'radius') {
-        $('#borderRadiusExample [data-js="tbody"]').append(borderRadiusTemplate(token));
-      } else if (token.category == 'width') {
-        $('#borderWidthExample [data-js="tbody"]').append(borderWidthTemplate(token));        
-      }
-    });
+<script type="text/babel">
+  const BorderExample = ({token}) => {
+    const styles = token.category == 'width' ? {
+      borderWidth: token.value
+    } : {
+      borderRadius: token.value
+    };
 
-    $('.js-border-name').on('change', function() {
-      $('[data-lang="' + this.value + '"]').show().siblings().hide();
-      $('.js-border-name').val(this.value);
-    });
+    return (
+      <div className="Example-border" style={styles}></div>
+    );
+  };
 
-  })(window.jQuery, window._, window.seedsBorder);
+  ReactDOM.render((
+    <ExampleTable
+      tokens={window.seedsBorder.filter(token => token.category == 'width')}
+      ChildClass={BorderExample}
+    />
+  ), document.querySelector('#borderWidthExample'));
+
+  ReactDOM.render((
+    <ExampleTable
+      tokens={window.seedsBorder.filter(token => token.category == 'radius')}
+      ChildClass={BorderExample}
+    />
+  ), document.querySelector('#borderRadiusExample'));
 </script>

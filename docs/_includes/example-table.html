@@ -1,0 +1,70 @@
+<script type="text/babel">
+  class ExampleTable extends React.Component {
+    constructor(props) {
+      super(props);
+      const firstToken = props.tokens[0];
+      const types = {
+        app: firstToken.app,
+        sass: firstToken.sass,
+        javascript: firstToken.javascript
+      };
+
+      this.state = {
+        types,
+        tokenType: (types.app && 'app') || (types.sass && 'sass') || (types.javascript && 'javascript')
+      };
+    }
+
+    changeTokenType = e => {
+      this.setState({
+        tokenType: e.target.value
+      });
+    }
+
+    render() {
+      const {tokens, ChildClass} = this.props;
+      const {types, tokenType} = this.state;
+
+      return (
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">
+                Name
+                <select value={tokenType} onChange={this.changeTokenType}>
+                  {types.app && <option value="app">Design App</option>}
+                  {types.sass && <option value="sass">Sass</option>}
+                  {types.javascript && <option value="javascript">Javascript</option>}
+                </select>
+              </th>
+
+              <th scope="col">
+                Value
+              </th>
+
+              <th scope="col">Example</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {tokens.map(token => (
+              <tr key={token.app}>
+                <th scope="row">
+                  <pre>{token[tokenType]}</pre>
+                </th>
+
+                <td>
+                  <pre>{token.value}</pre>
+                </td>
+
+                <td>
+                  <ChildClass token={token} />
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )
+    }
+  }
+</script>
