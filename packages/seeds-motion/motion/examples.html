@@ -12,55 +12,30 @@
 </ul>
 
 <h3>Easing</h3>
+
 <p>Our easing values are taken from <a href="https://material.io/guidelines/motion/duration-easing.html#duration-easing-natural-easing-curves">Google’s Material Design guidelines</a>.</p>
 
-<table>
-  <thead>
-    <th scope="col">
-      Name
-      <select id="motion-name">
-        <option value="sass" selected>Sass</option>
-        <option value="javascript">Javascript</option>
-      </select>
-    </th>
-    <th scope="col">Value</th>
-    <th scope="col">Example</th>
-  </thead>
-  <tbody data-js="tbody"></tbody>
-</table>
+<div id="easingExample"></div>
 
 {% include_relative _generated/motion.html %}
 
-<script id="easing" type="text/html">
-  <tr>
-    <th scope="row" style="text-align: left;">
-      <pre data-lang="sass" style="display: block"><%= sass %></pre>
-      <pre data-lang="javascript" style="display: none"><%= javascript %></pre>
-    </th>
-    <td>
-      <pre><%= value %></pre>
-    </td>
-    <td>
+<script type="text/babel">
+  const EasingExample = ({token}) => {
+    const styles = {
+      transitionTimingFunction: token.value
+    };
+
+    return (
       <div class="Example-motion">
-        <div class="Example-motion-ball"></div>
+        <div class="Example-motion-ball" style={styles}></div>
       </div>
-    </td>
-  </tr>
-</script>
+    );
+  };
 
-<script>
-  (function($, _, seedsMotion) {
-
-    var easingTemplate = _.template($('#easing').html());
-    var $tableBody = $('[data-js="tbody"]');
-
-    _.each(seedsMotion, function(easing) {
-      $tableBody.append(easingTemplate(easing));
-    });
-
-    $('#motion-name').on('change', function () {
-      $('[data-lang="' + this.value + '"]').show().siblings().hide();
-    });
-
-  })(window.jQuery, window._, window.seedsMotion);
+  ReactDOM.render((
+    <ExampleTable
+      tokens={window.seedsMotion}
+      ChildClass={EasingExample}
+    />
+  ), document.querySelector('#easingExample'));
 </script>
