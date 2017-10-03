@@ -42,6 +42,7 @@
     render() {
       const {tokens, rowStyle, ChildClass} = this.props;
       const {availableTypes, selectedType} = this.state;
+      const preStyle = {whiteSpace: 'normal'};
 
       return (
         <table>
@@ -54,11 +55,19 @@
                 </select>
               </th>
 
-              <th scope="col"></th>                  
-
-              <th scope="col">
-                Value
-              </th>
+              <th scope="col"></th>             
+              
+              {typeof tokens[0].value == 'object' ? (
+                Object.keys(tokens[0].value).map(key => (
+                  <th scope="col">
+                      {key}
+                  </th>
+                ))
+              ) : (
+                <th scope="col">
+                    Value
+                </th>
+              )}
 
               <th scope="col">Example</th>
             </tr>
@@ -66,7 +75,7 @@
 
           <tbody>
             {tokens.map(token => (
-              <tr key={token.app} style={rowStyle}>
+              <tr key={token.app} style={rowStyle} className={`num${token.value}`}>
                 <th scope="row">
                   <pre>{token[selectedType]}</pre>
                 </th>
@@ -77,9 +86,17 @@
                   )}
                 </td>
 
-                <td>
-                  <pre>{token.value}</pre>
-                </td>
+                {typeof token.value == 'object' ? (
+                  Object.keys(token.value).map(key => (
+                    <td>
+                      <pre style={preStyle}>{token[key]}</pre>
+                    </td>
+                  ))
+                ) : (
+                  <td>
+                      <pre style={preStyle}>{token.value}</pre>
+                  </td>
+                )}
 
                 <td>
                   <ChildClass token={token} />

@@ -33,15 +33,15 @@
       <pre data-lang="javascript" style="display: none"><%= javascript %></pre>
     </th>
     <td>
-      <p style="font-size: <%= value %>; line-height: <%= lineHeightPx %>px; overflow: hidden; height: calc(<%= lineHeightPx %>px * 3); max-width: 15em; margin: 0 0 8px">
+      <p style="font-size: <%= value.fontSize %>; line-height: <%= value.lineHeightPx %>px; overflow: hidden; height: calc(<%= value.lineHeightPx %>px * 3); max-width: 15em; margin: 0 0 8px">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur unde delectus neque, similique. Numquam vero debitis quidem veniam porro incidunt temporibus quas quasi eum, provident, consectetur minus, praesentium a commodi.
       </p>
     </td>
     <td>
-      <pre><%= value %></pre>
+      <pre><%= value.fontSize %></pre>
     </td>
     <td>
-      <pre data-value="px" style="display: inline-block"><% print(lineHeightPx.toFixed(3).replace(/[.,]000$/, "")) %>px</pre>
-      <pre data-value="proportional" style="display: none"><% print(lineHeightProportional.toFixed(3).replace(/[.,]000$/, "")) %></pre>
+      <pre data-value="px" style="display: inline-block"><% print(value.lineHeightPx.toFixed(3).replace(/[.,]000$/, "")) %>px</pre>
+      <pre data-value="proportional" style="display: none"><% print(value.lineHeightProportional.toFixed(3).replace(/[.,]000$/, "")) %></pre>
   </tr>
 </script>
