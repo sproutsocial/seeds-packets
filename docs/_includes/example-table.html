@@ -2,28 +2,33 @@
   class ExampleTable extends React.Component {
     constructor(props) {
       super(props);
+      // Grab the first token and determine available token types
       const firstToken = props.tokens[0];
       const types = {
         app: firstToken.app,
         sass: firstToken.sass,
-        javascript: firstToken.javascript
+        javascript: firstToken.javascript,
+        swift: firstToken.swift,
+        android: firstToken.android,
+        python: firstToken.python
       };
+      const availableTypes = Object.keys(types).filter(type => types[type]);
 
       this.state = {
-        types,
-        tokenType: (types.app && 'app') || (types.sass && 'sass') || (types.javascript && 'javascript')
+        types: availableTypes,
+        selectedType: availableTypes[0]
       };
     }
 
     changeTokenType = e => {
       this.setState({
-        tokenType: e.target.value
+        selectedType: e.target.value
       });
     }
 
     render() {
       const {tokens, ChildClass} = this.props;
-      const {types, tokenType} = this.state;
+      const {types, selectedType} = this.state;
 
       return (
         <table>
@@ -31,10 +36,8 @@
             <tr>
               <th scope="col">
                 Name
-                <select value={tokenType} onChange={this.changeTokenType}>
-                  {types.app && <option value="app">Design App</option>}
-                  {types.sass && <option value="sass">Sass</option>}
-                  {types.javascript && <option value="javascript">Javascript</option>}
+                <select value={selectedType} onChange={this.changeTokenType}>
+                  {types.map(type => <option value={type}>{type}</option>)}
                 </select>
               </th>
 
@@ -50,7 +53,7 @@
             {tokens.map(token => (
               <tr key={token.app}>
                 <th scope="row">
-                  <pre>{token[tokenType]}</pre>
+                  <pre>{token[selectedType]}</pre>
                 </th>
 
                 <td>
