@@ -41,7 +41,9 @@
       url: "#usage"
     - page: Accessibility
       url: "#accessibility"
-      
+    - page: Changelog
+      url: "#changelog"
+
 - title: Network Color
   url: /packets/networkcolor/
   subnav:
@@ -75,3 +77,5 @@
     url: "#examples"
   - page: Usage
     url: "#usage"
+  - page: Changelog
+    url: "#changelog"
