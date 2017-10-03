@@ -1,47 +1,27 @@
-<table id="sizeTable">
-  <thead>
-    <th scope="col" style="white-space: nowrap;">
-      <label>
-        Token Name
-        <select class="js-typography-name">
-          <option value="app" selected>Name</option>
-          <option value="sass">Sass</option>
-          <option value="javascript">Javascript</option>
-        </select>
-      </label>
-    </th>
-    <th scope="col">Example</th>
-    <th scope="col">
-      Size
-    </th>
-    <th scope="col" style="white-space: nowrap;">
-      Line Height
-      <select class="js-typography-lineheight">
-        <option value="px" selected>pixels</option>
-        <option value="proportional">proportional</option>
-      </select>
-    </th>
-  </thead>
-  <tbody data-js="tbody"></tbody>
-</table>
+<div id="sizeExample"></div>
 
-<script id="size-row" type="text/html">
-  <tr>
-    <th scope="row" style="text-align: left;">
-      <span data-lang="app" style="display: block"><%= app %></span>
-      <pre data-lang="sass" style="display: none"><%= sass %></pre>
-      <pre data-lang="javascript" style="display: none"><%= javascript %></pre>
-    </th>
-    <td>
-      <p style="font-size: <%= value.fontSize %>; line-height: <%= value.lineHeightPx %>px; overflow: hidden; height: calc(<%= value.lineHeightPx %>px * 3); max-width: 15em; margin: 0 0 8px">
+<script type="text/babel">
+  const SizeExample = ({token}) => {
+    const styles = {
+      fontSize: token.value.fontSize,
+      lineHeight: `${token.value.lineHeightPx}px`,
+      overflow: 'hidden',
+      height: `calc(${token.value.lineHeightPx}px * 3)`,
+      maxWidth: '15em',
+      margin: 0
+    };
+
+    return (
+      <p style={styles}>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur unde delectus neque, similique. Numquam vero debitis quidem veniam porro incidunt temporibus quas quasi eum, provident, consectetur minus, praesentium a commodi.
       </p>
-    </td>
-    <td>
-      <pre><%= value.fontSize %></pre>
-    </td>
-    <td>
-      <pre data-value="px" style="display: inline-block"><% print(value.lineHeightPx.toFixed(3).replace(/[.,]000$/, "")) %>px</pre>
-      <pre data-value="proportional" style="display: none"><% print(value.lineHeightProportional.toFixed(3).replace(/[.,]000$/, "")) %></pre>
-  </tr>
+    );
+  };
+
+  ReactDOM.render((
+    <ExampleTable
+      tokens={window.seedsTypography.filter(token => token.category == 'font size')}
+      ChildClass={SizeExample}
+    />
+  ), document.querySelector('#sizeExample'));
 </script>

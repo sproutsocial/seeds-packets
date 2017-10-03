@@ -13,6 +13,7 @@ For SCSS or Javascript:
 - `yarn add @sproutsocial/{{page.package}}`
 - `npm install @sproutsocial/{{page.package}} --save`
 
+{% include_relative _generated/typography.html %}
 
 ### Typefaces
 
@@ -36,8 +37,3 @@ For simplicity and performance, we use two font weights on the web.
 Line heights are calculated to ensure at least three lines align to an 8px grid. Use the associated line-height values only.
 
 {% include_relative example-size.html %}
-
-
-<!-- Scripts needed to render examples -->
-
-{% include_relative example-scripts.html %}
