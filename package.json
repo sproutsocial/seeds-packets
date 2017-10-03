@@ -45,6 +45,7 @@
     "lodash.snakecase": "^4.1.1",
     "lodash.upperfirst": "^4.3.1",
     "make-dir": "^1.0.0",
+    "merge-stream": "^1.0.1",
     "mround": "^1.0.0",
     "pascal-case": "^2.0.0",
     "prettier-eslint": "^6.4.2",
