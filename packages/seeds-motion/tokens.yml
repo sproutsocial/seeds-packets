@@ -3,6 +3,10 @@ global:
   type: motion
   package: motion
 props:
+  ease linear:
+    category: easing
+    value: linear
+    description: Use for elements changing color or fading into view
   ease in:
     category: easing
     value: cubic-bezier(.4, 0, 1, 1)

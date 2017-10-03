@@ -18,3 +18,6 @@ package: seeds-motion
 
 {% capture accessibility_md %}{% include_relative accessibility.md %}{% endcapture %}
 {{ accessibility_md | markdownify }}
+
+{% capture changelog %}{% include_relative CHANGELOG.md %}{% endcapture %}
+{{ changelog | markdownify }}
