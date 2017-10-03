@@ -2,7 +2,7 @@
 
 ### App Downloads
 
-- <a href="_generated/{{page.package}}.{{ site.data.versions[page.package].version }}.json" download>Sketch Styles</a> (Requires [Shared Text Styles plugin](https://github.com/nilshoenson/shared-text-styles))
+- <del><a href="_generated/{{page.package}}.{{ site.data.versions[page.package].version }}.json" download>Sketch Styles</a> (Requires [Shared Text Styles plugin](https://github.com/nilshoenson/shared-text-styles))</del> **Deprecated. See [changelog](#changelog).**
 - [Adobe Creative Cloud Library](https://assets.adobe.com/assets/libraries/a4c2bfd3-f701-470c-ab88-1ba696d9f628e)
 
 

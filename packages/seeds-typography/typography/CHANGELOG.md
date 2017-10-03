@@ -1,5 +1,9 @@
 ## Changelog
 
+### v0.4.1
+
+- **Deprecated** The Sketch Text Styles plugin has not been updated for the latest versions of Sketch. It has been removed from the docs until another solution is determined.
+
 ### v0.4.0
 
 - **New** For better cross-browser fallbacks and to solve issues like odd emoji rendering, our official font stacks should default to system fonts like San Francisco.
