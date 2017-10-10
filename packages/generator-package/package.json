@@ -1,6 +1,6 @@
 {
   "name": "generator-package",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "description": "Scaffold out a new SEEDS package.",
   "author": {
@@ -41,18 +41,18 @@
   },
   "repository": "git@github.com:ericcecchi/seeds.git",
   "license": "MIT",
-	"ava": {
-		"files": [
-			"__tests__/*.js"
-		],
-		"source": [
-			"generators/**/*.{js,jsx}",
-			"!templates/**/*"
-		],
-		"concurrency": 5,
-		"failFast": true,
-		"failWithoutAssertions": false,
-		"tap": true,
-		"powerAssert": false
-	}
+  "ava": {
+    "files": [
+      "__tests__/*.js"
+    ],
+    "source": [
+      "generators/**/*.{js,jsx}",
+      "!templates/**/*"
+    ],
+    "concurrency": 5,
+    "failFast": true,
+    "failWithoutAssertions": false,
+    "tap": true,
+    "powerAssert": false
+  }
 }
