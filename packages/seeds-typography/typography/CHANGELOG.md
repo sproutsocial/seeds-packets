@@ -1,5 +1,8 @@
 ## Changelog
 
+### v0.4.2
+- **Fixed** Fixed documentation of Javascript tokens. Were showing objects for all values, but only type scale values are objects; the rest of the values are simple constants.
+
 ### v0.4.1
 
 - **Deprecated** The Sketch Text Styles plugin has not been updated for the latest versions of Sketch. It has been removed from the docs until another solution is determined.
