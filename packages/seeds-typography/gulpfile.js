@@ -55,16 +55,23 @@ gulp.task('typography-docs', done => {
         const prop = tokens.props[key];
         return {
           app: upperFirst(prop.name),
-          sass: prop.category === 'font size'
-            ? `@include ${suitCssName(prop.package, prop.name)};`
-            : sassVar(prop.package, prop.name),
-          javascript: typeof prop.value == 'object' ? `{ style: ${javascriptConst(prop.package, prop.name)} }` : javascriptConst(prop.package, prop.name),
+          sass:
+            prop.category === 'font size'
+              ? `@include ${suitCssName(prop.package, prop.name)};`
+              : sassVar(prop.package, prop.name),
+          javascript:
+            prop.category === 'font size'
+              ? `{ style: ${javascriptConst(prop.package, prop.name)} }`
+              : javascriptConst(prop.package, prop.name),
           category: prop.category,
-          value: typeof prop.value == 'object' ? {
-            fontSize: prop.value.value,
-            lineHeightProportional: prop.value.rules && prop.value.rules['line-height'],
-            lineHeightPx: prop.value.rules && prop.value.rules['line-height'] * parseInt(prop.value.value, 10)
-          } : prop.value
+          value:
+            typeof prop.value == 'object'
+              ? {
+                  fontSize: prop.value.value,
+                  lineHeightProportional: prop.value.rules && prop.value.rules['line-height'],
+                  lineHeightPx: prop.value.rules && prop.value.rules['line-height'] * parseInt(prop.value.value, 10)
+                }
+              : prop.value
         };
       });
 
