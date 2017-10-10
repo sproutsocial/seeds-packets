@@ -1,10 +1,10 @@
 ## Changelog
 
 
-### v0.2.7
+### v0.2.8
 
 - **Updated** Documentation improvements.
-- 
+
 ### v0.2.6
 
 - **New** Added `linear` value so it can be documented specifically.
