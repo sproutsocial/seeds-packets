@@ -15,3 +15,6 @@ package: seeds-border
 
 {% capture usage_md %}{% include_relative usage.md %}{% endcapture %}
 {{ usage_md | markdownify }}
+
+{% capture changelog %}{% include_relative CHANGELOG.md %}{% endcapture %}
+{{ changelog | markdownify }}

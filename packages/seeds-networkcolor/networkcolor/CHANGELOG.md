@@ -1,5 +1,9 @@
 ## Changelog
 
+### v0.3.1
+
+- **Updated** Documentation improvements.
+
 ### v0.3.0
 
 - **Updated** The color table is now consistent with other SEEDS table styles.

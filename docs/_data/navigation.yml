@@ -13,6 +13,8 @@
       url: "#examples"
     - page: Usage
       url: "#usage"
+    - page: Changelog
+      url: "#changelog"
 
 - title: Color
   url: /packets/color/
@@ -67,6 +69,8 @@
       url: "#examples"
     - page: Usage
       url: "#best-practices"
+    - page: Changelog
+      url: "#changelog"
 
 - title: Typography
   url: /packets/typography/
