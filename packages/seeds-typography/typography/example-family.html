@@ -1,34 +1,24 @@
+<div id="familyExample"></div>
 
-<table id="familyTable">
-  <thead>
-    <th scope="col" style="white-space: nowrap;">
-      <label>
-        Token Name
-        <select class="js-typography-name">
-          <option value="app" selected>Name</option>
-          <option value="sass">Sass</option>
-          <option value="javascript">Javascript</option>
-        </select>
-      </label>
-    </th>
-    <th scope="col">Example</th>
-  </thead>
-  <tbody data-js="tbody"></tbody>
-</table>
+<script type="text/babel">
+  const FamilyExample = ({token}) => {
+    const styles = {
+      fontFamily: token.value
+    };
 
-<script id="family-row" type="text/html">
-  <tr>
-    <th>
-      <span data-lang="app" style="display: block"><%= app %></span>
-      <pre data-lang="sass" style="display: none"><%= sass %></pre>
-      <pre data-lang="javascript" style="display: none"><%= javascript %></pre>
-    </th>
-    <td>
-      <div class="Typography-size--700" style="font-family: <%= _.escape(value) %>">
-        ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>
-        abcdefghijklmnopqrstuvwxyz<br>
+    return (
+      <div className="Typography-size--700" style={styles}>
+        ABCDEFGHIJKLMNOPQRSTUVWXYZ<br/>
+        abcdefghijklmnopqrstuvwxyz<br/>
         0987654321
       </div>
-    </td>
-  </tr>
+    );
+  };
+
+  ReactDOM.render((
+    <ExampleTable
+      tokens={window.seedsTypography.filter(token => token.category == 'font family')}
+      ChildClass={FamilyExample}
+    />
+  ), document.querySelector('#familyExample'));
 </script>

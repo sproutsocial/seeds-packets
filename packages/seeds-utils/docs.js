@@ -6,6 +6,7 @@ const rename = require('gulp-rename');
 const nodePath = require('path');
 const replace = require('gulp-replace');
 const sass = require('gulp-sass');
+const merge = require('merge-stream');
 const versions = require('./versions');
 
 const seedsIncludes = globby.sync(`${process.cwd()}/packages/seeds-*/dist`);
@@ -33,10 +34,11 @@ gulp.task('docs-css', () => {
 });
 
 gulp.task('docs-copy', done => {
+  const merged = merge();
   copyDocs.forEach(doc => {
-    gulp.src(doc.path).pipe(gulp.dest('docs/_packets/' + doc.package));
+    merged.add(gulp.src(doc.path).pipe(gulp.dest('docs/_packets/' + doc.package)));
   });
-  done();
+  return merged;
 });
 
 gulp.task('docs-files', done => {

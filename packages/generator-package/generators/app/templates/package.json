@@ -1,0 +1,19 @@
+{
+  "name": "@sproutsocial/seeds-<%= packageName %>",
+  "version": "0.0.1",
+  "stability": "alpha",
+  "description": "<%= packageDescription %>",
+  "main": "dist/seeds-<%= packageName %>.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sproutsocial/seeds.git"
+  },
+  "author": "Sprout Social",
+  "scripts": {
+    "build": "gulp"
+  },
+  "devDependencies": {
+    "@sproutsocial/seeds-utils": "^0.1.7",
+    "ase-util": "^1.0.1"
+  }
+}

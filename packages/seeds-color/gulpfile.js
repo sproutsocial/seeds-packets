@@ -106,7 +106,7 @@ gulp.task('color-docs', done => {
           category,
           deprecated: !!prop.deprecated,
           value,
-          palette: upperFirst(prop.name),
+          app: upperFirst(prop.name),
           sass: sassVar(prop.package, prop.name),
           javascript: javascriptConst(prop.package, prop.name),
           swift: `UIColor().${camelCase(prop.name)}()`,
