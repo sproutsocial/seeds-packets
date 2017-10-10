@@ -19,7 +19,7 @@
     <label>
         Name Format
         <select class="js-colors-name">
-          <option value="palette" selected>Palette</option>
+          <option value="app" selected>Palette</option>
           <option value="sass">Sass</option>
           <option value="javascript">Javascript</option>
           <option value="swift">Swift</option>
@@ -66,10 +66,10 @@
           if (color.category !== category) {
             return;
           }
-          if (color.palette == 'Black') {
+          if (color.app == 'Black') {
             color.textColor = '#fff';
           } else {
-            var num = Number(color.palette.split(' ')[1]);
+            var num = Number(color.app.split(' ')[1]);
             color.textColor = num >= 600 ? '#fff' : '#162020';
           }
 
@@ -258,7 +258,7 @@
 
       nearestColorNameEl.innerText = colorsToCheck[closestColor][$('.js-colors-name').val()];
       nearestColorValueEl.innerText = colorsToCheck[closestColor]['value'];
-      var textColor = Number(colorsToCheck[closestColor].palette.split(' ')[1]) >= 500 ? seedsColors.find(color => color.javascript == 'COLOR_NEUTRAL_0').value : seedsColors.find(color => color.javascript == 'COLOR_NEUTRAL_1000').value;
+      var textColor = Number(colorsToCheck[closestColor].app.split(' ')[1]) >= 500 ? seedsColors.find(color => color.javascript == 'COLOR_NEUTRAL_0').value : seedsColors.find(color => color.javascript == 'COLOR_NEUTRAL_1000').value;
 
       $colorFoundSwatch.css('background', colorsToCheck[closestColor].value);
       $colorFoundSwatch.css('color', textColor);

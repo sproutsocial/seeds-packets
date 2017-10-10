@@ -36,7 +36,7 @@
         <label>
           Token Name
           <select class="js-colors-name">
-            <option value="palette" selected>Palette</option>
+            <option value="app" selected>Palette</option>
             <option value="sass">Sass</option>
             <option value="javascript">Javascript</option>
             <option value="swift">Swift</option>
@@ -58,7 +58,7 @@
 <script id="colors-row" type="text/html">
   <tr style="background: <%= value %>; cursor: pointer;" class="<%= num %>">
     <td class="Typography-weight--semibold">
-      <span data-lang="palette" style="color: <%= textColor %>; display: block"><%= palette %></span>
+      <span data-lang="app" style="color: <%= textColor %>; display: block"><%= app %></span>
       <pre data-lang="sass" style="color: <%= textColor %>; display: none"><%= sass %></pre>
       <pre data-lang="javascript" style="color: <%= textColor %>; display: none"><%= javascript %></pre>
       <pre data-lang="swift" style="color: <%= textColor %>; display: none"><%= swift %></pre>
