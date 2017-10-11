@@ -1,0 +1,64 @@
+.Sidebar {
+  border-right: 1px solid $Color-gray--200;
+  min-height: 100vh;
+  &-brand {
+    @include Typography-size--900;
+    display: block;
+    padding: $Space-size--500;
+    border-bottom: 1px solid $Color-gray--200;
+    font-weight: $Typography-weight--bold;    
+    color: $Color-black;
+    text-decoration: none;
+  }
+  &-nav {
+    position: sticky;
+    top: 0;
+    padding: $Space-size--500;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    max-height: 100vh;
+    overflow-y: scroll;
+  }
+  .Nav-item:not(.Nav-item--active) .Nav {
+    display: none;
+  }
+  .Nav-link {
+    @include Typography-size--500;
+    font-weight: $Typography-weight--bold;    
+    color: $Color-gray--800;
+  }
+  .Nav-link--primary { 
+    color: $Color-green--700;
+  }
+}
+.Nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  &-item {
+    margin: 0;
+  }
+  &-link {
+    display: block;
+    padding: $Space-size--300 $Space-size--400;
+    text-decoration: none;
+    background: none;
+    border: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.Nav-item .Nav {
+  padding-left: $Space-size--400;
+  .Nav-link {
+    @include Typography-size--400;
+    font-weight: $Typography-weight--regular;    
+  }
+}

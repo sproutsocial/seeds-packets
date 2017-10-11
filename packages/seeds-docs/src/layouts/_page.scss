@@ -1,0 +1,17 @@
+main {
+  padding: $Space-size--400;
+  li,
+  p {
+    max-width: 42em;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .Page {
+    display: grid;
+    grid-template-columns: minmax(250px, 1fr) 4fr;
+  }
+  main {
+    padding: $Space-size--600 * 2;
+  }
+}
