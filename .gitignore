@@ -1,11 +1,6 @@
 node_modules
-docs/_site
-docs/css
-docs/_packets
-packages/**/*/_generated
-docs/_data/versions.json
+packages/**/dist
 .vscode
-versions.json
 lerna-debug.log
 npm-debug.log*
 yarn-debug.log*

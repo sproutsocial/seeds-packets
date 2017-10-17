@@ -83,9 +83,9 @@ class ExampleTable extends React.Component {
 
         <tbody>
           {tokens.map(token => (
-            <tr key={JSON.stringify(token)} style={rowStyle && rowStyle(token)} className={`num${token.value}`}>
+            <tr key={JSON.stringify(token)} style={rowStyle && rowStyle(token)} className={token['app'] && token['app'].split(' ').join('')}>
               <th scope="row">
-                <pre>{token[selectedType]}</pre>
+                {selectedType == 'app' ? <span>{token[selectedType]}</span> : <pre>{token[selectedType]}</pre>}
               </th>
                 
               {typeof token.deprecated != 'undefined' && (

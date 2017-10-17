@@ -2,6 +2,7 @@ import React from 'react';
 import ExampleTable from '../components/example-table';
 import Mustache from 'mustache';
 import marked from 'marked';
+import upperFirst from 'lodash.upperfirst';
 
 marked.setOptions({
   renderer: new marked.Renderer(),
@@ -18,6 +19,7 @@ export default ({data}) => {
   console.log(data);
   const pkg = data.seedsPackage;
   const sections = data.sections.edges;
+  // Try to import example and resource components for the package
   const exampleComponent = `../components/examples/${pkg.packageName}`;
   const resourceComponent = `../components/resources/${pkg.packageName}`;
   let Examples = null;
@@ -36,17 +38,19 @@ export default ({data}) => {
   }
 
   return (
-    <article>
+    <article className={pkg.packageName}>
       <h1>
-        {pkg.packageName}{' '}
+        {upperFirst(pkg.packageName.replace('seeds-', ''))}{' '}
         <small>
           {pkg.version} {pkg.stability}
         </small>
       </h1>
 
       {sections.map(({node}) => {
+        if (node.fields.baseName == 'README') return;
+        const html = Mustache.render(marked(node.internal.content), pkg);
+
         if (node.fields.baseName.includes('overview')) {
-          const html = Mustache.render(marked(node.internal.content), pkg);
           return (
             <div key={node.id}>
               <header className="Typography-size--500" dangerouslySetInnerHTML={{__html: html}} />
@@ -60,19 +64,15 @@ export default ({data}) => {
             </div>
           );
         } else if (node.fields.baseName.includes('resources')) {
-          const html = Mustache.render(marked(node.internal.content), pkg);
           return (
-            [
-              <div key="content" dangerouslySetInnerHTML={{__html: html}} />,
-              Resources && (
+            <section key={node.id}>
+              <div key="content" dangerouslySetInnerHTML={{__html: html}} />
+              {Resources && (
                 <Resources key="resources" />
-              )
-            ]
+              )}
+            </section>
           );
-        } else if (node.fields.baseName == 'README') {
-          return;
         } else {
-          const html = Mustache.render(marked(node.internal.content), pkg);
           return <section key={node.id} dangerouslySetInnerHTML={{__html: html}} />;
         }
       })}

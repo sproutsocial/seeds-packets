@@ -1,13 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'SEEDS',
-    navigation: [
-      {
-        title: 'Border',
-        url: '/border/'
-      }
-    ]
+    title: 'SEEDS'
   },
+  pathPrefix: '/seeds',  
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,

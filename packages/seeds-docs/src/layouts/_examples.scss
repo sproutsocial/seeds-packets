@@ -1,14 +1,15 @@
 // Color page
-#paletteTable tbody tr.num500 td {
-  padding: ($Space-size--600 * 2) $Space-size--400;
+.seeds-color tbody tr[class*="500"] td,
+.seeds-color tbody tr[class*="500"] th {
+  padding: ($Space-size--600 * 2) $Space-size--300;
 }
-#paletteTable tbody td {
-  padding: $Space-size--400;
+.seeds-color,
+.seeds-networkcolor {
+  tbody td pre {
+    font-weight: $Typography-weight--bold;
+  }
 }
-#paletteTable tbody td .colors-row-name pre {
-  font-weight: $Typography-weight--bold;
-}
-#paletteTable tbody td pre {
+tbody td pre {
   margin: 0;
 }
 .space-sample {

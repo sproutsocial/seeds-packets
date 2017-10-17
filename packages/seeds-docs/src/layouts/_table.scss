@@ -10,14 +10,16 @@ table {
   }
   th,
   td {
-    padding: $Space-size--300;
-    vertical-align: top;
+    padding: $Space-size--400 $Space-size--300;
     border-top: $Border-width--500 solid $Color-gray--200;
     text-align: left;
   }
 
   thead th {
-    vertical-align: bottom;
     border-bottom: $Border-width--500 solid $Color-gray--200;
+    select {
+      margin-left: $Space-size--300;
+      vertical-align: middle;
+    }
   }
 }

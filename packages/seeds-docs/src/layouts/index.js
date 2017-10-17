@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
+import upperFirst from 'lodash.upperfirst';
 
 import './index.scss';
 
@@ -9,7 +10,7 @@ const Sidebar = ({data}) => (
   <nav>
     <ul className="Nav flex-column">
       <li className="Nav-item">
-        <button className="Nav-link Nav-link--primary js-jira-issue">Submit SEEDS Ticket</button>
+        {/*<button className="Nav-link Nav-link--primary js-jira-issue">Submit SEEDS Ticket</button>*/}
       </li>
 
       {data.pages.edges.map(edge => {
@@ -41,7 +42,7 @@ const Sidebar = ({data}) => (
         return (
           <li className="Nav-item" key={item.id}>
             <Link className="Nav-link" to={`/${item.packageName}/`}>
-              {item.packageName}
+              {upperFirst(item.packageName.replace('seeds-', ''))}
             </Link>
 
             {item.children && (
