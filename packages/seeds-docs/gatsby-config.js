@@ -23,6 +23,7 @@ module.exports = {
     'gatsby-transformer-json',
     'gatsby-transformer-yaml',  
     'gatsby-transformer-remark',
+    'transformer-seeds-package',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-manifest',
     'gatsby-plugin-offline'
