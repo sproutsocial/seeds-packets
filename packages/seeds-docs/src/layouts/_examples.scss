@@ -27,6 +27,9 @@ tbody td pre {
     white-space: normal;
   }
 }
+.CopyContent:hover {
+  cursor: pointer;
+}
 .Example-motion {
   min-width: 20em;
   position: relative;

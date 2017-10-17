@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import CopyContent from './copy-content';
 
 class ExampleTable extends React.Component {
   static propTypes = {
     tokens: PropTypes.array,
-    rowStyle: PropTypes.object,
+    rowStyle: PropTypes.func,
     ChildClass: PropTypes.func
   };
 
@@ -85,7 +86,7 @@ class ExampleTable extends React.Component {
           {tokens.map(token => (
             <tr key={JSON.stringify(token)} style={rowStyle && rowStyle(token)} className={token['app'] && token['app'].split(' ').join('')}>
               <th scope="row">
-                {selectedType == 'app' ? <span>{token[selectedType]}</span> : <pre>{token[selectedType]}</pre>}
+                <CopyContent>{selectedType == 'app' ? <span>{token[selectedType]}</span> : <pre>{token[selectedType]}</pre>}</CopyContent>
               </th>
                 
               {typeof token.deprecated != 'undefined' && (
@@ -99,12 +100,12 @@ class ExampleTable extends React.Component {
               {typeof token.value == 'object' ? (
                 Object.keys(token.value).map(key => (
                   <td key={key}>
-                    <pre style={preStyle}>{token.value[key]}</pre>
+                  <CopyContent><pre style={preStyle}>{token.value[key]}</pre></CopyContent>
                   </td>
                 ))
               ) : (
                 <td key={token.value}>
-                    <pre style={preStyle}>{token.value}</pre>
+                  <CopyContent><pre style={preStyle}>{token.value}</pre></CopyContent>
                 </td>
               )}
 
