@@ -1,4 +1,4 @@
-export function hexToRgb(hex) {
+function hexToRgb(hex) {
   // Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
   const shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
   hex = hex.replace(shorthandRegex, function(m, r, g, b) {
@@ -14,7 +14,7 @@ export function hexToRgb(hex) {
     : null;
 }
 
-export function rgbToXyz(rgb) {
+function rgbToXyz(rgb) {
   let _r = rgb.r / 255,
     _g = rgb.g / 255,
     _b = rgb.b / 255;
@@ -48,7 +48,7 @@ export function rgbToXyz(rgb) {
   return [X, Y, Z];
 }
 
-export function xyzToLab(xyz) {
+function xyzToLab(xyz) {
   let ref_X = 95.047,
     ref_Y = 100.0,
     ref_Z = 108.883,
@@ -81,7 +81,7 @@ export function xyzToLab(xyz) {
   return [CIE_L, CIE_a, CIE_b];
 }
 
-export function cie1994(x, y, isTextiles) {
+function cie1994(x, y, isTextiles) {
   x = {l: x[0], a: x[1], b: x[2]},
     y = {l: y[0], a: y[1], b: y[2]};
   let labx = x,
@@ -118,6 +118,12 @@ export function cie1994(x, y, isTextiles) {
   );
 }
 
-export function hexToLab(hex) {
+function hexToLab(hex) {
   return xyzToLab(rgbToXyz(hexToRgb(hex)));
 }
+
+module.exports.hexToRgb = hexToRgb;
+module.exports.rgbToXyz = rgbToXyz;
+module.exports.xyzToLab = xyzToLab;
+module.exports.cie1994 = cie1994;
+module.exports.hexToLab = hexToLab;

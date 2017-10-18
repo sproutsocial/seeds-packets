@@ -1,6 +1,9 @@
 import React from 'react';
+import Colors from '@sproutsocial/seeds-color';
 import tokens from '@sproutsocial/seeds-color/dist/tokens.json';
-import {hexToLab, cie1994} from './color-functions';
+import {hexToLab, cie1994} from '@sproutsocial/seeds-utils/color-functions';
+import tinycolor from 'tinycolor2';
+
 import CopyContent from '../copy-content';
 
 class ClosestColorTool extends React.Component {
@@ -98,7 +101,10 @@ class ClosestColorTool extends React.Component {
         </form>
 
         <h4>Nearest Color</h4>
-        <div className="Swatch" style={{backgroundColor: closestColor.value}}>
+        <div className="Swatch" style={{
+          backgroundColor: closestColor.value,
+          color: closestColor.value && tinycolor(closestColor.value).isDark() ? Colors.COLOR_WHITE : 'currentColor'
+        }}>
           <span>
             <strong>
                 <CopyContent><pre>{closestColor.name || 'Use the color picker above to choose a color to match.'}</pre></CopyContent>
