@@ -4,7 +4,7 @@ import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 import upperFirst from 'lodash.upperfirst';
 
-import './index.scss';
+import './scss/index.scss';
 
 const Sidebar = ({data}) => (
   <nav>
