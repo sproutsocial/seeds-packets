@@ -34,11 +34,11 @@ class ClosestColorTool extends React.Component {
     });
     
     const lab = hexToLab(currentColor);
-    let distance = cie1994(lab, hexToLab(colorsToCheck[0].value));
+    let distance = cie1994(lab, hexToLab(colorsToCheck[0].value.hex));
     let closestColor = 0;
 
     colorsToCheck.forEach((color, i) => {
-      const thisDistance = cie1994(lab, hexToLab(color.value));
+      const thisDistance = cie1994(lab, hexToLab(color.value.hex));
       if (thisDistance < distance) {
         closestColor = i;
         distance = thisDistance;
@@ -47,7 +47,7 @@ class ClosestColorTool extends React.Component {
 
     return {
       name: colorsToCheck[closestColor][format],
-      value: colorsToCheck[closestColor]['value']
+      value: colorsToCheck[closestColor].value.hex
     }
   };
 
