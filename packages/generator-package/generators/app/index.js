@@ -39,19 +39,14 @@ module.exports = class extends Generator {
 
   writing() {
     this.fs.copyTpl(
-      this.templatePath('*'),
+      this.templatePath('**'),
       this.destinationPath(`packages/seeds-${this.props.packageName}`),
-      Object.assign({}, this.props)
-    );
-
-    this.fs.copyTpl(
-      this.templatePath('docs'),
-      this.destinationPath(`packages/seeds-${this.props.packageName}/${this.props.packageName}`),
       Object.assign({}, this.props)
     );
   }
 
   install() {
+    this.spawnCommand('lerna', [`exec --scope seeds-docs -- yarn add ../seeds-${this.props.packageName}`]);
     this.spawnCommand('lerna', ['bootstrap']);
   }
 };
