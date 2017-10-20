@@ -58,8 +58,8 @@ class TemplateWrapper extends React.Component {
     return (
       <div className="Page">
         <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[{name: 'description', content: 'Sample'}]}
+          title={`${data.site.siteMetadata.title} | SEEDS`}
+          meta={[{name: 'description', content: 'SEEDS is Sprout Social’s Extremely Excellent Design System.'}]}
         >
           <meta name="author" content="Sprout Social" />
           <meta name="robots" content="noindex" />

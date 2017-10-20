@@ -2,6 +2,7 @@ import React from 'react';
 import ExampleTable from '../components/example-table';
 import Mustache from 'mustache';
 import marked from 'marked';
+import Helmet from 'react-helmet';
 import upperFirst from 'lodash.upperfirst';
 
 export default class PackagePage extends React.Component {
@@ -22,6 +23,7 @@ export default class PackagePage extends React.Component {
   render() {
     const {data} = this.props;
     const pkg = data.seedsPackage;
+    const title = upperFirst(pkg.packageName.replace('seeds-', ''));
     const sections = data.sections.edges;
     // Try to import example and resource components for the package
     const exampleComponent = `../components/examples/${pkg.packageName}`;
@@ -43,8 +45,11 @@ export default class PackagePage extends React.Component {
 
     return (
       <article className={pkg.packageName}>
+        <Helmet
+          title={`${title} | SEEDS`}
+        />
         <h1>
-          {upperFirst(pkg.packageName.replace('seeds-', ''))}{' '}
+          {title}{' '}
           <small>
             {pkg.version} {pkg.stability}
           </small>

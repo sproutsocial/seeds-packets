@@ -1,5 +1,5 @@
 ---
-title: SEEDS
+title: Home
 layout: default
 ---
 
