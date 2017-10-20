@@ -14,8 +14,8 @@ const NetworkcolorExample = (props) => {
         key="table"
         tokens={tokens.filter(token => token.category == category)}
         rowStyle={token=> ({
-          backgroundColor: token.value,
-          color: tinycolor(token.value).isDark() ? Colors.COLOR_WHITE : 'currentColor'
+          backgroundColor: token.value.hex,
+          color: tinycolor(token.value.hex).isDark() ? Colors.COLOR_WHITE : 'currentColor'
         })}
       />
     ]

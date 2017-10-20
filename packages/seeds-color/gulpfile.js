@@ -103,14 +103,16 @@ gulp.task('color-docs', done => {
         return {
           category,
           deprecated: !!prop.deprecated,
-          value,
+          value: {
+            hex: value,
+            rgb: tinycolor(value).toRgbString()
+          },
           app: upperFirst(prop.name),
           sass: sassVar(prop.package, prop.name),
           javascript: javascriptConst(prop.package, prop.name),
           swift: `UIColor().${camelCase(prop.name)}()`,
           android: constantCase(prop.name),
-          python: camelCase(prop.name),
-          rgb: tinycolor(value).toRgbString(value)
+          python: camelCase(prop.name)
         };
       });
 
