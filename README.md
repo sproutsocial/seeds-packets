@@ -18,6 +18,16 @@ To build SEEDS packages, simply install dependencies by running `yarn` and build
 - `yarn docs-publish` - Build packages and docs, then publish it to **your fork’s** Github Pages
   - If you run `yarn docs-publish -o upstream` locally, you can publish the docs to **production** Github Pages if you have an `upstream` remote set in git.
 
+
+### Creating a New Package
+
+SEEDS comes with a generator to scaffold a new package.
+
+- `yarn create-package` - Run a wizard to scaffold out a new package.
+- `yarn docs-serve` - Build packages, docs, and runs a hot-reload server.
+
+Your new package files can be found in `packages/seeds-<packageName>`. In addition, an example component for the docs can be found in `packages/seeds-docs/components/examples/seeds-<packageName>`.
+
 ### Publishing Package Updates to npm
 
 - Put your PR changes in

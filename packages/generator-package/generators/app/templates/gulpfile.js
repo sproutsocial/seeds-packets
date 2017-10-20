@@ -41,7 +41,7 @@ gulp.task('<%= packageName %>-docs', done => {
       });
 
       fs.writeFileSync(
-        'dist/seeds-<%= packageName %>.json',
+        'dist/tokens.json',
         JSON.stringify(docsTokens)
       );
       done();
