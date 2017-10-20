@@ -57,7 +57,7 @@ export default class PackagePage extends React.Component {
 
         {sections.map(({node}) => {
           if (node.fields.baseName == 'README') return;
-          const html = Mustache.render(marked(node.internal.content), pkg);
+          const html = Mustache.render(marked(node.internal.content), Object.assign({}, pkg, {siteUrl: __PATH_PREFIX__}));
 
           if (node.fields.baseName.includes('overview')) {
             return (

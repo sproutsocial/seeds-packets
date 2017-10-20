@@ -34,7 +34,9 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
+    "prebuild": "gulp",
     "build": "gatsby build --prefix-paths",
+    "preserve": "gulp",
     "serve": "gatsby develop",
     "format": "prettier --single-quote --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
