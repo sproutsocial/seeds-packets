@@ -37,6 +37,7 @@ exports.onCreateNode = async function onCreateNode({node, getNode, boundActionCr
   if (node.internal.mediaType === 'application/json' && node.base == 'package.json') {
     const content = await loadNodeContent(node);
     const package = JSON.parse(content);
+    if (package.private) return;
 
     const contentDigest = crypto
       .createHash('md5')

@@ -5,10 +5,10 @@ import tokens from '@sproutsocial/seeds-color/dist/tokens.json';
 import tinycolor from 'tinycolor2';
 import upperFirst from 'lodash.upperfirst';
 
-const Example = (props) => {
+const ColorExample = (props) => {
   const categories = Array.from(new Set(tokens.map(token => token.category)));
   const tables = categories.map(category => (
-    <div>
+    <div key={category}>
       <h3>{upperFirst(category)}</h3>
       <ExampleTable
         tokens={tokens.filter(token => token.category == category)}
@@ -26,4 +26,4 @@ const Example = (props) => {
   );
 };
 
-export default Example;
+export default ColorExample;

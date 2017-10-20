@@ -2,7 +2,7 @@ import React from 'react';
 import ExampleTable from '../example-table';
 import tokens from '@sproutsocial/seeds-space/dist/tokens.json';
 
-const SpaceExample = ({token}) => {
+const SpaceTemplate = ({token}) => {
   const styles = {
     width: token.value,
     height: token.value,
@@ -13,16 +13,16 @@ const SpaceExample = ({token}) => {
   );
 };
 
-const Example = (props) => {
+const SpaceExample = (props) => {
   return (
     <div>
       <h3>Size</h3>
       <ExampleTable
         tokens={tokens}
-        ChildClass={SpaceExample}
+        ChildClass={SpaceTemplate}
       />
     </div>
   );
 };
 
-export default Example;
+export default SpaceExample;

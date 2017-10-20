@@ -5,21 +5,21 @@ module.exports = {
   pathPrefix: '/seeds',  
   plugins: [
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `src`,
-        path: `${__dirname}/src/`
+        name: 'pages',
+        path: `${__dirname}/pages/`
       }
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `src`,
+        name: 'packages',
         path: `${__dirname}/node_modules/@sproutsocial`
       }
     },
     'gatsby-plugin-sass',
-    `gatsby-plugin-catch-links`,
+    'gatsby-plugin-catch-links',
     'gatsby-transformer-json',
     'gatsby-transformer-yaml',  
     'gatsby-transformer-remark',

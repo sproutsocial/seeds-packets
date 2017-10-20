@@ -14,8 +14,8 @@
     "precommit": "lint-staged",
     "build": "lerna run build",
     "docs": "lerna run build && gulp",
-    "docs-publish": "lerna run --scope !seeds-docs build && lerna run --scope seeds-docs build -- --prefix-paths && gh-pages -d packages/seeds-docs/public",
-    "docs-serve": "lerna run --scope !seeds-docs build && lerna run --scope seeds-docs serve",
+    "docs-publish": "lerna run --scope !seeds-docs build && cd packages/seeds-docs && yarn build && cd - && gh-pages -d packages/seeds-docs/public",
+    "docs-serve": "lerna run --scope !seeds-docs build && cd packages/seeds-docs && yarn serve",
     "postinstall": "lerna bootstrap"
   },
   "lint-staged": {

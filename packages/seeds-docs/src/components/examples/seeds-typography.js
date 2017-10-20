@@ -46,7 +46,7 @@ const SizeExample = ({token}) => {
   );
 };
 
-const Example = ({ExampleTable}) => {
+const TypographyExample = ({ExampleTable}) => {
   return (
     <div>
       <h3>Typefaces</h3>
@@ -93,4 +93,4 @@ const Example = ({ExampleTable}) => {
   );
 };
 
-module.exports = Example;
+module.exports = TypographyExample;

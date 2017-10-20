@@ -8,7 +8,7 @@ exports.createPages = ({graphql, boundActionCreators}) => {
   const pages = new Promise((resolve, reject) => {
     graphql(`
       {
-        pages: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/src\/pages/"}}) {
+        pages: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/pages/"}}) {
           edges {
             node {
               fields {
@@ -50,25 +50,23 @@ exports.createPages = ({graphql, boundActionCreators}) => {
       }
     `).then(result => {
       result.data.packages.edges.map(({node}) => {
-        createPage({
-          path: `/${node.packageName}/`,
+        const slug = node.packageName.replace('seeds-', '');
+        const pageProps = {
+          path: `/packets/${slug}/`,
           component: path.resolve('./src/templates/package.js'),
           context: {
             // Data passed to context is available in page queries as GraphQL variables.
             packageName: node.packageName,
-            slug: `/${node.packageName}/`
+            slug: `/${slug}/`
           }
-        });
+        };
+        // First create the "latest" version at the slug path
+        createPage(pageProps);
 
-        createPage({
-          path: `/${node.packageName}/${node.version}/`,
-          component: path.resolve('./src/templates/package.js'),
-          context: {
-            // Data passed to context is available in page queries as GraphQL variables.
-            packageName: node.packageName,
-            slug: `/${node.packageName}/`
-          }
-        });
+        // Then create the a versioned path
+        createPage(Object.assign({}, pageProps, {
+          path: `/packets/${slug}/${node.version}/`
+        }));
       });
       resolve();
     });

@@ -5,7 +5,7 @@ import tokens from '@sproutsocial/seeds-networkcolor/dist/tokens.json';
 import tinycolor from 'tinycolor2';
 import upperFirst from 'lodash.upperfirst';
 
-const Example = (props) => {
+const NetworkcolorExample = (props) => {
   const categories = Array.from(new Set(tokens.map(token => token.category)));
   const tables = categories.map(category => (
     [
@@ -27,4 +27,4 @@ const Example = (props) => {
   );
 };
 
-export default Example;
+export default NetworkcolorExample;

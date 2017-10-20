@@ -14,7 +14,7 @@ const EasingExample = ({token}) => {
   );
 };
 
-const Example = (props) => {
+const MotionExample = (props) => {
   return (
     <div>
       <h3>Easing</h3>
@@ -26,4 +26,4 @@ const Example = (props) => {
   );
 };
 
-export default Example;
+export default MotionExample;

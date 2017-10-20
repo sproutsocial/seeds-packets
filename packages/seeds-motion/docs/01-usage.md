@@ -1,5 +1,12 @@
 ## Usage
 
+### Get the Code
+
+For SCSS or Javascript:
+
+- `yarn add {{name}}`
+- `npm install {{name}} --save`
+
 ### Best Practices
 
 #### User initiated interactions (dismiss, hide, send, etc..)
