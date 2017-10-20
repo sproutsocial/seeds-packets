@@ -19,7 +19,6 @@ module.exports = {
       }
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-catch-links',
     'gatsby-transformer-json',
     'gatsby-transformer-yaml',  
     'gatsby-transformer-remark',

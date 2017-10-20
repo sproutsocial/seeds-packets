@@ -9,6 +9,6 @@ The Design System’s mission is to catalyze the delivery of innovative, industr
 
 ## Learn More
 
-- [What is a Package?](/package/)
-- [How to Contribute](/contribute/)
+- [What is a Package?]({{{siteUrl}}}/package/)
+- [How to Contribute]({{{siteUrl}}}/contribute/)
 - [SEEDS on Github](https://github.com/sproutsocial/seeds)

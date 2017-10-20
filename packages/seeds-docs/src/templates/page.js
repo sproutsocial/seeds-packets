@@ -2,6 +2,7 @@ import React from 'react';
 import fm from 'front-matter';
 import marked from 'marked';
 import Helmet from 'react-helmet';
+import Mustache from 'mustache';
 
 export default class Page extends React.Component {
   constructor(props) {
@@ -21,14 +22,15 @@ export default class Page extends React.Component {
   render() {
     const {data} = this.props;
     const page = data.markdownRemark;
-
+    const html = Mustache.render(marked(fm(page.internal.content).body), Object.assign({}, {siteUrl: __PATH_PREFIX__}));
+    
     return (
       <div>
         <Helmet
           title={`${page.frontmatter.title} | SEEDS`}
         />
         <h1>{page.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{__html: marked(fm(page.internal.content).body)}} />
+        <div dangerouslySetInnerHTML={{__html: html}} />
       </div>
     );
   }
