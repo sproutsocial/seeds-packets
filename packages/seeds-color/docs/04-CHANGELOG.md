@@ -1,5 +1,13 @@
 ## Changelog
 
+### v0.3.4
+
+- **Fixed** Color picker and documentation _again_.
+
+### v0.3.3
+
+- **Updated** Documentation improvements.
+
 ### v0.3.2
 
 - **Fixed** Color picker.
