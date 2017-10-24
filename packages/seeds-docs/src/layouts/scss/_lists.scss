@@ -30,25 +30,22 @@ li {
     list-style: none;
     margin-bottom: $Space-size--500;
     padding: $Space-size--400;
+    border-top: 4px solid;
 
     strong {
-      border-bottom: 4px solid;
       display: block;
       margin-bottom: $Space-size--400;
       padding: 0;
-      padding-bottom: $Space-size--300;
     }
     img {
       max-width: 100%;
       margin-bottom: 0;
     }
   }
-  li.dont strong {
+  li.dont {
     border-color: $Color-red--500;
-    color: $Color-red--900;
   }
-  li.do strong {
+  li.do {
     border-color: $Color-green--500;
-    color: $Color-green--900;
   }
 }
