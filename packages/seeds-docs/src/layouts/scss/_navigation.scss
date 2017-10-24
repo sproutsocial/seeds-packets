@@ -20,7 +20,7 @@
     margin-bottom: 0;
     list-style: none;
     max-height: 100vh;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
   .Nav-item:not(.Nav-item--active) .Nav {
     display: none;

@@ -39,9 +39,9 @@ const SizeExample = ({token}) => {
 
   return (
     <p style={styles}>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur unde delectus neque,
-      similique. Numquam vero debitis quidem veniam porro incidunt temporibus quas quasi eum,
-      provident, consectetur minus, praesentium a commodi.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur unde delectus neque, similique. Numquam vero
+      debitis quidem veniam porro incidunt temporibus quas quasi eum, provident, consectetur minus, praesentium a
+      commodi.
     </p>
   );
 };
@@ -53,42 +53,30 @@ const TypographyExample = ({ExampleTable}) => {
       <ul>
         <li>Sprout Social’s primary font family is Proxima Nova.</li>
         <li>Bambu’s primary font families are Clean Sanchez (alternate glyphs), Proxima Nova.</li>
-        <li>
-          Native mobile apps utilize the system font families: San Francisco for iOS and Roboto for
-          Android.
-        </li>
+        <li>Native mobile apps utilize the system font families: San Francisco for iOS and Roboto for Android.</li>
         <li>
           When Proxima Nova or Sanchez are unavailable, we attempt to default to{' '}
-          <a href="https://css-tricks.com/snippets/css/system-font-stack/">system font families</a>.
-          Defaulting to these fonts helps also with emoji rendering. The Proxima and Sanchez tokens
-          already include theses system font fallbacks;{' '}
+          <a href="https://css-tricks.com/snippets/css/system-font-stack/">system font families</a>. Defaulting to these
+          fonts helps also with emoji rendering. The Proxima and Sanchez tokens already include theses system font
+          fallbacks;{' '}
           <strong>
-            do not use the system font stack on its own unless you are using SEEDS in a situtation
-            where loading Proxima or Sanchez is impossible or unwise
+            do not use the system font stack on its own unless you are using SEEDS in a situtation where loading Proxima
+            or Sanchez is impossible or unwise
           </strong>.
         </li>
       </ul>
-      <ExampleTable
-        tokens={tokens.filter(token => token.category == 'font family')}
-        ChildClass={FamilyExample}
-      />
+      <ExampleTable tokens={tokens.filter(token => token.category == 'font family')} ChildClass={FamilyExample} />
 
       <h3>Font Weights</h3>
       <p>For simplicity and performance, we use two font weights on the web.</p>
-      <ExampleTable
-        tokens={tokens.filter(token => token.category == 'font weight')}
-        ChildClass={WeightExample}
-      />
+      <ExampleTable tokens={tokens.filter(token => token.category == 'font weight')} ChildClass={WeightExample} />
 
       <h3>Type Scale</h3>
       <p>
-        Line heights are calculated to ensure at least three lines align to an 8px grid. Use the
-        associated line-height values only.
+        Line heights are calculated to ensure at least three lines align to an 8px grid. Use the associated line-height
+        values only.
       </p>
-      <ExampleTable
-        tokens={tokens.filter(token => token.category == 'font size')}
-        ChildClass={SizeExample}
-      />
+      <ExampleTable tokens={tokens.filter(token => token.category == 'font size')} ChildClass={SizeExample} />
     </div>
   );
 };

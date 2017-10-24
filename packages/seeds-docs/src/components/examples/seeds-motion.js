@@ -9,19 +9,16 @@ const EasingExample = ({token}) => {
 
   return (
     <div className="Example-motion">
-      <div className="Example-motion-ball" style={styles}></div>
+      <div className="Example-motion-ball" style={styles} />
     </div>
   );
 };
 
-const MotionExample = (props) => {
+const MotionExample = props => {
   return (
     <div>
       <h3>Easing</h3>
-      <ExampleTable
-        tokens={tokens}
-        ChildClass={EasingExample}
-      />
+      <ExampleTable tokens={tokens} ChildClass={EasingExample} />
     </div>
   );
 };

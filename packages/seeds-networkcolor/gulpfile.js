@@ -76,9 +76,7 @@ gulp.task('networkcolor-ase', done => {
     .pipe(theo.plugins.format('ase'))
     .pipe(
       theo.plugins.getResult(result => {
-        const wstream = fs.createWriteStream(
-          `dist/seeds-networkcolor.${versions['seeds-networkcolor'].version}.ase`
-        );
+        const wstream = fs.createWriteStream(`dist/seeds-networkcolor.${versions['seeds-networkcolor'].version}.ase`);
         wstream.write(ase.encode(JSON.parse(result)));
         wstream.end();
         done();
@@ -105,36 +103,36 @@ gulp.task(
 );
 
 gulp.task('networkcolor-docs', done => {
-  theo.plugins.file(networkColorTokensPath).pipe(theo.plugins.transform('web')).pipe(
-    theo.plugins.getResult(result => {
-      const tokens = JSON.parse(result);
-      const colors = tokens.propKeys.map(key => {
-        const prop = tokens.props[key];
-        const {category, deprecated, value} = prop;
+  theo.plugins
+    .file(networkColorTokensPath)
+    .pipe(theo.plugins.transform('web'))
+    .pipe(
+      theo.plugins.getResult(result => {
+        const tokens = JSON.parse(result);
+        const colors = tokens.propKeys.map(key => {
+          const prop = tokens.props[key];
+          const {category, deprecated, value} = prop;
 
-        return {
-          category,
-          deprecated: !!prop.deprecated,
-          value: {
-            hex: value,
-            rgb: tinycolor(value).toRgbString()
-          },
-          palette: upperFirst(prop.name),
-          sass: sassVar(prop.package, prop.name),
-          javascript: javascriptConst(prop.package, prop.name),
-          swift: `UIColor().${camelCase(prop.name)}()`,
-          android: constantCase(prop.name),
-          python: camelCase(prop.name)
-        };
-      });
+          return {
+            category,
+            deprecated: !!prop.deprecated,
+            value: {
+              hex: value,
+              rgb: tinycolor(value).toRgbString()
+            },
+            palette: upperFirst(prop.name),
+            sass: sassVar(prop.package, prop.name),
+            javascript: javascriptConst(prop.package, prop.name),
+            swift: `UIColor().${camelCase(prop.name)}()`,
+            android: constantCase(prop.name),
+            python: camelCase(prop.name)
+          };
+        });
 
-      fs.writeFileSync(
-        'dist/tokens.json',
-        `${JSON.stringify(colors)}`
-      );
-      done();
-    })
-  );
+        fs.writeFileSync('dist/tokens.json', `${JSON.stringify(colors)}`);
+        done();
+      })
+    );
 });
 
 gulp.task(

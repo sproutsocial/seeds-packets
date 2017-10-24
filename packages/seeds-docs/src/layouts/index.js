@@ -38,20 +38,22 @@ class TemplateWrapper extends React.Component {
 
   componentDidMount() {
     // Wait until children render to build out subnav links
-    requestAnimationFrame(() => (
+    requestAnimationFrame(() =>
       this.setState({
         subnavLinks: getSubnavLinks()
-    })));
-  }  
+      })
+    );
+  }
 
   componentDidUpdate(prevProps, prevState) {
     if (prevProps.children) {
-      requestAnimationFrame(() => (
+      requestAnimationFrame(() =>
         this.setState({
           subnavLinks: getSubnavLinks()
-      })));
+        })
+      );
     }
-  }  
+  }
 
   render() {
     const {children, data, location} = this.props;
@@ -81,9 +83,7 @@ class TemplateWrapper extends React.Component {
           </div>
         </div>
 
-        <main role="main">
-          {children()}
-        </main>
+        <main role="main">{children()}</main>
       </div>
     );
   }

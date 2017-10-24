@@ -64,9 +64,11 @@ exports.createPages = ({graphql, boundActionCreators}) => {
         createPage(pageProps);
 
         // Then create the a versioned path
-        createPage(Object.assign({}, pageProps, {
-          path: `/packets/${slug}/${node.version}/`
-        }));
+        createPage(
+          Object.assign({}, pageProps, {
+            path: `/packets/${slug}/${node.version}/`
+          })
+        );
       });
       resolve();
     });

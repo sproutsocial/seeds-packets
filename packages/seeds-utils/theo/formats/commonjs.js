@@ -5,7 +5,9 @@ const javascriptConst = require('../../constantcase').javascriptConst;
 function getValue(val) {
   switch (typeof val) {
     case 'object':
-      const rules = Object.keys(val).map(key => `${key}: ${getValue(val[key])}`).join(',\n    ');
+      const rules = Object.keys(val)
+        .map(key => `${key}: ${getValue(val[key])}`)
+        .join(',\n    ');
       return `{\n    ${rules}\n  }`;
     case 'string':
       return `'${val}'`;

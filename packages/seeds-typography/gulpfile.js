@@ -48,33 +48,40 @@ gulp.task(
 );
 
 gulp.task('typography-docs', done => {
-  theo.plugins.file(typographyTokensPath).pipe(theo.plugins.transform('web')).pipe(
-    theo.plugins.getResult(result => {
-      const tokens = JSON.parse(result);
-      const tokensJson = tokens.propKeys.map(key => {
-        const prop = tokens.props[key];
-        return {
-          app: upperFirst(prop.name),
-          sass: prop.category === 'font size'
-            ? `@include ${suitCssName(prop.package, prop.name)};`
-            : sassVar(prop.package, prop.name),
-          javascript: typeof prop.value == 'object' ? `{ style: ${javascriptConst(prop.package, prop.name)} }` : javascriptConst(prop.package, prop.name),
-          category: prop.category,
-          value: typeof prop.value == 'object' ? {
-            fontSize: prop.value.value,
-            lineHeightProportional: prop.value.rules && prop.value.rules['line-height'],
-            lineHeightPx: prop.value.rules && prop.value.rules['line-height'] * parseInt(prop.value.value, 10)
-          } : prop.value
-        };
-      });
+  theo.plugins
+    .file(typographyTokensPath)
+    .pipe(theo.plugins.transform('web'))
+    .pipe(
+      theo.plugins.getResult(result => {
+        const tokens = JSON.parse(result);
+        const tokensJson = tokens.propKeys.map(key => {
+          const prop = tokens.props[key];
+          return {
+            app: upperFirst(prop.name),
+            sass:
+              prop.category === 'font size'
+                ? `@include ${suitCssName(prop.package, prop.name)};`
+                : sassVar(prop.package, prop.name),
+            javascript:
+              typeof prop.value == 'object'
+                ? `{ style: ${javascriptConst(prop.package, prop.name)} }`
+                : javascriptConst(prop.package, prop.name),
+            category: prop.category,
+            value:
+              typeof prop.value == 'object'
+                ? {
+                    fontSize: prop.value.value,
+                    lineHeightProportional: prop.value.rules && prop.value.rules['line-height'],
+                    lineHeightPx: prop.value.rules && prop.value.rules['line-height'] * parseInt(prop.value.value, 10)
+                  }
+                : prop.value
+          };
+        });
 
-      fs.writeFileSync(
-        'dist/tokens.json',
-        `${JSON.stringify(tokensJson)}`
-      );
-      done();
-    })
-  );
+        fs.writeFileSync('dist/tokens.json', `${JSON.stringify(tokensJson)}`);
+        done();
+      })
+    );
 });
 
 gulp.task(

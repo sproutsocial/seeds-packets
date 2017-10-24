@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'SEEDS'
   },
-  pathPrefix: '/seeds',  
+  pathPrefix: '/seeds',
   plugins: [
     {
       resolve: 'gatsby-source-filesystem',
@@ -20,7 +20,7 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     'gatsby-transformer-json',
-    'gatsby-transformer-yaml',  
+    'gatsby-transformer-yaml',
     'gatsby-transformer-remark',
     'transformer-seeds-package',
     'gatsby-plugin-react-helmet',
