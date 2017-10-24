@@ -1,6 +1,6 @@
 {
   "name": "generator-package",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": true,
   "description": "Scaffold out a new SEEDS package.",
   "author": {
@@ -27,7 +27,9 @@
   },
   "jest": {
     "testEnvironment": "node",
-    "testPathIgnorePatterns": ["templates"]
+    "testPathIgnorePatterns": [
+      "templates"
+    ]
   },
   "scripts": {
     "pretest": "eslint . --fix",
