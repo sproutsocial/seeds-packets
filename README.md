@@ -16,7 +16,7 @@ To build SEEDS packages, simply install dependencies by running `yarn` and build
 - `yarn build` - Build packages
 - `yarn docs-serve` - Build packages, docs, and runs a hot-reload server
 - `yarn docs-publish` - Build packages and docs, then publish it to **your fork’s** Github Pages
-  - If you run `yarn docs-publish -o upstream` locally, you can publish the docs to **production** Github Pages if you have an `upstream` remote set in git.
+  - If you run `yarn docs-publish -- -o upstream` locally, you can publish the docs to **production** Github Pages if you have an `upstream` remote set in git.
 
 
 ### Creating a New Package
