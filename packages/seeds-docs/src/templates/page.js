@@ -23,12 +23,10 @@ export default class Page extends React.Component {
     const {data} = this.props;
     const page = data.markdownRemark;
     const html = Mustache.render(marked(fm(page.internal.content).body), Object.assign({}, {siteUrl: __PATH_PREFIX__}));
-    
+
     return (
       <div>
-        <Helmet
-          title={`${page.frontmatter.title} | SEEDS`}
-        />
+        <Helmet title={`${page.frontmatter.title} | SEEDS`} />
         <h1>{page.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{__html: html}} />
       </div>

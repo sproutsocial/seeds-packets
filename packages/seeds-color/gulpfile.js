@@ -70,15 +70,16 @@ gulp.task(
 );
 
 gulp.task('color-ase', done => {
-  return gulp.src(colorTokensPath).pipe(theo.plugins.transform('designapp')).pipe(theo.plugins.format('ase')).pipe(
-    theo.plugins.getResult(result => {
-      fs.writeFileSync(
-        `dist/seeds-color.${versions['seeds-color'].version}.ase`,
-        ase.encode(JSON.parse(result))
-      );
-      done();
-    })
-  );
+  return gulp
+    .src(colorTokensPath)
+    .pipe(theo.plugins.transform('designapp'))
+    .pipe(theo.plugins.format('ase'))
+    .pipe(
+      theo.plugins.getResult(result => {
+        fs.writeFileSync(`dist/seeds-color.${versions['seeds-color'].version}.ase`, ase.encode(JSON.parse(result)));
+        done();
+      })
+    );
 });
 
 gulp.task('color-clr', done => {
@@ -93,36 +94,36 @@ gulp.task('color-clr', done => {
 });
 
 gulp.task('color-docs', done => {
-  theo.plugins.file(colorTokensPath).pipe(theo.plugins.transform('web')).pipe(
-    theo.plugins.getResult(result => {
-      const tokens = JSON.parse(result);
-      const colors = tokens.propKeys.map(key => {
-        const prop = tokens.props[key];
-        const {category, value} = prop;
+  theo.plugins
+    .file(colorTokensPath)
+    .pipe(theo.plugins.transform('web'))
+    .pipe(
+      theo.plugins.getResult(result => {
+        const tokens = JSON.parse(result);
+        const colors = tokens.propKeys.map(key => {
+          const prop = tokens.props[key];
+          const {category, value} = prop;
 
-        return {
-          category,
-          deprecated: !!prop.deprecated,
-          value: {
-            hex: value,
-            rgb: tinycolor(value).toRgbString()
-          },
-          app: upperFirst(prop.name),
-          sass: sassVar(prop.package, prop.name),
-          javascript: javascriptConst(prop.package, prop.name),
-          swift: `UIColor().${camelCase(prop.name)}()`,
-          android: constantCase(prop.name),
-          python: camelCase(prop.name)
-        };
-      });
+          return {
+            category,
+            deprecated: !!prop.deprecated,
+            value: {
+              hex: value,
+              rgb: tinycolor(value).toRgbString()
+            },
+            app: upperFirst(prop.name),
+            sass: sassVar(prop.package, prop.name),
+            javascript: javascriptConst(prop.package, prop.name),
+            swift: `UIColor().${camelCase(prop.name)}()`,
+            android: constantCase(prop.name),
+            python: camelCase(prop.name)
+          };
+        });
 
-      fs.writeFileSync(
-        'dist/tokens.json',
-        `${JSON.stringify(colors)}`
-      );
-      done();
-    })
-  );
+        fs.writeFileSync('dist/tokens.json', `${JSON.stringify(colors)}`);
+        done();
+      })
+    );
 });
 
 gulp.task(

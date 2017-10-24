@@ -37,6 +37,9 @@ $Typography-unit: 'rem';
 * {
   font-family: $Typography-family;
 }
+* {
+  box-sizing: border-box;
+}
 html,
 body {
   @include Typography-size--300;

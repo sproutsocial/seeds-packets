@@ -8,8 +8,18 @@ import upperFirst from 'lodash.upperfirst';
 export default class PackagePage extends React.Component {
   constructor(props) {
     super(props);
+    const renderer = new marked.Renderer();
+    renderer.listitem = function(text) {
+      if (text.match(/<strong>DO:<\/strong>/g)) {
+        return '<li class="do">' + text + '</li>\n';
+      } else if (text.match(/<strong>DON[’']T:<\/strong>/g)) {
+        return '<li class="dont">' + text + '</li>\n';
+      } else {
+        return '<li>' + text + '</li>\n';
+      }
+    };
     marked.setOptions({
-      renderer: new marked.Renderer(),
+      renderer: renderer,
       gfm: true,
       tables: true,
       breaks: false,
@@ -45,9 +55,7 @@ export default class PackagePage extends React.Component {
 
     return (
       <article className={pkg.packageName}>
-        <Helmet
-          title={`${title} | SEEDS`}
-        />
+        <Helmet title={`${title} | SEEDS`} />
         <h1>
           {title}{' '}
           <small>
@@ -57,7 +65,10 @@ export default class PackagePage extends React.Component {
 
         {sections.map(({node}) => {
           if (node.fields.baseName == 'README') return;
-          const html = Mustache.render(marked(node.internal.content), Object.assign({}, pkg, {siteUrl: __PREFIX_PATHS__ ? __PATH_PREFIX__ : ''}));
+          const html = Mustache.render(
+            marked(node.internal.content),
+            Object.assign({}, pkg, {siteUrl: __PREFIX_PATHS__ ? __PATH_PREFIX__ : ''})
+          );
 
           if (node.fields.baseName.includes('overview')) {
             return (

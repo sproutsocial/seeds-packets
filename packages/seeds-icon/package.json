@@ -1,0 +1,12 @@
+{
+  "name": "@sproutsocial/seeds-icon",
+  "version": "0.0.1",
+  "stability": "alpha",
+  "description": "SEEDS Design System Icons",
+  "main": "package.json",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sproutsocial/seeds.git"
+  },
+  "author": "Sprout Social"
+}

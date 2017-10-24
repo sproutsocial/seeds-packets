@@ -1,0 +1,1 @@
+Icons are a visual representation or symbol that provide visual context and enhance usability. 

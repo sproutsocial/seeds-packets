@@ -43,16 +43,14 @@ export default class Sidebar extends React.Component {
       <nav>
         <ul className="Nav flex-column">
           <li className="Nav-item">
-            <button className="Nav-link Nav-link--primary js-jira-issue">
-              Submit SEEDS Ticket
-            </button>
+            <button className="Nav-link Nav-link--primary js-jira-issue">Submit SEEDS Ticket</button>
           </li>
 
           {pages.map(edge => {
             const item = edge.node;
             if (item.fields.slug == '/') return;
             const isActive = activePage.includes(item.fields.slug);
-            
+
             return (
               <NavItem
                 isActive={isActive}

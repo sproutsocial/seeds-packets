@@ -22,28 +22,28 @@ gulp.task('motion-scss', getGulpMotionTask('web', 'scss'));
 gulp.task('motion-js', getGulpMotionTask('js', 'common.js'));
 
 gulp.task('motion-docs', done => {
-  theo.plugins.file(motionTokensPath).pipe(theo.plugins.transform('web')).pipe(
-    theo.plugins.getResult(result => {
-      const tokens = JSON.parse(result);
-      const easings = tokens.propKeys.map(key => {
-        const prop = tokens.props[key];
-        const {value, description} = prop;
+  theo.plugins
+    .file(motionTokensPath)
+    .pipe(theo.plugins.transform('web'))
+    .pipe(
+      theo.plugins.getResult(result => {
+        const tokens = JSON.parse(result);
+        const easings = tokens.propKeys.map(key => {
+          const prop = tokens.props[key];
+          const {value, description} = prop;
 
-        return {
-          sass: sassVar(prop.package, prop.name),
-          javascript: javascriptConst(prop.package, prop.name),
-          value,
-          description
-        };
-      });
+          return {
+            sass: sassVar(prop.package, prop.name),
+            javascript: javascriptConst(prop.package, prop.name),
+            value,
+            description
+          };
+        });
 
-      fs.writeFileSync(
-        'dist/tokens.json',
-        `${JSON.stringify(easings)}`
-      );
-      done();
-    })
-  );
+        fs.writeFileSync('dist/tokens.json', `${JSON.stringify(easings)}`);
+        done();
+      })
+    );
 });
 
 gulp.task('default', gulp.series(['clean', gulp.parallel(['motion-scss', 'motion-js']), 'motion-docs']));

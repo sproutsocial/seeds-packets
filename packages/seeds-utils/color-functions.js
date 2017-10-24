@@ -82,8 +82,7 @@ function xyzToLab(xyz) {
 }
 
 function cie1994(x, y, isTextiles) {
-  x = {l: x[0], a: x[1], b: x[2]},
-    y = {l: y[0], a: y[1], b: y[2]};
+  (x = {l: x[0], a: x[1], b: x[2]}), (y = {l: y[0], a: y[1], b: y[2]});
   let labx = x,
     laby = y,
     k2,
@@ -113,9 +112,7 @@ function cie1994(x, y, isTextiles) {
     dl = x.l - y.l,
     dh = Math.sqrt(Math.abs(da * da + db * db - dc * dc));
 
-  return Math.sqrt(
-    Math.pow(dl / (kl * sl), 2) + Math.pow(dc / (kc * sc), 2) + Math.pow(dh / (kh * sh), 2)
-  );
+  return Math.sqrt(Math.pow(dl / (kl * sl), 2) + Math.pow(dc / (kc * sc), 2) + Math.pow(dh / (kh * sh), 2));
 }
 
 function hexToLab(hex) {

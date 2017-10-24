@@ -32,7 +32,7 @@ class ClosestColorTool extends React.Component {
       const isBambuColor = color.category == 'bambu';
       return !color.deprecated && (includeBambu || !isBambuColor);
     });
-    
+
     const lab = hexToLab(currentColor);
     let distance = cie1994(lab, hexToLab(colorsToCheck[0].value.hex));
     let closestColor = 0;
@@ -48,7 +48,7 @@ class ClosestColorTool extends React.Component {
     return {
       name: colorsToCheck[closestColor][format],
       value: colorsToCheck[closestColor].value.hex
-    }
+    };
   };
 
   setIncludeBambu = e => {
@@ -101,18 +101,25 @@ class ClosestColorTool extends React.Component {
         </form>
 
         <h4>Nearest Color</h4>
-        <div className="Swatch" style={{
-          backgroundColor: closestColor.value,
-          color: closestColor.value && tinycolor(closestColor.value).isDark() ? Colors.COLOR_WHITE : 'currentColor'
-        }}>
+        <div
+          className="Swatch"
+          style={{
+            backgroundColor: closestColor.value,
+            color: closestColor.value && tinycolor(closestColor.value).isDark() ? Colors.COLOR_WHITE : 'currentColor'
+          }}
+        >
           <span>
             <strong>
-                <CopyContent><pre>{closestColor.name || 'Use the color picker above to choose a color to match.'}</pre></CopyContent>
+              <CopyContent>
+                <pre>{closestColor.name || 'Use the color picker above to choose a color to match.'}</pre>
+              </CopyContent>
             </strong>
           </span>
 
           <span>
-            <CopyContent><pre>{closestColor.value}</pre></CopyContent>
+            <CopyContent>
+              <pre>{closestColor.value}</pre>
+            </CopyContent>
           </span>
         </div>
       </div>
