@@ -4,7 +4,7 @@ layout: default
 ---
 
 <p class="Typography-size--500">
-The Design System’s mission is to catalyze the delivery of innovative, industry-leading user experiences. We will provide a robust suite of documentation and technologies for designers and engineers to elucidate consistent user interfaces and to deliver them efficiently, reliably and at scale. Ultimately, the Design System will provide existing and potential users alike with a brand experience as polished and delightful as our company mission demands.
+The Design System’s mission is to speed up the delivery of industry-leading user experiences. We will provide documentation and technology for designers and engineers to create consistent user interfaces—and deliver them efficiently, reliably and at scale. Ultimately, the Design System will provide current and future users with a polished brand experience, in keeping with our company mission.
 </p>
 
 ## Learn More
