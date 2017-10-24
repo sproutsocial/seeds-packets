@@ -2,9 +2,9 @@
   border-right: 1px solid $Color-gray--200;
   min-height: 100vh;
   &-brand {
-    @include Typography-size--900;
+    @include Typography-size--600;
     display: block;
-    padding: $Space-size--500;
+    padding: $Space-size--400 $Space-size--500;
     border-bottom: 1px solid $Color-gray--200;
     font-weight: $Typography-weight--bold;    
     color: $Color-black;
@@ -13,7 +13,7 @@
   &-nav {
     position: sticky;
     top: 0;
-    padding: $Space-size--500;
+    padding: $Space-size--350;
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
@@ -26,7 +26,7 @@
     display: none;
   }
   .Nav-link {
-    @include Typography-size--500;
+    @include Typography-size--400;
     font-weight: $Typography-weight--bold;    
     color: $Color-gray--800;
   }
@@ -46,7 +46,7 @@
   }
   &-link {
     display: block;
-    padding: $Space-size--300 $Space-size--400;
+    padding: $Space-size--200 $Space-size--500;
     text-decoration: none;
     background: none;
     border: none;
