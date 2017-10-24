@@ -26,33 +26,23 @@
     "yeoman-generator": "^2.0.0"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": ["templates"]
   },
   "scripts": {
     "pretest": "eslint . --fix",
-    "test": "ava"
+    "test": "jest"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
     "env": {
       "jest": true,
       "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 6
     }
   },
   "repository": "git@github.com:ericcecchi/seeds.git",
-  "license": "MIT",
-  "ava": {
-    "files": [
-      "__tests__/*.js"
-    ],
-    "source": [
-      "generators/**/*.{js,jsx}",
-      "!templates/**/*"
-    ],
-    "concurrency": 5,
-    "failFast": true,
-    "failWithoutAssertions": false,
-    "tap": true,
-    "powerAssert": false
-  }
+  "license": "MIT"
 }

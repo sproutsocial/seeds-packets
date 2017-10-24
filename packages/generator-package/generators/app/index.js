@@ -46,9 +46,19 @@ module.exports = class extends Generator {
 
     this.fs.copyTpl(
       this.templatePath('docs'),
-      this.destinationPath(`packages/seeds-${this.props.packageName}/${this.props.packageName}`),
+      this.destinationPath(`packages/seeds-${this.props.packageName}`),
       Object.assign({}, this.props)
     );
+
+    this.fs.copyTpl(
+      this.templatePath('example/index.js'),
+      this.destinationPath(`packages/seeds-docs/src/components/examples/seeds-${this.props.packageName}.js`),
+      Object.assign({}, this.props)
+    );
+
+    const docsPkg = this.fs.readJSON('packages/seeds-docs/package.json');
+    docsPkg.dependencies[`@sproutsocial/seeds-${this.props.packageName}`] = '*';
+    this.fs.writeJSON('packages/seeds-docs/package.json', docsPkg);
   }
 
   install() {

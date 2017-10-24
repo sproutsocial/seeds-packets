@@ -12,11 +12,10 @@
     "format:prettier": "prettier-eslint --write --eslint-ignore --print-width=120 --single-quote --no-bracket-spacing  \"./packages/**/*.js\" gulpfile.js",
     "create-package": "yo ./packages/generator-package",
     "precommit": "lint-staged",
-    "build": "lerna run build",
-    "docs": "lerna run build && gulp",
-    "docs-publish": "lerna run build && gulp && gh-pages -d docs",
-    "docs-serve": "lerna run build && gulp serve",
-    "postbuild": "gulp",
+    "build": "lerna run --scope !seeds-docs build",
+    "docs": "lerna run --scope !seeds-docs build && cd packages/seeds-docs && yarn build && cd -",
+    "docs-publish": "yarn run docs && gh-pages -d packages/seeds-docs/public",
+    "docs-serve": "yarn run build && cd packages/seeds-docs && yarn serve",
     "postinstall": "lerna bootstrap"
   },
   "lint-staged": {

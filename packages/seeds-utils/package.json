@@ -3,7 +3,7 @@
   "version": "0.1.9",
   "description": "SEEDS shared utility functions for generating tokens and documentation.",
   "private": true,
-  "main": "dist/seeds-typography.js",
+  "main": "package.json",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/sproutsocial/seeds.git"

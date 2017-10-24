@@ -1,8 +1,0 @@
-name: SEEDS
-description: Sprout’s Extremely Excellent Design System
-permalink: pretty
-
-collections:
-  packets:
-    output: true
-    permalink: /:collection/:path
