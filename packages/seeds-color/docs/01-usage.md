@@ -47,8 +47,8 @@ The palette of the neutral shades should be used for illustration, product and m
 
 - **DON’T:** Use any tints or shades or add any more neutrals to this palette.
 - **DO:** Use analogous color schemes for grouping.
-    ![Analogous](assets/SEEDS-Color-Analogous.svg)
+    ![Analogous]({{{siteUrl}}}/assets/SEEDS-Color-Analogous.svg)
 - **DO:** Use complementary color schemes for comparisons.
-    ![Complementory](assets/SEEDS-Color-Complementory.svg)
+    ![Complementory]({{{siteUrl}}}/assets/SEEDS-Color-Complementory.svg)
 - **DO:** Use opacity as a tool to draw attention to an element in the foreground.
-    ![Opacity](assets/SEEDS-Color-Opacity.svg)
+    ![Opacity]({{{siteUrl}}}/assets/SEEDS-Color-Opacity.svg)

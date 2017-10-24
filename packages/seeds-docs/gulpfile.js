@@ -11,7 +11,12 @@ const sass = require('gulp-sass');
 const merge = require('merge-stream');
 const versions = require('@sproutsocial/seeds-utils/versions');
 
-const seedsIncludes = globby.sync(`./node_modules/@sproutsocial/seeds-*/dist`).map(path => {
+const seedsDist = globby.sync('./node_modules/@sproutsocial/seeds-*/dist').map(path => {
+  return {
+    path: `${path}/**/*`
+  };
+});
+const seedsAssets = globby.sync('./node_modules/@sproutsocial/seeds-*/docs/assets').map(path => {
   return {
     path: `${path}/**/*`
   };
@@ -23,8 +28,11 @@ gulp.task('clean', () => {
 
 gulp.task('docs-copy', done => {
   const merged = merge();
-  seedsIncludes.forEach(file => {
+  seedsDist.forEach(file => {
     merged.add(gulp.src(file.path).pipe(gulp.dest('static/downloads/')));
+  });
+  seedsAssets.forEach(file => {
+    merged.add(gulp.src(file.path).pipe(gulp.dest('static/assets/')));
   });
   return merged;
 });
