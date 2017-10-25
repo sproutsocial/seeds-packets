@@ -1,5 +1,10 @@
 ## Changelog
 
+
+### v0.4.0
+
+- **New** Added support for tokens as CSS custom properties. To use them, `@import seeds-color/dist/seeds-color.css` and refer to the token names in the documentation.
+
 ### v0.3.4
 
 - **Fixed** Color picker and documentation _again_.
