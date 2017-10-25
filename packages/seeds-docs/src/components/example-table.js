@@ -17,6 +17,7 @@ class ExampleTable extends React.Component {
       app: firstToken.app,
       sass: firstToken.sass,
       javascript: firstToken.javascript,
+      css: firstToken.css,
       swift: firstToken.swift,
       android: firstToken.android,
       python: firstToken.python
@@ -34,6 +35,7 @@ class ExampleTable extends React.Component {
       app: 'Design App',
       sass: 'Sass',
       javascript: 'JavaScript',
+      css: 'CSS',
       swift: 'Swift',
       android: 'Android',
       python: 'Python'

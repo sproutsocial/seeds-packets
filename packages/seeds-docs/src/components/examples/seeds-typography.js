@@ -30,9 +30,9 @@ const WeightExample = ({token}) => {
 const SizeExample = ({token}) => {
   const styles = {
     fontSize: token.value.fontSize,
-    lineHeight: `${token.value.lineHeightPx}px`,
+    lineHeight: `${token.value.lineHeightPx}`,
     overflow: 'hidden',
-    height: `calc(${token.value.lineHeightPx}px * 3)`,
+    height: `calc(${token.value.lineHeightPx} * 3)`,
     maxWidth: '15em',
     margin: 0
   };

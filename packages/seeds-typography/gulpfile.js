@@ -5,6 +5,7 @@ const theo = require('theo');
 const insert = require('gulp-insert');
 const rename = require('gulp-rename');
 const upperFirst = require('lodash.upperfirst');
+const cssPropertyName = require('@sproutsocial/seeds-utils/css-property-name');
 const sassVar = require('@sproutsocial/seeds-utils/sassvar').sassVar;
 const suitCssName = require('@sproutsocial/seeds-utils/sassvar').suitCssName;
 const javascriptConst = require('@sproutsocial/seeds-utils/constantcase').javascriptConst;
@@ -38,7 +39,11 @@ function getGulpTypographyTask(transform, format, opts = {}) {
 }
 
 gulp.task('typography-scss', getGulpTypographyTask('web', 'scss', {appendFile: typographyFunction}));
+
+gulp.task('typography-css', getGulpTypographyTask('web', 'custom-properties.css'));
+
 gulp.task('typography-js', getGulpTypographyTask('js', 'common.js'));
+
 gulp.task(
   'typography-sketch',
   getGulpTypographyTask('sketch', 'sketchtext.json', {
@@ -66,13 +71,15 @@ gulp.task('typography-docs', done => {
               typeof prop.value == 'object'
                 ? `{ style: ${javascriptConst(prop.package, prop.name)} }`
                 : javascriptConst(prop.package, prop.name),
+            css: cssPropertyName(prop.package, prop.name),
             category: prop.category,
             value:
               typeof prop.value == 'object'
                 ? {
                     fontSize: prop.value.value,
                     lineHeightProportional: prop.value.rules && prop.value.rules['line-height'],
-                    lineHeightPx: prop.value.rules && prop.value.rules['line-height'] * parseInt(prop.value.value, 10)
+                    lineHeightPx:
+                      prop.value.rules && `${prop.value.rules['line-height'] * parseInt(prop.value.value, 10)}px`
                   }
                 : prop.value
           };
@@ -86,5 +93,9 @@ gulp.task('typography-docs', done => {
 
 gulp.task(
   'default',
-  gulp.series(['clean', gulp.parallel(['typography-scss', 'typography-js', 'typography-sketch']), 'typography-docs'])
+  gulp.series([
+    'clean',
+    gulp.parallel(['typography-css', 'typography-scss', 'typography-js', 'typography-sketch']),
+    'typography-docs'
+  ])
 );

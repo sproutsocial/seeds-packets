@@ -1,3 +1,4 @@
+const customPropertiesFormat = require('./formats/custom-properties');
 const scssFormat = require('./formats/scss');
 const commonjsFormat = require('./formats/commonjs');
 const androidxmlFormat = require('./formats/androidxml');

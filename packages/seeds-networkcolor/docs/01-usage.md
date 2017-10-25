@@ -9,7 +9,7 @@
 
 ### Get the Code
 
-- For SCSS or Javascript
+- For CSS, SCSS, or Javascript
   - `yarn add @sproutsocial/seeds-networkcolor`
   - `npm install @sproutsocial/seeds-networkcolor  --save`
 - <a href="{{{siteUrl}}}/downloads/seeds_networkcolor.py" download>Python</a>

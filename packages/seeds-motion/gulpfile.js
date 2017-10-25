@@ -3,6 +3,7 @@ const del = require('del');
 const gulp = require('gulp');
 const theo = require('theo');
 const sassVar = require('@sproutsocial/seeds-utils/sassvar').sassVar;
+const cssPropertyName = require('@sproutsocial/seeds-utils/css-property-name');
 const getGulpTask = require('@sproutsocial/seeds-utils/getgulptask');
 const javascriptConst = require('@sproutsocial/seeds-utils/constantcase').javascriptConst;
 const makeDir = require('make-dir');
@@ -19,6 +20,9 @@ gulp.task('clean', () => {
 });
 
 gulp.task('motion-scss', getGulpMotionTask('web', 'scss'));
+
+gulp.task('motion-css', getGulpMotionTask('web', 'custom-properties.css'));
+
 gulp.task('motion-js', getGulpMotionTask('js', 'common.js'));
 
 gulp.task('motion-docs', done => {
@@ -35,6 +39,7 @@ gulp.task('motion-docs', done => {
           return {
             sass: sassVar(prop.package, prop.name),
             javascript: javascriptConst(prop.package, prop.name),
+            css: cssPropertyName(prop.package, prop.name),
             value,
             description
           };
@@ -46,4 +51,4 @@ gulp.task('motion-docs', done => {
     );
 });
 
-gulp.task('default', gulp.series(['clean', gulp.parallel(['motion-scss', 'motion-js']), 'motion-docs']));
+gulp.task('default', gulp.series(['clean', gulp.parallel(['motion-css', 'motion-scss', 'motion-js']), 'motion-docs']));

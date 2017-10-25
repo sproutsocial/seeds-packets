@@ -8,7 +8,7 @@
 
 ### Get the Code
 
-- For SCSS or Javascript:
+- For CSS, SCSS, or Javascript:
     - `yarn add @sproutsocial/seeds-color`
     - `npm install @sproutsocial/seeds-color --save`
 - <a href="{{{siteUrl}}}/downloads/seeds_color.py" download>Python</a>
