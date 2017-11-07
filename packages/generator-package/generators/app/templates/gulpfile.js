@@ -3,6 +3,7 @@ const del = require('del');
 const gulp = require('gulp');
 const theo = require('theo');
 const upperFirst = require('lodash.upperfirst');
+const cssPropertyName = require('@sproutsocial/seeds-utils/css-property-name');
 const sassVar = require('@sproutsocial/seeds-utils/sassvar').sassVar;
 const getGulpTask = require('@sproutsocial/seeds-utils/getgulptask');
 const javascriptConst = require('@sproutsocial/seeds-utils/constantcase').javascriptConst;
@@ -34,19 +35,20 @@ gulp.task('<%= packageName %>-docs', done => {
           app: upperFirst(prop.name),
           sass: sassVar(prop.package, prop.name),
           javascript: javascriptConst(prop.package, prop.name),
+          css: cssPropertyName(prop.package, prop.name),
           value,
           description,
           category
         };
       });
 
-      fs.writeFileSync(
-        'dist/tokens.json',
-        JSON.stringify(docsTokens)
-      );
+      fs.writeFileSync('dist/tokens.json', JSON.stringify(docsTokens));
       done();
     })
   );
 });
 
-gulp.task('default', gulp.series(['clean', gulp.parallel(['<%= packageName %>-scss', '<%= packageName %>-js']), '<%= packageName %>-docs']));
+gulp.task(
+  'default',
+  gulp.series(['clean', gulp.parallel(['<%= packageName %>-scss', '<%= packageName %>-js']), '<%= packageName %>-docs'])
+);

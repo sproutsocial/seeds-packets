@@ -1,5 +1,8 @@
 ## Changelog
 
+### v0.5.0
+- **New** Added support for tokens as CSS custom properties. To use them, `@import seeds-typography/dist/seeds-typography.css` and refer to the token names in the documentation.
+
 ### v0.4.2
 - **Fixed** Fixed documentation of Javascript tokens. Were showing objects for all values, but only type scale values are objects; the rest of the values are simple constants.
 

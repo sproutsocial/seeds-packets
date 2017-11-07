@@ -3,6 +3,7 @@
 ---
 global:
   package: typography
+  fontSizeBase: 18px
   lineHeightBase: 1.5
   gridSize: 8
   appFontFamily: 'ProximaNova-Regular'

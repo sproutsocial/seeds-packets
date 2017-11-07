@@ -2,7 +2,7 @@
 
 ### Get the Code
 
-For SCSS or Javascript:
+For CSS, SCSS, or Javascript:
 
 - `yarn add @sproutsocial/seeds-<%= packageName %>`
 - `npm install @sproutsocial/seeds-<%= packageName %> --save`

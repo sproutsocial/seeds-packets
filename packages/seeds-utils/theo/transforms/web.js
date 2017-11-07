@@ -13,9 +13,29 @@ theo.registerValueTransform(
   prop => {
     return {
       value: `${prop.value}px`,
+      // Rules for SCSS mixins
       rules: {
         'font-size': `Typography-getunit(${prop.value}px)`,
         'line-height': getLineHeight(prop) / prop.value
+      },
+      // Properties for CSS properties
+      properties: {
+        rem: `${prop.value / parseInt(prop.fontSizeBase)}rem`,
+        'line-height': getLineHeight(prop) / prop.value
+      }
+    };
+  }
+);
+
+theo.registerValueTransform(
+  'space/css',
+  prop => prop.package === 'space' && prop.category === 'size',
+  prop => {
+    return {
+      value: prop.value,
+      // Properties for CSS properties
+      properties: {
+        rem: `${parseInt(prop.value) / parseInt(prop.fontSizeBase)}rem`
       }
     };
   }
@@ -32,6 +52,6 @@ theo.registerValueTransform(
   }
 );
 
-theo.registerTransform('web', ['color/hex/short', 'font/scss']);
+theo.registerTransform('web', ['color/hex/short', 'font/scss', 'space/css']);
 
 theo.registerTransform('js', ['color/hex/short', 'font/js']);

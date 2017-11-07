@@ -3,6 +3,7 @@ const del = require('del');
 const gulp = require('gulp');
 const theo = require('theo');
 const upperFirst = require('lodash.upperfirst');
+const cssPropertyName = require('@sproutsocial/seeds-utils/css-property-name');
 const sassVar = require('@sproutsocial/seeds-utils/sassvar').sassVar;
 const getGulpTask = require('@sproutsocial/seeds-utils/getgulptask');
 const javascriptConst = require('@sproutsocial/seeds-utils/constantcase').javascriptConst;
@@ -20,6 +21,9 @@ gulp.task('clean', () => {
 });
 
 gulp.task('border-scss', getGulpBorderTask('web', 'scss'));
+
+gulp.task('border-css', getGulpBorderTask('web', 'custom-properties.css'));
+
 gulp.task('border-js', getGulpBorderTask('js', 'common.js'));
 
 gulp.task('border-docs', done => {
@@ -36,6 +40,7 @@ gulp.task('border-docs', done => {
           return {
             app: upperFirst(prop.name),
             sass: sassVar(prop.package, prop.name),
+            css: cssPropertyName(prop.package, prop.name),
             javascript: javascriptConst(prop.package, prop.name),
             value,
             description,
@@ -49,4 +54,4 @@ gulp.task('border-docs', done => {
     );
 });
 
-gulp.task('default', gulp.series(['clean', gulp.parallel(['border-scss', 'border-js']), 'border-docs']));
+gulp.task('default', gulp.series(['clean', gulp.parallel(['border-css', 'border-scss', 'border-js']), 'border-docs']));

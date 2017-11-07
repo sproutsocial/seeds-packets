@@ -8,7 +8,7 @@
 
 ### Get the Code
 
-For SCSS or Javascript:
+For CSS, SCSS, or Javascript:
 
 - `yarn add {{name}}`
 - `npm install {{name}} --save`

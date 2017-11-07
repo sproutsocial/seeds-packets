@@ -9,7 +9,7 @@
   },
   "author": "Sprout Social",
   "scripts": {
-    "format:prettier": "prettier-eslint --write --eslint-ignore --print-width=120 --single-quote --no-bracket-spacing  \"./packages/**/*.js\" gulpfile.js",
+    "format:prettier": "prettier-eslint --write --eslint-ignore --print-width=120 --single-quote --no-bracket-spacing",
     "create-package": "yo ./packages/generator-package",
     "precommit": "lint-staged",
     "build": "lerna run --scope !seeds-docs build",
@@ -19,12 +19,12 @@
     "postinstall": "lerna bootstrap"
   },
   "lint-staged": {
-    "*.js": [
+    "**/*.js": [
       "format:prettier"
     ]
   },
   "devDependencies": {
-    "@sproutsocial/seeds-utils": "^0.1.2",
+    "@sproutsocial/seeds-utils": "*",
     "ase-util": "^1.0.1",
     "ase-utils": "^0.1.1",
     "del": "^2.2.2",
@@ -33,22 +33,23 @@
     "gulp": "gulpjs/gulp#4.0",
     "gulp-insert": "^0.5.0",
     "gulp-rename": "^1.2.2",
-    "gulp-replace": "^0.5.4",
+    "gulp-replace": "^0.6.1",
     "gulp-sass": "^3.1.0",
     "gulp-util": "^3.0.8",
     "husky": "^0.14.3",
-    "js-yaml": "^3.8.2",
-    "lerna": "^2.2.0",
-    "lint-staged": "^4.0.3",
+    "js-yaml": "^3.10.0",
+    "lerna": "^2.4.0",
+    "lint-staged": "^4.3.0",
     "lodash.camelcase": "^4.3.0",
+    "lodash.kebabcase": "^4.1.1",
     "lodash.snakecase": "^4.1.1",
     "lodash.upperfirst": "^4.3.1",
-    "make-dir": "^1.0.0",
+    "make-dir": "^1.1.0",
     "merge-stream": "^1.0.1",
     "mround": "^1.0.0",
     "pascal-case": "^2.0.0",
-    "prettier-eslint": "^6.4.2",
-    "prettier-eslint-cli": "^4.1.1",
+    "prettier-eslint": "^8.2.1",
+    "prettier-eslint-cli": "^4.4.0",
     "theo": "^5.0.0",
     "tinycolor2": "^1.4.1",
     "yo": "^2.0.0"

@@ -1,6 +1,7 @@
 const fs = require('fs');
 const gulp = require('gulp');
 const theo = require('theo');
+const cssPropertyName = require('@sproutsocial/seeds-utils/css-property-name');
 const sassVar = require('@sproutsocial/seeds-utils/sassvar').sassVar;
 const getGulpTask = require('@sproutsocial/seeds-utils/getgulptask');
 const javascriptConst = require('@sproutsocial/seeds-utils/constantcase').javascriptConst;
@@ -14,6 +15,9 @@ function getGulpSpaceTask(transform, format, opts = {}) {
 }
 
 gulp.task('space-scss', getGulpSpaceTask('web', 'scss'));
+
+gulp.task('space-css', getGulpSpaceTask('web', 'custom-properties.css'));
+
 gulp.task('space-js', getGulpSpaceTask('js', 'common.js'));
 
 gulp.task('space-docs', done => {
@@ -30,7 +34,11 @@ gulp.task('space-docs', done => {
           return {
             sass: sassVar(prop.package, prop.name),
             javascript: javascriptConst(prop.package, prop.name),
-            value,
+            css: cssPropertyName(prop.package, prop.name),
+            value: {
+              value: value.value,
+              rem: value.properties.rem
+            },
             description
           };
         });
@@ -41,4 +49,4 @@ gulp.task('space-docs', done => {
     );
 });
 
-gulp.task('default', gulp.series([gulp.parallel(['space-scss', 'space-js']), 'space-docs']));
+gulp.task('default', gulp.series([gulp.parallel(['space-css', 'space-scss', 'space-js']), 'space-docs']));

@@ -7,6 +7,7 @@ const pascalCase = require('pascal-case');
 const camelCase = require('lodash.camelcase');
 const snakeCase = require('lodash.snakecase');
 const upperFirst = require('lodash.upperfirst');
+const cssPropertyName = require('@sproutsocial/seeds-utils/css-property-name');
 const tinycolor = require('tinycolor2');
 const ase = require('ase-utils');
 const makeDir = require('make-dir');
@@ -32,6 +33,8 @@ gulp.task('clean', () => {
 });
 
 gulp.task('networkcolor-scss', getGulpNetworkColorTask('web', 'scss'));
+
+gulp.task('networkcolor-css', getGulpNetworkColorTask('web', 'custom-properties.css'));
 
 gulp.task('networkcolor-js', getGulpNetworkColorTask('js', 'common.js'));
 
@@ -123,6 +126,7 @@ gulp.task('networkcolor-docs', done => {
             palette: upperFirst(prop.name),
             sass: sassVar(prop.package, prop.name),
             javascript: javascriptConst(prop.package, prop.name),
+            css: cssPropertyName(prop.package, prop.name),
             swift: `UIColor().${camelCase(prop.name)}()`,
             android: constantCase(prop.name),
             python: camelCase(prop.name)
@@ -140,6 +144,7 @@ gulp.task(
   gulp.series([
     'clean',
     gulp.parallel([
+      'networkcolor-css',
       'networkcolor-scss',
       'networkcolor-js',
       'networkcolor-swift',

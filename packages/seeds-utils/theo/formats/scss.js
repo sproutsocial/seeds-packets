@@ -13,10 +13,14 @@ theo.registerFormat('scss', json =>
         if (prop.value.value) {
           result = `${sassVar(prop.package, prop.name)}: ${prop.value.value};`;
         }
-        const rules = Object.keys(prop.value.rules)
-          .map(rule => `  ${rule}: ${prop.value.rules[rule]};`)
-          .join('\n');
-        return result + `\n@mixin ${suitCssName(prop.package, prop.name)} {\n${rules}\n}`;
+        if (prop.value.rules) {
+          const rules = Object.keys(prop.value.rules)
+            .map(rule => `  ${rule}: ${prop.value.rules[rule]};`)
+            .join('\n');
+          return result + `\n@mixin ${suitCssName(prop.package, prop.name)} {\n${rules}\n}`;
+        } else {
+          return result;
+        }
       }
 
       return `${sassVar(prop.package, prop.name)}: ${prop.value};`;
