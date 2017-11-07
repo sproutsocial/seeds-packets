@@ -1,6 +1,6 @@
 {
   "name": "@sproutsocial/seeds-icon",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "stability": "alpha",
   "description": "SEEDS Design System Icons",
   "main": "package.json",

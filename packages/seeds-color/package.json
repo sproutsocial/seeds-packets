@@ -1,6 +1,6 @@
 {
   "name": "@sproutsocial/seeds-color",
-  "version": "0.3.6",
+  "version": "0.4.0",
   "stability": "stable",
   "description": "SEEDS Design System Color Palette",
   "main": "dist/seeds-color.js",
@@ -13,7 +13,7 @@
     "build": "gulp"
   },
   "devDependencies": {
-    "@sproutsocial/seeds-utils": "^0.1.11",
+    "@sproutsocial/seeds-utils": "^0.2.0",
     "ase-util": "^1.0.1"
   }
 }

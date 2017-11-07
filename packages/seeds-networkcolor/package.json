@@ -1,6 +1,6 @@
 {
   "name": "@sproutsocial/seeds-networkcolor",
-  "version": "0.3.5",
+  "version": "0.4.0",
   "stability": "stable",
   "description": "SEEDS Design System Supported Networks Colors",
   "main": "dist/seeds-networkcolor.js",
@@ -13,7 +13,7 @@
     "build": "gulp"
   },
   "devDependencies": {
-    "@sproutsocial/seeds-utils": "^0.1.11",
+    "@sproutsocial/seeds-utils": "^0.2.0",
     "ase-util": "^1.0.1"
   }
 }
