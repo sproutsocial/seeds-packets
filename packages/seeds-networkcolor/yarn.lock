@@ -2,10 +2,6 @@
 # yarn lockfile v1
 
 
-"@sproutsocial/seeds-utils@^0.1.2":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-utils/-/seeds-utils-0.1.4.tgz#6cc8293b6312b49730ba7fccca4a0c2b42e5cc26"
-
 ansi-regex@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-2.1.1.tgz#c3b33ab5ee360d86e0e628f0468ae7ef27d654df"

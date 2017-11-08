@@ -62,6 +62,7 @@ gulp.task('typography-docs', done => {
         const tokensJson = tokens.propKeys.map(key => {
           const prop = tokens.props[key];
           return {
+            deprecated: !!prop.deprecated,
             app: upperFirst(prop.name),
             sass:
               prop.category === 'font size'
