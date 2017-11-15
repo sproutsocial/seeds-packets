@@ -1,5 +1,8 @@
 ## Changelog
 
+### v0.5.1
+- **Deprecated** `Family cleanSanchez` is no longer used by Bambu and will be removed from SEEDS soon.
+
 ### v0.5.0
 - **New** Added support for tokens as CSS custom properties. To use them, `@import seeds-typography/dist/seeds-typography.css` and refer to the token names in the documentation.
 
