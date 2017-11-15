@@ -61,7 +61,12 @@ props:
     category: font size
     type: font size
     value: 76
+  weight normal:
+    category: font weight
+    type: font weight
+    value: 400
   weight regular:
+    deprecated: true
     category: font weight
     type: font weight
     value: 400
