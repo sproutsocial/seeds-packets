@@ -18,7 +18,7 @@ const typographyTokensPath = './tokens.yml';
 require('@sproutsocial/seeds-utils/theo');
 
 gulp.task('clean', () => {
-  return del(['typography/_generated/*']);
+  return del(['dist/*']);
 });
 
 const typographyFunction = `$Typography-unit: px !default;
