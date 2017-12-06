@@ -3,21 +3,22 @@ import ExampleTable from '../example-table';
 import tokens from '@sproutsocial/seeds-depth/dist/tokens.json';
 
 const DepthTemplate = ({token}) => {
-  const styles = {};
+  const styles = {
+    boxShadow: token.value
+  };
 
   return (
-    <div className="Depth" style={styles}>Example</div>
+    <div className="Example-depth">
+      <div className='Example-depth-card' style={styles}></div>
+    </div>
   );
 };
 
-const DepthExample = (props) => {
+const DepthExample = props => {
   return (
     <div>
       <h3>Depth</h3>
-      <ExampleTable
-        tokens={tokens}
-        ChildClass={DepthTemplate}
-      />
+      <ExampleTable tokens={tokens} ChildClass={DepthTemplate} />
     </div>
   );
 };

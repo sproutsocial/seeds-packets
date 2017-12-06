@@ -24,31 +24,31 @@ gulp.task('depth-scss', getGulpPackageTask('web', 'scss'));
 gulp.task('depth-js', getGulpPackageTask('js', 'common.js'));
 
 gulp.task('depth-docs', done => {
-  theo.plugins.file(tokensPath).pipe(theo.plugins.transform('web')).pipe(
-    theo.plugins.getResult(result => {
-      const tokens = JSON.parse(result);
-      const docsTokens = tokens.propKeys.map(key => {
-        const prop = tokens.props[key];
-        const {value, description, category} = prop;
+  theo.plugins
+    .file(tokensPath)
+    .pipe(theo.plugins.transform('web'))
+    .pipe(
+      theo.plugins.getResult(result => {
+        const tokens = JSON.parse(result);
+        const docsTokens = tokens.propKeys.map(key => {
+          const prop = tokens.props[key];
+          const {value, description, category} = prop;
 
-        return {
-          app: upperFirst(prop.name),
-          sass: sassVar(prop.package, prop.name),
-          javascript: javascriptConst(prop.package, prop.name),
-          css: cssPropertyName(prop.package, prop.name),
-          value,
-          description,
-          category
-        };
-      });
+          return {
+            app: upperFirst(prop.name),
+            sass: sassVar(prop.package, prop.name),
+            javascript: javascriptConst(prop.package, prop.name),
+            css: cssPropertyName(prop.package, prop.name),
+            value,
+            description,
+            category
+          };
+        });
 
-      fs.writeFileSync('dist/tokens.json', JSON.stringify(docsTokens));
-      done();
-    })
-  );
+        fs.writeFileSync('dist/tokens.json', JSON.stringify(docsTokens));
+        done();
+      })
+    );
 });
 
-gulp.task(
-  'default',
-  gulp.series(['clean', gulp.parallel(['depth-scss', 'depth-js']), 'depth-docs'])
-);
+gulp.task('default', gulp.series(['clean', gulp.parallel(['depth-scss', 'depth-js']), 'depth-docs']));
