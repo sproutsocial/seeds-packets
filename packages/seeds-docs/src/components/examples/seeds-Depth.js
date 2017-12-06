@@ -9,7 +9,7 @@ const DepthTemplate = ({token}) => {
 
   return (
     <div className="Example-depth">
-      <div className='Example-depth-card' style={styles}></div>
+      <div className="Example-depth-card" style={styles} />
     </div>
   );
 };

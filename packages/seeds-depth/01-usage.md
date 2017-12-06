@@ -18,5 +18,6 @@ For CSS, SCSS, or Javascript:
 
 ### Do’s and Don’ts
 
-- **DON’T:** Leave the Do’s and Don’ts empty
-- **DO:** Use images and text to give examples of what to do.
+- **DO:** Use Depth to indicate interactivity on stylized / atypical buttons.
+- **DO:** Increase Depth on hover of interactive elements with a default Depth.
+- **DON’T:** Increase Depth on hover of non-interactive elements with a default Depth.
