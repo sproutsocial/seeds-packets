@@ -1,5 +1,6 @@
-## Resources
+<!-- ## Resources -->
 
-### Links
+<!-- ### Reference Images -->
 
-- List some helpful [links](https://www.youtube.com/watch?v=S73swRzxs8Y) here.
+<!-- Include some imagery we produced in the audit -->
+
