@@ -13,6 +13,6 @@
     "build": "gulp"
   },
   "devDependencies": {
-    "@sproutsocial/seeds-utils": "^0.2.0"
+    "@sproutsocial/seeds-utils": "*"
   }
 }

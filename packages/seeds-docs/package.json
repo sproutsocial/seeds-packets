@@ -14,7 +14,7 @@
     "@sproutsocial/seeds-networkcolor": "^0.4.2",
     "@sproutsocial/seeds-space": "^0.3.0",
     "@sproutsocial/seeds-typography": "^0.5.2",
-    "@sproutsocial/seeds-utils": "^0.2.0",
+    "@sproutsocial/seeds-utils": "*",
     "front-matter": "^2.2.0",
     "gatsby": "^1.9.45",
     "gatsby-link": "^1.6.17",
