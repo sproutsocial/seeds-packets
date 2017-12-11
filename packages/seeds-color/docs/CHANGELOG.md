@@ -1,5 +1,8 @@
 ## Changelog
 
+### v0.4.1
+
+- **Updated** Under-the-hood dependency fix
 
 ### v0.4.0
 

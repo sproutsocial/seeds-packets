@@ -1,5 +1,9 @@
 ## Changelog
 
+### v0.5.2
+
+- **Updated** Under-the-hood dependency fix
+
 ### v0.5.1
 - **Deprecated** `Family cleanSanchez` is no longer used by Bambu and will be removed from SEEDS soon.
 - **Deprecated** `weight regular` is now `weight normal` to better align with CSS property values.

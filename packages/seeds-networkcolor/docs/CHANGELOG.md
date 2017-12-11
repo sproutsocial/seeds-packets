@@ -1,5 +1,9 @@
 ## Changelog
 
+### v0.4.1
+
+- **Updated** Under-the-hood dependency fix
+
 ### v0.4.0
 
 - **New** Added support for tokens as CSS custom properties. To use them, `@import seeds-networkcolor/dist/seeds-networkcolor.css` and refer to the token names in the documentation.
