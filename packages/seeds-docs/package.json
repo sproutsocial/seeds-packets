@@ -27,7 +27,8 @@
     "gatsby-transformer-yaml": "^1.5.8",
     "marked": "^0.3.6",
     "mustache": "^2.3.0",
-    "tinycolor": "^0.0.1"
+    "tinycolor": "^0.0.1",
+    "@sproutsocial/seeds-depth": "*"
   },
   "keywords": [
     "gatsby"
