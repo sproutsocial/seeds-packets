@@ -7,7 +7,6 @@ const cssPropertyName = require('@sproutsocial/seeds-utils/css-property-name');
 const sassVar = require('@sproutsocial/seeds-utils/sassvar').sassVar;
 const getGulpTask = require('@sproutsocial/seeds-utils/getgulptask');
 const javascriptConst = require('@sproutsocial/seeds-utils/constantcase').javascriptConst;
-const makeDir = require('make-dir');
 
 const tokensPath = './tokens.yml';
 require('@sproutsocial/seeds-utils/theo');

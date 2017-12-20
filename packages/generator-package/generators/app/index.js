@@ -46,7 +46,7 @@ module.exports = class extends Generator {
 
     this.fs.copyTpl(
       this.templatePath('docs'),
-      this.destinationPath(`packages/seeds-${this.props.packageName}`),
+      this.destinationPath(`packages/seeds-${this.props.packageName}/docs`),
       Object.assign({}, this.props)
     );
 
