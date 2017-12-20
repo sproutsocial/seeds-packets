@@ -2,17 +2,17 @@
 
 ### Accessibility Compliance Goals
 
-- For all of Sprout's web apps, we strive to achieve the Web Content Accessibility Guidelines 2.0 AA level of compliance. This ensures:
-  - that we are reaching our widest-possible audience
-  - we have the ability to sell to institutions that receive federal funding
-  - our company values are an integral part of how we build our products
+For all of Sprout's web apps, we strive to achieve the Web Content Accessibility Guidelines 2.0 AA level of compliance. This ensures:
+- that we are reaching our widest-possible audience
+- we have the ability to sell to institutions that receive federal funding
+- our company values are an integral part of how we build our products
 
 ### Best Practices
 
-- Accessibility is for everyone.
-	- Accessibility is about ensuring _equal access_ to our platforms for all peoples.
-	- This does include people with disabilities but also benefits many other aspects such as personal preference, power users, SEO and more.
-	- Thus, we approach Accessibility with Universal Design, rather than "othering" sequestered experiences just for those with disabilities.
+Accessibility is for everyone.
+- Accessibility is about ensuring _equal access_ to our platforms for all peoples.
+- This does include people with disabilities but also benefits many other aspects such as personal preference, power users, SEO and more.
+- Thus, we approach Accessibility with Universal Design, rather than "othering" sequestered experiences just for those with disabilities.
 
 ### Do’s and Don’ts
 
