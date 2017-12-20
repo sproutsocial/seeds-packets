@@ -11,11 +11,13 @@
 
 ### Do’s and Don’ts
 
-- **DON’T:** Use network colors.  
-    ![buttons]({{{siteUrl}}}/assets/SEEDS-buttons-network-color.svg)
-- **DO:** Use title case.  
-    ![buttons]({{{siteUrl}}}/assets/SEEDS-buttons-title-case.svg) 
-- **DO:** Use Red 700 for destructive actions  
-    ![buttons]({{{siteUrl}}}/assets/SEEDS-buttons-destructive.svg) 
-- **DO:** Place icons before text unless using a carat. Carats link to information on a new page or not immediately displayed. 
+- **DO:** Use title case.
+    ![Title Case button]({{{siteUrl}}}/assets/SEEDS-buttons-title-case.svg)
+- **DO:** Use Red 700 for destructive actions
+    ![Destructive button]({{{siteUrl}}}/assets/SEEDS-buttons-destructive.svg)
+- **DO:** Place icons before text unless using a carat. Carats link to information on a new page or not immediately displayed.
 - **DO:** Increase contrast on hover.
+- **DON’T:** Use network colors.
+    ![Button with a network color]({{{siteUrl}}}/assets/SEEDS-buttons-network-color.svg)
+- **DON’T:** Override the browser’s native focus style.
+    ![Button with a network color]({{{siteUrl}}}/assets/SEEDS-buttons-focus.svg)
