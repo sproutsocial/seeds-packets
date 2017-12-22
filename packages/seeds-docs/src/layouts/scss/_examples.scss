@@ -50,20 +50,11 @@ tbody td pre {
   background: currentColor;
 }
 .Example-motion:hover .Example-motion-ball,
-.Example-motion.animated .Example-motion-ball {
+.Example-motion.is-animated .Example-motion-ball {
   left: calc(100% - 2em);
 }
 .Example-border {
   padding-bottom: $Space-size--600 * 2;
   background: $Color-gray--200;
   border: 0 solid $Color-gray--800;
-}
-.seeds-motion-table {
-  position: relative;
-
-  &-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
 }

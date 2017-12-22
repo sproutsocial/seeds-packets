@@ -14,20 +14,12 @@ const EasingExample = ({token}) => {
   );
 };
 
-const SimultaneousMotionExample = () => {
-  const els = document.querySelectorAll('.Example-motion');
-  let i;
-
-  for (i = 0; i < els.length; i++) {
-    els[i].className = els[i].className.includes('animated') ? 'Example-motion' : 'Example-motion animated';
-  }
-}
+const SimultaneousMotionExample = () => document.querySelectorAll('.Example-motion').forEach(el => el.classList.toggle('is-animated'));
 
 const MotionExample = props => {
   return (
-    <div className='seeds-motion-table'>
-      <h3>Easing</h3>
-      <button className='seeds-motion-table-button' onClick={SimultaneousMotionExample}>Compare easings</button>
+    <div>
+      <h3>Easing <button onClick={SimultaneousMotionExample}>Compare</button></h3>
       <ExampleTable tokens={tokens} ChildClass={EasingExample} />
     </div>
   );
