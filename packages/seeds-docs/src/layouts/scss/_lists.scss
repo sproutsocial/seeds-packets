@@ -30,7 +30,7 @@ li {
     list-style: none;
     margin-bottom: $Space-size--500;
     padding: $Space-size--400;
-    border-top: 4px solid;
+    border-top: $Space-size--200 solid;
 
     strong {
       display: block;
@@ -61,13 +61,12 @@ table {
 }
 
 .keybutton {
-  font-size: 0.88889rem;
-  line-height: 1.5;
+  @include Typography-size--300;
   font-family: monospace;
   display: inline-block;
-  padding: 4px 8px;
-  border-radius: 4px;
-  border-bottom: 2px solid $Color-neutral--700;
+  padding: $Space-size--200 $Space-size--300;
+  border-radius: $Space-size--200;
+  border-bottom: $Space-size--100 solid $Color-neutral--700;
   background-color: $Color-neutral--1000;
   color: $Color-neutral--0;
 }
