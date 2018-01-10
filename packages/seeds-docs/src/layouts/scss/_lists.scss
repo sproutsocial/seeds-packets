@@ -51,12 +51,12 @@ li {
 }
 
 table {
-  border: 1px solid #dee1e1;
+  border: 1px solid $Color-neutral--200;
   td, th {
-    border: 1px solid #dfe2e5;
+    border: 1px solid $Color-neutral--200;
   }
   tr:nth-child(2n) {
-    background-color: #f6f8fa;
+    background-color: $Color-neutral--100;
   }
 }
 
@@ -67,7 +67,7 @@ table {
   display: inline-block;
   padding: 4px 8px;
   border-radius: 4px;
-  border-bottom: 2px solid #515e5f;
-  background-color: #162020;
-  color: #fff;
+  border-bottom: 2px solid $Color-neutral--700;
+  background-color: $Color-neutral--1000;
+  color: $Color-neutral--0;
 }

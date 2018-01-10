@@ -8,9 +8,5 @@
     "type": "git",
     "url": "git+ssh://git@github.com/sproutsocial/seeds.git"
   },
-  "author": "Sprout Social",
-  "devDependencies": {
-    "@sproutsocial/seeds-utils": "^0.1.7",
-    "ase-util": "^1.0.1"
-  }
+  "author": "Sprout Social"
 }
