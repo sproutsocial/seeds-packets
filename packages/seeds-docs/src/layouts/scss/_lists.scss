@@ -30,7 +30,7 @@ li {
     list-style: none;
     margin-bottom: $Space-size--500;
     padding: $Space-size--400;
-    border-top: 4px solid;
+    border-top: $Space-size--200 solid;
 
     strong {
       display: block;
@@ -48,4 +48,25 @@ li {
   li.do {
     border-color: $Color-green--500;
   }
+}
+
+table {
+  border: 1px solid $Color-neutral--200;
+  td, th {
+    border: 1px solid $Color-neutral--200;
+  }
+  tr:nth-child(2n) {
+    background-color: $Color-neutral--100;
+  }
+}
+
+.keybutton {
+  @include Typography-size--300;
+  font-family: monospace;
+  display: inline-block;
+  padding: $Space-size--200 $Space-size--300;
+  border-radius: $Space-size--200;
+  border-bottom: $Space-size--100 solid $Color-neutral--700;
+  background-color: $Color-neutral--1000;
+  color: $Color-neutral--0;
 }
