@@ -1,6 +1,6 @@
 {
   "name": "generator-package",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": true,
   "description": "Scaffold out a new SEEDS package.",
   "author": {

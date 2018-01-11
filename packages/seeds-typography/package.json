@@ -1,6 +1,6 @@
 {
   "name": "@sproutsocial/seeds-typography",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "stability": "stable",
   "description": "SEEDS Design System Typography Styles",
   "main": "dist/seeds-typography.js",

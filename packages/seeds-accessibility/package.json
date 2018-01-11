@@ -1,6 +1,6 @@
 {
   "name": "@sproutsocial/seeds-accessibility",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "stability": "alpha",
   "description": "We aim to make our software accessible to the widest audience as possible. Empowering all people to successfully use our Platforms requires taking a Universal approach to design and development. ",
   "main": "package.json",
