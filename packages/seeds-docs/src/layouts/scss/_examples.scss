@@ -49,7 +49,8 @@ tbody td pre {
   transition-duration: 1s;
   background: currentColor;
 }
-.Example-motion:hover .Example-motion-ball {
+.Example-motion:hover .Example-motion-ball,
+.Example-motion.is-animated .Example-motion-ball {
   left: calc(100% - 2em);
 }
 .Example-border {

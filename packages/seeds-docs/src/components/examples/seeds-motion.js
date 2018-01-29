@@ -14,10 +14,12 @@ const EasingExample = ({token}) => {
   );
 };
 
+const SimultaneousMotionExample = () => document.querySelectorAll('.Example-motion').forEach(el => el.classList.toggle('is-animated'));
+
 const MotionExample = props => {
   return (
     <div>
-      <h3>Easing</h3>
+      <h3>Easing <button onClick={SimultaneousMotionExample}>Compare</button></h3>
       <ExampleTable tokens={tokens} ChildClass={EasingExample} />
     </div>
   );
