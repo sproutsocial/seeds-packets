@@ -1,0 +1,15 @@
+{
+  "name": "@sproutsocial/seeds-radio",
+  "version": "0.0.0",
+  "stability": "alpha",
+  "description": "SEEDS Design System Radio Buttons",
+  "main": "dist/seeds-radio.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sproutsocial/seeds.git"
+  },
+  "author": "Sprout Social",
+  "devDependencies": {
+    "@sproutsocial/seeds-utils": "*"
+  }
+}
