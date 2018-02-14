@@ -12,6 +12,9 @@
 tbody td pre {
   margin: 0;
 }
+th[scope="col"] {
+  white-space: nowrap;
+}
 .space-sample {
   background: currentColor;
 }

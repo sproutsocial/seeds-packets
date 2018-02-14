@@ -60,7 +60,7 @@ class ExampleTable extends React.Component {
         <thead>
           <tr>
             <th scope="col">
-              Name
+              Token Name
               <select value={selectedType} onChange={this.changeTokenType}>
                 {availableTypes.map(type => (
                   <option key={type} value={type}>
