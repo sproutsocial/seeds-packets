@@ -6,7 +6,8 @@ class ExampleTable extends React.Component {
   static propTypes = {
     tokens: PropTypes.array,
     rowStyle: PropTypes.func,
-    ChildClass: PropTypes.func
+    ChildClass: PropTypes.func,
+    exampleAction: PropTypes.node
   };
 
   constructor(props) {
@@ -51,9 +52,9 @@ class ExampleTable extends React.Component {
   };
 
   render() {
-    const {tokens, rowStyle, ChildClass} = this.props;
+    const {tokens, rowStyle, ChildClass, exampleAction} = this.props;
     const {availableTypes, selectedType} = this.state;
-    const preStyle = {whiteSpace: 'normal'};
+    const preStyle = {whiteSpace: 'nowrap'};
 
     return (
       <table>
@@ -82,7 +83,7 @@ class ExampleTable extends React.Component {
               <th scope="col">Value</th>
             )}
 
-            {ChildClass && <th scope="col">Example</th>}
+            {ChildClass && <th scope="col">Example {exampleAction}</th>}
           </tr>
         </thead>
 
