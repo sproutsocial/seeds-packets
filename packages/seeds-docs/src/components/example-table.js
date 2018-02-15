@@ -71,7 +71,7 @@ class ExampleTable extends React.Component {
               </select>
             </th>
 
-            {typeof tokens[0].deprecated != 'undefined' && <th />}
+            {typeof tokens[0].deprecated !== 'undefined' && <th />}
 
             {typeof tokens[0].value == 'object' ? (
               Object.keys(tokens[0].value).map(key => (
@@ -120,7 +120,11 @@ class ExampleTable extends React.Component {
                 </td>
               )}
 
-              <td>{ChildClass && <ChildClass token={token} />}</td>
+              {ChildClass && (
+                <td>
+                  <ChildClass token={token} />
+                </td>
+              )}
             </tr>
           ))}
         </tbody>
