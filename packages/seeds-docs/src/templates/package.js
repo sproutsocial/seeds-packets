@@ -75,7 +75,11 @@ export default class PackagePage extends React.Component {
               <div key={node.id}>
                 <header className="Header">
                   <div className="Typography-size--500" dangerouslySetInnerHTML={{__html: html}} />
-                  {Utility && <Utility key="resources" />}
+                  {Utility && (
+                    <div className="Space-size--500Left">
+                      <Utility key="resources" />
+                    </div>
+                  )}
                 </header>
                 <hr />
                 {Examples && (
