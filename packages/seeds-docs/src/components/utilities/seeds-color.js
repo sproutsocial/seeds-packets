@@ -68,7 +68,7 @@ class ClosestColorTool extends React.Component {
     const closestColor = this.getCloestColor();
 
     return (
-      <div>
+      <div className="Utility">
         <h3>Find the Nearest Color Tool</h3>
         <form>
           <div>
