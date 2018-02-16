@@ -21,6 +21,7 @@ gulp.task('clean', () => {
 });
 
 gulp.task('depth-scss', getGulpPackageTask('web', 'scss'));
+gulp.task('depth-css', getGulpPackageTask('web', 'custom-properties.css'));
 gulp.task('depth-js', getGulpPackageTask('js', 'common.js'));
 
 gulp.task('depth-docs', done => {
@@ -51,4 +52,4 @@ gulp.task('depth-docs', done => {
     );
 });
 
-gulp.task('default', gulp.series(['clean', gulp.parallel(['depth-scss', 'depth-js']), 'depth-docs']));
+gulp.task('default', gulp.series(['clean', gulp.parallel(['depth-scss', 'depth-css', 'depth-js']), 'depth-docs']));
