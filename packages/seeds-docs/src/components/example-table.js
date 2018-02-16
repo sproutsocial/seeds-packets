@@ -6,7 +6,8 @@ class ExampleTable extends React.Component {
   static propTypes = {
     tokens: PropTypes.array,
     rowStyle: PropTypes.func,
-    ChildClass: PropTypes.func
+    ChildClass: PropTypes.func,
+    exampleAction: PropTypes.node
   };
 
   constructor(props) {
@@ -51,16 +52,16 @@ class ExampleTable extends React.Component {
   };
 
   render() {
-    const {tokens, rowStyle, ChildClass} = this.props;
+    const {tokens, rowStyle, ChildClass, exampleAction} = this.props;
     const {availableTypes, selectedType} = this.state;
-    const preStyle = {whiteSpace: 'normal'};
+    const preStyle = {whiteSpace: 'nowrap'};
 
     return (
       <table>
         <thead>
           <tr>
             <th scope="col">
-              Name
+              Token Name
               <select value={selectedType} onChange={this.changeTokenType}>
                 {availableTypes.map(type => (
                   <option key={type} value={type}>
@@ -70,7 +71,7 @@ class ExampleTable extends React.Component {
               </select>
             </th>
 
-            {typeof tokens[0].deprecated != 'undefined' && <th />}
+            {typeof tokens[0].deprecated !== 'undefined' && <th />}
 
             {typeof tokens[0].value == 'object' ? (
               Object.keys(tokens[0].value).map(key => (
@@ -82,7 +83,7 @@ class ExampleTable extends React.Component {
               <th scope="col">Value</th>
             )}
 
-            {ChildClass && <th scope="col">Example</th>}
+            {ChildClass && <th scope="col">Example {exampleAction}</th>}
           </tr>
         </thead>
 
@@ -119,7 +120,11 @@ class ExampleTable extends React.Component {
                 </td>
               )}
 
-              <td>{ChildClass && <ChildClass token={token} />}</td>
+              {ChildClass && (
+                <td>
+                  <ChildClass token={token} />
+                </td>
+              )}
             </tr>
           ))}
         </tbody>

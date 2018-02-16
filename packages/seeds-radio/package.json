@@ -1,19 +1,14 @@
 {
-  "name": "@sproutsocial/seeds-<%= packageName %>",
+  "name": "@sproutsocial/seeds-radio",
   "version": "0.0.0",
   "stability": "alpha",
-  "description": "<%= packageDescription %>",
-  "main": "dist/seeds-<%= packageName %>.js",
+  "description": "SEEDS Design System Radio Buttons",
+  "main": "dist/seeds-radio.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/sproutsocial/seeds.git"
   },
   "author": "Sprout Social",
-  <% if (tokenName) { %>
-  "scripts": {
-    "build": "gulp"
-  },
-  <% } %>
   "devDependencies": {
     "@sproutsocial/seeds-utils": "*"
   }

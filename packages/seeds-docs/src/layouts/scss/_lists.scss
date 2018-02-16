@@ -38,15 +38,23 @@ li {
       padding: 0;
     }
     img {
+      background: $Color-neutral--0;
       max-width: 100%;
       margin-bottom: 0;
+      padding: $Space-size--400;
     }
   }
   li.dont {
-    border-color: $Color-red--500;
+    border-color: $Color-red--700;
+    > strong:first-child {
+      color: $Color-red--700;
+    }
   }
   li.do {
-    border-color: $Color-green--500;
+    border-color: $Color-green--700;
+    > strong:first-child {
+      color: $Color-green--700;
+    }
   }
 }
 

@@ -37,9 +37,9 @@ export default class PackagePage extends React.Component {
     const sections = data.sections.edges;
     // Try to import example and resource components for the package
     const exampleComponent = `../components/examples/${pkg.packageName}`;
-    const resourceComponent = `../components/resources/${pkg.packageName}`;
+    const utilityComponent = `../components/utilities/${pkg.packageName}`;
     let Examples = null;
-    let Resources = null;
+    let Utility = null;
 
     try {
       Examples = require(`../components/examples/${pkg.packageName}`);
@@ -48,9 +48,9 @@ export default class PackagePage extends React.Component {
     }
 
     try {
-      Resources = require(`../components/resources/${pkg.packageName}`);
+      Utility = require(`../components/utilities/${pkg.packageName}`);
     } catch (error) {
-      console.info('Module missing:', resourceComponent);
+      console.info('Module missing:', utilityComponent);
     }
 
     return (
@@ -73,7 +73,14 @@ export default class PackagePage extends React.Component {
           if (node.fields.baseName.includes('overview')) {
             return (
               <div key={node.id}>
-                <header className="Typography-size--500" dangerouslySetInnerHTML={{__html: html}} />
+                <header className="Header">
+                  <div className="Typography-size--500" dangerouslySetInnerHTML={{__html: html}} />
+                  {Utility && (
+                    <div className="Space-size--500Left">
+                      <Utility key="resources" />
+                    </div>
+                  )}
+                </header>
                 <hr />
                 {Examples && (
                   <section>
@@ -82,13 +89,6 @@ export default class PackagePage extends React.Component {
                   </section>
                 )}
               </div>
-            );
-          } else if (node.fields.baseName.includes('resources')) {
-            return (
-              <section key={node.id}>
-                <div key="content" dangerouslySetInnerHTML={{__html: html}} />
-                {Resources && <Resources key="resources" />}
-              </section>
             );
           } else {
             return <section key={node.id} dangerouslySetInnerHTML={{__html: html}} />;

@@ -12,6 +12,9 @@
 tbody td pre {
   margin: 0;
 }
+th[scope="col"] {
+  white-space: nowrap;
+}
 .space-sample {
   background: currentColor;
 }
@@ -34,24 +37,46 @@ tbody td pre {
   width: 125px;
   height: 125px;
 }
+
+$Example-motion--ballSize: 2em;
+$Example-motion--duration: 1s;
+
+@keyframes Example-motion {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(calc(100% - #{$Example-motion--ballSize}), 0, 0);
+  }
+}
 .Example-motion {
   min-width: 20em;
-  position: relative;
-  height: 2em;
+
+  &:hover .Example-motion-ball {
+    transform: translate3d(calc(100% - #{$Example-motion--ballSize}), 0, 0);
+  }
 }
 .Example-motion-ball {
-  width: 2em;
-  height: 2em;
-  border-radius: 50%;
-  position: absolute;
-  left: 0;
-  transition-property: left;
-  transition-duration: 1s;
-  background: currentColor;
+  transition-property: transform;
+  transition-duration: $Example-motion--duration;
+
+  &::after {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background: currentColor;
+    content: "";
+    display: inline-block;
+  }
+
+  &.isAnimated {
+    animation-name: Example-motion;
+    animation-duration: $Example-motion--duration;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
 }
-.Example-motion:hover .Example-motion-ball {
-  left: calc(100% - 2em);
-}
+
 .Example-border {
   padding-bottom: $Space-size--600 * 2;
   background: $Color-gray--200;

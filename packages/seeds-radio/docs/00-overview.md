@@ -1,0 +1,1 @@
+Radio buttons allow users to make a single selection among a group of options.

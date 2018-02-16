@@ -1,19 +1,14 @@
 {
-  "name": "@sproutsocial/seeds-<%= packageName %>",
+  "name": "@sproutsocial/seeds-checkbox",
   "version": "0.0.0",
   "stability": "alpha",
-  "description": "<%= packageDescription %>",
-  "main": "dist/seeds-<%= packageName %>.js",
+  "description": "SEEDS Design System Checkboxes",
+  "main": "dist/seeds-checkbox.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/sproutsocial/seeds.git"
   },
   "author": "Sprout Social",
-  <% if (tokenName) { %>
-  "scripts": {
-    "build": "gulp"
-  },
-  <% } %>
   "devDependencies": {
     "@sproutsocial/seeds-utils": "*"
   }
