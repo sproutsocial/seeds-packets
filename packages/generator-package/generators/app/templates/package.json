@@ -9,9 +9,11 @@
     "url": "git+ssh://git@github.com/sproutsocial/seeds.git"
   },
   "author": "Sprout Social",
+  <% if (tokenName) { %>
   "scripts": {
     "build": "gulp"
   },
+  <% } %>
   "devDependencies": {
     "@sproutsocial/seeds-utils": "*"
   }
