@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="310" viewBox="0 0 700 310">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="700" height="310" fill="#FFF"/>
+    <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+      <tspan x="591.324" y="250">1,234</tspan>
+    </text>
+    <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+      <tspan x="451.104" y="250">12,345</tspan>
+    </text>
+    <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+      <tspan x="332.128" y="250">123</tspan>
+    </text>
+    <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+      <tspan x="57.128" y="250">Sprout Coffee Co. SF</tspan>
+    </text>
+    <rect width="620" height="1" x="40" y="218" fill="#C8CCCC"/>
+    <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+      <tspan x="591.324" y="200">1,234</tspan>
+    </text>
+    <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+      <tspan x="451.104" y="200">12,345</tspan>
+    </text>
+    <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+      <tspan x="332.128" y="200">123</tspan>
+    </text>
+    <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+      <tspan x="50.376" y="200">Sprout Coffee Co. BOS</tspan>
+    </text>
+    <rect width="620" height="1" x="40" y="168" fill="#C8CCCC"/>
+    <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+      <tspan x="591.324" y="150">1,234</tspan>
+    </text>
+    <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+      <tspan x="451.104" y="150">12,345</tspan>
+    </text>
+    <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+      <tspan x="332.128" y="150">123</tspan>
+    </text>
+    <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+      <tspan x="53.2" y="150">Sprout Coffee Co. CHI</tspan>
+    </text>
+    <rect width="620" height="1" x="40" y="118" fill="#C8CCCC"/>
+    <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+      <tspan x="591.324" y="100">1,234</tspan>
+    </text>
+    <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+      <tspan x="451.104" y="100">12,345</tspan>
+    </text>
+    <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+      <tspan x="332.128" y="100">123</tspan>
+    </text>
+    <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+      <tspan x="69.28" y="100">Sprout Coffee Co.</tspan>
+    </text>
+    <rect width="620" height="1" x="40" y="68" fill="#C8CCCC"/>
+    <text fill="#B0B6B7" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+      <tspan x="572.203" y="48">Metric Three</tspan>
+    </text>
+    <text fill="#B0B6B7" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+      <tspan x="441.253" y="48">Metric Two</tspan>
+    </text>
+    <text fill="#B0B6B7" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+      <tspan x="311.358" y="48">Metric One</tspan>
+    </text>
+    <text fill="#B0B6B7" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+      <tspan x="114.293" y="48">Profile</tspan>
+    </text>
+  </g>
+</svg>

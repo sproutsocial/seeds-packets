@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1020" style="background:#f3f4f4" viewBox="0 0 900 1020">
+  <defs>
+    <rect id="chart-zero-data-a" width="760" height="220" rx="3"/>
+    <rect id="chart-zero-data-b" width="760" height="220" rx="3"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(30 30)">
+    <rect width="840" height="960" fill="#FFF"/>
+    <g transform="translate(40 40)">
+      <g transform="translate(0 660)">
+        <use fill="#FFF" xlink:href="#chart-zero-data-a"/>
+        <rect width="759" height="219" x=".5" y=".5" stroke="#C8CCCC" rx="3"/>
+        <g transform="translate(521 52)">
+          <text fill="#08C4B2" font-family="ProximaNova-Regular, Proxima Nova" font-size="13">
+            <tspan x="53.185" y="104">Since Last Month</tspan>
+          </text>
+          <text fill="#08C4B2" font-family="ProximaNova-Semibold, Proxima Nova" font-size="16" font-weight="500">
+            <tspan x="67.268" y="72.5"> </tspan> <tspan x="89.972" y="67.356" font-size="28">0%</tspan>
+          </text>
+          <polygon fill="#00C5B2" points="83.385 60.58 79.513 65.515 82.37 65.515 82.37 69.71 81.288 69.71 79.257 69.71 79.257 71.741 79.257 75.935 81.288 75.935 81.288 71.741 82.37 71.741 84.4 71.741 84.4 69.71 84.4 65.515 87.257 65.515 83.386 60.58" transform="rotate(40 83.257 68.257)"/>
+          <text fill="#515E5F" font-family="ProximaNova-Regular, Proxima Nova" font-size="13">
+            <tspan x="29.707" y="12">The number of messages </tspan> <tspan x="39.477" y="33">you sent increased by</tspan>
+          </text>
+        </g>
+        <g transform="translate(20 27)">
+          <text fill="#364141" font-family="ProximaNova-Semibold, Proxima Nova" font-size="16" font-weight="500">
+            <tspan x="451.128" y="163">0</tspan>
+          </text>
+          <text fill="#364141" font-family="ProximaNova-Semibold, Proxima Nova" font-size="16" font-weight="500">
+            <tspan x="1" y="163">Total Received</tspan>
+          </text>
+          <rect width="460" height="2" y="133" fill="#B0B6B7"/>
+          <text fill="#6E797A" font-family="ProximaNova-Semibold, Proxima Nova" font-size="16" font-weight="500">
+            <tspan x="451.128" y="113">0</tspan>
+          </text>
+          <text fill="#515E5F" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+            <tspan x="1" y="113">Direct Messages Received</tspan>
+          </text>
+          <rect width="460" height="1" y="83" fill="#C8CCCC"/>
+          <text fill="#6E797A" font-family="ProximaNova-Semibold, Proxima Nova" font-size="16" font-weight="500">
+            <tspan x="451.128" y="63">0</tspan>
+          </text>
+          <text fill="#515E5F" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+            <tspan x="1" y="63">Mentions Received</tspan>
+          </text>
+          <rect width="460" height="1" y="33" fill="#C8CCCC"/>
+          <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+            <tspan x="426.64" y="13">Totals</tspan>
+          </text>
+          <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+            <tspan x="0" y="13">Received Metrics</tspan>
+          </text>
+        </g>
+      </g>
+      <g transform="translate(0 420)">
+        <use fill="#FFF" xlink:href="#chart-zero-data-b"/>
+        <rect width="759" height="219" x=".5" y=".5" stroke="#C8CCCC" rx="3"/>
+        <g transform="translate(521 50)">
+          <text fill="#08C4B2" font-family="ProximaNova-Regular, Proxima Nova" font-size="13">
+            <tspan x="53.185" y="104">Since Last Month</tspan>
+          </text>
+          <text fill="#08C4B2" font-family="ProximaNova-Semibold, Proxima Nova" font-size="16" font-weight="500">
+            <tspan x="67.268" y="72.5"> </tspan> <tspan x="89.972" y="67.356" font-size="28">0%</tspan>
+          </text>
+          <polygon fill="#00C5B2" points="83.385 60.58 79.513 65.515 82.37 65.515 82.37 69.71 81.288 69.71 79.257 69.71 79.257 71.741 79.257 75.935 81.288 75.935 81.288 71.741 82.37 71.741 84.4 71.741 84.4 69.71 84.4 65.515 87.257 65.515 83.386 60.58" transform="rotate(40 83.257 68.257)"/>
+          <text fill="#515E5F" font-family="ProximaNova-Regular, Proxima Nova" font-size="13">
+            <tspan x="29.707" y="12">The number of messages </tspan> <tspan x="39.477" y="33">you sent increased by</tspan>
+          </text>
+        </g>
+        <g transform="translate(20 27)">
+          <text fill="#364141" font-family="ProximaNova-Semibold, Proxima Nova" font-size="16" font-weight="500">
+            <tspan x="451.128" y="163">0</tspan>
+          </text>
+          <text fill="#364141" font-family="ProximaNova-Semibold, Proxima Nova" font-size="16" font-weight="500">
+            <tspan x="1" y="163">Total Sent</tspan>
+          </text>
+          <rect width="460" height="2" y="133" fill="#B0B6B7"/>
+          <text fill="#6E797A" font-family="ProximaNova-Semibold, Proxima Nova" font-size="16" font-weight="500">
+            <tspan x="451.128" y="113">0</tspan>
+          </text>
+          <text fill="#515E5F" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+            <tspan x="1" y="113">Direct Messages Sent</tspan>
+          </text>
+          <rect width="460" height="1" y="83" fill="#C8CCCC"/>
+          <text fill="#6E797A" font-family="ProximaNova-Semibold, Proxima Nova" font-size="16" font-weight="500">
+            <tspan x="451.128" y="63">0</tspan>
+          </text>
+          <text fill="#515E5F" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+            <tspan x="1" y="63">Tweets Sent</tspan>
+          </text>
+          <rect width="460" height="1" y="33" fill="#C8CCCC"/>
+          <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+            <tspan x="426.64" y="13">Totals</tspan>
+          </text>
+          <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+            <tspan x="0" y="13">Sent Metrics</tspan>
+          </text>
+        </g>
+      </g>
+      <g transform="translate(0 55)">
+        <g transform="translate(302 312)">
+          <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+            <tspan x="130" y="13">Sent</tspan>
+          </text>
+          <rect width="12" height="12" x="110" y="3" fill="#5E4EBA" rx="3"/>
+          <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+            <tspan x="20" y="13">Received</tspan>
+          </text>
+          <rect width="12" height="12" y="3" fill="#08C4B2" rx="3"/>
+        </g>
+        <g fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="11" font-weight="500" letter-spacing=".926" transform="translate(18 258)">
+          <text>
+            <tspan x=".601" y="32">APR</tspan>
+          </text>
+          <text>
+            <tspan x="10" y="11">1</tspan>
+          </text>
+          <text>
+            <tspan x="29" y="11">2</tspan>
+          </text>
+          <text>
+            <tspan x="50" y="11">3</tspan>
+          </text>
+          <text>
+            <tspan x="72" y="11">4</tspan>
+          </text>
+          <text>
+            <tspan x="93" y="11">5</tspan>
+          </text>
+          <text>
+            <tspan x="114" y="11">6</tspan>
+          </text>
+          <text>
+            <tspan x="136" y="11">7</tspan>
+          </text>
+          <text>
+            <tspan x="156" y="11">8</tspan>
+          </text>
+          <text>
+            <tspan x="177" y="11">9</tspan>
+          </text>
+          <text>
+            <tspan x="199" y="11">10</tspan>
+          </text>
+          <text>
+            <tspan x="224" y="11">11</tspan>
+          </text>
+          <text>
+            <tspan x="247" y="11">12</tspan>
+          </text>
+          <text>
+            <tspan x="272" y="11">13</tspan>
+          </text>
+          <text>
+            <tspan x="297" y="11">14</tspan>
+          </text>
+          <text>
+            <tspan x="323" y="11">15</tspan>
+          </text>
+          <text>
+            <tspan x="348" y="11">16</tspan>
+          </text>
+          <text>
+            <tspan x="373" y="11">17</tspan>
+          </text>
+          <text>
+            <tspan x="397" y="11">18</tspan>
+          </text>
+          <text>
+            <tspan x="422" y="11">19</tspan>
+          </text>
+          <text>
+            <tspan x="449" y="11">20</tspan>
+          </text>
+          <text>
+            <tspan x="477" y="11">21</tspan>
+          </text>
+          <text>
+            <tspan x="502" y="11">22</tspan>
+          </text>
+          <text>
+            <tspan x="530" y="11">23</tspan>
+          </text>
+          <text>
+            <tspan x="558" y="11">24</tspan>
+          </text>
+          <text>
+            <tspan x="586" y="11">25</tspan>
+          </text>
+          <text>
+            <tspan x="614" y="11">26</tspan>
+          </text>
+          <text>
+            <tspan x="643" y="11">27</tspan>
+          </text>
+          <text>
+            <tspan x="670" y="11">28</tspan>
+          </text>
+          <text>
+            <tspan x="698" y="11">29</tspan>
+          </text>
+          <text>
+            <tspan x="727" y="11">30</tspan>
+          </text>
+        </g>
+        <rect width="730" height="2" x="30" y="244" fill="#B0B6B7"/>
+        <rect width="730" height="1" x="30" y="194" fill="#C8CCCC"/>
+        <rect width="730" height="1" x="30" y="144" fill="#C8CCCC"/>
+        <rect width="730" height="1" x="30" y="94" fill="#C8CCCC"/>
+        <rect width="730" height="1" x="30" y="44" fill="#C8CCCC"/>
+        <rect width="730" height="3" fill="#08C4B2" transform="translate(30 243)"/>
+        <g fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="11" font-weight="500" letter-spacing=".926" transform="translate(0 38)">
+          <text>
+            <tspan x="0" y="211">0</tspan>
+          </text>
+          <text>
+            <tspan x="0" y="161">50</tspan>
+          </text>
+          <text>
+            <tspan x="0" y="111">100</tspan>
+          </text>
+          <text>
+            <tspan x="0" y="61">150</tspan>
+          </text>
+          <text>
+            <tspan x="0" y="11">200</tspan>
+          </text>
+        </g>
+        <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+          <tspan x="0" y="13">Messages Per Day</tspan>
+        </text>
+      </g>
+      <text fill="#364141" font-family="ProximaNova-Semibold, Proxima Nova" font-size="18" font-weight="500">
+        <tspan x="1" y="18">Posts &amp; Conversations</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

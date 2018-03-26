@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="380" viewBox="0 0 700 380">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="700" height="380" fill="#FFF"/>
+    <rect width="700" height="380" fill="#FFF"/>
+    <g fill="#B0B6B7" transform="translate(70 326)">
+      <rect width="20" height="8"/>
+      <rect width="20" height="8" x="41"/>
+      <rect width="20" height="8" x="81"/>
+      <rect width="20" height="8" x="122"/>
+      <rect width="20" height="8" x="163"/>
+      <rect width="20" height="8" x="204"/>
+      <rect width="20" height="8" x="244"/>
+      <rect width="20" height="8" x="285"/>
+      <rect width="20" height="8" x="326"/>
+      <rect width="20" height="8" x="366"/>
+      <rect width="20" height="8" x="407"/>
+      <rect width="20" height="8" x="448"/>
+      <rect width="20" height="8" x="489"/>
+      <rect width="20" height="8" x="529"/>
+      <rect width="20" height="8" x="570"/>
+    </g>
+    <rect width="590" height="2" x="70" y="308" fill="#C8CCCC"/>
+    <rect width="590" height="1" x="70" y="249" fill="#C8CCCC"/>
+    <rect width="590" height="1" x="70" y="189" fill="#C8CCCC"/>
+    <rect width="590" height="1" x="70" y="129" fill="#C8CCCC"/>
+    <rect width="590" height="1" x="70" y="69" fill="#C8CCCC"/>
+    <g fill="#B0B6B7" transform="translate(40 65)">
+      <rect width="20" height="8"/>
+      <rect width="20" height="8" y="60"/>
+      <rect width="20" height="8" y="120"/>
+      <rect width="20" height="8" y="180"/>
+      <rect width="20" height="8" y="240"/>
+    </g>
+    <polyline stroke="#08C4B2" stroke-width="5" points="87.701 152.277 140.941 106.621 190.592 197.246 243.893 203.049 282.209 161.217 335.805 178.309 387.52 116.986 430.389 229.428 485.012 203.049 536.154 138.402 581.584 178.309 644.924 97.119"/>
+  </g>
+</svg>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900px" height="480px" viewBox="0 0 900 480" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #F3F4F4;">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Donut Chart Loading</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Donut-Chart-Loading" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Gathering-Data" transform="translate(30.000000, 30.000000)">
+            <rect id="content-area" fill="#FFFFFF" x="0" y="0" width="840" height="420"></rect>
+            <g id="content-&amp;-engagement-habits" transform="translate(40.000000, 40.000000)">
+                <g id="segment-totals" opacity="0.2" transform="translate(542.000000, 225.000000)">
+                    <text id="Existing-Contacts" font-family="ProximaNova-Regular, Proxima Nova" font-size="13" font-weight="normal" line-spacing="22" fill="#364141">
+                        <tspan x="0" y="106">Existing Contacts</tspan>
+                    </text>
+                    <g id="Gathering" transform="translate(0.000000, 60.000000)" fill="#C8CCCC">
+                        <rect id="Rectangle" x="0" y="10" width="40" height="10" rx="5"></rect>
+                    </g>
+                    <text id="New-Contacts" font-family="ProximaNova-Regular, Proxima Nova" font-size="13" font-weight="normal" line-spacing="22" fill="#364141">
+                        <tspan x="0" y="46">New Contacts</tspan>
+                    </text>
+                    <g id="Gathering" fill="#C8CCCC">
+                        <rect id="Rectangle" x="0" y="10" width="40" height="10" rx="5"></rect>
+                    </g>
+                </g>
+                <g id="chart---small-donut" opacity="0.2" transform="translate(402.000000, 230.000000)" fill="#C8CCCC">
+                    <path d="M55,110 C24.6243388,110 0,85.3756612 0,55 C0,24.6243388 24.6243388,0 55,0 C85.3756612,0 110,24.6243388 110,55 C110,85.3756612 85.3756612,110 55,110 Z M55,85.35 C71.7618422,85.35 85.35,71.7618422 85.35,55 C85.35,38.2381578 71.7618422,24.65 55,24.65 C38.2381578,24.65 24.65,38.2381578 24.65,55 C24.65,71.7618422 38.2381578,85.35 55,85.35 Z" id="Combined-Shape"></path>
+                </g>
+                <g id="segment-totals" opacity="0.2" transform="translate(542.000000, 90.000000)">
+                    <text id="Updates" font-family="ProximaNova-Regular, Proxima Nova" font-size="13" font-weight="normal" line-spacing="22" fill="#364141">
+                        <tspan x="0" y="101">Updates</tspan>
+                    </text>
+                    <g id="Gathering" transform="translate(0.000000, 60.000000)" fill="#C8CCCC">
+                        <rect id="Rectangle" x="0" y="10" width="40" height="10" rx="5"></rect>
+                    </g>
+                    <text id="Conversation" font-family="ProximaNova-Regular, Proxima Nova" font-size="13" font-weight="normal" line-spacing="22" fill="#364141">
+                        <tspan x="0" y="41">Conversation</tspan>
+                    </text>
+                    <g id="Gathering" fill="#C8CCCC">
+                        <rect id="Rectangle" x="0" y="10" width="40" height="10" rx="5"></rect>
+                    </g>
+                </g>
+                <g id="chart---small-donut" opacity="0.2" transform="translate(402.000000, 90.000000)" fill="#C8CCCC">
+                    <path d="M55,110 C24.6243388,110 0,85.3756612 0,55 C0,24.6243388 24.6243388,0 55,0 C85.3756612,0 110,24.6243388 110,55 C110,85.3756612 85.3756612,110 55,110 Z M55,85.35 C71.7618422,85.35 85.35,71.7618422 85.35,55 C85.35,38.2381578 71.7618422,24.65 55,24.65 C38.2381578,24.65 24.65,38.2381578 24.65,55 C24.65,71.7618422 38.2381578,85.35 55,85.35 Z" id="Combined-Shape"></path>
+                </g>
+                <text id="Your-Tweeting-Behavi" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500" fill="#929A9B">
+                    <tspan x="402" y="68">Your Tweeting Behavior</tspan>
+                </text>
+                <g id="segment-totals" opacity="0.2" transform="translate(282.000000, 90.000000)">
+                    <text id="Photo-Links" font-family="ProximaNova-Regular, Proxima Nova" font-size="13" font-weight="normal" line-spacing="22" fill="#364141">
+                        <tspan x="0" y="161">Photo Links</tspan>
+                    </text>
+                    <g id="Gathering" transform="translate(0.000000, 120.000000)" fill="#C8CCCC">
+                        <rect id="Rectangle" x="0" y="10" width="40" height="10" rx="5"></rect>
+                    </g>
+                    <text id="Page-Links" font-family="ProximaNova-Regular, Proxima Nova" font-size="13" font-weight="normal" line-spacing="22" fill="#364141">
+                        <tspan x="0" y="101">Page Links</tspan>
+                    </text>
+                    <g id="Gathering" transform="translate(0.000000, 60.000000)" fill="#C8CCCC">
+                        <rect id="Rectangle" x="0" y="10" width="40" height="10" rx="5"></rect>
+                    </g>
+                    <text id="Plain-Text" font-family="ProximaNova-Regular, Proxima Nova" font-size="13" font-weight="normal" line-spacing="22" fill="#364141">
+                        <tspan x="0" y="41">Plain Text</tspan>
+                    </text>
+                    <g id="Gathering" fill="#C8CCCC">
+                        <rect id="Rectangle" x="0" y="10" width="40" height="10" rx="5"></rect>
+                    </g>
+                </g>
+                <g id="chart---large-donut" opacity="0.2" transform="translate(127.000000, 215.000000) scale(-1, 1) translate(-127.000000, -215.000000) translate(2.000000, 90.000000)">
+                    <path d="M125,250 C55.9644063,250 0,194.035594 0,125 C0,55.9644063 55.9644063,0 125,0 C194.035594,0 250,55.9644063 250,125 C250,194.035594 194.035594,250 125,250 Z M125,210 C171.944204,210 210,171.944204 210,125 C210,78.0557963 171.944204,40 125,40 C78.0557963,40 40,78.0557963 40,125 C40,171.944204 78.0557963,210 125,210 Z" id="Combined-Shape" fill="#C8CCCC"></path>
+                    <text id="Tweets-Sent" transform="translate(125.000000, 144.000000) scale(-1, 1) translate(-125.000000, -144.000000) " font-family="ProximaNova-Regular, Proxima Nova" font-size="13" font-weight="normal" line-spacing="22" fill="#666666">
+                        <tspan x="89.6335" y="145">Tweets Sent</tspan>
+                    </text>
+                    <g id="Gathering" transform="translate(118.000000, 117.000000) scale(-1, 1) translate(-118.000000, -117.000000) translate(78.000000, 102.000000)" fill="#C8CCCC">
+                        <rect id="Rectangle" x="13" y="10" width="40" height="10" rx="5"></rect>
+                    </g>
+                </g>
+                <g id="leaf-loader" transform="translate(346.000000, 153.000000)" stroke="#6E797A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="M10.2,68.4184777 L39.3278,68.4184777 C55.1633,68.4184777 68,55.5033497 68,39.5703967 L68,0 L28.6716333,0 C12.8367,0 0,12.9162683 0,28.8486511 L0,82.838242 C0,84.7779058 2.34656667,85.7323436 3.68616667,84.337747 L18.9805,68.4184777" id="Stroke-1"></path>
+                    <path d="M0,69 L68,0" id="Stroke-3"></path>
+                    <polyline id="Stroke-5" points="29 0 29.0207484 39.9798277 68 40"></polyline>
+                </g>
+                <text id="Sent-Message-Content" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500" fill="#929A9B">
+                    <tspan x="0" y="68">Sent Message Content</tspan>
+                </text>
+                <text id="Content-&amp;-Engagement" font-family="ProximaNova-Semibold, Proxima Nova" font-size="18" font-weight="500" fill="#364141">
+                    <tspan x="1" y="18">Content &amp; Engagement Habits</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

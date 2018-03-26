@@ -1,0 +1,16 @@
+{
+  "name": "@sproutsocial/seeds-dataviz",
+  "version": "0.0.1",
+  "stability": "alpha",
+  "description": "SEEDS principles for data visualization",
+  "main": "package.json",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sproutsocial/seeds.git"
+  },
+  "author": "Sprout Social",
+  "devDependencies": {
+    "@sproutsocial/seeds-utils": "*",
+    "ase-util": "^1.0.1"
+  }
+}

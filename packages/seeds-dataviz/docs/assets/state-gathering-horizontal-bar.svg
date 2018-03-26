@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="370" style="background:#f3f4f4" viewBox="0 0 900 370">
+  <defs>
+    <rect id="chart-horizontal-bar-gathering-data-a" width="110" height="30" rx="3"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(30 30)">
+    <rect width="840" height="310" fill="#FFF"/>
+    <g opacity=".2" transform="translate(41 70)">
+      <rect width="310" height="20" x="49" fill="#C8CCCC"/>
+      <rect width="310" height="20" x="49" y="30" fill="#C8CCCC"/>
+      <rect width="310" height="20" x="49" y="60" fill="#C8CCCC"/>
+      <rect width="310" height="20" x="49" y="90" fill="#C8CCCC"/>
+      <rect width="310" height="20" x="49" y="120" fill="#C8CCCC"/>
+      <rect width="310" height="20" x="49" y="150" fill="#C8CCCC"/>
+      <rect width="310" height="20" x="49" y="180" fill="#C8CCCC"/>
+      <rect width="310" height="20" x="49" y="60" fill="#C8CCCC"/>
+      <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="11" font-weight="500" letter-spacing=".926">
+        <tspan x="0" y="14">18 - 20</tspan>
+      </text>
+      <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="11" font-weight="500" letter-spacing=".926">
+        <tspan x="0" y="44">21 - 24</tspan>
+      </text>
+      <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="11" font-weight="500" letter-spacing=".926">
+        <tspan x="0" y="74">25 - 34</tspan>
+      </text>
+      <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="11" font-weight="500" letter-spacing=".926">
+        <tspan x="0" y="104">35 - 44</tspan>
+      </text>
+      <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="11" font-weight="500" letter-spacing=".926">
+        <tspan x="0" y="134">45 - 54</tspan>
+      </text>
+      <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="11" font-weight="500" letter-spacing=".926">
+        <tspan x="0" y="164">55 - 64</tspan>
+      </text>
+      <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="11" font-weight="500" letter-spacing=".926">
+        <tspan x="0" y="194">65+</tspan>
+      </text>
+    </g>
+    <g transform="translate(166 214)">
+      <use fill="#FFF" xlink:href="#chart-horizontal-bar-gathering-data-a"/>
+      <rect width="109" height="29" x=".5" y=".5" stroke="#364141" rx="3"/>
+      <text fill="#364141" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+        <tspan x="10.592" y="19">Preview Report</tspan>
+      </text>
+    </g>
+    <text font-family="ProximaNova-Bold, Proxima Nova" font-size="18" font-weight="bold">
+      <tspan x="157.819" y="159" fill="#364141">Gathering Data</tspan> <tspan x="105.384" y="183" fill="#515E5F" font-family="ProximaNova-Regular, Proxima Nova" font-size="16" font-weight="normal">This could take 15 to 30 minutes.</tspan>
+    </text>
+    <g transform="translate(196 89)">
+      <circle cx="25.5" cy="24.5" r="14.5" fill="#08C4B2" fill-rule="nonzero"/>
+      <path fill="#172121" d="M19.9851553,5 C14.8845502,5 10.0429205,7.4643808 7.03493344,11.5920129 L8.59943526,12.7319887 C11.2443727,9.1034288 15.5007664,6.93626462 19.9851553,6.93626462 C27.7481242,6.93626462 34.0637354,13.2518758 34.0637354,21.0143606 C34.0637354,28.7768455 27.7481242,35.0924566 19.9851553,35.0924566 C12.9473175,35.0924566 7.09979831,29.9018152 6.06825333,23.1486083 L9.62275111,25.9189189 L10.8130698,24.3921743 L4.73658733,19.656071 L0,25.7325534 L1.52674466,26.9228721 L4.16974587,23.5319887 C5.38136345,31.1700686 12.0111335,37.0287213 19.9851553,37.0287213 C28.8154901,37.0287213 36,29.8446954 36,21.0143606 C36,12.1840258 28.8154901,5 19.9851553,5"/>
+      <path stroke="#08C4B2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M56.0430108,14 L56.0430108,22 M52,17.9569892 L60,17.9569892"/>
+      <circle cx="45.5" cy="2.5" r="2.5" fill="#08C4B2" fill-rule="nonzero"/>
+    </g>
+    <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+      <tspan x="40" y="48">Followers by Age</tspan>
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="480" style="background:#f3f4f4" viewBox="0 0 900 480">
+  <defs>
+    <rect id="donut-chart-gathering-data---section-a" width="110" height="30" rx="3"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(30 30)">
+    <rect width="840" height="420" fill="#FFF"/>
+    <g transform="translate(40 40)">
+      <g font-family="ProximaNova-Regular, Proxima Nova" font-size="13" opacity=".2" transform="translate(542 225)">
+        <text fill="#364141">
+          <tspan x="0" y="106">Existing Contacts</tspan>
+        </text>
+        <text fill="#929A9B" transform="translate(0 60)">
+          <tspan x=".377" y="19">Gathering…</tspan>
+        </text>
+        <text fill="#364141">
+          <tspan x="0" y="46">New Contacts</tspan>
+        </text>
+        <text fill="#929A9B">
+          <tspan x=".377" y="19">Gathering…</tspan>
+        </text>
+      </g>
+      <path fill="#C8CCCC" d="M55,110 C24.6243388,110 0,85.3756612 0,55 C0,24.6243388 24.6243388,0 55,0 C85.3756612,0 110,24.6243388 110,55 C110,85.3756612 85.3756612,110 55,110 Z M55,85.35 C71.7618422,85.35 85.35,71.7618422 85.35,55 C85.35,38.2381578 71.7618422,24.65 55,24.65 C38.2381578,24.65 24.65,38.2381578 24.65,55 C24.65,71.7618422 38.2381578,85.35 55,85.35 Z" opacity=".2" transform="translate(402 230)"/>
+      <g font-family="ProximaNova-Regular, Proxima Nova" font-size="13" opacity=".2" transform="translate(542 90)">
+        <text fill="#364141">
+          <tspan x="0" y="101">Updates</tspan>
+        </text>
+        <text fill="#929A9B" transform="translate(0 60)">
+          <tspan x=".377" y="19">Gathering…</tspan>
+        </text>
+        <text fill="#364141">
+          <tspan x="0" y="41">Conversation</tspan>
+        </text>
+        <text fill="#929A9B">
+          <tspan x=".377" y="19">Gathering…</tspan>
+        </text>
+      </g>
+      <path fill="#C8CCCC" d="M55,110 C24.6243388,110 0,85.3756612 0,55 C0,24.6243388 24.6243388,0 55,0 C85.3756612,0 110,24.6243388 110,55 C110,85.3756612 85.3756612,110 55,110 Z M55,85.35 C71.7618422,85.35 85.35,71.7618422 85.35,55 C85.35,38.2381578 71.7618422,24.65 55,24.65 C38.2381578,24.65 24.65,38.2381578 24.65,55 C24.65,71.7618422 38.2381578,85.35 55,85.35 Z" opacity=".2" transform="translate(402 90)"/>
+      <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+        <tspan x="402" y="68">Your Tweeting Behavior</tspan>
+      </text>
+      <g font-family="ProximaNova-Regular, Proxima Nova" font-size="13" opacity=".2" transform="translate(282 90)">
+        <text fill="#364141">
+          <tspan x="0" y="161">Photo Links</tspan>
+        </text>
+        <text fill="#929A9B" transform="translate(0 120)">
+          <tspan x=".377" y="19">Gathering…</tspan>
+        </text>
+        <text fill="#364141">
+          <tspan x="0" y="101">Page Links</tspan>
+        </text>
+        <text fill="#929A9B" transform="translate(0 60)">
+          <tspan x=".377" y="19">Gathering…</tspan>
+        </text>
+        <text fill="#364141">
+          <tspan x="0" y="41">Plain Text</tspan>
+        </text>
+        <text fill="#929A9B">
+          <tspan x=".377" y="19">Gathering…</tspan>
+        </text>
+      </g>
+      <g opacity=".2" transform="matrix(-1 0 0 1 252 90)">
+        <path fill="#C8CCCC" d="M125,250 C55.9644063,250 0,194.035594 0,125 C0,55.9644063 55.9644063,0 125,0 C194.035594,0 250,55.9644063 250,125 C250,194.035594 194.035594,250 125,250 Z M125,210 C171.944204,210 210,171.944204 210,125 C210,78.0557963 171.944204,40 125,40 C78.0557963,40 40,78.0557963 40,125 C40,171.944204 78.0557963,210 125,210 Z"/>
+        <text fill="#666" font-family="ProximaNova-Regular, Proxima Nova" font-size="13" transform="matrix(-1 0 0 1 250 0)">
+          <tspan x="89.633" y="145">Tweets Sent</tspan>
+        </text>
+        <text fill="#929A9B" font-family="ProximaNova-Regular, Proxima Nova" font-size="13" transform="matrix(-1 0 0 1 158 102)">
+          <tspan x=".377" y="19">Gathering…</tspan>
+        </text>
+      </g>
+      <g transform="translate(327 254)">
+        <use fill="#FFF" xlink:href="#donut-chart-gathering-data---section-a"/>
+        <rect width="109" height="29" x=".5" y=".5" stroke="#364141" rx="3"/>
+        <text fill="#364141" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+          <tspan x="10.592" y="19">Preview Report</tspan>
+        </text>
+      </g>
+      <text font-family="ProximaNova-Bold, Proxima Nova" font-size="18" font-weight="bold">
+        <tspan x="317.819" y="199" fill="#364141">Gathering Data</tspan> <tspan x="265.384" y="223" fill="#515E5F" font-family="ProximaNova-Regular, Proxima Nova" font-size="16" font-weight="normal">This could take 15 to 30 minutes.</tspan>
+      </text>
+      <g transform="translate(356 129)">
+        <circle cx="25.5" cy="24.5" r="14.5" fill="#08C4B2" fill-rule="nonzero"/>
+        <path fill="#172121" d="M19.9851553,5 C14.8845502,5 10.0429205,7.4643808 7.03493344,11.5920129 L8.59943526,12.7319887 C11.2443727,9.1034288 15.5007664,6.93626462 19.9851553,6.93626462 C27.7481242,6.93626462 34.0637354,13.2518758 34.0637354,21.0143606 C34.0637354,28.7768455 27.7481242,35.0924566 19.9851553,35.0924566 C12.9473175,35.0924566 7.09979831,29.9018152 6.06825333,23.1486083 L9.62275111,25.9189189 L10.8130698,24.3921743 L4.73658733,19.656071 L0,25.7325534 L1.52674466,26.9228721 L4.16974587,23.5319887 C5.38136345,31.1700686 12.0111335,37.0287213 19.9851553,37.0287213 C28.8154901,37.0287213 36,29.8446954 36,21.0143606 C36,12.1840258 28.8154901,5 19.9851553,5"/>
+        <path stroke="#08C4B2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M56.0430108,14 L56.0430108,22 M52,17.9569892 L60,17.9569892"/>
+        <circle cx="45.5" cy="2.5" r="2.5" fill="#08C4B2" fill-rule="nonzero"/>
+      </g>
+      <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+        <tspan x="0" y="68">Sent Message Content</tspan>
+      </text>
+      <text fill="#364141" font-family="ProximaNova-Semibold, Proxima Nova" font-size="18" font-weight="500">
+        <tspan x="1" y="18">Content &amp; Engagement Habits</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
