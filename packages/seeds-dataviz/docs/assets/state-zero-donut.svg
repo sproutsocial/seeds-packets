@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="480" style="background:#f3f4f4" viewBox="0 0 900 480">
+  <g fill="none" fill-rule="evenodd" transform="translate(30 30)">
+    <rect width="840" height="420" fill="#FFF"/>
+    <g transform="translate(40 40)">
+      <g transform="translate(540 225)">
+        <text fill="#067C7C" font-family="ProximaNova-Semibold, Proxima Nova" font-size="28" font-weight="500">
+          <tspan x="0" y="88">0</tspan>
+        </text>
+        <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="13">
+          <tspan x="0" y="106">Existing Contacts</tspan>
+        </text>
+        <text fill="#08C4B2" font-family="ProximaNova-Semibold, Proxima Nova" font-size="28" font-weight="500">
+          <tspan x="0" y="28">0</tspan>
+        </text>
+        <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="13">
+          <tspan x="0" y="46">New Contacts</tspan>
+        </text>
+      </g>
+      <path fill="#C8CCCC" d="M55,110 C24.6243388,110 0,85.3756612 0,55 C0,24.6243388 24.6243388,0 55,0 C85.3756612,0 110,24.6243388 110,55 C110,85.3756612 85.3756612,110 55,110 Z M55,85.35 C71.7618422,85.35 85.35,71.7618422 85.35,55 C85.35,38.2381578 71.7618422,24.65 55,24.65 C38.2381578,24.65 24.65,38.2381578 24.65,55 C24.65,71.7618422 38.2381578,85.35 55,85.35 Z" transform="translate(400 230)"/>
+      <g transform="translate(540 85)">
+        <text fill="#067C7C" font-family="ProximaNova-Semibold, Proxima Nova" font-size="28" font-weight="500">
+          <tspan x="0" y="88">0</tspan>
+        </text>
+        <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="13">
+          <tspan x="0" y="106">Updates</tspan>
+        </text>
+        <text fill="#08C4B2" font-family="ProximaNova-Semibold, Proxima Nova" font-size="28" font-weight="500">
+          <tspan x="0" y="28">0</tspan>
+        </text>
+        <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="13">
+          <tspan x="0" y="46">Conversation</tspan>
+        </text>
+      </g>
+      <path fill="#C8CCCC" d="M55,110 C24.6243388,110 0,85.3756612 0,55 C0,24.6243388 24.6243388,0 55,0 C85.3756612,0 110,24.6243388 110,55 C110,85.3756612 85.3756612,110 55,110 Z M55,85.35 C71.7618422,85.35 85.35,71.7618422 85.35,55 C85.35,38.2381578 71.7618422,24.65 55,24.65 C38.2381578,24.65 24.65,38.2381578 24.65,55 C24.65,71.7618422 38.2381578,85.35 55,85.35 Z" transform="translate(400 90)"/>
+      <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+        <tspan x="400" y="68">Your Tweeting Behavior</tspan>
+      </text>
+      <g transform="translate(280 85)">
+        <text fill="#9180F4" font-family="ProximaNova-Semibold, Proxima Nova" font-size="28" font-weight="500">
+          <tspan x="0" y="148">0</tspan>
+        </text>
+        <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="13">
+          <tspan x="0" y="166">Photo Links</tspan>
+        </text>
+        <text fill="#067C7C" font-family="ProximaNova-Semibold, Proxima Nova" font-size="28" font-weight="500">
+          <tspan x="0" y="88">0</tspan>
+        </text>
+        <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="13">
+          <tspan x="0" y="106">Page Links</tspan>
+        </text>
+        <text fill="#08C4B2" font-family="ProximaNova-Semibold, Proxima Nova" font-size="28" font-weight="500">
+          <tspan x="0" y="28">0</tspan>
+        </text>
+        <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="13">
+          <tspan x="0" y="46">Plain Text</tspan>
+        </text>
+      </g>
+      <g transform="matrix(-1 0 0 1 250 90)">
+        <path fill="#C8CCCC" d="M125,250 C55.9644063,250 0,194.035594 0,125 C0,55.9644063 55.9644063,0 125,0 C194.035594,0 250,55.9644063 250,125 C250,194.035594 194.035594,250 125,250 Z M125,210 C171.944204,210 210,171.944204 210,125 C210,78.0557963 171.944204,40 125,40 C78.0557963,40 40,78.0557963 40,125 C40,171.944204 78.0557963,210 125,210 Z"/>
+        <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="13" transform="matrix(-1 0 0 1 250 0)">
+          <tspan x="89.633" y="145">Tweets Sent</tspan>
+        </text>
+        <text fill="#273333" font-family="ProximaNova-Semibold, Proxima Nova" font-size="28" font-weight="500" transform="matrix(-1 0 0 1 250 0)">
+          <tspan x="116.362" y="126">0</tspan>
+        </text>
+      </g>
+      <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+        <tspan x="0" y="68">Sent Message Content</tspan>
+      </text>
+      <text fill="#364141" font-family="ProximaNova-Semibold, Proxima Nova" font-size="18" font-weight="500">
+        <tspan x="1" y="18">Content &amp; Engagement Habits</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

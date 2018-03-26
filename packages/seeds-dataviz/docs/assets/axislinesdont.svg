@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="380" viewBox="0 0 700 380">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="700" height="380" fill="#FFF"/>
+    <g fill="#B0B6B7" transform="translate(10 326)">
+      <rect width="20" height="8"/>
+      <rect width="20" height="8" x="47"/>
+      <rect width="20" height="8" x="94"/>
+      <rect width="20" height="8" x="141"/>
+      <rect width="20" height="8" x="189"/>
+      <rect width="20" height="8" x="236"/>
+      <rect width="20" height="8" x="283"/>
+      <rect width="20" height="8" x="330"/>
+      <rect width="20" height="8" x="377"/>
+      <rect width="20" height="8" x="424"/>
+      <rect width="20" height="8" x="471"/>
+      <rect width="20" height="8" x="519"/>
+      <rect width="20" height="8" x="566"/>
+      <rect width="20" height="8" x="613"/>
+      <rect width="20" height="8" x="660"/>
+    </g>
+    <rect width="700" height="2" y="308" fill="#C8CCCC"/>
+    <rect width="700" height="1" y="249" fill="#C8CCCC"/>
+    <rect width="700" height="1" y="189" fill="#C8CCCC"/>
+    <rect width="700" height="1" y="129" fill="#C8CCCC"/>
+    <rect width="700" height="1" y="69" fill="#C8CCCC"/>
+    <g fill="#B0B6B7" transform="translate(10 51)">
+      <rect width="20" height="8"/>
+      <rect width="20" height="8" y="60"/>
+      <rect width="20" height="8" y="120"/>
+      <rect width="20" height="8" y="180"/>
+      <rect width="20" height="8" y="240"/>
+    </g>
+  </g>
+</svg>

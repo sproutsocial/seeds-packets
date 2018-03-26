@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="380" viewBox="0 0 700 380">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="700" height="380" fill="#FFF"/>
+    <rect width="700" height="380" fill="#FFF"/>
+    <g fill="#B0B6B7" transform="translate(70 326)">
+      <rect width="20" height="8"/>
+      <rect width="20" height="8" x="41"/>
+      <rect width="20" height="8" x="81"/>
+      <rect width="20" height="8" x="122"/>
+      <rect width="20" height="8" x="163"/>
+      <rect width="20" height="8" x="204"/>
+      <rect width="20" height="8" x="244"/>
+      <rect width="20" height="8" x="285"/>
+      <rect width="20" height="8" x="326"/>
+      <rect width="20" height="8" x="366"/>
+      <rect width="20" height="8" x="407"/>
+      <rect width="20" height="8" x="448"/>
+      <rect width="20" height="8" x="489"/>
+      <rect width="20" height="8" x="529"/>
+      <rect width="20" height="8" x="570"/>
+    </g>
+    <rect width="590" height="2" x="70" y="308" fill="#C8CCCC"/>
+    <rect width="590" height="1" x="70" y="249" fill="#C8CCCC"/>
+    <rect width="590" height="1" x="70" y="189" fill="#C8CCCC"/>
+    <rect width="590" height="1" x="70" y="129" fill="#C8CCCC"/>
+    <rect width="590" height="1" x="70" y="69" fill="#C8CCCC"/>
+    <g fill="#B0B6B7" transform="translate(40 65)">
+      <rect width="20" height="8"/>
+      <rect width="20" height="8" y="60"/>
+      <rect width="20" height="8" y="120"/>
+      <rect width="20" height="8" y="180"/>
+      <rect width="20" height="8" y="240"/>
+    </g>
+    <path stroke="#08C4B2" stroke-width="5" d="M87.7011719,152.277344 C92.9863281,147.466797 133.353516,106.621094 140.941406,106.621094 C148.529297,106.621094 187.416016,193.5625 190.591797,197.246094 C193.767578,200.929687 240.574219,205.65625 243.892578,203.048828 C247.210937,200.441406 275.933594,161.216797 282.208984,161.216797 C288.484375,161.216797 329.748047,178.308594 335.804688,178.308594 C341.861328,178.308594 381.261719,116.986328 387.519531,116.986328 C393.777344,116.986328 425.646484,226.248047 430.388672,229.427734 C435.130859,232.607422 481.191406,206.949219 485.011719,203.048828 C488.832031,199.148437 530.271484,138.402344 536.154297,138.402344 C542.037109,138.402344 576.568359,178.308594 581.583984,178.308594 C586.599609,178.308594 640.857422,102.871094 644.923828,97.1191406"/>
+  </g>
+</svg>
