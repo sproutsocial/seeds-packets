@@ -31,7 +31,8 @@
     "mustache": "^2.3.0",
     "tinycolor": "^0.0.1",
     "@sproutsocial/seeds-checkbox": "*",
-    "@sproutsocial/seeds-radio": "*"
+    "@sproutsocial/seeds-radio": "*",
+    "@sproutsocial/seeds-dataviz": "*"
   },
   "keywords": [
     "gatsby"

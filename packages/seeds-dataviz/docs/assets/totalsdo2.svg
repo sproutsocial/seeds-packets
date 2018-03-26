@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="310" viewBox="0 0 700 310">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="700" height="310" fill="#FFF"/>
+    <g transform="translate(40 35)">
+      <text fill="#364141" font-family="ProximaNova-Semibold, Proxima Nova" font-size="16" font-weight="500">
+        <tspan x="555.96" y="65">83,593</tspan>
+      </text>
+      <text fill="#364141" font-family="ProximaNova-Semibold, Proxima Nova" font-size="16" font-weight="500">
+        <tspan x="10" y="65">Total Followers</tspan>
+      </text>
+      <rect width="620" height="2" y="83" fill="#B0B6B7"/>
+      <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+        <tspan x="591.648" y="215">14</tspan>
+      </text>
+      <text fill="#515E5F" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+        <tspan x="10" y="215">People That You Followed</tspan>
+      </text>
+      <rect width="620" height="1" y="183" fill="#C8CCCC"/>
+      <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+        <tspan x="578.352" y="165">853</tspan>
+      </text>
+      <text fill="#515E5F" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+        <tspan x="10" y="165">Actual Followers Gained</tspan>
+      </text>
+      <rect width="620" height="1" y="133" fill="#C8CCCC"/>
+      <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+        <tspan x="569.408" y="115">1,790</tspan>
+      </text>
+      <text fill="#515E5F" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+        <tspan x="10" y="115">New Follower Alerts</tspan>
+      </text>
+      <rect width="620" height="1" y="33" fill="#C8CCCC"/>
+      <text fill="#B0B6B7" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+        <tspan x="570.64" y="13">Totals</tspan>
+      </text>
+      <text fill="#B0B6B7" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+        <tspan x="10" y="13">Metrics</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

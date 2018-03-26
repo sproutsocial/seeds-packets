@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="310" viewBox="0 0 700 310">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="700" height="310" fill="#FFF"/>
+    <g transform="translate(40 35)">
+      <text fill="#364141" font-family="ProximaNova-Semibold, Proxima Nova" font-size="16" font-weight="500">
+        <tspan x="536.344" y="215">1,652,760</tspan>
+      </text>
+      <text fill="#364141" font-family="ProximaNova-Semibold, Proxima Nova" font-size="16" font-weight="500">
+        <tspan x="10" y="215">Total Impressions</tspan>
+      </text>
+      <rect width="620" height="2" y="183" fill="#B0B6B7"/>
+      <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+        <tspan x="538.256" y="165">1,546,597</tspan>
+      </text>
+      <text fill="#515E5F" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+        <tspan x="10" y="165">Paid Impressions</tspan>
+      </text>
+      <rect width="620" height="1" y="133" fill="#C8CCCC"/>
+      <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+        <tspan x="569.216" y="115">8,491</tspan>
+      </text>
+      <text fill="#515E5F" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+        <tspan x="10" y="115">Viral Impressions</tspan>
+      </text>
+      <rect width="620" height="1" y="83" fill="#C8CCCC"/>
+      <text fill="#364141" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+        <tspan x="557.52" y="65">97,672</tspan>
+      </text>
+      <text fill="#515E5F" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+        <tspan x="10" y="65">Organic Impressions</tspan>
+      </text>
+      <rect width="620" height="1" y="33" fill="#C8CCCC"/>
+      <text fill="#B0B6B7" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+        <tspan x="570.64" y="13">Totals</tspan>
+      </text>
+      <text fill="#B0B6B7" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+        <tspan x="10" y="13">Metrics</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
