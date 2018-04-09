@@ -15,7 +15,8 @@ li {
     display: block;
   }
 }
-#do-s-and-don-ts + ul {
+#do-s-and-don-ts + ul,
+#do-s-and-don-ts + details ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -77,4 +78,12 @@ table {
   border-bottom: $Space-size--100 solid $Color-neutral--700;
   background-color: $Color-neutral--1000;
   color: $Color-neutral--0;
+}
+
+summary {
+  cursor: pointer;
+}
+
+details + details {
+  margin-top: $Space-size--400;
 }

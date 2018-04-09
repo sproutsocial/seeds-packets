@@ -18,50 +18,62 @@ Charts are a visual way to display user data in a way to show trends and how the
 
 ### Chart Colors
 
-#### Comparable Data
+<details>
+	<summary>**Comparable Data**</summary>
 
-When creating charts with comparable data, use analogous color schemes to create a relationship between the items. Colors should be applied in the following order:
+	When creating charts with comparable data, use analogous color schemes to create a relationship between the items. Colors should be applied in the following order:
 
-- `Teal 500`
-- `Teal 800`
-- `Purple 500`
-- `Purple 800`
+	<ul>
+		<li>`Teal 500` </li>
+		<li>`Teal 800`</li>
+		<li>`Purple 500`</li>
+		<li>`Purple 800`</li>
+	</ul>
+</details>
 
-#### Contrasting Data
+<details>
+	<summary>**Contrasting Data**</summary>
 
-When creating charts with contrasting data, use complementary color schemes to ensure that the data can easily be differentiated. Colors should be applied in the following order:
+	When creating charts with contrasting data, use complementary color schemes to ensure that the data can easily be differentiated. Colors should be applied in the following order:
 
-- `Teal 500`
-- `Purple 800`
-- `Magenta 500`
-- `Yellow 800`
-- `Blue 500`
-- `Pink 800`
+	<ul>
+		<li>`Teal 500` </li>
+		<li>`Purple 800`</li>
+		<li>`Magenta 500`</li>
+		<li>`Yellow 800`</li>
+		<li>`Blue 500`</li>
+		<li>`Pink 800`</li>
+	</ul>
+</details>
 
-#### Color Rotation
+<details>
+	<summary>**Color Rotation**</summary>
 
-For reports that have an interactive key or up to 20 data points, cycle through the following colors:
+	For reports that have an interactive key or up to 20 data points, cycle through the following colors:
 
-- `Green 500`
-- `Teal 500`
-- `Blue 500`
-- `Purple 500`
-- `Magenta 500`
-- `Pink 500`
-- `Red 500`
-- `Orange 500`
-- `Yellow 500`
-- `Neutral 500`
-- `Green 800`
-- `Teal 800`
-- `Blue 800`
-- `Purple 800`
-- `Magenta 800`
-- `Pink 800`
-- `Red 800`
-- `Orange 800`
-- `Yellow 800`
-- `Neutral 700`
+	<ul>
+		<li>`Green 500` </li>
+		<li>`Teal 500`</li>
+		<li>`Blue 500`</li>
+		<li>`Purple 500`</li>
+		<li>`Magenta 500`</li>
+		<li>`Pink 500`</li>
+		<li>`Red 500`</li>
+		<li>`Orange 500`</li>
+		<li>`Yellow 500`</li>
+		<li>`Neutral 500`</li>
+		<li>`Green 800`</li>
+		<li>`Teal 800`</li>
+		<li>`Blue 800`</li>
+		<li>`Purple 800`</li>
+		<li>`Magenta 800`</li>
+		<li>`Pink 800`</li>
+		<li>`Red 800`</li>
+		<li>`Orange 800`</li>
+		<li>`Yellow 800`</li>
+		<li>`Neutral 700`</li>
+	</ul>
+</details>
 
 #### Network colors
 
@@ -69,11 +81,24 @@ Networks colors should not be used in data visualization.
 
 ### Do’s and Don’ts
 
-- **DO:** Show the axis lines where the data will be represented ![DO: Axis Lines]({{{siteUrl}}}/assets/axislinesdo.svg)
-- **DON’T:** Extend the axis lines to fill the full width of the content area ![DON'T: Axis Lines]({{{siteUrl}}}/assets/axislinesdont.svg)
-- **DO:** Use standard abbreviations for labels ![DO: Abbreviations]({{{siteUrl}}}/assets/abbreviationdo.svg)
-- **DON'T:** Slant labels to make them fit ![DON'T: Abbreviations]({{{siteUrl}}}/assets/abbreviationdont.svg)
-- **DO:** Center the chart Key below the chart ![DO: Key]({{{siteUrl}}}/assets/keydo.svg)
-- **DON'T:** Left or Right Align the chart Key, or place it above the chart ![DON'T: Key]({{{siteUrl}}}/assets/keydont.svg)
-- **DO:** Round off points ![DO: Points]({{{siteUrl}}}/assets/pointsdo.svg)
-- **DON'T:** Have charts have any sharp points ![DON'T: Points]({{{siteUrl}}}/assets/pointsdont.svg)
+<details>
+	<summary>Show</summary>
+
+	<ul>
+		<li class='do'>**DO:** Show the axis lines where the data will be represented ![DO: Axis Lines]({{{siteUrl}}}/assets/axislinesdo.svg)</li>
+
+		<li class='do'>**DO:** Extend the axis lines to fill the full width of the content area ![DON'T: Axis Lines]({{{siteUrl}}}/assets/axislinesdont.svg)</li>
+
+		<li class='dont'>**DON'T:** Use standard abbreviations for labels ![DO: Abbreviations]({{{siteUrl}}}/assets/abbreviationdo.svg)</li>
+
+		<li class='do'>**DO:** Slant labels to make them fit ![DON'T: Abbreviations]({{{siteUrl}}}/assets/abbreviationdont.svg)</li>
+
+		<li class='dont'>**DON'T:** Center the chart Key below the chart ![DO: Key]({{{siteUrl}}}/assets/keydo.svg)</li>
+
+		<li class='do'>**DO:** Left or Right Align the chart Key, or place it above the chart ![DON'T: Key]({{{siteUrl}}}/assets/keydont.svg)</li>
+
+		<li class='do'>**DO:** Round off points ![DO: Points]({{{siteUrl}}}/assets/pointsdo.svg)</li>
+
+		<li class='do'>**DO:** Have charts have any sharp points ![DON'T: Points]({{{siteUrl}}}/assets/pointsdont.svg)</li>
+	</ul>
+</details>
