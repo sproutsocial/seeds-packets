@@ -10,12 +10,12 @@
   "author": "Sprout Social",
   "scripts": {
     "format:prettier": "prettier-eslint --write --eslint-ignore --print-width=120 --single-quote --no-bracket-spacing",
-    "create-package": "yo ./packages/generator-package",
+    "create-packet": "yo ./packets/generator-packet",
     "precommit": "lint-staged",
     "build": "lerna run --scope !seeds-docs build",
-    "docs": "lerna run --scope !seeds-docs build && cd packages/seeds-docs && yarn build && cd -",
-    "docs-publish": "yarn run docs && gh-pages -d packages/seeds-docs/public",
-    "docs-serve": "yarn run build && cd packages/seeds-docs && yarn serve",
+    "docs": "lerna run --scope !seeds-docs build && cd packets/seeds-docs && yarn build && cd -",
+    "docs-publish": "yarn run docs && gh-pages -d packets/seeds-docs/public",
+    "docs-serve": "yarn run build && cd packets/seeds-docs && yarn serve",
     "postinstall": "lerna bootstrap"
   },
   "lint-staged": {

@@ -1,2 +1,2 @@
-# Ignore built files except package dist
-packages/**/dist/*
+# Ignore built files except packets dist
+packets/**/dist/*
