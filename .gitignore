@@ -1,5 +1,5 @@
 node_modules
-packages/**/dist
+packets/**/dist
 .vscode
 lerna-debug.log
 npm-debug.log*
