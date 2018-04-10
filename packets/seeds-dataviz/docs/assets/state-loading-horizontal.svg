@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="370" style="background:#f3f4f4" viewBox="0 0 900 370">
+  <g fill="none" fill-rule="evenodd" transform="translate(30 30)">
+    <rect width="840" height="310" fill="#FFF"/>
+    <g opacity=".2" transform="translate(41 70)">
+      <rect width="310" height="20" x="49" fill="#C8CCCC"/>
+      <rect width="310" height="20" x="49" y="30" fill="#C8CCCC"/>
+      <rect width="310" height="20" x="49" y="60" fill="#C8CCCC"/>
+      <rect width="310" height="20" x="49" y="90" fill="#C8CCCC"/>
+      <rect width="310" height="20" x="49" y="120" fill="#C8CCCC"/>
+      <rect width="310" height="20" x="49" y="150" fill="#C8CCCC"/>
+      <rect width="310" height="20" x="49" y="180" fill="#C8CCCC"/>
+      <rect width="310" height="20" x="49" y="60" fill="#C8CCCC"/>
+      <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="11" font-weight="500" letter-spacing=".926">
+        <tspan x="0" y="14">18 - 20</tspan>
+      </text>
+      <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="11" font-weight="500" letter-spacing=".926">
+        <tspan x="0" y="44">21 - 24</tspan>
+      </text>
+      <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="11" font-weight="500" letter-spacing=".926">
+        <tspan x="0" y="74">25 - 34</tspan>
+      </text>
+      <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="11" font-weight="500" letter-spacing=".926">
+        <tspan x="0" y="104">35 - 44</tspan>
+      </text>
+      <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="11" font-weight="500" letter-spacing=".926">
+        <tspan x="0" y="134">45 - 54</tspan>
+      </text>
+      <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="11" font-weight="500" letter-spacing=".926">
+        <tspan x="0" y="164">55 - 64</tspan>
+      </text>
+      <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="11" font-weight="500" letter-spacing=".926">
+        <tspan x="0" y="194">65+</tspan>
+      </text>
+    </g>
+    <g stroke="#6E797A" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" transform="translate(186 127)">
+      <path d="M10.2 68.4184777L39.3278 68.4184777C55.1633 68.4184777 68 55.5033497 68 39.5703967L68 0 28.6716333 0C12.8367 0 0 12.9162683 0 28.8486511L0 82.838242C0 84.7779058 2.34656667 85.7323436 3.68616667 84.337747L18.9805 68.4184777M0 69L68 0"/>
+      <polyline points="29 0 29.021 39.98 68 40"/>
+    </g>
+    <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+      <tspan x="40" y="48">Followers by Age</tspan>
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+
+:root {
+    --typography-family: "Proxima Nova", proxima-nova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --typography-family-clean-sanchez: clean-sanchez, "Proxima Nova", proxima-nova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --typography-family-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --typography-size-100: 11px;
+    --typography-size-100-rem: 0.6111111111111112rem;
+    --typography-size-100-line-height: 1.696969696969697;
+    --typography-size-200: 13px;
+    --typography-size-200-rem: 0.7222222222222222rem;
+    --typography-size-200-line-height: 1.641025641025641;
+    --typography-size-300: 16px;
+    --typography-size-300-rem: 0.8888888888888888rem;
+    --typography-size-300-line-height: 1.5;
+    --typography-size-400: 18px;
+    --typography-size-400-rem: 1rem;
+    --typography-size-400-line-height: 1.4814814814814816;
+    --typography-size-500: 21px;
+    --typography-size-500-rem: 1.1666666666666667rem;
+    --typography-size-500-line-height: 1.3968253968253967;
+    --typography-size-600: 24px;
+    --typography-size-600-rem: 1.3333333333333333rem;
+    --typography-size-600-line-height: 1.3333333333333333;
+    --typography-size-700: 32px;
+    --typography-size-700-rem: 1.7777777777777777rem;
+    --typography-size-700-line-height: 1.25;
+    --typography-size-800: 43px;
+    --typography-size-800-rem: 2.388888888888889rem;
+    --typography-size-800-line-height: 1.1782945736434107;
+    --typography-size-900: 57px;
+    --typography-size-900-rem: 3.1666666666666665rem;
+    --typography-size-900-line-height: 1.1228070175438596;
+    --typography-size-1000: 76px;
+    --typography-size-1000-rem: 4.222222222222222rem;
+    --typography-size-1000-line-height: 1.0526315789473684;
+    --typography-weight-normal: 400;
+    --typography-weight-regular: 400;
+    --typography-weight-bold: 600;
+}
+    

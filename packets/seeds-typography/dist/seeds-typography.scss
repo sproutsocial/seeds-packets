@@ -1,0 +1,68 @@
+$Typography-family: "Proxima Nova", proxima-nova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$Typography-family--cleanSanchez: clean-sanchez, "Proxima Nova", proxima-nova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$Typography-family--system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$Typography-size--100: 11px;
+@mixin Typography-size--100 {
+  font-size: Typography-getunit(11px);
+  line-height: 1.696969696969697;
+}
+$Typography-size--200: 13px;
+@mixin Typography-size--200 {
+  font-size: Typography-getunit(13px);
+  line-height: 1.641025641025641;
+}
+$Typography-size--300: 16px;
+@mixin Typography-size--300 {
+  font-size: Typography-getunit(16px);
+  line-height: 1.5;
+}
+$Typography-size--400: 18px;
+@mixin Typography-size--400 {
+  font-size: Typography-getunit(18px);
+  line-height: 1.4814814814814816;
+}
+$Typography-size--500: 21px;
+@mixin Typography-size--500 {
+  font-size: Typography-getunit(21px);
+  line-height: 1.3968253968253967;
+}
+$Typography-size--600: 24px;
+@mixin Typography-size--600 {
+  font-size: Typography-getunit(24px);
+  line-height: 1.3333333333333333;
+}
+$Typography-size--700: 32px;
+@mixin Typography-size--700 {
+  font-size: Typography-getunit(32px);
+  line-height: 1.25;
+}
+$Typography-size--800: 43px;
+@mixin Typography-size--800 {
+  font-size: Typography-getunit(43px);
+  line-height: 1.1782945736434107;
+}
+$Typography-size--900: 57px;
+@mixin Typography-size--900 {
+  font-size: Typography-getunit(57px);
+  line-height: 1.1228070175438596;
+}
+$Typography-size--1000: 76px;
+@mixin Typography-size--1000 {
+  font-size: Typography-getunit(76px);
+  line-height: 1.0526315789473684;
+}
+$Typography-weight--normal: 400;
+$Typography-weight--regular: 400;
+$Typography-weight--bold: 600;
+
+$Typography-unit: px !default;
+$Typography-size--base: $Typography-size--400 !default;
+@function Typography-getunit($size) {
+  @if $Typography-unit == "rem" {
+    $remSize: $size / $Typography-size--base;
+    @return #{$remSize}rem;
+  }
+  @else {
+    @return $size;
+  }
+}

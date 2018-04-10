@@ -1,0 +1,24 @@
+
+:root {
+    --network-color-twitter: #1da1f2;
+    --network-color-twitter-dark: #278ac1;
+    --network-color-facebook: #3b5998;
+    --network-color-facebook-dark: #304879;
+    --network-color-linkedin: #0077b5;
+    --network-color-linkedin-dark: #005e93;
+    --network-color-googleplus: #db4437;
+    --network-color-googleplus-dark: #bc3e2a;
+    --network-color-instagram: #e4405f;
+    --network-color-instagram-dark: #dd143a;
+    --network-color-feedly: #2bb24c;
+    --network-color-feedly-dark: #1d9236;
+    --network-color-analytics: #ef6c00;
+    --network-color-analytics-dark: #e65100;
+    --network-color-youtube: #f00;
+    --network-color-youtube-dark: #b31217;
+    --network-color-messenger: #0084ff;
+    --network-color-klout: #E44600;
+    --network-color-snapchat: #fffc00;
+    --network-color-pinterest: #bd081c;
+}
+    

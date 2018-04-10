@@ -1,0 +1,20 @@
+{
+  "name": "@sproutsocial/seeds-<%= packetName %>",
+  "version": "0.0.0",
+  "stability": "alpha",
+  "description": "<%= packetDescription %>",
+  "main": "dist/seeds-<%= packetName %>.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sproutsocial/seeds.git"
+  },
+  "author": "Sprout Social",
+  <% if (tokenName) { %>
+  "scripts": {
+    "build": "gulp"
+  },
+  <% } %>
+  "devDependencies": {
+    "@sproutsocial/seeds-utils": "*"
+  }
+}

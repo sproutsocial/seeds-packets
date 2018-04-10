@@ -1,0 +1,235 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="1020" style="background:#f3f4f4" viewBox="0 0 900 1020">
+  <defs>
+    <rect id="chart-data-error-a" width="760" height="220" rx="3"/>
+    <rect id="chart-data-error-b" width="760" height="220" rx="3"/>
+    <rect id="chart-data-error-c" width="100" height="30" rx="3"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(30 30)">
+    <rect width="840" height="960" fill="#FFF"/>
+    <g transform="translate(40 690)">
+      <use fill="#FFF" xlink:href="#chart-data-error-a"/>
+      <rect width="759" height="219" x=".5" y=".5" stroke="#C8CCCC" rx="3"/>
+      <g transform="translate(521 52)">
+        <text fill="#08C4B2" font-family="ProximaNova-Regular, Proxima Nova" font-size="13">
+          <tspan x="53.185" y="104">Since Last Month</tspan>
+        </text>
+        <path fill="#6E797A" fill-rule="nonzero" d="M10.981028,12.8081123 L8.9761859,12.8081123 L8.9761859,5.81903276 L10.981028,5.81903276 L10.981028,12.8081123 Z M10.981028,15.8034321 L8.9761859,15.8034321 L8.9761859,13.8065523 L10.981028,13.8065523 L10.981028,15.8034321 Z M18.9001541,16.5023401 L10.8807859,2.52418097 C10.4798175,1.82527301 9.57763852,1.82527301 9.17667011,2.52418097 L1.15730185,16.5023401 C0.756333438,17.201248 1.15730185,18 1.95923868,18 L17.9979752,18 C18.799912,18 19.2008804,17.201248 18.9001541,16.5023401 Z" transform="translate(91 57)"/>
+        <text fill="#515E5F" font-family="ProximaNova-Regular, Proxima Nova" font-size="13">
+          <tspan x="29.707" y="12">The number of messages </tspan> <tspan x="39.477" y="33">you sent increased by</tspan>
+        </text>
+      </g>
+      <g transform="translate(20 27)">
+        <path fill="#6E797A" fill-rule="nonzero" d="M10.981028,12.8081123 L8.9761859,12.8081123 L8.9761859,5.81903276 L10.981028,5.81903276 L10.981028,12.8081123 Z M10.981028,15.8034321 L8.9761859,15.8034321 L8.9761859,13.8065523 L10.981028,13.8065523 L10.981028,15.8034321 Z M18.9001541,16.5023401 L10.8807859,2.52418097 C10.4798175,1.82527301 9.57763852,1.82527301 9.17667011,2.52418097 L1.15730185,16.5023401 C0.756333438,17.201248 1.15730185,18 1.95923868,18 L17.9979752,18 C18.799912,18 19.2008804,17.201248 18.9001541,16.5023401 Z" transform="translate(440 149)"/>
+        <text fill="#364141" font-family="ProximaNova-Semibold, Proxima Nova" font-size="16" font-weight="500">
+          <tspan x="1" y="163">Total Received</tspan>
+        </text>
+        <rect width="460" height="2" y="133" fill="#B0B6B7"/>
+        <path fill="#6E797A" fill-rule="nonzero" d="M10.981028,12.8081123 L8.9761859,12.8081123 L8.9761859,5.81903276 L10.981028,5.81903276 L10.981028,12.8081123 Z M10.981028,15.8034321 L8.9761859,15.8034321 L8.9761859,13.8065523 L10.981028,13.8065523 L10.981028,15.8034321 Z M18.9001541,16.5023401 L10.8807859,2.52418097 C10.4798175,1.82527301 9.57763852,1.82527301 9.17667011,2.52418097 L1.15730185,16.5023401 C0.756333438,17.201248 1.15730185,18 1.95923868,18 L17.9979752,18 C18.799912,18 19.2008804,17.201248 18.9001541,16.5023401 Z" transform="translate(440 99)"/>
+        <text fill="#515E5F" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+          <tspan x="1" y="113">Direct Messages Received</tspan>
+        </text>
+        <rect width="460" height="1" y="83" fill="#C8CCCC"/>
+        <path fill="#6E797A" fill-rule="nonzero" d="M10.981028,12.8081123 L8.9761859,12.8081123 L8.9761859,5.81903276 L10.981028,5.81903276 L10.981028,12.8081123 Z M10.981028,15.8034321 L8.9761859,15.8034321 L8.9761859,13.8065523 L10.981028,13.8065523 L10.981028,15.8034321 Z M18.9001541,16.5023401 L10.8807859,2.52418097 C10.4798175,1.82527301 9.57763852,1.82527301 9.17667011,2.52418097 L1.15730185,16.5023401 C0.756333438,17.201248 1.15730185,18 1.95923868,18 L17.9979752,18 C18.799912,18 19.2008804,17.201248 18.9001541,16.5023401 Z" transform="translate(440 49)"/>
+        <text fill="#515E5F" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+          <tspan x="1" y="63">Mentions Received</tspan>
+        </text>
+        <rect width="460" height="1" y="33" fill="#C8CCCC"/>
+        <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+          <tspan x="426.64" y="13">Totals</tspan>
+        </text>
+        <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+          <tspan x="0" y="13">Received Metrics</tspan>
+        </text>
+      </g>
+    </g>
+    <g transform="translate(40 450)">
+      <use fill="#FFF" xlink:href="#chart-data-error-b"/>
+      <rect width="759" height="219" x=".5" y=".5" stroke="#C8CCCC" rx="3"/>
+      <g transform="translate(521 50)">
+        <text fill="#08C4B2" font-family="ProximaNova-Regular, Proxima Nova" font-size="13">
+          <tspan x="53.185" y="104">Since Last Month</tspan>
+        </text>
+        <path fill="#6E797A" fill-rule="nonzero" d="M10.981028,12.8081123 L8.9761859,12.8081123 L8.9761859,5.81903276 L10.981028,5.81903276 L10.981028,12.8081123 Z M10.981028,15.8034321 L8.9761859,15.8034321 L8.9761859,13.8065523 L10.981028,13.8065523 L10.981028,15.8034321 Z M18.9001541,16.5023401 L10.8807859,2.52418097 C10.4798175,1.82527301 9.57763852,1.82527301 9.17667011,2.52418097 L1.15730185,16.5023401 C0.756333438,17.201248 1.15730185,18 1.95923868,18 L17.9979752,18 C18.799912,18 19.2008804,17.201248 18.9001541,16.5023401 Z" transform="translate(91 57)"/>
+        <text fill="#515E5F" font-family="ProximaNova-Regular, Proxima Nova" font-size="13">
+          <tspan x="29.707" y="12">The number of messages </tspan> <tspan x="39.477" y="33">you sent increased by</tspan>
+        </text>
+      </g>
+      <g transform="translate(20 27)">
+        <path fill="#6E797A" fill-rule="nonzero" d="M10.981028,12.8081123 L8.9761859,12.8081123 L8.9761859,5.81903276 L10.981028,5.81903276 L10.981028,12.8081123 Z M10.981028,15.8034321 L8.9761859,15.8034321 L8.9761859,13.8065523 L10.981028,13.8065523 L10.981028,15.8034321 Z M18.9001541,16.5023401 L10.8807859,2.52418097 C10.4798175,1.82527301 9.57763852,1.82527301 9.17667011,2.52418097 L1.15730185,16.5023401 C0.756333438,17.201248 1.15730185,18 1.95923868,18 L17.9979752,18 C18.799912,18 19.2008804,17.201248 18.9001541,16.5023401 Z" transform="translate(440 149)"/>
+        <text fill="#364141" font-family="ProximaNova-Semibold, Proxima Nova" font-size="16" font-weight="500">
+          <tspan x="1" y="163">Total Sent</tspan>
+        </text>
+        <rect width="460" height="2" y="133" fill="#B0B6B7"/>
+        <path fill="#6E797A" fill-rule="nonzero" d="M10.981028,12.8081123 L8.9761859,12.8081123 L8.9761859,5.81903276 L10.981028,5.81903276 L10.981028,12.8081123 Z M10.981028,15.8034321 L8.9761859,15.8034321 L8.9761859,13.8065523 L10.981028,13.8065523 L10.981028,15.8034321 Z M18.9001541,16.5023401 L10.8807859,2.52418097 C10.4798175,1.82527301 9.57763852,1.82527301 9.17667011,2.52418097 L1.15730185,16.5023401 C0.756333438,17.201248 1.15730185,18 1.95923868,18 L17.9979752,18 C18.799912,18 19.2008804,17.201248 18.9001541,16.5023401 Z" transform="translate(440 99)"/>
+        <text fill="#515E5F" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+          <tspan x="1" y="113">Direct Messages Sent</tspan>
+        </text>
+        <rect width="460" height="1" y="83" fill="#C8CCCC"/>
+        <path fill="#6E797A" fill-rule="nonzero" d="M10.981028,12.8081123 L8.9761859,12.8081123 L8.9761859,5.81903276 L10.981028,5.81903276 L10.981028,12.8081123 Z M10.981028,15.8034321 L8.9761859,15.8034321 L8.9761859,13.8065523 L10.981028,13.8065523 L10.981028,15.8034321 Z M18.9001541,16.5023401 L10.8807859,2.52418097 C10.4798175,1.82527301 9.57763852,1.82527301 9.17667011,2.52418097 L1.15730185,16.5023401 C0.756333438,17.201248 1.15730185,18 1.95923868,18 L17.9979752,18 C18.799912,18 19.2008804,17.201248 18.9001541,16.5023401 Z" transform="translate(440 49)"/>
+        <text fill="#515E5F" font-family="ProximaNova-Regular, Proxima Nova" font-size="16">
+          <tspan x="1" y="63">Tweets Sent</tspan>
+        </text>
+        <rect width="460" height="1" y="33" fill="#C8CCCC"/>
+        <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+          <tspan x="426.64" y="13">Totals</tspan>
+        </text>
+        <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+          <tspan x="0" y="13">Sent Metrics</tspan>
+        </text>
+      </g>
+    </g>
+    <g transform="translate(40 130)">
+      <g transform="translate(302 274)">
+        <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+          <tspan x="130" y="13">Sent</tspan>
+        </text>
+        <rect width="12" height="12" x="110" y="3" fill="#5E4EBA" rx="3"/>
+        <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+          <tspan x="20" y="13">Received</tspan>
+        </text>
+        <rect width="12" height="12" y="3" fill="#08C4B2" rx="3"/>
+      </g>
+      <g fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="11" font-weight="500" letter-spacing=".926" transform="translate(18 220)">
+        <text>
+          <tspan x=".601" y="32">APR</tspan>
+        </text>
+        <text>
+          <tspan x="10" y="11">1</tspan>
+        </text>
+        <text>
+          <tspan x="29" y="11">2</tspan>
+        </text>
+        <text>
+          <tspan x="50" y="11">3</tspan>
+        </text>
+        <text>
+          <tspan x="72" y="11">4</tspan>
+        </text>
+        <text>
+          <tspan x="93" y="11">5</tspan>
+        </text>
+        <text>
+          <tspan x="114" y="11">6</tspan>
+        </text>
+        <text>
+          <tspan x="136" y="11">7</tspan>
+        </text>
+        <text>
+          <tspan x="156" y="11">8</tspan>
+        </text>
+        <text>
+          <tspan x="177" y="11">9</tspan>
+        </text>
+        <text>
+          <tspan x="199" y="11">10</tspan>
+        </text>
+        <text>
+          <tspan x="224" y="11">11</tspan>
+        </text>
+        <text>
+          <tspan x="247" y="11">12</tspan>
+        </text>
+        <text>
+          <tspan x="272" y="11">13</tspan>
+        </text>
+        <text>
+          <tspan x="297" y="11">14</tspan>
+        </text>
+        <text>
+          <tspan x="323" y="11">15</tspan>
+        </text>
+        <text>
+          <tspan x="348" y="11">16</tspan>
+        </text>
+        <text>
+          <tspan x="373" y="11">17</tspan>
+        </text>
+        <text>
+          <tspan x="397" y="11">18</tspan>
+        </text>
+        <text>
+          <tspan x="422" y="11">19</tspan>
+        </text>
+        <text>
+          <tspan x="449" y="11">20</tspan>
+        </text>
+        <text>
+          <tspan x="477" y="11">21</tspan>
+        </text>
+        <text>
+          <tspan x="502" y="11">22</tspan>
+        </text>
+        <text>
+          <tspan x="530" y="11">23</tspan>
+        </text>
+        <text>
+          <tspan x="558" y="11">24</tspan>
+        </text>
+        <text>
+          <tspan x="586" y="11">25</tspan>
+        </text>
+        <text>
+          <tspan x="614" y="11">26</tspan>
+        </text>
+        <text>
+          <tspan x="643" y="11">27</tspan>
+        </text>
+        <text>
+          <tspan x="670" y="11">28</tspan>
+        </text>
+        <text>
+          <tspan x="698" y="11">29</tspan>
+        </text>
+        <text>
+          <tspan x="727" y="11">30</tspan>
+        </text>
+      </g>
+      <rect width="730" height="2" x="30" y="206" fill="#B0B6B7"/>
+      <rect width="730" height="1" x="30" y="156" fill="#C8CCCC"/>
+      <rect width="730" height="1" x="30" y="106" fill="#C8CCCC"/>
+      <rect width="730" height="1" x="30" y="56" fill="#C8CCCC"/>
+      <rect width="730" height="1" x="30" y="6" fill="#C8CCCC"/>
+      <g fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="11" font-weight="500" letter-spacing=".926">
+        <text>
+          <tspan x="0" y="211">0</tspan>
+        </text>
+        <text>
+          <tspan x="0" y="161">50</tspan>
+        </text>
+        <text>
+          <tspan x="0" y="111">100</tspan>
+        </text>
+        <text>
+          <tspan x="0" y="61">150</tspan>
+        </text>
+        <text>
+          <tspan x="0" y="11">200</tspan>
+        </text>
+      </g>
+    </g>
+    <rect width="760" height="300" x="40" y="130" fill="#FFF" fill-opacity=".8" rx="3"/>
+    <g transform="translate(371 280)">
+      <use fill="#FFF" xlink:href="#chart-data-error-c"/>
+      <rect width="99" height="29" x=".5" y=".5" stroke="#364141" rx="3"/>
+      <text fill="#364141" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+        <tspan x="17.845" y="19">Contact Us</tspan>
+      </text>
+    </g>
+    <text font-family="ProximaNova-Bold, Proxima Nova" font-size="18" font-weight="bold">
+      <tspan x="351.25" y="224" fill="#364141">Data Unavailable</tspan> <tspan x="236.24" y="248" fill="#515E5F" font-family="ProximaNova-Regular, Proxima Nova" font-size="16" font-weight="normal">We are unable to retrieve all of your data at this time.</tspan>
+    </text>
+    <g transform="translate(401 155)">
+      <path fill="#ED4C42" d="M38.8514902,32.9896565 L24.68288,8.45066567 C24.164805,7.55306379 23.2074025,7.00005577 22.1706605,7.00005577 C21.1339185,7.00005577 20.1765159,7.55306379 19.6578489,8.45066567 L5.38858411,33.1666901 C4.87050914,34.064292 4.87050914,35.1697159 5.38858411,36.0679099 C5.90665907,36.9655118 6.8646537,37.5179277 7.90139572,37.5179277 L36.4405174,37.5179277 L36.4488065,37.5179277 C38.0515825,37.5179277 39.3500264,36.2194838 39.3500264,34.6167079 C39.3500264,34.0139647 39.1658877,33.4532596 38.8514902,32.9896565"/>
+      <path fill="#172121" fill-rule="nonzero" d="M34.3546865,31.0124981 C34.3546865,33.0744559 32.6839521,34.7451904 30.6219942,34.7451904 L3.73285962,34.7451904 C2.39893809,34.7451904 1.16647469,34.0341376 0.499780347,32.879042 C-0.166580045,31.7237635 -0.166580045,30.3015864 0.499979886,29.1467238 L13.940555,5.86608626 C14.6078281,4.71130766 15.8396979,4.00005577 17.1732442,4.00005577 C18.5069781,4.00005577 19.7389779,4.71150411 20.4055426,5.866375 L33.7344433,28.9510509 C34.136208,29.5569759 34.3546865,30.2701552 34.3546865,31.0124981 Z M18.6734422,6.86628923 C18.3640178,6.33018937 17.7923326,6.00005577 17.1732442,6.00005577 C16.5541223,6.00005577 15.9822303,6.3302524 15.6724317,6.86638777 L2.23210392,30.1465969 C1.92264543,30.6827559 1.92264543,31.3430019 2.23210392,31.8795146 C2.54128079,32.4151856 3.11327602,32.7451904 3.73285962,32.7451904 L30.6219942,32.7451904 C31.5793826,32.7451904 32.3546865,31.9698864 32.3546865,31.0124981 C32.3546865,30.6603297 32.2501602,30.3253559 32.057476,30.0412284 L18.6734422,6.86628923 Z"/>
+      <path fill="#FFF" d="M19.7755571,29.3656 C19.7755571,29.5314571 19.6409857,29.6656 19.4751286,29.6656 L17.3001286,29.6656 C17.1342714,29.6656 17.0001286,29.5314571 17.0001286,29.3656 L17.0001286,27.4156 C17.0001286,27.2497429 17.1342714,27.1156 17.3001286,27.1156 L19.4751286,27.1156 C19.6409857,27.1156 19.7755571,27.2497429 19.7755571,27.4156 L19.7755571,29.3656 Z M19.7755571,24.9785714 C19.7755571,25.1444286 19.6409857,25.2781429 19.4751286,25.2781429 L17.3001286,25.2781429 C17.1342714,25.2781429 17.0001286,25.144 17.0001286,24.9785714 L17.0001286,16.7285714 C17.0001286,16.5631429 17.1342714,16.4285714 17.3001286,16.4285714 L19.4751286,16.4285714 C19.6409857,16.4285714 19.7755571,16.5627143 19.7755571,16.7285714 L19.7755571,24.9785714 Z"/>
+      <path stroke="#ED4C42" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M53.0430108,14 L53.0430108,22 M49,17.9569892 L57,17.9569892"/>
+      <circle cx="42.5" cy="2.5" r="2.5" fill="#ED4C42" fill-rule="nonzero"/>
+    </g>
+    <text fill="#929A9B" font-family="ProximaNova-Semibold, Proxima Nova" font-size="13" font-weight="500">
+      <tspan x="40" y="105">Messages Per Day</tspan>
+    </text>
+    <text fill="#323232" font-family="ProximaNova-Semibold, Proxima Nova" font-size="18" font-weight="500">
+      <tspan x="40" y="58">Posts &amp; Conversations</tspan>
+    </text>
+  </g>
+</svg>
