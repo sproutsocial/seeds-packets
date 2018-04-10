@@ -1,6 +1,6 @@
 {
   "name": "@sproutsocial/seeds-typography",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "stability": "stable",
   "description": "SEEDS Design System Typography Styles",
   "main": "dist/seeds-typography.js",
@@ -13,6 +13,6 @@
     "build": "gulp"
   },
   "devDependencies": {
-    "@sproutsocial/seeds-utils": "*"
+    "@sproutsocial/seeds-utils": "^0.2.1"
   }
 }

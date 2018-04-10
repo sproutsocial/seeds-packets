@@ -1,6 +1,6 @@
 {
   "name": "@sproutsocial/seeds-dataviz",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "stability": "alpha",
   "description": "SEEDS principles for data visualization",
   "main": "package.json",
@@ -10,7 +10,7 @@
   },
   "author": "Sprout Social",
   "devDependencies": {
-    "@sproutsocial/seeds-utils": "*",
+    "@sproutsocial/seeds-utils": "^0.2.1",
     "ase-util": "^1.0.1"
   }
 }
