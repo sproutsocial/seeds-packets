@@ -4,7 +4,7 @@ layout: default
 ---
 
 <p class="Typography-size--500">
-A packet is any collection of information, guidelines, code or resources centered around one theme. Packages contain everything you need to successfully style your work.
+A Packet is any collection of information, guidelines, code or resources centered around one theme. Packages contain everything you need to successfully style your work.
 </p>
 
 <hr>

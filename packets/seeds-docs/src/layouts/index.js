@@ -115,7 +115,6 @@ class TemplateWrapper extends React.Component {
               {data.site.siteMetadata.title}
             </abbr>
           </Link>
-
           <div className="Sidebar-nav nav">
             <Sidebar
               pages={data.pages.edges}
