@@ -22,13 +22,31 @@
     max-height: 100vh;
     overflow-y: auto;
   }
-  .Nav-item:not(.Nav-item--active) .Nav {
-    display: none;
+
+  nav {
+    max-width: 250px;
+    width: 100%;
   }
+  summary {
+    outline: 0;
+    position: relative;
+    width: 100%;
+    display: block;
+  }
+
+     summary::-webkit-details-marker {
+      position: absolute;
+      right: 0;
+      top: $Space-size--300;
+    } 
   .Nav-link {
     @include Typography-size--400;
     font-weight: $Typography-weight--bold;    
     color: $Color-gray--800;
+
+    &.isActive {
+      text-decoration: underline;
+    }
   }
   .Nav-link--primary { 
     color: $Color-green--700;

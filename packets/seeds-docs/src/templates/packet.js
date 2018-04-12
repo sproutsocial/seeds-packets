@@ -44,13 +44,13 @@ export default class PacketPage extends React.Component {
     try {
       Examples = require(`../components/examples/${pkg.packetName}`);
     } catch (error) {
-      console.info('Module missing:', exampleComponent);
+      // console.info('Module missing:', exampleComponent);
     }
 
     try {
       Utility = require(`../components/utilities/${pkg.packetName}`);
     } catch (error) {
-      console.info('Module missing:', utilityComponent);
+      // console.info('Module missing:', utilityComponent);
     }
 
     return (
