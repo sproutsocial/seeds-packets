@@ -7,8 +7,19 @@ import Mustache from 'mustache';
 export default class Page extends React.Component {
   constructor(props) {
     super(props);
+    const renderer = new marked.Renderer();
+    renderer.listitem = function(text) {
+      if (text.match(/<strong>DO:<\/strong>/g)) {
+        return '<li class="do">' + text + '</li>\n';
+      } else if (text.match(/<strong>DON[’']T:<\/strong>/g)) {
+        return '<li class="dont">' + text + '</li>\n';
+      } else {
+        return '<li>' + text + '</li>\n';
+      }
+    };
+
     marked.setOptions({
-      renderer: new marked.Renderer(),
+      renderer: renderer,
       gfm: true,
       tables: true,
       breaks: false,
@@ -22,7 +33,10 @@ export default class Page extends React.Component {
   render() {
     const {data} = this.props;
     const page = data.markdownRemark;
-    const html = Mustache.render(marked(fm(page.internal.content).body), Object.assign({}, {siteUrl: __PATH_PREFIX__}));
+    const html = Mustache.render(
+      marked(fm(page.internal.content).body),
+      Object.assign({}, {siteUrl: __PREFIX_PATHS__ ? __PATH_PREFIX__ : ''})
+    );
 
     return (
       <div>

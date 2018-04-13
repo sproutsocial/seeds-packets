@@ -1,6 +1,5 @@
 ---
 title: Data Visualization
-layout: default
 ---
 
 Having a standardized language for how we handle data provides a consistent story for our users. This consistent story helps users identify trends and answer questions about their data.
@@ -176,16 +175,6 @@ A table is a good way to showcase a large amount of information which has a vari
 		<li class='dont'>**DON'T:** Call out negative trends ![DON'T: Trends]({{{siteUrl}}}/assets/trendsdont.svg)</li>
 	</ul>
 </details>
-
-## Accessibility
-
-We aspire to meet the WCAG 2.0 AA Standards.
-
-## Resources
-
-### Links
-
-- List some helpful [links](https://www.youtube.com/watch?v=S73swRzxs8Y) here.
 
 ## Data States
 

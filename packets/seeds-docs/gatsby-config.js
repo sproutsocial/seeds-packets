@@ -25,6 +25,20 @@ module.exports = {
     'transformer-seeds-packet',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-manifest',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1000
+            }
+          }
+        ]
+      }
+    }
   ]
 };
