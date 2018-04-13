@@ -1,6 +1,6 @@
 {
   "name": "@sproutsocial/seeds-depth",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "stability": "alpha",
   "description": "Elevation and depth provides users with subtle context on where UI is contained within any design. By using depth, we can emphasis hierarchy visually and provide better cues for users navigating an application.",
   "main": "dist/seeds-depth.js",
@@ -13,7 +13,7 @@
     "build": "gulp"
   },
   "devDependencies": {
-    "@sproutsocial/seeds-utils": "^0.2.1",
+    "@sproutsocial/seeds-utils": "^0.2.3",
     "ase-util": "^1.0.1"
   }
 }

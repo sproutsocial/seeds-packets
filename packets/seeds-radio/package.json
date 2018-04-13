@@ -1,6 +1,6 @@
 {
   "name": "@sproutsocial/seeds-radio",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "stability": "alpha",
   "description": "SEEDS Design System Radio Buttons",
   "main": "dist/seeds-radio.js",
@@ -10,6 +10,6 @@
   },
   "author": "Sprout Social",
   "devDependencies": {
-    "@sproutsocial/seeds-utils": "^0.2.1"
+    "@sproutsocial/seeds-utils": "^0.2.3"
   }
 }
