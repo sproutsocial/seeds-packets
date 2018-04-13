@@ -1,9 +1,8 @@
 ---
 title: Accessibility
-layout: default
 ---
 
-We aim to make our software accessible to the widest audience possible. Empowering all people to successfully use our Platforms requires taking a Universal approach to design and development. 
+We aim to make our software accessible to the widest audience possible. Empowering all people to successfully use our Platforms requires taking a Universal approach to design and development.
 
 
 ## Practice
@@ -52,7 +51,7 @@ A Universal Design approach means we consistently focus on these aspects of User
 	- **Forgiving** - Can a user feel confident that they can explore without fear of breaking something or reverting a change?
 	- **Low Physical Effort** - Is it physically strenuous to use the app? Are there other paths of interaction if a user has a motor impairment?
 
-	
+
 ## Keyboard Navigation
 
 We aspire to meet the WCAG 2.0 AA Standards.

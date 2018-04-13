@@ -1,6 +1,5 @@
 ---
 title: What is a Packet?
-layout: default
 ---
 
 <p class="Typography-size--500">

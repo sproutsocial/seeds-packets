@@ -1,6 +1,5 @@
 ---
 title: Home
-layout: default
 ---
 
 <p class="Typography-size--500">
