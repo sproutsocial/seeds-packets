@@ -41,7 +41,7 @@ export default class Page extends React.Component {
     return (
       <div>
         <Helmet title={`${page.frontmatter.title} | SEEDS`} />
-        <h1>{page.frontmatter.title}</h1>
+        {page.frontmatter.title && <h1>{page.frontmatter.title}</h1>}
         <div dangerouslySetInnerHTML={{__html: html}} />
       </div>
     );

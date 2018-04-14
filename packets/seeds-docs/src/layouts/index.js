@@ -6,21 +6,12 @@ import Helmet from 'react-helmet';
 import Sidebar from '../components/sidebar';
 import './scss/index.scss';
 
-/**
- * Function to build out a list of subnav links from all h2's in the main content area.
- *
- * @returns [Link] - An array of link objects
- */
-function getSubnavLinks() {
-  return [].map
-    .call(document.querySelectorAll('main h2'), heading => {
-      return {
-        url: heading.id ? `#${heading.id}` : null,
-        title: heading.innerText
-      };
-    })
-    .filter(link => !!link.url);
-}
+const titleize = slug => {
+  return slug
+    .split('-')
+    .map(word => word.charAt(0).toUpperCase() + word.substring(1).toLowerCase())
+    .join(' ');
+};
 
 const adverbs = [
   'Extremely',
@@ -67,30 +58,11 @@ class TemplateWrapper extends React.Component {
     };
   }
 
-  componentDidMount() {
-    // Wait until children render to build out subnav links
-    requestAnimationFrame(() =>
-      this.setState({
-        subnavLinks: getSubnavLinks()
-      })
-    );
-  }
-
   componentWillReceiveProps() {
     this.setState({
       adverb: getRandomArrayValue(adverbs),
       adjective: getRandomArrayValue(adjectives)
     });
-  }
-
-  componentDidUpdate(prevProps, prevState) {
-    if (prevProps.children) {
-      requestAnimationFrame(() =>
-        this.setState({
-          subnavLinks: getSubnavLinks()
-        })
-      );
-    }
   }
 
   render() {
@@ -122,6 +94,40 @@ class TemplateWrapper extends React.Component {
               activePage={location.pathname}
               subnavLinks={this.state.subnavLinks}
             />
+
+            <nav>
+              <ul className="Nav flex-column">
+                <li className="Nav-item">
+                  <details>
+                    <summary className="Nav-link">Design Systems</summary>
+                    <ul className="Nav">
+                      {data.topLevelPages.edges.map(({node}, i) => (
+                        <li key={i}>
+                          <Link to={node.fields.slug} className="Nav-link">
+                            {titleize(node.fields.baseName)}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                </li>
+
+                <li className="Nav-item">
+                  <details>
+                    <summary className="Nav-link">Patterns</summary>
+                    <ul className="Nav">
+                      {data.patternPages.edges.map(({node}, i) => (
+                        <li key={i}>
+                          <Link to={node.fields.slug} className="Nav-link">
+                            {titleize(node.fields.baseName)}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </details>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
 
@@ -145,6 +151,7 @@ export const query = graphql`
         title
       }
     }
+
     pages: allMarkdownRemark(
       sort: {fields: [frontmatter___title], order: ASC}
       filter: {fileAbsolutePath: {regex: "/pages/"}}
@@ -161,11 +168,41 @@ export const query = graphql`
         }
       }
     }
+
     packets: allSeedsPacket(sort: {fields: [packetName], order: ASC}) {
       edges {
         node {
           id
           packetName
+        }
+      }
+    }
+
+    patternPages: allMarkdownRemark(
+      filter: {fileAbsolutePath: {regex: "/design-systems/patterns/"}, fields: {baseName: {ne: "README"}}}
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+            baseName
+          }
+        }
+      }
+    }
+
+    topLevelPages: allMarkdownRemark(
+      filter: {
+        fileAbsolutePath: {regex: "/(?=^.*design-systems)(?!^.*patterns).*/"}
+        fields: {baseName: {ne: "README"}}
+      }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+            baseName
+          }
         }
       }
     }

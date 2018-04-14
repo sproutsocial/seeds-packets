@@ -34,6 +34,37 @@ exports.createPages = ({graphql, boundActionCreators}) => {
   });
 
   /**
+   * Create pages from Markdown files in design-systems
+   */
+  const dsPages = new Promise((resolve, reject) => {
+    graphql(`
+      {
+        pages: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/design-systems/"}}) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+            }
+          }
+        }
+      }
+    `).then(result => {
+      result.data.pages.edges.map(({node}) => {
+        createPage({
+          path: node.fields.slug,
+          component: path.resolve('./src/templates/page.js'),
+          context: {
+            // Data passed to context is available in page queries as GraphQL variables.
+            slug: node.fields.slug
+          }
+        });
+      });
+      resolve();
+    });
+  });
+
+  /**
    * Create pages from SEEDS packets
    */
   const packets = new Promise((resolve, reject) => {
@@ -74,5 +105,5 @@ exports.createPages = ({graphql, boundActionCreators}) => {
     });
   });
 
-  return Promise.all([pages, packets]);
+  return Promise.all([pages, packets, dsPages]);
 };

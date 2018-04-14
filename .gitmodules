@@ -1,0 +1,3 @@
+[submodule "packets/seeds-docs/design-systems"]
+	path = packets/seeds-docs/design-systems
+	url = git@github.com:sproutsocial/design-systems.git

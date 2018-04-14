@@ -18,7 +18,15 @@ module.exports = {
         path: `${__dirname}/node_modules/@sproutsocial`
       }
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'design-system',
+        path: `${__dirname}/design-systems/`
+      }
+    },
     'gatsby-plugin-sass',
+    'gatsby-plugin-catch-links',
     'gatsby-transformer-json',
     'gatsby-transformer-yaml',
     'gatsby-transformer-remark',
@@ -35,6 +43,13 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 1000
+            }
+          },
+          {
+            resolve: 'gatsby-remark-external-links',
+            options: {
+              target: '_blank',
+              rel: 'nofollow'
             }
           }
         ]
