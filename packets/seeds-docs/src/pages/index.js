@@ -1,9 +1,11 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import CodeSandbox from '../components/CodeSandbox';
+import RenderDoc from '../components/RenderDocumentation';
+import outdent from 'outdent';
 
 class IndexPage extends React.Component {
   render() {
-    return <div dangerouslySetInnerHTML={{__html: this.props.data.dsPages.html}} />;
+    return <div>{RenderDoc(this.props.data.indexPage.htmlAst)}</div>;
   }
 }
 
@@ -11,8 +13,8 @@ export default IndexPage;
 
 export const query = graphql`
   query IndexQuery {
-    dsPages: markdownRemark(fileAbsolutePath: {regex: "/design-systems/README/"}) {
-      html
+    indexPage: markdownRemark(fileAbsolutePath: {regex: "/design-systems/README/"}) {
+      htmlAst
     }
   }
 `;

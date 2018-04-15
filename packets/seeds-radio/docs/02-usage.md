@@ -12,6 +12,6 @@
 ### Do’s and Don’ts
 
 - **DO:** Use sentence case for writing labels. Be clear and concise
-    ![Sentence Case label]({{{siteUrl}}}/assets/SEEDS-radio-do-sentence-case.svg)
+    ![Sentence Case label](/assets/SEEDS-radio-do-sentence-case.svg)
 - **DON’T:** Use all caps or title case.
-    ![All Caps label]({{{siteUrl}}}/assets/SEEDS-radio-dont-all-caps.svg)
+    ![All Caps label](/assets/SEEDS-radio-dont-all-caps.svg)

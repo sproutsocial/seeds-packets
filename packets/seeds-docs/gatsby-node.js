@@ -39,7 +39,9 @@ exports.createPages = ({graphql, boundActionCreators}) => {
   const dsPages = new Promise((resolve, reject) => {
     graphql(`
       {
-        pages: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/design-systems/"}}) {
+        pages: allMarkdownRemark(
+          filter: {fileAbsolutePath: {regex: "/design-systems/"}, fields: {baseName: {ne: "README"}}}
+        ) {
           edges {
             node {
               fields {

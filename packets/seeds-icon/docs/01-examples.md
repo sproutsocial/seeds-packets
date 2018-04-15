@@ -8,7 +8,7 @@ Icons should be designed on both the 20px Large and a 16px Default grid (both on
 
 #### Default & Large Icon Grid
 
-![icon]({{{siteUrl}}}/assets/SEEDS-Icon-Grids.svg)
+![icon](/assets/SEEDS-Icon-Grids.svg)
 
 ### Shapes
 
@@ -16,11 +16,11 @@ Create icons on the grid using basic foundational shapes, which include; circles
 
 #### Default Icon Grid
 
-![icon]({{{siteUrl}}}/assets/SEEDS-Default-Icon-Shapes-Grid.svg)
+![icon](/assets/SEEDS-Default-Icon-Shapes-Grid.svg)
 
 #### Large Icon Grid
 
-![icon]({{{siteUrl}}}/assets/SEEDS-Large-Icon-Shapes-Grid.svg)
+![icon](/assets/SEEDS-Large-Icon-Shapes-Grid.svg)
 
 
 ### Product Icons
@@ -51,4 +51,4 @@ The Tertiary icons can be any of the main feature icons in the library. They are
 
 System Icons are representations of a command, file, device, directory, or common action.
 
-Our 1-color system icons use thick lines when necessary and fill the shape of each illustrated icon with a solid color from our brand palette. 
+Our 1-color system icons use thick lines when necessary and fill the shape of each illustrated icon with a solid color from our brand palette.

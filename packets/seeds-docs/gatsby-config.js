@@ -26,6 +26,7 @@ module.exports = {
       }
     },
     'gatsby-plugin-sass',
+    'gatsby-plugin-styled-components',
     'gatsby-plugin-catch-links',
     'gatsby-transformer-json',
     'gatsby-transformer-yaml',
@@ -51,7 +52,9 @@ module.exports = {
               target: '_blank',
               rel: 'nofollow'
             }
-          }
+          },
+          'gatsby-remark-component',
+          'gatsby-remark-seeds-formatting'
         ]
       }
     }

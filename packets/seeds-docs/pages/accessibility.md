@@ -24,9 +24,9 @@ Accessibility is for everyone.
 ### Do’s and Don’ts
 
 - **DO:** Use the native browser `outline` on focus
-	![focus]({{{siteUrl}}}/assets/SEEDS-focus-outline.svg)
+	![focus](/assets/SEEDS-focus-outline.svg)
 - **DON’T:** Subdue or alter the native browser `outline`
-	![focus]({{{siteUrl}}}/assets/SEEDS-focus-no-outline.svg)
+	![focus](/assets/SEEDS-focus-no-outline.svg)
 - **DO:** Consider Accessibility practices as a continuous responsibility for all team members
 - **DON'T:** Allow Accessibility features to be an after-thought
 - **DO:** Understand expected keyboard navigation before beginning development.

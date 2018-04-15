@@ -136,21 +136,21 @@ Networks colors should not be used in data visualization.
 	<summary>Show</summary>
 
 	<ul>
-		<li class='do'>**DO:** Show the axis lines where the data will be represented ![DO: Axis Lines]({{{siteUrl}}}/assets/axislinesdo.svg)</li>
+		<li class='do'>**DO:** Show the axis lines where the data will be represented ![DO: Axis Lines](/assets/axislinesdo.svg)</li>
 
-		<li class='do'>**DO:** Extend the axis lines to fill the full width of the content area ![DON'T: Axis Lines]({{{siteUrl}}}/assets/axislinesdont.svg)</li>
+		<li class='do'>**DO:** Extend the axis lines to fill the full width of the content area ![DON'T: Axis Lines](/assets/axislinesdont.svg)</li>
 
-		<li class='dont'>**DON'T:** Use standard abbreviations for labels ![DO: Abbreviations]({{{siteUrl}}}/assets/abbreviationdo.svg)</li>
+		<li class='dont'>**DON'T:** Use standard abbreviations for labels ![DO: Abbreviations](/assets/abbreviationdo.svg)</li>
 
-		<li class='do'>**DO:** Slant labels to make them fit ![DON'T: Abbreviations]({{{siteUrl}}}/assets/abbreviationdont.svg)</li>
+		<li class='do'>**DO:** Slant labels to make them fit ![DON'T: Abbreviations](/assets/abbreviationdont.svg)</li>
 
-		<li class='dont'>**DON'T:** Center the chart Key below the chart ![DO: Key]({{{siteUrl}}}/assets/keydo.svg)</li>
+		<li class='dont'>**DON'T:** Center the chart Key below the chart ![DO: Key](/assets/keydo.svg)</li>
 
-		<li class='do'>**DO:** Left or Right Align the chart Key, or place it above the chart ![DON'T: Key]({{{siteUrl}}}/assets/keydont.svg)</li>
+		<li class='do'>**DO:** Left or Right Align the chart Key, or place it above the chart ![DON'T: Key](/assets/keydont.svg)</li>
 
-		<li class='do'>**DO:** Round off points ![DO: Points]({{{siteUrl}}}/assets/pointsdo.svg)</li>
+		<li class='do'>**DO:** Round off points ![DO: Points](/assets/pointsdo.svg)</li>
 
-		<li class='do'>**DO:** Have charts have any sharp points ![DON'T: Points]({{{siteUrl}}}/assets/pointsdont.svg)</li>
+		<li class='do'>**DO:** Have charts have any sharp points ![DON'T: Points](/assets/pointsdont.svg)</li>
 	</ul>
 </details>
 
@@ -164,15 +164,15 @@ A table is a good way to showcase a large amount of information which has a vari
 	<summary>Show</summary>
 
 	<ul>
-		<li class='do'>**DO:** Left align non-numeric values and right align numeric values ![DO: Data]({{{siteUrl}}}/assets/datado.svg)</li>
-		<li class='do'>**DO:** Left align non-numeric values and right align numeric values ![DO: Data]({{{siteUrl}}}/assets/datado.svg)</li>
-		<li class='dont'>**DON’T:** Center column headers and data ![DON'T: Data]({{{siteUrl}}}/assets/datadont.svg)</li>
-		<li class='do'>**DO:** Use lines to separate rows ![DO: Rows]({{{siteUrl}}}/assets/rowdo.svg)</li>
-		<li class='dont'>**DON'T:** Use background fills to separate rows ![DON'T: Rows]({{{siteUrl}}}/assets/rowdont.svg)</li>
-		<li class='do'>**DO:** Place totals as the last row with a `2px` stroke and bold the text if the items in the table are added to equal the total ![DO: Totals]({{{siteUrl}}}/assets/totalsdo.svg)</li>
-		<li class='do'>**DO:** Place totals as the first row with a `2px` stroke below and bold the text if the items in the total are not added from the other rows ![DO: Totals]({{{siteUrl}}}/assets/totalsdo2.svg)</li>
-		<li class='do'>**DO:** Call out positive trends ![DO: Trends]({{{siteUrl}}}/assets/trendsdo.svg)</li>
-		<li class='dont'>**DON'T:** Call out negative trends ![DON'T: Trends]({{{siteUrl}}}/assets/trendsdont.svg)</li>
+		<li class='do'>**DO:** Left align non-numeric values and right align numeric values ![DO: Data](/assets/datado.svg)</li>
+		<li class='do'>**DO:** Left align non-numeric values and right align numeric values ![DO: Data](/assets/datado.svg)</li>
+		<li class='dont'>**DON’T:** Center column headers and data ![DON'T: Data](/assets/datadont.svg)</li>
+		<li class='do'>**DO:** Use lines to separate rows ![DO: Rows](/assets/rowdo.svg)</li>
+		<li class='dont'>**DON'T:** Use background fills to separate rows ![DON'T: Rows](/assets/rowdont.svg)</li>
+		<li class='do'>**DO:** Place totals as the last row with a `2px` stroke and bold the text if the items in the table are added to equal the total ![DO: Totals](/assets/totalsdo.svg)</li>
+		<li class='do'>**DO:** Place totals as the first row with a `2px` stroke below and bold the text if the items in the total are not added from the other rows ![DO: Totals](/assets/totalsdo2.svg)</li>
+		<li class='do'>**DO:** Call out positive trends ![DO: Trends](/assets/trendsdo.svg)</li>
+		<li class='dont'>**DON'T:** Call out negative trends ![DON'T: Trends](/assets/trendsdont.svg)</li>
 	</ul>
 </details>
 
@@ -194,74 +194,74 @@ Provide a clear and reassuring way to communicate to a user the status of their 
 
 	Use a branded loader for main sections. If a branded loader is not provided, fall back to a generic loader.
 
-	![Chart Loading]({{{siteUrl}}}/assets/state-loading-chart.svg)
-	![Bambu Chart Loading]({{{siteUrl}}}/assets/state-loading-bambu.svg)
-	![Fallback Loader]({{{siteUrl}}}/assets/state-loading-fallback.svg)
-	![Donut Loading]({{{siteUrl}}}/assets/state-loading-donut.svg)
-	![Horizontal Loading]({{{siteUrl}}}/assets/state-loading-horizontal.svg)
-	![Influencers Loading]({{{siteUrl}}}/assets/state-loading-influencers.svg)
-	![Overview Loading]({{{siteUrl}}}/assets/state-loading-overview.svg)
-	![Table Loading]({{{siteUrl}}}/assets/state-loading-table.svg)
-	![Word Cloud Loading]({{{siteUrl}}}/assets/state-loading-word-cloud.svg)
+	![Chart Loading](/assets/state-loading-chart.svg)
+	![Bambu Chart Loading](/assets/state-loading-bambu.svg)
+	![Fallback Loader](/assets/state-loading-fallback.svg)
+	![Donut Loading](/assets/state-loading-donut.svg)
+	![Horizontal Loading](/assets/state-loading-horizontal.svg)
+	![Influencers Loading](/assets/state-loading-influencers.svg)
+	![Overview Loading](/assets/state-loading-overview.svg)
+	![Table Loading](/assets/state-loading-table.svg)
+	![Word Cloud Loading](/assets/state-loading-word-cloud.svg)
 </details>
 
 <details>
 	<summary>**Zero Data**</summary>
 
-	![Chart Zero Data]({{{siteUrl}}}/assets/state-zero-chart.svg)
-	![Donut Zero Data]({{{siteUrl}}}/assets/state-zero-donut.svg)
-	![Horizontal Bar Zero Data]({{{siteUrl}}}/assets/state-zero-horizontal-bar.svg)
-	![Influencers Zero Data]({{{siteUrl}}}/assets/state-zero-influencers.svg)
-	![Table Zero Data]({{{siteUrl}}}/assets/state-zero-table.svg)
-	![Word Cloud Zero Data]({{{siteUrl}}}/assets/state-zero-word-cloud.svg)
+	![Chart Zero Data](/assets/state-zero-chart.svg)
+	![Donut Zero Data](/assets/state-zero-donut.svg)
+	![Horizontal Bar Zero Data](/assets/state-zero-horizontal-bar.svg)
+	![Influencers Zero Data](/assets/state-zero-influencers.svg)
+	![Table Zero Data](/assets/state-zero-table.svg)
+	![Word Cloud Zero Data](/assets/state-zero-word-cloud.svg)
 </details>
 
 <details>
 	<summary>**Gathering Data**</summary>
 
-	![Chart Gathering]({{{siteUrl}}}/assets/state-gathering-chart.svg)
-	![Donut Gathering]({{{siteUrl}}}/assets/state-gathering-donut.svg)
-	![Horizontal Bar Gathering]({{{siteUrl}}}/assets/state-gathering-horizontal-bar.svg)
-	![Influencers Gathering]({{{siteUrl}}}/assets/state-gathering-influencers.svg)
-	![Multi Select Gathering]({{{siteUrl}}}/assets/state-gathering-multi-select.svg)
-	![Overview Gathering]({{{siteUrl}}}/assets/state-gathering-overview.svg)
-	![Table Gathering]({{{siteUrl}}}/assets/state-gathering-table.svg)
-	![Word Cloud Gathering]({{{siteUrl}}}/assets/state-gathering-word-cloud.svg)
+	![Chart Gathering](/assets/state-gathering-chart.svg)
+	![Donut Gathering](/assets/state-gathering-donut.svg)
+	![Horizontal Bar Gathering](/assets/state-gathering-horizontal-bar.svg)
+	![Influencers Gathering](/assets/state-gathering-influencers.svg)
+	![Multi Select Gathering](/assets/state-gathering-multi-select.svg)
+	![Overview Gathering](/assets/state-gathering-overview.svg)
+	![Table Gathering](/assets/state-gathering-table.svg)
+	![Word Cloud Gathering](/assets/state-gathering-word-cloud.svg)
 </details>
 
 <details>
 	<summary>**Data Error**</summary>
 
-	![Chart Error]({{{siteUrl}}}/assets/state-error-chart.svg)
-	![Donut Error]({{{siteUrl}}}/assets/state-error-donut.svg)
-	![Horizontal Bar Error]({{{siteUrl}}}/assets/state-error-horizontal-bar.svg)
-	![Influencers Error]({{{siteUrl}}}/assets/state-error-influencers.svg)
-	![Multi Select Error]({{{siteUrl}}}/assets/state-error-multi-select.svg)
-	![Overview Error]({{{siteUrl}}}/assets/state-error-overview.svg)
-	![Table Error]({{{siteUrl}}}/assets/state-error-table.svg)
-	![Word Cloud Error]({{{siteUrl}}}/assets/state-error-word-cloud.svg)
+	![Chart Error](/assets/state-error-chart.svg)
+	![Donut Error](/assets/state-error-donut.svg)
+	![Horizontal Bar Error](/assets/state-error-horizontal-bar.svg)
+	![Influencers Error](/assets/state-error-influencers.svg)
+	![Multi Select Error](/assets/state-error-multi-select.svg)
+	![Overview Error](/assets/state-error-overview.svg)
+	![Table Error](/assets/state-error-table.svg)
+	![Word Cloud Error](/assets/state-error-word-cloud.svg)
 </details>
 
 <details>
 	<summary>**Partial Data**</summary>
 
-	![Area Chart]({{{siteUrl}}}/assets/state-partial-area.svg)
-	![Chart]({{{siteUrl}}}/assets/state-partial-chart.svg)
-	![Donut Chart Gathering Data]({{{siteUrl}}}/assets/state-partial-donut-gathering.svg)
-	![Donut Chart Missing Data]({{{siteUrl}}}/assets/state-partial-donut-missing.svg)
-	![Table Missing Data]({{{siteUrl}}}/assets/state-partial-table-missing.svg)
-	![Table Partial Data]({{{siteUrl}}}/assets/state-partial-table.svg)
+	![Area Chart](/assets/state-partial-area.svg)
+	![Chart](/assets/state-partial-chart.svg)
+	![Donut Chart Gathering Data](/assets/state-partial-donut-gathering.svg)
+	![Donut Chart Missing Data](/assets/state-partial-donut-missing.svg)
+	![Table Missing Data](/assets/state-partial-table-missing.svg)
+	![Table Partial Data](/assets/state-partial-table.svg)
 </details>
 
 <details>
 	<summary>**Backfill**</summary>
 
-	![Chart]({{{siteUrl}}}/assets/state-backfill-chart.svg)
-	![Table]({{{siteUrl}}}/assets/state-backfill-table.svg)
+	![Chart](/assets/state-backfill-chart.svg)
+	![Table](/assets/state-backfill-table.svg)
 </details>
 
 <details>
 	<summary>**Unselected**</summary>
 
-	![Multi select chart]({{{siteUrl}}}/assets/state-unselected-multi-select-chart.svg)
+	![Multi select chart](/assets/state-unselected-multi-select-chart.svg)
 </details>

@@ -3,6 +3,7 @@ import fm from 'front-matter';
 import marked from 'marked';
 import Helmet from 'react-helmet';
 import Mustache from 'mustache';
+import RenderDoc from '../components/RenderDocumentation';
 
 export default class Page extends React.Component {
   constructor(props) {
@@ -43,6 +44,8 @@ export default class Page extends React.Component {
         <Helmet title={`${page.frontmatter.title} | SEEDS`} />
         {page.frontmatter.title && <h1>{page.frontmatter.title}</h1>}
         <div dangerouslySetInnerHTML={{__html: html}} />
+
+        {/* {RenderDoc(page.htmlAst)} */}
       </div>
     );
   }
@@ -52,6 +55,7 @@ export const query = graphql`
   query PageQuery($slug: String!) {
     markdownRemark(fields: {slug: {eq: $slug}}) {
       id
+      htmlAst
       internal {
         content
       }

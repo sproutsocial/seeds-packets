@@ -16,7 +16,8 @@ li {
   }
 }
 #do-s-and-don-ts + ul,
-#do-s-and-don-ts + details ul {
+#do-s-and-don-ts + details ul,
+.do-s-and-don-ts {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

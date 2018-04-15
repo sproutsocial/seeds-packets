@@ -19,8 +19,8 @@
 ### Do’s and Don’ts
 
 - **DO:** Only use network colors to represent a network’s brand (such as the color of their logo)
-    ![networkcolor]({{{siteUrl}}}/assets/SEEDS-Network-Color-Do.svg)
+    ![networkcolor](/assets/SEEDS-Network-Color-Do.svg)
 - **DON'T:** Use network colors for any actions (such as a submit button)
-    ![networkcolor]({{{siteUrl}}}/assets/SEEDS-Network-Color-Dont.svg)
+    ![networkcolor](/assets/SEEDS-Network-Color-Dont.svg)
 - **DON'T:** Use network colors in data viz.
-    ![networkcolor]({{{siteUrl}}}/assets/SEEDS-Network-Color-DataVis.svg)
+    ![networkcolor](/assets/SEEDS-Network-Color-DataVis.svg)
