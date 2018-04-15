@@ -35,9 +35,8 @@ export default class PacketPage extends React.Component {
     const pkg = data.seedsPacket;
     const title = upperFirst(pkg.packetName.replace('seeds-', ''));
     const sections = data.sections.edges;
+
     // Try to import example and resource components for the packet
-    const exampleComponent = `../components/examples/${pkg.packetName}`;
-    const utilityComponent = `../components/utilities/${pkg.packetName}`;
     let Examples = null;
     let Utility = null;
 
@@ -107,6 +106,7 @@ export const query = graphql`
       version
       stability
     }
+
     sections: allMarkdownRemark(
       filter: {fields: {packetName: {eq: $packetName}}}
       sort: {fields: [fields___baseName], order: ASC}

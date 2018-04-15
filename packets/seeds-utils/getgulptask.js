@@ -6,7 +6,7 @@ const insert = require('gulp-insert');
 const versions = require('./versions');
 
 /**
- * 
+ *
  * @param {String} pkg The name of the package
  * @param {String} transform The registered Theo transform to use
  * @param {String} format The registered Theo format to use
