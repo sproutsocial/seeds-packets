@@ -4,7 +4,7 @@ table {
   margin-bottom: $Space-size--600;
   border-collapse: collapse;
   @media screen and (max-width: 768px) {
-    display: block;    
+    display: block;
     overflow-x: auto;
     -ms-overflow-style: -ms-autohiding-scrollbar; // See https://github.com/twbs/bootstrap/pull/10057
   }
@@ -21,5 +21,9 @@ table {
       margin-left: $Space-size--300;
       vertical-align: middle;
     }
+  }
+
+  pre {
+    word-wrap: break-word;
   }
 }
