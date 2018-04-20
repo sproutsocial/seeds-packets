@@ -1,6 +1,6 @@
 {
   "name": "@sproutsocial/seeds-checkbox",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "stability": "alpha",
   "description": "SEEDS Design System Checkboxes",
   "main": "dist/seeds-checkbox.js",
@@ -10,6 +10,6 @@
   },
   "author": "Sprout Social",
   "devDependencies": {
-    "@sproutsocial/seeds-utils": "^0.2.3"
+    "@sproutsocial/seeds-utils": "^0.2.6"
   }
 }

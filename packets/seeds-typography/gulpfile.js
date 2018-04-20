@@ -45,6 +45,11 @@ gulp.task('typography-css', getGulpTypographyTask('web', 'custom-properties.css'
 gulp.task('typography-js', getGulpTypographyTask('js', 'common.js'));
 
 gulp.task(
+  'typography-js-unitless',
+  getGulpTypographyTask('js', 'common-unitless.js', {filename: 'seeds-typography-unitless'})
+);
+
+gulp.task(
   'typography-sketch',
   getGulpTypographyTask('sketch', 'sketchtext.json', {
     dest: 'dist',
@@ -96,7 +101,13 @@ gulp.task(
   'default',
   gulp.series([
     'clean',
-    gulp.parallel(['typography-css', 'typography-scss', 'typography-js', 'typography-sketch']),
+    gulp.parallel([
+      'typography-css',
+      'typography-scss',
+      'typography-js',
+      'typography-js-unitless',
+      'typography-sketch'
+    ]),
     'typography-docs'
   ])
 );
