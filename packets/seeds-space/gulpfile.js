@@ -20,6 +20,8 @@ gulp.task('space-css', getGulpSpaceTask('web', 'custom-properties.css'));
 
 gulp.task('space-js', getGulpSpaceTask('js', 'common.js'));
 
+gulp.task('space-js-unitless', getGulpSpaceTask('js', 'common-unitless.js', {filename: 'seeds-space-unitless'}));
+
 gulp.task('space-docs', done => {
   theo.plugins
     .file(spaceTokensPath)
@@ -49,4 +51,7 @@ gulp.task('space-docs', done => {
     );
 });
 
-gulp.task('default', gulp.series([gulp.parallel(['space-css', 'space-scss', 'space-js']), 'space-docs']));
+gulp.task(
+  'default',
+  gulp.series([gulp.parallel(['space-css', 'space-scss', 'space-js', 'space-js-unitless']), 'space-docs'])
+);
