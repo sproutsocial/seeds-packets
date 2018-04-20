@@ -1,6 +1,6 @@
 {
   "name": "@sproutsocial/seeds-space",
-  "version": "0.3.4",
+  "version": "0.4.0",
   "stability": "beta",
   "description": "SEEDS Space Tokens",
   "main": "dist/seeds-space.js",
@@ -13,6 +13,6 @@
     "build": "gulp"
   },
   "devDependencies": {
-    "@sproutsocial/seeds-utils": "^0.2.3"
+    "@sproutsocial/seeds-utils": "^0.2.6"
   }
 }
