@@ -17,12 +17,11 @@ For CSS, SCSS, or Javascript:
 Use `ease out` to shift user's attention to an element that was previously not in view and has entered the screen
 
 #### Fades and color changes
-Use `linear` motion to communicate a consistent start to finish of an action on an element that has not changed its shape or position.
-
+Use `linear` motion to communicate a consistent start to finish of an action on an element that has not changed its shape or position. Use the `quickly` duration for color changes or non-positional property transitions.
 
 ### Do’s and Don’ts
 
 - **DO:** Use natural movement – remain true to real world physics.
-- **DO:** Be Intentional and aware – animations should have a purpose.
+- **DO:** Be intentional and aware – animations should have a purpose.
 - **DO:** Be subtle – make animations brief to avoid user discomfort and anxiety.
 - **DO:** Add charisma – make the user feel anticipation and delight.

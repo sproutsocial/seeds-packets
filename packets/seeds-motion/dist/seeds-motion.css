@@ -4,5 +4,9 @@
     --motion-ease-in: cubic-bezier(.4, 0, 1, 1);
     --motion-ease-out: cubic-bezier(0, 0, .2, 1);
     --motion-ease-inout: cubic-bezier(.4, 0, .2, 1);
+    --motion-duration-immediately: 0.05s;
+    --motion-duration-quickly: 0.1s;
+    --motion-duration-promptly: 0.2s;
+    --motion-duration-slowly: 0.4s;
 }
     
