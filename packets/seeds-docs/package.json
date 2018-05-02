@@ -1,7 +1,7 @@
 {
   "name": "seeds-docs",
   "description": "The documention site for SEEDS.",
-  "version": "0.2.8",
+  "version": "0.3.0",
   "private": true,
   "author": "Eric Cecchi <eric.cecchi@sproutsocial.com",
   "dependencies": {
@@ -11,7 +11,7 @@
     "@sproutsocial/seeds-color": "^0.4.5",
     "@sproutsocial/seeds-depth": "^0.0.6",
     "@sproutsocial/seeds-icon": "^0.1.1",
-    "@sproutsocial/seeds-motion": "^0.3.5",
+    "@sproutsocial/seeds-motion": "^0.4.0",
     "@sproutsocial/seeds-networkcolor": "^0.4.7",
     "@sproutsocial/seeds-radio": "^0.0.3",
     "@sproutsocial/seeds-space": "^0.4.0",
