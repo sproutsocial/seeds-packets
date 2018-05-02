@@ -22,15 +22,15 @@ props:
 
   duration immediately:
     category: duration
-    value: 0.05s
+    value: .05s
   duration quickly:
     category: duration
-    value: 0.1s
+    value: .1s
     description: Use for color-fades and non-positional property transitions.
   duration promptly:
     category: duration
-    value: 0.2s
+    value: .2s
   duration slowly:
     category: duration
-    value: 0.4s
+    value: .4s
 ...

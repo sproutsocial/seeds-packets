@@ -86,15 +86,6 @@ class MotionExample extends React.Component {
         <ExampleTable
           tokens={tokens.filter(token => token.category == 'duration')}
           ChildClass={getTimingExample(isAnimatingTiming)}
-          exampleAction={
-            <button
-              type="button"
-              onClick={this.toggleTimingAnimation}
-              title="Hover balls to view animations individually"
-            >
-              {!isAnimatingTiming ? 'Play' : 'Stop'}
-            </button>
-          }
         />
       </div>
     );
