@@ -19,4 +19,18 @@ props:
     category: easing
     value: cubic-bezier(.4, 0, .2, 1)
     description: Use for elements that change position
+
+  duration immediately:
+    category: duration
+    value: .05s
+  duration quickly:
+    category: duration
+    value: .1s
+    description: Use for color-fades and non-positional property transitions.
+  duration promptly:
+    category: duration
+    value: .2s
+  duration slowly:
+    category: duration
+    value: .4s
 ...

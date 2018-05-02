@@ -1,9 +1,10 @@
 import React from 'react';
 import ExampleTable from '../example-table';
 import tokens from '@sproutsocial/seeds-motion/dist/tokens.json';
+import upperFirst from 'lodash.upperfirst';
 
 function getEasingExample(isAnimated = false) {
-  const exampleClassName = ['Example-motion-ball', isAnimated ? 'isAnimated' : ''].join(' ');
+  const exampleClassName = ['Example-motion-ball isEasing', isAnimated ? 'isAnimated' : ''].join(' ');
 
   return ({token}) => {
     const styles = {
@@ -19,34 +20,72 @@ function getEasingExample(isAnimated = false) {
   };
 }
 
+function getTimingExample(isAnimated = false) {
+  const exampleClassName = ['Example-motion-ball isTiming', isAnimated ? 'isAnimated' : ''].join(' ');
+
+  return ({token}) => {
+    const styles = {
+      transitionDuration: token.value,
+      animationDuration: token.value
+    };
+
+    return (
+      <div className="Example-motion">
+        <div className={exampleClassName} style={styles} />
+      </div>
+    );
+  };
+}
+
 class MotionExample extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      isAnimated: false
+      isAnimatingEasing: false,
+      isAnimatingTiming: false
     };
   }
 
-  toggleIsAnimated = () => {
-    this.setState({
-      isAnimated: !this.state.isAnimated
-    });
+  toggleEasingAnimation = () => {
+    this.setState({isAnimatingEasing: !this.state.isAnimatingEasing});
+  };
+
+  toggleTimingAnimation = () => {
+    this.setState({isAnimatingTiming: !this.state.isAnimatingTiming});
+  };
+
+  shouldComponentUpdate = (nextProps, nextState) => {
+    return (
+      this.state.isAnimatingEasing !== nextState.isAnimatingEasing ||
+      this.state.isAnimatingTiming !== nextState.isAnimatingTiming
+    );
   };
 
   render() {
-    const {isAnimated} = this.state;
+    const {isAnimatingEasing, isAnimatingTiming} = this.state;
+
     return (
       <div>
         <h3>Easing</h3>
         <ExampleTable
-          tokens={tokens}
-          ChildClass={getEasingExample(isAnimated)}
+          tokens={tokens.filter(token => token.category === 'easing')}
+          ChildClass={getEasingExample(isAnimatingEasing)}
           exampleAction={
-            <button type="button" onClick={this.toggleIsAnimated} title="Hover balls to view animations individually">
-              {!isAnimated ? 'Play' : 'Stop'}
+            <button
+              type="button"
+              onClick={this.toggleEasingAnimation}
+              title="Hover balls to view animations individually"
+            >
+              {!isAnimatingEasing ? 'Play' : 'Stop'}
             </button>
           }
+        />
+
+        <h3>Duration</h3>
+        <ExampleTable
+          tokens={tokens.filter(token => token.category == 'duration')}
+          ChildClass={getTimingExample(isAnimatingTiming)}
         />
       </div>
     );

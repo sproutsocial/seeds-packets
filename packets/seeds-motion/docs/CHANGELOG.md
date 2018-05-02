@@ -1,5 +1,9 @@
 ## Changelog
 
+### v0.4.0
+
+- **New** Added tokens for duration values.
+
 ### v0.3.1
 
 - **Updated** Under-the-hood dependency fix
