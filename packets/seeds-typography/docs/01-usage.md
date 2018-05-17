@@ -51,12 +51,12 @@ Make every effort to use the type tokens in any manner that suits the needs of y
 #### On Light Backgrounds
 - Neutral 800 is used for paragraphs.
 - Neutral 1000 is used for headlines.
-    ![typography]({{{siteUrl}}}/assets/SEEDS-Type-LightBackground.svg)
+    ![typography](/assets/SEEDS-Type-LightBackground.svg)
 
 #### On Dark Backgrounds
 - Neutral 200 is used for paragraphs.
 - Neutral 0 is used for headlines.
-    ![typography]({{{siteUrl}}}/assets/SEEDS-Type-DarkBackground.svg)
+    ![typography](/assets/SEEDS-Type-DarkBackground.svg)
 
 
 ### Do’s and Don’ts
@@ -64,16 +64,16 @@ Make every effort to use the type tokens in any manner that suits the needs of y
 - **DON’T:** Use italic styles anywhere.
 - **DO:** Use letter-spacing with uppercase text.
 - **DON’T:** Use uppercase for lines longer than 3 words.
-    ![typography]({{{siteUrl}}}/assets/SEEDS-Type-Dont-Uppercase.svg)
+    ![typography](/assets/SEEDS-Type-Dont-Uppercase.svg)
 - **DO:** Use between 50-80 characters per line.
-    ![typography]({{{siteUrl}}}/assets/SEEDS-Type-Do-Characters.svg)
+    ![typography](/assets/SEEDS-Type-Do-Characters.svg)
 - **DON’T:** Use letter-spacing for title case or sentence case text.
 - **DO:** Use Space Size 400 after paragraphs.
 - **DON’T:** Use hyphens for line breaks.
-    ![typography]({{{siteUrl}}}/assets/SEEDS-Type-Dont-Hyphens.svg)
+    ![typography](/assets/SEEDS-Type-Dont-Hyphens.svg)
 - **DON’T:** Use puncuation such as colons, semi-colons, and commas in headlines.
-    ![typography]({{{siteUrl}}}/assets/SEEDS-Type-Dont-Puncuation.svg)
+    ![typography](/assets/SEEDS-Type-Dont-Puncuation.svg)
 - **DO:** Use curly quotes and curly apostrophes in text.
-    ![typography]({{{siteUrl}}}/assets/SEEDS-Type-Do-CurlyQuotes.svg)
+    ![typography](/assets/SEEDS-Type-Do-CurlyQuotes.svg)
 - **DON’T:** Use inch marks or typewriter apostrophes in text.
-    ![typography]({{{siteUrl}}}/assets/SEEDS-Type-Dont-InchMarks.svg)
+    ![typography](/assets/SEEDS-Type-Dont-InchMarks.svg)
