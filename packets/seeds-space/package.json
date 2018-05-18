@@ -1,6 +1,6 @@
 {
   "name": "@sproutsocial/seeds-space",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "stability": "beta",
   "description": "SEEDS Space Tokens",
   "main": "dist/seeds-space.js",

@@ -1,6 +1,6 @@
 {
   "name": "@sproutsocial/seeds-networkcolor",
-  "version": "0.4.9",
+  "version": "0.4.10",
   "stability": "stable",
   "description": "SEEDS Design System Supported Networks Colors",
   "main": "dist/seeds-networkcolor.js",
