@@ -46,7 +46,7 @@
   </tr>
   <tr>
     <th scope="row">Focus</th>
-    <td colspan="3">**Focus states should default to the browser’s native treatment.**</td>
+    <td colspan="3"><strong>Focus states should default to the browser’s native treatment.</strong></td>
   </tr>
   <tr>
     <th scope="row">Disabled</th>

@@ -12,10 +12,7 @@
     "format:prettier": "prettier-eslint --write --eslint-ignore --print-width=120 --single-quote --no-bracket-spacing",
     "create-packet": "yo ./packets/generator-packet",
     "precommit": "lint-staged",
-    "build": "lerna run --scope !seeds-docs build",
-    "docs": "lerna run --scope !seeds-docs build && cd packets/seeds-docs && yarn build && cd -",
-    "docs-publish": "yarn run docs && gh-pages -d packets/seeds-docs/public",
-    "docs-serve": "yarn run build && cd packets/seeds-docs && yarn serve",
+    "build": "lerna run build",
     "postinstall": "lerna bootstrap"
   },
   "lint-staged": {

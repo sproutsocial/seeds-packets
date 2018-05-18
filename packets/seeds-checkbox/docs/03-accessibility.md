@@ -8,8 +8,10 @@ We aspire to meet the WCAG 2.0 AA Standards.
   - aria-checked is "false" if checkbox is not selected
   - aria-checked is "mixed" if checkbox is indetermiate
 - All checkboxes must have an associated label
-  ```<span role="checkbox" aria-checked="false" tabindex="0" id="chk1"></span>
-  <label for="chk1">Remember my preferences</label>```
+  ```
+  <span role="checkbox" aria-checked="false" tabindex="0" id="chk1"></span>
+  <label for="chk1">Remember my preferences</label>
+  ```
 - Since a checkbox is an interactive control it must be focusable and keyboard accessible.
 - If the role is applied to a non-focusable element, the tabindex attribute will have to be used to change this.
 - The expected keyboard shortcut for activating a checkbox is the Space key.

@@ -56,11 +56,11 @@ module.exports = class extends Generator {
     this.fs.copyTpl(this.templatePath('docs'), this.destinationPath(`${dirName}/docs`), Object.assign({}, this.props));
 
     if (this.props.tokenName) {
-      this.fs.copyTpl(
-        this.templatePath('example/index.js'),
-        this.destinationPath(`packets/seeds-docs/src/components/examples/seeds-${this.props.packetName}.js`),
-        Object.assign({}, this.props)
-      );
+      // this.fs.copyTpl(
+      //   this.templatePath('example/index.js'),
+      //   this.destinationPath(`packets/seeds-docs/src/components/examples/seeds-${this.props.packetName}.js`),
+      //   Object.assign({}, this.props)
+      // );
 
       this.fs.copyTpl(
         this.templatePath('gulpfile.js'),
@@ -75,9 +75,9 @@ module.exports = class extends Generator {
       );
     }
 
-    const docsPkg = this.fs.readJSON('packets/seeds-docs/package.json');
-    docsPkg.dependencies[`@sproutsocial/seeds-${this.props.packetName}`] = '*';
-    this.fs.writeJSON('packets/seeds-docs/package.json', docsPkg);
+    // const docsPkg = this.fs.readJSON('packets/seeds-docs/package.json');
+    // docsPkg.dependencies[`@sproutsocial/seeds-${this.props.packetName}`] = '*';
+    // this.fs.writeJSON('packets/seeds-docs/package.json', docsPkg);
   }
 
   install() {
