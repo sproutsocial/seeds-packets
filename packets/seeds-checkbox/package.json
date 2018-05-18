@@ -1,6 +1,6 @@
 {
   "name": "@sproutsocial/seeds-checkbox",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "stability": "alpha",
   "description": "SEEDS Design System Checkboxes",
   "main": "dist/seeds-checkbox.js",

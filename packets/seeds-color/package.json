@@ -1,6 +1,6 @@
 {
   "name": "@sproutsocial/seeds-color",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "stability": "stable",
   "description": "SEEDS Design System Color Palette",
   "main": "dist/seeds-color.js",
