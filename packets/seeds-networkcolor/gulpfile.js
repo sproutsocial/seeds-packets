@@ -67,7 +67,7 @@ gulp.task(
 gulp.task(
   'networkcolor-sketch',
   getGulpNetworkColorTask('sketch', 'sketch.sketchpalette', {
-    appendVersion: true,
+    appendVersion: false,
     dest: 'dist'
   })
 );
@@ -79,7 +79,7 @@ gulp.task('networkcolor-ase', done => {
     .pipe(theo.plugins.format('ase'))
     .pipe(
       theo.plugins.getResult(result => {
-        const wstream = fs.createWriteStream(`dist/seeds-networkcolor.${versions['seeds-networkcolor'].version}.ase`);
+        const wstream = fs.createWriteStream(`dist/seeds-networkcolor.ase`);
         wstream.write(ase.encode(JSON.parse(result)));
         wstream.end();
         done();
@@ -96,7 +96,7 @@ gulp.task(
       exec(
         `${process.cwd()}/node_modules/ase-util/bin/ase2clr ${downloadDir}/seeds-networkcolor.${versions[
           'seeds-networkcolor'
-        ].version}.ase ${downloadDir}/seeds-networkcolor.${versions['seeds-networkcolor'].version}.clr`,
+        ].version}.ase ${downloadDir}/seeds-networkcolor.clr`,
         err => {
           cb(err);
         }

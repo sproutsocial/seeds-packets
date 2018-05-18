@@ -67,7 +67,7 @@ gulp.task(
 gulp.task(
   'color-sketch',
   getGulpColorTask('sketch', 'sketch.sketchpalette', {
-    appendVersion: true,
+    appendVersion: false,
     dest: 'dist'
   })
 );
@@ -79,7 +79,7 @@ gulp.task('color-ase', done => {
     .pipe(theo.plugins.format('ase'))
     .pipe(
       theo.plugins.getResult(result => {
-        fs.writeFileSync(`dist/seeds-color.${versions['seeds-color'].version}.ase`, ase.encode(JSON.parse(result)));
+        fs.writeFileSync(`dist/seeds-color.ase`, ase.encode(JSON.parse(result)));
         done();
       })
     );
@@ -89,7 +89,7 @@ gulp.task('color-clr', done => {
   const downloadDir = `${process.cwd()}/dist`;
   exec(
     `${process.cwd()}/node_modules/ase-util/bin/ase2clr ${downloadDir}/seeds-color.${versions['seeds-color']
-      .version}.ase ${downloadDir}/seeds-color.${versions['seeds-color'].version}.clr`,
+      .version}.ase ${downloadDir}/seeds-color.clr`,
     err => {
       done(err);
     }

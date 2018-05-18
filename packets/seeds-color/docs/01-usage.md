@@ -2,18 +2,18 @@
 
 ### App Downloads
 
-- <a href="{{{siteUrl}}}/downloads/seeds-color.{{version}}.sketchpalette" download>Sketch Palette </a>(Requires <a href="https://github.com/andrewfiorillo/sketch-palettes">Sketch Plugin</a>)
-- <a href="{{{siteUrl}}}/downloads/seeds-color.{{version}}.ase" download>Adobe Swatch Exchange</a>
-- <a href="{{{siteUrl}}}/downloads/seeds-color.{{version}}.clr" download>macOS System Palette</a>
+- <a href="seeds/downloads/seeds-color.sketchpalette" download>Sketch Palette </a>(Requires <a href="https://github.com/andrewfiorillo/sketch-palettes">Sketch Plugin</a>)
+- <a href="seeds/downloads/seeds-color.ase" download>Adobe Swatch Exchange</a>
+- <a href="seeds/downloads/seeds-color.clr" download>macOS System Palette</a>
 
 ### Get the Code
 
 - For CSS, SCSS, or Javascript:
     - `yarn add @sproutsocial/seeds-color`
     - `npm install @sproutsocial/seeds-color --save`
-- <a href="{{{siteUrl}}}/downloads/seeds_color.py" download>Python</a>
-- <a href="{{{siteUrl}}}/downloads/seeds_color.xml" download>Android XML</a>
-- <a href="{{{siteUrl}}}/downloads/UIColor+SeedsColor.swift" download>Swift</a>
+- <a href="seeds/downloads/seeds_color.py" download>Python</a>
+- <a href="seeds/downloads/seeds_color.xml" download>Android XML</a>
+- <a href="seeds/downloads/UIColor+SeedsColor.swift" download>Swift</a>
 
 
 ### Best Practices

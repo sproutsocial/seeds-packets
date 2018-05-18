@@ -53,7 +53,7 @@ gulp.task(
   'typography-sketch',
   getGulpTypographyTask('sketch', 'sketchtext.json', {
     dest: 'dist',
-    appendVersion: true
+    appendVersion: false
   })
 );
 

@@ -2,9 +2,9 @@
 
 ### App Downloads
 
-- <a href="{{{siteUrl}}}/downloads/seeds-networkcolor.{{version}}.sketchpalette" download>Sketch Palette</a> (Requires <a href="https://github.com/andrewfiorillo/sketch-palettes">Sketch Palettes Plugin</a>)
-- <a href="{{{siteUrl}}}/downloads/seeds-networkcolor.{{version}}.ase" download>Adobe Swatch Exchange</a>
-- <a href="{{{siteUrl}}}/downloads/seeds-networkcolor.{{version}}.clr" download>macOS System Palette</a>
+- <a href="seeds/downloads/seeds-networkcolor.sketchpalette" download>Sketch Palette</a> (Requires <a href="https://github.com/andrewfiorillo/sketch-palettes">Sketch Palettes Plugin</a>)
+- <a href="seeds/downloads/seeds-networkcolor.ase" download>Adobe Swatch Exchange</a>
+- <a href="seeds/downloads/seeds-networkcolor.clr" download>macOS System Palette</a>
 </ul>
 
 ### Get the Code
@@ -12,9 +12,9 @@
 - For CSS, SCSS, or Javascript
   - `yarn add @sproutsocial/seeds-networkcolor`
   - `npm install @sproutsocial/seeds-networkcolor  --save`
-- <a href="{{{siteUrl}}}/downloads/seeds_networkcolor.py" download>Python</a>
-- <a href="{{{siteUrl}}}/downloads/seeds_networkcolor.xml" download>Android XML</a>
-- <a href="{{{siteUrl}}}/downloads/UIColor+SeedsNetworkcolor.swift" download>Swift</a>
+- <a href="seeds/downloads/seeds_networkcolor.py" download>Python</a>
+- <a href="seeds/downloads/seeds_networkcolor.xml" download>Android XML</a>
+- <a href="seeds/downloads/UIColor+SeedsNetworkcolor.swift" download>Swift</a>
 
 ### Do’s and Don’ts
 

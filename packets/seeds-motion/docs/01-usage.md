@@ -4,8 +4,8 @@
 
 For CSS, SCSS, or Javascript:
 
-- `yarn add {{name}}`
-- `npm install {{name}} --save`
+- `yarn add @sproutsocial/seeds-motion`
+- `npm install @sproutsocial/seeds-motion --save`
 
 ### Best Practices
 

@@ -2,7 +2,7 @@
 
 ### App Downloads
 
-- <del><a href="{{{siteUrl}}}/downloads/seeds-typography.{{version}}.json" download>Sketch Styles</a> (Requires [Shared Text Styles plugin](https://github.com/nilshoenson/shared-text-styles))</del> **Deprecated. See [changelog](#changelog).**
+- <del><a href="seeds/downloads/seeds-typography.json" download>Sketch Styles</a> (Requires [Shared Text Styles plugin](https://github.com/nilshoenson/shared-text-styles))</del> **Deprecated. See [changelog](#changelog).**
 - [Adobe Creative Cloud Library](https://assets.adobe.com/assets/libraries/a4c2bfd3-f701-470c-ab88-1ba696d9f628e)
 
 
@@ -10,8 +10,8 @@
 
 For CSS, SCSS, or Javascript:
 
-- `yarn add {{name}}`
-- `npm install {{name}} --save`
+- `yarn add @sproutsocial/seeds-typography`
+- `npm install @sproutsocial/seeds-typography --save`
 
 
 ### Best Practices
@@ -60,7 +60,7 @@ Make every effort to use the type tokens in any manner that suits the needs of y
 
 
 ### Do’s and Don’ts
-- **DON’T:** Use any Proxima Nova extended families. 
+- **DON’T:** Use any Proxima Nova extended families.
 - **DON’T:** Use italic styles anywhere.
 - **DO:** Use letter-spacing with uppercase text.
 - **DON’T:** Use uppercase for lines longer than 3 words.

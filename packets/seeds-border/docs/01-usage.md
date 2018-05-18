@@ -4,8 +4,8 @@
 
 For CSS, SCSS, or Javascript:
 
-- `yarn add {{name}}`
-- `npm install {{name}} --save`
+- `yarn add @sproutsocial/seeds-border`
+- `npm install @sproutsocial/seeds-border --save`
 
 ### Best Practices
 Borders and border-radii can be applied to any combination of an element's sides or corners.
