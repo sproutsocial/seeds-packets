@@ -2,9 +2,9 @@
 
 ### App Downloads
 
-- <a href="seeds/downloads/seeds-color.sketchpalette" download>Sketch Palette </a>(Requires <a href="https://github.com/andrewfiorillo/sketch-palettes">Sketch Plugin</a>)
-- <a href="seeds/downloads/seeds-color.ase" download>Adobe Swatch Exchange</a>
-- <a href="seeds/downloads/seeds-color.clr" download>macOS System Palette</a>
+- <a href="/seeds/downloads/seeds-color.sketchpalette" download>Sketch Palette </a>(Requires <a href="https://github.com/andrewfiorillo/sketch-palettes">Sketch Plugin</a>)
+- <a href="/seeds/downloads/seeds-color.ase" download>Adobe Swatch Exchange</a>
+- <a href="/seeds/downloads/seeds-color.clr" download>macOS System Palette</a>
 
 ### Get the Code
 

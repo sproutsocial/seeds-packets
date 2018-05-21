@@ -2,7 +2,7 @@
 
 ### App Downloads
 
-- <del><a href="seeds/downloads/seeds-typography.json" download>Sketch Styles</a> (Requires [Shared Text Styles plugin](https://github.com/nilshoenson/shared-text-styles))</del> **Deprecated. See [changelog](#changelog).**
+- <del><a href="/seeds/downloads/seeds-typography.json" download>Sketch Styles</a> (Requires [Shared Text Styles plugin](https://github.com/nilshoenson/shared-text-styles))</del> **Deprecated. See [changelog](#changelog).**
 - [Adobe Creative Cloud Library](https://assets.adobe.com/assets/libraries/a4c2bfd3-f701-470c-ab88-1ba696d9f628e)
 
 

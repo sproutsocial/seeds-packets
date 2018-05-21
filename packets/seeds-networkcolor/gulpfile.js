@@ -94,9 +94,7 @@ gulp.task(
     cb => {
       const downloadDir = `${process.cwd()}/dist`;
       exec(
-        `${process.cwd()}/node_modules/ase-util/bin/ase2clr ${downloadDir}/seeds-networkcolor.${versions[
-          'seeds-networkcolor'
-        ].version}.ase ${downloadDir}/seeds-networkcolor.clr`,
+        `${process.cwd()}/node_modules/ase-util/bin/ase2clr ${downloadDir}/seeds-networkcolor.ase ${downloadDir}/seeds-networkcolor.clr`,
         err => {
           cb(err);
         }

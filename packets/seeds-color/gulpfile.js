@@ -88,8 +88,7 @@ gulp.task('color-ase', done => {
 gulp.task('color-clr', done => {
   const downloadDir = `${process.cwd()}/dist`;
   exec(
-    `${process.cwd()}/node_modules/ase-util/bin/ase2clr ${downloadDir}/seeds-color.${versions['seeds-color']
-      .version}.ase ${downloadDir}/seeds-color.clr`,
+    `${process.cwd()}/node_modules/ase-util/bin/ase2clr ${downloadDir}/seeds-color.ase ${downloadDir}/seeds-color.clr`,
     err => {
       done(err);
     }
