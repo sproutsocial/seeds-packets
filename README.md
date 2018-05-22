@@ -79,8 +79,7 @@ Feel free to suggest additional scope options.
 - Get approval
 - Merge PR
 - Pull down latest from `upstream`
-- Run `lerna publish`, to publish new packages to npm
-- Do `git push upstream master --tags`, to push the new tags to the repo
+- Run `yarn release`, to publish new packages to npm. This will also generate updated changelogs for each packet that has been changed. 
 
 ### Testing packet changes locally
 
