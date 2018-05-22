@@ -12,7 +12,7 @@ For CSS, SCSS, or Javascript:
 * Contextual 'floating' elements get minimal box-shadows
 * Elements with a 'raised' state animate towards user, not top of screen
 * Shadows on non-interactive elements denote high importance of content/information
-* Limit shadow nesting to 3 levels *
+* Limit shadow nesting to 3 levels
 	* Interactive UI "stacking" should not be deeply nested.
 * Elements with raised states need at least a border (or a shadow) when not focused/hovered
 
