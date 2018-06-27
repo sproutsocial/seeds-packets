@@ -2,6 +2,7 @@
 <resources>
   <color name="TWITTER" category="twitter">#ff1da1f2</color>
   <color name="TWITTER_DARK" category="twitter">#ff278ac1</color>
+  <color name="TWITTER_LIKE" category="twitter">#ffe0245e</color>
   <color name="FACEBOOK" category="facebook">#ff3b5998</color>
   <color name="FACEBOOK_DARK" category="facebook">#ff304879</color>
   <color name="LINKEDIN" category="linkedin">#ff0077b5</color>

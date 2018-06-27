@@ -10,6 +10,9 @@ props:
     value: "#278ac1"
     category: twitter
     deprecated: true
+  twitter like:
+    value: "#e0245e"
+    category: twitter
   facebook:
     value: "#3b5998"
     category: facebook
