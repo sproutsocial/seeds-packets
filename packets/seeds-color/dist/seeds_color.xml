@@ -27,6 +27,8 @@
   <color name="AQUA_700" category="aqua">#ff0b8599</color>
   <color name="AQUA_800" category="aqua">#ff0f6e84</color>
   <color name="AQUA_900" category="aqua">#ff005a68</color>
+  <color name="AQUA_1000" category="aqua">#ff083d4f</color>
+  <color name="AQUA_1100" category="aqua">#ff002838</color>
   <color name="BLUE_100" category="blue">#ffc7e4f9</color>
   <color name="BLUE_200" category="blue">#ffa1d2f8</color>
   <color name="BLUE_300" category="blue">#ff7cbff6</color>
