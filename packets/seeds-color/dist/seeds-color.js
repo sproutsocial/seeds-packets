@@ -28,6 +28,8 @@ module.exports = {
   COLOR_AQUA_700: '#0b8599',
   COLOR_AQUA_800: '#0f6e84',
   COLOR_AQUA_900: '#005a68',
+  COLOR_AQUA_1000: '#083d4f',
+  COLOR_AQUA_1100: '#002838',
   COLOR_BLUE_100: '#c7e4f9',
   COLOR_BLUE_200: '#a1d2f8',
   COLOR_BLUE_300: '#7cbff6',

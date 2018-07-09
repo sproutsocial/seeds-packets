@@ -84,6 +84,12 @@ props:
   aqua 900:
     category: aqua
     value: "#005a68"
+  aqua 1000:
+    category: aqua
+    value: "#083d4f"
+  aqua 1100:
+    category: aqua
+    value: "#002838"
   blue 100:
     category: blue
     value: "#c7e4f9"
