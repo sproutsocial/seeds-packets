@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-color@0.4.11...@sproutsocial/seeds-color@0.5.0) (2018-07-09)
+
+
+### Features
+
+* adds “illegal” aqua colors to SEEDS ([f7fd91d](https://github.com/sproutsocial/seeds/commit/f7fd91d))
+
+
+
+
 <a name="0.4.12"></a>
 ## [0.4.12](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-color@0.4.11...@sproutsocial/seeds-color@0.4.12) (2018-05-22)
 
