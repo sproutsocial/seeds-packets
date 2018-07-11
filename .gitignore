@@ -12,8 +12,8 @@ yarn-error.log*
 node_modules
 .cache/
 # Build directory
+**/dist/
 public/
 static/
 .DS_Store
 yarn-error.log
-yarn.lock
