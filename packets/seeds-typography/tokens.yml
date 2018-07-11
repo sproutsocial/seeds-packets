@@ -70,8 +70,16 @@ props:
     category: font weight
     type: font weight
     value: 400
-  weight bold:
+  weight semibold:
     category: font weight
     type: font weight
     value: 600
+  weight bold:
+    category: font weight
+    type: font weight
+    value: 700
+  weight extra bold:
+    category: font weight
+    type: font weight
+    value: 800
 ...
