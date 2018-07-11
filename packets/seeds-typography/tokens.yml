@@ -61,6 +61,14 @@ props:
     category: font size
     type: font size
     value: 76
+  size 1100:
+    category: font size
+    type: font size
+    value: 101
+  size 1200:
+    category: font size
+    type: font size
+    value: 135
   weight normal:
     category: font weight
     type: font weight
