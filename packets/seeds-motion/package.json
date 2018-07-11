@@ -1,6 +1,6 @@
 {
   "name": "@sproutsocial/seeds-motion",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "stability": "beta",
   "description": "SEEDS Design System Motion and Animation Values",
   "main": "dist/seeds-motion.js",
