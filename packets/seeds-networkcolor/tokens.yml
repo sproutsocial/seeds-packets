@@ -74,4 +74,10 @@ props:
   pinterest:
     value: "#bd081c"
     category: other
+  reddit:
+    value: "#ff4500"
+    category: other
+  tumblr:
+    value: "#35465c"
+    category: other
 ...
