@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-networkcolor@0.6.1...@sproutsocial/seeds-networkcolor@0.7.0) (2018-08-20)
+
+
+### Features
+
+* **seeds-networkcolor:** add Reddit and Tumblr colors ([#88](https://github.com/sproutsocial/seeds/issues/88)) ([aa5bb19](https://github.com/sproutsocial/seeds/commit/aa5bb19))
+
+
+
+
 <a name="0.6.1"></a>
 ## [0.6.1](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-networkcolor@0.6.0...@sproutsocial/seeds-networkcolor@0.6.1) (2018-07-11)
 
