@@ -1,15 +1,16 @@
-const fs = require('fs');
+const ase = require('ase-utils');
+const camelCase = require('lodash.camelcase');
+const colorConvert = require('color-convert');
 const del = require('del');
 const exec = require('child_process').exec;
+const fs = require('fs');
 const gulp = require('gulp');
-const theo = require('theo');
-const pascalCase = require('pascal-case');
-const camelCase = require('lodash.camelcase');
-const snakeCase = require('lodash.snakecase');
-const upperFirst = require('lodash.upperfirst');
-const tinycolor = require('tinycolor2');
-const ase = require('ase-utils');
 const makeDir = require('make-dir');
+const pascalCase = require('pascal-case');
+const snakeCase = require('lodash.snakecase');
+const theo = require('theo');
+const tinycolor = require('tinycolor2');
+const upperFirst = require('lodash.upperfirst');
 
 const versions = require('@sproutsocial/seeds-utils/versions');
 const cssPropertyName = require('@sproutsocial/seeds-utils/css-property-name');
@@ -111,7 +112,13 @@ gulp.task('color-docs', done => {
             deprecated: !!prop.deprecated,
             value: {
               hex: value,
-              rgb: tinycolor(value).toRgbString()
+              hexRaw: value.substring(1),
+              hex8: tinycolor(value).toHex8String(),
+              hsl: tinycolor(value).toHslString(),
+              hsv: tinycolor(value).toHsvString(),
+              rgb: tinycolor(value).toRgbString(),
+              rgbPerc: tinycolor(value).toPercentageRgbString(),
+              cmyk: colorConvert.hex.cmyk(value.substring(1))
             },
             app: upperFirst(prop.name),
             sass: sassVar(prop.package, prop.name),

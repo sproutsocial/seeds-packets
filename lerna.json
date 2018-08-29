@@ -4,5 +4,10 @@
     "packets/*"
   ],
   "npmClient": "yarn",
-  "version": "independent"
+  "version": "independent",
+  "command": {
+    "publish": {
+      "ignoreChanges": ["package-lock.json"]
+    }
+  }
 }
