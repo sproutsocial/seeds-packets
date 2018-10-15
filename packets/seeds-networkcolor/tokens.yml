@@ -16,6 +16,9 @@ props:
   facebook:
     value: "#3b5998"
     category: facebook
+  facebook audience network:
+    value: "#58409B"
+    category: facebook
   facebook dark:
     value: "#304879"
     category: facebook
