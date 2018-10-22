@@ -1,1 +1,0 @@
-Motion is used to convey spatial relationships, functionality, and intention. Whether you're responding to user input or guiding users between views, motion creates energy and helps users understand what's happening in a natural, human way.

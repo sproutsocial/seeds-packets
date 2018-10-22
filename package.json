@@ -29,7 +29,6 @@
     "ase-util": "^1.0.1",
     "ase-utils": "^0.1.1",
     "del": "^2.2.2",
-    "gh-pages": "^1.0.0",
     "globby": "^6.1.0",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-insert": "^0.5.0",

@@ -1,1 +1,0 @@
-Buttons make common actions immediately visible and communicate the action that will occur when clicked.
