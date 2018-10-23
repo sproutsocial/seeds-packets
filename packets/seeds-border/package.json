@@ -1,8 +1,7 @@
 {
   "name": "@sproutsocial/seeds-border",
   "version": "0.3.9",
-  "stability": "beta",
-  "description": "SEEDS Design System Border Values",
+  "description": "Seeds Border Tokens",
   "main": "dist/seeds-border.js",
   "repository": {
     "type": "git",

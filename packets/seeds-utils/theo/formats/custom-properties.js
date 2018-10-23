@@ -1,5 +1,5 @@
 const theo = require('theo');
-const cssPropertyName = require('../../css-property-name');
+const cssPropertyName = require('../../string').cssPropertyName;
 
 theo.registerFormat('custom-properties.css', json => {
   const vars = json.propKeys

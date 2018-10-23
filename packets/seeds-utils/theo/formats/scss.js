@@ -1,7 +1,7 @@
 const theo = require('theo');
 
-const sassVar = require('../../sassvar').sassVar;
-const suitCssName = require('../../sassvar').suitCssName;
+const sassVar = require('../../string').sassVar;
+const suitCssName = require('../../string').suitCssName;
 
 theo.registerFormat('scss', json =>
   json.propKeys

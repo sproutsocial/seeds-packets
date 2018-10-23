@@ -1,6 +1,6 @@
 const theo = require('theo');
 
-const javascriptConst = require('../../constantcase').javascriptConst;
+const javascriptConst = require('../../string').javascriptConst;
 
 function hasNumber(string) {
   return /\d/.test(string);

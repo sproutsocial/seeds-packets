@@ -12,11 +12,11 @@ const ase = require('ase-utils');
 const makeDir = require('make-dir');
 
 const versions = require('@sproutsocial/seeds-utils/versions');
-const cssPropertyName = require('@sproutsocial/seeds-utils/css-property-name');
-const sassVar = require('@sproutsocial/seeds-utils/sassvar').sassVar;
+const cssPropertyName = require('@sproutsocial/seeds-utils/string').cssPropertyName;
+const sassVar = require('@sproutsocial/seeds-utils/string').sassVar;
 const getGulpTask = require('@sproutsocial/seeds-utils/getgulptask');
-const constantCase = require('@sproutsocial/seeds-utils/constantcase').constantCase;
-const javascriptConst = require('@sproutsocial/seeds-utils/constantcase').javascriptConst;
+const constantCase = require('@sproutsocial/seeds-utils/string').constantCase;
+const javascriptConst = require('@sproutsocial/seeds-utils/string').javascriptConst;
 const getPercentageRGB = require('@sproutsocial/seeds-utils/getpercentagergb');
 
 const colorTokensPath = './tokens.yml';

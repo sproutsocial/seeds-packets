@@ -3,10 +3,8 @@ const theo = require('theo');
 const rename = require('gulp-rename');
 const insert = require('gulp-insert');
 
-const versions = require('./versions');
-
 /**
- * 
+ *
  * @param {String} pkg The name of the package
  * @param {String} transform The registered Theo transform to use
  * @param {String} format The registered Theo format to use
@@ -29,7 +27,7 @@ function getGulpTask(pkg, transform, format, opts = {}) {
         rename({
           dirname: '',
           basename: opts.filename,
-          suffix: opts.appendVersion ? '.' + versions[pkg].version : ''
+          suffix: ''
         })
       )
       .pipe(insert.prepend(opts.prependFile ? opts.prependFile + '\n\n' : ''))

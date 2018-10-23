@@ -1,5 +1,5 @@
 const theo = require('theo');
-const getPercentageRGB = require('../../getpercentagergb');
+const getPercentageRGB = require('../../color').getPercentageRGB;
 const upperFirst = require('lodash.upperfirst');
 const getLineHeight = require('../../getlineheight');
 

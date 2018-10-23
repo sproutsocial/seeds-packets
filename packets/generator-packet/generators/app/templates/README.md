@@ -1,5 +1,5 @@
-# SEEDS
-Sprout's Exquisitely Executed Design System
+# Seeds
+Sprout Social's design system
 
 ## <%= packetNameTitlecase %>
 <%= packetDescription %>

@@ -1,6 +1,6 @@
 const theo = require('theo');
 
-const constantCase = require('../../constantcase').constantCase;
+const constantCase = require('../../string').constantCase;
 
 theo.registerFormat('android.xml', json => {
   const props = json.propKeys

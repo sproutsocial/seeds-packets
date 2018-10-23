@@ -20,7 +20,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-* adds “illegal” aqua colors to SEEDS ([f7fd91d](https://github.com/sproutsocial/seeds/commit/f7fd91d))
+* adds “illegal” aqua colors to Seeds ([f7fd91d](https://github.com/sproutsocial/seeds/commit/f7fd91d))
 
 
 

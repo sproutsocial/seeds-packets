@@ -2,7 +2,7 @@
   "name": "@sproutsocial/seeds-packets",
   "version": "0.4.0",
   "private": true,
-  "description": "SEEDS: Sprout’s Extremely Excellent Design System",
+  "description": "Seeds: Sprout Social's design system",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/sproutsocial/seeds-packets.git"

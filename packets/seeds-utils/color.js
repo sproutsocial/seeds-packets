@@ -9,4 +9,6 @@ function getPercentageRGB(color) {
   return percentageRgb;
 }
 
-module.exports = getPercentageRGB;
+module.exports = {
+  getPercentageRGB
+};

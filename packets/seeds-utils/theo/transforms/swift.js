@@ -1,6 +1,6 @@
 const theo = require('theo');
 
-const getPercentageRGB = require('../../getpercentagergb');
+const getPercentageRGB = require('../../color').getPercentageRGB;
 
 theo.registerValueTransform(
   'color/swift',

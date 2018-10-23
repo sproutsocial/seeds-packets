@@ -1,8 +1,6 @@
 const theo = require('theo');
 const camelCase = require('lodash.camelcase');
 
-const versions = require('../../versions');
-
 theo.registerFormat('python.py', json =>
   json.propKeys
     .map(key => {

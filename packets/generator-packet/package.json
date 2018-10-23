@@ -2,7 +2,7 @@
   "name": "generator-packet",
   "version": "0.0.10",
   "private": true,
-  "description": "Scaffold out a new SEEDS packet.",
+  "description": "Scaffold out a new Seeds packet.",
   "author": {
     "name": "Eric Cecchi",
     "email": "eric.cecchi@sproutsocial.com"

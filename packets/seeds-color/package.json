@@ -1,8 +1,7 @@
 {
   "name": "@sproutsocial/seeds-color",
   "version": "0.6.0",
-  "stability": "stable",
-  "description": "SEEDS Design System Color Palette",
+  "description": "Seeds Color Tokens",
   "main": "dist/seeds-color.js",
   "repository": {
     "type": "git",

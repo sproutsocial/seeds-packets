@@ -5,10 +5,10 @@ const theo = require('theo');
 const insert = require('gulp-insert');
 const rename = require('gulp-rename');
 const upperFirst = require('lodash.upperfirst');
-const cssPropertyName = require('@sproutsocial/seeds-utils/css-property-name');
-const sassVar = require('@sproutsocial/seeds-utils/sassvar').sassVar;
-const suitCssName = require('@sproutsocial/seeds-utils/sassvar').suitCssName;
-const javascriptConst = require('@sproutsocial/seeds-utils/constantcase').javascriptConst;
+const cssPropertyName = require('@sproutsocial/seeds-utils/string').cssPropertyName;
+const sassVar = require('@sproutsocial/seeds-utils/string').sassVar;
+const suitCssName = require('@sproutsocial/seeds-utils/string').suitCssName;
+const javascriptConst = require('@sproutsocial/seeds-utils/string').javascriptConst;
 const makeDir = require('make-dir');
 
 const getGulpTask = require('@sproutsocial/seeds-utils/getgulptask');

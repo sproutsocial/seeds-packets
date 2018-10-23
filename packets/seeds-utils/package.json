@@ -1,7 +1,7 @@
 {
   "name": "@sproutsocial/seeds-utils",
   "version": "0.2.6",
-  "description": "SEEDS shared utility functions for generating tokens and documentation.",
+  "description": "Seeds utility functions for generating tokens",
   "seeds_ignore": true,
   "main": "package.json",
   "repository": {
