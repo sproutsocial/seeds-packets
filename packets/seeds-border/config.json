@@ -1,0 +1,43 @@
+{
+  "source": ["tokens.json"],
+  "platforms": {
+    "web/scss": {
+      "transformGroup": "scss",
+      "transforms": ["scss/suit"],
+      "buildPath": "dist/",
+      "files": [{
+        "destination": "seeds-border.scss",
+        "format": "scss/variables"
+      }]
+    },
+    "web/css": {
+      "transformGroup": "css",
+      "buildPath": "dist/",
+      "files": [{
+        "destination": "seeds-border.css",
+        "format": "css/variables"
+      }]
+    },
+    "web/js": {
+      "transformGroup": "js",
+      "transforms": ["name/cti/constant"],
+      "buildPath": "dist/",
+      "files": [
+        {
+          "destination": "seeds-border.js",
+          "format": "template/js-exports"
+        }
+      ]
+    },
+    "json": {
+      "transforms": ["attribute/cti", "attribute/tokens"],
+      "buildPath": "dist/",
+      "files": [
+        {
+          "destination": "tokens.json",
+          "format": "template/json"
+        }
+      ]
+    }
+  }
+}

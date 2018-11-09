@@ -9,7 +9,7 @@
   },
   "author": "Sprout Social",
   "scripts": {
-    "build": "gulp"
+    "build": "node build.js"
   },
   "devDependencies": {
     "@sproutsocial/seeds-utils": "^0.2.6",

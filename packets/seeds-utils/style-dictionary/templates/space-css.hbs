@@ -1,0 +1,10 @@
+:root {
+  {{#each properties as |property|}}
+  {{#each property as |category|}}
+	{{#each category as |item|}}
+  {{ item.attributes.css }}: {{ item.value }};
+  {{ item.attributes.css }}-rem: {{ item.attributes.remValue }}rem;
+  {{/each}}
+  {{/each}}
+  {{/each}}
+}

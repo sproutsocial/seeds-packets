@@ -13,13 +13,6 @@ To build Seeds packages, simply install dependencies by running `yarn` and build
 
 - `yarn build` - Build packages
 
-### Creating a New Package
-
-Seeds comes with a generator to scaffold a new package.
-
-- `yarn create-package` - Run a wizard to scaffold out a new package.
-
-Your new package files can be found in `packages/seeds-<packageName>`.
 
 ### Committing Changes
 

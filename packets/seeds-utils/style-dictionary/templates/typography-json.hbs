@@ -1,0 +1,33 @@
+[
+{{#each properties as |category|}}
+{{#each category as |item|}}
+{{#ifEquals @key "size"}}
+{{#each item as |size|}}
+{
+	"category": "{{ size.attributes.type }}",
+	"sass": "@include {{ size.attributes.sassMixin }};",
+	"css": "{{ size.attributes.css }}",
+	"javascript": "{{ size.attributes.javascript }}",
+	"app": "{{ size.attributes.app }}",
+	"value": {
+		"fontSize": "{{ size.value }}px",
+		"lineHeightProportional": "{{ size.attributes.lineHeightProportional }}",
+		"lineHeightPx": "{{ size.attributes.lineHeightPx }}px"
+	}
+}{{#if @../last}}{{#unless @last}},{{/unless}}{{else}},{{/if}}
+{{/each}}
+{{else}}
+{{#each item as |other|}}
+{
+	"category": "{{ other.attributes.type }}",
+	"sass": "{{ other.attributes.sass }}",
+	"css": "{{ other.attributes.css }}",
+	"javascript": "{{ other.attributes.javascript }}",
+	"app": "{{ other.attributes.app }}",
+	"value": {{{json other.value }}}
+}{{#if @../last}}{{#unless @last}},{{/unless}}{{else}},{{/if}}
+{{/each}}
+{{/ifEquals}}
+{{/each}}
+{{/each}}
+]

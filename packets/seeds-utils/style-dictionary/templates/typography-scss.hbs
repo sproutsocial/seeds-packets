@@ -1,0 +1,30 @@
+{{#each properties as |category|}}
+{{#each category as |item|}}
+
+{{#ifEquals @key "size"}}
+{{#each item as |size|}}
+${{ size.name }}: {{ size.value}}px;
+@mixin {{ size.name }} {
+  font-size: Typography-getunit({{ size.value }}px);
+  line-height: {{ size.attributes.lineHeightProportional }};
+}
+{{/each}}
+{{else}}
+{{#each item as |other|}}
+${{ other.name }}: {{{ other.value }}};
+{{/each}}
+{{/ifEquals}}
+{{/each}}
+{{/each}}
+
+$Typography-unit: px !default;
+$Typography-size--base: $Typography-size--400 !default;
+@function Typography-getunit($size) {
+  @if $Typography-unit == "rem" {
+    $remSize: $size / $Typography-size--base;
+    @return #{$remSize}rem;
+  }
+  @else {
+    @return $size;
+  }
+}
