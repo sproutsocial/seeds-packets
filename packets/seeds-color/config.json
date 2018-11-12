@@ -40,7 +40,7 @@
       ]
     },
     "json": {
-      "transforms": ["attribute/cti", "attribute/color", "attribute/tokens"],
+      "transforms": ["attribute/cti", "attribute/color", "attribute/tokens", "attribute/bambu"],
       "buildPath": "dist/",
       "files": [
         {

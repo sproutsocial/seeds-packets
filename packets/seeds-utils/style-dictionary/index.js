@@ -166,6 +166,19 @@ StyleDictionary.registerTransform({
   }
 });
 
+StyleDictionary.registerTransform({
+  name: 'attribute/bambu',
+  type: 'attribute',
+  matcher: function(props) {
+    return props.attributes.type.includes('bambu');
+  },
+  transformer: function(props) {
+    return {
+      category: 'bambu'
+    };
+  }
+});
+
 StyleDictionary.registerFormat({
   name: 'ase',
   formatter: function(dictionary, config) {
