@@ -1,5 +1,5 @@
 node_modules
-packets/**/dist
+# packets/**/dist
 .vscode
 lerna-debug.log
 npm-debug.log*
@@ -11,9 +11,5 @@ yarn-error.log*
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
 .cache/
-# Build directory
-**/dist/
-public/
-static/
 .DS_Store
 yarn-error.log

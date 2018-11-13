@@ -1,8 +1,7 @@
 {
   "name": "@sproutsocial/seeds-networkcolor",
   "version": "0.7.2",
-  "stability": "stable",
-  "description": "SEEDS Design System Supported Networks Colors",
+  "description": "Seeds Network Color Tokens",
   "main": "dist/seeds-networkcolor.js",
   "repository": {
     "type": "git",
@@ -10,10 +9,9 @@
   },
   "author": "Sprout Social",
   "scripts": {
-    "build": "gulp"
+    "build": "node build.js"
   },
   "devDependencies": {
-    "@sproutsocial/seeds-utils": "^0.2.6",
-    "ase-util": "^1.0.1"
+    "@sproutsocial/seeds-utils": "^0.2.6"
   }
 }

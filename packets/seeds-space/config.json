@@ -1,0 +1,55 @@
+{
+  "source": ["tokens.json"],
+  "platforms": {
+    "web/scss": {
+      "transformGroup": "scss",
+      "transforms": ["scss/suit", "size/px"],
+      "buildPath": "dist/",
+      "files": [{
+        "destination": "seeds-space.scss",
+        "format": "scss/variables"
+      }]
+    },
+    "web/css": {
+      "transformGroup": "css",
+      "transforms": ["css/suit", "size/px", "attribute/cti", "attribute/tokens", "attribute/space"],
+      "buildPath": "dist/",
+      "files": [{
+        "destination": "seeds-space.css",
+        "format": "template/space-css"
+      }]
+    },
+    "web/js": {
+      "transformGroup": "js",
+      "transforms": ["name/cti/constant", "size/px"],
+      "buildPath": "dist/",
+      "files": [
+        {
+          "destination": "seeds-space.js",
+          "format": "template/js-exports"
+        }
+      ]
+    },
+    "web/js-unitless": {
+      "transformGroup": "js",
+      "transforms": ["name/cti/constant"],
+      "buildPath": "dist/",
+      "files": [
+        {
+          "destination": "seeds-space-unitless.js",
+          "format": "template/js-exports-number"
+        }
+      ]
+    },
+    "json": {
+      "transforms": ["attribute/cti", "attribute/tokens", "size/px", "attribute/space"],
+      "buildPath": "dist/",
+      "files": [
+        {
+          "destination": "tokens.json",
+          "format": "template/space-json"
+        }
+      ]
+    }
+  }
+}

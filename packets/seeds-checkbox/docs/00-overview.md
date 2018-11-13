@@ -1,1 +1,0 @@
-Checkboxes provide users with a range of options for a given statement where the user may select any number of choices, including zero, one or multiple. They may also allow users to give consent when paired with agreements, like terms of service. 

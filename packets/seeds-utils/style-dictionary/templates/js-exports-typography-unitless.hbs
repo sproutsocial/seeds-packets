@@ -1,0 +1,20 @@
+'use strict';
+
+module.exports = {
+{{#each properties as |category|}}
+{{#each category as |item|}}
+{{#ifEquals @key "size"}}
+{{#each item as |size|}}
+	{{ size.name }}: {
+		fontSize: {{{ size.value }}},
+    lineHeight: {{{ size.attributes.lineHeightPx }}}
+	}{{#if @../last}}{{#unless @last}},{{/unless}}{{else}},{{/if}}
+{{/each}}
+{{else}}
+{{#each item as |other|}}
+	{{ other.name }}: '{{{ other.value }}}'{{#if @../last}}{{#unless @last}},{{/unless}}{{else}},{{/if}}
+{{/each}}
+{{/ifEquals}}
+{{/each}}
+{{/each}}
+};

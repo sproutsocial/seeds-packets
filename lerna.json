@@ -1,7 +1,20 @@
 {
-  "lerna": "2.0.0",
+  "command": {
+    "publish": {
+      "message": "chore(release): publish",
+      "allowBranch": [
+        "master"
+      ]
+    }
+  },
   "packages": [
     "packets/*"
+  ],
+  "ignoreChanges": [
+    "*.md",
+    "build.js",
+    "config.json",
+    "package.json"
   ],
   "npmClient": "yarn",
   "version": "independent"

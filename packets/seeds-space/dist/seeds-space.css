@@ -1,0 +1,20 @@
+:root {
+  --space-size--0: 0px;
+  --space-size--0-rem: 0rem;
+  --space-size--100: 2px;
+  --space-size--100-rem: 0.1111111111111111rem;
+  --space-size--200: 4px;
+  --space-size--200-rem: 0.2222222222222222rem;
+  --space-size--300: 8px;
+  --space-size--300-rem: 0.4444444444444444rem;
+  --space-size--350: 12px;
+  --space-size--350-rem: 0.6666666666666666rem;
+  --space-size--400: 16px;
+  --space-size--400-rem: 0.8888888888888888rem;
+  --space-size--450: 24px;
+  --space-size--450-rem: 1.3333333333333333rem;
+  --space-size--500: 32px;
+  --space-size--500-rem: 1.7777777777777777rem;
+  --space-size--600: 40px;
+  --space-size--600-rem: 2.2222222222222223rem;
+}

@@ -1,0 +1,55 @@
+{
+  "source": ["tokens.json"],
+  "platforms": {
+    "web/scss": {
+      "transformGroup": "scss",
+      "transforms": ["scss/suit", "attribute/cti", "attribute/tokens", "attribute/typography"],
+      "buildPath": "dist/",
+      "files": [{
+        "destination": "seeds-typography.scss",
+        "format": "template/typography-scss"
+      }]
+    },
+    "web/css": {
+      "transformGroup": "css",
+      "transforms": ["css/suit", "attribute/cti", "attribute/tokens", "attribute/typography"],
+      "buildPath": "dist/",
+      "files": [{
+        "destination": "seeds-typography.css",
+        "format": "template/typography-css"
+      }]
+    },
+    "web/js": {
+      "transformGroup": "js",
+      "transforms": ["name/cti/constant", "attribute/cti", "attribute/tokens", "attribute/typography"],
+      "buildPath": "dist/",
+      "files": [
+        {
+          "destination": "seeds-typography.js",
+          "format": "template/js-exports-typography"
+        }
+      ]
+    },
+    "web/js-unitless": {
+      "transformGroup": "js",
+      "transforms": ["name/cti/constant", "attribute/cti", "attribute/tokens", "attribute/typography"],
+      "buildPath": "dist/",
+      "files": [
+        {
+          "destination": "seeds-typography-unitless.js",
+          "format": "template/js-exports-typography-unitless"
+        }
+      ]
+    },
+    "json": {
+      "transforms": ["attribute/cti", "attribute/tokens", "attribute/typography"],
+      "buildPath": "dist/",
+      "files": [
+        {
+          "destination": "tokens.json",
+          "format": "template/typography-json"
+        }
+      ]
+    }
+  }
+}

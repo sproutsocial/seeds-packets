@@ -1,9 +1,0 @@
----
-global:
-  type: <%= packetName %>
-  packet: <%= packetName %>
-props:
-  <%= tokenName %>:
-    category: <%= tokenCategory %>
-    value: "<%= tokenValue %>"
-...

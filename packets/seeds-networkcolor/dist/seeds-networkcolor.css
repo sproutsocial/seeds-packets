@@ -1,0 +1,22 @@
+/**
+ * Do not edit directly
+ * Generated on Fri, 09 Nov 2018 17:35:36 GMT
+ */
+
+:root {
+ --network-color-twitter: #1da1f2;
+ --network-color-twitter-like: #e0245e;
+ --network-color-facebook: #3b5998;
+ --network-color-facebook-audience-network: #58409B;
+ --network-color-linkedin: #0077b5;
+ --network-color-googleplus: #db4437;
+ --network-color-instagram: #e4405f;
+ --network-color-feedly: #2bb24c;
+ --network-color-analytics: #ef6c00;
+ --network-color-youtube: #ff0000;
+ --network-color-messenger: #0084ff;
+ --network-color-snapchat: #fffc00;
+ --network-color-pinterest: #bd081c;
+ --network-color-reddit: #ff4500;
+ --network-color-tumblr: #35465c;
+}

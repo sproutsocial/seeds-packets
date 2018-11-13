@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Do not edit directly
+  Generated on Fri, 09 Nov 2018 17:35:36 GMT
+-->
+<resources>
+  <color name="twitter">#ff1da1f2</color>
+  <color name="twitter_like">#ffe0245e</color>
+  <color name="facebook">#ff3b5998</color>
+  <color name="facebook_audience_network">#ff58409b</color>
+  <color name="linkedin">#ff0077b5</color>
+  <color name="googleplus">#ffdb4437</color>
+  <color name="instagram">#ffe4405f</color>
+  <color name="feedly">#ff2bb24c</color>
+  <color name="analytics">#ffef6c00</color>
+  <color name="youtube">#ffff0000</color>
+  <color name="messenger">#ff0084ff</color>
+  <color name="snapchat">#fffffc00</color>
+  <color name="pinterest">#ffbd081c</color>
+  <color name="reddit">#ffff4500</color>
+  <color name="tumblr">#ff35465c</color>
+  
+</resources>

@@ -1,8 +1,7 @@
 {
   "name": "@sproutsocial/seeds-typography",
   "version": "1.0.0",
-  "stability": "stable",
-  "description": "SEEDS Design System Typography Styles",
+  "description": "Seeds Typography Tokens",
   "main": "dist/seeds-typography.js",
   "repository": {
     "type": "git",
@@ -10,7 +9,7 @@
   },
   "author": "Sprout Social",
   "scripts": {
-    "build": "gulp"
+    "build": "node build.js"
   },
   "devDependencies": {
     "@sproutsocial/seeds-utils": "^0.2.6"

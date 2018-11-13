@@ -1,0 +1,64 @@
+{
+  "source": ["tokens.json"],
+  "platforms": {
+    "web/scss": {
+      "transformGroup": "scss",
+      "transforms": ["scss/suit"],
+      "buildPath": "dist/",
+      "files": [{
+        "destination": "seeds-color.scss",
+        "format": "scss/variables"
+      }]
+    },
+    "web/css": {
+      "transformGroup": "css",
+      "buildPath": "dist/",
+      "files": [{
+        "destination": "seeds-color.css",
+        "format": "css/variables"
+      }]
+    },
+    "web/js": {
+      "transformGroup": "js",
+      "transforms": ["name/cti/constant"],
+      "buildPath": "dist/",
+      "files": [
+        {
+          "destination": "seeds-color.js",
+          "format": "template/js-exports"
+        }
+      ]
+    },
+    "sketch": {
+      "transforms": ["sketch/color"],
+      "buildPath": "dist/",
+      "files": [
+        {
+          "destination": "seeds-color.sketchpalette",
+          "format": "sketch/palette"
+        }
+      ]
+    },
+    "json": {
+      "transforms": ["attribute/cti", "attribute/color", "attribute/tokens", "attribute/bambu"],
+      "buildPath": "dist/",
+      "files": [
+        {
+          "destination": "tokens.json",
+          "format": "template/color-json"
+        }
+      ]
+    },
+    "android": {
+      "transformGroup": "android",
+      "transforms": ["attribute/networkcolor", "color/hex8android", "name/ti/snake"],
+      "buildPath": "dist/",
+      "files": [
+        {
+          "destination": "seeds-color.xml",
+          "format": "android/colors"
+        }
+      ]
+    }
+  }
+}

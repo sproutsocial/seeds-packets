@@ -1,0 +1,18 @@
+:root {
+  {{#each properties as |category|}}
+  {{#each category as |item|}}
+
+  {{#ifEquals @key "size"}}
+  {{#each item as |size|}}
+  {{ size.attributes.css }}: {{{ size.value }}}px;
+  {{ size.attributes.css }}-rem: {{{ size.attributes.remValue }}};
+  {{ size.attributes.css }}-line-height: {{{ size.attributes.lineHeightProportional }}};
+  {{/each}}
+  {{else}}
+  {{#each item as |other|}}
+  {{ other.attributes.css }}: {{{ other.value }}};
+  {{/each}}
+  {{/ifEquals}}
+  {{/each}}
+  {{/each}}
+}

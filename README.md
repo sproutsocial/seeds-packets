@@ -1,4 +1,4 @@
-# SEEDS
+# Seeds
 Sprout's Exquisitely Executed Design System
 
 - [GitHub Pages](https://sproutsocial.github.io/seeds/)
@@ -9,17 +9,10 @@ We use [Lerna](https://lernajs.io) to manage inter-package dependencies in this 
 
 ### Building Packages
 
-To build SEEDS packages, simply install dependencies by running `yarn` and build packets with `yarn build`.
+To build Seeds packages, simply install dependencies by running `yarn` and build packets with `yarn build`.
 
 - `yarn build` - Build packages
 
-### Creating a New Package
-
-SEEDS comes with a generator to scaffold a new package.
-
-- `yarn create-package` - Run a wizard to scaffold out a new package.
-
-Your new package files can be found in `packages/seeds-<packageName>`.
 
 ### Committing Changes
 
@@ -57,7 +50,7 @@ footer?
 
 `scope` is optional but, with few exceptions, should be used for all `feat` and `fix` commits. Common scopes include:
 
-- **[seeds-{Packet Name}]**: Changes to a SEEDS packet
+- **[seeds-{Packet Name}]**: Changes to a Seeds packet
 - **dependencies**: Changes to `dependencies` should be `feat`, and `devDependencies` should be `chore`
 - **build**: Changes to the build that make significant changes to the published package, should be a `feat` or `fix`
 
@@ -79,13 +72,13 @@ Feel free to suggest additional scope options.
 - Get approval
 - Merge PR
 - Pull down latest from `upstream`
-- Run `yarn release`, to publish new packages to npm. This will also generate updated changelogs for each packet that has been changed. 
+- Run `yarn release`, to publish new packages to npm. This will also generate updated changelogs for each packet that has been changed.
 
 ### Testing packet changes locally
 
 Test any local packet in another project by utilizing [yarn link](https://yarnpkg.com/lang/en/docs/cli/link/). Below is an example workflow to link `seeds-packets` to `seeds`.
 
-* Navigate to your local copy of any SEEDS packet in a terminal window
+* Navigate to your local copy of any Seeds packet in a terminal window
 
   ```shell
   $ cd ~/YourCodeFolder/seeds-packets/seeds-{packet name}
@@ -101,9 +94,9 @@ Test any local packet in another project by utilizing [yarn link](https://yarnpk
   $ yarn start
   ```
 
-* You can now use any packet from your local instance of SEEDS in your project.
+* You can now use any packet from your local instance of Seeds in your project.
 
-* **When you are done, be sure to unlink SEEDS so you are using the published version of the packets**
+* **When you are done, be sure to unlink Seeds so you are using the published version of the packets**
 
   ```
   $ yarn unlink "@sproutsocial/seeds-{packet name}"
