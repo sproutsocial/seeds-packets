@@ -1,6 +1,6 @@
 {
   "name": "@sproutsocial/seeds-color",
-  "version": "0.6.0",
+  "version": "1.0.0",
   "description": "Seeds Color Tokens",
   "main": "dist/seeds-color.js",
   "repository": {
@@ -12,7 +12,7 @@
     "build": "node build.js"
   },
   "devDependencies": {
-    "@sproutsocial/seeds-utils": "^0.2.6",
+    "@sproutsocial/seeds-utils": "^1.0.0",
     "ase-util": "^1.0.1"
   }
 }
