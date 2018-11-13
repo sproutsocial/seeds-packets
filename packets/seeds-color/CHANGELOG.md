@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.0 (2018-11-13)
+Refactored build system to use [Style Dictionary](https://amzn.github.io/style-dictionary).
+
+🚨 **Breaking Changes:**
+- Values in the Android XML file have gone from `CONSTANT_CASE` to `snake_case` to match what the Android team is currently using
+- The deprecated `gray` colors (including `white` and `black`) have been removed. Replace references to `gray` with the corresponding `neutral` token. `white` can be replaced with `Neutral 0` and `black` can be replaced with `Neutral 1000`
+
 <a name="0.6.0"></a>
 # [0.6.0](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-color@0.5.0...@sproutsocial/seeds-color@0.6.0) (2018-07-11)
 

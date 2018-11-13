@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.0 (2018-11-13)
+Refactored build system to use [Style Dictionary](https://amzn.github.io/style-dictionary).
+
+🚨 **Breaking Changes:**
+- SCSS: `$NetworkColor-facebook--audience` is now `$NetworkColor-facebook--audience-network`
+- The file `seeds_networkcolor.xml` has been renamed to `seeds-networkcolor.xml` to maintain consistency
+- Values in the Android XML file have gone from `CONSTANT_CASE` to `snake_case` to match what the Android team is currently using
+- The following deprecated values have been removed: Twitter dark, Facebook dark, LinkedIn dark, Googleplus dark, Instagram dark, Feedly dark, Analytics dark, Youtube dark
+
 <a name="0.7.2"></a>
 ## [0.7.2](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-networkcolor@0.7.0...@sproutsocial/seeds-networkcolor@0.7.2) (2018-08-20)
 
