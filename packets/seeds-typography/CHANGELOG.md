@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2.0.0 (2018-11-13)
+Refactored build system to use [Style Dictionary](https://amzn.github.io/style-dictionary).
+
+🚨 **Breaking Changes:**
+- SCSS: `$Typography-weight--extra` is now `$Typography-weight--extra-bold`
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-typography@0.6.8...@sproutsocial/seeds-typography@1.0.0) (2018-07-12)
 

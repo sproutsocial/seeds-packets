@@ -10,7 +10,6 @@
   "author": "Sprout Social",
   "scripts": {
     "format:prettier": "prettier-eslint --write --eslint-ignore --print-width=120 --single-quote --no-bracket-spacing",
-    "create-packet": "yo ./packets/generator-packet",
     "precommit": "lint-staged",
     "build": "lerna run build",
     "postinstall": "lerna bootstrap",
