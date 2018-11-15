@@ -7,6 +7,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 Refactored build system to use [Style Dictionary](https://amzn.github.io/style-dictionary).
 
 🚨 **Breaking Changes:**
+- The deprecated `regular` font weight token has been removed. Please use `normal` as an equivalent.
 - SCSS: `$Typography-weight--extra` is now `$Typography-weight--extra-bold`
 
 
