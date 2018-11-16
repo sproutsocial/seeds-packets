@@ -7,7 +7,8 @@
       "buildPath": "dist/",
       "files": [{
         "destination": "seeds-space.scss",
-        "format": "scss/variables"
+        "format": "scss/variables",
+        "options": { "showFileHeader": false }
       }]
     },
     "web/css": {
@@ -16,7 +17,8 @@
       "buildPath": "dist/",
       "files": [{
         "destination": "seeds-space.css",
-        "format": "template/space-css"
+        "format": "template/space-css",
+        "options": { "showFileHeader": false }
       }]
     },
     "web/js": {
@@ -26,7 +28,8 @@
       "files": [
         {
           "destination": "seeds-space.js",
-          "format": "template/js-exports"
+          "format": "template/js-exports",
+          "options": { "showFileHeader": false }
         }
       ]
     },
@@ -37,7 +40,8 @@
       "files": [
         {
           "destination": "seeds-space-unitless.js",
-          "format": "template/js-exports-number"
+          "format": "template/js-exports-number",
+          "options": { "showFileHeader": false }
         }
       ]
     },
@@ -47,7 +51,8 @@
       "files": [
         {
           "destination": "tokens.json",
-          "format": "template/space-json"
+          "format": "template/space-json",
+          "options": { "showFileHeader": false }
         }
       ]
     }

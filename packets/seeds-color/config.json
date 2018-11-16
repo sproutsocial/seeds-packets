@@ -7,7 +7,8 @@
       "buildPath": "dist/",
       "files": [{
         "destination": "seeds-color.scss",
-        "format": "scss/variables"
+        "format": "scss/variables",
+        "options": { "showFileHeader": false }
       }]
     },
     "web/css": {
@@ -15,7 +16,8 @@
       "buildPath": "dist/",
       "files": [{
         "destination": "seeds-color.css",
-        "format": "css/variables"
+        "format": "css/variables",
+        "options": { "showFileHeader": false }
       }]
     },
     "web/js": {
@@ -25,7 +27,8 @@
       "files": [
         {
           "destination": "seeds-color.js",
-          "format": "template/js-exports"
+          "format": "template/js-exports",
+          "options": { "showFileHeader": false }
         }
       ]
     },
@@ -45,7 +48,8 @@
       "files": [
         {
           "destination": "tokens.json",
-          "format": "template/color-json"
+          "format": "template/color-json",
+          "options": { "showFileHeader": false }
         }
       ]
     },
@@ -56,9 +60,16 @@
       "files": [
         {
           "destination": "seeds-color.xml",
-          "format": "android/colors"
+          "format": "android/colors",
+          "options": { "showFileHeader": false }
         }
       ]
+    },
+    "ios": {
+      "transforms": ["attribute/cti", "attribute/color"],
+      "buildPath": "dist/",
+      "files": [],
+      "actions": ["ios-assets"]
     }
   }
 }

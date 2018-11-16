@@ -7,7 +7,8 @@
       "buildPath": "dist/",
       "files": [{
         "destination": "seeds-typography.scss",
-        "format": "template/typography-scss"
+        "format": "template/typography-scss",
+        "options": { "showFileHeader": false }
       }]
     },
     "web/css": {
@@ -16,7 +17,8 @@
       "buildPath": "dist/",
       "files": [{
         "destination": "seeds-typography.css",
-        "format": "template/typography-css"
+        "format": "template/typography-css",
+        "options": { "showFileHeader": false }
       }]
     },
     "web/js": {
@@ -26,7 +28,8 @@
       "files": [
         {
           "destination": "seeds-typography.js",
-          "format": "template/js-exports-typography"
+          "format": "template/js-exports-typography",
+          "options": { "showFileHeader": false }
         }
       ]
     },
@@ -37,7 +40,8 @@
       "files": [
         {
           "destination": "seeds-typography-unitless.js",
-          "format": "template/js-exports-typography-unitless"
+          "format": "template/js-exports-typography-unitless",
+          "options": { "showFileHeader": false }
         }
       ]
     },
@@ -47,7 +51,8 @@
       "files": [
         {
           "destination": "tokens.json",
-          "format": "template/typography-json"
+          "format": "template/typography-json",
+          "options": { "showFileHeader": false }
         }
       ]
     }
