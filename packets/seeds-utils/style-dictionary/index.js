@@ -5,6 +5,7 @@ const kebabCase = require('lodash.kebabcase');
 const constantCase = str => snakeCase(str).toUpperCase();
 const getLineHeight = require('../getlineheight');
 const registerTemplates = require('./registerTemplates');
+const registerActions = require('./registerActions');
 const ase = require('ase-utils');
 const Color = require('tinycolor2');
 
@@ -202,5 +203,6 @@ StyleDictionary.registerFormat({
 });
 
 registerTemplates(StyleDictionary);
+registerActions(StyleDictionary);
 
 module.exports = StyleDictionary;

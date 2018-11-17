@@ -7,7 +7,8 @@
       "buildPath": "dist/",
       "files": [{
         "destination": "seeds-networkcolor.scss",
-        "format": "scss/variables"
+        "format": "scss/variables",
+        "options": { "showFileHeader": false }
       }]
     },
     "web/css": {
@@ -16,7 +17,8 @@
       "buildPath": "dist/",
       "files": [{
         "destination": "seeds-networkcolor.css",
-        "format": "css/variables"
+        "format": "css/variables",
+        "options": { "showFileHeader": false }
       }]
     },
     "web/js": {
@@ -26,7 +28,8 @@
       "files": [
         {
           "destination": "seeds-networkcolor.js",
-          "format": "template/js-exports"
+          "format": "template/js-exports",
+          "options": { "showFileHeader": false }
         }
       ]
     },
@@ -36,7 +39,8 @@
       "files": [
         {
           "destination": "seeds-networkcolor.sketchpalette",
-          "format": "sketch/palette"
+          "format": "sketch/palette",
+          "options": { "showFileHeader": false }
         }
       ]
     },
@@ -46,7 +50,8 @@
       "files": [
         {
           "destination": "seeds-networkcolor.ase",
-          "format": "ase"
+          "format": "ase",
+          "options": { "showFileHeader": false }
         }
       ]
     },
@@ -56,7 +61,8 @@
       "files": [
         {
           "destination": "tokens.json",
-          "format": "template/color-json"
+          "format": "template/color-json",
+          "options": { "showFileHeader": false }
         }
       ]
     },
@@ -67,9 +73,17 @@
       "files": [
         {
           "destination": "seeds-networkcolor.xml",
-          "format": "android/colors"
+          "format": "android/colors",
+          "options": { "showFileHeader": false }
         }
       ]
+    },
+    "ios": {
+      "transforms": ["attribute/cti", "attribute/networkcolor", "attribute/color"],
+      "buildPath": "dist/",
+      "files": [],
+      "actions": ["ios-assets"],
+      "network": true
     }
   }
 }
