@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.0 (2018-11-19)
+⭐️ **Added:**
+- iOS: we now export directories of `.colorset` files for use in Xcode and on iOS devices.
+
 ## 1.0.0 (2018-11-13)
 Refactored build system to use [Style Dictionary](https://amzn.github.io/style-dictionary).
 
