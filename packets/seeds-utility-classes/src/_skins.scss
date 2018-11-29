@@ -1,0 +1,277 @@
+@import '@sproutsocial/seeds-color/dist/seeds-color.scss';
+
+/*
+   SKINS
+   Classes for setting foreground and background colors on elements.
+   If you haven't declared a border color, but set border on an element, it will
+   be set to the current text color.
+*/
+
+/* Text colors */
+.color-inherit { color: inherit; }
+
+.green-100 { color: $Color-green--100; }
+.green-200 { color: $Color-green--200; }
+.green-300 { color: $Color-green--300; }
+.green-400 { color: $Color-green--400; }
+.green-500 { color: $Color-green--500; }
+.green-600 { color: $Color-green--600; }
+.green-700 { color: $Color-green--700; }
+.green-800 { color: $Color-green--800; }
+.green-900 { color: $Color-green--900; }
+.green-1000 { color: $Color-green--1000; }
+.green-1100 { color: $Color-green--1100; }
+
+.teal-100 { color: $Color-teal--100; }
+.teal-200 { color: $Color-teal--200; }
+.teal-300 { color: $Color-teal--300; }
+.teal-400 { color: $Color-teal--400; }
+.teal-500 { color: $Color-teal--500; }
+.teal-600 { color: $Color-teal--600; }
+.teal-700 { color: $Color-teal--700; }
+.teal-800 { color: $Color-teal--800; }
+.teal-900 { color: $Color-teal--900; }
+.teal-1000 { color: $Color-teal--1000; }
+.teal-1100 { color: $Color-teal--1100; }
+
+.aqua-100 { color: $Color-aqua--100; }
+.aqua-200 { color: $Color-aqua--200; }
+.aqua-300 { color: $Color-aqua--300; }
+.aqua-400 { color: $Color-aqua--400; }
+.aqua-500 { color: $Color-aqua--500; }
+.aqua-600 { color: $Color-aqua--600; }
+.aqua-700 { color: $Color-aqua--700; }
+.aqua-800 { color: $Color-aqua--800; }
+.aqua-900 { color: $Color-aqua--900; }
+.aqua-1000 { color: $Color-aqua--1000; }
+.aqua-1100 { color: $Color-aqua--1100; }
+
+.blue-100 { color: $Color-blue--100; }
+.blue-200 { color: $Color-blue--200; }
+.blue-300 { color: $Color-blue--300; }
+.blue-400 { color: $Color-blue--400; }
+.blue-500 { color: $Color-blue--500; }
+.blue-600 { color: $Color-blue--600; }
+.blue-700 { color: $Color-blue--700; }
+.blue-800 { color: $Color-blue--800; }
+.blue-900 { color: $Color-blue--900; }
+.blue-1000 { color: $Color-blue--1000; }
+.blue-1100 { color: $Color-blue--1100; }
+
+.purple-100 { color: $Color-purple--100; }
+.purple-200 { color: $Color-purple--200; }
+.purple-300 { color: $Color-purple--300; }
+.purple-400 { color: $Color-purple--400; }
+.purple-500 { color: $Color-purple--500; }
+.purple-600 { color: $Color-purple--600; }
+.purple-700 { color: $Color-purple--700; }
+.purple-800 { color: $Color-purple--800; }
+.purple-900 { color: $Color-purple--900; }
+.purple-1000 { color: $Color-purple--1000; }
+.purple-1100 { color: $Color-purple--1100; }
+
+.magenta-100 { color: $Color-magenta--100; }
+.magenta-200 { color: $Color-magenta--200; }
+.magenta-300 { color: $Color-magenta--300; }
+.magenta-400 { color: $Color-magenta--400; }
+.magenta-500 { color: $Color-magenta--500; }
+.magenta-600 { color: $Color-magenta--600; }
+.magenta-700 { color: $Color-magenta--700; }
+.magenta-800 { color: $Color-magenta--800; }
+.magenta-900 { color: $Color-magenta--900; }
+.magenta-1000 { color: $Color-magenta--1000; }
+.magenta-1100 { color: $Color-magenta--1100; }
+
+.pink-100 { color: $Color-pink--100; }
+.pink-200 { color: $Color-pink--200; }
+.pink-300 { color: $Color-pink--300; }
+.pink-400 { color: $Color-pink--400; }
+.pink-500 { color: $Color-pink--500; }
+.pink-600 { color: $Color-pink--600; }
+.pink-700 { color: $Color-pink--700; }
+.pink-800 { color: $Color-pink--800; }
+.pink-900 { color: $Color-pink--900; }
+.pink-1000 { color: $Color-pink--1000; }
+.pink-1100 { color: $Color-pink--1100; }
+
+.red-100 { color: $Color-red--100; }
+.red-200 { color: $Color-red--200; }
+.red-300 { color: $Color-red--300; }
+.red-400 { color: $Color-red--400; }
+.red-500 { color: $Color-red--500; }
+.red-600 { color: $Color-red--600; }
+.red-700 { color: $Color-red--700; }
+.red-800 { color: $Color-red--800; }
+.red-900 { color: $Color-red--900; }
+.red-1000 { color: $Color-red--1000; }
+.red-1100 { color: $Color-red--1100; }
+
+.orange-100 { color: $Color-orange--100; }
+.orange-200 { color: $Color-orange--200; }
+.orange-300 { color: $Color-orange--300; }
+.orange-400 { color: $Color-orange--400; }
+.orange-500 { color: $Color-orange--500; }
+.orange-600 { color: $Color-orange--600; }
+.orange-700 { color: $Color-orange--700; }
+.orange-800 { color: $Color-orange--800; }
+.orange-900 { color: $Color-orange--900; }
+.orange-1000 { color: $Color-orange--1000; }
+.orange-1100 { color: $Color-orange--1100; }
+
+.neutral-100 { color: $Color-neutral--100; }
+.neutral-200 { color: $Color-neutral--200; }
+.neutral-300 { color: $Color-neutral--300; }
+.neutral-400 { color: $Color-neutral--400; }
+.neutral-500 { color: $Color-neutral--500; }
+.neutral-600 { color: $Color-neutral--600; }
+.neutral-700 { color: $Color-neutral--700; }
+.neutral-800 { color: $Color-neutral--800; }
+.neutral-900 { color: $Color-neutral--900; }
+.neutral-1000 { color: $Color-neutral--1000; }
+
+.yellow-100 { color: $Color-yellow--100; }
+.yellow-200 { color: $Color-yellow--200; }
+.yellow-300 { color: $Color-yellow--300; }
+.yellow-400 { color: $Color-yellow--400; }
+.yellow-500 { color: $Color-yellow--500; }
+.yellow-600 { color: $Color-yellow--600; }
+.yellow-700 { color: $Color-yellow--700; }
+.yellow-800 { color: $Color-yellow--800; }
+.yellow-900 { color: $Color-yellow--900; }
+.yellow-1000 { color: $Color-yellow--1000; }
+.yellow-1100 { color: $Color-yellow--1100; }
+
+
+/* Background colors */
+.color-inherit { background-color: inherit; }
+
+.bg-green-100 { background-color: $Color-green--100; }
+.bg-green-200 { background-color: $Color-green--200; }
+.bg-green-300 { background-color: $Color-green--300; }
+.bg-green-400 { background-color: $Color-green--400; }
+.bg-green-500 { background-color: $Color-green--500; }
+.bg-green-600 { background-color: $Color-green--600; }
+.bg-green-700 { background-color: $Color-green--700; }
+.bg-green-800 { background-color: $Color-green--800; }
+.bg-green-900 { background-color: $Color-green--900; }
+.bg-green-1000 { background-color: $Color-green--1000; }
+.bg-green-1100 { background-color: $Color-green--1100; }
+
+.bg-teal-100 { background-color: $Color-teal--100; }
+.bg-teal-200 { background-color: $Color-teal--200; }
+.bg-teal-300 { background-color: $Color-teal--300; }
+.bg-teal-400 { background-color: $Color-teal--400; }
+.bg-teal-500 { background-color: $Color-teal--500; }
+.bg-teal-600 { background-color: $Color-teal--600; }
+.bg-teal-700 { background-color: $Color-teal--700; }
+.bg-teal-800 { background-color: $Color-teal--800; }
+.bg-teal-900 { background-color: $Color-teal--900; }
+.bg-teal-1000 { background-color: $Color-teal--1000; }
+.bg-teal-1100 { background-color: $Color-teal--1100; }
+
+.bg-aqua-100 { background-color: $Color-aqua--100; }
+.bg-aqua-200 { background-color: $Color-aqua--200; }
+.bg-aqua-300 { background-color: $Color-aqua--300; }
+.bg-aqua-400 { background-color: $Color-aqua--400; }
+.bg-aqua-500 { background-color: $Color-aqua--500; }
+.bg-aqua-600 { background-color: $Color-aqua--600; }
+.bg-aqua-700 { background-color: $Color-aqua--700; }
+.bg-aqua-800 { background-color: $Color-aqua--800; }
+.bg-aqua-900 { background-color: $Color-aqua--900; }
+.bg-aqua-1000 { background-color: $Color-aqua--1000; }
+.bg-aqua-1100 { background-color: $Color-aqua--1100; }
+
+.bg-blue-100 { background-color: $Color-blue--100; }
+.bg-blue-200 { background-color: $Color-blue--200; }
+.bg-blue-300 { background-color: $Color-blue--300; }
+.bg-blue-400 { background-color: $Color-blue--400; }
+.bg-blue-500 { background-color: $Color-blue--500; }
+.bg-blue-600 { background-color: $Color-blue--600; }
+.bg-blue-700 { background-color: $Color-blue--700; }
+.bg-blue-800 { background-color: $Color-blue--800; }
+.bg-blue-900 { background-color: $Color-blue--900; }
+.bg-blue-1000 { background-color: $Color-blue--1000; }
+.bg-blue-1100 { background-color: $Color-blue--1100; }
+
+.bg-purple-100 { background-color: $Color-purple--100; }
+.bg-purple-200 { background-color: $Color-purple--200; }
+.bg-purple-300 { background-color: $Color-purple--300; }
+.bg-purple-400 { background-color: $Color-purple--400; }
+.bg-purple-500 { background-color: $Color-purple--500; }
+.bg-purple-600 { background-color: $Color-purple--600; }
+.bg-purple-700 { background-color: $Color-purple--700; }
+.bg-purple-800 { background-color: $Color-purple--800; }
+.bg-purple-900 { background-color: $Color-purple--900; }
+.bg-purple-1000 { background-color: $Color-purple--1000; }
+.bg-purple-1100 { background-color: $Color-purple--1100; }
+
+.bg-magenta-100 { background-color: $Color-magenta--100; }
+.bg-magenta-200 { background-color: $Color-magenta--200; }
+.bg-magenta-300 { background-color: $Color-magenta--300; }
+.bg-magenta-400 { background-color: $Color-magenta--400; }
+.bg-magenta-500 { background-color: $Color-magenta--500; }
+.bg-magenta-600 { background-color: $Color-magenta--600; }
+.bg-magenta-700 { background-color: $Color-magenta--700; }
+.bg-magenta-800 { background-color: $Color-magenta--800; }
+.bg-magenta-900 { background-color: $Color-magenta--900; }
+.bg-magenta-1000 { background-color: $Color-magenta--1000; }
+.bg-magenta-1100 { background-color: $Color-magenta--1100; }
+
+.bg-pink-100 { background-color: $Color-pink--100; }
+.bg-pink-200 { background-color: $Color-pink--200; }
+.bg-pink-300 { background-color: $Color-pink--300; }
+.bg-pink-400 { background-color: $Color-pink--400; }
+.bg-pink-500 { background-color: $Color-pink--500; }
+.bg-pink-600 { background-color: $Color-pink--600; }
+.bg-pink-700 { background-color: $Color-pink--700; }
+.bg-pink-800 { background-color: $Color-pink--800; }
+.bg-pink-900 { background-color: $Color-pink--900; }
+.bg-pink-1000 { background-color: $Color-pink--1000; }
+.bg-pink-1100 { background-color: $Color-pink--1100; }
+
+.bg-red-100 { background-color: $Color-red--100; }
+.bg-red-200 { background-color: $Color-red--200; }
+.bg-red-300 { background-color: $Color-red--300; }
+.bg-red-400 { background-color: $Color-red--400; }
+.bg-red-500 { background-color: $Color-red--500; }
+.bg-red-600 { background-color: $Color-red--600; }
+.bg-red-700 { background-color: $Color-red--700; }
+.bg-red-800 { background-color: $Color-red--800; }
+.bg-red-900 { background-color: $Color-red--900; }
+.bg-red-1000 { background-color: $Color-red--1000; }
+.bg-red-1100 { background-color: $Color-red--1100; }
+
+.bg-orange-100 { background-color: $Color-orange--100; }
+.bg-orange-200 { background-color: $Color-orange--200; }
+.bg-orange-300 { background-color: $Color-orange--300; }
+.bg-orange-400 { background-color: $Color-orange--400; }
+.bg-orange-500 { background-color: $Color-orange--500; }
+.bg-orange-600 { background-color: $Color-orange--600; }
+.bg-orange-700 { background-color: $Color-orange--700; }
+.bg-orange-800 { background-color: $Color-orange--800; }
+.bg-orange-900 { background-color: $Color-orange--900; }
+.bg-orange-1000 { background-color: $Color-orange--1000; }
+.bg-orange-1100 { background-color: $Color-orange--1100; }
+
+.bg-neutral-100 { background-color: $Color-neutral--100; }
+.bg-neutral-200 { background-color: $Color-neutral--200; }
+.bg-neutral-300 { background-color: $Color-neutral--300; }
+.bg-neutral-400 { background-color: $Color-neutral--400; }
+.bg-neutral-500 { background-color: $Color-neutral--500; }
+.bg-neutral-600 { background-color: $Color-neutral--600; }
+.bg-neutral-700 { background-color: $Color-neutral--700; }
+.bg-neutral-800 { background-color: $Color-neutral--800; }
+.bg-neutral-900 { background-color: $Color-neutral--900; }
+.bg-neutral-1000 { background-color: $Color-neutral--1000; }
+
+.bg-yellow-100 { background-color: $Color-yellow--100; }
+.bg-yellow-200 { background-color: $Color-yellow--200; }
+.bg-yellow-300 { background-color: $Color-yellow--300; }
+.bg-yellow-400 { background-color: $Color-yellow--400; }
+.bg-yellow-500 { background-color: $Color-yellow--500; }
+.bg-yellow-600 { background-color: $Color-yellow--600; }
+.bg-yellow-700 { background-color: $Color-yellow--700; }
+.bg-ellow-800 { background-color: $Color-yellow--800; }
+.bg-yellow-900 { background-color: $Color-yellow--900; }
+.bg-yellow-1000 { background-color: $Color-yellow--1000; }
+.bg-yellow-1100 { background-color: $Color-yellow--1100; }

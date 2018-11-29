@@ -1,0 +1,148 @@
+@import '@sproutsocial/seeds-color/dist/seeds-color.scss';
+
+/*
+   BORDER COLORS
+   Border colors can be used to extend the base
+   border classes ba,bt,bb,br,bl found in the _borders.css file.
+   The base border class by default will set the color of the border
+   to that of the current text color. These classes are for the cases
+   where you desire for the text and border colors to be different.
+   Base:
+     b = border
+   Modifiers:
+   --color-name = each color variable name is also a border color name
+*/
+
+.b--green-100 { border-color: $Color-green--100; }
+.b--green-200 { border-color: $Color-green--200; }
+.b--green-300 { border-color: $Color-green--300; }
+.b--green-400 { border-color: $Color-green--400; }
+.b--green-500 { border-color: $Color-green--500; }
+.b--green-600 { border-color: $Color-green--600; }
+.b--green-700 { border-color: $Color-green--700; }
+.b--green-800 { border-color: $Color-green--800; }
+.b--green-900 { border-color: $Color-green--900; }
+.b--green-1000 { border-color: $Color-green--1000; }
+.b--green-1100 { border-color: $Color-green--1100; }
+
+.b--teal-100 { border-color: $Color-teal--100; }
+.b--teal-200 { border-color: $Color-teal--200; }
+.b--teal-300 { border-color: $Color-teal--300; }
+.b--teal-400 { border-color: $Color-teal--400; }
+.b--teal-500 { border-color: $Color-teal--500; }
+.b--teal-600 { border-color: $Color-teal--600; }
+.b--teal-700 { border-color: $Color-teal--700; }
+.b--teal-800 { border-color: $Color-teal--800; }
+.b--teal-900 { border-color: $Color-teal--900; }
+.b--teal-1000 { border-color: $Color-teal--1000; }
+.b--teal-1100 { border-color: $Color-teal--1100; }
+
+.b--aqua-100 { border-color: $Color-aqua--100; }
+.b--aqua-200 { border-color: $Color-aqua--200; }
+.b--aqua-300 { border-color: $Color-aqua--300; }
+.b--aqua-400 { border-color: $Color-aqua--400; }
+.b--aqua-500 { border-color: $Color-aqua--500; }
+.b--aqua-600 { border-color: $Color-aqua--600; }
+.b--aqua-700 { border-color: $Color-aqua--700; }
+.b--aqua-800 { border-color: $Color-aqua--800; }
+.b--aqua-900 { border-color: $Color-aqua--900; }
+.b--aqua-1000 { border-color: $Color-aqua--1000; }
+.b--aqua-1100 { border-color: $Color-aqua--1100; }
+
+.b--blue-100 { border-color: $Color-blue--100; }
+.b--blue-200 { border-color: $Color-blue--200; }
+.b--blue-300 { border-color: $Color-blue--300; }
+.b--blue-400 { border-color: $Color-blue--400; }
+.b--blue-500 { border-color: $Color-blue--500; }
+.b--blue-600 { border-color: $Color-blue--600; }
+.b--blue-700 { border-color: $Color-blue--700; }
+.b--blue-800 { border-color: $Color-blue--800; }
+.b--blue-900 { border-color: $Color-blue--900; }
+.b--blue-1000 { border-color: $Color-blue--1000; }
+.b--blue-1100 { border-color: $Color-blue--1100; }
+
+.b--purple-100 { border-color: $Color-purple--100; }
+.b--purple-200 { border-color: $Color-purple--200; }
+.b--purple-300 { border-color: $Color-purple--300; }
+.b--purple-400 { border-color: $Color-purple--400; }
+.b--purple-500 { border-color: $Color-purple--500; }
+.b--purple-600 { border-color: $Color-purple--600; }
+.b--purple-700 { border-color: $Color-purple--700; }
+.b--purple-800 { border-color: $Color-purple--800; }
+.b--purple-900 { border-color: $Color-purple--900; }
+.b--purple-1000 { border-color: $Color-purple--1000; }
+.b--purple-1100 { border-color: $Color-purple--1100; }
+
+.b--magenta-100 { border-color: $Color-magenta--100; }
+.b--magenta-200 { border-color: $Color-magenta--200; }
+.b--magenta-300 { border-color: $Color-magenta--300; }
+.b--magenta-400 { border-color: $Color-magenta--400; }
+.b--magenta-500 { border-color: $Color-magenta--500; }
+.b--magenta-600 { border-color: $Color-magenta--600; }
+.b--magenta-700 { border-color: $Color-magenta--700; }
+.b--magenta-800 { border-color: $Color-magenta--800; }
+.b--magenta-900 { border-color: $Color-magenta--900; }
+.b--magenta-1000 { border-color: $Color-magenta--1000; }
+.b--magenta-1100 { border-color: $Color-magenta--1100; }
+
+.b--pink-100 { border-color: $Color-pink--100; }
+.b--pink-200 { border-color: $Color-pink--200; }
+.b--pink-300 { border-color: $Color-pink--300; }
+.b--pink-400 { border-color: $Color-pink--400; }
+.b--pink-500 { border-color: $Color-pink--500; }
+.b--pink-600 { border-color: $Color-pink--600; }
+.b--pink-700 { border-color: $Color-pink--700; }
+.b--pink-800 { border-color: $Color-pink--800; }
+.b--pink-900 { border-color: $Color-pink--900; }
+.b--pink-1000 { border-color: $Color-pink--1000; }
+.b--pink-1100 { border-color: $Color-pink--1100; }
+
+.b--red-100 { border-color: $Color-red--100; }
+.b--red-200 { border-color: $Color-red--200; }
+.b--red-300 { border-color: $Color-red--300; }
+.b--red-400 { border-color: $Color-red--400; }
+.b--red-500 { border-color: $Color-red--500; }
+.b--red-600 { border-color: $Color-red--600; }
+.b--red-700 { border-color: $Color-red--700; }
+.b--red-800 { border-color: $Color-red--800; }
+.b--red-900 { border-color: $Color-red--900; }
+.b--red-1000 { border-color: $Color-red--1000; }
+.b--red-1100 { border-color: $Color-red--1100; }
+
+.b--orange-100 { border-color: $Color-orange--100; }
+.b--orange-200 { border-color: $Color-orange--200; }
+.b--orange-300 { border-color: $Color-orange--300; }
+.b--orange-400 { border-color: $Color-orange--400; }
+.b--orange-500 { border-color: $Color-orange--500; }
+.b--orange-600 { border-color: $Color-orange--600; }
+.b--orange-700 { border-color: $Color-orange--700; }
+.b--orange-800 { border-color: $Color-orange--800; }
+.b--orange-900 { border-color: $Color-orange--900; }
+.b--orange-1000 { border-color: $Color-orange--1000; }
+.b--orange-1100 { border-color: $Color-orange--1100; }
+
+.b--yellow-100 { border-color: $Color-yellow--100; }
+.b--yellow-200 { border-color: $Color-yellow--200; }
+.b--yellow-300 { border-color: $Color-yellow--300; }
+.b--yellow-400 { border-color: $Color-yellow--400; }
+.b--yellow-500 { border-color: $Color-yellow--500; }
+.b--yellow-600 { border-color: $Color-yellow--600; }
+.b--yellow-700 { border-color: $Color-yellow--700; }
+.b--yellow-800 { border-color: $Color-yellow--800; }
+.b--yellow-900 { border-color: $Color-yellow--900; }
+.b--yellow-1000 { border-color: $Color-yellow--1000; }
+.b--yellow-1100 { border-color: $Color-yellow--1100; }
+
+.b--neutral-100 { border-color: $Color-neutral--100; }
+.b--neutral-200 { border-color: $Color-neutral--200; }
+.b--neutral-300 { border-color: $Color-neutral--300; }
+.b--neutral-400 { border-color: $Color-neutral--400; }
+.b--neutral-500 { border-color: $Color-neutral--500; }
+.b--neutral-600 { border-color: $Color-neutral--600; }
+.b--neutral-700 { border-color: $Color-neutral--700; }
+.b--neutral-800 { border-color: $Color-neutral--800; }
+.b--neutral-900 { border-color: $Color-neutral--900; }
+.b--neutral-1000 { border-color: $Color-neutral--1000; }
+
+.b--transparent { border-color: transparent; }
+.b--inherit { border-color: inherit; }

@@ -1,0 +1,13 @@
+@import '@sproutsocial/seeds-typography/dist/seeds-typography.scss';
+
+
+/*
+   FONT WEIGHT
+   Base
+     fw = font-weight
+*/
+
+.fw-normal   { font-weight: $Typography-weight--normal; }
+.fw-semibold { font-weight: $Typography-weight--semibold; }
+.fw-bold     { font-weight: $Typography-weight--bold; }
+.fw-extra    { font-weight: $Typography-weight--extra-bold; }

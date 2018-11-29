@@ -1,0 +1,12 @@
+@import '@sproutsocial/seeds-border/dist/seeds-border.scss';
+
+/*
+   BORDER RADIUS
+   Base:
+     br   = border-radius
+   Modifiers:
+     #0   = None
+*/
+
+.br0  { border-radius: 0px; }
+.br   { border-radius: $Border-radius--500; }

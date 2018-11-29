@@ -1,0 +1,13 @@
+@import '@sproutsocial/seeds-border/dist/seeds-border.scss';
+
+/*
+   BORDER WIDTHS
+   Base:
+     bw = border-width
+   Modifiers:
+     0 = None
+     # = SEEDS value
+*/
+.bw0 { border-width: 0px; }
+.bw500 { border-width: $Border-width--500; }
+.bw600 { border-width: $Border-width--600; }

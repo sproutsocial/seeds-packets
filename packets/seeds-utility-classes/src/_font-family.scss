@@ -1,0 +1,10 @@
+@import '@sproutsocial/seeds-typography/dist/seeds-typography.scss';
+
+/*
+   FONT FAMILY GROUPS
+    Base
+     ff = font-family
+*/
+
+.ff-proxima      { font-family: $Typography-family; }
+.ff-system       { font-family: $Typography-family--system; }
