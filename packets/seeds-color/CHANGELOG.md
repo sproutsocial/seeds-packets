@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.2.0 (2018-12-04)
+⭐️ **Added:**
+- New colors: our color palettes have been extended to include new lighter colors at value `0` on the scale
+
 ## 1.1.0 (2018-11-19)
 ⭐️ **Added:**
 - iOS: we now export directories of `.colorset` files for use in Xcode and on iOS devices.
