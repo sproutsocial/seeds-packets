@@ -15,18 +15,19 @@ Breakpoints:
 ---
 */
 
-.tl  { text-align: left; }
-.tr  { text-align: right; }
-.tc  { text-align: center; }
-.tj  { text-align: justify; }
+@mixin text-align($breakpoint-name: "") {
+  .tl#{$breakpoint-name}  { text-align: left; }
+  .tr#{$breakpoint-name}  { text-align: right; }
+  .tc#{$breakpoint-name}  { text-align: center; }
+  .tj#{$breakpoint-name}  { text-align: justify; }
+}
 
 @each $breakpoint-name, $breakpoint in $breakpoints {
   @if ($breakpoint != "") {
     @media #{$breakpoint} {
-      .tl#{breakpoint-name}  { text-align: left; }
-      .tr#{breakpoint-name}  { text-align: right; }
-      .tc#{breakpoint-name}  { text-align: center; }
-      .tj#{breakpoint-name}  { text-align: justify; }
+      @include text-align($breakpoint-name);
     }
+  } @else {
+    @include text-align;
   }
 }

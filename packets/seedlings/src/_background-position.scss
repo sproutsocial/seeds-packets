@@ -1,71 +1,50 @@
 /*
-    BACKGROUND POSITION
-    Base:
-    bg = background
-    Modifiers:
-    -center = center center
+---
+Name: Background Position
+Base:
+    bg: background
+Modifiers:
+   -center = center center
     -top = top center
     -right = center right
     -bottom = bottom center
     -left = center left
-    Media Query Extensions:
-      -ns = not-small
-      -m  = medium
-      -l  = large
- */
+---
+*/
 
-.bg-center {
-  background-repeat: no-repeat;
-  background-position: center center;
-}
+@mixin background-position($breakpoint-name: "") {
+  .bg-center#{$breakpoint-name} {
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 
-.bg-top {
-  background-repeat: no-repeat;
-  background-position: top center;
-}
+  .bg-top#{$breakpoint-name} {
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
 
-.bg-right {
-  background-repeat: no-repeat;
-  background-position: center right;
-}
+  .bg-right#{$breakpoint-name} {
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
 
-.bg-bottom {
-  background-repeat: no-repeat;
-  background-position: bottom center;
-}
+  .bg-bottom#{$breakpoint-name} {
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
 
-.bg-left {
-  background-repeat: no-repeat;
-  background-position: center left;
+  .bg-left#{$breakpoint-name} {
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
 }
 
 @each $breakpoint-name, $breakpoint in $breakpoints {
   @if ($breakpoint != "") {
     @media #{$breakpoint} {
-      .bg-center#{breakpoint-name} {
-        background-repeat: no-repeat;
-        background-position: center center;
-      }
-
-      .bg-top#{$breakpoint-name} {
-        background-repeat: no-repeat;
-        background-position: top center;
-      }
-
-      .bg-right#{$breakpoint-name} {
-        background-repeat: no-repeat;
-        background-position: center right;
-      }
-
-      .bg-bottom#{$breakpoint-name} {
-        background-repeat: no-repeat;
-        background-position: bottom center;
-      }
-
-      .bg-left#{$breakpoint-name} {
-        background-repeat: no-repeat;
-        background-position: center left;
-      }
+      @include background-position($breakpoint-name);
     }
+  } @else {
+    @include background-position;
   }
 }

@@ -51,36 +51,55 @@ HoverClasses: true
   }
 }
 
+@mixin decoration($breakpoint-name: "") {
+
+  .strike#{$breakpoint-name} {
+    text-decoration: line-through;
+  }
+  .underline#{$breakpoint-name} {
+    text-decoration: underline;
+  }
+  .underline-dotted#{$breakpoint-name} {
+    text-decoration: underline dotted;
+  }
+  .underline-dashed#{$breakpoint-name} {
+    text-decoration: underline dashed;
+  }
+  .no-underline#{$breakpoint-name} {
+    text-decoration: none;
+  }
+  .overline#{$breakpoint-name} {
+    @include overline(Space(500));
+  }
+  .line-behind#{$breakpoint-name} {
+    @include line-behind();
+  }
+  .hover-strike#{$breakpoint-name}:hover {
+    text-decoration: line-through;
+  }
+  .hover-underline#{$breakpoint-name}:hover {
+    text-decoration: underline;
+  }
+  .hover-underline-dotted#{$breakpoint-name}:hover {
+    text-decoration: underline dotted;
+  }
+  .hover-underline-dashed#{$breakpoint-name}:hover {
+    text-decoration: underline dashed;
+  }
+  .hover-no-underline#{$breakpoint-name}:hover {
+    text-decoration: none;
+  }
+  .hover-overline#{$breakpoint-name}:hover {
+    @include overline(Space(500));
+  }
+}
+
 @each $breakpoint-name, $breakpoint in $breakpoints {
   @if ($breakpoint != "") {
     @media #{$breakpoint} {
-      .strike#{$breakpoint-name} { text-decoration: line-through; }
-      .underline#{$breakpoint-name} { text-decoration: underline; }
-      .underline-dotted#{$breakpoint-name} { text-decoration: underline dotted; }
-      .underline-dashed#{$breakpoint-name} { text-decoration: underline dashed; }
-      .no-underline#{$breakpoint-name} { text-decoration: none; }
-      .overline#{$breakpoint-name} { @include overline(Space(500)); }
-      .line-behind#{$breakpoint-name} { @include line-behind(); }
-      .hover-strike#{$breakpoint-name}:hover { text-decoration: line-through; }
-      .hover-underline#{$breakpoint-name}:hover { text-decoration: underline; }
-      .hover-underline-dotted#{$breakpoint-name}:hover { text-decoration: underline dotted; }
-      .hover-underline-dashed#{$breakpoint-name}:hover { text-decoration: underline dashed; }
-      .hover-no-underline#{$breakpoint-name}:hover { text-decoration: none; }
-      .hover-overline#{$breakpoint-name}:hover { @include overline(Space(500)); }
+      @include decoration($breakpoint-name);
     }
   } @else {
-    .strike { text-decoration: line-through; }
-    .underline { text-decoration: underline; }
-    .underline-dotted { text-decoration: underline dotted; }
-    .underline-dashed { text-decoration: underline dashed; }
-    .no-underline { text-decoration: none; }
-    .overline { @include overline(Space(500)); }
-    .line-behind { @include line-behind(); }
-    .hover-strike:hover { text-decoration: line-through; }
-    .hover-underline:hover { text-decoration: underline; }
-    .hover-underline-dotted:hover { text-decoration: underline dotted; }
-    .hover-underline-dashed:hover { text-decoration: underline dashed; }
-    .hover-no-underline:hover { text-decoration: none; }
-    .hover-overline { @include overline(Space(500)); }
+    @include decoration;
   }
 }

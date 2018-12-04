@@ -9,17 +9,20 @@ Breakpoints:
     -l: large
 ---
 */
-.hide[hidden] {
-  display: none;
+
+@mixin hide($breakpoint-name: "") {
+  .hide[hidden]#{$breakpoint-name} {
+    display: none;
+  }
 }
 
 // NOTE: media queries updated to looping. please review
 @each $breakpoint-name, $breakpoint in $breakpoints {
   @if ($breakpoint != "") {
     @media #{$breakpoint} {
-      .hide#{breakpoint-name}[hidden] {
-        display: none;
-      }
+      @include hide($breakpoint-name);
     }
+  } @else {
+    @include hide;
   }
 }

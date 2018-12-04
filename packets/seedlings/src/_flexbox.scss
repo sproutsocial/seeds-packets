@@ -62,112 +62,69 @@ Breakpoints:
  * https://github.com/tachyons-css/tachyons/blob/master/src/_flexbox.css
  */
 
-/* 1. Fix for Chrome 44 bug.
+@mixin flex($breakpoint-name: "") {
+  /* 1. Fix for Chrome 44 bug.
  * https://code.google.com/p/chromium/issues/detail?id=506893 */
-.flex-auto {
-  min-width: 0; /* 1 */
-  min-height: 0; /* 1 */
-  flex: 1 1 auto;
+  .flex-auto#{$breakpoint-name} {
+    min-width: 0; /* 1 */
+    min-height: 0; /* 1 */
+    flex: 1 1 auto;
+  }
+  .flex-none#{$breakpoint-name} { flex: none; }
+  .flex-column#{$breakpoint-name} { flex-direction: column; }
+  .flex-row#{$breakpoint-name} { flex-direction: row; }
+  .flex-wrap#{$breakpoint-name} { flex-wrap: wrap; }
+  .flex-nowrap#{$breakpoint-name} { flex-wrap: nowrap; }
+  .flex-wrap-reverse#{$breakpoint-name} { flex-wrap: wrap-reverse; }
+  .flex-column-reverse#{$breakpoint-name} { flex-direction: column-reverse; }
+  .flex-row-reverse#{$breakpoint-name} { flex-direction: row-reverse; }
+  .items-start#{$breakpoint-name} { align-items: flex-start; }
+  .items-end#{$breakpoint-name} { align-items: flex-end; }
+  .items-center#{$breakpoint-name} { align-items: center; }
+  .items-baseline#{$breakpoint-name} { align-items: baseline; }
+  .items-stretch#{$breakpoint-name} { align-items: stretch; }
+  .self-start#{$breakpoint-name} { align-self: flex-start; }
+  .self-end#{$breakpoint-name} { align-self: flex-end; }
+  .self-center#{$breakpoint-name} { align-self: center; }
+  .self-baseline#{$breakpoint-name} { align-self: baseline; }
+  .self-stretch#{$breakpoint-name} { align-self: stretch; }
+  .justify-start#{$breakpoint-name} { justify-content: flex-start; }
+  .justify-end#{$breakpoint-name} { justify-content: flex-end; }
+  .justify-center#{$breakpoint-name} { justify-content: center; }
+  .justify-between#{$breakpoint-name} { justify-content: space-between; }
+  .justify-around#{$breakpoint-name} { justify-content: space-around; }
+  .content-start#{$breakpoint-name} { align-content: flex-start; }
+  .content-end#{$breakpoint-name} { align-content: flex-end; }
+  .content-center#{$breakpoint-name} { align-content: center; }
+  .content-between#{$breakpoint-name} { align-content: space-between; }
+  .content-around#{$breakpoint-name} { align-content: space-around; }
+  .content-stretch#{$breakpoint-name} { align-content: stretch; }
+  .order-0#{$breakpoint-name} { order: 0; }
+  .order-1#{$breakpoint-name} { order: 1; }
+  .order-2#{$breakpoint-name} { order: 2; }
+  .order-3#{$breakpoint-name} { order: 3; }
+  .order-4#{$breakpoint-name} { order: 4; }
+  .order-5#{$breakpoint-name} { order: 5; }
+  .order-6#{$breakpoint-name} { order: 6; }
+  .order-7#{$breakpoint-name} { order: 7; }
+  .order-8#{$breakpoint-name} { order: 8; }
+  .order-first#{$breakpoint-name} { order: -1; }
+  .order-last#{$breakpoint-name} { order: 99999; }
+  .flex-grow-0#{$breakpoint-name} { flex-grow: 0; }
+  .flex-grow-1#{$breakpoint-name} { flex-grow: 1; }
+  .flex-shrink-0#{$breakpoint-name} { flex-shrink: 0; }
+  .flex-shrink-1#{$breakpoint-name} { flex-shrink: 1; }
 }
-.flex-none { flex: none; }
-.flex-column { flex-direction: column; }
-.flex-row { flex-direction: row; }
-.flex-wrap { flex-wrap: wrap; }
-.flex-nowrap { flex-wrap: nowrap; }
-.flex-wrap-reverse { flex-wrap: wrap-reverse; }
-.flex-column-reverse { flex-direction: column-reverse; }
-.flex-row-reverse { flex-direction: row-reverse; }
-.items-start { align-items: flex-start; }
-.items-end { align-items: flex-end; }
-.items-center { align-items: center; }
-.items-baseline { align-items: baseline; }
-.items-stretch { align-items: stretch; }
-.self-start { align-self: flex-start; }
-.self-end { align-self: flex-end; }
-.self-center { align-self: center; }
-.self-baseline { align-self: baseline; }
-.self-stretch { align-self: stretch; }
-.justify-start { justify-content: flex-start; }
-.justify-end { justify-content: flex-end; }
-.justify-center { justify-content: center; }
-.justify-between { justify-content: space-between; }
-.justify-around { justify-content: space-around; }
-.content-start { align-content: flex-start; }
-.content-end { align-content: flex-end; }
-.content-center { align-content: center; }
-.content-between { align-content: space-between; }
-.content-around { align-content: space-around; }
-.content-stretch { align-content: stretch; }
-.order-0 { order: 0; }
-.order-1 { order: 1; }
-.order-2 { order: 2; }
-.order-3 { order: 3; }
-.order-4 { order: 4; }
-.order-5 { order: 5; }
-.order-6 { order: 6; }
-.order-7 { order: 7; }
-.order-8 { order: 8; }
-.order-first { order: -1; }
-.order-last { order: 99999; }
-.flex-grow-0 { flex-grow: 0; }
-.flex-grow-1 { flex-grow: 1; }
-.flex-shrink-0 { flex-shrink: 0; }
-.flex-shrink-1 { flex-shrink: 1; }
+
+
 
 @each $breakpoint-name, $breakpoint in $breakpoints {
   @if ($breakpoint != "") {
     @media #{$breakpoint} {
-      .flex#{$breakpoint-name} { display: flex; }
-      .inline-flex#{$breakpoint-name} { display: inline-flex; }
-      .flex-auto#{$breakpoint-name} {
-        min-width: 0; /* 1 */
-        min-height: 0; /* 1 */
-        flex: 1 1 auto;
-      }
-      .flex-none#{$breakpoint-name} { flex: none; }
-      .flex-column#{$breakpoint-name} { flex-direction: column; }
-      .flex-row#{$breakpoint-name} { flex-direction: row; }
-      .flex-wrap#{$breakpoint-name} { flex-wrap: wrap; }
-      .flex-nowrap#{$breakpoint-name} { flex-wrap: nowrap; }
-      .flex-wrap-reverse#{$breakpoint-name} { flex-wrap: wrap-reverse; }
-      .flex-column-reverse#{$breakpoint-name} { flex-direction: column-reverse; }
-      .flex-row-reverse#{$breakpoint-name} { flex-direction: row-reverse; }
-      .items-start#{$breakpoint-name} { align-items: flex-start; }
-      .items-end#{$breakpoint-name} { align-items: flex-end; }
-      .items-center#{$breakpoint-name} { align-items: center; }
-      .items-baseline#{$breakpoint-name} { align-items: baseline; }
-      .items-stretch#{$breakpoint-name} { align-items: stretch; }
-      .self-start#{$breakpoint-name} { align-self: flex-start; }
-      .self-end#{$breakpoint-name} { align-self: flex-end; }
-      .self-center#{$breakpoint-name} { align-self: center; }
-      .self-baseline#{$breakpoint-name} { align-self: baseline; }
-      .self-stretch#{$breakpoint-name} { align-self: stretch; }
-      .justify-start#{$breakpoint-name} { justify-content: flex-start; }
-      .justify-end#{$breakpoint-name} { justify-content: flex-end; }
-      .justify-center#{$breakpoint-name} { justify-content: center; }
-      .justify-between#{$breakpoint-name} { justify-content: space-between; }
-      .justify-around#{$breakpoint-name} { justify-content: space-around; }
-      .content-start#{$breakpoint-name} { align-content: flex-start; }
-      .content-end#{$breakpoint-name} { align-content: flex-end; }
-      .content-center#{$breakpoint-name} { align-content: center; }
-      .content-between#{$breakpoint-name} { align-content: space-between; }
-      .content-around#{$breakpoint-name} { align-content: space-around; }
-      .content-stretch#{$breakpoint-name} { align-content: stretch; }
-      .order-0#{$breakpoint-name} { order: 0; }
-      .order-1#{$breakpoint-name} { order: 1; }
-      .order-2#{$breakpoint-name} { order: 2; }
-      .order-3#{$breakpoint-name} { order: 3; }
-      .order-4#{$breakpoint-name} { order: 4; }
-      .order-5#{$breakpoint-name} { order: 5; }
-      .order-6#{$breakpoint-name} { order: 6; }
-      .order-7#{$breakpoint-name} { order: 7; }
-      .order-8#{$breakpoint-name} { order: 8; }
-      .order-last#{$breakpoint-name} { order: 99999; }
-      .flex-grow-0#{$breakpoint-name} { flex-grow: 0; }
-      .flex-grow-1#{$breakpoint-name} { flex-grow: 1; }
-      .flex-shrink-0#{$breakpoint-name} { flex-shrink: 0; }
-      .flex-shrink-1#{$breakpoint-name} { flex-shrink: 1; }
+      @include flex($breakpoint-name);
     }
+  } @else {
+    @include flex;
   }
 }
 

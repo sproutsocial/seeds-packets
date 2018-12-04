@@ -30,6 +30,7 @@ Breakpoints:
     font-weight: $Typography-weight--normal;
   }
 }
+
 @each $breakpoint-name, $breakpoint in $breakpoints {
   @if ($breakpoint != "") {
     @media #{$breakpoint} {

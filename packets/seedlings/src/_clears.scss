@@ -1,9 +1,14 @@
 /*
-   CLEARFIX
+---
+Name: ClearFix
+Modifiers:
+    cf
+    cl
+    cr
+    cb
+    cn
+---
 */
-
-/* Nicolas Gallaghers Clearfix solution
-   Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
 
 .cf:before,
 .cf:after { content: " "; display: table; }

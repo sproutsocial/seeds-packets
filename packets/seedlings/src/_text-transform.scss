@@ -18,19 +18,22 @@ Breakpoints:
 ---
 */
 
-.ttc { text-transform: capitalize; }
-.ttl { text-transform: lowercase; }
-.ttu { text-transform: uppercase; }
-.ttn { text-transform: none; }
+
+
+@mixin text-transform($breakpoint-name: "") {
+  .ttc#{$breakpoint-name} { text-transform: capitalize; }
+  .ttl#{$breakpoint-name} { text-transform: lowercase; }
+  .ttu#{$breakpoint-name} { text-transform: uppercase; }
+  .ttn#{$breakpoint-name} { text-transform: none; }
+}
 
 @each $breakpoint-name, $breakpoint in $breakpoints {
   @if ($breakpoint != "") {
     @media #{$breakpoint} {
-      .ttc#{breakpoint-name} { text-transform: capitalize; }
-      .ttl#{breakpoint-name} { text-transform: lowercase; }
-      .ttu#{breakpoint-name} { text-transform: uppercase; }
-      .ttn#{breakpoint-name} { text-transform: none; }
+      @include text-transform($breakpoint-name);
     }
+  } @else {
+    @include text-transform;
   }
 }
 
