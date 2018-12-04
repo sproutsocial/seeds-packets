@@ -1,0 +1,65 @@
+////
+///
+/// Contains variables and mixins related to dimensional depth.
+/// @group ZIndex
+////
+@import "Colors";
+
+// TODO: this will need to be decoupled from marketing later
+
+
+/// A list of the available `$level` options that can be used with **ZIndex** mixins.
+$levels: (
+        "Snackbar": 25,
+        "Modal": 24,
+        "Modal-overlay": 23,
+        "Sidebar": 16,
+        "Rightbar": 16,
+        "Sidebar-overlay": 15,
+        "Navbar-submenu": 10,
+        "Navbar-menu": 9,
+        "Navbar": 8,
+        "Card-pressed": 3,
+        "Button-pressed": 3,
+        "Card-hover": 2,
+        "Button-hover": 2,
+        "Image": 1,
+        "Card": 1,
+        "Button": 1,
+        "Neg": -1
+);
+
+/// Helps you to add depth to elements according to
+/// [the Google Material Design spec](http://www.google.com/design/spec/layout/layout-principles.html#layout-principles-dimensionality).
+///
+/// @param {string} $level - The name of the Z-level
+/// @param {color} $color [get-color(neutral, 500)] - The color of the box-shadow
+/// @param {string} $lighting ["top"] - The direction of the light causing the shadow.
+@mixin BoxShadow(
+  $level,
+  $color: get-color(neutral, 1000),
+  $lighting: "",
+  $filter: false
+) {
+  $levelNumber: map-get($levels, $level);
+  @if ($filter) {
+    @media #{$desktop-media} {
+      filter: drop-shadow(7px 25px 25px rgba(get-color(neutral, 1000), .25));
+    }
+    @media #{$mobile-media} {
+      filter: drop-shadow(4px 12px 12px rgba(get-color(neutral, 1000), .25));
+    }
+  } @else {
+    @if ($levelNumber <= 1) {
+      box-shadow: 0 0 3px rgba($color,.12), 0 1px 2px rgba($color,.24);
+    } @else if ($levelNumber <= 8) {
+      box-shadow: 0 0 6px rgba($color,.16), 0 3px 6px rgba($color,.23);
+    } @else if ($levelNumber <= 15) {
+      box-shadow: 0 0 20px rgba($color,.19), 0 6px 6px rgba($color,.23);
+    } @else if ($levelNumber <= 23) {
+      box-shadow: 0 0 28px rgba($color,.25), 0 10px 10px rgba($color,.22);
+    } @else {
+      box-shadow: 0 0 38px rgba($color,.3), 0 15px 12px rgba($color,.22);
+    }
+  }
+}

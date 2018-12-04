@@ -1,0 +1,30 @@
+@import "./axioms/ZIndex";
+
+/*
+---
+Name: Z-index
+Base:
+    z: z-index
+Modifiers:
+  -1 to 25
+---
+*/
+
+@for $i from 1 to 26 {
+  .z#{$i} {
+    z-index: #{$i};
+  }
+}
+
+.z-1 { z-index: -1; }
+.z999 { z-index: 999; }
+.z9999 { z-index: 9999; }
+
+.z-max {
+  z-index: 2147483647;
+}
+
+.z-inherit { z-index: inherit; }
+.z-initial { z-index: initial; }
+.z-unset { z-index: unset; }
+

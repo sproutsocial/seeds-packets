@@ -1,0 +1,70 @@
+/*
+---
+Name: Display
+Base:
+    d: display
+Modifiers:
+    n: none
+    b: block
+    i: inline
+    ib: inline-block
+    it: inline-table
+    t: table
+    tc: table-cell
+    t-row: table-row
+    t-columm: table-column
+    t-column-group: table-column-group
+    g: grid
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+    -p: print
+---
+*/
+
+$display-map: (
+        dn: none,
+        db: block,
+        di: inline,
+        dib: inline-block,
+        dit: inline-table,
+        dt: table,
+        dtc: table-cell,
+        dt-row: table-row,
+        dt-columm: table-column,
+        dt-column-group: table-column-group,
+        flex: flex,
+        inline-flex: inline-flex,
+        dg: grid
+);
+@mixin display($display-map, $breakpoint-name: "") {
+  @each $class, $display in $display-map {
+    .#{$class}#{$breakpoint-name} {
+      display: $display;
+    }
+  }
+  .grid--overlap#{$breakpoint-name} {
+    grid-template: "Content";
+  }
+  .grid--overlap#{$breakpoint-name} > * {
+    position: relative;
+    grid-area: Content / Content;
+  }
+}
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include display($display-map, $breakpoint-name);
+    }
+
+  } @else {
+    @include display($display-map);
+  }
+}
+
+@if ($enable-print) {
+  @media print {
+    @include display($display-map, "-p");
+  }
+}

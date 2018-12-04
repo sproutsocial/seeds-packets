@@ -13,3 +13,7 @@ node_modules
 .cache/
 .DS_Store
 yarn-error.log
+.idea
+
+# sprout ignores
+packets/seedlings/dist

@@ -1,0 +1,29 @@
+/*
+---
+Name: Whitespace
+Base:
+    ws: white-space
+Modifiers:
+    n: normal
+    nw: nowrap
+    p: pre
+    pw: pre-wrap
+    pl: pre-line
+---
+*/
+
+// A list of white-space values we support for text
+$white-space-map: (
+        n:  normal,
+        nw: nowrap,
+        p:  pre,
+        pw: pre-wrap,
+        pl: pre-line
+);
+@mixin generate-utility-white-space($map) {
+  @each $class, $value in $map {
+    .ws#{$class} {
+      white-space: $value;
+    }
+  }
+}

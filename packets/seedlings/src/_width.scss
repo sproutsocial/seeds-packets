@@ -1,0 +1,161 @@
+@import "./axioms/Space";
+
+/*
+---
+Name: Width
+Base:
+    w: width
+    mw: max-width
+Modifiers:
+    -auto: auto
+    -none: none
+    100: Size 100 (20px @large)
+    200: Size 200 (40px @large)
+    300: Size 300 (80px @large)
+    350: Size 350 (104px @large)
+    400: Size 400 (208px @large)
+    450: Size 450 (312px @large)
+    500: Size 500 (416px @large)
+    550: Size 550 (520px @large)
+    600: Size 600 (624px @large)
+    650: Size 650 (728px @large)
+    700: Size 700 (832px @large)
+    750: Size 750 (936px @large)
+    800: Size 800 (1040px @large)
+    850: Size 850 (1144px @large)
+    900: Size 900 (1248px @large)
+    950: Size 950 (1352px @large)
+    1000: Size 1000 (1456px @large)
+    1050: Size 1050 (1560px @large)
+    1100: Size 1100 (1664px @large)
+    -0p: 0
+    -8p: (1/12)%
+    -10p: 10%
+    -16p: (1/6)%
+    -20p: 20%
+    -25p: 25%
+    -30p: 30%
+    -33p: (100/3)%
+    -40p: 40%
+    -41p: (5/12)%
+    -50p: 50%
+    -58p: (7/12)%
+    -60p: 60%
+    -66p: (100/1.5)%
+    -70p: 70%
+    -75p: 75%
+    -80p: 80%
+    -83p: (5/6)%
+    -90p: 90%
+    -91p: (11/12)%
+    -100p: 100%
+    -0vw: 0
+    -10vw: 10vw
+    -20vw: 20vw
+    -25vw: 25vw
+    -30vw: 30vw
+    -33vw: (100/3)vw
+    -40vw: 40vw
+    -50vw: 50vw
+    -60vw: 60vw
+    -66vw: (100/1.5)vw
+    -70vw: 70vw
+    -75vw: 75vw
+    -80vw: 80vw
+    -90vw: 90vw
+    -100vw: 100vw
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+$grid-width: setUnits(1248px) !default;
+@mixin width($breakpoint-name: "") {
+  $column-width: $grid-width / 12;
+  $widths: (
+          -auto: auto,
+          100: Space(600) / 2,
+          200: Space(600),
+          300: Space(600) * 2,
+          350: $column-width * 1,
+          400: $column-width * 2,
+          450: $column-width * 3,
+          500: $column-width * 4,
+          550: $column-width * 5,
+          600: $column-width * 6,
+          650: $column-width * 7,
+          700: $column-width * 8,
+          750: $column-width * 9,
+          800: $column-width * 10,
+          850: $column-width * 11,
+          900: $grid-width,
+          950: $column-width * 13,
+          1000: $column-width * 14,
+          1050: $column-width * 15,
+          1100: $column-width * 16,
+  );
+  @each $name, $size in $widths {
+    .w#{$name}#{$breakpoint-name} {
+      width: $size;
+    }
+    .mw#{$name}#{$breakpoint-name} {
+      max-width: $size;
+    }
+  }
+}
+@mixin percent-width($breakpoint-name: "") {
+  $percent-widths: (
+          -8: (1 / 12),
+          -10: .1,
+          -16: (1 / 6),
+          -20: .2,
+          -25: .25,
+          -30: .3,
+          -33: (1 / 3),
+          -40: .4,
+          -41: (5 / 12),
+          -50: .5,
+          -58: (7 / 12),
+          -60: .6,
+          -66: (2 / 3),
+          -70: .7,
+          -75: .75,
+          -80: .8,
+          -83: (5 / 6),
+          -90: .9,
+          -91: (11 / 12),
+          -100: 1
+  );
+  @each $name, $size in $percent-widths {
+    .w#{$name}p#{$breakpoint-name} {
+      width: percentage($size);
+    }
+    .mw#{$name}p#{$breakpoint-name} {
+      max-width: percentage($size);
+    }
+    .w#{$name}vw#{$breakpoint-name} {
+      width: #{$size * 100}vw;
+    }
+    .mw#{$name}vw#{$breakpoint-name} {
+      max-width: #{$size * 100}vw;
+    }
+  }
+}
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include width($breakpoint-name);
+      @include percent-width($breakpoint-name);
+      .mw-none#{$breakpoint-name} {
+        max-width: none;
+      }
+    }
+  } @else {
+    @include width;
+    @include percent-width;
+    .mw-none {
+      max-width: none;
+    }
+  }
+}

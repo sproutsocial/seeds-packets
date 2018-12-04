@@ -1,0 +1,30 @@
+@import '@sproutsocial/seeds-space/dist/seeds-space.scss';
+
+@function setUnits($size) {
+  @if ($enable-rem) {
+    $remSize: $size / $font-size-base;
+    @return $remSize * 1rem;
+  }
+  @return $size;
+}
+
+$space-map: (
+        0: 0,
+        100: setUnits($Space-size--100),
+        200: setUnits($Space-size--200),
+        300: setUnits($Space-size--300),
+        350: setUnits($Space-size--350),
+        400: setUnits($Space-size--400),
+        450: setUnits($Space-size--450),
+        500: setUnits($Space-size--500),
+        600: setUnits($Space-size--600),
+        700: setUnits(2 * $Space-size--600),
+        750: setUnits(2 * ($Space-size--600 + $Space-size--300)),
+        800: setUnits(3 * $Space-size--600),
+        900: setUnits(5 * $Space-size--600),
+        1000: setUnits(8 * $Space-size--600)
+) !default;
+
+@function Space($value) {
+  @return map-get($space-map, $value);
+}

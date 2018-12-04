@@ -1,0 +1,43 @@
+/*
+---
+Name: Object Fit
+Base:
+    fit: object-fit
+Modifiers:
+    -contain: contain
+    -cover: cover
+    -fill: fill
+    -scale-down: scale-down
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+@mixin object-fit($breakpoint-name: "") {
+  .fit-contain#{$breakpoint-name} img,
+  .fit-contain#{$breakpoint-name} {
+    object-fit: contain;
+  }
+  .fit-cover#{$breakpoint-name} img,
+  .fit-cover#{$breakpoint-name} {
+    object-fit: cover;
+  }
+  .fit-fill#{$breakpoint-name} img,
+  .fit-fill#{$breakpoint-name} {
+    object-fit: fill;
+  }
+  .fit-scale-down#{$breakpoint-name} img,
+  .fit-scale-down#{$breakpoint-name} {
+    object-fit: scale-down;
+  }
+}
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include object-fit($breakpoint-name);
+    }
+  } @else {
+    @include object-fit;
+  }
+}

@@ -1,0 +1,21 @@
+/*
+---
+Name: Forms
+Modifiers:
+    input-reset: input reset
+    button-reset: button reset
+---
+*/
+.button-reset {
+  background: none;
+  border: 0;
+}
+.button-reset,
+.input-reset {
+  appearance: none;
+}
+.button-reset::-moz-focus-inner,
+.input-reset::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}

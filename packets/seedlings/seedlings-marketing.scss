@@ -1,0 +1,60 @@
+// Configuration
+$small-width: 17rem !default;
+$medium-width: 30rem !default;
+$large-width: 60rem !default;
+$breakpoint-not-small: "screen and (min-width: #{$medium-width})" !default;
+$breakpoint-medium: "screen and (min-width: #{$medium-width}) and (max-width: #{$large-width})" !default;
+$breakpoint-large: "screen and (min-width: #{$large-width})" !default;
+$breakpoints: (
+        none: "",
+        "-ns": $breakpoint-not-small,
+        "-m": $breakpoint-medium,
+        "-l": $breakpoint-large
+) !default;
+$enable-print: true !default;
+$enable-rem: true !default;
+$font-size-base: 12px !default;
+
+
+// Available Partials
+@import 'src/animation';
+@import 'src/background';
+@import 'src/background-position';
+@import 'src/background-size';
+@import 'src/border';
+@import 'src/border-color';
+@import 'src/border-radius';
+@import 'src/border-style';
+@import 'src/border-width';
+// @import 'src/clears';
+@import 'src/coordinates';
+@import 'src/color';
+@import 'src/display';
+@import 'src/flexbox';
+// @import 'src/floats';
+@import 'src/font-family';
+@import 'src/font-weight';
+@import 'src/forms';
+@import 'src/height';
+@import 'src/hide';
+@import 'src/hover';
+// @import 'src/links';
+@import 'src/lists';
+@import 'src/negative-margin';
+@import 'src/object-fit';
+@import 'src/opacity';
+@import 'src/overflow';
+@import 'src/position';
+@import 'src/print';
+@import 'src/shadow';
+@import 'src/spacing';
+@import 'src/text-align';
+@import 'src/text-decoration';
+@import 'src/text-transform';
+@import 'src/type-scale';
+// v@import 'src/typography';
+@import 'src/vertical-align';
+@import 'src/whitespace';
+@import 'src/width';
+@import 'src/word-break';
+@import 'src/z-index';

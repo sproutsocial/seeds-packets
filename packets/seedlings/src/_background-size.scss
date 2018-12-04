@@ -1,0 +1,25 @@
+/*
+   BACKGROUND SIZE
+   Docs: http://tachyons.io/docs/themes/background-size/
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+*/
+
+/*
+  Often used in combination with background image set as an inline style
+  on an html element.
+*/
+
+.cover { background-size: cover; }
+.contain { background-size: contain; }
+
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      .cover#{breakpoint-name} { background-size: cover!important; }
+      .contain#{breakpoint-name} { background-size: contain!important; }
+    }
+  }
+}

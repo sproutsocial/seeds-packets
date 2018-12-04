@@ -1,0 +1,31 @@
+/*
+---
+Name: Vertical Align
+Base:
+    v: vertical-align
+Modifiers:
+    -base: base
+    -mid: middle
+    -top: top
+    -btm: bottom
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+.v-base     { vertical-align: baseline; }
+.v-mid      { vertical-align: middle; }
+.v-top      { vertical-align: top; }
+.v-btm      { vertical-align: bottom; }
+
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      .v-base#{breakpoint-name}     { vertical-align: baseline; }
+      .v-mid#{breakpoint-name}      { vertical-align: middle; }
+      .v-top#{breakpoint-name}      { vertical-align: top; }
+      .v-btm#{breakpoint-name}      { vertical-align: bottom; }
+    }
+  }
+}
