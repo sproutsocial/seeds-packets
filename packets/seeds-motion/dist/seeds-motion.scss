@@ -1,8 +1,6 @@
-$Motion-ease--linear: linear;
-$Motion-ease--in: cubic-bezier(.4, 0, 1, 1);
+$Motion-ease--in: cubic-bezier(.4, 0, .7, .2);
 $Motion-ease--out: cubic-bezier(0, 0, .2, 1);
 $Motion-ease--inout: cubic-bezier(.4, 0, .2, 1);
-$Motion-duration--immediately: .05s;
-$Motion-duration--quickly: .1s;
-$Motion-duration--promptly: .2s;
-$Motion-duration--slowly: .4s;
+$Motion-duration--fast: .15s;
+$Motion-duration--medium: .3s;
+$Motion-duration--slow: .6s;

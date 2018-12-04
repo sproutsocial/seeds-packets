@@ -1,4 +1,5 @@
 :root {
+ --color-green-0: #ebf9eb;
  --color-green-100: #d7f4d7;
  --color-green-200: #c2f2bd;
  --color-green-300: #98e58e;
@@ -10,6 +11,7 @@
  --color-green-900: #006b40;
  --color-green-1000: #08422f;
  --color-green-1100: #002b20;
+ --color-teal-0: #e5f9f5;
  --color-teal-100: #cdf7ef;
  --color-teal-200: #b3f2e6;
  --color-teal-300: #7dead5;
@@ -21,6 +23,7 @@
  --color-teal-900: #026661;
  --color-teal-1000: #083f3f;
  --color-teal-1100: #002528;
+ --color-aqua-0: #d9fcfb;
  --color-aqua-100: #c5f9f9;
  --color-aqua-200: #a5f2f2;
  --color-aqua-300: #76e5e2;
@@ -32,6 +35,7 @@
  --color-aqua-900: #035e73;
  --color-aqua-1000: #083d4f;
  --color-aqua-1100: #002838;
+ --color-blue-0: #e9f8ff;
  --color-blue-100: #dcf2ff;
  --color-blue-200: #c7e4f9;
  --color-blue-300: #a1d2f8;
@@ -43,6 +47,7 @@
  --color-blue-900: #0c5689;
  --color-blue-1000: #0a3960;
  --color-blue-1100: #002138;
+ --color-purple-0: #f2f2f9;
  --color-purple-100: #eaeaf9;
  --color-purple-200: #d8d7f9;
  --color-purple-300: #c1c1f7;
@@ -54,6 +59,7 @@
  --color-purple-900: #483a9c;
  --color-purple-1000: #2d246b;
  --color-purple-1100: #1d1d38;
+ --color-magenta-0: #fef0ff;
  --color-magenta-100: #f9e3fc;
  --color-magenta-200: #f4c4f7;
  --color-magenta-300: #edadf2;
@@ -65,6 +71,7 @@
  --color-magenta-900: #6c2277;
  --color-magenta-1000: #451551;
  --color-magenta-1100: #29192d;
+ --color-pink-0: #ffe9f3;
  --color-pink-100: #fcdbeb;
  --color-pink-200: #ffb5d5;
  --color-pink-300: #ff95c1;
@@ -76,6 +83,7 @@
  --color-pink-900: #931847;
  --color-pink-1000: #561231;
  --color-pink-1100: #2b1721;
+ --color-red-0: #ffeae9;
  --color-red-100: #ffd5d2;
  --color-red-200: #ffb8b1;
  --color-red-300: #ff9c8f;
@@ -87,6 +95,7 @@
  --color-red-900: #992222;
  --color-red-1000: #6d1313;
  --color-red-1100: #2b1111;
+ --color-orange-0: #ffede3;
  --color-orange-100: #fcdccc;
  --color-orange-200: #ffc6a4;
  --color-orange-300: #ffb180;
@@ -109,6 +118,7 @@
  --color-neutral-800: #364141;
  --color-neutral-900: #273333;
  --color-neutral-1000: #162020;
+ --color-yellow-0: #fff8e2;
  --color-yellow-100: #fdefcd;
  --color-yellow-200: #ffe99a;
  --color-yellow-300: #ffe16e;
