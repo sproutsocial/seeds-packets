@@ -4,11 +4,15 @@ Name: Background Position
 Base:
     bg: background
 Modifiers:
-   -center = center center
+    -center = center center
     -top = top center
     -right = center right
     -bottom = bottom center
     -left = center left
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
 ---
 */
 

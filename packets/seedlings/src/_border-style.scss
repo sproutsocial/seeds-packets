@@ -1,13 +1,12 @@
 /*
-   BORDER STYLES
-   Depends on base border module in _borders.css
-   Base:
-     b = border-style
-   Modifiers:
-     --none   = none
-     --dotted = dotted
-     --dashed = dashed
-     --solid  = solid
+Name: Border Styles
+Base:
+    b = border-style
+Modifiers:
+    --none: none
+    --dotted: dotted
+    --dashed: dashed
+    --solid: solid
  */
 
 .b--dotted  { border-style: dotted; }

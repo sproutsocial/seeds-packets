@@ -2,8 +2,12 @@
 ---
 Name: Background Size
 Modifiers:
-    cover
-    container
+    - cover
+    - contain
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
 ---
 */
 
