@@ -3,14 +3,12 @@
 ---
 Name: Font Family
 Base:
-    proxima-nova
-    ff-system
+    ff: Font Family
+Modifiers:
+    -proxima-nova: Proxima Nova
+    -system: System Font Stack
 ---
 */
-
-.proxima-nova {
-  font-family: $Typography-family;
-}
 
 .ff-proxima-nova {
   font-family: $Typography-family;
