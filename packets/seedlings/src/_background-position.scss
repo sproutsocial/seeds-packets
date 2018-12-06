@@ -1,0 +1,54 @@
+/*
+---
+Name: Background Position
+Base:
+    bg: background
+Modifiers:
+    -center: center center
+    -top: top center
+    -right: center right
+    -bottom: bottom center
+    -left: center left
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+
+@mixin background-position($breakpoint-name: "") {
+  .bg-center#{$breakpoint-name} {
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .bg-top#{$breakpoint-name} {
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  .bg-right#{$breakpoint-name} {
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+
+  .bg-bottom#{$breakpoint-name} {
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+
+  .bg-left#{$breakpoint-name} {
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+}
+
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include background-position($breakpoint-name);
+    }
+  } @else {
+    @include background-position;
+  }
+}

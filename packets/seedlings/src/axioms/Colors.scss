@@ -1,0 +1,412 @@
+////
+/// @group colors
+////
+@import '@sproutsocial/seeds-color/dist/seeds-color.scss';
+@import '@sproutsocial/seeds-networkcolor/dist/seeds-networkcolor.scss';
+
+/// Calculates a darker, more saturated color to produce a higher-contract hover state.
+/// @param {color} $color - The hex value for a color.
+@function hoverColor($color) {
+  @if grayscale($color) == $color {
+    @return darken($color, 10%);
+  } @else {
+    @return saturate(darken($color, 10%), 8%);
+  }
+}
+
+/// The default color palette. It can be redefined using the `set-palette()` function. Colors used are from [SEEDS](https://sproutsocial.github.io/seeds/color/)
+/// @type map
+$colors: (
+        green: (
+                100: $Color-green--100,
+                200: $Color-green--200,
+                300: $Color-green--300,
+                400: $Color-green--400,
+                500: $Color-green--500,
+                600: $Color-green--600,
+                700: $Color-green--700,
+                800: $Color-green--800,
+                900: $Color-green--900,
+                1000: $Color-green--1000,
+                1100: $Color-green--1100,
+                default: 600
+        ),
+        teal: (
+                100: $Color-teal--100,
+                200: $Color-teal--200,
+                300: $Color-teal--300,
+                400: $Color-teal--400,
+                500: $Color-teal--500,
+                600: $Color-teal--600,
+                700: $Color-teal--700,
+                800: $Color-teal--800,
+                900: $Color-teal--900,
+                1000: $Color-teal--1000,
+                1100: $Color-teal--1100,
+                default: 600
+        ),
+        aqua: (
+                100: $Color-aqua--100,
+                200: $Color-aqua--200,
+                300: $Color-aqua--300,
+                400: $Color-aqua--400,
+                500: $Color-aqua--500,
+                600: $Color-aqua--600,
+                700: $Color-aqua--700,
+                800: $Color-aqua--800,
+                900: $Color-aqua--900,
+                1000: $Color-aqua--1000,
+                1100: $Color-aqua--1100,
+                default: 600
+        ),
+        blue: (
+                100: $Color-blue--100,
+                200: $Color-blue--200,
+                300: $Color-blue--300,
+                400: $Color-blue--400,
+                500: $Color-blue--500,
+                600: $Color-blue--600,
+                700: $Color-blue--700,
+                800: $Color-blue--800,
+                900: $Color-blue--900,
+                1000: $Color-blue--1000,
+                1100: $Color-blue--1100,
+                default: 600
+        ),
+        purple: (
+                100: $Color-purple--100,
+                200: $Color-purple--200,
+                300: $Color-purple--300,
+                400: $Color-purple--400,
+                500: $Color-purple--500,
+                600: $Color-purple--600,
+                700: $Color-purple--700,
+                800: $Color-purple--800,
+                900: $Color-purple--900,
+                1000: $Color-purple--1000,
+                1100: $Color-purple--1100,
+                default: 600
+        ),
+        magenta: (
+                100: $Color-magenta--100,
+                200: $Color-magenta--200,
+                300: $Color-magenta--300,
+                400: $Color-magenta--400,
+                500: $Color-magenta--500,
+                600: $Color-magenta--600,
+                700: $Color-magenta--700,
+                800: $Color-magenta--800,
+                900: $Color-magenta--900,
+                1000: $Color-magenta--1000,
+                1100: $Color-magenta--1100,
+                default: 600
+        ),
+        pink: (
+                100: $Color-pink--100,
+                200: $Color-pink--200,
+                300: $Color-pink--300,
+                400: $Color-pink--400,
+                500: $Color-pink--500,
+                600: $Color-pink--600,
+                700: $Color-pink--700,
+                800: $Color-pink--800,
+                900: $Color-pink--900,
+                1000: $Color-pink--1000,
+                1100: $Color-pink--1100,
+                default: 600
+        ),
+        red: (
+                100: $Color-red--100,
+                200: $Color-red--200,
+                300: $Color-red--300,
+                400: $Color-red--400,
+                500: $Color-red--500,
+                600: $Color-red--600,
+                700: $Color-red--700,
+                800: $Color-red--800,
+                900: $Color-red--900,
+                1000: $Color-red--1000,
+                1100: $Color-red--1100,
+                default: 600
+        ),
+        orange: (
+                100: $Color-orange--100,
+                200: $Color-orange--200,
+                300: $Color-orange--300,
+                400: $Color-orange--400,
+                500: $Color-orange--500,
+                600: $Color-orange--600,
+                700: $Color-orange--700,
+                800: $Color-orange--800,
+                900: $Color-orange--900,
+                1000: $Color-orange--1000,
+                1100: $Color-orange--1100,
+                default: 600
+        ),
+        yellow: (
+                100: $Color-yellow--100,
+                200: $Color-yellow--200,
+                300: $Color-yellow--300,
+                400: $Color-yellow--400,
+                500: $Color-yellow--500,
+                600: $Color-yellow--600,
+                700: $Color-yellow--700,
+                800: $Color-yellow--800,
+                900: $Color-yellow--900,
+                1000: $Color-yellow--1000,
+                1100: $Color-yellow--1100,
+                default: 600
+        ),
+        neutral: (
+                0: $Color-neutral--0,
+                100: $Color-neutral--100,
+                200: $Color-neutral--200,
+                300: $Color-neutral--300,
+                400: $Color-neutral--400,
+                500: $Color-neutral--500,
+                600: $Color-neutral--600,
+                700: $Color-neutral--700,
+                800: $Color-neutral--800,
+                900: $Color-neutral--900,
+                1000: $Color-neutral--1000,
+                default: 800
+        ),
+        bambuTeal: (
+                400: $Color-bambuTeal--400,
+                500: $Color-bambuTeal--500,
+                600: $Color-bambuTeal--600,
+                700: $Color-bambuTeal--700,
+                default: 500
+        ),
+        bambuYellow: (
+                500: $Color-bambuYellow--500,
+                600: $Color-bambuYellow--600,
+                default: 500
+        )
+) !default;
+$colors-without-gray: $colors;
+$grays: (
+        neutral: map-get($colors, neutral),
+) !default;
+$grays-without-gray: $grays;
+
+/// Brand colors from social networks. Use the `get-network-color()` function to retrieve them.
+/// @type map
+$colors-networks: (
+        twitter: (
+                default: $NetworkColor-twitter
+        ),
+        facebook: (
+                default: $NetworkColor-facebook
+        ),
+        linkedin: (
+                default: $NetworkColor-linkedin
+        ),
+        googleplus: (
+                default: $NetworkColor-googleplus
+        ),
+        instagram: (
+                default: $NetworkColor-instagram
+        ),
+        feedly: (
+                default: $NetworkColor-feedly
+        ),
+        analytics: (
+                default: $NetworkColor-analytics
+        ),
+        youtube: (
+                default: $NetworkColor-youtube
+        ),
+        snapchat: (
+                default: $NetworkColor-snapchat
+        ),
+        pinterest: (
+                default: $NetworkColor-pinterest
+        )
+) !default;
+
+/// Merges a new color palette into a given one.
+///
+/// @param {map} $new-colors - The new color palette.
+/// @param {map} $palette-name [$colors] - Palette to merge with.
+@function set-palette($new-colors, $palette-name: $colors) {
+  $new-palette: $palette-name;
+  @each $type, $colors-array in $new-colors {
+    $existing: map_get($palette-name, $type);
+    @if $existing {
+      $new-palette: map_merge(
+                      $new-palette,
+                      ($type: map_merge(map_get($palette-name, $type), $colors-array))
+      );
+    } @else {
+      $new-palette: map_merge($new-palette,  ($type: $colors-array));
+    }
+  }
+  @return $new-palette;
+}
+
+/// Gets a color value from the default color palette.
+/// @param {string} $color - The name of the color to get.
+/// @param {number | default} $value [default] - The color value. Higher numbers being darker.
+@function get-color($color, $value: default) {
+  //grabs the default color
+  $gc-default: false;
+  @if $value == default {
+    $gc-default: true;
+    $value: map-get(map-get($colors, $color), default);
+  }
+  //warns you if you're using deprecated value
+  // @if $value <= 12 {
+  //     $updatedColors: map-get($deprecationValues, $color);
+  //     // if updatedColors is a map, and that map has more than one value fire off the warning
+  //     // this deals with colors like black and white
+  //     @if type-of($updatedColors) == "map" and map-has-key($updatedColors, 1) {
+  //         $newValue: map-get($updatedColors, $value);
+  //         $newColor: map-get($updatedColors, newColor);
+  //         @if $gc-default == true {
+  //             @warn "update get-color(#{$color}) to get-color(#{$newColor}, #{$newValue}) ";
+  //         } @else {
+  //             @warn "update get-color(#{$color}, #{$value}) to get-color(#{$newColor}, #{$newValue}) ";
+  //         }
+  //     }
+  // }
+  @return map-get(map-get($colors, $color), $value);
+}
+
+/// Gets a social network brand color.
+///
+/// @param {string} $network - The name of the network.
+/// @param {string} $variant [default] - The variant of the color to get.
+@function get-network-color($network, $variant: default) {
+  @return map-get(map-get($colors-networks, $network), $variant);
+}
+
+/// The default theme color palette. These colors are used by themeable patterns to render a new look and feel.
+/// @type map
+$theme-colors: (
+        main: (
+                default: get-color(green, 700),
+                dark: get-color(green, 800),
+                darkest: get-color(green, 900)
+        ),
+        text: (
+                default: get-color(neutral, 1000),
+                light: get-color(neutral, 500),
+                dark: get-color(neutral, 1000),
+                inverse: get-color(neutral, 0)
+        ),
+        link: (
+                default: get-color(green, 700),
+                dark: get-color(green, 800),
+                inverse: get-color(neutral, 0)
+        ),
+        background: (
+                default: get-color(neutral, 0),
+                light: get-color(neutral, 100),
+                dark: get-color(aqua, 1100),
+                inverse: get-color(neutral, 900)
+        ),
+        background-card: (
+                default: get-color(neutral, 0)
+        ),
+        background-hero: (
+                default: get-color(neutral, 900),
+                light: get-color(neutral, 100),
+                dark: get-color(neutral, 900)
+        ),
+        primary: (
+                default: get-color(green, 700),
+                dark: get-color(green, 800)
+        ),
+        secondary: (
+                default: get-color(green, 700),
+                dark: get-color(green, 800)
+        )
+) !default;
+
+/// Merges a color palette with the default theme.
+///
+/// @param {map} $new-colors - The new color palette.
+/// @example scss - Usage in Theme.scss
+/// $theme-bambu: (
+///         main: (
+///                 default: get-color(bambuTeal, 400),
+///                 dark: get-color(bambuTeal, 700)
+///         ),
+///         primary: (
+///                 default: get-color(bambuYellow, 500),
+///                 dark: get-color(bambuYellow, 600)
+///         ),
+///         secondary: (
+///                 default: get-color(neutral, 500),
+///                 dark: get-color(neutral, 700)
+///         ),
+///         link: (
+///                 default: get-color(bambuTeal, 400),
+///                 dark: get-color(bambuTeal, 700)
+///         )
+/// );
+/// $theme-colors: set-theme($theme-bambu);
+@function set-theme($new-colors) {
+  @return set-palette($new-colors, $theme-colors);
+}
+
+/// Gets the theme color with the given name.
+///
+/// @param {string} $type - The name of the theme color.
+/// @param {string} $variant [default] - The color variant to get.
+///
+/// @example scss - Usage in an Axiom or Pattern
+/// $blast-background: theme-color(main);
+/// $blast-color: theme-color(text, inverse);
+@function theme-color($type, $variant: default) {
+  @return map-get(map-get($theme-colors, $type), $variant);
+}
+@mixin generate-utility-color($color-map, $property, $class, $prefix: "u-") {
+  @if ($class != "") {
+    $class: $class + "-";
+  }
+  @each $color, $list in $color-map {
+    @each $index, $hex in $list {
+      @if ($index == "default") {
+        @if (map-has-key($list, $hex)) {
+          .#{$prefix}#{$class}#{$color} {
+            #{$property}: #{map-get($list, $hex)};
+          }
+        } @else {
+          .#{$prefix}#{$class}#{$color} {
+            #{$property}: #{$hex};
+          }
+        }
+      } @else {
+        .#{$prefix}#{$class}#{$color}-#{$index} {
+          #{$property}: $hex;
+        }
+      }
+    }
+  }
+}
+@mixin generate-utility-color-hover($color-map, $property, $class, $prefix: "hover-") {
+  @if ($class != "") {
+    $class: $class + "-";
+  }
+  @each $color, $list in $color-map {
+    @each $index, $hex in $list {
+      @if ($index == "default") {
+        @if (map-has-key($list, $hex)) {
+          .#{$prefix}#{$class}#{$color}:hover {
+            #{$property}: #{map-get($list, $hex)};
+          }
+        } @else {
+          .#{$prefix}#{$class}#{$color}:hover {
+            #{$property}: #{$hex};
+          }
+        }
+      } @else {
+        .#{$prefix}#{$class}#{$color}-#{$index}:hover {
+          #{$property}: $hex;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+/*
+---
+Name: Print
+Modifiers:
+    break: Break
+---
+*/
+@media print {
+  .break {
+    page-break-before: always;
+  }
+}

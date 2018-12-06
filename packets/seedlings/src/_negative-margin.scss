@@ -1,0 +1,70 @@
+@import "./axioms/Space";
+
+/*
+---
+Name: Negative Margin
+Base:
+    m: margin
+Directions:
+    t: top
+    r: right
+    b: bottom
+    l: left
+Modifiers:
+    -100: negative Size 100
+    -200: negative Size 200
+    -300: negative Size 300
+    -400: negative Size 400
+    -450: negative Size 450
+    -500: negative Size 500
+    -600: negative Size 600
+    -700: negative Size 700
+    -800: negative Size 800
+    -900: negative Size 900
+    -1000: negative Size 1000
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+$negative-margin-map: (
+        -100: -1 * setUnits($Space-size--100),
+        -200: -1 * setUnits($Space-size--200),
+        -300: -1 * setUnits($Space-size--300),
+        -400: -1 * setUnits($Space-size--400),
+        -450: -1 * setUnits($Space-size--450),
+        -500: -1 * setUnits($Space-size--500),
+        -600: -1 * setUnits($Space-size--600),
+        -700: -1 * setUnits(2 * $Space-size--600),
+        -800: -1 * setUnits(3 * $Space-size--600),
+        -900: -1 * setUnits(5 * $Space-size--600),
+        -1000: -1 * setUnits(8 * $Space-size--600)
+);
+@mixin negative-margins($breakpoint-name: "") {
+  $directions: (
+          t: top,
+          r: right,
+          b: bottom,
+          l: left
+  );
+  $properties: (m: margin);
+  @each $directionClass, $direction in $directions {
+    @each $propClass, $property in $properties {
+      @each $index, $size in $negative-margin-map {
+        .#{$propClass}#{$directionClass}#{$index}#{$breakpoint-name} {
+          #{$property}-#{$direction}: $size;
+        }
+      }
+    }
+  }
+}
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include negative-margins($breakpoint-name);
+    }
+  } @else {
+    @include negative-margins;
+  }
+}

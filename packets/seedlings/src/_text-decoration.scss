@@ -1,0 +1,105 @@
+/*
+---
+Name: Text Decoration
+Modifiers:
+    strike: line-through
+    underline: underline
+    underline-dotted: dotted underline
+    underline-dashed: dashed underline
+    no-underline: none
+    line-behind: line behind
+    overline: overline
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+HoverClasses: true
+---
+*/
+@mixin overline($length: Space(700)) {
+  position: relative;
+  &::before {
+    display: block;
+    width: $length;
+    height: Space(300);
+    margin-bottom: Space(400);
+    background-color: theme-color(main, dark);
+    content: "";
+  }
+}
+
+@mixin line-behind() {
+  overflow: hidden;
+  text-align: center;
+  &::before,
+  &::after {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 2px;
+    vertical-align: middle;
+    background-color: currentColor;
+    content: "";
+  }
+  &::before {
+    right: Space(300);
+    margin-left: -50%;
+  }
+  &::after {
+    left: Space(300);
+    margin-right: -50%;
+  }
+}
+
+@mixin decoration($breakpoint-name: "") {
+
+  .strike#{$breakpoint-name} {
+    text-decoration: line-through;
+  }
+  .underline#{$breakpoint-name} {
+    text-decoration: underline;
+  }
+  .underline-dotted#{$breakpoint-name} {
+    text-decoration: underline dotted;
+  }
+  .underline-dashed#{$breakpoint-name} {
+    text-decoration: underline dashed;
+  }
+  .no-underline#{$breakpoint-name} {
+    text-decoration: none;
+  }
+  .overline#{$breakpoint-name} {
+    @include overline(Space(500));
+  }
+  .line-behind#{$breakpoint-name} {
+    @include line-behind();
+  }
+  .hover-strike#{$breakpoint-name}:hover {
+    text-decoration: line-through;
+  }
+  .hover-underline#{$breakpoint-name}:hover {
+    text-decoration: underline;
+  }
+  .hover-underline-dotted#{$breakpoint-name}:hover {
+    text-decoration: underline dotted;
+  }
+  .hover-underline-dashed#{$breakpoint-name}:hover {
+    text-decoration: underline dashed;
+  }
+  .hover-no-underline#{$breakpoint-name}:hover {
+    text-decoration: none;
+  }
+  .hover-overline#{$breakpoint-name}:hover {
+    @include overline(Space(500));
+  }
+}
+
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include decoration($breakpoint-name);
+    }
+  } @else {
+    @include decoration;
+  }
+}

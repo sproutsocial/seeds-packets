@@ -1,0 +1,157 @@
+/*
+---
+Name: Flexbox
+Modifiers:
+    flex: flex
+    inline-flex: inline-flex
+    flex-auto: flex auto
+    flex-none: flex none
+    grow-0: grow 0
+    grow-1: grow 1
+    shrink-0: shrink 0
+    shrink-1: shrink 1
+    flex-column: direction column
+    flex-row: direction row
+    flex-wrap: wrap
+    flex-nowrap: nowrap
+    flex-wrap-reverse: wrap-reverse
+    flex-column-reverse: column-reverse
+    flex-row-reverse: row-reverse
+    items-start: items start
+    items-end: items end
+    items-center: items center
+    items-baseline: items baseline
+    items-stretch: items stretch
+    self-start: self start
+    self-end: self end
+    self-center: self center
+    self-baseline: self baseline
+    self-stretch: stretch
+    justify-start: justify start
+    justify-end: justify end
+    justify-center: justify center
+    justify-between: justify space-between
+    justify-around: justify space-around
+    content-start: content start
+    content-end: content end
+    content-center: content center
+    content-between: content space-between
+    content-around: content space-around
+    content-stretch: content stretch
+    order-0: order 0
+    order-1: order 1
+    order-2: order 2
+    order-3: order 3
+    order-4: order 4
+    order-5: order 5
+    order-6: order 6
+    order-7: order 7
+    order-8: order 8
+    order-first: order first
+    order-last: order last
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+
+/**
+ * We define display: flex in the display file
+ * In order to pull that off, we need to steal this file from tachyons
+ * https://github.com/tachyons-css/tachyons/blob/master/src/_flexbox.css
+ */
+
+@mixin flex($breakpoint-name: "") {
+  /* 1. Fix for Chrome 44 bug.
+ * https://code.google.com/p/chromium/issues/detail?id=506893 */
+  .flex-auto#{$breakpoint-name} {
+    min-width: 0; /* 1 */
+    min-height: 0; /* 1 */
+    flex: 1 1 auto;
+  }
+  .flex-none#{$breakpoint-name} { flex: none; }
+  .flex-column#{$breakpoint-name} { flex-direction: column; }
+  .flex-row#{$breakpoint-name} { flex-direction: row; }
+  .flex-wrap#{$breakpoint-name} { flex-wrap: wrap; }
+  .flex-nowrap#{$breakpoint-name} { flex-wrap: nowrap; }
+  .flex-wrap-reverse#{$breakpoint-name} { flex-wrap: wrap-reverse; }
+  .flex-column-reverse#{$breakpoint-name} { flex-direction: column-reverse; }
+  .flex-row-reverse#{$breakpoint-name} { flex-direction: row-reverse; }
+  .items-start#{$breakpoint-name} { align-items: flex-start; }
+  .items-end#{$breakpoint-name} { align-items: flex-end; }
+  .items-center#{$breakpoint-name} { align-items: center; }
+  .items-baseline#{$breakpoint-name} { align-items: baseline; }
+  .items-stretch#{$breakpoint-name} { align-items: stretch; }
+  .self-start#{$breakpoint-name} { align-self: flex-start; }
+  .self-end#{$breakpoint-name} { align-self: flex-end; }
+  .self-center#{$breakpoint-name} { align-self: center; }
+  .self-baseline#{$breakpoint-name} { align-self: baseline; }
+  .self-stretch#{$breakpoint-name} { align-self: stretch; }
+  .justify-start#{$breakpoint-name} { justify-content: flex-start; }
+  .justify-end#{$breakpoint-name} { justify-content: flex-end; }
+  .justify-center#{$breakpoint-name} { justify-content: center; }
+  .justify-between#{$breakpoint-name} { justify-content: space-between; }
+  .justify-around#{$breakpoint-name} { justify-content: space-around; }
+  .content-start#{$breakpoint-name} { align-content: flex-start; }
+  .content-end#{$breakpoint-name} { align-content: flex-end; }
+  .content-center#{$breakpoint-name} { align-content: center; }
+  .content-between#{$breakpoint-name} { align-content: space-between; }
+  .content-around#{$breakpoint-name} { align-content: space-around; }
+  .content-stretch#{$breakpoint-name} { align-content: stretch; }
+  .order-0#{$breakpoint-name} { order: 0; }
+  .order-1#{$breakpoint-name} { order: 1; }
+  .order-2#{$breakpoint-name} { order: 2; }
+  .order-3#{$breakpoint-name} { order: 3; }
+  .order-4#{$breakpoint-name} { order: 4; }
+  .order-5#{$breakpoint-name} { order: 5; }
+  .order-6#{$breakpoint-name} { order: 6; }
+  .order-7#{$breakpoint-name} { order: 7; }
+  .order-8#{$breakpoint-name} { order: 8; }
+  .order-first#{$breakpoint-name} { order: -1; }
+  .order-last#{$breakpoint-name} { order: 99999; }
+  .flex-grow-0#{$breakpoint-name} { flex-grow: 0; }
+  .flex-grow-1#{$breakpoint-name} { flex-grow: 1; }
+  .flex-shrink-0#{$breakpoint-name} { flex-shrink: 0; }
+  .flex-shrink-1#{$breakpoint-name} { flex-shrink: 1; }
+}
+
+
+
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include flex($breakpoint-name);
+    }
+  } @else {
+    @include flex;
+  }
+}
+
+/**
+ * Additional flex classes by Sprout
+ */
+@mixin grow-shrink($breakpoint-name: "") {
+  .grow-0#{$breakpoint-name} {
+    flex-grow: 0;
+  }
+  .shrink-0#{$breakpoint-name} {
+    flex-shrink: 0;
+  }
+  .grow-1#{$breakpoint-name} {
+    flex-grow: 1;
+  }
+  .shrink-1#{$breakpoint-name} {
+    flex-shrink: 1;
+  }
+}
+
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include grow-shrink($breakpoint-name);
+    }
+  } @else {
+    @include grow-shrink;
+  }
+}

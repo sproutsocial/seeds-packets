@@ -1,0 +1,24 @@
+@import "./axioms/Space";
+
+/*
+---
+Name: Lists
+Modifiers:
+    list: style none
+    number: Number
+---
+*/
+.list {
+  list-style-type: none;
+}
+.number {
+  counter-increment: number;
+}
+.number:first-child {
+  counter-reset: number;
+}
+
+.number::before {
+  min-width: Space(400);
+  content: counter(number);
+}

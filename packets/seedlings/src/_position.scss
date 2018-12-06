@@ -1,0 +1,39 @@
+/*
+---
+Name: Position
+Modifiers:
+    static: static
+    relative: relative
+    absolute: absolute
+    fixed: fixed
+    sticky: sticky
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+
+@mixin position($breakpoint-name: "") {
+  $positions: (
+          static: static,
+          relative: relative,
+          absolute: absolute,
+          fixed: fixed,
+          sticky: sticky
+  );
+  @each $name, $position in $positions {
+    .#{$name}#{$breakpoint-name} {
+      position: $position;
+    }
+  }
+}
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include position($breakpoint-name);
+    }
+  } @else {
+    @include position;
+  }
+}

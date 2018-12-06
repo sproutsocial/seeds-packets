@@ -1,0 +1,23 @@
+@import "./axioms/Colors";
+
+/*
+---
+Name: Color
+Base:
+    c: color
+Modifiers:
+    -inherit: Inherit
+    --color-name: name of a color variable
+HoverClasses: true
+---
+*/
+.c-inherit,
+.hover-c-inherit:hover {
+  color: inherit;
+}
+@include generate-utility-color($colors-networks, "color", "c-", "");
+@include generate-utility-color-hover($colors-networks, "color", "c-");
+@include generate-utility-color($colors-without-gray, "color", "c-", "");
+@include generate-utility-color-hover($colors-without-gray, "color", "c-");
+@include generate-utility-color($theme-colors, "color", "c-", "");
+@include generate-utility-color-hover($theme-colors, "color", "c-");

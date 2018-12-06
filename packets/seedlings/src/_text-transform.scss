@@ -1,0 +1,33 @@
+@import '@sproutsocial/seeds-typography/dist/seeds-typography.scss';
+
+/*
+---
+Name: Text Transform
+Base:
+    tt: text-transform
+Modifiers:
+    c: capitalize
+    l: lowercase
+    u: uppercase
+    n: none
+    s: spacedout
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+
+@mixin spaced-out() {
+  font-weight: $Typography-weight--bold;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+@mixin text-transform($breakpoint-name: "") {
+  .ttc#{$breakpoint-name} { text-transform: capitalize; }
+  .ttl#{$breakpoint-name} { text-transform: lowercase; }
+  .ttu#{$breakpoint-name} { text-transform: uppercase; }
+  .ttn#{$breakpoint-name} { text-transform: none; }
+  .tts#{$breakpoint-name} { @include spaced-out; }
+}

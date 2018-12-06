@@ -1,0 +1,109 @@
+@import '@sproutsocial/seeds-space/dist/seeds-space.scss';
+@import "./axioms/Space";
+
+
+/*
+---
+Name: Spacing
+Base:
+    m: margin
+    p: padding
+Directions:
+    a: all
+    x: horizontal
+    y: vertical
+    t: top
+    r: right
+    b: bottom
+    l: left
+Modifiers:
+    -auto: auto
+    -0: 0
+    100: Size 100
+    200: Size 200
+    300: Size 300
+    350: Size 350
+    400: Size 400
+    500: Size 500
+    600: Size 600
+    650: Size 650
+    700: Size 700
+    750: Size 750
+    800: Size 800
+    900: Size 900
+    1000: Size 1000
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+$space-map: (
+        -auto: auto,
+        -0: 0,
+        100: setUnits($Space-size--100),
+        200: setUnits($Space-size--200),
+        300: setUnits($Space-size--300),
+        350: setUnits($Space-size--350),
+        400: setUnits($Space-size--400),
+        450: setUnits($Space-size--450),
+        500: setUnits($Space-size--500),
+        600: setUnits($Space-size--600),
+        650: setUnits($Space-size--600 + $Space-size--400),
+        700: setUnits(2 * $Space-size--600),
+        750: setUnits(2 * ($Space-size--600 + $Space-size--300)),
+        800: setUnits(3 * $Space-size--600),
+        900: setUnits(5 * $Space-size--600),
+        1000: setUnits(8 * $Space-size--600)
+);
+@function Space($value) {
+  @return map-get($space-map, $value);
+}
+@mixin spacing($breakpoint-name: "") {
+  $directions: (
+          a: all,
+          x: x,
+          y: y,
+          t: top,
+          r: right,
+          b: bottom,
+          l: left
+  ); // The order of these matters, so we can override things
+  $properties: (m: margin, p: padding);
+  @each $directionClass, $direction in $directions {
+    @each $propClass, $property in $properties {
+      @each $index, $size in $space-map {
+        @if (($property == padding and $size != auto) or ($property != padding)) {
+          @if ($direction == all) {
+            .#{$propClass}#{$directionClass}#{$index}#{$breakpoint-name} {
+              #{$property}: $size;
+            }
+          } @else if ($direction == x) {
+            .#{$propClass}#{$directionClass}#{$index}#{$breakpoint-name} {
+              #{$property}-right: $size;
+              #{$property}-left: $size;
+            }
+          } @else if ($direction == y) {
+            .#{$propClass}#{$directionClass}#{$index}#{$breakpoint-name} {
+              #{$property}-top: $size;
+              #{$property}-bottom: $size;
+            }
+          } @else {
+            .#{$propClass}#{$directionClass}#{$index}#{$breakpoint-name} {
+              #{$property}-#{$direction}: $size;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include spacing($breakpoint-name);
+    }
+  } @else {
+    @include spacing;
+  }
+}

@@ -1,0 +1,70 @@
+@import "./axioms/Animation";
+
+/*
+---
+Name: Hover
+Modifiers:
+    dim: Hover Dim
+    glow: Hover Glow
+    lift: Hover Lift
+    reveal: Hover Reveal
+    pointer: Hover Pointer
+---
+*/
+
+/*
+    Dim element on hover by adding the dim class.
+*/
+.dim {
+  transition-duration: $transition-time-default;
+  transition-timing-function: $transition-out-default;
+}
+.dim:hover,
+.dim:focus {
+  opacity: .5;
+  transition-timing-function: $transition-in-default;
+}
+
+/*
+    Animate opacity to 100% on hover by adding the glow class.
+*/
+.glow {
+  opacity: .5;
+  transition-duration: $transition-time-default;
+  transition-timing-function: $transition-out-default;
+}
+.glow:focus,
+.glow:hover {
+  opacity: 1;
+  transition-timing-function: $transition-in-default;
+}
+
+/*
+    lift element on hover by adding the lift class.
+*/
+.lift {
+  transition-duration: $transition-time-default;
+  transition-timing-function: $transition-in-default;
+}
+.lift:hover,
+.lift:focus {
+  transform: translateY(-8px);
+  transition-timing-function: $transition-in-default;
+}
+.reveal {
+  opacity: 0;
+  transition-duration: $transition-time-default;
+  transition-timing-function: $transition-out-default;
+}
+.reveal:focus,
+.reveal:hover {
+  opacity: 1;
+  transition-timing-function: $transition-in-default;
+}
+
+/*
+    Add pointer on hover
+*/
+.pointer:hover {
+  cursor: pointer;
+}

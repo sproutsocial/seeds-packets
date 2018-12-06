@@ -1,0 +1,43 @@
+@import "./axioms/Border";
+
+/*
+---
+Name: Border Radius
+Base:
+    br: border-radius
+Modifiers:
+    0: 0
+    500: 500
+    --round: 50%
+    --top: top only
+    --right: right only
+    --bottom: bottom only
+    --left: left only
+    --x: rounded left & right
+---
+*/
+@each $name, $size in $radiusSizes {
+  .br#{$name} {
+    border-radius: $size;
+  }
+}
+.br--top {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.br--right {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.br--bottom {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.br--left {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.br--x {
+  // This can be any randomly large number, Viewport units will just be both scaleable and randomly large
+  border-radius: 2000vw;
+}

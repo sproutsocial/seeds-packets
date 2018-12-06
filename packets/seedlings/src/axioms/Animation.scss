@@ -1,0 +1,44 @@
+@import '@sproutsocial/seeds-motion/dist/seeds-motion.scss';
+
+// Transition functions
+$transition-out-default: $Motion-ease--in !default;
+$transition-in-default: $Motion-ease--out !default;
+$transition-move-default: $Motion-ease--inout !default;
+
+// Interaction (user-intitiated) events
+$transition-timing-interaction: $transition-out-default !default;
+
+// Noninteration events, e.g. system events
+$transition-timing-noninteraction: $transition-in-default !default;
+
+// Transition timing
+$transition-time-100: .05s !default;
+$transition-time-200: .1s !default;
+$transition-time-300: .2s !default;
+$transition-time-400: .3s !default;
+$transition-time-500: .5s !default;
+$transition-time-600: .8s !default;
+$transition-time-700: 1.3s !default;
+$transition-time-default: $transition-time-400 !default;
+@mixin animationAppearUp() {
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-duration: $transition-time-500;
+  transition-timing-function: $transition-in-default;
+  transform: translateY(5%);
+  will-change: opacity, transform;
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@mixin animationFadeIn() {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: $transition-time-500;
+  transition-timing-function: $transition-in-default;
+  will-change: opacity;
+  &.is-visible {
+    opacity: 1;
+  }
+}

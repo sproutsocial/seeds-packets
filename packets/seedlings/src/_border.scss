@@ -1,0 +1,56 @@
+@import "./axioms/Border";
+
+/*
+---
+Name: Border
+Base:
+    b: border
+Modifiers:
+    a: all
+    n: none
+    t: top
+    r: right
+    b: bottom
+    l: left
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      .ba#{$breakpoint-name} {
+        border-width: $Border-width--500;
+        border-style: solid;
+      }
+      .bn#{$breakpoint-name} {
+        border-width: 0;
+        border-style: none;
+      }
+      @each $sideClass, $side in $sides {
+        .b#{$sideClass}#{$breakpoint-name} {
+          border-#{$side}-width: $Border-width--500;
+          border-#{$side}-style: solid;
+        }
+      }
+    }
+  } @else {
+    .ba {
+      border-width: $Border-width--500;
+      border-style: solid;
+    }
+    .bn {
+      border-width: 0;
+      border-style: none;
+    }
+    @each $sideClass, $side in $sides {
+      .b#{$sideClass} {
+        border-#{$side}-width: $Border-width--500;
+        border-#{$side}-style: solid;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import '@sproutsocial/seeds-typography/dist/seeds-typography.scss';
+/*
+---
+Name: Font Family
+Base:
+    ff: Font Family
+Modifiers:
+    -proxima-nova: Proxima Nova
+    -system: System Font Stack
+---
+*/
+
+.ff-proxima-nova {
+  font-family: $Typography-family;
+}
+
+.ff-system {
+  font-family: $Typography-family--system;
+}

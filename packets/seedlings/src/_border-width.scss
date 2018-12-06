@@ -1,0 +1,28 @@
+@import "./axioms/Border";
+
+/*
+---
+Name: Border Width
+Base:
+    bw: border-width
+Modifiers:
+    500: 500
+    600: 600
+    700: 5px
+    t-0: top 0
+    r-0: right 0
+    b-0: bottom 0
+    l-0: left 0
+---
+*/
+@each $name, $size in $borderSizes {
+  .bw#{$name} {
+    border-width: $size;
+  }
+}
+// Border side reset
+@each $sideClass, $side in $sides {
+  .b#{$sideClass}-0 {
+    border-#{$side}-width: 0;
+  }
+}

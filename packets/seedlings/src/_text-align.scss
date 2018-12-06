@@ -1,0 +1,33 @@
+/*
+---
+Name: Text Align
+Base:
+    t: text-align
+Modifiers:
+    l: left
+    r: right
+    c: center
+    j: justify
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+
+@mixin text-align($breakpoint-name: "") {
+  .tl#{$breakpoint-name}  { text-align: left; }
+  .tr#{$breakpoint-name}  { text-align: right; }
+  .tc#{$breakpoint-name}  { text-align: center; }
+  .tj#{$breakpoint-name}  { text-align: justify; }
+}
+
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include text-align($breakpoint-name);
+    }
+  } @else {
+    @include text-align;
+  }
+}

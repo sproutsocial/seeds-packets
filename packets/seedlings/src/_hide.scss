@@ -1,0 +1,28 @@
+/*
+---
+Name: Hide
+Modifiers:
+    hide: Add this class to hide, while hidden.
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+
+@mixin hide($breakpoint-name: "") {
+  .hide#{$breakpoint-name}[hidden] {
+    display: none;
+  }
+}
+
+// NOTE: media queries updated to looping. please review
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include hide($breakpoint-name);
+    }
+  } @else {
+    @include hide;
+  }
+}

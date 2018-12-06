@@ -1,0 +1,39 @@
+/*
+---
+Name: Background Size
+
+Base:
+    bg: background-size
+
+Modifiers:
+    -cover: cover
+    -contain: contain
+
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+
+
+/*
+  Often used in combination with background image set as an inline style
+  on an html element.
+*/
+
+
+@mixin background-size($breakpoint-name: "") {
+  .bg-cover#{$breakpoint-name} { background-size: cover; }
+  .bg-contain#{$breakpoint-name} { background-size: contain; }
+}
+
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include background-size($breakpoint-name);
+    }
+  } @else {
+    @include background-size;
+  }
+}

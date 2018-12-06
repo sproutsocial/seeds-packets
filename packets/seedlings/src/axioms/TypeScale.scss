@@ -1,0 +1,80 @@
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  font-size: $min-font-size;
+  @media screen and (min-width: $min-vw) {
+    font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+  }
+  @media screen and (min-width: $max-vw) {
+    font-size: $max-font-size;
+  }
+}
+
+@mixin f100 {
+  @include Typography-size--100;
+}
+@mixin f200 {
+  @include Typography-size--200;
+}
+@mixin f300 {
+  @include Typography-size--300;
+}
+@mixin f400 {
+  @include Typography-size--400;
+}
+@mixin f500 {
+  @include Typography-size--500;
+}
+@mixin f600 {
+  @include Typography-size--500;
+  @media #{$breakpoint-not-small} {
+    @include Typography-size--600;
+  }
+}
+@mixin f700 {
+  @include Typography-size--600;
+  @media #{$breakpoint-not-small} {
+    @include Typography-size--700;
+  }
+}
+@mixin f800 {
+  @include Typography-size--700;
+  @media #{$breakpoint-not-small} {
+    @include Typography-size--800;
+  }
+}
+@mixin f900 {
+  @include Typography-size--800;
+  @media #{$breakpoint-not-small} {
+    @include Typography-size--900;
+  }
+}
+@mixin f1000 {
+  @include Typography-size--800;
+  @media #{$breakpoint-not-small} {
+    @include Typography-size--900;
+  }
+  @media #{$breakpoint-not-small} {
+    @include Typography-size--1000;
+  }
+}
+@mixin f1100 {
+  @include Typography-size--900;
+  @media #{$breakpoint-medium} {
+    @include Typography-size--1000;
+  }
+  @media #{$breakpoint-large} {
+    @include Typography-size--1100;
+  }
+}
+@mixin f1200 {
+  @include Typography-size--900;
+  @media #{$breakpoint-medium} {
+    @include Typography-size--1000;
+  }
+  @media #{$breakpoint-large} {
+    @include Typography-size--1200;
+  }
+}

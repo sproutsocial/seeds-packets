@@ -1,0 +1,122 @@
+@import '@sproutsocial/seeds-typography/dist/seeds-typography.scss';
+@import "./axioms/TypeScale";
+
+
+/*
+---
+Name: Type Scale
+Base:
+    f: font-size
+Modifiers:
+    100: Size 100
+    200: Size 200
+    300: Size 300
+    400: Size 400
+    500: Size 500
+    600: Size 600
+    700: Size 700
+    800: Size 800
+    900: Size 900
+    1000: Size 1000
+    1100: Size 1100
+    1200: Size 1200
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+
+
+.humongoose {
+  @include fluid-type(320px, 1200px, 43px, 225px);
+  line-height: 1;
+}
+.ginormous {
+  @include fluid-type(320px, 1200px, 57px, 135px);
+  line-height: 1;
+}
+.f100 {
+  @include f100;
+}
+.f200 {
+  @include f200;
+}
+.f300 {
+  @include f300;
+}
+.f400 {
+  @include f400;
+}
+.f500 {
+  @include f500;
+}
+.f600 {
+  @include f600;
+}
+.f700 {
+  @include f700;
+}
+.f800 {
+  @include f800;
+}
+.f900 {
+  @include f900;
+}
+.f1000 {
+  @include f1000;
+}
+.f1100 {
+  @include f1100;
+}
+.f1200 {
+  @include f1200;
+}
+@mixin type-scale($breakpoint-name: "") {
+  // We can't interpolate the name of the mixin, so we have to write out each class :/
+  .f100#{$breakpoint-name} {
+    @include Typography-size--100;
+  }
+  .f200#{$breakpoint-name} {
+    @include Typography-size--200;
+  }
+  .f300#{$breakpoint-name} {
+    @include Typography-size--300;
+  }
+  .f400#{$breakpoint-name} {
+    @include Typography-size--400;
+  }
+  .f500#{$breakpoint-name} {
+    @include Typography-size--500;
+  }
+  .f600#{$breakpoint-name} {
+    @include Typography-size--600;
+  }
+  .f700#{$breakpoint-name} {
+    @include Typography-size--700;
+  }
+  .f800#{$breakpoint-name} {
+    @include Typography-size--800;
+  }
+  .f900#{$breakpoint-name} {
+    @include Typography-size--900;
+  }
+  .f1000#{$breakpoint-name} {
+    @include Typography-size--1000;
+  }
+  .f1100#{$breakpoint-name} {
+    font-size: setUnits(101px);
+    line-height: #{(98/101)};
+  }
+  .f1200#{$breakpoint-name} {
+    font-size: setUnits(135px);
+    line-height: #{(136/135)};
+  }
+}
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include type-scale($breakpoint-name);
+    }
+  }
+}

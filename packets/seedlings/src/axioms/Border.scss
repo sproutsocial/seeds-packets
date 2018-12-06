@@ -1,0 +1,18 @@
+@import '@sproutsocial/seeds-border/dist/seeds-border.scss';
+
+$borderSizes: (
+        500: $Border-width--500,
+        600: $Border-width--600,
+        700: 5px
+);
+$radiusSizes: (
+        0: 0,
+        500: $Border-radius--500,
+        --round: 50%
+);
+$sides: (
+        t: top,
+        r: right,
+        b: bottom,
+        l: left
+);

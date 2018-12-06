@@ -1,0 +1,48 @@
+@import "./axioms/ZIndex";
+
+/*
+---
+Name: Shadow
+Base:
+    shadow: shadow
+Modifiers:
+    100: Level 100
+    200: Level 200
+    300: Level 300
+    400: Level 400
+    500: Level 500
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+HoverClasses: true
+---
+*/
+@mixin shadow($breakpoint-name: "") {
+  $shadowLevels: (
+          100: Button,
+          200: Navbar,
+          300: Navbar-submenu,
+          400: Sidebar,
+          500: Modal
+  );
+
+
+  @each $level, $component in $shadowLevels {
+    .shadow#{$level}#{$breakpoint-name} {
+      @include BoxShadow($component);
+    }
+    .hover-shadow#{$level}#{$breakpoint-name}:hover {
+      @include BoxShadow($component);
+    }
+  }
+}
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include shadow($breakpoint-name);
+    }
+  } @else {
+    @include shadow;
+  }
+}

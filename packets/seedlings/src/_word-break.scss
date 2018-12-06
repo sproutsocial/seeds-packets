@@ -1,0 +1,31 @@
+/*
+---
+Name: Word Break
+Base:
+    word: word-break
+Modifiers:
+    -normal: normal
+    -wrap: break-all
+    -nowrap: keep-all
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+
+@mixin word-break($breakpoint-name: "") {
+  .word-normal#{$breakpoint-name} { word-break: normal; }
+  .word-wrap#{$breakpoint-name} { word-break: break-all; }
+  .word-nowrap#{$breakpoint-name} { word-break: keep-all; }
+}
+
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include word-break($breakpoint-name);
+    }
+  } @else {
+    @include word-break;
+  }
+}

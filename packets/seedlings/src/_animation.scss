@@ -1,0 +1,111 @@
+@import "./axioms/Animation";
+@import "./axioms/Space";
+
+/*
+---
+Name: Animation
+Modifiers:
+    appear: appearUp
+    bounce: bounce
+    separate--up: separate up
+    separate--down: separate down
+    separate: separate
+    separated: separated
+    slash--up: slash up
+    slash--down: slash down
+---
+*/
+.appear {
+  @include animationAppearUp;
+}
+.fade-in {
+  @include animationFadeIn;
+}
+.underline--grow {
+  position: relative;
+  text-decoration: none;
+  .line {
+    will-change: transform;
+    position: absolute;
+    bottom: -.1em;
+    left: 0;
+    width: 100%;
+    height: .15em;
+    transform: scale(0, 1);
+    transform-origin: 0;
+  }
+}
+.rotate--grow {
+  will-change: transform;
+  transform: scale(0) rotate(180deg);
+}
+.bounce,
+.separate--up,
+.separate--down,
+.slash--up,
+.slash--down {
+  will-change: transform;
+  transform: translate(0, 0);
+}
+.slash--up,
+.slash--down {
+  width: auto;
+  height: 100%;
+}
+.bounce {
+  animation: bounce 3s 1s 3;
+}
+@keyframes bounce {
+  0% {
+    transform: translate(0, 0);
+    animation-timing-function: $transition-in-default;
+  }
+  8% {
+    transform: translate(0, -#{Space(300)});
+    animation-timing-function: $transition-out-default;
+  }
+  16% {
+    transform: translate(0, 0);
+    animation-timing-function: $transition-in-default;
+  }
+  32% {
+    transform: translate(0, -#{Space(300)});
+    animation-timing-function: $transition-out-default;
+  }
+  42% {
+    transform: translate(0, 0);
+    animation-timing-function: $transition-in-default;
+  }
+  100% {
+    transform: translate(0, 0);
+    animation-timing-function: $transition-in-default;
+  }
+}
+.separate .separate--up {
+  animation: separateUp $transition-time-500 $transition-move-default forwards;
+}
+.separate.separate--down {
+  animation: separateDown $transition-time-500 $transition-move-default forwards;
+}
+.separated .separate--up {
+  transform: translate(-#{Space(400)}, -#{Space(400)});
+}
+.separated.separate--down {
+  transform: translate(Space(300), Space(300));
+}
+@keyframes separateUp {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-#{Space(400)}, -#{Space(400)});
+  }
+}
+@keyframes separateDown {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(Space(300), Space(300));
+  }
+}

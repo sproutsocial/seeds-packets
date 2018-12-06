@@ -1,0 +1,42 @@
+@import '@sproutsocial/seeds-typography/dist/seeds-typography.scss';
+
+/*
+---
+Name: Font Weight
+Base:
+    fw: font weight
+Modifiers:
+    -extrabold: Extra Bold (900)
+    -bold: Bold (800)
+    -semibold: Semibold (600)
+    -normal: Normal (400)
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+@mixin weight-scale($breakpoint-name: "") {
+  .fw-extrabold#{$breakpoint-name} {
+    font-weight: $Typography-weight--extra-bold;
+  }
+  .fw-bold#{$breakpoint-name} {
+    font-weight: $Typography-weight--bold;
+  }
+  .fw-semibold#{$breakpoint-name} {
+    font-weight: $Typography-weight--bold;
+  }
+  .fw-normal#{$breakpoint-name} {
+    font-weight: $Typography-weight--normal;
+  }
+}
+
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include weight-scale($breakpoint-name);
+    }
+  } @else {
+    @include weight-scale;
+  }
+}

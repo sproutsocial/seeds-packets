@@ -1,0 +1,50 @@
+/*
+---
+Name: Overflow
+Modifiers:
+    overflow-visible: visible
+    overflow-hidden: hidden
+    overflow-scroll: scroll
+    overflow-auto: auto
+    overflow-x-visible: x visible
+    overflow-x-hidden: x hidden
+    overflow-x-scroll: x scroll
+    overflow-x-auto: x auto
+    overflow-y-visible: y visible
+    overflow-y-hidden: y hidden
+    overflow-y-scroll: y scroll
+    overflow-y-auto: y auto
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+ */
+
+@mixin overflow($breakpoint-name: "") {
+  .overflow-visible#{$breakpoint-name} { overflow: visible; }
+  .overflow-hidden#{$breakpoint-name} { overflow: hidden; }
+  .overflow-scroll#{$breakpoint-name} { overflow: scroll; }
+  .overflow-auto#{$breakpoint-name} { overflow: auto; }
+
+  .overflow-x-visible#{$breakpoint-name} { overflow-x: visible; }
+  .overflow-x-hidden#{$breakpoint-name} { overflow-x: hidden; }
+  .overflow-x-scroll#{$breakpoint-name} { overflow-x: scroll; }
+  .overflow-x-auto#{$breakpoint-name} { overflow-x: auto; }
+
+  .overflow-y-visible#{$breakpoint-name} { overflow-y: visible; }
+  .overflow-y-hidden#{$breakpoint-name} { overflow-y: hidden; }
+  .overflow-y-scroll#{$breakpoint-name} { overflow-y: scroll; }
+  .overflow-y-auto#{$breakpoint-name} { overflow-y: auto; }
+
+}
+
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include overflow($breakpoint-name);
+    }
+  } @else {
+    @include overflow;
+  }
+}

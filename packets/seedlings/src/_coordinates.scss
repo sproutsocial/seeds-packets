@@ -1,0 +1,113 @@
+@import "./axioms/Space";
+
+/*
+---
+Name: Coordinates
+Base:
+    top: top
+    bottom: bottom
+    right: right
+    left: left
+Modifiers:
+    -auto: auto
+    -0: 0
+    300: Size 300
+    400: Size 400
+    500: Size 500
+    600: Size 600
+    700: Size 700
+    800: Size 800
+    900: Size 900
+    1000: Size 1000
+    -300: Negative Size 300
+    -400: Negative Size 400
+    -500: Negative Size 500
+    -600: Negative Size 600
+    -700: Negative Size 700
+    -800: Negative Size 800
+    -900: Negative Size 900
+    -1000: Negative Size 1000
+    -25p: 25%
+    -33p: (100/3)%
+    -50p: 50%
+    -66p: (100/1.5)%
+    -75p: 75%
+    -100p: 100%
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+
+/*
+---
+Name: Center
+Modifiers:
+    center-x: Position center horizontally in container
+    center-y: Position center vertically in container
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+@mixin coordinates($breakpoint-name: "") {
+  $positions: top, right, bottom, left;
+  $sizes: (
+          -auto: auto,
+          -0: 0,
+          300: Space(300),
+          400: Space(400),
+          500: Space(500),
+          600: Space(600),
+          700: Space(700),
+          800: Space(800),
+          900: Space(900),
+          1000: Space(1000),
+          -25p: 25%,
+          -33p: percentage((1/3)),
+          -50p: 50%,
+          -66p: percentage((1/1.5)),
+          -75p: 75%,
+          -100p: 100%
+  );
+  @each $position in $positions {
+    @each $size-name, $size-value in $sizes {
+      .#{$position}#{$size-name}#{$breakpoint-name} {
+        #{$position}: $size-value;
+      }
+      @if ($size-value != 0 and $size-value != auto) {
+        // No negative 0
+        .#{$position}-#{$size-name}#{$breakpoint-name} {
+          #{$position}: -$size-value;
+        }
+      }
+    }
+  }
+}
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include coordinates($breakpoint-name);
+      .center-x#{$breakpoint-name} {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .center-y#{$breakpoint-name} {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  } @else {
+    @include coordinates;
+    .center-x {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .center-y {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

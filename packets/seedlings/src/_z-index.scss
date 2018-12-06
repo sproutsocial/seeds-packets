@@ -1,0 +1,62 @@
+@import "./axioms/ZIndex";
+
+/*
+---
+Name: Z-index
+Base:
+    z: z-index
+Modifiers:
+    -1: -1
+    0: 0
+    1: 1
+    2: 2
+    3: 3
+    4: 4
+    5: 5
+    6: 6
+    7: 7
+    8: 8
+    9: 9
+    10: 10
+    11: 11
+    12: 12
+    13: 13
+    14: 14
+    15: 15
+    16: 16
+    17: 17
+    18: 18
+    19: 19
+    20: 20
+    21: 21
+    22: 22
+    23: 23
+    24: 24
+    25: 25
+    999: 999
+    9999: 9999
+    -max: -max
+    -inherit: inherit
+    -initial: initial
+    -unset: unset
+---
+*/
+
+@for $i from 1 to 26 {
+  .z#{$i} {
+    z-index: #{$i};
+  }
+}
+
+.z-1 { z-index: -1; }
+.z999 { z-index: 999; }
+.z9999 { z-index: 9999; }
+
+.z-max {
+  z-index: 2147483647;
+}
+
+.z-inherit { z-index: inherit; }
+.z-initial { z-index: initial; }
+.z-unset { z-index: unset; }
+
