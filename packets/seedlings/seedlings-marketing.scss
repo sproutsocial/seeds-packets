@@ -13,7 +13,8 @@ $breakpoints: (
 ) !default;
 $enable-print: true !default;
 $enable-rem: true !default;
-$font-size-base: 12px !default;
+$Typography-unit: "rem" !default;
+$font-size-base: 18px !default;
 
 
 // Available Partials
