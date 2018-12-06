@@ -11,7 +11,7 @@ Breakpoints:
 */
 
 @mixin hide($breakpoint-name: "") {
-  .hide[hidden]#{$breakpoint-name} {
+  .hide#{$breakpoint-name}[hidden] {
     display: none;
   }
 }
