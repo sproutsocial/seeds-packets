@@ -48,7 +48,7 @@ Modifiers:
 }
 .lift:hover,
 .lift:focus {
-  z-index: 16; // TODO: this hardcode from marketing
+  transform: translateY(-8px);
   transition-timing-function: $transition-in-default;
 }
 .reveal {
