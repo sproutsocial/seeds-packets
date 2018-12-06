@@ -1,9 +1,14 @@
 /*
 ---
 Name: Background Size
+
+Base:
+    bg: background-size
+
 Modifiers:
-    - cover
-    - contain
+    -cover: cover
+    -contain: contain
+
 Breakpoints:
     -ns: not-small
     -m: medium
@@ -19,8 +24,8 @@ Breakpoints:
 
 
 @mixin background-size($breakpoint-name: "") {
-  .cover#{$breakpoint-name} { background-size: cover; }
-  .contain#{$breakpoint-name} { background-size: contain; }
+  .bg-cover#{$breakpoint-name} { background-size: cover; }
+  .bg-contain#{$breakpoint-name} { background-size: contain; }
 }
 
 @each $breakpoint-name, $breakpoint in $breakpoints {
