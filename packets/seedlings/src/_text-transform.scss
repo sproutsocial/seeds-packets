@@ -18,45 +18,16 @@ Breakpoints:
 ---
 */
 
-
+@mixin spaced-out() {
+  font-weight: $Typography-weight--bold;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
 
 @mixin text-transform($breakpoint-name: "") {
   .ttc#{$breakpoint-name} { text-transform: capitalize; }
   .ttl#{$breakpoint-name} { text-transform: lowercase; }
   .ttu#{$breakpoint-name} { text-transform: uppercase; }
   .ttn#{$breakpoint-name} { text-transform: none; }
-}
-
-@each $breakpoint-name, $breakpoint in $breakpoints {
-  @if ($breakpoint != "") {
-    @media #{$breakpoint} {
-      @include text-transform($breakpoint-name);
-    }
-  } @else {
-    @include text-transform;
-  }
-}
-
-@mixin font-weight-semibold() {
-  font-weight: $Typography-weight--bold;
-}
-
-@mixin spaced-out() {
-  @include font-weight-semibold;
-  text-transform: uppercase;
-  letter-spacing: .1em;
-}
-
-@each $breakpoint-name, $breakpoint in $breakpoints {
-  @if ($breakpoint != "") {
-    @media #{$breakpoint} {
-      .tts#{$breakpoint-name} {
-        @include spaced-out;
-      }
-    }
-  } @else {
-    .tts {
-      @include spaced-out;
-    }
-  }
+  .tts#{$breakpoint-name} { @include spaced-out; }
 }
