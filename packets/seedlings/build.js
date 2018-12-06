@@ -14,7 +14,7 @@ const BANNER = ` /*
                                                                      /$$  \\ $$          
                                                                     |  $$$$$$/          
                                                                      \\______/           
---------------
+
 https://github.com/sproutsocial/seeds-packets/tree/master/packets/seedlings
 */
 `;
@@ -32,7 +32,7 @@ sources.forEach(source => {
       }
 
       const data = `${BANNER} \n ${result.css}`;
-      fsextra.outputFile(`./dist/${source}`, data, err => {
+      fsextra.outputFile(`./dist/${source.replace('scss', 'css')}`, data, err => {
         if (err) {
           throw err;
         } else {
