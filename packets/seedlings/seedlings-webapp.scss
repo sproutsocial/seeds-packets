@@ -8,17 +8,17 @@ $enable-rem: false !default;
 @import 'src/forms'; // This needs to go first so the reset styles can be overridden later
 @import 'src/accessibility';
 // @import 'src/animation'; // TODO: work with marketing to update this later
-@import 'src/background';
 @import 'src/background-position';
 @import 'src/background-size';
+@import 'src/background'; // This needs to fall after the other background utilities in the cascade
 @import 'src/border';
 @import 'src/border-color';
 @import 'src/border-radius';
 @import 'src/border-style';
 @import 'src/border-width';
 @import 'src/clears';
-@import 'src/coordinates';
 @import 'src/color';
+@import 'src/coordinates';
 @import 'src/display';
 @import 'src/flexbox';
 @import 'src/floats';
