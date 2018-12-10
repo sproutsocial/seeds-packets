@@ -14,6 +14,7 @@ Modifiers:
     t-row: table-row
     t-columm: table-column
     t-column-group: table-column-group
+    t-header-group: table-header-group
     g: grid
 Breakpoints:
     -ns: not-small
@@ -34,6 +35,7 @@ $display-map: (
         dt-row: table-row,
         dt-columm: table-column,
         dt-column-group: table-column-group,
+        dt-header-group: table-header-group,
         flex: flex,
         inline-flex: inline-flex,
         dg: grid
