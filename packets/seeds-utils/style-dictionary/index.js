@@ -180,6 +180,21 @@ StyleDictionary.registerTransform({
   }
 });
 
+StyleDictionary.registerTransform({
+  name: 'value/motion',
+  type: 'value',
+  matcher: function(props) {
+    return props.attributes.category.includes('motion');
+  },
+  transformer: function(props) {
+    if (props.attributes.type === 'duration') {
+      return parseFloat(props.value.replace(/s/g, ''));
+    } else {
+      return "'" + props.value + "'";
+    }
+  }
+});
+
 StyleDictionary.registerFormat({
   name: 'ase',
   formatter: function(dictionary, config) {
