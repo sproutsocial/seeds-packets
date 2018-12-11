@@ -31,3 +31,13 @@ Breakpoints:
   .ttn#{$breakpoint-name} { text-transform: none; }
   .tts#{$breakpoint-name} { @include spaced-out; }
 }
+
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include text-transform($breakpoint-name);
+    }
+  } @else {
+    @include text-transform;
+  }
+}
