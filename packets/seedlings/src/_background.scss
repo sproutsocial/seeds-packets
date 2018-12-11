@@ -12,6 +12,8 @@ Modifiers:
     -none-m: none (medium)
     -none-l: none (large)
     -transparent: transparent
+    --dark-transparent: dark transparent
+    --light-transparent: dark transparent
     --color-name: name of a color variable
 HoverClasses: true
 ---
@@ -36,6 +38,9 @@ HoverClasses: true
 }
 .bg--dark-translucent {
   background-color: rgba(get-color(neutral, 1000), .6);
+}
+.bg--light-translucent {
+  background-color: rgba(get-color(neutral, 0), .6);
 }
 @include generate-utility-color($colors-networks, "background-color", "bg-", "");
 @include generate-utility-color-hover($colors-networks, "background-color", "bg-");
