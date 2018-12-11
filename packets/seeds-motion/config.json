@@ -32,6 +32,18 @@
         }
       ]
     },
+    "web/js-unitless": {
+      "transformGroup": "js",
+      "transforms": ["name/cti/constant", "attribute/cti", "value/motion"],
+      "buildPath": "dist/",
+      "files": [
+        {
+          "destination": "seeds-motion-unitless.js",
+          "format": "template/js-exports-number",
+          "options": { "showFileHeader": false }
+        }
+      ]
+    },
     "json": {
       "transforms": ["attribute/cti", "attribute/tokens"],
       "buildPath": "dist/",
