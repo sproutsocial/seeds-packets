@@ -4776,6 +4776,7 @@ Modifiers:
     t-row: table-row
     t-columm: table-column
     t-column-group: table-column-group
+    t-header-group: table-header-group
     g: grid
 Breakpoints:
     -ns: not-small
@@ -4814,6 +4815,9 @@ Breakpoints:
 .dt-column-group {
   display: table-column-group; }
 
+.dt-header-group {
+  display: table-header-group; }
+
 .flex {
   display: flex; }
 
@@ -4851,6 +4855,8 @@ Breakpoints:
     display: table-column; }
   .dt-column-group-ns {
     display: table-column-group; }
+  .dt-header-group-ns {
+    display: table-header-group; }
   .flex-ns {
     display: flex; }
   .inline-flex-ns {
@@ -4884,6 +4890,8 @@ Breakpoints:
     display: table-column; }
   .dt-column-group-m {
     display: table-column-group; }
+  .dt-header-group-m {
+    display: table-header-group; }
   .flex-m {
     display: flex; }
   .inline-flex-m {
@@ -4917,6 +4925,8 @@ Breakpoints:
     display: table-column; }
   .dt-column-group-l {
     display: table-column-group; }
+  .dt-header-group-l {
+    display: table-header-group; }
   .flex-l {
     display: flex; }
   .inline-flex-l {
@@ -4950,6 +4960,8 @@ Breakpoints:
     display: table-column; }
   .dt-column-group-p {
     display: table-column-group; }
+  .dt-header-group-p {
+    display: table-header-group; }
   .flex-p {
     display: flex; }
   .inline-flex-p {
@@ -9609,6 +9621,65 @@ Breakpoints:
     -l: large
 ---
 */
+.ttc {
+  text-transform: capitalize; }
+
+.ttl {
+  text-transform: lowercase; }
+
+.ttu {
+  text-transform: uppercase; }
+
+.ttn {
+  text-transform: none; }
+
+.tts {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em; }
+
+@media screen and (min-width: 30rem) {
+  .ttc-ns {
+    text-transform: capitalize; }
+  .ttl-ns {
+    text-transform: lowercase; }
+  .ttu-ns {
+    text-transform: uppercase; }
+  .ttn-ns {
+    text-transform: none; }
+  .tts-ns {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em; } }
+
+@media screen and (min-width: 30rem) and (max-width: 60rem) {
+  .ttc-m {
+    text-transform: capitalize; }
+  .ttl-m {
+    text-transform: lowercase; }
+  .ttu-m {
+    text-transform: uppercase; }
+  .ttn-m {
+    text-transform: none; }
+  .tts-m {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em; } }
+
+@media screen and (min-width: 60rem) {
+  .ttc-l {
+    text-transform: capitalize; }
+  .ttl-l {
+    text-transform: lowercase; }
+  .ttu-l {
+    text-transform: uppercase; }
+  .ttn-l {
+    text-transform: none; }
+  .tts-l {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em; } }
+
 /*
 ---
 Name: Type Scale
