@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.1.0 (2018-12-11)
+⭐️ **Added:**
+- Unitless JavaScript export: the package now offers a JavaScript export file that provides unitless numbers for the duration values. These numbers are in seconds. 
+
 ## 1.0.0 (2018-12-04)
 - Easing: The `ease in` token value has changed from `cubic-bezier(.4, 0, 1, 1)` to `cubic-bezier(.4, 0, .7, .2)`
 
