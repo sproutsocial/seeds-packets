@@ -3,6 +3,11 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.0 (2019-01-03)
+🚨 **Breaking Changes:**
+- The `500` depth token has been removed.
+- All tokens have been renamed from the format `Depth-shadow-{value}` to `Elevation-level-{value}`
+
 ## 0.0.11 (2018-11-19)
 Remove metadata comment from output files.
 
