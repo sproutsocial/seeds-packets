@@ -1,13 +1,13 @@
 {
   "name": "@sproutsocial/seeds-packets",
   "version": "0.4.0",
-  "private": true,
-  "description": "Seeds: Sprout Social's design system",
+  "description": "Design tokens for Sprout Social's design system, Seeds.",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/sproutsocial/seeds-packets.git"
   },
-  "author": "Sprout Social",
+  "author": "Sprout Social, Inc.",
+  "license": "MIT",
   "scripts": {
     "format:prettier": "prettier-eslint --write --eslint-ignore --print-width=120 --single-quote --no-bracket-spacing",
     "precommit": "lint-staged",
