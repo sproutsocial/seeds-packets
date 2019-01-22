@@ -1,3 +1,9 @@
+# seeds-packets
+
+This repository is the home of the design tokens that power Sprout Social's design system, [Seeds](https://sproutsocial.com/seeds). Each package in this repository contains a set of values related to core design needs like color, space, typography, etc. This codebase takes those values and transforms them into tokens that are consumable across several platforms (CSS variables, JaveScript constants, Sketch palettes, etc.).
+
+You can view [the documentation for our design tokens](https://sproutsocial.com/seeds/resources/tokens/) on Seeds.
+
 ## Development
 
 We use [Lerna](https://lernajs.io) to manage inter-package dependencies in this monorepo.
