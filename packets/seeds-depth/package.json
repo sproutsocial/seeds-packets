@@ -7,7 +7,8 @@
     "type": "git",
     "url": "git+ssh://git@github.com/sproutsocial/seeds.git"
   },
-  "author": "Sprout Social",
+  "author": "Sprout Social, Inc.",
+  "license": "MIT",
   "scripts": {
     "build": "node build.js"
   },
