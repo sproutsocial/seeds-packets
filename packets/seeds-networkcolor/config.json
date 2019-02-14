@@ -34,13 +34,12 @@
       ]
     },
     "sketch": {
-      "transforms": ["sketch/color"],
+      "transforms": ["attribute/rgb", "attribute/cti", "attribute/color", "attribute/tokens"],
       "buildPath": "dist/",
       "files": [
         {
           "destination": "seeds-networkcolor.sketchpalette",
-          "format": "sketch/palette",
-          "options": { "showFileHeader": false }
+          "format": "template/sketch"
         }
       ]
     },

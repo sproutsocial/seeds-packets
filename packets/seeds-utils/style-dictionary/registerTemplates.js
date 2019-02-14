@@ -13,6 +13,11 @@ Handlebars.registerHelper('json', function(context) {
   return JSON.stringify(context);
 });
 
+// Used to format RGB values from 0-255 to 0-1
+Handlebars.registerHelper('rgb', function(value) {
+  return value / 255;
+});
+
 // Return the compiled Handlebars template for a given template file name
 function getTemplateForFile(file) {
   return Handlebars.compile(fs.readFileSync(path.resolve(__dirname, file)).toString());
@@ -30,7 +35,8 @@ const templates = {
   'typography-scss': 'typography-scss.hbs',
   'typography-css': 'typography-css.hbs',
   'space-css': 'space-css.hbs',
-  'space-json': 'space-json.hbs'
+  'space-json': 'space-json.hbs',
+  sketch: 'sketch.hbs'
 };
 
 // Loop over every template file, get the Handlebars template, and register it

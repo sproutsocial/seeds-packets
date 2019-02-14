@@ -1,0 +1,19 @@
+{
+  "compatibleVersion": "2.0",
+  "pluginVersion": "2.21",
+  "colors": [
+	{{#each properties as |property|}}
+	{{#each property as |category|}}
+		{{#each category as |item|}}
+		{
+			"name": "{{ item.attributes.app }}",
+			"red": {{rgb item.attributes.rgb.r }},
+			"green": {{rgb item.attributes.rgb.g }},
+			"blue": {{rgb item.attributes.rgb.b }},
+			"alpha": 1
+		}{{#if @../last}}{{#unless @last}},{{/unless}}{{else}},{{/if}}
+		{{/each}}
+	{{/each}}
+	{{/each}}
+  ]
+}
