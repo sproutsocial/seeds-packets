@@ -33,12 +33,12 @@
       ]
     },
     "sketch": {
-      "transforms": ["sketch/color"],
+      "transforms": ["attribute/cti", "attribute/color", "attribute/tokens"],
       "buildPath": "dist/",
       "files": [
         {
           "destination": "seeds-color.sketchpalette",
-          "format": "sketch/palette"
+          "format": "template/sketch"
         }
       ]
     },
