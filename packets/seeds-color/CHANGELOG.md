@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.3.0 (2019-02-14)
+⭐️ **Added:**
+- The Sketch palette export now includes color names
+
 ## 1.2.0 (2018-12-04)
 ⭐️ **Added:**
 - New colors: our color palettes have been extended to include new lighter colors at value `0` on the scale
