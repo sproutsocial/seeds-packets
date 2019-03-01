@@ -8,6 +8,10 @@ Modifiers:
     -mid: middle
     -top: top
     -btm: bottom
+    -txt-btm: text-bottom
+    -txt-top: text-top
+    -sub: sub
+    -super: super
 Breakpoints:
     -ns: not-small
     -m: medium
@@ -17,10 +21,21 @@ Breakpoints:
 
 
 @mixin vertical-align($breakpoint-name: "") {
-  .v-base#{$breakpoint-name}     { vertical-align: baseline; }
-  .v-mid#{$breakpoint-name}      { vertical-align: middle; }
-  .v-top#{$breakpoint-name}      { vertical-align: top; }
-  .v-btm#{$breakpoint-name}      { vertical-align: bottom; }
+  $alignments: (
+          base: baseline,
+          mid: middle,
+          top: top,
+          btm: bottom,
+          txt-btm: text-bottom,
+          txt-top: text-top,
+          sub: sub,
+          super: super
+  );
+  @each $alignmentClass, $alignment in $alignments {
+    .v-#{$alignmentClass}#{$breakpoint-name} {
+      vertical-align: $alignment;
+    }
+  }
 }
 
 @each $breakpoint-name, $breakpoint in $breakpoints {
