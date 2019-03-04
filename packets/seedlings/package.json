@@ -1,9 +1,11 @@
 {
   "name": "@sproutsocial/seedlings",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "stability": "alpha",
   "description": "Tachyon like seeds classes",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/sproutsocial/seeds.git"
@@ -21,8 +23,8 @@
   "dependencies": {
     "@sproutsocial/seeds-border": "^0.3.11",
     "@sproutsocial/seeds-color": "^1.1.0",
-    "@sproutsocial/seeds-networkcolor": "^1.1.0",
     "@sproutsocial/seeds-motion": "^0.4.4",
+    "@sproutsocial/seeds-networkcolor": "^1.1.0",
     "@sproutsocial/seeds-space": "^0.4.6",
     "@sproutsocial/seeds-typography": "^2.0.1"
   }
