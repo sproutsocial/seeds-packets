@@ -27,3 +27,6 @@ $white-space-map: (
     }
   }
 }
+
+@include generate-utility-white-space($white-space-map);
+
