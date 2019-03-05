@@ -3,9 +3,6 @@
   "version": "0.1.1",
   "stability": "alpha",
   "description": "Tachyon like seeds classes",
-  "files": [
-    "dist"
-  ],
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/sproutsocial/seeds.git"
