@@ -307,6 +307,8 @@ Modifiers:
     -none-m: none (medium)
     -none-l: none (large)
     -transparent: transparent
+    --dark-transparent: dark transparent
+    --light-transparent: dark transparent
     --color-name: name of a color variable
 HoverClasses: true
 ---
@@ -331,6 +333,9 @@ HoverClasses: true
 
 .bg--dark-translucent {
   background-color: rgba(22, 32, 32, 0.6); }
+
+.bg--light-translucent {
+  background-color: rgba(255, 255, 255, 0.6); }
 
 .bg--twitter {
   background-color: #1da1f2; }
@@ -7068,6 +7073,7 @@ Modifiers:
     300: Size 300
     350: Size 350
     400: Size 400
+    450: Size 450
     500: Size 500
     600: Size 600
     650: Size 650
@@ -9948,6 +9954,10 @@ Modifiers:
     -mid: middle
     -top: top
     -btm: bottom
+    -txt-btm: text-bottom
+    -txt-top: text-top
+    -sub: sub
+    -super: super
 Breakpoints:
     -ns: not-small
     -m: medium
@@ -9966,6 +9976,18 @@ Breakpoints:
 .v-btm {
   vertical-align: bottom; }
 
+.v-txt-btm {
+  vertical-align: text-bottom; }
+
+.v-txt-top {
+  vertical-align: text-top; }
+
+.v-sub {
+  vertical-align: sub; }
+
+.v-super {
+  vertical-align: super; }
+
 @media screen and (min-width: 30rem) {
   .v-base-ns {
     vertical-align: baseline; }
@@ -9974,7 +9996,15 @@ Breakpoints:
   .v-top-ns {
     vertical-align: top; }
   .v-btm-ns {
-    vertical-align: bottom; } }
+    vertical-align: bottom; }
+  .v-txt-btm-ns {
+    vertical-align: text-bottom; }
+  .v-txt-top-ns {
+    vertical-align: text-top; }
+  .v-sub-ns {
+    vertical-align: sub; }
+  .v-super-ns {
+    vertical-align: super; } }
 
 @media screen and (min-width: 30rem) and (max-width: 60rem) {
   .v-base-m {
@@ -9984,7 +10014,15 @@ Breakpoints:
   .v-top-m {
     vertical-align: top; }
   .v-btm-m {
-    vertical-align: bottom; } }
+    vertical-align: bottom; }
+  .v-txt-btm-m {
+    vertical-align: text-bottom; }
+  .v-txt-top-m {
+    vertical-align: text-top; }
+  .v-sub-m {
+    vertical-align: sub; }
+  .v-super-m {
+    vertical-align: super; } }
 
 @media screen and (min-width: 60rem) {
   .v-base-l {
@@ -9994,7 +10032,15 @@ Breakpoints:
   .v-top-l {
     vertical-align: top; }
   .v-btm-l {
-    vertical-align: bottom; } }
+    vertical-align: bottom; }
+  .v-txt-btm-l {
+    vertical-align: text-bottom; }
+  .v-txt-top-l {
+    vertical-align: text-top; }
+  .v-sub-l {
+    vertical-align: sub; }
+  .v-super-l {
+    vertical-align: super; } }
 
 /*
 ---
@@ -10009,6 +10055,21 @@ Modifiers:
     pl: pre-line
 ---
 */
+.wsn {
+  white-space: normal; }
+
+.wsnw {
+  white-space: nowrap; }
+
+.wsp {
+  white-space: pre; }
+
+.wspw {
+  white-space: pre-wrap; }
+
+.wspl {
+  white-space: pre-line; }
+
 /*
 ---
 Name: Width
