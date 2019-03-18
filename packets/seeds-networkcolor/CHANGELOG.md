@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-networkcolor@1.0.0...@sproutsocial/seeds-networkcolor@2.0.0) (2019-03-18)
+
+
+### Bug Fixes
+
+* **seeds-networkcolor:** remove Google Plus token ([4f96c2b](https://github.com/sproutsocial/seeds/commit/4f96c2b))
+
+
+### Features
+
+* **color:** update sketch palette to have color names ([#111](https://github.com/sproutsocial/seeds/issues/111)) ([2143fc3](https://github.com/sproutsocial/seeds/commit/2143fc3))
+
+
+### BREAKING CHANGES
+
+* **seeds-networkcolor:** remove Google Plus network color token
+
+
+
+
+
 ## 1.2.0 (2019-02-14)
 ⭐️ **Added:**
 - The Sketch palette export now includes color names
