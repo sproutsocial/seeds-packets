@@ -78,10 +78,10 @@ Breakpoints:
     @media #{$breakpoint} {
       @include height($breakpoint-name);
       @include percent-height($breakpoint-name);
-      .h-auto {
+      .h-auto#{$breakpoint-name} {
         height: auto;
       }
-      .min-h-100 {
+      .min-h-100#{$breakpoint-name} {
         min-height: 100%;
       }
     }
