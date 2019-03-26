@@ -1,0 +1,16 @@
+{
+  "name": "@sproutsocial/seeds-dataviz",
+  "version": "1.0.0",
+  "description": "Seeds Data Visualization Tokens",
+  "main": "dist/seeds-dataviz.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sproutsocial/seeds.git"
+  },
+  "author": "Sprout Social, Inc.",
+  "license": "MIT",
+  "scripts": {},
+  "devDependencies": {
+    "@sproutsocial/seeds-color": "^1.3.0"
+  }
+}
