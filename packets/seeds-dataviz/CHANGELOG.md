@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-dataviz@0.2.0...@sproutsocial/seeds-dataviz@0.2.1) (2019-03-29)
+
+
+### Bug Fixes
+
+* **seeds-dataviz:** commonjs switch ([#120](https://github.com/sproutsocial/seeds/issues/120)) ([4820b96](https://github.com/sproutsocial/seeds/commit/4820b96))
+
+
+
+
+
 # [0.2.0](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-dataviz@0.1.0...@sproutsocial/seeds-dataviz@0.2.0) (2019-03-27)
 
 
