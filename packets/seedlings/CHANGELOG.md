@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seedlings@0.3.0...@sproutsocial/seedlings@0.3.1) (2019-04-03)
+
+
+### Bug Fixes
+
+* **seedlings:** clean up height utilities and remove Google+ ([ce6d321](https://github.com/sproutsocial/seeds/commit/ce6d321))
+
+
+
+
+
 # 0.3.0 (2019-03-18)
 
 
