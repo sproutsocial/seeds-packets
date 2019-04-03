@@ -9,6 +9,7 @@ Base:
     max-h: max-height
 Modifiers:
     -auto: auto
+    -none: none
     100: Size 100
     200: Size 200
     300: Size 300
@@ -42,6 +43,12 @@ Breakpoints:
   @each $name, $size in $space-map {
     .h#{$name}#{$breakpoint-name} {
       height: $size;
+    }
+    .min-h#{$name}#{$breakpoint-name} {
+      min-height: $size;
+    }
+    .max-h#{$name}#{$breakpoint-name} {
+      max-height: $size;
     }
   }
 }
@@ -81,8 +88,11 @@ Breakpoints:
       .h-auto#{$breakpoint-name} {
         height: auto;
       }
-      .min-h-100#{$breakpoint-name} {
-        min-height: 100%;
+      .min-h-auto#{$breakpoint-name} {
+        min-height: auto;
+      }
+      .max-h-none#{$breakpoint-name} {
+        max-height: none;
       }
     }
   } @else {
@@ -91,8 +101,11 @@ Breakpoints:
     .h-auto {
       height: auto;
     }
-    .min-h-100 {
-      min-height: 100%;
+    .min-h-auto {
+      min-height: auto;
+    }
+    .max-h-none {
+      max-height: none;
     }
   }
 }
