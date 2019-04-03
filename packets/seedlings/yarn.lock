@@ -2,9 +2,39 @@
 # yarn lockfile v1
 
 
+"@sproutsocial/seeds-border@^0.3.11":
+  version "0.3.11"
+  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-border/-/seeds-border-0.3.11.tgz#51f7587f784b3cf4f0bb84eb5f2e31641b67fc20"
+  integrity sha512-GJsz5bxl+7U6wONYEgThVA+TdeBZaKUDfeDbccX1q+YHuLFZPWA3JFLS7nngJUL+AyTtDOgmUIdNNGNW2wiJQg==
+
+"@sproutsocial/seeds-color@^1.1.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-color/-/seeds-color-1.3.0.tgz#ac8a19329e611c516e0318b72bd19e9e18712d49"
+  integrity sha512-YU1D/+RhvGh9aeq8YN712f5omRl4c4fTdXifXJEGsqds4PY85FdbaO0yNKExiH6nD9RWWm7ynmrgZ1OVAShCxA==
+
 "@sproutsocial/seeds-motion@^0.4.4":
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-motion/-/seeds-motion-0.4.4.tgz#11bc1e36a8f5030a6d3cfaee33cfb9515a4e583d"
+
+"@sproutsocial/seeds-networkcolor@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-networkcolor/-/seeds-networkcolor-2.0.0.tgz#059cc90bd7a0245ee493878d628616daaa9db5de"
+  integrity sha512-0nfOShzlXWJm0EJkbcDpA3fTtr7RDcoaX0ZrEe2yYSbaKHrcBTuND5R7OZTfTB4OiPMbW3Osa8UvxEZ5l1iYQQ==
+
+"@sproutsocial/seeds-space@^0.4.6":
+  version "0.4.6"
+  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-space/-/seeds-space-0.4.6.tgz#e5562efb80832354ee1660112c16216d2bcfcf5a"
+  integrity sha512-B7PkSrb0CedEh5dahQsGalvBv8cCAIwwsQ3+JqvXQqHwhOaHaGCueiMN3I7LnVNS9rLa7UWg71RfrJM1U3scFQ==
+
+"@sproutsocial/seeds-typography@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-typography/-/seeds-typography-2.0.1.tgz#77751b7864ac7042be6c28ec5d7b22742fbf269b"
+  integrity sha512-ZftqwZ3uY4ip/jUdphYfFkRBFXp2foyTMDhKkShSUa1zLg41e2D5a37fyn7UzLIIquP3Wkz8lY8CsP5OOC8tJQ==
+
+"@sproutsocial/seeds-utils@*":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-utils/-/seeds-utils-1.1.0.tgz#bf3bb28089534b363f5b91e897e8a1a7f94f22cf"
+  integrity sha512-Xoqln/thXZsXFvYS0vt5KdoYRPH5x3NLafwnXH6Ro6sAIFVjHXaCNsVfZNzx3xfeR9I2DROv3jYYQEN9CHQzkg==
 
 abbrev@1:
   version "1.1.1"

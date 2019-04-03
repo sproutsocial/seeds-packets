@@ -154,9 +154,6 @@ HoverClasses: true
 .bg--linkedin {
   background-color: #0077b5; }
 
-.bg--googleplus {
-  background-color: #db4437; }
-
 .bg--instagram {
   background-color: #e4405f; }
 
@@ -183,9 +180,6 @@ HoverClasses: true
 
 .hover-bg--linkedin:hover {
   background-color: #0077b5; }
-
-.hover-bg--googleplus:hover {
-  background-color: #db4437; }
 
 .hover-bg--instagram:hover {
   background-color: #e4405f; }
@@ -2361,9 +2355,6 @@ HoverClasses: true
 .c--linkedin {
   color: #0077b5; }
 
-.c--googleplus {
-  color: #db4437; }
-
 .c--instagram {
   color: #e4405f; }
 
@@ -2390,9 +2381,6 @@ HoverClasses: true
 
 .hover-c--linkedin:hover {
   color: #0077b5; }
-
-.hover-c--googleplus:hover {
-  color: #db4437; }
 
 .hover-c--instagram:hover {
   color: #e4405f; }
@@ -4168,6 +4156,7 @@ Base:
     max-h: max-height
 Modifiers:
     -auto: auto
+    -none: none
     100: Size 100
     200: Size 200
     300: Size 300
@@ -4200,44 +4189,128 @@ Breakpoints:
 .h0 {
   height: 0; }
 
+.min-h0 {
+  min-height: 0; }
+
+.max-h0 {
+  max-height: 0; }
+
 .h100 {
   height: 2px; }
+
+.min-h100 {
+  min-height: 2px; }
+
+.max-h100 {
+  max-height: 2px; }
 
 .h200 {
   height: 4px; }
 
+.min-h200 {
+  min-height: 4px; }
+
+.max-h200 {
+  max-height: 4px; }
+
 .h300 {
   height: 8px; }
+
+.min-h300 {
+  min-height: 8px; }
+
+.max-h300 {
+  max-height: 8px; }
 
 .h350 {
   height: 12px; }
 
+.min-h350 {
+  min-height: 12px; }
+
+.max-h350 {
+  max-height: 12px; }
+
 .h400 {
   height: 16px; }
+
+.min-h400 {
+  min-height: 16px; }
+
+.max-h400 {
+  max-height: 16px; }
 
 .h450 {
   height: 24px; }
 
+.min-h450 {
+  min-height: 24px; }
+
+.max-h450 {
+  max-height: 24px; }
+
 .h500 {
   height: 32px; }
+
+.min-h500 {
+  min-height: 32px; }
+
+.max-h500 {
+  max-height: 32px; }
 
 .h600 {
   height: 40px; }
 
+.min-h600 {
+  min-height: 40px; }
+
+.max-h600 {
+  max-height: 40px; }
+
 .h700 {
   height: 80px; }
+
+.min-h700 {
+  min-height: 80px; }
+
+.max-h700 {
+  max-height: 80px; }
 
 .h750 {
   height: 96px; }
 
+.min-h750 {
+  min-height: 96px; }
+
+.max-h750 {
+  max-height: 96px; }
+
 .h800 {
   height: 120px; }
+
+.min-h800 {
+  min-height: 120px; }
+
+.max-h800 {
+  max-height: 120px; }
 
 .h900 {
   height: 200px; }
 
+.min-h900 {
+  min-height: 200px; }
+
+.max-h900 {
+  max-height: 200px; }
+
 .h1000 {
   height: 320px; }
+
+.min-h1000 {
+  min-height: 320px; }
+
+.max-h1000 {
+  max-height: 320px; }
 
 .h-25p {
   height: 25%; }
@@ -4332,8 +4405,11 @@ Breakpoints:
 .h-auto {
   height: auto; }
 
-.min-h-100 {
-  min-height: 100%; }
+.min-h-auto {
+  min-height: auto; }
+
+.max-h-none {
+  max-height: none; }
 
 /*
 ---
