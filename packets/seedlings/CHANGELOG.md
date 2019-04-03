@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.2](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seedlings@0.3.1...@sproutsocial/seedlings@0.3.2) (2019-04-03)
+
+
+### Bug Fixes
+
+* **seedlings:** regenerate styles ([83a0862](https://github.com/sproutsocial/seeds/commit/83a0862))
+
+
+
+
+
 ## [0.3.1](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seedlings@0.3.0...@sproutsocial/seedlings@0.3.1) (2019-04-03)
 
 
