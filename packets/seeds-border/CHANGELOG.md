@@ -8,9 +8,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 **Note:** Version bump only for package @sproutsocial/seeds-border
 
 
-
-
-
 ## 0.3.11 (2018-11-19)
 Remove metadata comment from output files.
 

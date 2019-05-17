@@ -11,9 +11,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * **networkcolor:** fix CSS tokens ([56e7896](https://github.com/sproutsocial/seeds/commit/56e7896))
 
 
-
-
-
 # [2.2.0](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-networkcolor@2.1.0...@sproutsocial/seeds-networkcolor@2.2.0) (2019-06-18)
 
 
@@ -22,15 +19,15 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * **seeds-networkcolor:** add colors for google-my-biz + tripadvsr ([#126](https://github.com/sproutsocial/seeds/issues/126)) ([9d58650](https://github.com/sproutsocial/seeds/commit/9d58650))
 
 
-
-
-
 # [2.1.0](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-networkcolor@2.0.0...@sproutsocial/seeds-networkcolor@2.1.0) (2019-06-11)
 
 
 ### Features
 
 * **seeds-networkcolor:** update facebook color ([87c5363](https://github.com/sproutsocial/seeds/commit/87c5363))
+## [2.0.1](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-networkcolor@2.0.0...@sproutsocial/seeds-networkcolor@2.0.1) (2019-05-17)
+
+**Note:** Version bump only for package @sproutsocial/seeds-networkcolor
 
 
 

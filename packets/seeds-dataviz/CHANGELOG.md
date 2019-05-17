@@ -11,6 +11,11 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * **dependencies:** make seeds-color a direct dependency of seeds-dataviz ([#123](https://github.com/sproutsocial/seeds/issues/123)) ([6c8654b](https://github.com/sproutsocial/seeds/commit/6c8654b))
 
 
+## [0.2.2](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-dataviz@0.2.1...@sproutsocial/seeds-dataviz@0.2.2) (2019-05-17)
+
+**Note:** Version bump only for package @sproutsocial/seeds-dataviz
+
+
 
 
 
