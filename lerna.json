@@ -4,7 +4,8 @@
       "message": "chore(release): publish",
       "allowBranch": [
         "master",
-        "staging"
+        "staging",
+        "nectar"
       ]
     }
   },
