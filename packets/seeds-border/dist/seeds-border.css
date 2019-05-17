@@ -1,5 +1,6 @@
 :root {
- --border-radius-500: 3px;
+ --border-radius-500: 6px;
+ --border-radius-600: 8px;
+ --border-radius-1000: 999999px;
  --border-width-500: 1px;
- --border-width-600: 2px;
 }
