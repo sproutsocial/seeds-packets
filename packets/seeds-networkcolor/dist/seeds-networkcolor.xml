@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--
-  Do not edit directly
-  Generated on Mon, 18 Mar 2019 15:01:20 GMT
--->
+
 <resources>
   <color name="twitter">#ff1da1f2</color>
   <color name="twitter_like">#ffe0245e</color>
