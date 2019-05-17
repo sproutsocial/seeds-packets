@@ -1,8 +1,7 @@
 'use strict';
 
 module.exports = {
-	TYPOGRAPHY_FAMILY: '"Proxima Nova", proxima-nova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
-	TYPOGRAPHY_FAMILY_SYSTEM: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"',
+	TYPOGRAPHY_FAMILY: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
 	TYPOGRAPHY_SIZE_100: {
 		fontSize: '11px',
     lineHeight: '18.666666666666668px'
