@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0-beta.0](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seedlings@0.3.2...@sproutsocial/seedlings@1.0.0-beta.0) (2019-05-17)
+
+
+### Features
+
+* **seedlings:** update styles for Nectar ([f1d233e](https://github.com/sproutsocial/seeds/commit/f1d233e))
+
+
+### BREAKING CHANGES
+
+* **seedlings:** border radii and font families have been altered
+
+
+
+
+
 ## [0.3.2](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seedlings@0.3.1...@sproutsocial/seedlings@0.3.2) (2019-04-03)
 
 

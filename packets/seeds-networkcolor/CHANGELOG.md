@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-networkcolor@2.0.0...@sproutsocial/seeds-networkcolor@2.0.1) (2019-05-17)
+
+**Note:** Version bump only for package @sproutsocial/seeds-networkcolor
+
+
+
+
+
 # [2.0.0](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-networkcolor@1.0.0...@sproutsocial/seeds-networkcolor@2.0.0) (2019-03-18)
 
 

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-color@1.0.0...@sproutsocial/seeds-color@1.4.0) (2019-05-17)
+
+
+### Features
+
+* extend color palettes and update motion package ([#98](https://github.com/sproutsocial/seeds/issues/98)) ([303a76d](https://github.com/sproutsocial/seeds/commit/303a76d))
+* **color:** update sketch palette to have color names ([#111](https://github.com/sproutsocial/seeds/issues/111)) ([2143fc3](https://github.com/sproutsocial/seeds/commit/2143fc3))
+
+
+
+
+
 ## 1.3.0 (2019-02-14)
 ⭐️ **Added:**
 - The Sketch palette export now includes color names
