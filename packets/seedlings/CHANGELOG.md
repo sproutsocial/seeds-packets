@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seedlings@0.3.2...@sproutsocial/seedlings@0.4.0) (2019-06-11)
+
+
+### Features
+
+* **seeds-networkcolor:** update facebook color ([87c5363](https://github.com/sproutsocial/seeds/commit/87c5363))
+
+
+
+
+
 ## [0.3.2](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seedlings@0.3.1...@sproutsocial/seedlings@0.3.2) (2019-04-03)
 
 

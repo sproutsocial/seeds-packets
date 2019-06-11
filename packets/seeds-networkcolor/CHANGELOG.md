@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-networkcolor@2.0.0...@sproutsocial/seeds-networkcolor@2.1.0) (2019-06-11)
+
+
+### Features
+
+* **seeds-networkcolor:** update facebook color ([87c5363](https://github.com/sproutsocial/seeds/commit/87c5363))
+
+
+
+
+
 # [2.0.0](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-networkcolor@1.0.0...@sproutsocial/seeds-networkcolor@2.0.0) (2019-03-18)
 
 
