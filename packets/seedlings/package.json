@@ -1,6 +1,6 @@
 {
   "name": "@sproutsocial/seedlings",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "stability": "alpha",
   "description": "Tachyon like seeds classes",
   "repository": {
@@ -21,7 +21,7 @@
     "@sproutsocial/seeds-border": "^0.3.11",
     "@sproutsocial/seeds-color": "^1.4.1",
     "@sproutsocial/seeds-motion": "^0.4.4",
-    "@sproutsocial/seeds-networkcolor": "^2.1.0",
+    "@sproutsocial/seeds-networkcolor": "^2.2.0",
     "@sproutsocial/seeds-space": "^0.4.6",
     "@sproutsocial/seeds-typography": "^2.0.1"
   }

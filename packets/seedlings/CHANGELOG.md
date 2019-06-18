@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.2](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seedlings@0.4.1...@sproutsocial/seedlings@0.4.2) (2019-06-18)
+
+**Note:** Version bump only for package @sproutsocial/seedlings
+
+
+
+
+
 ## [0.4.1](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seedlings@0.4.0...@sproutsocial/seedlings@0.4.1) (2019-06-18)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-networkcolor@2.1.0...@sproutsocial/seeds-networkcolor@2.2.0) (2019-06-18)
+
+
+### Features
+
+* **seeds-networkcolor:** add colors for google-my-biz + tripadvsr ([#126](https://github.com/sproutsocial/seeds/issues/126)) ([9d58650](https://github.com/sproutsocial/seeds/commit/9d58650))
+
+
+
+
+
 # [2.1.0](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-networkcolor@2.0.0...@sproutsocial/seeds-networkcolor@2.1.0) (2019-06-11)
 
 
