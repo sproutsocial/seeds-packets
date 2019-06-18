@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seedlings@0.4.0...@sproutsocial/seedlings@0.4.1) (2019-06-18)
+
+
+### Bug Fixes
+
+* **seedlings:** add separated box shadow class ([#125](https://github.com/sproutsocial/seeds/issues/125)) ([fb0fa2e](https://github.com/sproutsocial/seeds/commit/fb0fa2e))
+
+
+
+
+
 # [0.4.0](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seedlings@0.3.2...@sproutsocial/seedlings@0.4.0) (2019-06-11)
 
 
