@@ -60,6 +60,7 @@ Modifiers:
     bounce: bounce
     separate--up: separate up
     separate--down: separate down
+    separate--shadow: separate shadow
     separate: separate
     separated: separated
     slash--up: slash up
@@ -150,6 +151,9 @@ Modifiers:
 
 .separated.separate--down {
   transform: translate(0.44444rem, 0.44444rem); }
+
+.separate--shadow {
+  box-shadow: 0.88889rem 0.88889rem 0 #002838; }
 
 @keyframes separateUp {
   from {

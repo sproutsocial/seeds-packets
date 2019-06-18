@@ -1,4 +1,5 @@
 @import "./axioms/Animation";
+@import "./axioms/Colors";
 @import "./axioms/Space";
 
 /*
@@ -9,6 +10,7 @@ Modifiers:
     bounce: bounce
     separate--up: separate up
     separate--down: separate down
+    separate--shadow: separate shadow
     separate: separate
     separated: separated
     slash--up: slash up
@@ -92,6 +94,9 @@ Modifiers:
 }
 .separated.separate--down {
   transform: translate(Space(300), Space(300));
+}
+.separate--shadow {
+  box-shadow: Space(400) Space(400) 0 get-color(aqua, 1100);
 }
 @keyframes separateUp {
   from {
