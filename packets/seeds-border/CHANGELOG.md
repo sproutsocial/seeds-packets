@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.12](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-border@0.3.10...@sproutsocial/seeds-border@0.3.12) (2019-06-19)
+
+**Note:** Version bump only for package @sproutsocial/seeds-border
+
+
+
+
+
 ## 0.3.11 (2018-11-19)
 Remove metadata comment from output files.
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-dataviz@0.2.1...@sproutsocial/seeds-dataviz@0.4.0) (2019-06-19)
+
+
+### Features
+
+* **dependencies:** make seeds-color a direct dependency of seeds-dataviz ([#123](https://github.com/sproutsocial/seeds/issues/123)) ([6c8654b](https://github.com/sproutsocial/seeds/commit/6c8654b))
+
+
+
+
+
 ## [0.2.1](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-dataviz@0.2.0...@sproutsocial/seeds-dataviz@0.2.1) (2019-03-29)
 
 

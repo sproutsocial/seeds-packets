@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.7](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-space@0.4.5...@sproutsocial/seeds-space@0.4.7) (2019-06-19)
+
+**Note:** Version bump only for package @sproutsocial/seeds-space
+
+
+
+
+
 ## 0.4.6 (2018-11-19)
 Remove metadata comment from output files.
 

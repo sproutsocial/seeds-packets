@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-motion@0.4.3...@sproutsocial/seeds-motion@1.2.0) (2019-06-19)
+
+
+### Features
+
+* extend color palettes and update motion package ([#98](https://github.com/sproutsocial/seeds/issues/98)) ([303a76d](https://github.com/sproutsocial/seeds/commit/303a76d))
+* **motion:** add unitless js export ([#104](https://github.com/sproutsocial/seeds/issues/104)) ([7a6c1ac](https://github.com/sproutsocial/seeds/commit/7a6c1ac))
+
+
+
+
+
 ## 1.1.0 (2018-12-11)
 ⭐️ **Added:**
 - Unitless JavaScript export: the package now offers a JavaScript export file that provides unitless numbers for the duration values. These numbers are in seconds. 

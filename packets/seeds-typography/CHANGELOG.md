@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.2](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-typography@2.0.0...@sproutsocial/seeds-typography@2.0.2) (2019-06-19)
+
+**Note:** Version bump only for package @sproutsocial/seeds-typography
+
+
+
+
+
 ## 2.0.1 (2018-11-19)
 Remove metadata comment from output files.
 

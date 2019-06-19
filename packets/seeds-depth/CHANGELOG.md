@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-depth@0.0.10...@sproutsocial/seeds-depth@1.1.0) (2019-06-19)
+
+
+### Features
+
+* **seeds-depth:** update tokens ([#107](https://github.com/sproutsocial/seeds/issues/107)) ([a101b07](https://github.com/sproutsocial/seeds/commit/a101b07))
+
+
+
+
+
 ## 1.0.0 (2019-01-03)
 🚨 **Breaking Changes:**
 - The `500` depth token has been removed.

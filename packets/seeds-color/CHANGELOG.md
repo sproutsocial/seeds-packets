@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.2](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-color@1.4.1...@sproutsocial/seeds-color@1.4.2) (2019-06-19)
+
+**Note:** Version bump only for package @sproutsocial/seeds-color
+
+
+
+
+
 ## 1.3.0 (2019-02-14)
 ⭐️ **Added:**
 - The Sketch palette export now includes color names
