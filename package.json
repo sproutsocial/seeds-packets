@@ -29,7 +29,7 @@
     "globby": "^9.2.0",
     "handlebars": "^4.1.2",
     "husky": "^2.3.0",
-    "lerna": "^3.14.1",
+    "lerna": "^3.15.0",
     "lint-staged": "^8.1.7",
     "lodash.camelcase": "^4.3.0",
     "lodash.kebabcase": "^4.1.1",
