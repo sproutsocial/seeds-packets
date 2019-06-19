@@ -5,7 +5,7 @@
   "description": "Tachyon like seeds classes",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/sproutsocial/seeds.git"
+    "url": "git+ssh://git@github.com/sproutsocial/seeds-packets.git"
   },
   "author": "Sprout Social, Inc.",
   "license": "MIT",
