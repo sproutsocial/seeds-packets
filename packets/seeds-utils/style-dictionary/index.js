@@ -107,7 +107,7 @@ StyleDictionary.registerTransform({
     return {
       sass: `$${getComponents([pascalCase(category), type, kebabCase(item)], '-', '--')}`,
       sassMixin: `${getComponents([pascalCase(category), type, kebabCase(item)], '-', '--')}`,
-      css: `--${getComponents([category, type, kebabCase(item)], '-', '--')}`,
+      css: `--${getComponents([category.replace(' ', ''), type, kebabCase(item)], '-', '--')}`,
       app: `${pascalCase(type)}${includeItem ? ` ${item}` : ''}`,
       javascript: `${getComponents([constantCase(category), constantCase(type), constantCase(item)], '_', '_')}`,
       android: `${getComponents([null, snakeCase(props.path[1]), snakeCase(props.path[2])], '_', '_')}`
