@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seeds-depth@1.1.0...@sproutsocial/seeds-depth@1.1.1) (2019-07-12)
+
+
+### Bug Fixes
+
+* **seeds-depth:** fix 400 token value ([9942415](https://github.com/sproutsocial/seeds-packets/commit/9942415))
+
+
+
+
+
 # [1.1.0](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-depth@0.0.10...@sproutsocial/seeds-depth@1.1.0) (2019-06-19)
 
 
