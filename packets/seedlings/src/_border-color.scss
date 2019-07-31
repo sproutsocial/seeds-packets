@@ -7,11 +7,30 @@ Name: Border Color
 Base:
     b: border
 Modifiers:
+    -transparent: transparent
     --color-name: color variable name
 HoverClasses: true
 ---
 */
-@include generate-utility-color($color-map: $colors-without-gray, $property: "border-color", $class: "b-", $prefix: "");
-@include generate-utility-color-hover($color-map: $colors-without-gray, $property: "border-color", $class: "b-");
-@include generate-utility-color($color-map: $theme-colors, $property: "border-color", $class: "b-", $prefix: "");
-@include generate-utility-color-hover($color-map: $theme-colors, $property: "border-color", $class: "b-");
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include generate-utility-color($color-map: $colors-without-gray, $property: "border-color", $class: "b-", $prefix: "", $suffix: $breakpoint-name);
+      @include generate-utility-color-hover($color-map: $colors-without-gray, $property: "border-color", $class: "b-", $prefix: "hover-", $suffix: $breakpoint-name);
+      @include generate-utility-color($color-map: $theme-colors, $property: "border-color", $class: "b-", $prefix: "", $suffix: $breakpoint-name);
+      @include generate-utility-color-hover($color-map: $theme-colors, $property: "border-color", $class: "b-", $prefix: "hover-", $suffix: $breakpoint-name);
+      .b-transparent#{$breakpoint-name} {
+        border-color: transparent;
+      }
+    }
+  } @else {
+    @include generate-utility-color($color-map: $colors-without-gray, $property: "border-color", $class: "b-", $prefix: "");
+    @include generate-utility-color-hover($color-map: $colors-without-gray, $property: "border-color", $class: "b-");
+    @include generate-utility-color($color-map: $theme-colors, $property: "border-color", $class: "b-", $prefix: "");
+    @include generate-utility-color-hover($color-map: $theme-colors, $property: "border-color", $class: "b-");
+    .b-transparent {
+      border-color: transparent;
+    }
+  }
+}
+

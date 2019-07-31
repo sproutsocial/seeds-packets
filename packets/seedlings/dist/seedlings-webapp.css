@@ -123,28 +123,13 @@ Base:
     bg: background
 Modifiers:
     -none: none
-    -none-ns: none (not small)
-    -none-m: none (medium)
-    -none-l: none (large)
     -transparent: transparent
-    --dark-transparent: dark transparent
-    --light-transparent: dark transparent
+    --dark-translucent: dark transparent
+    --light-translucent: light transparent
     --color-name: name of a color variable
 HoverClasses: true
 ---
 */
-.bg-none {
-  background: none; }
-
-.bg-transparent {
-  background-color: transparent; }
-
-.bg--dark-translucent {
-  background-color: rgba(22, 32, 32, 0.6); }
-
-.bg--light-translucent {
-  background-color: rgba(255, 255, 255, 0.6); }
-
 .bg--twitter {
   background-color: #1da1f2; }
 
@@ -1171,6 +1156,18 @@ HoverClasses: true
 .hover-bg--secondary-dark:hover {
   background-color: #008b46; }
 
+.bg-none {
+  background: none; }
+
+.bg-transparent {
+  background-color: transparent; }
+
+.bg--dark-translucent {
+  background-color: rgba(22, 32, 32, 0.6); }
+
+.bg--light-translucent {
+  background-color: rgba(255, 255, 255, 0.6); }
+
 /*
 ---
 Name: Border
@@ -1219,6 +1216,7 @@ Name: Border Color
 Base:
     b: border
 Modifiers:
+    -transparent: transparent
     --color-name: color variable name
 HoverClasses: true
 ---
@@ -2195,6 +2193,9 @@ HoverClasses: true
 .hover-b--secondary-dark:hover {
   border-color: #008b46; }
 
+.b-transparent {
+  border-color: transparent; }
+
 /*
 ---
 Name: Border Radius
@@ -2342,10 +2343,6 @@ Modifiers:
 HoverClasses: true
 ---
 */
-.c-inherit,
-.hover-c-inherit:hover {
-  color: inherit; }
-
 .c--twitter {
   color: #1da1f2; }
 
@@ -3371,6 +3368,10 @@ HoverClasses: true
 
 .hover-c--secondary-dark:hover {
   color: #008b46; }
+
+.c-inherit,
+.hover-c-inherit:hover {
+  color: inherit; }
 
 /*
 ---
