@@ -2283,6 +2283,10 @@ Modifiers:
     r-0: right 0
     b-0: bottom 0
     l-0: left 0
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
 ---
 */
 .bw500 {

@@ -6565,6 +6565,10 @@ Modifiers:
     r-0: right 0
     b-0: bottom 0
     l-0: left 0
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
 ---
 */
 .bw500 {
@@ -6587,6 +6591,54 @@ Modifiers:
 
 .bl-0 {
   border-left-width: 0; }
+
+@media screen and (min-width: 30rem) {
+  .bw500-ns {
+    border-width: 1px; }
+  .bw600-ns {
+    border-width: 2px; }
+  .bw700-ns {
+    border-width: 5px; }
+  .bt-0-ns {
+    border-top-width: 0; }
+  .br-0-ns {
+    border-right-width: 0; }
+  .bb-0-ns {
+    border-bottom-width: 0; }
+  .bl-0-ns {
+    border-left-width: 0; } }
+
+@media screen and (min-width: 30rem) and (max-width: 60rem) {
+  .bw500-m {
+    border-width: 1px; }
+  .bw600-m {
+    border-width: 2px; }
+  .bw700-m {
+    border-width: 5px; }
+  .bt-0-m {
+    border-top-width: 0; }
+  .br-0-m {
+    border-right-width: 0; }
+  .bb-0-m {
+    border-bottom-width: 0; }
+  .bl-0-m {
+    border-left-width: 0; } }
+
+@media screen and (min-width: 60rem) {
+  .bw500-l {
+    border-width: 1px; }
+  .bw600-l {
+    border-width: 2px; }
+  .bw700-l {
+    border-width: 5px; }
+  .bt-0-l {
+    border-top-width: 0; }
+  .br-0-l {
+    border-right-width: 0; }
+  .bb-0-l {
+    border-bottom-width: 0; }
+  .bl-0-l {
+    border-left-width: 0; } }
 
 /*
 ---

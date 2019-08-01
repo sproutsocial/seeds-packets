@@ -13,16 +13,32 @@ Modifiers:
     r-0: right 0
     b-0: bottom 0
     l-0: left 0
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
 ---
 */
-@each $name, $size in $borderSizes {
-  .bw#{$name} {
-    border-width: $size;
+@mixin border-width($breakpoint-name: "") {
+  @each $name, $size in $borderSizes {
+    .bw#{$name}#{$breakpoint-name} {
+      border-width: $size;
+    }
+  }
+  // Border side reset
+  @each $sideClass, $side in $sides {
+    .b#{$sideClass}-0#{$breakpoint-name} {
+      border-#{$side}-width: 0;
+    }
   }
 }
-// Border side reset
-@each $sideClass, $side in $sides {
-  .b#{$sideClass}-0 {
-    border-#{$side}-width: 0;
+
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include border-width($breakpoint-name);
+    }
+  } @else {
+    @include border-width;
   }
 }
