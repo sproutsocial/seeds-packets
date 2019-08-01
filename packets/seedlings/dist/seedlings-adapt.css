@@ -311,6 +311,10 @@ Modifiers:
     --dark-translucent: dark transparent
     --light-translucent: light transparent
     --color-name: name of a color variable
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
 HoverClasses: true
 ---
 */
@@ -3544,6 +3548,10 @@ Base:
 Modifiers:
     -transparent: transparent
     --color-name: color variable name
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
 HoverClasses: true
 ---
 */
@@ -6588,6 +6596,10 @@ Base:
 Modifiers:
     -inherit: Inherit
     --color-name: name of a color variable
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
 HoverClasses: true
 ---
 */

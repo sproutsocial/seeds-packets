@@ -8,6 +8,10 @@ Base:
 Modifiers:
     -inherit: Inherit
     --color-name: name of a color variable
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
 HoverClasses: true
 ---
 */
