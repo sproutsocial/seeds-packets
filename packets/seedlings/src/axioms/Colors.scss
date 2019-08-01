@@ -359,7 +359,8 @@ $theme-colors: (
 @function theme-color($type, $variant: default) {
   @return map-get(map-get($theme-colors, $type), $variant);
 }
-@mixin generate-utility-color($color-map, $property, $class, $prefix: "u-") {
+
+@mixin generate-utility-color($color-map, $property, $class, $prefix: "u-", $suffix: "") {
   @if ($class != "") {
     $class: $class + "-";
   }
@@ -367,23 +368,24 @@ $theme-colors: (
     @each $index, $hex in $list {
       @if ($index == "default") {
         @if (map-has-key($list, $hex)) {
-          .#{$prefix}#{$class}#{$color} {
+          .#{$prefix}#{$class}#{$color}#{$suffix} {
             #{$property}: #{map-get($list, $hex)};
           }
         } @else {
-          .#{$prefix}#{$class}#{$color} {
+          .#{$prefix}#{$class}#{$color}#{$suffix} {
             #{$property}: #{$hex};
           }
         }
       } @else {
-        .#{$prefix}#{$class}#{$color}-#{$index} {
+        .#{$prefix}#{$class}#{$color}-#{$index}#{$suffix} {
           #{$property}: $hex;
         }
       }
     }
   }
 }
-@mixin generate-utility-color-hover($color-map, $property, $class, $prefix: "hover-") {
+
+@mixin generate-utility-color-hover($color-map, $property, $class, $prefix: "hover-", $suffix: "") {
   @if ($class != "") {
     $class: $class + "-";
   }
@@ -391,16 +393,16 @@ $theme-colors: (
     @each $index, $hex in $list {
       @if ($index == "default") {
         @if (map-has-key($list, $hex)) {
-          .#{$prefix}#{$class}#{$color}:hover {
+          .#{$prefix}#{$class}#{$color}#{$suffix}:hover {
             #{$property}: #{map-get($list, $hex)};
           }
         } @else {
-          .#{$prefix}#{$class}#{$color}:hover {
+          .#{$prefix}#{$class}#{$color}#{$suffix}:hover {
             #{$property}: #{$hex};
           }
         }
       } @else {
-        .#{$prefix}#{$class}#{$color}-#{$index}:hover {
+        .#{$prefix}#{$class}#{$color}-#{$index}#{$suffix}:hover {
           #{$property}: $hex;
         }
       }

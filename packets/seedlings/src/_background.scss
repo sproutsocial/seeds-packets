@@ -8,13 +8,14 @@ Base:
     bg: background
 Modifiers:
     -none: none
-    -none-ns: none (not small)
-    -none-m: none (medium)
-    -none-l: none (large)
     -transparent: transparent
-    --dark-transparent: dark transparent
-    --light-transparent: dark transparent
+    --dark-translucent: dark transparent
+    --light-translucent: light transparent
     --color-name: name of a color variable
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
 HoverClasses: true
 ---
 */
@@ -22,29 +23,43 @@ HoverClasses: true
 @each $breakpoint-name, $breakpoint in $breakpoints {
   @if ($breakpoint != "") {
     @media #{$breakpoint} {
+      @include generate-utility-color($colors-networks, "background-color", "bg-", "", $breakpoint-name);
+      @include generate-utility-color-hover($colors-networks, "background-color", "bg-", "hover-", $breakpoint-name);
+      @include generate-utility-color($colors-without-gray, "background-color", "bg-", "", $breakpoint-name);
+      @include generate-utility-color-hover($colors-without-gray, "background-color", "bg-", "hover-", $breakpoint-name);
+      @include generate-utility-color($theme-colors, "background-color", "bg-", "", $breakpoint-name);
+      @include generate-utility-color-hover($theme-colors, "background-color", "bg-", "hover-", $breakpoint-name);
       .bg-none#{$breakpoint-name} {
         background: none;
       }
+      .bg-transparent#{$breakpoint-name} {
+        background-color: transparent;
+      }
+      .bg--dark-translucent#{$breakpoint-name} {
+        background-color: rgba(get-color(neutral, 1000), .6);
+      }
+      .bg--light-translucent#{$breakpoint-name} {
+        background-color: rgba(get-color(neutral, 0), .6);
+      }
     }
   } @else {
+    @include generate-utility-color($colors-networks, "background-color", "bg-", "");
+    @include generate-utility-color-hover($colors-networks, "background-color", "bg-");
+    @include generate-utility-color($colors-without-gray, "background-color", "bg-", "");
+    @include generate-utility-color-hover($colors-without-gray, "background-color", "bg-");
+    @include generate-utility-color($theme-colors, "background-color", "bg-", "");
+    @include generate-utility-color-hover($theme-colors, "background-color", "bg-");
     .bg-none {
       background: none;
     }
+    .bg-transparent {
+      background-color: transparent;
+    }
+    .bg--dark-translucent {
+      background-color: rgba(get-color(neutral, 1000), .6);
+    }
+    .bg--light-translucent {
+      background-color: rgba(get-color(neutral, 0), .6);
+    }
   }
 }
-
-.bg-transparent {
-  background-color: transparent;
-}
-.bg--dark-translucent {
-  background-color: rgba(get-color(neutral, 1000), .6);
-}
-.bg--light-translucent {
-  background-color: rgba(get-color(neutral, 0), .6);
-}
-@include generate-utility-color($colors-networks, "background-color", "bg-", "");
-@include generate-utility-color-hover($colors-networks, "background-color", "bg-");
-@include generate-utility-color($colors-without-gray, "background-color", "bg-", "");
-@include generate-utility-color-hover($colors-without-gray, "background-color", "bg-");
-@include generate-utility-color($theme-colors, "background-color", "bg-", "");
-@include generate-utility-color-hover($theme-colors, "background-color", "bg-");
