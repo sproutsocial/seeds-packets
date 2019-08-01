@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@0.4.3...@sproutsocial/seedlings@0.5.0) (2019-08-01)
+
+
+### Bug Fixes
+
+* add breakpoints to border widths ([1c0d5ec](https://github.com/sproutsocial/seeds-packets/commit/1c0d5ec))
+
+
+### Features
+
+* add responsive color classes ([ef6adf4](https://github.com/sproutsocial/seeds-packets/commit/ef6adf4))
+
+
+
+
+
 ## [0.4.3](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seedlings@0.4.2...@sproutsocial/seedlings@0.4.3) (2019-06-19)
 
 **Note:** Version bump only for package @sproutsocial/seedlings
