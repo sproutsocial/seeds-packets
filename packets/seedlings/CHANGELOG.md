@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.1](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@0.5.0...@sproutsocial/seedlings@0.5.1) (2019-08-06)
+
+
+### Bug Fixes
+
+* add the ability to unset a shadow ([b6099d7](https://github.com/sproutsocial/seeds-packets/commit/b6099d7))
+
+
+
+
+
 # [0.5.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@0.4.3...@sproutsocial/seedlings@0.5.0) (2019-08-01)
 
 
