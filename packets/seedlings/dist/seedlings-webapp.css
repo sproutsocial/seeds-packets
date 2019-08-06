@@ -132,6 +132,7 @@ Breakpoints:
     -m: medium
     -l: large
 HoverClasses: true
+Example: <div class="{{modifier}} mw900 mx-auto w-100p pa350 mt400">{{label}}</div>
 ---
 */
 .bg--twitter {
@@ -1188,6 +1189,7 @@ Breakpoints:
     -ns: not-small
     -m: medium
     -l: large
+Example: <div class="{{modifier}} mw900 mx-auto b--neutral-300 w-100p pa350 mt400">{{label}}</div>
 ---
 */
 .ba {
@@ -1227,6 +1229,7 @@ Breakpoints:
     -m: medium
     -l: large
 HoverClasses: true
+Example: <div class="{{modifier}} ba bw600 mw900 mx-auto w-100p pa350 mt400">{{label}}</div>
 ---
 */
 .b--green-100 {
@@ -2218,6 +2221,8 @@ Modifiers:
     --bottom: bottom only
     --left: left only
     --x: rounded left & right
+
+Example: <div class="{{modifier}} mw900 mx-auto ba b--neutral-300 w-100p pa350 mt400">{{label}}</div>
 ---
 */
 .br0 {
@@ -2257,6 +2262,7 @@ Modifiers:
     --dotted: dotted
     --dashed: dashed
     --solid: solid
+Example: <div class="{{modifier}} mw900 mx-auto ba b--neutral-300 w-100p pa350 mt400">{{label}}</div>
  */
 .b--dotted {
   border-style: dotted; }
@@ -2287,6 +2293,7 @@ Breakpoints:
     -ns: not-small
     -m: medium
     -l: large
+Example: <div class="{{modifier}} mw900 mx-auto ba b--neutral-300 w-100p pa350 mt400">{{label}}</div>
 ---
 */
 .bw500 {
@@ -2357,6 +2364,7 @@ Breakpoints:
     -m: medium
     -l: large
 HoverClasses: true
+Example: <div class="{{modifier}} mw900 mx-auto w-100p pa350 mt400">{{label}}</div>
 ---
 */
 .c--twitter {
@@ -4128,6 +4136,7 @@ Base:
 Modifiers:
     -proxima-nova: Proxima Nova
     -system: System Font Stack
+Example: <div class="mw900 mx-auto w-100p pa350 mt400">{{label}}<p class="{{modifier}}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, aliquid asperiores assumenda beatae doloremque ea eaque eum laudantium modi, molestiae odit repudiandae, totam ullam vel voluptate. Autem consequatur quam quidem?</p></div>
 ---
 */
 .ff-proxima-nova {
@@ -4150,6 +4159,7 @@ Breakpoints:
     -ns: not-small
     -m: medium
     -l: large
+Example: <div class="mw900 mx-auto w-100p pa350 mt400">{{label}}<p class="{{modifier}}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, aliquid asperiores assumenda beatae doloremque ea eaque eum laudantium modi, molestiae odit repudiandae, totam ullam vel voluptate. Autem consequatur quam quidem?</p></div>
 ---
 */
 .fw-extrabold {
@@ -4201,6 +4211,7 @@ Breakpoints:
     -ns: not-small
     -m: medium
     -l: large
+Example: <div class="{{modifier}} bg--neutral-200 mw900 mx-auto w-100p px350 mt400 overflow-auto"><div>{{label}}</div></div>
 ---
 */
 .h0 {
@@ -4451,6 +4462,7 @@ Modifiers:
     lift: Hover Lift
     reveal: Hover Reveal
     pointer: Hover Pointer
+Example: <div class="mw900 mx-auto w-100p pa350 mt400"><a href="#" class="{{modifier}} db">{{label}}</a></div>
 ---
 */
 /*
@@ -4734,6 +4746,7 @@ Modifiers:
     o-20: Opacity .2
     o-10: Opacity .1
     o-0: Opacity 0
+Example: <div class="{{modifier}} mw900 mx-auto w-100p pa350 mt400">{{label}}</div>
 ---
  */
 .o-100 {
@@ -4909,6 +4922,7 @@ Breakpoints:
     -ns: not-small
     -m: medium
     -l: large
+Example: <div class="{{modifier}} bg--neutral-200 mw900 mx-auto w-100p">{{label}}</div>
 ---
 */
 .ma-auto {
@@ -5668,6 +5682,7 @@ Breakpoints:
     -m: medium
     -l: large
 HoverClasses: true
+Example: <div class="{{modifier}} mw900 mx-auto w-100p pa350 mt400">{{label}}</div>
 ---
 */
 .strike {
@@ -5753,6 +5768,7 @@ Breakpoints:
     -ns: not-small
     -m: medium
     -l: large
+Example: <div class="{{modifier}} mw900 mx-auto w-100p pa350 mt400">{{label}}</div>
 ---
 */
 .ttc {

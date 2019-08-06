@@ -17,6 +17,7 @@ Breakpoints:
     -ns: not-small
     -m: medium
     -l: large
+Example: <div class="{{modifier}} mw900 mx-auto ba b--neutral-300 w-100p pa350 mt400">{{label}}</div>
 ---
 */
 @mixin border-width($breakpoint-name: "") {
