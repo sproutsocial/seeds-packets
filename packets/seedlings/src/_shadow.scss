@@ -6,6 +6,7 @@ Name: Shadow
 Base:
     shadow: shadow
 Modifiers:
+    0: Level 0
     100: Level 100
     200: Level 200
     300: Level 300
@@ -41,8 +42,16 @@ HoverClasses: true
   @if ($breakpoint != "") {
     @media #{$breakpoint} {
       @include shadow($breakpoint-name);
+      .shadow0#{$breakpoint-name},
+      .hover-shadow0#{$breakpoint-name}:hover {
+        box-shadow: none;
+      }
     }
   } @else {
     @include shadow;
+    .shadow0,
+    .hover-shadow0:hover {
+      box-shadow: none;
+    }
   }
 }
