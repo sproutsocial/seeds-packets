@@ -68,6 +68,7 @@ Breakpoints:
     -ns: not-small
     -m: medium
     -l: large
+Example: <div class="{{modifier}} db bg--neutral-200 py350 mt400 overflow-auto">{{label}}</div>
 ---
 */
 @mixin width($breakpoint-name: "") {

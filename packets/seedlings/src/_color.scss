@@ -13,6 +13,7 @@ Breakpoints:
     -m: medium
     -l: large
 HoverClasses: true
+Example: <div class="{{modifier}} mw900 mx-auto w-100p pa350 mt400">{{label}}</div>
 ---
 */
 @each $breakpoint-name, $breakpoint in $breakpoints {

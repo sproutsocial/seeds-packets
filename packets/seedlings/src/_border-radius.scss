@@ -15,6 +15,8 @@ Modifiers:
     --bottom: bottom only
     --left: left only
     --x: rounded left & right
+
+Example: <div class="{{modifier}} mw900 mx-auto ba b--neutral-300 w-100p pa350 mt400">{{label}}</div>
 ---
 */
 @each $name, $size in $radiusSizes {
