@@ -6561,6 +6561,7 @@ Modifiers:
     500: 500
     600: 600
     700: 5px
+    800: 8px
     t-0: top 0
     r-0: right 0
     b-0: bottom 0
@@ -6579,6 +6580,9 @@ Breakpoints:
 
 .bw700 {
   border-width: 5px; }
+
+.bw800 {
+  border-width: 8px; }
 
 .bt-0 {
   border-top-width: 0; }
@@ -6599,6 +6603,8 @@ Breakpoints:
     border-width: 2px; }
   .bw700-ns {
     border-width: 5px; }
+  .bw800-ns {
+    border-width: 8px; }
   .bt-0-ns {
     border-top-width: 0; }
   .br-0-ns {
@@ -6615,6 +6621,8 @@ Breakpoints:
     border-width: 2px; }
   .bw700-m {
     border-width: 5px; }
+  .bw800-m {
+    border-width: 8px; }
   .bt-0-m {
     border-top-width: 0; }
   .br-0-m {
@@ -6631,6 +6639,8 @@ Breakpoints:
     border-width: 2px; }
   .bw700-l {
     border-width: 5px; }
+  .bw800-l {
+    border-width: 8px; }
   .bt-0-l {
     border-top-width: 0; }
   .br-0-l {

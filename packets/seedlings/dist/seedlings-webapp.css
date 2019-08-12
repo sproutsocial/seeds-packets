@@ -2279,6 +2279,7 @@ Modifiers:
     500: 500
     600: 600
     700: 5px
+    800: 8px
     t-0: top 0
     r-0: right 0
     b-0: bottom 0
@@ -2297,6 +2298,9 @@ Breakpoints:
 
 .bw700 {
   border-width: 5px; }
+
+.bw800 {
+  border-width: 8px; }
 
 .bt-0 {
   border-top-width: 0; }
