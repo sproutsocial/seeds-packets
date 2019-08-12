@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.2](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@0.5.1...@sproutsocial/seedlings@0.5.2) (2019-08-12)
+
+
+### Bug Fixes
+
+* add larger border width for new designs ([3abb623](https://github.com/sproutsocial/seeds-packets/commit/3abb623))
+
+
+
+
+
 ## [0.5.1](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@0.5.0...@sproutsocial/seedlings@0.5.1) (2019-08-06)
 
 
