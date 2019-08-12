@@ -85,9 +85,9 @@ pipeline {
             steps {
                 timeout(time: 10, unit: 'MINUTES') {
                     sh "${docker_command} yarn build"
+                    sh "${docker_command} git config --global user.email \"techops+sproutjenkins@sproutsocial.com\" && git config --global user.name \"Sprout Jenkins\""
                     sh "${docker_command} yarn release"
                 }
-                slackSend channel:slack_channel, color: 'good',  message: "Finished ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
             }
         }
     }
