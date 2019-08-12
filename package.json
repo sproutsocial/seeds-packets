@@ -14,7 +14,7 @@
     "build": "lerna run build",
     "postinstall": "lerna bootstrap",
     "commitmsg": "commitlint -e $GIT_PARAMS || (echo \"\nRead about commit message formatting here: https://github.com/sproutsocial/seeds-packets#committing-changes\" && exit 1)",
-    "release": "lerna publish --conventional-commits"
+    "release": "lerna publish --conventional-commits --yes"
   },
   "lint-staged": {
     "**/*.js": [
