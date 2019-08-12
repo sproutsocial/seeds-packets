@@ -85,8 +85,7 @@ pipeline {
             steps {
                 timeout(time: 10, unit: 'MINUTES') {
                     sh "${docker_command} yarn build"
-                    sh "${docker_command} git config --global user.email \"techops+sproutjenkins@sproutsocial.com\" && git config --global user.name \"Sprout Jenkins\""
-                    sh "${docker_command} yarn release"
+                    sh "docker run -e NODE_ENV=ci -e NPM_TOKEN -u 10037 --rm -v ${workspace}:/workspace -w /workspace ${docker_container}:${env.GIT_COMMIT} yarn release"
                 }
             }
         }
