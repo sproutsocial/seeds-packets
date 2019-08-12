@@ -61,6 +61,11 @@ pipeline {
                             // ignore, okay to file might not exist
                         }
 
+                        sshagent(['6863b8aa-868f-42ec-bb6d-3aea529449a5']) {
+                            sh "git checkout ${env.BRANCH_NAME};"
+                            sh "git fetch --tags"
+                        }
+
                         sh "${docker_command} /bin/sh -c 'echo \"//registry.npmjs.org/:_authToken=$NPM_TOKEN\" >> .npmrc'"
                         sh "${docker_command} yarn"
                     }
