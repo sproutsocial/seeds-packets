@@ -12600,6 +12600,7 @@ Modifiers:
     -100: negative Size 100
     -200: negative Size 200
     -300: negative Size 300
+    -350: negative Size 350
     -400: negative Size 400
     -450: negative Size 450
     -500: negative Size 500
@@ -12622,6 +12623,9 @@ Breakpoints:
 
 .mt-300 {
   margin-top: -0.44444rem; }
+
+.mt-350 {
+  margin-top: -0.66667rem; }
 
 .mt-400 {
   margin-top: -0.88889rem; }
@@ -12656,6 +12660,9 @@ Breakpoints:
 .mr-300 {
   margin-right: -0.44444rem; }
 
+.mr-350 {
+  margin-right: -0.66667rem; }
+
 .mr-400 {
   margin-right: -0.88889rem; }
 
@@ -12688,6 +12695,9 @@ Breakpoints:
 
 .mb-300 {
   margin-bottom: -0.44444rem; }
+
+.mb-350 {
+  margin-bottom: -0.66667rem; }
 
 .mb-400 {
   margin-bottom: -0.88889rem; }
@@ -12722,6 +12732,9 @@ Breakpoints:
 .ml-300 {
   margin-left: -0.44444rem; }
 
+.ml-350 {
+  margin-left: -0.66667rem; }
+
 .ml-400 {
   margin-left: -0.88889rem; }
 
@@ -12753,6 +12766,8 @@ Breakpoints:
     margin-top: -0.22222rem; }
   .mt-300-ns {
     margin-top: -0.44444rem; }
+  .mt-350-ns {
+    margin-top: -0.66667rem; }
   .mt-400-ns {
     margin-top: -0.88889rem; }
   .mt-450-ns {
@@ -12775,6 +12790,8 @@ Breakpoints:
     margin-right: -0.22222rem; }
   .mr-300-ns {
     margin-right: -0.44444rem; }
+  .mr-350-ns {
+    margin-right: -0.66667rem; }
   .mr-400-ns {
     margin-right: -0.88889rem; }
   .mr-450-ns {
@@ -12797,6 +12814,8 @@ Breakpoints:
     margin-bottom: -0.22222rem; }
   .mb-300-ns {
     margin-bottom: -0.44444rem; }
+  .mb-350-ns {
+    margin-bottom: -0.66667rem; }
   .mb-400-ns {
     margin-bottom: -0.88889rem; }
   .mb-450-ns {
@@ -12819,6 +12838,8 @@ Breakpoints:
     margin-left: -0.22222rem; }
   .ml-300-ns {
     margin-left: -0.44444rem; }
+  .ml-350-ns {
+    margin-left: -0.66667rem; }
   .ml-400-ns {
     margin-left: -0.88889rem; }
   .ml-450-ns {
@@ -12843,6 +12864,8 @@ Breakpoints:
     margin-top: -0.22222rem; }
   .mt-300-m {
     margin-top: -0.44444rem; }
+  .mt-350-m {
+    margin-top: -0.66667rem; }
   .mt-400-m {
     margin-top: -0.88889rem; }
   .mt-450-m {
@@ -12865,6 +12888,8 @@ Breakpoints:
     margin-right: -0.22222rem; }
   .mr-300-m {
     margin-right: -0.44444rem; }
+  .mr-350-m {
+    margin-right: -0.66667rem; }
   .mr-400-m {
     margin-right: -0.88889rem; }
   .mr-450-m {
@@ -12887,6 +12912,8 @@ Breakpoints:
     margin-bottom: -0.22222rem; }
   .mb-300-m {
     margin-bottom: -0.44444rem; }
+  .mb-350-m {
+    margin-bottom: -0.66667rem; }
   .mb-400-m {
     margin-bottom: -0.88889rem; }
   .mb-450-m {
@@ -12909,6 +12936,8 @@ Breakpoints:
     margin-left: -0.22222rem; }
   .ml-300-m {
     margin-left: -0.44444rem; }
+  .ml-350-m {
+    margin-left: -0.66667rem; }
   .ml-400-m {
     margin-left: -0.88889rem; }
   .ml-450-m {
@@ -12933,6 +12962,8 @@ Breakpoints:
     margin-top: -0.22222rem; }
   .mt-300-l {
     margin-top: -0.44444rem; }
+  .mt-350-l {
+    margin-top: -0.66667rem; }
   .mt-400-l {
     margin-top: -0.88889rem; }
   .mt-450-l {
@@ -12955,6 +12986,8 @@ Breakpoints:
     margin-right: -0.22222rem; }
   .mr-300-l {
     margin-right: -0.44444rem; }
+  .mr-350-l {
+    margin-right: -0.66667rem; }
   .mr-400-l {
     margin-right: -0.88889rem; }
   .mr-450-l {
@@ -12977,6 +13010,8 @@ Breakpoints:
     margin-bottom: -0.22222rem; }
   .mb-300-l {
     margin-bottom: -0.44444rem; }
+  .mb-350-l {
+    margin-bottom: -0.66667rem; }
   .mb-400-l {
     margin-bottom: -0.88889rem; }
   .mb-450-l {
@@ -12999,6 +13034,8 @@ Breakpoints:
     margin-left: -0.22222rem; }
   .ml-300-l {
     margin-left: -0.44444rem; }
+  .ml-350-l {
+    margin-left: -0.66667rem; }
   .ml-400-l {
     margin-left: -0.88889rem; }
   .ml-450-l {
@@ -13516,7 +13553,9 @@ Modifiers:
     700: Size 700
     750: Size 750
     800: Size 800
+    850: Size 850
     900: Size 900
+    950: Size 950
     1000: Size 1000
 Breakpoints:
     -ns: not-small
@@ -13566,8 +13605,14 @@ Breakpoints:
 .ma800 {
   margin: 6.66667rem; }
 
+.ma850 {
+  margin: 8.88889rem; }
+
 .ma900 {
   margin: 11.11111rem; }
+
+.ma950 {
+  margin: 13.33333rem; }
 
 .ma1000 {
   margin: 17.77778rem; }
@@ -13611,8 +13656,14 @@ Breakpoints:
 .pa800 {
   padding: 6.66667rem; }
 
+.pa850 {
+  padding: 8.88889rem; }
+
 .pa900 {
   padding: 11.11111rem; }
+
+.pa950 {
+  padding: 13.33333rem; }
 
 .pa1000 {
   padding: 17.77778rem; }
@@ -13673,9 +13724,17 @@ Breakpoints:
   margin-right: 6.66667rem;
   margin-left: 6.66667rem; }
 
+.mx850 {
+  margin-right: 8.88889rem;
+  margin-left: 8.88889rem; }
+
 .mx900 {
   margin-right: 11.11111rem;
   margin-left: 11.11111rem; }
+
+.mx950 {
+  margin-right: 13.33333rem;
+  margin-left: 13.33333rem; }
 
 .mx1000 {
   margin-right: 17.77778rem;
@@ -13733,9 +13792,17 @@ Breakpoints:
   padding-right: 6.66667rem;
   padding-left: 6.66667rem; }
 
+.px850 {
+  padding-right: 8.88889rem;
+  padding-left: 8.88889rem; }
+
 .px900 {
   padding-right: 11.11111rem;
   padding-left: 11.11111rem; }
+
+.px950 {
+  padding-right: 13.33333rem;
+  padding-left: 13.33333rem; }
 
 .px1000 {
   padding-right: 17.77778rem;
@@ -13797,9 +13864,17 @@ Breakpoints:
   margin-top: 6.66667rem;
   margin-bottom: 6.66667rem; }
 
+.my850 {
+  margin-top: 8.88889rem;
+  margin-bottom: 8.88889rem; }
+
 .my900 {
   margin-top: 11.11111rem;
   margin-bottom: 11.11111rem; }
+
+.my950 {
+  margin-top: 13.33333rem;
+  margin-bottom: 13.33333rem; }
 
 .my1000 {
   margin-top: 17.77778rem;
@@ -13857,9 +13932,17 @@ Breakpoints:
   padding-top: 6.66667rem;
   padding-bottom: 6.66667rem; }
 
+.py850 {
+  padding-top: 8.88889rem;
+  padding-bottom: 8.88889rem; }
+
 .py900 {
   padding-top: 11.11111rem;
   padding-bottom: 11.11111rem; }
+
+.py950 {
+  padding-top: 13.33333rem;
+  padding-bottom: 13.33333rem; }
 
 .py1000 {
   padding-top: 17.77778rem;
@@ -13907,8 +13990,14 @@ Breakpoints:
 .mt800 {
   margin-top: 6.66667rem; }
 
+.mt850 {
+  margin-top: 8.88889rem; }
+
 .mt900 {
   margin-top: 11.11111rem; }
+
+.mt950 {
+  margin-top: 13.33333rem; }
 
 .mt1000 {
   margin-top: 17.77778rem; }
@@ -13952,8 +14041,14 @@ Breakpoints:
 .pt800 {
   padding-top: 6.66667rem; }
 
+.pt850 {
+  padding-top: 8.88889rem; }
+
 .pt900 {
   padding-top: 11.11111rem; }
+
+.pt950 {
+  padding-top: 13.33333rem; }
 
 .pt1000 {
   padding-top: 17.77778rem; }
@@ -14000,8 +14095,14 @@ Breakpoints:
 .mr800 {
   margin-right: 6.66667rem; }
 
+.mr850 {
+  margin-right: 8.88889rem; }
+
 .mr900 {
   margin-right: 11.11111rem; }
+
+.mr950 {
+  margin-right: 13.33333rem; }
 
 .mr1000 {
   margin-right: 17.77778rem; }
@@ -14045,8 +14146,14 @@ Breakpoints:
 .pr800 {
   padding-right: 6.66667rem; }
 
+.pr850 {
+  padding-right: 8.88889rem; }
+
 .pr900 {
   padding-right: 11.11111rem; }
+
+.pr950 {
+  padding-right: 13.33333rem; }
 
 .pr1000 {
   padding-right: 17.77778rem; }
@@ -14093,8 +14200,14 @@ Breakpoints:
 .mb800 {
   margin-bottom: 6.66667rem; }
 
+.mb850 {
+  margin-bottom: 8.88889rem; }
+
 .mb900 {
   margin-bottom: 11.11111rem; }
+
+.mb950 {
+  margin-bottom: 13.33333rem; }
 
 .mb1000 {
   margin-bottom: 17.77778rem; }
@@ -14138,8 +14251,14 @@ Breakpoints:
 .pb800 {
   padding-bottom: 6.66667rem; }
 
+.pb850 {
+  padding-bottom: 8.88889rem; }
+
 .pb900 {
   padding-bottom: 11.11111rem; }
+
+.pb950 {
+  padding-bottom: 13.33333rem; }
 
 .pb1000 {
   padding-bottom: 17.77778rem; }
@@ -14186,8 +14305,14 @@ Breakpoints:
 .ml800 {
   margin-left: 6.66667rem; }
 
+.ml850 {
+  margin-left: 8.88889rem; }
+
 .ml900 {
   margin-left: 11.11111rem; }
+
+.ml950 {
+  margin-left: 13.33333rem; }
 
 .ml1000 {
   margin-left: 17.77778rem; }
@@ -14231,8 +14356,14 @@ Breakpoints:
 .pl800 {
   padding-left: 6.66667rem; }
 
+.pl850 {
+  padding-left: 8.88889rem; }
+
 .pl900 {
   padding-left: 11.11111rem; }
+
+.pl950 {
+  padding-left: 13.33333rem; }
 
 .pl1000 {
   padding-left: 17.77778rem; }
@@ -14266,8 +14397,12 @@ Breakpoints:
     margin: 5.33333rem; }
   .ma800-ns {
     margin: 6.66667rem; }
+  .ma850-ns {
+    margin: 8.88889rem; }
   .ma900-ns {
     margin: 11.11111rem; }
+  .ma950-ns {
+    margin: 13.33333rem; }
   .ma1000-ns {
     margin: 17.77778rem; }
   .pa0-ns {
@@ -14296,8 +14431,12 @@ Breakpoints:
     padding: 5.33333rem; }
   .pa800-ns {
     padding: 6.66667rem; }
+  .pa850-ns {
+    padding: 8.88889rem; }
   .pa900-ns {
     padding: 11.11111rem; }
+  .pa950-ns {
+    padding: 13.33333rem; }
   .pa1000-ns {
     padding: 17.77778rem; }
   .mx-auto-ns {
@@ -14342,9 +14481,15 @@ Breakpoints:
   .mx800-ns {
     margin-right: 6.66667rem;
     margin-left: 6.66667rem; }
+  .mx850-ns {
+    margin-right: 8.88889rem;
+    margin-left: 8.88889rem; }
   .mx900-ns {
     margin-right: 11.11111rem;
     margin-left: 11.11111rem; }
+  .mx950-ns {
+    margin-right: 13.33333rem;
+    margin-left: 13.33333rem; }
   .mx1000-ns {
     margin-right: 17.77778rem;
     margin-left: 17.77778rem; }
@@ -14387,9 +14532,15 @@ Breakpoints:
   .px800-ns {
     padding-right: 6.66667rem;
     padding-left: 6.66667rem; }
+  .px850-ns {
+    padding-right: 8.88889rem;
+    padding-left: 8.88889rem; }
   .px900-ns {
     padding-right: 11.11111rem;
     padding-left: 11.11111rem; }
+  .px950-ns {
+    padding-right: 13.33333rem;
+    padding-left: 13.33333rem; }
   .px1000-ns {
     padding-right: 17.77778rem;
     padding-left: 17.77778rem; }
@@ -14435,9 +14586,15 @@ Breakpoints:
   .my800-ns {
     margin-top: 6.66667rem;
     margin-bottom: 6.66667rem; }
+  .my850-ns {
+    margin-top: 8.88889rem;
+    margin-bottom: 8.88889rem; }
   .my900-ns {
     margin-top: 11.11111rem;
     margin-bottom: 11.11111rem; }
+  .my950-ns {
+    margin-top: 13.33333rem;
+    margin-bottom: 13.33333rem; }
   .my1000-ns {
     margin-top: 17.77778rem;
     margin-bottom: 17.77778rem; }
@@ -14480,9 +14637,15 @@ Breakpoints:
   .py800-ns {
     padding-top: 6.66667rem;
     padding-bottom: 6.66667rem; }
+  .py850-ns {
+    padding-top: 8.88889rem;
+    padding-bottom: 8.88889rem; }
   .py900-ns {
     padding-top: 11.11111rem;
     padding-bottom: 11.11111rem; }
+  .py950-ns {
+    padding-top: 13.33333rem;
+    padding-bottom: 13.33333rem; }
   .py1000-ns {
     padding-top: 17.77778rem;
     padding-bottom: 17.77778rem; }
@@ -14514,8 +14677,12 @@ Breakpoints:
     margin-top: 5.33333rem; }
   .mt800-ns {
     margin-top: 6.66667rem; }
+  .mt850-ns {
+    margin-top: 8.88889rem; }
   .mt900-ns {
     margin-top: 11.11111rem; }
+  .mt950-ns {
+    margin-top: 13.33333rem; }
   .mt1000-ns {
     margin-top: 17.77778rem; }
   .pt0-ns {
@@ -14544,8 +14711,12 @@ Breakpoints:
     padding-top: 5.33333rem; }
   .pt800-ns {
     padding-top: 6.66667rem; }
+  .pt850-ns {
+    padding-top: 8.88889rem; }
   .pt900-ns {
     padding-top: 11.11111rem; }
+  .pt950-ns {
+    padding-top: 13.33333rem; }
   .pt1000-ns {
     padding-top: 17.77778rem; }
   .mr-auto-ns {
@@ -14576,8 +14747,12 @@ Breakpoints:
     margin-right: 5.33333rem; }
   .mr800-ns {
     margin-right: 6.66667rem; }
+  .mr850-ns {
+    margin-right: 8.88889rem; }
   .mr900-ns {
     margin-right: 11.11111rem; }
+  .mr950-ns {
+    margin-right: 13.33333rem; }
   .mr1000-ns {
     margin-right: 17.77778rem; }
   .pr0-ns {
@@ -14606,8 +14781,12 @@ Breakpoints:
     padding-right: 5.33333rem; }
   .pr800-ns {
     padding-right: 6.66667rem; }
+  .pr850-ns {
+    padding-right: 8.88889rem; }
   .pr900-ns {
     padding-right: 11.11111rem; }
+  .pr950-ns {
+    padding-right: 13.33333rem; }
   .pr1000-ns {
     padding-right: 17.77778rem; }
   .mb-auto-ns {
@@ -14638,8 +14817,12 @@ Breakpoints:
     margin-bottom: 5.33333rem; }
   .mb800-ns {
     margin-bottom: 6.66667rem; }
+  .mb850-ns {
+    margin-bottom: 8.88889rem; }
   .mb900-ns {
     margin-bottom: 11.11111rem; }
+  .mb950-ns {
+    margin-bottom: 13.33333rem; }
   .mb1000-ns {
     margin-bottom: 17.77778rem; }
   .pb0-ns {
@@ -14668,8 +14851,12 @@ Breakpoints:
     padding-bottom: 5.33333rem; }
   .pb800-ns {
     padding-bottom: 6.66667rem; }
+  .pb850-ns {
+    padding-bottom: 8.88889rem; }
   .pb900-ns {
     padding-bottom: 11.11111rem; }
+  .pb950-ns {
+    padding-bottom: 13.33333rem; }
   .pb1000-ns {
     padding-bottom: 17.77778rem; }
   .ml-auto-ns {
@@ -14700,8 +14887,12 @@ Breakpoints:
     margin-left: 5.33333rem; }
   .ml800-ns {
     margin-left: 6.66667rem; }
+  .ml850-ns {
+    margin-left: 8.88889rem; }
   .ml900-ns {
     margin-left: 11.11111rem; }
+  .ml950-ns {
+    margin-left: 13.33333rem; }
   .ml1000-ns {
     margin-left: 17.77778rem; }
   .pl0-ns {
@@ -14730,8 +14921,12 @@ Breakpoints:
     padding-left: 5.33333rem; }
   .pl800-ns {
     padding-left: 6.66667rem; }
+  .pl850-ns {
+    padding-left: 8.88889rem; }
   .pl900-ns {
     padding-left: 11.11111rem; }
+  .pl950-ns {
+    padding-left: 13.33333rem; }
   .pl1000-ns {
     padding-left: 17.77778rem; } }
 
@@ -14764,8 +14959,12 @@ Breakpoints:
     margin: 5.33333rem; }
   .ma800-m {
     margin: 6.66667rem; }
+  .ma850-m {
+    margin: 8.88889rem; }
   .ma900-m {
     margin: 11.11111rem; }
+  .ma950-m {
+    margin: 13.33333rem; }
   .ma1000-m {
     margin: 17.77778rem; }
   .pa0-m {
@@ -14794,8 +14993,12 @@ Breakpoints:
     padding: 5.33333rem; }
   .pa800-m {
     padding: 6.66667rem; }
+  .pa850-m {
+    padding: 8.88889rem; }
   .pa900-m {
     padding: 11.11111rem; }
+  .pa950-m {
+    padding: 13.33333rem; }
   .pa1000-m {
     padding: 17.77778rem; }
   .mx-auto-m {
@@ -14840,9 +15043,15 @@ Breakpoints:
   .mx800-m {
     margin-right: 6.66667rem;
     margin-left: 6.66667rem; }
+  .mx850-m {
+    margin-right: 8.88889rem;
+    margin-left: 8.88889rem; }
   .mx900-m {
     margin-right: 11.11111rem;
     margin-left: 11.11111rem; }
+  .mx950-m {
+    margin-right: 13.33333rem;
+    margin-left: 13.33333rem; }
   .mx1000-m {
     margin-right: 17.77778rem;
     margin-left: 17.77778rem; }
@@ -14885,9 +15094,15 @@ Breakpoints:
   .px800-m {
     padding-right: 6.66667rem;
     padding-left: 6.66667rem; }
+  .px850-m {
+    padding-right: 8.88889rem;
+    padding-left: 8.88889rem; }
   .px900-m {
     padding-right: 11.11111rem;
     padding-left: 11.11111rem; }
+  .px950-m {
+    padding-right: 13.33333rem;
+    padding-left: 13.33333rem; }
   .px1000-m {
     padding-right: 17.77778rem;
     padding-left: 17.77778rem; }
@@ -14933,9 +15148,15 @@ Breakpoints:
   .my800-m {
     margin-top: 6.66667rem;
     margin-bottom: 6.66667rem; }
+  .my850-m {
+    margin-top: 8.88889rem;
+    margin-bottom: 8.88889rem; }
   .my900-m {
     margin-top: 11.11111rem;
     margin-bottom: 11.11111rem; }
+  .my950-m {
+    margin-top: 13.33333rem;
+    margin-bottom: 13.33333rem; }
   .my1000-m {
     margin-top: 17.77778rem;
     margin-bottom: 17.77778rem; }
@@ -14978,9 +15199,15 @@ Breakpoints:
   .py800-m {
     padding-top: 6.66667rem;
     padding-bottom: 6.66667rem; }
+  .py850-m {
+    padding-top: 8.88889rem;
+    padding-bottom: 8.88889rem; }
   .py900-m {
     padding-top: 11.11111rem;
     padding-bottom: 11.11111rem; }
+  .py950-m {
+    padding-top: 13.33333rem;
+    padding-bottom: 13.33333rem; }
   .py1000-m {
     padding-top: 17.77778rem;
     padding-bottom: 17.77778rem; }
@@ -15012,8 +15239,12 @@ Breakpoints:
     margin-top: 5.33333rem; }
   .mt800-m {
     margin-top: 6.66667rem; }
+  .mt850-m {
+    margin-top: 8.88889rem; }
   .mt900-m {
     margin-top: 11.11111rem; }
+  .mt950-m {
+    margin-top: 13.33333rem; }
   .mt1000-m {
     margin-top: 17.77778rem; }
   .pt0-m {
@@ -15042,8 +15273,12 @@ Breakpoints:
     padding-top: 5.33333rem; }
   .pt800-m {
     padding-top: 6.66667rem; }
+  .pt850-m {
+    padding-top: 8.88889rem; }
   .pt900-m {
     padding-top: 11.11111rem; }
+  .pt950-m {
+    padding-top: 13.33333rem; }
   .pt1000-m {
     padding-top: 17.77778rem; }
   .mr-auto-m {
@@ -15074,8 +15309,12 @@ Breakpoints:
     margin-right: 5.33333rem; }
   .mr800-m {
     margin-right: 6.66667rem; }
+  .mr850-m {
+    margin-right: 8.88889rem; }
   .mr900-m {
     margin-right: 11.11111rem; }
+  .mr950-m {
+    margin-right: 13.33333rem; }
   .mr1000-m {
     margin-right: 17.77778rem; }
   .pr0-m {
@@ -15104,8 +15343,12 @@ Breakpoints:
     padding-right: 5.33333rem; }
   .pr800-m {
     padding-right: 6.66667rem; }
+  .pr850-m {
+    padding-right: 8.88889rem; }
   .pr900-m {
     padding-right: 11.11111rem; }
+  .pr950-m {
+    padding-right: 13.33333rem; }
   .pr1000-m {
     padding-right: 17.77778rem; }
   .mb-auto-m {
@@ -15136,8 +15379,12 @@ Breakpoints:
     margin-bottom: 5.33333rem; }
   .mb800-m {
     margin-bottom: 6.66667rem; }
+  .mb850-m {
+    margin-bottom: 8.88889rem; }
   .mb900-m {
     margin-bottom: 11.11111rem; }
+  .mb950-m {
+    margin-bottom: 13.33333rem; }
   .mb1000-m {
     margin-bottom: 17.77778rem; }
   .pb0-m {
@@ -15166,8 +15413,12 @@ Breakpoints:
     padding-bottom: 5.33333rem; }
   .pb800-m {
     padding-bottom: 6.66667rem; }
+  .pb850-m {
+    padding-bottom: 8.88889rem; }
   .pb900-m {
     padding-bottom: 11.11111rem; }
+  .pb950-m {
+    padding-bottom: 13.33333rem; }
   .pb1000-m {
     padding-bottom: 17.77778rem; }
   .ml-auto-m {
@@ -15198,8 +15449,12 @@ Breakpoints:
     margin-left: 5.33333rem; }
   .ml800-m {
     margin-left: 6.66667rem; }
+  .ml850-m {
+    margin-left: 8.88889rem; }
   .ml900-m {
     margin-left: 11.11111rem; }
+  .ml950-m {
+    margin-left: 13.33333rem; }
   .ml1000-m {
     margin-left: 17.77778rem; }
   .pl0-m {
@@ -15228,8 +15483,12 @@ Breakpoints:
     padding-left: 5.33333rem; }
   .pl800-m {
     padding-left: 6.66667rem; }
+  .pl850-m {
+    padding-left: 8.88889rem; }
   .pl900-m {
     padding-left: 11.11111rem; }
+  .pl950-m {
+    padding-left: 13.33333rem; }
   .pl1000-m {
     padding-left: 17.77778rem; } }
 
@@ -15262,8 +15521,12 @@ Breakpoints:
     margin: 5.33333rem; }
   .ma800-l {
     margin: 6.66667rem; }
+  .ma850-l {
+    margin: 8.88889rem; }
   .ma900-l {
     margin: 11.11111rem; }
+  .ma950-l {
+    margin: 13.33333rem; }
   .ma1000-l {
     margin: 17.77778rem; }
   .pa0-l {
@@ -15292,8 +15555,12 @@ Breakpoints:
     padding: 5.33333rem; }
   .pa800-l {
     padding: 6.66667rem; }
+  .pa850-l {
+    padding: 8.88889rem; }
   .pa900-l {
     padding: 11.11111rem; }
+  .pa950-l {
+    padding: 13.33333rem; }
   .pa1000-l {
     padding: 17.77778rem; }
   .mx-auto-l {
@@ -15338,9 +15605,15 @@ Breakpoints:
   .mx800-l {
     margin-right: 6.66667rem;
     margin-left: 6.66667rem; }
+  .mx850-l {
+    margin-right: 8.88889rem;
+    margin-left: 8.88889rem; }
   .mx900-l {
     margin-right: 11.11111rem;
     margin-left: 11.11111rem; }
+  .mx950-l {
+    margin-right: 13.33333rem;
+    margin-left: 13.33333rem; }
   .mx1000-l {
     margin-right: 17.77778rem;
     margin-left: 17.77778rem; }
@@ -15383,9 +15656,15 @@ Breakpoints:
   .px800-l {
     padding-right: 6.66667rem;
     padding-left: 6.66667rem; }
+  .px850-l {
+    padding-right: 8.88889rem;
+    padding-left: 8.88889rem; }
   .px900-l {
     padding-right: 11.11111rem;
     padding-left: 11.11111rem; }
+  .px950-l {
+    padding-right: 13.33333rem;
+    padding-left: 13.33333rem; }
   .px1000-l {
     padding-right: 17.77778rem;
     padding-left: 17.77778rem; }
@@ -15431,9 +15710,15 @@ Breakpoints:
   .my800-l {
     margin-top: 6.66667rem;
     margin-bottom: 6.66667rem; }
+  .my850-l {
+    margin-top: 8.88889rem;
+    margin-bottom: 8.88889rem; }
   .my900-l {
     margin-top: 11.11111rem;
     margin-bottom: 11.11111rem; }
+  .my950-l {
+    margin-top: 13.33333rem;
+    margin-bottom: 13.33333rem; }
   .my1000-l {
     margin-top: 17.77778rem;
     margin-bottom: 17.77778rem; }
@@ -15476,9 +15761,15 @@ Breakpoints:
   .py800-l {
     padding-top: 6.66667rem;
     padding-bottom: 6.66667rem; }
+  .py850-l {
+    padding-top: 8.88889rem;
+    padding-bottom: 8.88889rem; }
   .py900-l {
     padding-top: 11.11111rem;
     padding-bottom: 11.11111rem; }
+  .py950-l {
+    padding-top: 13.33333rem;
+    padding-bottom: 13.33333rem; }
   .py1000-l {
     padding-top: 17.77778rem;
     padding-bottom: 17.77778rem; }
@@ -15510,8 +15801,12 @@ Breakpoints:
     margin-top: 5.33333rem; }
   .mt800-l {
     margin-top: 6.66667rem; }
+  .mt850-l {
+    margin-top: 8.88889rem; }
   .mt900-l {
     margin-top: 11.11111rem; }
+  .mt950-l {
+    margin-top: 13.33333rem; }
   .mt1000-l {
     margin-top: 17.77778rem; }
   .pt0-l {
@@ -15540,8 +15835,12 @@ Breakpoints:
     padding-top: 5.33333rem; }
   .pt800-l {
     padding-top: 6.66667rem; }
+  .pt850-l {
+    padding-top: 8.88889rem; }
   .pt900-l {
     padding-top: 11.11111rem; }
+  .pt950-l {
+    padding-top: 13.33333rem; }
   .pt1000-l {
     padding-top: 17.77778rem; }
   .mr-auto-l {
@@ -15572,8 +15871,12 @@ Breakpoints:
     margin-right: 5.33333rem; }
   .mr800-l {
     margin-right: 6.66667rem; }
+  .mr850-l {
+    margin-right: 8.88889rem; }
   .mr900-l {
     margin-right: 11.11111rem; }
+  .mr950-l {
+    margin-right: 13.33333rem; }
   .mr1000-l {
     margin-right: 17.77778rem; }
   .pr0-l {
@@ -15602,8 +15905,12 @@ Breakpoints:
     padding-right: 5.33333rem; }
   .pr800-l {
     padding-right: 6.66667rem; }
+  .pr850-l {
+    padding-right: 8.88889rem; }
   .pr900-l {
     padding-right: 11.11111rem; }
+  .pr950-l {
+    padding-right: 13.33333rem; }
   .pr1000-l {
     padding-right: 17.77778rem; }
   .mb-auto-l {
@@ -15634,8 +15941,12 @@ Breakpoints:
     margin-bottom: 5.33333rem; }
   .mb800-l {
     margin-bottom: 6.66667rem; }
+  .mb850-l {
+    margin-bottom: 8.88889rem; }
   .mb900-l {
     margin-bottom: 11.11111rem; }
+  .mb950-l {
+    margin-bottom: 13.33333rem; }
   .mb1000-l {
     margin-bottom: 17.77778rem; }
   .pb0-l {
@@ -15664,8 +15975,12 @@ Breakpoints:
     padding-bottom: 5.33333rem; }
   .pb800-l {
     padding-bottom: 6.66667rem; }
+  .pb850-l {
+    padding-bottom: 8.88889rem; }
   .pb900-l {
     padding-bottom: 11.11111rem; }
+  .pb950-l {
+    padding-bottom: 13.33333rem; }
   .pb1000-l {
     padding-bottom: 17.77778rem; }
   .ml-auto-l {
@@ -15696,8 +16011,12 @@ Breakpoints:
     margin-left: 5.33333rem; }
   .ml800-l {
     margin-left: 6.66667rem; }
+  .ml850-l {
+    margin-left: 8.88889rem; }
   .ml900-l {
     margin-left: 11.11111rem; }
+  .ml950-l {
+    margin-left: 13.33333rem; }
   .ml1000-l {
     margin-left: 17.77778rem; }
   .pl0-l {
@@ -15726,8 +16045,12 @@ Breakpoints:
     padding-left: 5.33333rem; }
   .pl800-l {
     padding-left: 6.66667rem; }
+  .pl850-l {
+    padding-left: 8.88889rem; }
   .pl900-l {
     padding-left: 11.11111rem; }
+  .pl950-l {
+    padding-left: 13.33333rem; }
   .pl1000-l {
     padding-left: 17.77778rem; } }
 
