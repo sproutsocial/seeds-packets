@@ -31,7 +31,9 @@ Modifiers:
     700: Size 700
     750: Size 750
     800: Size 800
+    850: Size 850
     900: Size 900
+    950: Size 950
     1000: Size 1000
 Breakpoints:
     -ns: not-small
@@ -54,7 +56,9 @@ $space-map: (
         700: setUnits(2 * $Space-size--600),
         750: setUnits(2 * ($Space-size--600 + $Space-size--300)),
         800: setUnits(3 * $Space-size--600),
+        850: setUnits(4 * $Space-size--600),
         900: setUnits(5 * $Space-size--600),
+        950: setUnits(6 * $Space-size--600),
         1000: setUnits(8 * $Space-size--600)
 );
 @function Space($value) {

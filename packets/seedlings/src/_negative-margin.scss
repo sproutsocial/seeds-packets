@@ -14,6 +14,7 @@ Modifiers:
     -100: negative Size 100
     -200: negative Size 200
     -300: negative Size 300
+    -350: negative Size 350
     -400: negative Size 400
     -450: negative Size 450
     -500: negative Size 500
@@ -32,6 +33,7 @@ $negative-margin-map: (
         -100: -1 * setUnits($Space-size--100),
         -200: -1 * setUnits($Space-size--200),
         -300: -1 * setUnits($Space-size--300),
+        -350: -1 * setUnits($Space-size--350),
         -400: -1 * setUnits($Space-size--400),
         -450: -1 * setUnits($Space-size--450),
         -500: -1 * setUnits($Space-size--500),

@@ -4545,6 +4545,7 @@ Modifiers:
     -100: negative Size 100
     -200: negative Size 200
     -300: negative Size 300
+    -350: negative Size 350
     -400: negative Size 400
     -450: negative Size 450
     -500: negative Size 500
@@ -4567,6 +4568,9 @@ Breakpoints:
 
 .mt-300 {
   margin-top: -8px; }
+
+.mt-350 {
+  margin-top: -12px; }
 
 .mt-400 {
   margin-top: -16px; }
@@ -4601,6 +4605,9 @@ Breakpoints:
 .mr-300 {
   margin-right: -8px; }
 
+.mr-350 {
+  margin-right: -12px; }
+
 .mr-400 {
   margin-right: -16px; }
 
@@ -4634,6 +4641,9 @@ Breakpoints:
 .mb-300 {
   margin-bottom: -8px; }
 
+.mb-350 {
+  margin-bottom: -12px; }
+
 .mb-400 {
   margin-bottom: -16px; }
 
@@ -4666,6 +4676,9 @@ Breakpoints:
 
 .ml-300 {
   margin-left: -8px; }
+
+.ml-350 {
+  margin-left: -12px; }
 
 .ml-400 {
   margin-left: -16px; }
@@ -4907,7 +4920,9 @@ Modifiers:
     700: Size 700
     750: Size 750
     800: Size 800
+    850: Size 850
     900: Size 900
+    950: Size 950
     1000: Size 1000
 Breakpoints:
     -ns: not-small
@@ -4957,8 +4972,14 @@ Breakpoints:
 .ma800 {
   margin: 120px; }
 
+.ma850 {
+  margin: 160px; }
+
 .ma900 {
   margin: 200px; }
+
+.ma950 {
+  margin: 240px; }
 
 .ma1000 {
   margin: 320px; }
@@ -5002,8 +5023,14 @@ Breakpoints:
 .pa800 {
   padding: 120px; }
 
+.pa850 {
+  padding: 160px; }
+
 .pa900 {
   padding: 200px; }
+
+.pa950 {
+  padding: 240px; }
 
 .pa1000 {
   padding: 320px; }
@@ -5064,9 +5091,17 @@ Breakpoints:
   margin-right: 120px;
   margin-left: 120px; }
 
+.mx850 {
+  margin-right: 160px;
+  margin-left: 160px; }
+
 .mx900 {
   margin-right: 200px;
   margin-left: 200px; }
+
+.mx950 {
+  margin-right: 240px;
+  margin-left: 240px; }
 
 .mx1000 {
   margin-right: 320px;
@@ -5124,9 +5159,17 @@ Breakpoints:
   padding-right: 120px;
   padding-left: 120px; }
 
+.px850 {
+  padding-right: 160px;
+  padding-left: 160px; }
+
 .px900 {
   padding-right: 200px;
   padding-left: 200px; }
+
+.px950 {
+  padding-right: 240px;
+  padding-left: 240px; }
 
 .px1000 {
   padding-right: 320px;
@@ -5188,9 +5231,17 @@ Breakpoints:
   margin-top: 120px;
   margin-bottom: 120px; }
 
+.my850 {
+  margin-top: 160px;
+  margin-bottom: 160px; }
+
 .my900 {
   margin-top: 200px;
   margin-bottom: 200px; }
+
+.my950 {
+  margin-top: 240px;
+  margin-bottom: 240px; }
 
 .my1000 {
   margin-top: 320px;
@@ -5248,9 +5299,17 @@ Breakpoints:
   padding-top: 120px;
   padding-bottom: 120px; }
 
+.py850 {
+  padding-top: 160px;
+  padding-bottom: 160px; }
+
 .py900 {
   padding-top: 200px;
   padding-bottom: 200px; }
+
+.py950 {
+  padding-top: 240px;
+  padding-bottom: 240px; }
 
 .py1000 {
   padding-top: 320px;
@@ -5298,8 +5357,14 @@ Breakpoints:
 .mt800 {
   margin-top: 120px; }
 
+.mt850 {
+  margin-top: 160px; }
+
 .mt900 {
   margin-top: 200px; }
+
+.mt950 {
+  margin-top: 240px; }
 
 .mt1000 {
   margin-top: 320px; }
@@ -5343,8 +5408,14 @@ Breakpoints:
 .pt800 {
   padding-top: 120px; }
 
+.pt850 {
+  padding-top: 160px; }
+
 .pt900 {
   padding-top: 200px; }
+
+.pt950 {
+  padding-top: 240px; }
 
 .pt1000 {
   padding-top: 320px; }
@@ -5391,8 +5462,14 @@ Breakpoints:
 .mr800 {
   margin-right: 120px; }
 
+.mr850 {
+  margin-right: 160px; }
+
 .mr900 {
   margin-right: 200px; }
+
+.mr950 {
+  margin-right: 240px; }
 
 .mr1000 {
   margin-right: 320px; }
@@ -5436,8 +5513,14 @@ Breakpoints:
 .pr800 {
   padding-right: 120px; }
 
+.pr850 {
+  padding-right: 160px; }
+
 .pr900 {
   padding-right: 200px; }
+
+.pr950 {
+  padding-right: 240px; }
 
 .pr1000 {
   padding-right: 320px; }
@@ -5484,8 +5567,14 @@ Breakpoints:
 .mb800 {
   margin-bottom: 120px; }
 
+.mb850 {
+  margin-bottom: 160px; }
+
 .mb900 {
   margin-bottom: 200px; }
+
+.mb950 {
+  margin-bottom: 240px; }
 
 .mb1000 {
   margin-bottom: 320px; }
@@ -5529,8 +5618,14 @@ Breakpoints:
 .pb800 {
   padding-bottom: 120px; }
 
+.pb850 {
+  padding-bottom: 160px; }
+
 .pb900 {
   padding-bottom: 200px; }
+
+.pb950 {
+  padding-bottom: 240px; }
 
 .pb1000 {
   padding-bottom: 320px; }
@@ -5577,8 +5672,14 @@ Breakpoints:
 .ml800 {
   margin-left: 120px; }
 
+.ml850 {
+  margin-left: 160px; }
+
 .ml900 {
   margin-left: 200px; }
+
+.ml950 {
+  margin-left: 240px; }
 
 .ml1000 {
   margin-left: 320px; }
@@ -5622,8 +5723,14 @@ Breakpoints:
 .pl800 {
   padding-left: 120px; }
 
+.pl850 {
+  padding-left: 160px; }
+
 .pl900 {
   padding-left: 200px; }
+
+.pl950 {
+  padding-left: 240px; }
 
 .pl1000 {
   padding-left: 320px; }
