@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@0.5.3...@sproutsocial/seedlings@0.6.0) (2019-11-04)
+
+
+### Features
+
+* adds square utility ([e7d61ff](https://github.com/sproutsocial/seeds-packets/commit/e7d61ff))
+
+
+
+
+
 ## [0.5.3](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@0.5.2...@sproutsocial/seedlings@0.5.3) (2019-08-20)
 
 
