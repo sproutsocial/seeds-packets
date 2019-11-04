@@ -16056,6 +16056,276 @@ Breakpoints:
 
 /*
 ---
+Name: Square
+Description: With our seedlings height and width values being different, this utility styling creates a way to create a square with equal height and width
+Base:
+    square: square
+Modifiers:
+    0: 0
+    100: Size 100
+    200: Size 200
+    300: Size 300
+    350: Size 350
+    400: Size 400
+    450: Size 450
+    500: Size 500
+    600: Size 600
+    650: Size 650
+    700: Size 700
+    750: Size 750
+    800: Size 800
+    850: Size 850
+    900: Size 900
+    950: Size 950
+    1000: Size 1000
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+.square-auto {
+  height: auto;
+  width: auto; }
+
+.square0 {
+  height: 0;
+  width: 0; }
+
+.square100 {
+  height: 0.11111rem;
+  width: 0.11111rem; }
+
+.square200 {
+  height: 0.22222rem;
+  width: 0.22222rem; }
+
+.square300 {
+  height: 0.44444rem;
+  width: 0.44444rem; }
+
+.square350 {
+  height: 0.66667rem;
+  width: 0.66667rem; }
+
+.square400 {
+  height: 0.88889rem;
+  width: 0.88889rem; }
+
+.square450 {
+  height: 1.33333rem;
+  width: 1.33333rem; }
+
+.square500 {
+  height: 1.77778rem;
+  width: 1.77778rem; }
+
+.square600 {
+  height: 2.22222rem;
+  width: 2.22222rem; }
+
+.square650 {
+  height: 3.11111rem;
+  width: 3.11111rem; }
+
+.square700 {
+  height: 4.44444rem;
+  width: 4.44444rem; }
+
+.square750 {
+  height: 5.33333rem;
+  width: 5.33333rem; }
+
+.square800 {
+  height: 6.66667rem;
+  width: 6.66667rem; }
+
+.square850 {
+  height: 8.88889rem;
+  width: 8.88889rem; }
+
+.square900 {
+  height: 11.11111rem;
+  width: 11.11111rem; }
+
+.square950 {
+  height: 13.33333rem;
+  width: 13.33333rem; }
+
+.square1000 {
+  height: 17.77778rem;
+  width: 17.77778rem; }
+
+@media screen and (min-width: 30rem) {
+  .square-auto-ns {
+    height: auto;
+    width: auto; }
+  .square0-ns {
+    height: 0;
+    width: 0; }
+  .square100-ns {
+    height: 0.11111rem;
+    width: 0.11111rem; }
+  .square200-ns {
+    height: 0.22222rem;
+    width: 0.22222rem; }
+  .square300-ns {
+    height: 0.44444rem;
+    width: 0.44444rem; }
+  .square350-ns {
+    height: 0.66667rem;
+    width: 0.66667rem; }
+  .square400-ns {
+    height: 0.88889rem;
+    width: 0.88889rem; }
+  .square450-ns {
+    height: 1.33333rem;
+    width: 1.33333rem; }
+  .square500-ns {
+    height: 1.77778rem;
+    width: 1.77778rem; }
+  .square600-ns {
+    height: 2.22222rem;
+    width: 2.22222rem; }
+  .square650-ns {
+    height: 3.11111rem;
+    width: 3.11111rem; }
+  .square700-ns {
+    height: 4.44444rem;
+    width: 4.44444rem; }
+  .square750-ns {
+    height: 5.33333rem;
+    width: 5.33333rem; }
+  .square800-ns {
+    height: 6.66667rem;
+    width: 6.66667rem; }
+  .square850-ns {
+    height: 8.88889rem;
+    width: 8.88889rem; }
+  .square900-ns {
+    height: 11.11111rem;
+    width: 11.11111rem; }
+  .square950-ns {
+    height: 13.33333rem;
+    width: 13.33333rem; }
+  .square1000-ns {
+    height: 17.77778rem;
+    width: 17.77778rem; } }
+
+@media screen and (min-width: 30rem) and (max-width: 60rem) {
+  .square-auto-m {
+    height: auto;
+    width: auto; }
+  .square0-m {
+    height: 0;
+    width: 0; }
+  .square100-m {
+    height: 0.11111rem;
+    width: 0.11111rem; }
+  .square200-m {
+    height: 0.22222rem;
+    width: 0.22222rem; }
+  .square300-m {
+    height: 0.44444rem;
+    width: 0.44444rem; }
+  .square350-m {
+    height: 0.66667rem;
+    width: 0.66667rem; }
+  .square400-m {
+    height: 0.88889rem;
+    width: 0.88889rem; }
+  .square450-m {
+    height: 1.33333rem;
+    width: 1.33333rem; }
+  .square500-m {
+    height: 1.77778rem;
+    width: 1.77778rem; }
+  .square600-m {
+    height: 2.22222rem;
+    width: 2.22222rem; }
+  .square650-m {
+    height: 3.11111rem;
+    width: 3.11111rem; }
+  .square700-m {
+    height: 4.44444rem;
+    width: 4.44444rem; }
+  .square750-m {
+    height: 5.33333rem;
+    width: 5.33333rem; }
+  .square800-m {
+    height: 6.66667rem;
+    width: 6.66667rem; }
+  .square850-m {
+    height: 8.88889rem;
+    width: 8.88889rem; }
+  .square900-m {
+    height: 11.11111rem;
+    width: 11.11111rem; }
+  .square950-m {
+    height: 13.33333rem;
+    width: 13.33333rem; }
+  .square1000-m {
+    height: 17.77778rem;
+    width: 17.77778rem; } }
+
+@media screen and (min-width: 60rem) {
+  .square-auto-l {
+    height: auto;
+    width: auto; }
+  .square0-l {
+    height: 0;
+    width: 0; }
+  .square100-l {
+    height: 0.11111rem;
+    width: 0.11111rem; }
+  .square200-l {
+    height: 0.22222rem;
+    width: 0.22222rem; }
+  .square300-l {
+    height: 0.44444rem;
+    width: 0.44444rem; }
+  .square350-l {
+    height: 0.66667rem;
+    width: 0.66667rem; }
+  .square400-l {
+    height: 0.88889rem;
+    width: 0.88889rem; }
+  .square450-l {
+    height: 1.33333rem;
+    width: 1.33333rem; }
+  .square500-l {
+    height: 1.77778rem;
+    width: 1.77778rem; }
+  .square600-l {
+    height: 2.22222rem;
+    width: 2.22222rem; }
+  .square650-l {
+    height: 3.11111rem;
+    width: 3.11111rem; }
+  .square700-l {
+    height: 4.44444rem;
+    width: 4.44444rem; }
+  .square750-l {
+    height: 5.33333rem;
+    width: 5.33333rem; }
+  .square800-l {
+    height: 6.66667rem;
+    width: 6.66667rem; }
+  .square850-l {
+    height: 8.88889rem;
+    width: 8.88889rem; }
+  .square900-l {
+    height: 11.11111rem;
+    width: 11.11111rem; }
+  .square950-l {
+    height: 13.33333rem;
+    width: 13.33333rem; }
+  .square1000-l {
+    height: 17.77778rem;
+    width: 17.77778rem; } }
+
+/*
+---
 Name: Text Align
 Base:
     t: text-align
