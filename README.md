@@ -72,8 +72,8 @@ Feel free to suggest additional scope options.
 - Put your PR changes in
 - Get approval
 - Merge PR
-- Pull down latest from `upstream`
-- Run `yarn release`, to publish new packages to npm. This will also generate updated changelogs for each packet that has been changed.
+- Jenkins will take care of the rest!
+
 
 ### Testing packet changes locally
 
