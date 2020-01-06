@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seeds-typography@2.0.2...@sproutsocial/seeds-typography@3.0.0) (2020-01-06)
+
+
+### Features
+
+* **seeds-typography:** update styles for Nectar ([40e94d4](https://github.com/sproutsocial/seeds-packets/commit/40e94d4))
+
+
+### BREAKING CHANGES
+
+* **seeds-typography:** the font stack has been changed to system fonts
+
+
+
+
+
 ## [2.0.2](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-typography@2.0.0...@sproutsocial/seeds-typography@2.0.2) (2019-06-19)
 
 **Note:** Version bump only for package @sproutsocial/seeds-typography
