@@ -2212,7 +2212,7 @@ Base:
 Modifiers:
     0: 0
     500: 500
-    800: 800
+    600: 600
     --round: 50%
     --top: top only
     --right: right only
@@ -2227,7 +2227,7 @@ Modifiers:
 .br500 {
   border-radius: 3px; }
 
-.br800 {
+.br600 {
   border-radius: 8px; }
 
 .br--round {
