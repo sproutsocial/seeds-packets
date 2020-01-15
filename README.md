@@ -69,10 +69,9 @@ Feel free to suggest additional scope options.
 
 ### Publishing Package Updates to npm
 
-- Put your PR changes in
+- Create a pull request against the `develop` branch
 - Get approval
-- Merge PR
-- Jenkins will take care of the rest!
+- Merge PR then create a new PR to the `master` branch and merge it. Jenkins will notify a successful build notifying that the seeds-packets were published to NPM, once that is complete create a final pull request from `master` to `develop`
 
 
 ### Testing packet changes locally
