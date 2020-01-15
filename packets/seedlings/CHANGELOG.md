@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.0.1...@sproutsocial/seedlings@1.1.0) (2020-01-15)
+
+
+### Bug Fixes
+
+* fix border radius and width regressions ([40e7dfe](https://github.com/sproutsocial/seeds-packets/commit/40e7dfe))
+* fix typography regression ([0e84076](https://github.com/sproutsocial/seeds-packets/commit/0e84076))
+* name value after seeds token ([7e0b128](https://github.com/sproutsocial/seeds-packets/commit/7e0b128))
+
+
+### Features
+
+* add 8px border radius ([35f3810](https://github.com/sproutsocial/seeds-packets/commit/35f3810))
+
+
+
+
+
 ## [1.0.1](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.0.0...@sproutsocial/seedlings@1.0.1) (2020-01-06)
 
 
