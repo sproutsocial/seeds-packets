@@ -1,6 +1,6 @@
 {
   "name": "@sproutsocial/seeds-typography",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "description": "Seeds Typography Tokens",
   "main": "dist/seeds-typography.js",
   "repository": {
