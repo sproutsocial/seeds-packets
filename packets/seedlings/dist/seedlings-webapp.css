@@ -2212,6 +2212,7 @@ Base:
 Modifiers:
     0: 0
     500: 500
+    600: 600
     --round: 50%
     --top: top only
     --right: right only
@@ -2224,7 +2225,10 @@ Modifiers:
   border-radius: 0; }
 
 .br500 {
-  border-radius: 6px; }
+  border-radius: 3px; }
+
+.br600 {
+  border-radius: 8px; }
 
 .br--round {
   border-radius: 50%; }
@@ -4135,7 +4139,7 @@ Modifiers:
 ---
 */
 .ff-proxima-nova {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
+  font-family: "Proxima Nova", proxima-nova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 .ff-system {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }

@@ -2,13 +2,14 @@
 
 $borderSizes: (
         500: $Border-width--500,
-        600: 2px,
+        600: $Border-width--600,
         700: 5px,
         800: 8px
 );
 $radiusSizes: (
         0: 0,
-        500: $Border-radius--500,
+        500: $Border-radius--400,
+        600: $Border-radius--600,
         --round: 50%
 );
 $sides: (
