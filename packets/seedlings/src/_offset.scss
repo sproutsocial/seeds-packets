@@ -8,6 +8,7 @@ Base:
 Directions:
     -r: right
     -l: left
+    -x: horizontal
 Modifiers:
     -8p: 1 column
     -16p: 2 columns
@@ -31,6 +32,11 @@ Breakpoints:
     }
     
     .offset-r#{$name}p#{$breakpoint-name} {
+      padding-right: calc(#{setUnits($Space-size--350)} + #{percentage($size)});
+    }
+
+    .offset-x#{$name}p#{$breakpoint-name} {
+      padding-left: calc(#{setUnits($Space-size--350)} + #{percentage($size)});
       padding-right: calc(#{setUnits($Space-size--350)} + #{percentage($size)});
     }
   }
