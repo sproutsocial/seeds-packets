@@ -22,9 +22,9 @@ Breakpoints:
 
 @mixin percent-width($breakpoint-name: "") {
   $percent-widths: (
-          -8: (1 / 12),
-          -16: (1 / 6),
-          -25: .25
+    -8: (1 / 12),
+    -16: (1 / 6),
+    -25: .25
   );
   @each $name, $size in $percent-widths {
     .offset-l#{$name}p#{$breakpoint-name} {
