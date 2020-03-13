@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.1.0...@sproutsocial/seedlings@1.2.0) (2020-03-13)
+
+
+### Bug Fixes
+
+* tabs ([9e6c06a](https://github.com/sproutsocial/seeds-packets/commit/9e6c06a))
+
+
+### Features
+
+* horizontal offset utility ([42c9810](https://github.com/sproutsocial/seeds-packets/commit/42c9810))
+* new offset utility ([cb64ab2](https://github.com/sproutsocial/seeds-packets/commit/cb64ab2))
+
+
+
+
+
 # [1.1.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.0.1...@sproutsocial/seedlings@1.1.0) (2020-01-15)
 
 
