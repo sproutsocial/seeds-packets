@@ -1,7 +1,6 @@
 @import '@sproutsocial/seeds-space/dist/seeds-space.scss';
 @import "./axioms/Space";
 
-
 /*
 ---
 Name: Spacing
@@ -41,6 +40,27 @@ Breakpoints:
     -l: large
 ---
 */
+
+/*
+---
+Name: Padding
+Base:
+    p: padding
+Directions:
+    x: horizontal
+    r: right
+    l: left
+Modifiers:
+    -8p-offset: 1 column offset
+    -16p-offset: 2 column offset
+    -25p-offset: 3 column offset
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+
 $space-map: (
         -auto: auto,
         -0: 0,
@@ -61,6 +81,13 @@ $space-map: (
         950: setUnits(6 * $Space-size--600),
         1000: setUnits(8 * $Space-size--600)
 );
+
+$offset-map: (
+        '-8p-offset': calc(#{setUnits($Space-size--350)} +  #{percentage(1/ 12)}),
+        '-16p-offset': calc(#{setUnits($Space-size--350)} +  #{percentage(1/ 6)}),
+        '-25p-offset': calc(#{setUnits($Space-size--350)} +  #{percentage(1/4)})
+);
+
 @function Space($value) {
   @return map-get($space-map, $value);
 }
@@ -100,6 +127,19 @@ $space-map: (
           }
         }
       }
+    }
+  }
+
+  @each $index, $size in $offset-map {
+    .pl#{$index}#{$breakpoint-name} {
+      padding-left: $size;
+    }
+    .pr#{$index}#{$breakpoint-name} {
+      padding-right: $size;
+    }
+    .px#{$index}#{$breakpoint-name} {
+      padding-left: $size;
+      padding-right: $size;
     }
   }
 }

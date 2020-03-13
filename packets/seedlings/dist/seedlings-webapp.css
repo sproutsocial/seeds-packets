@@ -4934,6 +4934,25 @@ Breakpoints:
     -l: large
 ---
 */
+/*
+---
+Name: Padding
+Base:
+    p: padding
+Directions:
+    x: horizontal
+    r: right
+    l: left
+Modifiers:
+    -8p-offset: 1 column offset
+    -16p-offset: 2 column offset
+    -25p-offset: 3 column offset
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
 .ma-auto {
   margin: auto; }
 
@@ -5738,6 +5757,36 @@ Breakpoints:
 
 .pl1000 {
   padding-left: 320px; }
+
+.pl-8p-offset {
+  padding-left: calc(12px +  8.33333%); }
+
+.pr-8p-offset {
+  padding-right: calc(12px +  8.33333%); }
+
+.px-8p-offset {
+  padding-left: calc(12px +  8.33333%);
+  padding-right: calc(12px +  8.33333%); }
+
+.pl-16p-offset {
+  padding-left: calc(12px +  16.66667%); }
+
+.pr-16p-offset {
+  padding-right: calc(12px +  16.66667%); }
+
+.px-16p-offset {
+  padding-left: calc(12px +  16.66667%);
+  padding-right: calc(12px +  16.66667%); }
+
+.pl-25p-offset {
+  padding-left: calc(12px +  25%); }
+
+.pr-25p-offset {
+  padding-right: calc(12px +  25%); }
+
+.px-25p-offset {
+  padding-left: calc(12px +  25%);
+  padding-right: calc(12px +  25%); }
 
 /*
 ---

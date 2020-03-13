@@ -16,6 +16,15 @@ $enable-rem: true !default;
 $Typography-unit: "rem" !default;
 $font-size-base: 18px !default;
 
+@function setUnits($size) {
+  @if ($enable-rem) {
+    $remSize: $size / $font-size-base;
+    @return $remSize * 1rem;
+  }
+  @return $size;
+}
+
+$grid-width: setUnits(1248px) !default;
 
 // Available Partials
 @import 'src/forms'; // This needs to go first so the reset styles can be overridden later
