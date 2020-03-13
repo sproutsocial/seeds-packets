@@ -70,7 +70,6 @@ Breakpoints:
     -l: large
 ---
 */
-$grid-width: setUnits(1248px) !default;
 @mixin width($breakpoint-name: "") {
   $column-width: $grid-width / 12;
   $widths: (
