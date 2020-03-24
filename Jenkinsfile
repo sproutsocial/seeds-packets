@@ -1,4 +1,4 @@
-def slack_channel = "#talk-design-systems"
+def slack_channel = "#eng-design-systems"
 def isNotJenkins() {
     def lastCommitter = sh(script: "git log -1 --pretty=format:'%an'", returnStdout: true)
     return lastCommitter != 'Sprout Jenkins'
