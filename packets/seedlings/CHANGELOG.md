@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.2](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.2.1...@sproutsocial/seedlings@1.2.2) (2020-03-31)
+
+
+### Bug Fixes
+
+* add missing 0 colors ([2e9fd53](https://github.com/sproutsocial/seeds-packets/commit/2e9fd53))
+
+
+
+
+
 ## [1.2.1](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.2.0...@sproutsocial/seedlings@1.2.1) (2020-03-24)
 
 **Note:** Version bump only for package @sproutsocial/seedlings
