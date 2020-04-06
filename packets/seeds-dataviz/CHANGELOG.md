@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seeds-dataviz@0.4.1...@sproutsocial/seeds-dataviz@0.5.0) (2020-04-06)
+
+
+### Features
+
+* **seeds-dataviz:** update color chart rotation ([#162](https://github.com/sproutsocial/seeds-packets/issues/162)) ([#163](https://github.com/sproutsocial/seeds-packets/issues/163)) ([1d98937](https://github.com/sproutsocial/seeds-packets/commit/1d98937))
+
+
+
+
+
 ## [0.4.1](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seeds-dataviz@0.4.0...@sproutsocial/seeds-dataviz@0.4.1) (2020-03-24)
 
 **Note:** Version bump only for package @sproutsocial/seeds-dataviz
