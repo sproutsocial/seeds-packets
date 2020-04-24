@@ -11,8 +11,8 @@ RUN chmod 400 /home/jenkins/.ssh/id_rsa; chown -R 10037 /home/jenkins
 
 # node / yarn
 
-ARG YARN_VERSION="1.16.0"
-ARG NODE_VERSION="8"
+ARG YARN_VERSION="1.21.1"
+ARG NODE_VERSION="12"
 
 RUN \
     apt-get update && \
