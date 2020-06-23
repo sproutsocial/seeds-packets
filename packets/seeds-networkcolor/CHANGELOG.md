@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seeds-networkcolor@2.2.1...@sproutsocial/seeds-networkcolor@2.3.0) (2020-06-23)
+
+
+### Features
+
+* **seeds-networkcolor:** add glassdoor color ([#168](https://github.com/sproutsocial/seeds-packets/issues/168)) ([c2fc8c8](https://github.com/sproutsocial/seeds-packets/commit/c2fc8c8))
+
+
+
+
+
 ## [2.2.1](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-networkcolor@2.2.0...@sproutsocial/seeds-networkcolor@2.2.1) (2019-06-19)
 
 
