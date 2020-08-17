@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.1](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seeds-dataviz@0.5.0...@sproutsocial/seeds-dataviz@0.5.1) (2020-08-17)
+
+**Note:** Version bump only for package @sproutsocial/seeds-dataviz
+
+
+
+
+
 # [0.5.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seeds-dataviz@0.4.1...@sproutsocial/seeds-dataviz@0.5.0) (2020-04-06)
 
 
