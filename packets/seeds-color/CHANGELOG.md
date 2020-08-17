@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seeds-color@1.4.3...@sproutsocial/seeds-color@1.5.0) (2020-08-17)
+
+
+### Features
+
+* **seeds-networkcolor:** add google business messages color ([#172](https://github.com/sproutsocial/seeds-packets/issues/172)) ([#174](https://github.com/sproutsocial/seeds-packets/issues/174)) ([d89891f](https://github.com/sproutsocial/seeds-packets/commit/d89891f))
+
+
+
+
+
 ## [1.4.3](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seeds-color@1.4.2...@sproutsocial/seeds-color@1.4.3) (2020-03-24)
 
 **Note:** Version bump only for package @sproutsocial/seeds-color
