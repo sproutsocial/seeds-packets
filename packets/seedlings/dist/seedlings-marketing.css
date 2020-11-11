@@ -13942,6 +13942,99 @@ Modifiers:
 
 /*
 ---
+Name: Scroll Snap
+Base:
+    scroll-snap: Scroll Snap
+Modifiers:
+    -none: None
+    -x: X-Axis
+    -xmandatory: X-Axis (Mandatory)
+    -y: Y-Axis
+    -ymandatory: Y-Axis (Mandatory)
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+.scroll-snap-none {
+  scroll-snap-type: none; }
+
+.scroll-snap-x {
+  scroll-snap-type: x; }
+
+.scroll-snap-xmandatory {
+  scroll-snap-type: x mandatory; }
+
+.scroll-snap-y {
+  scroll-snap-type: y; }
+
+.scroll-snap-ymandatory {
+  scroll-snap-type: y mandatory; }
+
+.scroll-snap-none > *,
+.scroll-snap-x > *,
+.scroll-snap-xmandatory > *,
+.scroll-snap-y > *,
+.scroll-snap-ymandatory > * {
+  scroll-snap-align: center; }
+
+@media screen and (min-width: 30rem) {
+  .scroll-snap-none-ns {
+    scroll-snap-type: none; }
+  .scroll-snap-x-ns {
+    scroll-snap-type: x; }
+  .scroll-snap-xmandatory-ns {
+    scroll-snap-type: x mandatory; }
+  .scroll-snap-y-ns {
+    scroll-snap-type: y; }
+  .scroll-snap-ymandatory-ns {
+    scroll-snap-type: y mandatory; }
+  .scroll-snap-none-ns > *,
+  .scroll-snap-x-ns > *,
+  .scroll-snap-xmandatory-ns > *,
+  .scroll-snap-y-ns > *,
+  .scroll-snap-ymandatory-ns > * {
+    scroll-snap-align: center; } }
+
+@media screen and (min-width: 30rem) and (max-width: 60rem) {
+  .scroll-snap-none-m {
+    scroll-snap-type: none; }
+  .scroll-snap-x-m {
+    scroll-snap-type: x; }
+  .scroll-snap-xmandatory-m {
+    scroll-snap-type: x mandatory; }
+  .scroll-snap-y-m {
+    scroll-snap-type: y; }
+  .scroll-snap-ymandatory-m {
+    scroll-snap-type: y mandatory; }
+  .scroll-snap-none-m > *,
+  .scroll-snap-x-m > *,
+  .scroll-snap-xmandatory-m > *,
+  .scroll-snap-y-m > *,
+  .scroll-snap-ymandatory-m > * {
+    scroll-snap-align: center; } }
+
+@media screen and (min-width: 60rem) {
+  .scroll-snap-none-l {
+    scroll-snap-type: none; }
+  .scroll-snap-x-l {
+    scroll-snap-type: x; }
+  .scroll-snap-xmandatory-l {
+    scroll-snap-type: x mandatory; }
+  .scroll-snap-y-l {
+    scroll-snap-type: y; }
+  .scroll-snap-ymandatory-l {
+    scroll-snap-type: y mandatory; }
+  .scroll-snap-none-l > *,
+  .scroll-snap-x-l > *,
+  .scroll-snap-xmandatory-l > *,
+  .scroll-snap-y-l > *,
+  .scroll-snap-ymandatory-l > * {
+    scroll-snap-align: center; } }
+
+/*
+---
 Name: Shadow
 Base:
     shadow: shadow
