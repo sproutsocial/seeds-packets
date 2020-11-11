@@ -5,10 +5,10 @@ Base:
     scroll-snap: Scroll Snap
 Modifiers:
     none: None
-    x: X-Axis
-    xmandatory: X-Axis (Mandatory)
-    y: Y-Axis
-    ymandatory: Y-Axis (Mandatory)
+    -x: X-Axis
+    -xmandatory: X-Axis (Mandatory)
+    -y: Y-Axis
+    -ymandatory: Y-Axis (Mandatory)
 Breakpoints:
     -ns: not-small
     -m: medium
