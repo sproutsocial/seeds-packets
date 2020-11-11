@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.2.8...@sproutsocial/seedlings@1.3.0) (2020-11-11)
+
+
+### Features
+
+* add scroll snap utility ([77e959e](https://github.com/sproutsocial/seeds-packets/commit/77e959e))
+
+
+
+
+
 ## [1.2.8](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.2.7...@sproutsocial/seedlings@1.2.8) (2020-10-30)
 
 **Note:** Version bump only for package @sproutsocial/seedlings
