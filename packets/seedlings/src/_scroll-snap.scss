@@ -1,0 +1,52 @@
+/*
+---
+Name: Scroll Snap
+Base:
+    scroll-snap: Scroll Snap
+Modifiers:
+    none: None
+    x: X-Axis
+    xmandatory: X-Axis (Mandatory)
+    y: Y-Axis
+    ymandatory: Y-Axis (Mandatory)
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+
+@mixin snap($breakpoint-name: "") {
+  .scroll-snap-none#{$breakpoint-name} {
+    scroll-snap-type: none;
+  }
+  .scroll-snap-x#{$breakpoint-name} {
+    scroll-snap-type: x;
+  }
+  .scroll-snap-xmandatory#{$breakpoint-name} {
+    scroll-snap-type: x mandatory;
+  }
+  .scroll-snap-y#{$breakpoint-name} {
+    scroll-snap-type: y;
+  }
+  .scroll-snap-ymandatory#{$breakpoint-name} {
+    scroll-snap-type: y mandatory;
+  }
+  .scroll-snap-none#{$breakpoint-name} > *,
+  .scroll-snap-x#{$breakpoint-name} > *,
+  .scroll-snap-xmandatory#{$breakpoint-name} > *,
+  .scroll-snap-y#{$breakpoint-name} > *,
+  .scroll-snap-ymandatory#{$breakpoint-name} > * {
+    scroll-snap-align: center;
+  }
+}
+
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include snap($breakpoint-name);
+    }
+  } @else {
+    @include snap;
+  }
+}
