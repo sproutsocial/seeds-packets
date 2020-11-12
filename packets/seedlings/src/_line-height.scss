@@ -1,0 +1,41 @@
+/*
+---
+Name: Line Height
+Base:
+    lh: Line Height
+Modifiers:
+    -none: None
+    -tight: Tight
+    -normal: Normal
+    -loose: Loose
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+
+@mixin lineHeight($breakpoint-name: "") {
+  .lh-none#{$breakpoint-name} {
+    line-height: 1;
+  }
+  .lh-tight#{$breakpoint-name} {
+    line-height: 1.25;
+  }
+  .lh-normal#{$breakpoint-name} {
+    line-height: 1.5;
+  }
+  .lh-loose#{$breakpoint-name} {
+    line-height: 2;
+  }
+}
+
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include lineHeight($breakpoint-name);
+    }
+  } @else {
+    @include lineHeight;
+  }
+}
