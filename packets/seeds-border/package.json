@@ -1,6 +1,6 @@
 {
   "name": "@sproutsocial/seeds-border",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Seeds Border Tokens",
   "main": "dist/seeds-border.js",
   "repository": {
@@ -13,6 +13,6 @@
     "build": "node build.js"
   },
   "devDependencies": {
-    "@sproutsocial/seeds-utils": "^1.2.0"
+    "@sproutsocial/seeds-utils": "^1.2.1"
   }
 }

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.3.0...@sproutsocial/seedlings@1.4.0) (2020-11-13)
+
+
+### Features
+
+* add a new line height utility ([e96266d](https://github.com/sproutsocial/seeds-packets/commit/e96266d))
+
+
+
+
+
 # [1.3.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.2.8...@sproutsocial/seedlings@1.3.0) (2020-11-11)
 
 
