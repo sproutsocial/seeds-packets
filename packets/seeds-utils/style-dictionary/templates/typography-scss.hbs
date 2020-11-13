@@ -4,6 +4,7 @@
 {{#ifEquals @key "size"}}
 {{#each item as |size|}}
 ${{ size.name }}: {{ size.value}}px;
+${{ size.name }}-line-height: {{ size.attributes.lineHeightProportional }};
 @mixin {{ size.name }} {
   font-size: Typography-getunit({{ size.value }}px);
   line-height: {{ size.attributes.lineHeightProportional }};

@@ -1,0 +1,81 @@
+@import '@sproutsocial/seeds-typography/dist/seeds-typography.scss';
+
+/*
+---
+Name: Line Height
+Base:
+    lh: Line Height
+Modifiers:
+    -none: None
+    100: 100
+    200: 200
+    300: 300
+    400: 400
+    500: 500
+    600: 600
+    700: 700
+    800: 800
+    900: 900
+    1000: 1000
+    1100: 1100
+    1200: 1200
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+
+// This is the same issue with the type-scale file, you can't
+// interpolate scss variables so we have to manaully create this loop
+@mixin lineHeight($breakpoint-name: "") {
+  .lh-none#{$breakpoint-name} {
+    line-height: 1;
+  }
+  .lh100#{$breakpoint-name} {
+    line-height: $Typography-size--100-line-height;
+  }
+  .lh200#{$breakpoint-name} {
+    line-height: $Typography-size--200-line-height;
+  }
+  .lh300#{$breakpoint-name} {
+    line-height: $Typography-size--300-line-height;
+  }
+  .lh400#{$breakpoint-name} {
+    line-height: $Typography-size--400-line-height;
+  }
+  .lh500#{$breakpoint-name} {
+    line-height: $Typography-size--500-line-height;
+  }
+  .lh600#{$breakpoint-name} {
+    line-height: $Typography-size--600-line-height;
+  }
+  .lh700#{$breakpoint-name} {
+    line-height: $Typography-size--700-line-height;
+  }
+  .lh800#{$breakpoint-name} {
+    line-height: $Typography-size--800-line-height;
+  }
+  .lh900#{$breakpoint-name} {
+    line-height: $Typography-size--900-line-height;
+  }
+  .lh1000#{$breakpoint-name} {
+    line-height: $Typography-size--1000-line-height;
+  }
+  .lh1100#{$breakpoint-name} {
+    line-height: $Typography-size--1100-line-height;
+  }
+  .lh1200#{$breakpoint-name} {
+    line-height: $Typography-size--1200-line-height;
+  }
+}
+
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include lineHeight($breakpoint-name);
+    }
+  } @else {
+    @include lineHeight;
+  }
+}
