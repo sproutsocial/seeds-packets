@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.5.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seeds-networkcolor@2.4.4...@sproutsocial/seeds-networkcolor@2.5.0) (2020-12-03)
+
+
+### Features
+
+* update linkedin color ([9a167a7](https://github.com/sproutsocial/seeds-packets/commit/9a167a7))
+
+
+
+
+
 ## [2.4.4](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seeds-networkcolor@2.4.3...@sproutsocial/seeds-networkcolor@2.4.4) (2020-11-13)
 
 **Note:** Version bump only for package @sproutsocial/seeds-networkcolor
