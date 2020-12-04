@@ -2,40 +2,40 @@
 # yarn lockfile v1
 
 
-"@sproutsocial/seeds-border@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-border/-/seeds-border-1.0.1.tgz#2000bcbd534ee4f93e46b2b9978a9b0c4bcf185f"
-  integrity sha512-gsEQYtOVVU8EWDV2bPbPEASM/R3J5+VS+lMgYx9Sl8jB1qu0bJxD81B5wCGdw1t1QNVvjDU5uJ0ILN0KppQpyw==
+"@sproutsocial/seeds-border@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-border/-/seeds-border-1.0.2.tgz#b3357ffa3b588cb7b31f2be5ba2d6757b43b49a2"
+  integrity sha512-IuenQRKQ4hw+/SsBmI6bXumDcaAAqQmG1Md9Vo7EFHzidTa7jhZy/7exu2S8uDJXIpXKeVdsDu9AxQW6RXvpkA==
 
-"@sproutsocial/seeds-color@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-color/-/seeds-color-1.5.0.tgz#e317bf9345ed69989e1b93cbc0104e5c87acd478"
-  integrity sha512-CsgDVSsvYvV9fHkOoAzYoYetQvOy73+mSGwKv71XZoK0TGbWtBaEXH+Tj1KG3feBwz+qJAZqi8TJOeebHFHhTg==
+"@sproutsocial/seeds-color@^1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-color/-/seeds-color-1.5.1.tgz#0e49687c2d58467616105aba4999846ca999c487"
+  integrity sha512-KrdMod+t6GQCPjZLbhHflRjws+CrQGMe+f5CVi+scsKMG91WMkDLYGxHFRXwn5WaL+QdmYjf8+GHR9kfYDbxDw==
 
 "@sproutsocial/seeds-motion@^0.4.4":
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-motion/-/seeds-motion-0.4.4.tgz#11bc1e36a8f5030a6d3cfaee33cfb9515a4e583d"
   integrity sha512-HQER/Gs6OLWDJKvdK+sbc44fHF8Ty05LTzqzAE66fHvDjpUy/N/8k/+EujoSDSNizfMLPx2Y/Y2RiJSYnQZNqg==
 
-"@sproutsocial/seeds-networkcolor@^2.4.2":
-  version "2.4.3"
-  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-networkcolor/-/seeds-networkcolor-2.4.3.tgz#8efc61d65cea2156e5373fafe5dfdcabcbba4573"
-  integrity sha512-jcAx8NrDFcFY0k6KSX+q8KzJ0h7eU5UcBCbUMH+W0FflyZ+drhkLas3OCndGA9yOfwT+uMVnZIGzpUeAFWymjQ==
+"@sproutsocial/seeds-networkcolor@^2.6.0":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-networkcolor/-/seeds-networkcolor-2.6.0.tgz#a4c918be4c5ecdecaee50e865be91c983017d372"
+  integrity sha512-NThremxgSsZT6KvGVQP0LYGls8IbqTV67PmYMnfjh6wWK6C7dg0Ar3AlkLpUHCghypUjMvAmm1yuLNzyY6SNmA==
 
-"@sproutsocial/seeds-space@^0.4.7":
-  version "0.4.7"
-  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-space/-/seeds-space-0.4.7.tgz#b173d084153452ec81c79a1d7a3ad65a0cd5b909"
-  integrity sha512-8/0fV6rQ689Fj21crvL8VvRV5QZsxdnfBFcIcnl/vq5ZhCrVQ7T9Obx/V7e6hri5ChvJC+zw6CpdFo/52XXGAA==
+"@sproutsocial/seeds-space@^0.4.8":
+  version "0.4.8"
+  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-space/-/seeds-space-0.4.8.tgz#73b9e48c056a066c347f63ca175ee9f38e075a83"
+  integrity sha512-9OJj58c267dbm76waXJtmIuQVLZg+0PBCZ3oV0z0P/twYKAgL+Sm8mMO6oAmYFnTNmhN5Prp7QgdruvfE87XMw==
 
-"@sproutsocial/seeds-typography@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-typography/-/seeds-typography-3.0.1.tgz#2cbfc51e4544503c8d610b891b28cbc0eaaeed96"
-  integrity sha512-ejBhh7UerZx8Id7YT7H8st2e1EGQic1b+a5prue627OGX4PpH5XcM8wExCeZdOfez8iwiRz2voTfJrYvvil29Q==
+"@sproutsocial/seeds-typography@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-typography/-/seeds-typography-3.0.2.tgz#78866474bfba8a5afad8ce40e6f541d0c3b687ac"
+  integrity sha512-xvBOc1+bOcWpBdIm5B0xzkAJaANDZ3D6EKdTQVzqL5LiK6UMtHLQG7KV6V5MQ6fMSufIl/APsq/NP59pLJqqeg==
 
-"@sproutsocial/seeds-utils@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-utils/-/seeds-utils-1.2.0.tgz#d83251e9f42943b674948f403cca8061f36b0498"
-  integrity sha512-1L1g46V4KsvqnGmfy84/cENsjwRQRqyk/kvWYA2dJWB9UQPrQJ+vCEXSfnJEDxVWjVbcRJJaGyp8d6SoC3GBhA==
+"@sproutsocial/seeds-utils@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-utils/-/seeds-utils-1.2.1.tgz#4d3fd10916115db1cb6e69aac2a998e67434b334"
+  integrity sha512-nuOEDTJYeuC5zbnWN9QoNrqzn3fYu2A3Ei9pCCIejGGUMestz7GjowC1ClJXxhkVe59nW6fsOCHcm2OPpfMJ4A==
 
 abbrev@1:
   version "1.1.1"
@@ -342,7 +342,7 @@ fs.realpath@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
 
-fstream@^1.0.0, fstream@^1.0.2:
+fstream@^1.0.0, fstream@^1.0.12:
   version "1.0.12"
   resolved "https://registry.yarnpkg.com/fstream/-/fstream-1.0.12.tgz#4e8ba8ee2d48be4f7d0de505455548eae5932045"
   integrity sha512-WvJ193OHa0GHPEL+AycEJgxvBEwyfRkN1vhjca23OaPVMCaLCXTd5qAu82AjTcgP1UJmytkOKb63Ypde7raDIg==
@@ -1145,12 +1145,12 @@ supports-color@^2.0.0:
   integrity sha1-U10EXOa2Nj+kARcIRimZXp3zJMc=
 
 tar@^2.0.0:
-  version "2.2.1"
-  resolved "https://registry.npmjs.org/tar/-/tar-2.2.1.tgz#8e4d2a256c0e2185c6b18ad694aec968b83cb1d1"
-  integrity sha1-jk0qJWwOIYXGsYrWlK7JaLg8sdE=
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/tar/-/tar-2.2.2.tgz#0ca8848562c7299b8b446ff6a4d60cdbb23edc40"
+  integrity sha512-FCEhQ/4rE1zYv9rYXJw/msRqsnmlje5jHP6huWeBZ704jUTy02c5AZyWujpMR1ax6mVw9NyJMfuK2CMDWVIfgA==
   dependencies:
     block-stream "*"
-    fstream "^1.0.2"
+    fstream "^1.0.12"
     inherits "2"
 
 tough-cookie@~2.4.3:
