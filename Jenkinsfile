@@ -45,7 +45,7 @@ pipeline {
         stage('Install dependencies') {
             when {
                 allOf {
-                    branch 'master'
+                    branch 'main'
                     expression {
                         isNotJenkins()
                     }
@@ -76,7 +76,7 @@ pipeline {
         stage('Deploy production') {
             when {
                 allOf {
-                    branch 'master'
+                    branch 'main'
                     expression {
                         isNotJenkins()
                     }
