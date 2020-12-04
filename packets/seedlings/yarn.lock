@@ -2,10 +2,40 @@
 # yarn lockfile v1
 
 
+"@sproutsocial/seeds-border@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-border/-/seeds-border-1.0.2.tgz#b3357ffa3b588cb7b31f2be5ba2d6757b43b49a2"
+  integrity sha512-IuenQRKQ4hw+/SsBmI6bXumDcaAAqQmG1Md9Vo7EFHzidTa7jhZy/7exu2S8uDJXIpXKeVdsDu9AxQW6RXvpkA==
+
+"@sproutsocial/seeds-color@^1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-color/-/seeds-color-1.5.1.tgz#0e49687c2d58467616105aba4999846ca999c487"
+  integrity sha512-KrdMod+t6GQCPjZLbhHflRjws+CrQGMe+f5CVi+scsKMG91WMkDLYGxHFRXwn5WaL+QdmYjf8+GHR9kfYDbxDw==
+
 "@sproutsocial/seeds-motion@^0.4.4":
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-motion/-/seeds-motion-0.4.4.tgz#11bc1e36a8f5030a6d3cfaee33cfb9515a4e583d"
   integrity sha512-HQER/Gs6OLWDJKvdK+sbc44fHF8Ty05LTzqzAE66fHvDjpUy/N/8k/+EujoSDSNizfMLPx2Y/Y2RiJSYnQZNqg==
+
+"@sproutsocial/seeds-networkcolor@^2.6.0":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-networkcolor/-/seeds-networkcolor-2.6.0.tgz#a4c918be4c5ecdecaee50e865be91c983017d372"
+  integrity sha512-NThremxgSsZT6KvGVQP0LYGls8IbqTV67PmYMnfjh6wWK6C7dg0Ar3AlkLpUHCghypUjMvAmm1yuLNzyY6SNmA==
+
+"@sproutsocial/seeds-space@^0.4.8":
+  version "0.4.8"
+  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-space/-/seeds-space-0.4.8.tgz#73b9e48c056a066c347f63ca175ee9f38e075a83"
+  integrity sha512-9OJj58c267dbm76waXJtmIuQVLZg+0PBCZ3oV0z0P/twYKAgL+Sm8mMO6oAmYFnTNmhN5Prp7QgdruvfE87XMw==
+
+"@sproutsocial/seeds-typography@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-typography/-/seeds-typography-3.0.2.tgz#78866474bfba8a5afad8ce40e6f541d0c3b687ac"
+  integrity sha512-xvBOc1+bOcWpBdIm5B0xzkAJaANDZ3D6EKdTQVzqL5LiK6UMtHLQG7KV6V5MQ6fMSufIl/APsq/NP59pLJqqeg==
+
+"@sproutsocial/seeds-utils@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-utils/-/seeds-utils-1.2.1.tgz#4d3fd10916115db1cb6e69aac2a998e67434b334"
+  integrity sha512-nuOEDTJYeuC5zbnWN9QoNrqzn3fYu2A3Ei9pCCIejGGUMestz7GjowC1ClJXxhkVe59nW6fsOCHcm2OPpfMJ4A==
 
 abbrev@1:
   version "1.1.1"
@@ -583,15 +613,10 @@ load-json-file@^1.0.0:
     pinkie-promise "^2.0.0"
     strip-bom "^2.0.0"
 
-lodash@^4.0.0, lodash@~4.17.10:
-  version "4.17.11"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
-  integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
-
-lodash@^4.17.15:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+lodash@^4.0.0, lodash@^4.17.15, lodash@~4.17.10:
+  version "4.17.20"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
+  integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
 
 loud-rejection@^1.0.0:
   version "1.6.0"
