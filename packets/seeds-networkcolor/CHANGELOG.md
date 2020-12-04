@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.6.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seeds-networkcolor@2.5.0...@sproutsocial/seeds-networkcolor@2.6.0) (2020-12-04)
+
+
+### Features
+
+* update pinterest color ([b4e1aaa](https://github.com/sproutsocial/seeds-packets/commit/b4e1aaa))
+
+
+
+
+
 # [2.5.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seeds-networkcolor@2.4.4...@sproutsocial/seeds-networkcolor@2.5.0) (2020-12-03)
 
 

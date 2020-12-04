@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.5.0...@sproutsocial/seedlings@1.6.0) (2020-12-04)
+
+
+### Features
+
+* update pinterest color ([b4e1aaa](https://github.com/sproutsocial/seeds-packets/commit/b4e1aaa))
+
+
+
+
+
 # [1.5.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.4.0...@sproutsocial/seedlings@1.5.0) (2020-12-03)
 
 
