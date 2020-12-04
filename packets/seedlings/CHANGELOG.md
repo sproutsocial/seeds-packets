@@ -3,6 +3,58 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.5.0...@sproutsocial/seedlings@1.6.0) (2020-12-04)
+
+
+### Features
+
+* update pinterest color ([b4e1aaa](https://github.com/sproutsocial/seeds-packets/commit/b4e1aaa))
+
+
+
+
+
+# [1.5.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.4.0...@sproutsocial/seedlings@1.5.0) (2020-12-03)
+
+
+### Features
+
+* update linkedin color ([9a167a7](https://github.com/sproutsocial/seeds-packets/commit/9a167a7))
+
+
+
+
+
+# [1.4.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.3.0...@sproutsocial/seedlings@1.4.0) (2020-11-13)
+
+
+### Features
+
+* add a new line height utility ([e96266d](https://github.com/sproutsocial/seeds-packets/commit/e96266d))
+
+
+
+
+
+# [1.3.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.2.8...@sproutsocial/seedlings@1.3.0) (2020-11-11)
+
+
+### Features
+
+* add scroll snap utility ([77e959e](https://github.com/sproutsocial/seeds-packets/commit/77e959e))
+
+
+
+
+
+## [1.2.8](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.2.7...@sproutsocial/seedlings@1.2.8) (2020-10-30)
+
+**Note:** Version bump only for package @sproutsocial/seedlings
+
+
+
+
+
 ## [1.2.7](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.2.6...@sproutsocial/seedlings@1.2.7) (2020-10-29)
 
 **Note:** Version bump only for package @sproutsocial/seedlings

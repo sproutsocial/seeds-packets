@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.1](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seeds-color@1.5.0...@sproutsocial/seeds-color@1.5.1) (2020-11-13)
+
+**Note:** Version bump only for package @sproutsocial/seeds-color
+
+
+
+
+
 # [1.5.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seeds-color@1.4.3...@sproutsocial/seeds-color@1.5.0) (2020-08-17)
 
 

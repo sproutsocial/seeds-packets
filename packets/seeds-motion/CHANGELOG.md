@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seeds-motion@1.2.0...@sproutsocial/seeds-motion@1.2.1) (2020-11-13)
+
+**Note:** Version bump only for package @sproutsocial/seeds-motion
+
+
+
+
+
 # [1.2.0](https://github.com/sproutsocial/seeds/compare/@sproutsocial/seeds-motion@0.4.3...@sproutsocial/seeds-motion@1.2.0) (2019-06-19)
 
 
