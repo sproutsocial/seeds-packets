@@ -159,7 +159,7 @@ HoverClasses: true
   background-color: #fffc00; }
 
 .bg--pinterest {
-  background-color: #bd081c; }
+  background-color: #E60023; }
 
 .hover-bg--twitter:hover {
   background-color: #1da1f2; }
@@ -186,7 +186,7 @@ HoverClasses: true
   background-color: #fffc00; }
 
 .hover-bg--pinterest:hover {
-  background-color: #bd081c; }
+  background-color: #E60023; }
 
 .bg--green-0 {
   background-color: #ebf9eb; }
@@ -2512,7 +2512,7 @@ HoverClasses: true
   color: #fffc00; }
 
 .c--pinterest {
-  color: #bd081c; }
+  color: #E60023; }
 
 .hover-c--twitter:hover {
   color: #1da1f2; }
@@ -2539,7 +2539,7 @@ HoverClasses: true
   color: #fffc00; }
 
 .hover-c--pinterest:hover {
-  color: #bd081c; }
+  color: #E60023; }
 
 .c--green-0 {
   color: #ebf9eb; }
