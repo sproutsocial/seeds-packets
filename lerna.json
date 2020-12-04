@@ -3,7 +3,7 @@
     "publish": {
       "message": "chore(release): publish",
       "allowBranch": [
-        "master",
+        "main",
         "staging",
         "nectar"
       ]
