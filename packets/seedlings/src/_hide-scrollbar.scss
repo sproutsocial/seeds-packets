@@ -1,0 +1,11 @@
+/*
+---
+Name: Hide Scrollbar
+Modifiers:
+    hide-scrollbar: Add this class to hide scrollbars.
+---
+*/
+
+.hide-scrollbar ::-webkit-scrollbar {
+  display: none;
+}
