@@ -10,10 +10,8 @@
   "license": "MIT",
   "scripts": {
     "format:prettier": "prettier-eslint --write --eslint-ignore --print-width=120 --single-quote --no-bracket-spacing",
-    "precommit": "lint-staged",
     "build": "lerna run build",
     "postinstall": "lerna bootstrap",
-    "commitmsg": "commitlint -e $GIT_PARAMS || (echo \"\nRead about commit message formatting here: https://github.com/sproutsocial/seeds-packets#committing-changes\" && exit 1)",
     "release": "lerna publish --conventional-commits --yes"
   },
   "lint-staged": {
@@ -42,5 +40,11 @@
     "rimraf": "^2.6.3",
     "style-dictionary": "^2.7.0",
     "tinycolor2": "^1.4.1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS || (echo \"\nRead about commit message formatting here: https://github.com/sproutsocial/seeds-packets#committing-changes\" && exit 1)",
+      "pre-commit": "lint-staged"
+    }
   }
 }
