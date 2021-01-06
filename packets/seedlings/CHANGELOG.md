@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.6.1...@sproutsocial/seedlings@1.7.0) (2021-01-06)
+
+
+### Bug Fixes
+
+* import scrollbar utility ([4364d2f](https://github.com/sproutsocial/seeds-packets/commit/4364d2f))
+
+
+### Features
+
+* add new hide scrollbar utility ([298ea13](https://github.com/sproutsocial/seeds-packets/commit/298ea13))
+
+
+
+
+
+## [1.6.1](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.6.0...@sproutsocial/seedlings@1.6.1) (2020-12-04)
+
+**Note:** Version bump only for package @sproutsocial/seedlings
+
+
+
+
+
 # [1.6.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.5.0...@sproutsocial/seedlings@1.6.0) (2020-12-04)
 
 
