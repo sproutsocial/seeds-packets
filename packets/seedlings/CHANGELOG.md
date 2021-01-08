@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.7.0...@sproutsocial/seedlings@1.8.0) (2021-01-08)
+
+
+### Features
+
+* add new project stake typeface ([c82b4d1](https://github.com/sproutsocial/seeds-packets/commit/c82b4d1))
+
+
+
+
+
 # [1.7.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.6.1...@sproutsocial/seedlings@1.7.0) (2021-01-06)
 
 
