@@ -12233,6 +12233,7 @@ Base:
 Modifiers:
     -proxima-nova: Proxima Nova
     -system: System Font Stack
+    -recoleta: Recoleta semi-bold
 ---
 */
 .ff-proxima-nova {
@@ -12240,6 +12241,9 @@ Modifiers:
 
 .ff-system {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }
+
+.ff-recoleta {
+  font-family: "Recoleta", recoleta, proxima-nova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 /*
 ---

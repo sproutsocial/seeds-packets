@@ -7,6 +7,7 @@ Base:
 Modifiers:
     -proxima-nova: Proxima Nova
     -system: System Font Stack
+    -recoleta: Recoleta semi-bold
 ---
 */
 
@@ -16,4 +17,8 @@ Modifiers:
 
 .ff-system {
   font-family: $Typography-family;
+}
+
+.ff-recoleta {
+  font-family: $Typography-family--recoleta;
 }
