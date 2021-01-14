@@ -5,6 +5,11 @@ const space = require('@sproutsocial/seeds-space');
 const border = require('@sproutsocial/seeds-border');
 const depth = require('@sproutsocial/seeds-depth');
 
+function setUnits(size) {
+  const remSize = size.split('px').shift() / '18';
+  return remSize + 'rem';
+}
+
 module.exports = {
   purge: [],
   presets: [],
@@ -41,14 +46,14 @@ module.exports = {
     ),
     spacing: {
       0: space.SPACE_SIZE_0,
-      100: space.SPACE_SIZE_100,
-      200: space.SPACE_SIZE_200,
-      300: space.SPACE_SIZE_300,
-      350: space.SPACE_SIZE_350,
-      400: space.SPACE_SIZE_400,
-      450: space.SPACE_SIZE_450,
-      500: space.SPACE_SIZE_500,
-      600: space.SPACE_SIZE_600
+      100: setUnits(space.SPACE_SIZE_100),
+      200: setUnits(space.SPACE_SIZE_200),
+      300: setUnits(space.SPACE_SIZE_300),
+      350: setUnits(space.SPACE_SIZE_350),
+      400: setUnits(space.SPACE_SIZE_400),
+      450: setUnits(space.SPACE_SIZE_450),
+      500: setUnits(space.SPACE_SIZE_500),
+      600: setUnits(space.SPACE_SIZE_600)
     },
     backgroundColor: theme => theme('colors'),
     backgroundOpacity: theme => theme('opacity'),
@@ -88,75 +93,75 @@ module.exports = {
     },
     fontSize: {
       100: [
-        typography.TYPOGRAPHY_SIZE_100.fontSize,
+        setUnits(typography.TYPOGRAPHY_SIZE_100.fontSize),
         {
-          lineHeight: typography.TYPOGRAPHY_SIZE_100.lineHeight
+          lineHeight: setUnits(typography.TYPOGRAPHY_SIZE_100.lineHeight)
         }
       ],
       200: [
-        typography.TYPOGRAPHY_SIZE_200.fontSize,
+        setUnits(typography.TYPOGRAPHY_SIZE_200.fontSize),
         {
-          lineHeight: typography.TYPOGRAPHY_SIZE_200.lineHeight
+          lineHeight: setUnits(typography.TYPOGRAPHY_SIZE_200.lineHeight)
         }
       ],
       300: [
-        typography.TYPOGRAPHY_SIZE_300.fontSize,
+        setUnits(typography.TYPOGRAPHY_SIZE_300.fontSize),
         {
-          lineHeight: typography.TYPOGRAPHY_SIZE_300.lineHeight
+          lineHeight: setUnits(typography.TYPOGRAPHY_SIZE_300.lineHeight)
         }
       ],
       400: [
-        typography.TYPOGRAPHY_SIZE_400.fontSize,
+        setUnits(typography.TYPOGRAPHY_SIZE_400.fontSize),
         {
-          lineHeight: typography.TYPOGRAPHY_SIZE_400.lineHeight
+          lineHeight: setUnits(typography.TYPOGRAPHY_SIZE_400.lineHeight)
         }
       ],
       500: [
-        typography.TYPOGRAPHY_SIZE_500.fontSize,
+        setUnits(typography.TYPOGRAPHY_SIZE_500.fontSize),
         {
-          lineHeight: typography.TYPOGRAPHY_SIZE_500.lineHeight
+          lineHeight: setUnits(typography.TYPOGRAPHY_SIZE_500.lineHeight)
         }
       ],
       600: [
-        typography.TYPOGRAPHY_SIZE_600.fontSize,
+        setUnits(typography.TYPOGRAPHY_SIZE_600.fontSize),
         {
-          lineHeight: typography.TYPOGRAPHY_SIZE_600.lineHeight
+          lineHeight: setUnits(typography.TYPOGRAPHY_SIZE_600.lineHeight)
         }
       ],
       700: [
-        typography.TYPOGRAPHY_SIZE_700.fontSize,
+        setUnits(typography.TYPOGRAPHY_SIZE_700.fontSize),
         {
-          lineHeight: typography.TYPOGRAPHY_SIZE_700.lineHeight
+          lineHeight: setUnits(typography.TYPOGRAPHY_SIZE_700.lineHeight)
         }
       ],
       800: [
-        typography.TYPOGRAPHY_SIZE_800.fontSize,
+        setUnits(typography.TYPOGRAPHY_SIZE_800.fontSize),
         {
-          lineHeight: typography.TYPOGRAPHY_SIZE_800.lineHeight
+          lineHeight: setUnits(typography.TYPOGRAPHY_SIZE_800.lineHeight)
         }
       ],
       900: [
-        typography.TYPOGRAPHY_SIZE_900.fontSize,
+        setUnits(typography.TYPOGRAPHY_SIZE_900.fontSize),
         {
-          lineHeight: typography.TYPOGRAPHY_SIZE_900.lineHeight
+          lineHeight: setUnits(typography.TYPOGRAPHY_SIZE_900.lineHeight)
         }
       ],
       1000: [
-        typography.TYPOGRAPHY_SIZE_1000.fontSize,
+        setUnits(typography.TYPOGRAPHY_SIZE_1000.fontSize),
         {
-          lineHeight: typography.TYPOGRAPHY_SIZE_1000.lineHeight
+          lineHeight: setUnits(typography.TYPOGRAPHY_SIZE_1000.lineHeight)
         }
       ],
       1100: [
-        typography.TYPOGRAPHY_SIZE_1100.fontSize,
+        setUnits(typography.TYPOGRAPHY_SIZE_1100.fontSize),
         {
-          lineHeight: typography.TYPOGRAPHY_SIZE_1100.lineHeight
+          lineHeight: setUnits(typography.TYPOGRAPHY_SIZE_1100.lineHeight)
         }
       ],
       1200: [
-        typography.TYPOGRAPHY_SIZE_1200.fontSize,
+        setUnits(typography.TYPOGRAPHY_SIZE_1200.fontSize),
         {
-          lineHeight: typography.TYPOGRAPHY_SIZE_1200.lineHeight
+          lineHeight: setUnits(typography.TYPOGRAPHY_SIZE_1200.lineHeight)
         }
       ]
     },
@@ -371,18 +376,18 @@ module.exports = {
     },
     lineHeight: {
       none: '1',
-      100: typography.TYPOGRAPHY_SIZE_100.lineHeight,
-      200: typography.TYPOGRAPHY_SIZE_200.lineHeight,
-      300: typography.TYPOGRAPHY_SIZE_300.lineHeight,
-      400: typography.TYPOGRAPHY_SIZE_400.lineHeight,
-      500: typography.TYPOGRAPHY_SIZE_500.lineHeight,
-      600: typography.TYPOGRAPHY_SIZE_600.lineHeight,
-      700: typography.TYPOGRAPHY_SIZE_700.lineHeight,
-      800: typography.TYPOGRAPHY_SIZE_800.lineHeight,
-      900: typography.TYPOGRAPHY_SIZE_900.lineHeight,
-      1000: typography.TYPOGRAPHY_SIZE_1000.lineHeight,
-      1100: typography.TYPOGRAPHY_SIZE_1100.lineHeight,
-      1200: typography.TYPOGRAPHY_SIZE_1200.lineHeight
+      100: setUnits(typography.TYPOGRAPHY_SIZE_100.lineHeight),
+      200: setUnits(typography.TYPOGRAPHY_SIZE_200.lineHeight),
+      300: setUnits(typography.TYPOGRAPHY_SIZE_300.lineHeight),
+      400: setUnits(typography.TYPOGRAPHY_SIZE_400.lineHeight),
+      500: setUnits(typography.TYPOGRAPHY_SIZE_500.lineHeight),
+      600: setUnits(typography.TYPOGRAPHY_SIZE_600.lineHeight),
+      700: setUnits(typography.TYPOGRAPHY_SIZE_700.lineHeight),
+      800: setUnits(typography.TYPOGRAPHY_SIZE_800.lineHeight),
+      900: setUnits(typography.TYPOGRAPHY_SIZE_900.lineHeight),
+      1000: setUnits(typography.TYPOGRAPHY_SIZE_1000.lineHeight),
+      1100: setUnits(typography.TYPOGRAPHY_SIZE_1100.lineHeight),
+      1200: setUnits(typography.TYPOGRAPHY_SIZE_1200.lineHeight)
     },
     listStyleType: {
       none: 'none',
@@ -400,23 +405,11 @@ module.exports = {
       screen: '100vh'
     }),
     maxWidth: (theme, {breakpoints}) => ({
+      ...theme('spacing'),
+      ...theme('width'),
       none: 'none',
-      0: '0rem',
-      xs: '20rem',
-      sm: '24rem',
-      md: '28rem',
-      lg: '32rem',
-      xl: '36rem',
-      '2xl': '42rem',
-      '3xl': '48rem',
-      '4xl': '56rem',
-      '5xl': '64rem',
-      '6xl': '72rem',
-      '7xl': '80rem',
-      full: '100%',
       min: 'min-content',
       max: 'max-content',
-      prose: '65ch',
       ...breakpoints(theme('screens'))
     }),
     minHeight: {
