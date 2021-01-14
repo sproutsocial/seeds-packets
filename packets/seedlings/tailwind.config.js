@@ -15,23 +15,29 @@ module.exports = {
       md: '30rem',
       lg: '60rem',
       xl: '82rem',
-      '2xl': '96rem',
+      '2xl': '96rem'
     },
     colors: Object.assign(
-        ...Object.keys(colors.color).map(color => {
-          return {
-            [color]: Object.assign(...Object.keys(colors.color[color]).map(mappedColor => {
+      ...Object.keys(colors.color).map(color => {
+        return {
+          [color]: Object.assign(
+            ...Object.keys(colors.color[color]).map(mappedColor => {
               return {
                 [mappedColor]: colors.color[color][mappedColor].value
               };
-            }))
-          }
-        }),
-        ...Object.keys(networkColors).map(networkColor => {
-          return {
-            [networkColor.split('_').splice(2).join("-").toLowerCase()]: networkColors[networkColor]
-          };
-        })
+            })
+          )
+        };
+      }),
+      ...Object.keys(networkColors).map(networkColor => {
+        return {
+          [networkColor
+            .split('_')
+            .splice(2)
+            .join('-')
+            .toLowerCase()]: networkColors[networkColor]
+        };
+      })
     ),
     spacing: {
       0: space.SPACE_SIZE_0,
@@ -44,13 +50,13 @@ module.exports = {
       500: space.SPACE_SIZE_500,
       600: space.SPACE_SIZE_600
     },
-    backgroundColor: (theme) => theme('colors'),
-    backgroundOpacity: (theme) => theme('opacity'),
-    borderColor: (theme) => ({
+    backgroundColor: theme => theme('colors'),
+    backgroundOpacity: theme => theme('opacity'),
+    borderColor: theme => ({
       ...theme('colors'),
-      DEFAULT: theme('colors.neutral.200', 'currentColor'),
+      DEFAULT: theme('colors.neutral.200', 'currentColor')
     }),
-    borderOpacity: (theme) => theme('opacity'),
+    borderOpacity: theme => theme('opacity'),
     borderRadius: {
       none: '0px',
       400: border.BORDER_RADIUS_400,
@@ -69,74 +75,110 @@ module.exports = {
       100: depth.ELEVATION_LEVEL_100,
       200: depth.ELEVATION_LEVEL_200,
       300: depth.ELEVATION_LEVEL_300,
-      400: depth.ELEVATION_LEVEL_400,
+      400: depth.ELEVATION_LEVEL_400
     },
-    divideColor: (theme) => theme('borderColor'),
-    divideOpacity: (theme) => theme('borderOpacity'),
-    divideWidth: (theme) => theme('borderWidth'),
-    fill: { current: 'currentColor' },
+    divideColor: theme => theme('borderColor'),
+    divideOpacity: theme => theme('borderOpacity'),
+    divideWidth: theme => theme('borderWidth'),
+    fill: {current: 'currentColor'},
     fontFamily: {
       DEFAULT: typography.TYPOGRAPHY_FAMILY_PROXIMA,
       system: typography.TYPOGRAPHY_FAMILY,
       recoleta: typography.TYPOGRAPHY_FAMILY_RECOLETA
     },
     fontSize: {
-      100: [typography.TYPOGRAPHY_SIZE_100.fontSize, {
-        lineHeight: typography.TYPOGRAPHY_SIZE_100.lineHeight
-      }],
-      200: [typography.TYPOGRAPHY_SIZE_200.fontSize, {
-        lineHeight: typography.TYPOGRAPHY_SIZE_200.lineHeight
-      }],
-      300: [typography.TYPOGRAPHY_SIZE_300.fontSize, {
-        lineHeight: typography.TYPOGRAPHY_SIZE_300.lineHeight
-      }],
-      400: [typography.TYPOGRAPHY_SIZE_400.fontSize, {
-        lineHeight: typography.TYPOGRAPHY_SIZE_400.lineHeight
-      }],
-      500: [typography.TYPOGRAPHY_SIZE_500.fontSize, {
-        lineHeight: typography.TYPOGRAPHY_SIZE_500.lineHeight
-      }],
-      600: [typography.TYPOGRAPHY_SIZE_600.fontSize, {
-        lineHeight: typography.TYPOGRAPHY_SIZE_600.lineHeight
-      }],
-      700: [typography.TYPOGRAPHY_SIZE_700.fontSize, {
-        lineHeight: typography.TYPOGRAPHY_SIZE_700.lineHeight
-      }],
-      800: [typography.TYPOGRAPHY_SIZE_800.fontSize, {
-        lineHeight: typography.TYPOGRAPHY_SIZE_800.lineHeight
-      }],
-      900: [typography.TYPOGRAPHY_SIZE_900.fontSize, {
-        lineHeight: typography.TYPOGRAPHY_SIZE_900.lineHeight
-      }],
-      1000: [typography.TYPOGRAPHY_SIZE_1000.fontSize, {
-        lineHeight: typography.TYPOGRAPHY_SIZE_1000.lineHeight
-      }],
-      1100: [typography.TYPOGRAPHY_SIZE_1100.fontSize, {
-        lineHeight: typography.TYPOGRAPHY_SIZE_1100.lineHeight
-      }],
-      1200: [typography.TYPOGRAPHY_SIZE_1200.fontSize, {
-        lineHeight: typography.TYPOGRAPHY_SIZE_1200.lineHeight
-      }],
+      100: [
+        typography.TYPOGRAPHY_SIZE_100.fontSize,
+        {
+          lineHeight: typography.TYPOGRAPHY_SIZE_100.lineHeight
+        }
+      ],
+      200: [
+        typography.TYPOGRAPHY_SIZE_200.fontSize,
+        {
+          lineHeight: typography.TYPOGRAPHY_SIZE_200.lineHeight
+        }
+      ],
+      300: [
+        typography.TYPOGRAPHY_SIZE_300.fontSize,
+        {
+          lineHeight: typography.TYPOGRAPHY_SIZE_300.lineHeight
+        }
+      ],
+      400: [
+        typography.TYPOGRAPHY_SIZE_400.fontSize,
+        {
+          lineHeight: typography.TYPOGRAPHY_SIZE_400.lineHeight
+        }
+      ],
+      500: [
+        typography.TYPOGRAPHY_SIZE_500.fontSize,
+        {
+          lineHeight: typography.TYPOGRAPHY_SIZE_500.lineHeight
+        }
+      ],
+      600: [
+        typography.TYPOGRAPHY_SIZE_600.fontSize,
+        {
+          lineHeight: typography.TYPOGRAPHY_SIZE_600.lineHeight
+        }
+      ],
+      700: [
+        typography.TYPOGRAPHY_SIZE_700.fontSize,
+        {
+          lineHeight: typography.TYPOGRAPHY_SIZE_700.lineHeight
+        }
+      ],
+      800: [
+        typography.TYPOGRAPHY_SIZE_800.fontSize,
+        {
+          lineHeight: typography.TYPOGRAPHY_SIZE_800.lineHeight
+        }
+      ],
+      900: [
+        typography.TYPOGRAPHY_SIZE_900.fontSize,
+        {
+          lineHeight: typography.TYPOGRAPHY_SIZE_900.lineHeight
+        }
+      ],
+      1000: [
+        typography.TYPOGRAPHY_SIZE_1000.fontSize,
+        {
+          lineHeight: typography.TYPOGRAPHY_SIZE_1000.lineHeight
+        }
+      ],
+      1100: [
+        typography.TYPOGRAPHY_SIZE_1100.fontSize,
+        {
+          lineHeight: typography.TYPOGRAPHY_SIZE_1100.lineHeight
+        }
+      ],
+      1200: [
+        typography.TYPOGRAPHY_SIZE_1200.fontSize,
+        {
+          lineHeight: typography.TYPOGRAPHY_SIZE_1200.lineHeight
+        }
+      ]
     },
     fontWeight: {
       normal: typography.TYPOGRAPHY_WEIGHT_NORMAL,
       semibold: typography.TYPOGRAPHY_WEIGHT_SEMIBOLD,
       bold: typography.TYPOGRAPHY_WEIGHT_BOLD,
-      extrabold: typography.TYPOGRAPHY_WEIGHT_EXTRA_BOLD,
+      extrabold: typography.TYPOGRAPHY_WEIGHT_EXTRA_BOLD
     },
-    gap: (theme) => theme('spacing'),
-    gradientColorStops: (theme) => theme('colors'),
+    gap: theme => theme('spacing'),
+    gradientColorStops: theme => theme('colors'),
     gridAutoColumns: {
       auto: 'auto',
       min: 'min-content',
       max: 'max-content',
-      fr: 'minmax(0, 1fr)',
+      fr: 'minmax(0, 1fr)'
     },
     gridAutoRows: {
       auto: 'auto',
       min: 'min-content',
       max: 'max-content',
-      fr: 'minmax(0, 1fr)',
+      fr: 'minmax(0, 1fr)'
     },
     gridColumn: {
       auto: 'auto',
@@ -152,7 +194,7 @@ module.exports = {
       'span-10': 'span 10 / span 10',
       'span-11': 'span 11 / span 11',
       'span-12': 'span 12 / span 12',
-      'span-full': '1 / -1',
+      'span-full': '1 / -1'
     },
     gridColumnEnd: {
       auto: 'auto',
@@ -168,7 +210,7 @@ module.exports = {
       10: '10',
       11: '11',
       12: '12',
-      13: '13',
+      13: '13'
     },
     gridColumnStart: {
       auto: 'auto',
@@ -184,7 +226,7 @@ module.exports = {
       10: '10',
       11: '11',
       12: '12',
-      13: '13',
+      13: '13'
     },
     gridRow: {
       auto: 'auto',
@@ -194,7 +236,7 @@ module.exports = {
       'span-4': 'span 4 / span 4',
       'span-5': 'span 5 / span 5',
       'span-6': 'span 6 / span 6',
-      'span-full': '1 / -1',
+      'span-full': '1 / -1'
     },
     gridRowStart: {
       auto: 'auto',
@@ -204,7 +246,7 @@ module.exports = {
       4: '4',
       5: '5',
       6: '6',
-      7: '7',
+      7: '7'
     },
     gridRowEnd: {
       auto: 'auto',
@@ -214,7 +256,7 @@ module.exports = {
       4: '4',
       5: '5',
       6: '6',
-      7: '7',
+      7: '7'
     },
     transformOrigin: {
       center: 'center',
@@ -225,7 +267,7 @@ module.exports = {
       bottom: 'bottom',
       'bottom-left': 'bottom left',
       left: 'left',
-      'top-left': 'top left',
+      'top-left': 'top left'
     },
     gridTemplateColumns: {
       none: 'none',
@@ -240,7 +282,7 @@ module.exports = {
       9: 'repeat(9, minmax(0, 1fr))',
       10: 'repeat(10, minmax(0, 1fr))',
       11: 'repeat(11, minmax(0, 1fr))',
-      12: 'repeat(12, minmax(0, 1fr))',
+      12: 'repeat(12, minmax(0, 1fr))'
     },
     gridTemplateRows: {
       none: 'none',
@@ -249,9 +291,9 @@ module.exports = {
       3: 'repeat(3, minmax(0, 1fr))',
       4: 'repeat(4, minmax(0, 1fr))',
       5: 'repeat(5, minmax(0, 1fr))',
-      6: 'repeat(6, minmax(0, 1fr))',
+      6: 'repeat(6, minmax(0, 1fr))'
     },
-    height: (theme) => ({
+    height: theme => ({
       auto: 'auto',
       ...theme('spacing'),
       '1/2': '50%',
@@ -270,9 +312,9 @@ module.exports = {
       '4/6': '66.666667%',
       '5/6': '83.333333%',
       full: '100%',
-      screen: '100vh',
+      screen: '100vh'
     }),
-    inset: (theme, { negative }) => ({
+    inset: (theme, {negative}) => ({
       auto: 'auto',
       ...theme('spacing'),
       ...negative(theme('spacing')),
@@ -289,35 +331,35 @@ module.exports = {
       '-1/4': '-25%',
       '-2/4': '-50%',
       '-3/4': '-75%',
-      '-full': '-100%',
+      '-full': '-100%'
     }),
     keyframes: {
       spin: {
         to: {
-          transform: 'rotate(360deg)',
-        },
+          transform: 'rotate(360deg)'
+        }
       },
       ping: {
         '75%, 100%': {
           transform: 'scale(2)',
-          opacity: '0',
-        },
+          opacity: '0'
+        }
       },
       pulse: {
         '50%': {
-          opacity: '.5',
-        },
+          opacity: '.5'
+        }
       },
       bounce: {
         '0%, 100%': {
           transform: 'translateY(-25%)',
-          animationTimingFunction: 'cubic-bezier(0.8,0,1,1)',
+          animationTimingFunction: 'cubic-bezier(0.8,0,1,1)'
         },
         '50%': {
           transform: 'none',
-          animationTimingFunction: 'cubic-bezier(0,0,0.2,1)',
-        },
-      },
+          animationTimingFunction: 'cubic-bezier(0,0,0.2,1)'
+        }
+      }
     },
     letterSpacing: {
       tighter: '-0.05em',
@@ -325,7 +367,7 @@ module.exports = {
       normal: '0em',
       wide: '0.025em',
       wider: '0.05em',
-      widest: '0.1em',
+      widest: '0.1em'
     },
     lineHeight: {
       none: '1',
@@ -340,24 +382,24 @@ module.exports = {
       900: typography.TYPOGRAPHY_SIZE_900.lineHeight,
       1000: typography.TYPOGRAPHY_SIZE_1000.lineHeight,
       1100: typography.TYPOGRAPHY_SIZE_1100.lineHeight,
-      1200: typography.TYPOGRAPHY_SIZE_1200.lineHeight,
+      1200: typography.TYPOGRAPHY_SIZE_1200.lineHeight
     },
     listStyleType: {
       none: 'none',
       disc: 'disc',
-      decimal: 'decimal',
+      decimal: 'decimal'
     },
-    margin: (theme, { negative }) => ({
+    margin: (theme, {negative}) => ({
       auto: 'auto',
       ...theme('spacing'),
-      ...negative(theme('spacing')),
+      ...negative(theme('spacing'))
     }),
-    maxHeight: (theme) => ({
+    maxHeight: theme => ({
       ...theme('spacing'),
       full: '100%',
-      screen: '100vh',
+      screen: '100vh'
     }),
-    maxWidth: (theme, { breakpoints }) => ({
+    maxWidth: (theme, {breakpoints}) => ({
       none: 'none',
       0: '0rem',
       xs: '20rem',
@@ -375,18 +417,18 @@ module.exports = {
       min: 'min-content',
       max: 'max-content',
       prose: '65ch',
-      ...breakpoints(theme('screens')),
+      ...breakpoints(theme('screens'))
     }),
     minHeight: {
       0: '0px',
       full: '100%',
-      screen: '100vh',
+      screen: '100vh'
     },
     minWidth: {
       0: '0px',
       full: '100%',
       min: 'min-content',
-      max: 'max-content',
+      max: 'max-content'
     },
     objectPosition: {
       bottom: 'bottom',
@@ -397,7 +439,7 @@ module.exports = {
       right: 'right',
       'right-bottom': 'right bottom',
       'right-top': 'right top',
-      top: 'top',
+      top: 'top'
     },
     opacity: {
       0: '0',
@@ -414,7 +456,7 @@ module.exports = {
       80: '0.8',
       90: '0.9',
       95: '0.95',
-      100: '1',
+      100: '1'
     },
     order: {
       first: '-9999',
@@ -431,31 +473,31 @@ module.exports = {
       9: '9',
       10: '10',
       11: '11',
-      12: '12',
+      12: '12'
     },
     outline: {
       none: ['2px solid transparent', '2px'],
       white: ['2px dotted white', '2px'],
-      black: ['2px dotted black', '2px'],
+      black: ['2px dotted black', '2px']
     },
-    padding: (theme) => theme('spacing'),
-    placeholderColor: (theme) => theme('colors'),
-    placeholderOpacity: (theme) => theme('opacity'),
-    ringColor: (theme) => ({
+    padding: theme => theme('spacing'),
+    placeholderColor: theme => theme('colors'),
+    placeholderOpacity: theme => theme('opacity'),
+    ringColor: theme => ({
       DEFAULT: theme('colors.blue.500', '#3b82f6'),
-      ...theme('colors'),
+      ...theme('colors')
     }),
-    ringOffsetColor: (theme) => theme('colors'),
+    ringOffsetColor: theme => theme('colors'),
     ringOffsetWidth: {
       0: '0px',
       1: '1px',
       2: '2px',
       4: '4px',
-      8: '8px',
+      8: '8px'
     },
-    ringOpacity: (theme) => ({
+    ringOpacity: theme => ({
       DEFAULT: '0.5',
-      ...theme('opacity'),
+      ...theme('opacity')
     }),
     ringWidth: {
       DEFAULT: '3px',
@@ -463,7 +505,7 @@ module.exports = {
       1: '1px',
       2: '2px',
       4: '4px',
-      8: '8px',
+      8: '8px'
     },
     rotate: {
       '-180': '-180deg',
@@ -482,7 +524,7 @@ module.exports = {
       12: '12deg',
       45: '45deg',
       90: '90deg',
-      180: '180deg',
+      180: '180deg'
     },
     scale: {
       0: '0',
@@ -494,7 +536,7 @@ module.exports = {
       105: '1.05',
       110: '1.1',
       125: '1.25',
-      150: '1.5',
+      150: '1.5'
     },
     skew: {
       '-12': '-12deg',
@@ -507,22 +549,22 @@ module.exports = {
       2: '2deg',
       3: '3deg',
       6: '6deg',
-      12: '12deg',
+      12: '12deg'
     },
-    space: (theme, { negative }) => ({
+    space: (theme, {negative}) => ({
       ...theme('spacing'),
-      ...negative(theme('spacing')),
+      ...negative(theme('spacing'))
     }),
     stroke: {
-      current: 'currentColor',
+      current: 'currentColor'
     },
     strokeWidth: {
       0: '0',
       1: '1',
-      2: '2',
+      2: '2'
     },
-    textColor: (theme) => theme('colors'),
-    textOpacity: (theme) => theme('opacity'),
+    textColor: theme => theme('colors'),
+    textOpacity: theme => theme('opacity'),
     transitionDuration: {
       DEFAULT: '150ms',
       75: '75ms',
@@ -532,7 +574,7 @@ module.exports = {
       300: '300ms',
       500: '500ms',
       700: '700ms',
-      1000: '1000ms',
+      1000: '1000ms'
     },
     transitionDelay: {
       75: '75ms',
@@ -542,7 +584,7 @@ module.exports = {
       300: '300ms',
       500: '500ms',
       700: '700ms',
-      1000: '1000ms',
+      1000: '1000ms'
     },
     transitionProperty: {
       none: 'none',
@@ -551,16 +593,16 @@ module.exports = {
       colors: 'background-color, border-color, color, fill, stroke',
       opacity: 'opacity',
       shadow: 'box-shadow',
-      transform: 'transform',
+      transform: 'transform'
     },
     transitionTimingFunction: {
       DEFAULT: 'cubic-bezier(0.4, 0, 0.2, 1)',
       linear: 'linear',
       in: 'cubic-bezier(0.4, 0, 1, 1)',
       out: 'cubic-bezier(0, 0, 0.2, 1)',
-      'in-out': 'cubic-bezier(0.4, 0, 0.2, 1)',
+      'in-out': 'cubic-bezier(0.4, 0, 0.2, 1)'
     },
-    translate: (theme, { negative }) => ({
+    translate: (theme, {negative}) => ({
       ...theme('spacing'),
       ...negative(theme('spacing')),
       '1/2': '50%',
@@ -576,9 +618,9 @@ module.exports = {
       '-1/4': '-25%',
       '-2/4': '-50%',
       '-3/4': '-75%',
-      '-full': '-100%',
+      '-full': '-100%'
     }),
-    width: (theme) => ({
+    width: theme => ({
       auto: 'auto',
       ...theme('spacing'),
       '10p': '10%',
@@ -603,7 +645,7 @@ module.exports = {
       full: '100%',
       screen: '100vw',
       min: 'min-content',
-      max: 'max-content',
+      max: 'max-content'
     }),
     zIndex: {
       auto: 'auto',
@@ -612,8 +654,8 @@ module.exports = {
       20: '20',
       30: '30',
       40: '40',
-      50: '50',
-    },
+      50: '50'
+    }
   },
   variantOrder: [
     'first',
@@ -629,7 +671,7 @@ module.exports = {
     'focus',
     'focus-visible',
     'active',
-    'disabled',
+    'disabled'
   ],
   variants: {
     accessibility: ['responsive', 'focus-within', 'focus'],
@@ -749,7 +791,7 @@ module.exports = {
     whitespace: ['responsive'],
     width: ['responsive'],
     wordBreak: ['responsive'],
-    zIndex: ['responsive', 'focus-within', 'focus'],
+    zIndex: ['responsive', 'focus-within', 'focus']
   },
-  plugins: [],
-}
+  plugins: []
+};
