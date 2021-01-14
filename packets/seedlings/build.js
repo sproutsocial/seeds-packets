@@ -1,9 +1,6 @@
 const sass = require('node-sass');
 const fsextra = require('fs-extra');
 
-const sources = [
-  './seedlings-marketing.scss',
-];
 const BANNER = ` /*
   /$$$$$$                            /$$ /$$ /$$
  /$$__  $$                          | $$| $$|__/
@@ -20,9 +17,9 @@ const BANNER = ` /*
 https://github.com/sproutsocial/seeds-packets/tree/main/packets/seedlings
 */
 `;
+const source = './seedlings-marketing.scss';
 
-sources.forEach(source => {
-  sass.render(
+sass.render(
     {
       file: source,
       outFile: `./dist/${source}`,
@@ -42,5 +39,4 @@ sources.forEach(source => {
         }
       });
     }
-  );
-});
+);

@@ -11,11 +11,13 @@
   "license": "MIT",
   "scripts": {
     "develop": "tailwind-config-viewer -o",
-    "build": "postcss src/seedlings.css -o dist/seedlings.css"
+    "build": "node build && postcss src/seedlings.css -o dist/seedlings.css"
   },
   "devDependencies": {
     "@sproutsocial/seeds-utils": "^1.2.1",
     "autoprefixer": "^10.2.1",
+    "fs-extra": "^9.0.1",
+    "node-sass": "^5.0.0",
     "postcss": "^8.2.4",
     "postcss-cli": "^8.3.1",
     "postcss-import": "^14.0.0",
