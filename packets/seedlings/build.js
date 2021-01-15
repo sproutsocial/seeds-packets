@@ -2,7 +2,6 @@ const sass = require('node-sass');
 const fsextra = require('fs-extra');
 
 const sources = [
-  './seedlings-adapt.scss',
   './seedlings-bambu.scss',
   './seedlings-marketing.scss',
   './seedlings-webapp.scss'
