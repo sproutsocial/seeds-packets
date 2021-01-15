@@ -2,9 +2,7 @@ const sass = require('node-sass');
 const fsextra = require('fs-extra');
 
 const sources = [
-  './seedlings-bambu.scss',
   './seedlings-marketing.scss',
-  './seedlings-webapp.scss'
 ];
 const BANNER = ` /*
   /$$$$$$                            /$$ /$$ /$$
