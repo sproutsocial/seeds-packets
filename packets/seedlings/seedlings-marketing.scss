@@ -1,9 +1,9 @@
 // Configuration
-$small-width: 17rem !default;
-$medium-width: 30rem !default;
-$large-width: 60rem !default;
+// Min-width breakpoints
+$medium-width: 480px !default;
+$large-width: 960px !default;
 $breakpoint-not-small: "screen and (min-width: #{$medium-width})" !default;
-$breakpoint-medium: "screen and (min-width: #{$medium-width}) and (max-width: #{$large-width})" !default;
+$breakpoint-medium: "screen and (min-width: #{$medium-width}) and (max-width: #{$large-width - 1})" !default;
 $breakpoint-large: "screen and (min-width: #{$large-width})" !default;
 $breakpoints: (
         none: "",
