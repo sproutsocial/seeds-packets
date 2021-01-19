@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.1](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.8.0...@sproutsocial/seedlings@1.8.1) (2021-01-19)
+
+
+### Bug Fixes
+
+* remove Adapt styles ([e971c1c](https://github.com/sproutsocial/seeds-packets/commit/e971c1c))
+* remove bambu and webapp seedlings styles ([5599f7e](https://github.com/sproutsocial/seeds-packets/commit/5599f7e))
+* use px for breakpoints ([4fca56b](https://github.com/sproutsocial/seeds-packets/commit/4fca56b))
+
+
+
+
+
 # [1.8.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.7.0...@sproutsocial/seedlings@1.8.0) (2021-01-08)
 
 
