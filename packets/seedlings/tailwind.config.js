@@ -648,6 +648,9 @@ module.exports = {
       30: '30',
       40: '40',
       50: '50'
+    },
+    configViewer: {
+      baseFontSize: 18
     }
   },
   variantOrder: [
