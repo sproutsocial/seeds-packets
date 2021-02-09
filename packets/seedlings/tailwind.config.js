@@ -9,7 +9,7 @@ const GRID_WIDTH = 1248;
 const COLUMN_WIDTH = GRID_WIDTH / 12;
 
 function returnPixelValue(value) {
-  if(typeof value === 'string' && value.includes('px')) {
+  if (typeof value === 'string' && value.includes('px')) {
     return value.split('px').shift();
   } else {
     return value;
@@ -74,7 +74,7 @@ module.exports = {
       950: setUnits(COLUMN_WIDTH * 13),
       1000: setUnits(COLUMN_WIDTH * 14),
       1050: setUnits(COLUMN_WIDTH * 15),
-      1100: setUnits(COLUMN_WIDTH * 16),
+      1100: setUnits(COLUMN_WIDTH * 16)
     },
     backgroundColor: theme => theme('colors'),
     backgroundOpacity: theme => theme('opacity'),
