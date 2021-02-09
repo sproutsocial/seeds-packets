@@ -5,9 +5,20 @@ const space = require('@sproutsocial/seeds-space');
 const border = require('@sproutsocial/seeds-border');
 const depth = require('@sproutsocial/seeds-depth');
 
+const GRID_WIDTH = 1248;
+const COLUMN_WIDTH = GRID_WIDTH / 12;
+
+function returnPixelValue(value) {
+  if(typeof value === 'string' && value.includes('px')) {
+    return value.split('px').shift();
+  } else {
+    return value;
+  }
+}
+
 function setUnits(size) {
-  const remSize = size.split('px').shift() / '18';
-  return remSize + 'rem';
+  const remSize = returnPixelValue(size) / returnPixelValue(typography.TYPOGRAPHY_SIZE_400.fontSize);
+  return `${remSize}rem`;
 }
 
 module.exports = {
@@ -53,7 +64,17 @@ module.exports = {
       400: setUnits(space.SPACE_SIZE_400),
       450: setUnits(space.SPACE_SIZE_450),
       500: setUnits(space.SPACE_SIZE_500),
-      600: setUnits(space.SPACE_SIZE_600)
+      600: setUnits(space.SPACE_SIZE_600),
+      650: setUnits(COLUMN_WIDTH * 7),
+      700: setUnits(COLUMN_WIDTH * 8),
+      750: setUnits(COLUMN_WIDTH * 9),
+      800: setUnits(COLUMN_WIDTH * 10),
+      850: setUnits(COLUMN_WIDTH * 11),
+      900: setUnits(GRID_WIDTH),
+      950: setUnits(COLUMN_WIDTH * 13),
+      1000: setUnits(COLUMN_WIDTH * 14),
+      1050: setUnits(COLUMN_WIDTH * 15),
+      1100: setUnits(COLUMN_WIDTH * 16),
     },
     backgroundColor: theme => theme('colors'),
     backgroundOpacity: theme => theme('opacity'),
@@ -674,7 +695,7 @@ module.exports = {
     alignContent: ['responsive'],
     alignItems: ['responsive'],
     alignSelf: ['responsive'],
-    animation: ['responsive'],
+    animation: false,
     appearance: ['responsive'],
     backgroundAttachment: ['responsive'],
     backgroundClip: ['responsive'],
@@ -727,7 +748,7 @@ module.exports = {
     gridTemplateColumns: ['responsive'],
     gridTemplateRows: ['responsive'],
     height: ['responsive'],
-    inset: ['responsive'],
+    inset: false,
     justifyContent: ['responsive'],
     justifyItems: ['responsive'],
     justifySelf: ['responsive'],
@@ -751,34 +772,34 @@ module.exports = {
     placeContent: ['responsive'],
     placeItems: ['responsive'],
     placeSelf: ['responsive'],
-    placeholderColor: ['responsive', 'dark', 'focus'],
-    placeholderOpacity: ['responsive', 'focus'],
+    placeholderColor: false,
+    placeholderOpacity: false,
     pointerEvents: ['responsive'],
     position: ['responsive'],
     resize: ['responsive'],
-    ringColor: ['responsive', 'dark', 'focus-within', 'focus'],
-    ringOffsetColor: ['responsive', 'dark', 'focus-within', 'focus'],
-    ringOffsetWidth: ['responsive', 'focus-within', 'focus'],
-    ringOpacity: ['responsive', 'focus-within', 'focus'],
-    ringWidth: ['responsive', 'focus-within', 'focus'],
-    rotate: ['responsive', 'hover', 'focus'],
-    scale: ['responsive', 'hover', 'focus'],
-    skew: ['responsive', 'hover', 'focus'],
+    ringColor: false,
+    ringOffsetColor: false,
+    ringOffsetWidth: false,
+    ringOpacity: false,
+    ringWidth: false,
+    rotate: false,
+    scale: false,
+    skew: false,
     space: ['responsive'],
     stroke: ['responsive'],
-    strokeWidth: ['responsive'],
-    tableLayout: ['responsive'],
+    strokeWidth: false,
+    tableLayout: false,
     textAlign: ['responsive'],
     textColor: ['responsive', 'dark', 'group-hover', 'focus-within', 'hover', 'focus'],
     textDecoration: ['responsive', 'group-hover', 'focus-within', 'hover', 'focus'],
     textOpacity: ['responsive', 'group-hover', 'focus-within', 'hover', 'focus'],
     textOverflow: ['responsive'],
     textTransform: ['responsive'],
-    transform: ['responsive'],
-    transformOrigin: ['responsive'],
-    transitionDelay: ['responsive'],
-    transitionDuration: ['responsive'],
-    transitionProperty: ['responsive'],
+    transform: false,
+    transformOrigin: false,
+    transitionDelay: false,
+    transitionDuration: false,
+    transitionProperty: false,
     transitionTimingFunction: ['responsive'],
     translate: ['responsive', 'hover', 'focus'],
     userSelect: ['responsive'],
