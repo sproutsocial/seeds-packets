@@ -153,7 +153,10 @@ Modifiers:
   transform: translate(0.44444rem, 0.44444rem); }
 
 .separate--shadow {
-  box-shadow: 0.88889rem 0.88889rem 0 #002838; }
+  box-shadow: -0.88889rem -0.88889rem 0 #002138; }
+  @media screen and (min-width: 960px) {
+    .separate--shadow {
+      box-shadow: -2.22222rem -2.22222rem 0 #002138; } }
 
 @keyframes separateUp {
   from {
