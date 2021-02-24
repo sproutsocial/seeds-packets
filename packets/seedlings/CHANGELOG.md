@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.2](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.8.1...@sproutsocial/seedlings@1.8.2) (2021-02-24)
+
+
+### Bug Fixes
+
+* update separate pattern for new stake layout ([74154f9](https://github.com/sproutsocial/seeds-packets/commit/74154f9))
+
+
+
+
+
 ## [1.8.1](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.8.0...@sproutsocial/seedlings@1.8.1) (2021-01-19)
 
 
