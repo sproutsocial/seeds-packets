@@ -96,7 +96,10 @@ Modifiers:
   transform: translate(Space(300), Space(300));
 }
 .separate--shadow {
-  box-shadow: Space(400) Space(400) 0 get-color(aqua, 1100);
+  box-shadow: -#{Space(400)} -#{Space(400)} 0 get-color(blue, 1100);
+  @media #{$breakpoint-large} {
+    box-shadow: -#{Space(600)} -#{Space(600)} 0 get-color(blue, 1100);
+  }
 }
 @keyframes separateUp {
   from {
