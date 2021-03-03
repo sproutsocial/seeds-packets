@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.3](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.8.2...@sproutsocial/seedlings@1.8.3) (2021-03-03)
+
+
+### Bug Fixes
+
+* **build:** commit built files ([#218](https://github.com/sproutsocial/seeds-packets/issues/218)) ([45866e6](https://github.com/sproutsocial/seeds-packets/commit/45866e6))
+
+
+
+
+
 ## [1.8.2](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.8.1...@sproutsocial/seedlings@1.8.2) (2021-02-24)
 
 

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seeds-border@1.0.2...@sproutsocial/seeds-border@1.1.0) (2021-03-03)
+
+
+### Bug Fixes
+
+* **build:** commit built files ([#218](https://github.com/sproutsocial/seeds-packets/issues/218)) ([45866e6](https://github.com/sproutsocial/seeds-packets/commit/45866e6))
+
+
+### Features
+
+* **seeds-border:** bump border radius token 400 from 3px to 4px ([#214](https://github.com/sproutsocial/seeds-packets/issues/214)) ([8f3b9bd](https://github.com/sproutsocial/seeds-packets/commit/8f3b9bd))
+
+
+
+
+
 ## [1.0.2](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seeds-border@1.0.1...@sproutsocial/seeds-border@1.0.2) (2020-11-13)
 
 **Note:** Version bump only for package @sproutsocial/seeds-border
