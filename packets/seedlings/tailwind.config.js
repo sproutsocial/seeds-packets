@@ -29,7 +29,7 @@ module.exports = {
     screens: {
       sm: '17rem',
       md: '30rem',
-      lg: '60rem',
+      lg: '60rem'
     },
     colors: Object.assign(
       ...Object.keys(colors.color).map(color => {
@@ -679,7 +679,7 @@ module.exports = {
     'checked',
     'group-hover',
     'group-focus',
-    
+
     'hover',
     'focus',
     'focus-visible',
@@ -687,7 +687,7 @@ module.exports = {
     'disabled'
   ],
   variants: {
-    accessibility: ['responsive',  'focus'],
+    accessibility: ['responsive', 'focus'],
     alignContent: ['responsive'],
     alignItems: ['responsive'],
     alignSelf: ['responsive'],
@@ -695,19 +695,19 @@ module.exports = {
     appearance: ['responsive'],
     backgroundAttachment: ['responsive'],
     backgroundClip: ['responsive'],
-    backgroundColor: ['responsive', 'dark', 'group-hover',  'hover', 'focus'],
+    backgroundColor: ['responsive', 'dark', 'group-hover', 'hover', 'focus'],
     backgroundImage: ['responsive'],
-    backgroundOpacity: ['responsive', 'group-hover',  'hover', 'focus'],
+    backgroundOpacity: ['responsive', 'group-hover', 'hover', 'focus'],
     backgroundPosition: ['responsive'],
     backgroundRepeat: ['responsive'],
     backgroundSize: ['responsive'],
     borderCollapse: ['responsive'],
-    borderColor: ['responsive', 'dark', 'group-hover',  'hover', 'focus'],
-    borderOpacity: ['responsive', 'group-hover',  'hover', 'focus'],
+    borderColor: ['responsive', 'dark', 'group-hover', 'hover', 'focus'],
+    borderOpacity: ['responsive', 'group-hover', 'hover', 'focus'],
     borderRadius: ['responsive'],
     borderStyle: ['responsive'],
     borderWidth: ['responsive'],
-    boxShadow: ['responsive', 'group-hover',  'hover', 'focus'],
+    boxShadow: ['responsive', 'group-hover', 'hover', 'focus'],
     boxSizing: ['responsive'],
     clear: ['responsive'],
     container: ['responsive'],
@@ -759,9 +759,9 @@ module.exports = {
     minWidth: ['responsive'],
     objectFit: ['responsive'],
     objectPosition: ['responsive'],
-    opacity: ['responsive', 'group-hover',  'hover', 'focus'],
+    opacity: ['responsive', 'group-hover', 'hover', 'focus'],
     order: ['responsive'],
-    outline: ['responsive',  'focus'],
+    outline: ['responsive', 'focus'],
     overflow: ['responsive'],
     overscrollBehavior: ['responsive'],
     padding: ['responsive'],
@@ -786,9 +786,9 @@ module.exports = {
     strokeWidth: false,
     tableLayout: false,
     textAlign: ['responsive'],
-    textColor: ['responsive', 'dark', 'group-hover',  'hover', 'focus'],
-    textDecoration: ['responsive', 'group-hover',  'hover', 'focus'],
-    textOpacity: ['responsive', 'group-hover',  'hover', 'focus'],
+    textColor: ['responsive', 'dark', 'group-hover', 'hover', 'focus'],
+    textDecoration: ['responsive', 'group-hover', 'hover', 'focus'],
+    textOpacity: ['responsive', 'group-hover', 'hover', 'focus'],
     textOverflow: ['responsive'],
     textTransform: ['responsive'],
     transform: false,
@@ -804,7 +804,7 @@ module.exports = {
     whitespace: ['responsive'],
     width: ['responsive'],
     wordBreak: ['responsive'],
-    zIndex: ['responsive',  'focus']
+    zIndex: ['responsive', 'focus']
   },
   plugins: []
 };
