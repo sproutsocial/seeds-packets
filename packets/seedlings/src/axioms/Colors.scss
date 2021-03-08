@@ -229,6 +229,24 @@ $colors-networks: (
         ),
         pinterest: (
                 default: $NetworkColor-pinterest
+        ),
+        messenger: (
+                default: $NetworkColor-messenger
+        ),
+        reddit: (
+                default: $NetworkColor-reddit
+        ),
+        google-my-business: (
+                default: $NetworkColor-google-my-business
+        ),
+        google-business-messages: (
+                default: $NetworkColor-google-business-messages
+        ),
+        glassdoor: (
+                default: $NetworkColor-glassdoor
+        ),
+        zendesk: (
+                default: $NetworkColor-zendesk
         )
 ) !default;
 
