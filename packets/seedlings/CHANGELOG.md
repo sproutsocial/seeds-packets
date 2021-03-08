@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.4](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.8.3...@sproutsocial/seedlings@1.8.4) (2021-03-08)
+
+
+### Bug Fixes
+
+* add additional network colors ([d58cd03](https://github.com/sproutsocial/seeds-packets/commit/d58cd03))
+
+
+
+
+
 ## [1.8.3](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.8.2...@sproutsocial/seedlings@1.8.3) (2021-03-03)
 
 
