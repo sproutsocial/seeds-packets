@@ -348,6 +348,24 @@ HoverClasses: true
 .bg--pinterest {
   background-color: #E60023; }
 
+.bg--messenger {
+  background-color: #0084ff; }
+
+.bg--reddit {
+  background-color: #ff4500; }
+
+.bg--google-my-business {
+  background-color: #4285F4; }
+
+.bg--google-business-messages {
+  background-color: #1A73EA; }
+
+.bg--glassdoor {
+  background-color: #0CAA41; }
+
+.bg--zendesk {
+  background-color: #03363D; }
+
 .hover-bg--twitter:hover {
   background-color: #1da1f2; }
 
@@ -374,6 +392,24 @@ HoverClasses: true
 
 .hover-bg--pinterest:hover {
   background-color: #E60023; }
+
+.hover-bg--messenger:hover {
+  background-color: #0084ff; }
+
+.hover-bg--reddit:hover {
+  background-color: #ff4500; }
+
+.hover-bg--google-my-business:hover {
+  background-color: #4285F4; }
+
+.hover-bg--google-business-messages:hover {
+  background-color: #1A73EA; }
+
+.hover-bg--glassdoor:hover {
+  background-color: #0CAA41; }
+
+.hover-bg--zendesk:hover {
+  background-color: #03363D; }
 
 .bg--green-0 {
   background-color: #ebf9eb; }
@@ -1438,6 +1474,18 @@ HoverClasses: true
     background-color: #fffc00; }
   .bg--pinterest-ns {
     background-color: #E60023; }
+  .bg--messenger-ns {
+    background-color: #0084ff; }
+  .bg--reddit-ns {
+    background-color: #ff4500; }
+  .bg--google-my-business-ns {
+    background-color: #4285F4; }
+  .bg--google-business-messages-ns {
+    background-color: #1A73EA; }
+  .bg--glassdoor-ns {
+    background-color: #0CAA41; }
+  .bg--zendesk-ns {
+    background-color: #03363D; }
   .hover-bg--twitter-ns:hover {
     background-color: #1da1f2; }
   .hover-bg--facebook-ns:hover {
@@ -1456,6 +1504,18 @@ HoverClasses: true
     background-color: #fffc00; }
   .hover-bg--pinterest-ns:hover {
     background-color: #E60023; }
+  .hover-bg--messenger-ns:hover {
+    background-color: #0084ff; }
+  .hover-bg--reddit-ns:hover {
+    background-color: #ff4500; }
+  .hover-bg--google-my-business-ns:hover {
+    background-color: #4285F4; }
+  .hover-bg--google-business-messages-ns:hover {
+    background-color: #1A73EA; }
+  .hover-bg--glassdoor-ns:hover {
+    background-color: #0CAA41; }
+  .hover-bg--zendesk-ns:hover {
+    background-color: #03363D; }
   .bg--green-0-ns {
     background-color: #ebf9eb; }
   .bg--green-100-ns {
@@ -2172,6 +2232,18 @@ HoverClasses: true
     background-color: #fffc00; }
   .bg--pinterest-m {
     background-color: #E60023; }
+  .bg--messenger-m {
+    background-color: #0084ff; }
+  .bg--reddit-m {
+    background-color: #ff4500; }
+  .bg--google-my-business-m {
+    background-color: #4285F4; }
+  .bg--google-business-messages-m {
+    background-color: #1A73EA; }
+  .bg--glassdoor-m {
+    background-color: #0CAA41; }
+  .bg--zendesk-m {
+    background-color: #03363D; }
   .hover-bg--twitter-m:hover {
     background-color: #1da1f2; }
   .hover-bg--facebook-m:hover {
@@ -2190,6 +2262,18 @@ HoverClasses: true
     background-color: #fffc00; }
   .hover-bg--pinterest-m:hover {
     background-color: #E60023; }
+  .hover-bg--messenger-m:hover {
+    background-color: #0084ff; }
+  .hover-bg--reddit-m:hover {
+    background-color: #ff4500; }
+  .hover-bg--google-my-business-m:hover {
+    background-color: #4285F4; }
+  .hover-bg--google-business-messages-m:hover {
+    background-color: #1A73EA; }
+  .hover-bg--glassdoor-m:hover {
+    background-color: #0CAA41; }
+  .hover-bg--zendesk-m:hover {
+    background-color: #03363D; }
   .bg--green-0-m {
     background-color: #ebf9eb; }
   .bg--green-100-m {
@@ -2906,6 +2990,18 @@ HoverClasses: true
     background-color: #fffc00; }
   .bg--pinterest-l {
     background-color: #E60023; }
+  .bg--messenger-l {
+    background-color: #0084ff; }
+  .bg--reddit-l {
+    background-color: #ff4500; }
+  .bg--google-my-business-l {
+    background-color: #4285F4; }
+  .bg--google-business-messages-l {
+    background-color: #1A73EA; }
+  .bg--glassdoor-l {
+    background-color: #0CAA41; }
+  .bg--zendesk-l {
+    background-color: #03363D; }
   .hover-bg--twitter-l:hover {
     background-color: #1da1f2; }
   .hover-bg--facebook-l:hover {
@@ -2924,6 +3020,18 @@ HoverClasses: true
     background-color: #fffc00; }
   .hover-bg--pinterest-l:hover {
     background-color: #E60023; }
+  .hover-bg--messenger-l:hover {
+    background-color: #0084ff; }
+  .hover-bg--reddit-l:hover {
+    background-color: #ff4500; }
+  .hover-bg--google-my-business-l:hover {
+    background-color: #4285F4; }
+  .hover-bg--google-business-messages-l:hover {
+    background-color: #1A73EA; }
+  .hover-bg--glassdoor-l:hover {
+    background-color: #0CAA41; }
+  .hover-bg--zendesk-l:hover {
+    background-color: #03363D; }
   .bg--green-0-l {
     background-color: #ebf9eb; }
   .bg--green-100-l {
@@ -7059,6 +7167,24 @@ HoverClasses: true
 .c--pinterest {
   color: #E60023; }
 
+.c--messenger {
+  color: #0084ff; }
+
+.c--reddit {
+  color: #ff4500; }
+
+.c--google-my-business {
+  color: #4285F4; }
+
+.c--google-business-messages {
+  color: #1A73EA; }
+
+.c--glassdoor {
+  color: #0CAA41; }
+
+.c--zendesk {
+  color: #03363D; }
+
 .hover-c--twitter:hover {
   color: #1da1f2; }
 
@@ -7085,6 +7211,24 @@ HoverClasses: true
 
 .hover-c--pinterest:hover {
   color: #E60023; }
+
+.hover-c--messenger:hover {
+  color: #0084ff; }
+
+.hover-c--reddit:hover {
+  color: #ff4500; }
+
+.hover-c--google-my-business:hover {
+  color: #4285F4; }
+
+.hover-c--google-business-messages:hover {
+  color: #1A73EA; }
+
+.hover-c--glassdoor:hover {
+  color: #0CAA41; }
+
+.hover-c--zendesk:hover {
+  color: #03363D; }
 
 .c--green-0 {
   color: #ebf9eb; }
@@ -8141,6 +8285,18 @@ HoverClasses: true
     color: #fffc00; }
   .c--pinterest-ns {
     color: #E60023; }
+  .c--messenger-ns {
+    color: #0084ff; }
+  .c--reddit-ns {
+    color: #ff4500; }
+  .c--google-my-business-ns {
+    color: #4285F4; }
+  .c--google-business-messages-ns {
+    color: #1A73EA; }
+  .c--glassdoor-ns {
+    color: #0CAA41; }
+  .c--zendesk-ns {
+    color: #03363D; }
   .hover-c--twitter-ns:hover {
     color: #1da1f2; }
   .hover-c--facebook-ns:hover {
@@ -8159,6 +8315,18 @@ HoverClasses: true
     color: #fffc00; }
   .hover-c--pinterest-ns:hover {
     color: #E60023; }
+  .hover-c--messenger-ns:hover {
+    color: #0084ff; }
+  .hover-c--reddit-ns:hover {
+    color: #ff4500; }
+  .hover-c--google-my-business-ns:hover {
+    color: #4285F4; }
+  .hover-c--google-business-messages-ns:hover {
+    color: #1A73EA; }
+  .hover-c--glassdoor-ns:hover {
+    color: #0CAA41; }
+  .hover-c--zendesk-ns:hover {
+    color: #03363D; }
   .c--green-0-ns {
     color: #ebf9eb; }
   .c--green-100-ns {
@@ -8870,6 +9038,18 @@ HoverClasses: true
     color: #fffc00; }
   .c--pinterest-m {
     color: #E60023; }
+  .c--messenger-m {
+    color: #0084ff; }
+  .c--reddit-m {
+    color: #ff4500; }
+  .c--google-my-business-m {
+    color: #4285F4; }
+  .c--google-business-messages-m {
+    color: #1A73EA; }
+  .c--glassdoor-m {
+    color: #0CAA41; }
+  .c--zendesk-m {
+    color: #03363D; }
   .hover-c--twitter-m:hover {
     color: #1da1f2; }
   .hover-c--facebook-m:hover {
@@ -8888,6 +9068,18 @@ HoverClasses: true
     color: #fffc00; }
   .hover-c--pinterest-m:hover {
     color: #E60023; }
+  .hover-c--messenger-m:hover {
+    color: #0084ff; }
+  .hover-c--reddit-m:hover {
+    color: #ff4500; }
+  .hover-c--google-my-business-m:hover {
+    color: #4285F4; }
+  .hover-c--google-business-messages-m:hover {
+    color: #1A73EA; }
+  .hover-c--glassdoor-m:hover {
+    color: #0CAA41; }
+  .hover-c--zendesk-m:hover {
+    color: #03363D; }
   .c--green-0-m {
     color: #ebf9eb; }
   .c--green-100-m {
@@ -9599,6 +9791,18 @@ HoverClasses: true
     color: #fffc00; }
   .c--pinterest-l {
     color: #E60023; }
+  .c--messenger-l {
+    color: #0084ff; }
+  .c--reddit-l {
+    color: #ff4500; }
+  .c--google-my-business-l {
+    color: #4285F4; }
+  .c--google-business-messages-l {
+    color: #1A73EA; }
+  .c--glassdoor-l {
+    color: #0CAA41; }
+  .c--zendesk-l {
+    color: #03363D; }
   .hover-c--twitter-l:hover {
     color: #1da1f2; }
   .hover-c--facebook-l:hover {
@@ -9617,6 +9821,18 @@ HoverClasses: true
     color: #fffc00; }
   .hover-c--pinterest-l:hover {
     color: #E60023; }
+  .hover-c--messenger-l:hover {
+    color: #0084ff; }
+  .hover-c--reddit-l:hover {
+    color: #ff4500; }
+  .hover-c--google-my-business-l:hover {
+    color: #4285F4; }
+  .hover-c--google-business-messages-l:hover {
+    color: #1A73EA; }
+  .hover-c--glassdoor-l:hover {
+    color: #0CAA41; }
+  .hover-c--zendesk-l:hover {
+    color: #03363D; }
   .c--green-0-l {
     color: #ebf9eb; }
   .c--green-100-l {
