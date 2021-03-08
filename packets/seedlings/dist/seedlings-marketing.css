@@ -354,10 +354,10 @@ HoverClasses: true
 .bg--reddit {
   background-color: #ff4500; }
 
-.bg--googlemybusiness {
+.bg--google-my-business {
   background-color: #4285F4; }
 
-.bg--googlebusinessmessages {
+.bg--google-business-messages {
   background-color: #1A73EA; }
 
 .bg--glassdoor {
@@ -399,10 +399,10 @@ HoverClasses: true
 .hover-bg--reddit:hover {
   background-color: #ff4500; }
 
-.hover-bg--googlemybusiness:hover {
+.hover-bg--google-my-business:hover {
   background-color: #4285F4; }
 
-.hover-bg--googlebusinessmessages:hover {
+.hover-bg--google-business-messages:hover {
   background-color: #1A73EA; }
 
 .hover-bg--glassdoor:hover {
@@ -1478,9 +1478,9 @@ HoverClasses: true
     background-color: #0084ff; }
   .bg--reddit-ns {
     background-color: #ff4500; }
-  .bg--googlemybusiness-ns {
+  .bg--google-my-business-ns {
     background-color: #4285F4; }
-  .bg--googlebusinessmessages-ns {
+  .bg--google-business-messages-ns {
     background-color: #1A73EA; }
   .bg--glassdoor-ns {
     background-color: #0CAA41; }
@@ -1508,9 +1508,9 @@ HoverClasses: true
     background-color: #0084ff; }
   .hover-bg--reddit-ns:hover {
     background-color: #ff4500; }
-  .hover-bg--googlemybusiness-ns:hover {
+  .hover-bg--google-my-business-ns:hover {
     background-color: #4285F4; }
-  .hover-bg--googlebusinessmessages-ns:hover {
+  .hover-bg--google-business-messages-ns:hover {
     background-color: #1A73EA; }
   .hover-bg--glassdoor-ns:hover {
     background-color: #0CAA41; }
@@ -2236,9 +2236,9 @@ HoverClasses: true
     background-color: #0084ff; }
   .bg--reddit-m {
     background-color: #ff4500; }
-  .bg--googlemybusiness-m {
+  .bg--google-my-business-m {
     background-color: #4285F4; }
-  .bg--googlebusinessmessages-m {
+  .bg--google-business-messages-m {
     background-color: #1A73EA; }
   .bg--glassdoor-m {
     background-color: #0CAA41; }
@@ -2266,9 +2266,9 @@ HoverClasses: true
     background-color: #0084ff; }
   .hover-bg--reddit-m:hover {
     background-color: #ff4500; }
-  .hover-bg--googlemybusiness-m:hover {
+  .hover-bg--google-my-business-m:hover {
     background-color: #4285F4; }
-  .hover-bg--googlebusinessmessages-m:hover {
+  .hover-bg--google-business-messages-m:hover {
     background-color: #1A73EA; }
   .hover-bg--glassdoor-m:hover {
     background-color: #0CAA41; }
@@ -2994,9 +2994,9 @@ HoverClasses: true
     background-color: #0084ff; }
   .bg--reddit-l {
     background-color: #ff4500; }
-  .bg--googlemybusiness-l {
+  .bg--google-my-business-l {
     background-color: #4285F4; }
-  .bg--googlebusinessmessages-l {
+  .bg--google-business-messages-l {
     background-color: #1A73EA; }
   .bg--glassdoor-l {
     background-color: #0CAA41; }
@@ -3024,9 +3024,9 @@ HoverClasses: true
     background-color: #0084ff; }
   .hover-bg--reddit-l:hover {
     background-color: #ff4500; }
-  .hover-bg--googlemybusiness-l:hover {
+  .hover-bg--google-my-business-l:hover {
     background-color: #4285F4; }
-  .hover-bg--googlebusinessmessages-l:hover {
+  .hover-bg--google-business-messages-l:hover {
     background-color: #1A73EA; }
   .hover-bg--glassdoor-l:hover {
     background-color: #0CAA41; }
@@ -7173,10 +7173,10 @@ HoverClasses: true
 .c--reddit {
   color: #ff4500; }
 
-.c--googlemybusiness {
+.c--google-my-business {
   color: #4285F4; }
 
-.c--googlebusinessmessages {
+.c--google-business-messages {
   color: #1A73EA; }
 
 .c--glassdoor {
@@ -7218,10 +7218,10 @@ HoverClasses: true
 .hover-c--reddit:hover {
   color: #ff4500; }
 
-.hover-c--googlemybusiness:hover {
+.hover-c--google-my-business:hover {
   color: #4285F4; }
 
-.hover-c--googlebusinessmessages:hover {
+.hover-c--google-business-messages:hover {
   color: #1A73EA; }
 
 .hover-c--glassdoor:hover {
@@ -8289,9 +8289,9 @@ HoverClasses: true
     color: #0084ff; }
   .c--reddit-ns {
     color: #ff4500; }
-  .c--googlemybusiness-ns {
+  .c--google-my-business-ns {
     color: #4285F4; }
-  .c--googlebusinessmessages-ns {
+  .c--google-business-messages-ns {
     color: #1A73EA; }
   .c--glassdoor-ns {
     color: #0CAA41; }
@@ -8319,9 +8319,9 @@ HoverClasses: true
     color: #0084ff; }
   .hover-c--reddit-ns:hover {
     color: #ff4500; }
-  .hover-c--googlemybusiness-ns:hover {
+  .hover-c--google-my-business-ns:hover {
     color: #4285F4; }
-  .hover-c--googlebusinessmessages-ns:hover {
+  .hover-c--google-business-messages-ns:hover {
     color: #1A73EA; }
   .hover-c--glassdoor-ns:hover {
     color: #0CAA41; }
@@ -9042,9 +9042,9 @@ HoverClasses: true
     color: #0084ff; }
   .c--reddit-m {
     color: #ff4500; }
-  .c--googlemybusiness-m {
+  .c--google-my-business-m {
     color: #4285F4; }
-  .c--googlebusinessmessages-m {
+  .c--google-business-messages-m {
     color: #1A73EA; }
   .c--glassdoor-m {
     color: #0CAA41; }
@@ -9072,9 +9072,9 @@ HoverClasses: true
     color: #0084ff; }
   .hover-c--reddit-m:hover {
     color: #ff4500; }
-  .hover-c--googlemybusiness-m:hover {
+  .hover-c--google-my-business-m:hover {
     color: #4285F4; }
-  .hover-c--googlebusinessmessages-m:hover {
+  .hover-c--google-business-messages-m:hover {
     color: #1A73EA; }
   .hover-c--glassdoor-m:hover {
     color: #0CAA41; }
@@ -9795,9 +9795,9 @@ HoverClasses: true
     color: #0084ff; }
   .c--reddit-l {
     color: #ff4500; }
-  .c--googlemybusiness-l {
+  .c--google-my-business-l {
     color: #4285F4; }
-  .c--googlebusinessmessages-l {
+  .c--google-business-messages-l {
     color: #1A73EA; }
   .c--glassdoor-l {
     color: #0CAA41; }
@@ -9825,9 +9825,9 @@ HoverClasses: true
     color: #0084ff; }
   .hover-c--reddit-l:hover {
     color: #ff4500; }
-  .hover-c--googlemybusiness-l:hover {
+  .hover-c--google-my-business-l:hover {
     color: #4285F4; }
-  .hover-c--googlebusinessmessages-l:hover {
+  .hover-c--google-business-messages-l:hover {
     color: #1A73EA; }
   .hover-c--glassdoor-l:hover {
     color: #0CAA41; }
