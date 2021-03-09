@@ -14268,6 +14268,173 @@ Breakpoints:
 
 /*
 ---
+Name: Separated
+Description: Box shadow utility to create an angled square on a particular block element
+Base:
+    separated: separated
+Modifiers:
+    0: 0
+    100: 100
+    200: 200
+    300: 300
+    400: 400
+    500: 500
+    600: 600
+    700: 700
+    800: 800
+    900: 900
+    1000: 1000
+    none: None
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+HoverClasses: true
+---
+*/
+.separated0 {
+  box-shadow: 0 0 0; }
+
+.separated100 {
+  box-shadow: 0.11111rem 0.11111rem 0; }
+
+.separated200 {
+  box-shadow: 0.22222rem 0.22222rem 0; }
+
+.separated300 {
+  box-shadow: 0.44444rem 0.44444rem 0; }
+
+.separated350 {
+  box-shadow: 0.66667rem 0.66667rem 0; }
+
+.separated400 {
+  box-shadow: 0.88889rem 0.88889rem 0; }
+
+.separated450 {
+  box-shadow: 1.33333rem 1.33333rem 0; }
+
+.separated500 {
+  box-shadow: 1.77778rem 1.77778rem 0; }
+
+.separated600 {
+  box-shadow: 2.22222rem 2.22222rem 0; }
+
+.separated700 {
+  box-shadow: 4.44444rem 4.44444rem 0; }
+
+.separated750 {
+  box-shadow: 5.33333rem 5.33333rem 0; }
+
+.separated800 {
+  box-shadow: 6.66667rem 6.66667rem 0; }
+
+.separated900 {
+  box-shadow: 11.11111rem 11.11111rem 0; }
+
+.separated1000 {
+  box-shadow: 17.77778rem 17.77778rem 0; }
+
+.separated-none {
+  box-shadow: none; }
+
+@media screen and (min-width: 480px) {
+  .separated0-ns {
+    box-shadow: 0 0 0; }
+  .separated100-ns {
+    box-shadow: 0.11111rem 0.11111rem 0; }
+  .separated200-ns {
+    box-shadow: 0.22222rem 0.22222rem 0; }
+  .separated300-ns {
+    box-shadow: 0.44444rem 0.44444rem 0; }
+  .separated350-ns {
+    box-shadow: 0.66667rem 0.66667rem 0; }
+  .separated400-ns {
+    box-shadow: 0.88889rem 0.88889rem 0; }
+  .separated450-ns {
+    box-shadow: 1.33333rem 1.33333rem 0; }
+  .separated500-ns {
+    box-shadow: 1.77778rem 1.77778rem 0; }
+  .separated600-ns {
+    box-shadow: 2.22222rem 2.22222rem 0; }
+  .separated700-ns {
+    box-shadow: 4.44444rem 4.44444rem 0; }
+  .separated750-ns {
+    box-shadow: 5.33333rem 5.33333rem 0; }
+  .separated800-ns {
+    box-shadow: 6.66667rem 6.66667rem 0; }
+  .separated900-ns {
+    box-shadow: 11.11111rem 11.11111rem 0; }
+  .separated1000-ns {
+    box-shadow: 17.77778rem 17.77778rem 0; }
+  .separated-none-ns {
+    box-shadow: none; } }
+
+@media screen and (min-width: 480px) and (max-width: 959px) {
+  .separated0-m {
+    box-shadow: 0 0 0; }
+  .separated100-m {
+    box-shadow: 0.11111rem 0.11111rem 0; }
+  .separated200-m {
+    box-shadow: 0.22222rem 0.22222rem 0; }
+  .separated300-m {
+    box-shadow: 0.44444rem 0.44444rem 0; }
+  .separated350-m {
+    box-shadow: 0.66667rem 0.66667rem 0; }
+  .separated400-m {
+    box-shadow: 0.88889rem 0.88889rem 0; }
+  .separated450-m {
+    box-shadow: 1.33333rem 1.33333rem 0; }
+  .separated500-m {
+    box-shadow: 1.77778rem 1.77778rem 0; }
+  .separated600-m {
+    box-shadow: 2.22222rem 2.22222rem 0; }
+  .separated700-m {
+    box-shadow: 4.44444rem 4.44444rem 0; }
+  .separated750-m {
+    box-shadow: 5.33333rem 5.33333rem 0; }
+  .separated800-m {
+    box-shadow: 6.66667rem 6.66667rem 0; }
+  .separated900-m {
+    box-shadow: 11.11111rem 11.11111rem 0; }
+  .separated1000-m {
+    box-shadow: 17.77778rem 17.77778rem 0; }
+  .separated-none-m {
+    box-shadow: none; } }
+
+@media screen and (min-width: 960px) {
+  .separated0-l {
+    box-shadow: 0 0 0; }
+  .separated100-l {
+    box-shadow: 0.11111rem 0.11111rem 0; }
+  .separated200-l {
+    box-shadow: 0.22222rem 0.22222rem 0; }
+  .separated300-l {
+    box-shadow: 0.44444rem 0.44444rem 0; }
+  .separated350-l {
+    box-shadow: 0.66667rem 0.66667rem 0; }
+  .separated400-l {
+    box-shadow: 0.88889rem 0.88889rem 0; }
+  .separated450-l {
+    box-shadow: 1.33333rem 1.33333rem 0; }
+  .separated500-l {
+    box-shadow: 1.77778rem 1.77778rem 0; }
+  .separated600-l {
+    box-shadow: 2.22222rem 2.22222rem 0; }
+  .separated700-l {
+    box-shadow: 4.44444rem 4.44444rem 0; }
+  .separated750-l {
+    box-shadow: 5.33333rem 5.33333rem 0; }
+  .separated800-l {
+    box-shadow: 6.66667rem 6.66667rem 0; }
+  .separated900-l {
+    box-shadow: 11.11111rem 11.11111rem 0; }
+  .separated1000-l {
+    box-shadow: 17.77778rem 17.77778rem 0; }
+  .separated-none-l {
+    box-shadow: none; } }
+
+/*
+---
 Name: Shadow
 Base:
     shadow: shadow

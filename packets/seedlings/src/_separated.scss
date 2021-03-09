@@ -1,0 +1,50 @@
+@import "./axioms/Space";
+
+/*
+---
+Name: Separated
+Description: Box shadow utility to create an angled square on a particular block element
+Base:
+    separated: separated
+Modifiers:
+    0: 0
+    100: 100
+    200: 200
+    300: 300
+    400: 400
+    500: 500
+    600: 600
+    700: 700
+    800: 800
+    900: 900
+    1000: 1000
+    none: None
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+HoverClasses: true
+---
+*/
+@mixin separate($breakpoint-name: "") {
+  @each $level, $component in $space-map {
+    .separated#{$level}#{$breakpoint-name} {
+      box-shadow: $component $component 0;
+    }
+  }
+}
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include separate($breakpoint-name);
+      .separated-none#{$breakpoint-name} {
+        box-shadow: none;
+      }
+    }
+  } @else {
+    @include separate;
+    .separated-none {
+      box-shadow: none;
+    }
+  }
+}
