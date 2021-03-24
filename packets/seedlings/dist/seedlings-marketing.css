@@ -6966,6 +6966,7 @@ Modifiers:
     0: 0
     500: 500
     600: 600
+    1000: 999999
     --round: 50%
     --top: top only
     --right: right only
@@ -6982,6 +6983,9 @@ Modifiers:
 
 .br600 {
   border-radius: 8px; }
+
+.br1000 {
+  border-radius: 999999px; }
 
 .br--round {
   border-radius: 50%; }
