@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.10.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.9.0...@sproutsocial/seedlings@1.10.0) (2021-04-14)
+
+
+### Features
+
+* add new filter utility ([a42ea09](https://github.com/sproutsocial/seeds-packets/commit/a42ea09))
+
+
+
+
+
 # [1.9.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.8.5...@sproutsocial/seedlings@1.9.0) (2021-03-25)
 
 
