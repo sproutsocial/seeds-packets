@@ -11908,6 +11908,56 @@ Breakpoints:
 
 /*
 ---
+Name: Filter
+Base:
+    filter: filter
+Modifiers:
+    none: none
+    inverse: inverse
+    grayscale: grayscale
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+@supports (filter: none) {
+  .filter-none {
+    filter: none; }
+  .filter-invert {
+    filter: invert(1); }
+  .filter-grayscale {
+    filter: grayscale(1); } }
+
+@media screen and (min-width: 480px) {
+  @supports (filter: none) {
+    .filter-none-ns {
+      filter: none; }
+    .filter-invert-ns {
+      filter: invert(1); }
+    .filter-grayscale-ns {
+      filter: grayscale(1); } } }
+
+@media screen and (min-width: 480px) and (max-width: 959px) {
+  @supports (filter: none) {
+    .filter-none-m {
+      filter: none; }
+    .filter-invert-m {
+      filter: invert(1); }
+    .filter-grayscale-m {
+      filter: grayscale(1); } } }
+
+@media screen and (min-width: 960px) {
+  @supports (filter: none) {
+    .filter-none-l {
+      filter: none; }
+    .filter-invert-l {
+      filter: invert(1); }
+    .filter-grayscale-l {
+      filter: grayscale(1); } } }
+
+/*
+---
 Name: Flexbox
 Modifiers:
     flex: flex

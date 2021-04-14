@@ -1,0 +1,41 @@
+/*
+---
+Name: Filter
+Base:
+    filter: filter
+Modifiers:
+    none: none
+    inverse: inverse
+    grayscale: grayscale
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+
+@mixin filter($breakpoint-name: "") {
+  @supports (filter: none) {
+    .filter-none#{$breakpoint-name} {
+      filter: none;
+    }
+    .filter-invert#{$breakpoint-name} {
+      filter: invert(1);
+    }
+    .filter-grayscale#{$breakpoint-name} {
+      filter: grayscale(1);
+    }
+  }
+}
+
+@each $breakpoint-name, $breakpoint in $breakpoints {
+  @if ($breakpoint != "") {
+    @media #{$breakpoint} {
+      @include filter($breakpoint-name);
+    }
+  } @else {
+    @include filter;
+  }
+}
+
+
