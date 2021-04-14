@@ -6966,7 +6966,7 @@ Modifiers:
     0: 0
     500: 500
     600: 600
-    1000: 999999
+    1000: 1000
     --round: 50%
     --top: top only
     --right: right only
@@ -11905,6 +11905,56 @@ Breakpoints:
   .grid--overlap-p > * {
     position: relative;
     grid-area: Content / Content; } }
+
+/*
+---
+Name: Filter
+Base:
+    filter: filter
+Modifiers:
+    -none: none
+    -invert: invert
+    -grayscale: grayscale
+Breakpoints:
+    -ns: not-small
+    -m: medium
+    -l: large
+---
+*/
+@supports (filter: none) {
+  .filter-none {
+    filter: none; }
+  .filter-invert {
+    filter: invert(1); }
+  .filter-grayscale {
+    filter: grayscale(1); } }
+
+@media screen and (min-width: 480px) {
+  @supports (filter: none) {
+    .filter-none-ns {
+      filter: none; }
+    .filter-invert-ns {
+      filter: invert(1); }
+    .filter-grayscale-ns {
+      filter: grayscale(1); } } }
+
+@media screen and (min-width: 480px) and (max-width: 959px) {
+  @supports (filter: none) {
+    .filter-none-m {
+      filter: none; }
+    .filter-invert-m {
+      filter: invert(1); }
+    .filter-grayscale-m {
+      filter: grayscale(1); } } }
+
+@media screen and (min-width: 960px) {
+  @supports (filter: none) {
+    .filter-none-l {
+      filter: none; }
+    .filter-invert-l {
+      filter: invert(1); }
+    .filter-grayscale-l {
+      filter: grayscale(1); } } }
 
 /*
 ---
