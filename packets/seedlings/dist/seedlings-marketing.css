@@ -11912,9 +11912,9 @@ Name: Filter
 Base:
     filter: filter
 Modifiers:
-    none: none
-    invert: invert
-    grayscale: grayscale
+    -none: none
+    -invert: invert
+    -grayscale: grayscale
 Breakpoints:
     -ns: not-small
     -m: medium
