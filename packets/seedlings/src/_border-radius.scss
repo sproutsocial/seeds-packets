@@ -15,6 +15,7 @@ Modifiers:
     --right: right only
     --bottom: bottom only
     --left: left only
+    --leaf: leaf frame
     --x: rounded left & right
 ---
 */
@@ -42,4 +43,15 @@ Modifiers:
 .br--x {
   // This can be any randomly large number, Viewport units will just be both scaleable and randomly large
   border-radius: 2000vw;
+}
+// The leaf frame depends on magic numbers that align with our brand and change depending
+// on breakpoint.
+// https://seeds.sproutsocial.com/visual/composition/#leaf-frame
+.br--leaf {
+    border-radius: 144px 0;
+}
+@media #{$breakpoint-not-small} {
+    .br--leaf {
+        border-radius: 167px 0;
+    }
 }

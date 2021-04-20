@@ -6972,6 +6972,7 @@ Modifiers:
     --right: right only
     --bottom: bottom only
     --left: left only
+    --leaf: leaf frame
     --x: rounded left & right
 ---
 */
@@ -7008,6 +7009,13 @@ Modifiers:
 
 .br--x {
   border-radius: 2000vw; }
+
+.br--leaf {
+  border-radius: 144px 0; }
+
+@media screen and (min-width: 480px) {
+  .br--leaf {
+    border-radius: 167px 0; } }
 
 /*
 Name: Border Styles
