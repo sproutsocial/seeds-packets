@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.10.1](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.10.0...@sproutsocial/seedlings@1.10.1) (2021-04-20)
+
+
+### Bug Fixes
+
+* add new br--leaf util ([1e28263](https://github.com/sproutsocial/seeds-packets/commit/1e28263))
+
+
+
+
+
 # [1.10.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.9.0...@sproutsocial/seedlings@1.10.0) (2021-04-14)
 
 
