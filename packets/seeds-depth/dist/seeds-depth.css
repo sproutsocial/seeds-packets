@@ -1,6 +1,6 @@
 :root {
- --elevation-level-100: 0px 2px 4px rgba(39,51,51,.24);
- --elevation-level-200: 0px 4px 8px rgba(39,51,51,.24);
- --elevation-level-300: 0px 8px 16px rgba(39,51,51,.24);
- --elevation-level-400: 0px 16px 32px rgba(39,51,51,.24);
+  --elevation-level-100: 0px 2px 4px rgba(39,51,51,.24);
+  --elevation-level-200: 0px 4px 8px rgba(39,51,51,.24);
+  --elevation-level-300: 0px 8px 16px rgba(39,51,51,.24);
+  --elevation-level-400: 0px 16px 32px rgba(39,51,51,.24);
 }
