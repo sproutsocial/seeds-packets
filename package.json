@@ -42,5 +42,8 @@
     "rimraf": "^2.6.3",
     "style-dictionary": "^2.7.0",
     "tinycolor2": "^1.4.1"
+  },
+  "resolutions": {
+    "lodash": "^4.17.21"
   }
 }
