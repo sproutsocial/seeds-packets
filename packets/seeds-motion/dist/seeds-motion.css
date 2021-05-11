@@ -1,8 +1,8 @@
 :root {
- --motion-ease-in: cubic-bezier(.4, 0, .7, .2);
- --motion-ease-out: cubic-bezier(0, 0, .2, 1);
- --motion-ease-inout: cubic-bezier(.4, 0, .2, 1);
- --motion-duration-fast: .15s;
- --motion-duration-medium: .3s;
- --motion-duration-slow: .6s;
+  --motion-ease-in: cubic-bezier(.4, 0, .7, .2);
+  --motion-ease-out: cubic-bezier(0, 0, .2, 1);
+  --motion-ease-inout: cubic-bezier(.4, 0, .2, 1);
+  --motion-duration-fast: .15s;
+  --motion-duration-medium: .3s;
+  --motion-duration-slow: .6s;
 }
