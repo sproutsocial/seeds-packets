@@ -2,40 +2,10 @@
 # yarn lockfile v1
 
 
-"@sproutsocial/seeds-border@^1.1.0":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-border/-/seeds-border-1.1.1.tgz#3f530cfb5b898e78108be0f4f52484bf65497a3d"
-  integrity sha512-nFzuEadcACG6JldX7450vikEHtJW0vhSiesMeNPbqvbAZSbo/t8jm2+4ZCt1sInmMc+O34ShEW9lkN+uuCcNtw==
-
-"@sproutsocial/seeds-color@^1.5.1":
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-color/-/seeds-color-1.5.2.tgz#26b03c7d660e45f7aba8fc58585711cfb6abdbee"
-  integrity sha512-iRDmTNRBXNvCHYEmc/4M82jebQ0Mh0OlzsNLmzMZLeqGx2WW6j822aEshCcmdXFP7M+3I1Aq645mlcqQSjcA9g==
-
 "@sproutsocial/seeds-motion@^0.4.4":
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-motion/-/seeds-motion-0.4.4.tgz#11bc1e36a8f5030a6d3cfaee33cfb9515a4e583d"
   integrity sha512-HQER/Gs6OLWDJKvdK+sbc44fHF8Ty05LTzqzAE66fHvDjpUy/N/8k/+EujoSDSNizfMLPx2Y/Y2RiJSYnQZNqg==
-
-"@sproutsocial/seeds-networkcolor@^2.6.0":
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-networkcolor/-/seeds-networkcolor-2.6.1.tgz#e666537eec89c7a75c1d044ef69ec794a22d18ce"
-  integrity sha512-rxoMMyd6QbfQQaiNYZwfT9RfQYtpv5qxG8nrqm701hahTnA5kCfElKEPGMzU1HUQgqOPkGQThvCa92tjPfJvFQ==
-
-"@sproutsocial/seeds-space@^0.4.8":
-  version "0.4.8"
-  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-space/-/seeds-space-0.4.8.tgz#73b9e48c056a066c347f63ca175ee9f38e075a83"
-  integrity sha512-9OJj58c267dbm76waXJtmIuQVLZg+0PBCZ3oV0z0P/twYKAgL+Sm8mMO6oAmYFnTNmhN5Prp7QgdruvfE87XMw==
-
-"@sproutsocial/seeds-typography@^3.1.0":
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-typography/-/seeds-typography-3.1.0.tgz#9c8f5f6d200b08a45f22d4c743446b84812bb581"
-  integrity sha512-oMjyh8zPsdrqWhYc2kwgUSfi1Sz2oCHVZZ9t38JRDv495HjVyL/v7r/ov3TlGtVsopqAIfa7GjblkVqqsV9kOQ==
-
-"@sproutsocial/seeds-utils@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@sproutsocial/seeds-utils/-/seeds-utils-1.2.1.tgz#4d3fd10916115db1cb6e69aac2a998e67434b334"
-  integrity sha512-nuOEDTJYeuC5zbnWN9QoNrqzn3fYu2A3Ei9pCCIejGGUMestz7GjowC1ClJXxhkVe59nW6fsOCHcm2OPpfMJ4A==
 
 abbrev@1:
   version "1.1.1"
