@@ -139,8 +139,8 @@ Breakpoints:
       top: 50%;
       transform: translateY(-50%);
     }
-    @media #{$breakpoint-extralarge} {
-      @include coordinates('-xl');
-    }
   }
+}
+@media #{$breakpoint-extralarge} {
+  @include coordinates('-xl');
 }
