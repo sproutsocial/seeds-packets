@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.11.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.10.4...@sproutsocial/seedlings@1.11.0) (2021-06-10)
+
+
+### Features
+
+* add additional coordinate values ([8c813fa](https://github.com/sproutsocial/seeds-packets/commit/8c813fafdb0c20c299f67bac33a5ee5135023aef))
+
+
+
+
+
+## [1.10.4](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.10.3...@sproutsocial/seedlings@1.10.4) (2021-06-04)
+
+**Note:** Version bump only for package @sproutsocial/seedlings
+
+
+
+
+
 ## [1.10.3](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.10.2...@sproutsocial/seedlings@1.10.3) (2021-05-12)
 
 **Note:** Version bump only for package @sproutsocial/seedlings

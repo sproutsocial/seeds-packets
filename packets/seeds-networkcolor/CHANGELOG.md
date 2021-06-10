@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.2](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seeds-networkcolor@2.6.1...@sproutsocial/seeds-networkcolor@2.6.2) (2021-06-04)
+
+
+### Bug Fixes
+
+* **seeds-color:** add shopify network color ([ab8b207](https://github.com/sproutsocial/seeds-packets/commit/ab8b207d60c6b4b011c8660a1e048ba100ec904b))
+
+
+
+
+
 ## [2.6.1](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seeds-networkcolor@2.6.0...@sproutsocial/seeds-networkcolor@2.6.1) (2021-05-12)
 
 **Note:** Version bump only for package @sproutsocial/seeds-networkcolor
