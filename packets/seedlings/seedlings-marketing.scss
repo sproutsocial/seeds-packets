@@ -2,14 +2,16 @@
 // Min-width breakpoints
 $medium-width: 480px !default;
 $large-width: 960px !default;
+$extralarge-width: 1248px !default;
 $breakpoint-not-small: "screen and (min-width: #{$medium-width})" !default;
 $breakpoint-medium: "screen and (min-width: #{$medium-width}) and (max-width: #{$large-width - 1})" !default;
 $breakpoint-large: "screen and (min-width: #{$large-width})" !default;
+$breakpoint-extralarge: "screen and (min-width: #{$extralarge-width})" !default;
 $breakpoints: (
         none: "",
         "-ns": $breakpoint-not-small,
         "-m": $breakpoint-medium,
-        "-l": $breakpoint-large
+        "-l": $breakpoint-large,
 ) !default;
 $enable-print: true !default;
 $enable-rem: true !default;

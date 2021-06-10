@@ -27,16 +27,31 @@ Modifiers:
     -800: Negative Size 800
     -900: Negative Size 900
     -1000: Negative Size 1000
+    -8p: (1/12)%
+    -10p: 10%
+    -16p: (1/6)%
+    -20p: 20%
     -25p: 25%
+    -30p: 30%
     -33p: (100/3)%
+    -40p: 40%
+    -41p: (5/12)%
     -50p: 50%
+    -58p: (7/12)%
+    -60p: 60%
     -66p: (100/1.5)%
+    -70p: 70%
     -75p: 75%
+    -80p: 80%
+    -83p: (5/6)%
+    -90p: 90%
+    -91p: (11/12)%
     -100p: 100%
 Breakpoints:
     -ns: not-small
     -m: medium
     -l: large
+    -xl: extra-large
 ---
 */
 
@@ -65,13 +80,28 @@ Breakpoints:
           800: Space(800),
           900: Space(900),
           1000: Space(1000),
-          -25p: 25%,
-          -33p: percentage((1/3)),
-          -50p: 50%,
-          -66p: percentage((1/1.5)),
-          -75p: 75%,
+          -8p: percentage(1 / 12),
+          -10p: percentage(.1),
+          -16p: percentage(1 / 6),
+          -20p: percentage(.2),
+          -25p: percentage(.25),
+          -30p: percentage(.3),
+          -33p: percentage(1 / 3),
+          -40p: percentage(.4),
+          -41p: percentage(5 / 12),
+          -50p: percentage(.5),
+          -58p: percentage(7 / 12),
+          -60p: percentage(.6),
+          -66p: percentage(2 / 3),
+          -70p: percentage(.7),
+          -75p: percentage(.75),
+          -80p: percentage(.8),
+          -83p: percentage(5 / 6),
+          -90p: percentage(.9),
+          -91p: percentage(11 / 12),
           -100p: 100%
   );
+
   @each $position in $positions {
     @each $size-name, $size-value in $sizes {
       .#{$position}#{$size-name}#{$breakpoint-name} {
@@ -110,4 +140,7 @@ Breakpoints:
       transform: translateY(-50%);
     }
   }
+}
+@media #{$breakpoint-extralarge} {
+  @include coordinates('-xl');
 }
