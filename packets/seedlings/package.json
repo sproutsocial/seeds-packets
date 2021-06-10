@@ -1,6 +1,6 @@
 {
   "name": "@sproutsocial/seedlings",
-  "version": "1.10.4",
+  "version": "1.11.0",
   "stability": "alpha",
   "description": "Tachyon like seeds classes",
   "repository": {
