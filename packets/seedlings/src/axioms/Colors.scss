@@ -247,6 +247,9 @@ $colors-networks: (
         ),
         zendesk: (
                 default: $NetworkColor-zendesk
+        ),
+        shopify: (
+                default: $NetworkColor-shopify
         )
 ) !default;
 
