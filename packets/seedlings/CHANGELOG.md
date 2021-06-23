@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.1](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.11.0...@sproutsocial/seedlings@1.11.1) (2021-06-23)
+
+
+### Bug Fixes
+
+* add shopify color ([3a77574](https://github.com/sproutsocial/seeds-packets/commit/3a775741abfb0ce0b23f4fd18a7e4bd43bae4fc6))
+
+
+
+
+
 # [1.11.0](https://github.com/sproutsocial/seeds-packets/compare/@sproutsocial/seedlings@1.10.4...@sproutsocial/seedlings@1.11.0) (2021-06-10)
 
 
