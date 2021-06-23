@@ -366,6 +366,9 @@ HoverClasses: true
 .bg--zendesk {
   background-color: #03363D; }
 
+.bg--shopify {
+  background-color: #96bf48; }
+
 .hover-bg--twitter:hover {
   background-color: #1da1f2; }
 
@@ -410,6 +413,9 @@ HoverClasses: true
 
 .hover-bg--zendesk:hover {
   background-color: #03363D; }
+
+.hover-bg--shopify:hover {
+  background-color: #96bf48; }
 
 .bg--green-0 {
   background-color: #ebf9eb; }
@@ -1486,6 +1492,8 @@ HoverClasses: true
     background-color: #0CAA41; }
   .bg--zendesk-ns {
     background-color: #03363D; }
+  .bg--shopify-ns {
+    background-color: #96bf48; }
   .hover-bg--twitter-ns:hover {
     background-color: #1da1f2; }
   .hover-bg--facebook-ns:hover {
@@ -1516,6 +1524,8 @@ HoverClasses: true
     background-color: #0CAA41; }
   .hover-bg--zendesk-ns:hover {
     background-color: #03363D; }
+  .hover-bg--shopify-ns:hover {
+    background-color: #96bf48; }
   .bg--green-0-ns {
     background-color: #ebf9eb; }
   .bg--green-100-ns {
@@ -2244,6 +2254,8 @@ HoverClasses: true
     background-color: #0CAA41; }
   .bg--zendesk-m {
     background-color: #03363D; }
+  .bg--shopify-m {
+    background-color: #96bf48; }
   .hover-bg--twitter-m:hover {
     background-color: #1da1f2; }
   .hover-bg--facebook-m:hover {
@@ -2274,6 +2286,8 @@ HoverClasses: true
     background-color: #0CAA41; }
   .hover-bg--zendesk-m:hover {
     background-color: #03363D; }
+  .hover-bg--shopify-m:hover {
+    background-color: #96bf48; }
   .bg--green-0-m {
     background-color: #ebf9eb; }
   .bg--green-100-m {
@@ -3002,6 +3016,8 @@ HoverClasses: true
     background-color: #0CAA41; }
   .bg--zendesk-l {
     background-color: #03363D; }
+  .bg--shopify-l {
+    background-color: #96bf48; }
   .hover-bg--twitter-l:hover {
     background-color: #1da1f2; }
   .hover-bg--facebook-l:hover {
@@ -3032,6 +3048,8 @@ HoverClasses: true
     background-color: #0CAA41; }
   .hover-bg--zendesk-l:hover {
     background-color: #03363D; }
+  .hover-bg--shopify-l:hover {
+    background-color: #96bf48; }
   .bg--green-0-l {
     background-color: #ebf9eb; }
   .bg--green-100-l {
@@ -7197,6 +7215,9 @@ HoverClasses: true
 .c--zendesk {
   color: #03363D; }
 
+.c--shopify {
+  color: #96bf48; }
+
 .hover-c--twitter:hover {
   color: #1da1f2; }
 
@@ -7241,6 +7262,9 @@ HoverClasses: true
 
 .hover-c--zendesk:hover {
   color: #03363D; }
+
+.hover-c--shopify:hover {
+  color: #96bf48; }
 
 .c--green-0 {
   color: #ebf9eb; }
@@ -8309,6 +8333,8 @@ HoverClasses: true
     color: #0CAA41; }
   .c--zendesk-ns {
     color: #03363D; }
+  .c--shopify-ns {
+    color: #96bf48; }
   .hover-c--twitter-ns:hover {
     color: #1da1f2; }
   .hover-c--facebook-ns:hover {
@@ -8339,6 +8365,8 @@ HoverClasses: true
     color: #0CAA41; }
   .hover-c--zendesk-ns:hover {
     color: #03363D; }
+  .hover-c--shopify-ns:hover {
+    color: #96bf48; }
   .c--green-0-ns {
     color: #ebf9eb; }
   .c--green-100-ns {
@@ -9062,6 +9090,8 @@ HoverClasses: true
     color: #0CAA41; }
   .c--zendesk-m {
     color: #03363D; }
+  .c--shopify-m {
+    color: #96bf48; }
   .hover-c--twitter-m:hover {
     color: #1da1f2; }
   .hover-c--facebook-m:hover {
@@ -9092,6 +9122,8 @@ HoverClasses: true
     color: #0CAA41; }
   .hover-c--zendesk-m:hover {
     color: #03363D; }
+  .hover-c--shopify-m:hover {
+    color: #96bf48; }
   .c--green-0-m {
     color: #ebf9eb; }
   .c--green-100-m {
@@ -9815,6 +9847,8 @@ HoverClasses: true
     color: #0CAA41; }
   .c--zendesk-l {
     color: #03363D; }
+  .c--shopify-l {
+    color: #96bf48; }
   .hover-c--twitter-l:hover {
     color: #1da1f2; }
   .hover-c--facebook-l:hover {
@@ -9845,6 +9879,8 @@ HoverClasses: true
     color: #0CAA41; }
   .hover-c--zendesk-l:hover {
     color: #03363D; }
+  .hover-c--shopify-l:hover {
+    color: #96bf48; }
   .c--green-0-l {
     color: #ebf9eb; }
   .c--green-100-l {
